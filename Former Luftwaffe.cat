@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="1ddf-beb7-26d2-ef25" name="Former Luftwaffe" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="eeb3-567d-708a-f896" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <selectionEntries>
+    <selectionEntry id="b995-b3ba-e01b-92e0" name="Himmelschloss Bays" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eb52-59ce-0b93-e19c" name="Fallschirmjäger Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a4b1-d52d-2059-f380" name="Faction Formations" hidden="false" targetId="c74a-6498-63d2-89fb" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="bc6d-b2d9-64f4-2bd9" name="Fallschirmjäger Squad" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="961d-2b49-140f-3739" name="New SelectionEntry" hidden="false" collective="false" import="true" type="unit">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
