@@ -1996,6 +1996,9 @@
       <entryLinks>
         <entryLink import="true" name="Rüstung" hidden="false" id="0abb-2021-5060-0a91" type="selectionEntryGroup" targetId="d2d5-bcfa-096f-b605"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03c0-708b-1547-129e"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
