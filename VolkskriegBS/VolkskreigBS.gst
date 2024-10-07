@@ -1428,7 +1428,6 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="9e7d-e92e-7755-d962" name="Formations" hidden="false" collective="false" import="true"/>
     <selectionEntryGroup name="Animals" id="d7b1-7c81-c1f1-7043" hidden="false">
       <selectionEntries>
         <selectionEntry type="unit" import="true" name="Attack Dog" hidden="true" id="1bbf-46f3-c06d-53a6">
@@ -1664,8 +1663,15 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Rüstung Legs" id="ad9e-d2e4-79b1-d5a5" hidden="false">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5bb6-1342-bbbc-7617"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bb6-1342-bbbc-7617"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Übersteuerung  Servos" hidden="true" id="baf7-2391-a64e-e690">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup name="Rüstung Head" id="7595-050c-4604-4017" hidden="false">
               <constraints>
@@ -1782,10 +1788,114 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Power Sources" id="e11f-3da3-396d-00c2" hidden="false"/>
     <selectionEntryGroup name="Armour Platings" id="6de1-d553-8767-0740" hidden="false"/>
-    <selectionEntryGroup name="Drohne" id="a259-84b1-60c2-b435" hidden="false"/>
-    <selectionEntryGroup name="Light Panzer Weapons" id="b255-6c06-a35a-0879" hidden="false"/>
-    <selectionEntryGroup name="Medium Panzer Weapons" id="9044-29f4-7d2a-6895" hidden="false"/>
-    <selectionEntryGroup name="Heavy Panzer Weapons" id="65a0-fd96-15af-e0b7" hidden="false"/>
+    <selectionEntryGroup name="Drohne" id="a259-84b1-60c2-b435" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Funkbiene Ausf C “Wespe”" hidden="true" id="ba26-a493-57e2-40fd">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Leichte Funkbiene Ausf. D “Blitz Hornisse”" hidden="true" id="7f5e-b03d-8717-718f">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Leichter Ladungsträger “Goliath” Ausf. B" hidden="true" id="7b1a-94ba-297c-2191">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Leichter Ladungsträger “Goliath” Ausf. A" hidden="true" id="9350-581a-028d-ec30">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Leichte  Funkbiene Ausf. A “Hummel”" hidden="true" id="36c3-cc79-a3e6-b1db">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Light Panzer Weapons" id="b255-6c06-a35a-0879" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2cm Kampfwagenkanone" hidden="true" id="c91d-f252-182d-3bba">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3.7cm Kampfwagenkanone" hidden="true" id="3d5c-ff51-8bff-1bc2">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="2cm Maschinenekampfwagenkanone" hidden="true" id="bd3f-23ae-ad88-6d9b">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="110"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="3.7cm Maschinenkampfwagenkanone" hidden="true" id="5ce9-f2f2-742b-a0fe">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="200"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Raketenpanzerbüchse-58 x6" hidden="true" id="7ac3-de43-2226-c7bf">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="30cm Raketenwerfer" hidden="true" id="78b6-b08a-d31a-d148">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="130"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kampfwagenfeuerwerfer-51" hidden="true" id="b0e7-a9a5-14c3-f883">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Medium Panzer Weapons" id="9044-29f4-7d2a-6895" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="8.8cm Kampfwagenkanone" hidden="true" id="58b9-6748-b5ff-3596">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="7.5cm Kampfwagenkanone" hidden="true" id="e404-ff8f-5ca2-5915">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="165"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Heavy Panzer Weapons" id="65a0-fd96-15af-e0b7" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blitzwerfenkanone-57" hidden="true" id="7fbb-3556-ad71-b3e5">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="300"/>
+          </costs>
+          <modifiers>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5e2a-9dff-05e5-de25" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="12.8cm Kampfwagenkanone" hidden="true" id="1d5e-adb5-a55e-23e1">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="350"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="17cm Kampfwagenkanone" hidden="true" id="2c28-3ce9-3f44-2ee9">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="450"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
     <selectionEntryGroup name="Tankette" id="26d4-a494-82a2-4bed" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Borgward IV “Wanze”" hidden="true" id="fe4f-3dae-7170-0e33">
@@ -1795,7 +1905,7 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kugelpanzer II" hidden="true" id="46b7-9e8d-1d2b-3c5e">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="160"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="200"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1999,6 +2109,215 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03c0-708b-1547-129e"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Towed Weapon Mounts" id="2822-bad8-11ab-e301" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Fahrlafette 51" hidden="true" id="8bae-605a-7a31-4d56">
+          <entryLinks>
+            <entryLink import="true" name="Medium Panzer Weapons" hidden="false" id="04b0-5ce9-aa27-19c7" type="selectionEntryGroup" targetId="9044-29f4-7d2a-6895">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edcb-1040-054e-b5c3"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Light Panzer Weapons" hidden="false" id="e5be-4e23-05ec-5280" type="selectionEntryGroup" targetId="b255-6c06-a35a-0879">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b276-40c0-70a0-e245"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Schutzschild-51" hidden="true" id="be47-f87a-5bf8-89d3">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="70"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordinance" id="a184-0bff-6c1e-c269" hidden="false">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="128x869R" id="9f17-cb2c-326e-1c1a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="128x869R(HE)" hidden="true" id="5b39-dae1-1b41-0fa7">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="170mmSC" id="cae0-6958-7467-ca5b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="170mmSC(HE)" hidden="true" id="b7e1-b229-f756-ecf5">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="20x138B" id="9d63-d028-84de-2850" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="20x138B(Flak)" hidden="true" id="4d1c-a52b-b4ee-59c5">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="20x138B(HE)" hidden="true" id="7bbf-a499-e455-31ce">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="30cm Raketen" id="1f7e-c361-836a-fb47" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="30cm Raketen" hidden="true" id="ed86-94b6-1590-21d9">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="88x822R" id="903a-6368-8ff3-a3ae" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="88x822R(HE)" hidden="true" id="45eb-127f-773a-3644">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="20mmR" id="978e-093f-f659-911b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="20mmR(Flak)" hidden="true" id="1a52-f4b8-842d-589c">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="30x90RB" id="e7d2-0e26-1586-aa22" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="30x90RB(HE)" hidden="true" id="d56c-ed4e-5d57-2f5e">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="37x249" id="b32c-abe8-2007-8e8c" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="37x249(HE)" hidden="true" id="c96e-5958-1b6b-741c">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="75x714R" id="77a8-57dd-806a-3b3f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="75x714R(HE)" hidden="true" id="ea0c-3e7b-71a2-8f7b">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="88mmR Raketen" id="8495-7d01-8f34-537b" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="88mmR Raketen(HEAT)" hidden="true" id="5f00-c517-0718-17ae">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Rifle Grenade" id="95c2-f8f7-9372-f9e4" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HHL)" hidden="true" id="4033-8565-389a-f39c">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HE)" hidden="true" id="a304-8a2b-04f4-b470">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HE+)" hidden="true" id="14a8-dc80-bfb6-1649">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HEAT)" hidden="true" id="a278-a5e3-6579-7327">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle Grenade(Smoke)" hidden="true" id="999b-f95f-7d0c-9b52">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="StuP Grenade" id="9198-5014-77ea-04c2" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="StuP Grenade(HE)" hidden="true" id="5c37-d633-6ec7-d7c0">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="StuP Grenade(HEAT)" hidden="true" id="a5b1-0392-1ed3-d844">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="13"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="StuP Grenade(Smoke)" hidden="true" id="d327-0b9c-8f44-d6b5">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="7"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Weapon Upgrades" id="d392-edda-29f7-df9e" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Zielfernrohr-52" hidden="true" id="4b07-67f6-77f0-1928">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="20x138B 10rnd Magazine" hidden="true" id="a7c0-60bb-1bfd-b743">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="20x138B 20rnd Magazine" hidden="true" id="868c-7d87-c84a-3669">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Anbauflammenwerfer-48" hidden="true" id="9486-f80a-2c9d-c445">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Schalldämpfer-54" hidden="true" id="b728-1e0f-05a7-4142">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scheissbecher-48" hidden="true" id="4990-c8be-6641-0913">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
