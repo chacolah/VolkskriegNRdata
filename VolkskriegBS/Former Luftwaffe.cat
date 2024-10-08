@@ -10,16 +10,12 @@
       <categoryLinks>
         <categoryLink id="a4b1-d52d-2059-f380" name="Faction Formations" hidden="false" targetId="c74a-6498-63d2-89fb" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="bc6d-b2d9-64f4-2bd9" name="Fallschirmjäger Squad" hidden="false" collective="false" import="true" type="upgrade">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Infantry Models" hidden="false" id="679d-381d-f471-ac74" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
