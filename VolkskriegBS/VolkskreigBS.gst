@@ -904,6 +904,7 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f05f-d602-9a0c-4274" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Proficiencies" hidden="false" id="19d5-12dd-23b0-27b0" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
@@ -963,6 +964,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d143-a0d0-735e-881a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Proficiencies" hidden="false" id="02dc-442c-da0b-e380" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
@@ -1040,6 +1042,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d25-68c7-84b2-47a6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Proficiencies" hidden="false" id="17c4-8633-041f-e82a" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
@@ -1442,442 +1445,15 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="New Link" hidden="false" id="10b5-58c2-63e3-855b" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer" id="31e1-cfc2-0836-5b24" hidden="false">
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Panzer Chassis" id="3c55-fd24-c1cb-4f46" hidden="false">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Panzer Turret" id="0966-4bd1-1db8-a943" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Drohne Rack" hidden="true" id="4b57-7859-95dd-d043">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="67b9-a861-72a8-701e" shared="true"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <entryLinks>
-                    <entryLink import="true" name="Drohne" hidden="false" id="4177-c245-67b9-4d74" type="selectionEntryGroup" targetId="a259-84b1-60c2-b435"/>
-                  </entryLinks>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Heavy Turret" hidden="true" id="6459-6330-437d-c9d8">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Artillery Carriage" hidden="true" id="084f-ac77-c47a-c434">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Open Topped Cupola" hidden="true" id="ce35-4e13-c8ac-e134">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Light Turret" hidden="true" id="7717-ac44-ad72-c023">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Platform" hidden="true" id="a302-a032-02a8-d3a1">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Casemate" hidden="true" id="0cbc-937f-e816-36b1">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ee9-ba80-cac8-7798"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Panzer Turret Upgrades" id="f974-c286-9d14-e1f6" hidden="false">
-                  <constraints>
-                    <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2aab-0400-e647-7a4c"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Hull Mount" hidden="true" id="e410-925c-ed2d-e5c9">
-                      <costs>
-                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink import="true" name="Heavy Weapons" hidden="false" id="615f-59df-2ba0-b60f" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a08-ed36-3dcb-9129" includeChildSelections="false"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Up-Armoured Turret" hidden="true" id="a9e8-221c-b8e9-b8ef">
-                      <costs>
-                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Zwitterling Upgrade" hidden="true" id="000d-26bd-eab0-24b1">
-                      <costs>
-                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="65a0-fd96-15af-e0b7" shared="true" includeChildSelections="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Vierling Upgrade" hidden="true" id="e2f1-0d63-ea03-4ee1">
-                      <costs>
-                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="65a0-fd96-15af-e0b7" shared="true" includeChildSelections="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Coaxial Mount" hidden="true" id="1ddf-c8f5-2fd6-f0b0">
-                      <costs>
-                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink import="true" name="Heavy Weapons" hidden="false" id="bdec-ce9f-116a-679c" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a20-a710-522b-69b2" includeChildSelections="false"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Topfblende/Saukopf Mantlet" hidden="true" id="e5c7-6e22-401d-d6a3">
-                      <costs>
-                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b255-6c06-a35a-0879" shared="true" includeChildSelections="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Panzer Mobility" id="f6ff-c1f1-4399-2607" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Junkers Uberfliegenmotor-60 “Düsenketten”" hidden="true" id="0ff8-ed28-d923-8e1c">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="200"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Maybach Vierling-Panzer-Lauffläche “Vierling”" hidden="true" id="af71-77a2-4933-683b">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Maybach Zweiling-Panzer-Lauffläche “Opa”" hidden="true" id="4b49-be62-149b-ad70">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="160"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="SpinnenPanzerFabrik Spinnenaktuator 50 “Spinnen”" hidden="true" id="2f7a-6035-4597-7a2f">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="SpinnenPanzerFabrik Spinnenaktuator 58 “Nädelbiene”" hidden="true" id="497d-477b-2817-69a0">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="210"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Panzer Mobility Upgrades" id="42a9-9edc-5f30-300d" hidden="false">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Uparmoured Mobility" hidden="true" id="02b2-78d8-e152-60b7">
-                      <costs>
-                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
-                      </costs>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
-                  </selectionEntries>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="361d-154b-ae4e-cafa"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Panzer Chassis Upgrade" id="eeae-b378-e97d-29db" hidden="false">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="self" shared="true" id="54a8-fdbb-ca2b-651f"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Airdrop Parachute" hidden="true" id="5681-2952-d94d-0839">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Funkbienekord Ausf. A" hidden="true" id="bba4-279a-dc0d-325f">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Uparmored Chassis" hidden="true" id="2056-f0a1-9767-ee82">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="false" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Zimmermit" hidden="true" id="ce40-a6de-e5fa-9dfb">
-                  <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot;" hidden="true" id="75e8-54e8-18ea-79b0">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="E-25 &quot;Panzer&quot;" hidden="true" id="f137-3e2e-5c0e-c63a">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="210"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="E-50 &quot;Tiger&quot;" hidden="true" id="afdd-ed17-e25a-0103">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="260"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Panzer Chassis" hidden="false" id="90d9-c2f3-9a01-b4c3" type="selectionEntryGroup" targetId="3c55-fd24-c1cb-4f46"/>
+        <entryLink import="true" name="Panzer Turret" hidden="false" id="f926-7fe7-cc27-6032" type="selectionEntryGroup" targetId="0966-4bd1-1db8-a943"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung" id="d2d5-bcfa-096f-b605" hidden="false">
       <entryLinks>
@@ -1907,7 +1483,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Rüstung Model" hidden="false" id="9779-af16-922e-f06d" type="selectionEntryGroup" targetId="fdee-72dd-7c30-f69a" sortIndex="1"/>
+        <entryLink import="true" name="Rüstung Frames" hidden="false" id="9779-af16-922e-f06d" type="selectionEntryGroup" targetId="fdee-72dd-7c30-f69a" sortIndex="1"/>
         <entryLink import="true" name="Rüstung Weapons" hidden="false" id="a35f-b61b-2ff0-1cc2" type="selectionEntryGroup" targetId="f4bd-58c2-e0c3-a665"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -2516,7 +2092,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Ordinance" id="a184-0bff-6c1e-c269" hidden="false">
+    <selectionEntryGroup name="Ordnance" id="a184-0bff-6c1e-c269" hidden="false">
       <selectionEntryGroups>
         <selectionEntryGroup name="128x869R" id="9f17-cb2c-326e-1c1a" hidden="false">
           <selectionEntries>
@@ -4121,12 +3697,1328 @@
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Hovercraft Weapon Mounts" id="de83-d139-e183-c141" hidden="false"/>
+    <selectionEntryGroup name="Proficiencies" id="9154-8d04-10a8-97d2" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="First Aid" hidden="false" id="3781-2be9-008c-2b8f">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Field Surgery Training" hidden="false" id="cc73-025c-5333-ab8d">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Medic Training" hidden="false" id="347c-b0c3-e7c9-5c16">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Engineer Certification" hidden="false" id="1305-eb8b-a80b-32bb">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gunsmithing" hidden="false" id="5a7a-55b9-5090-6e28">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Radio Control Specialization" hidden="false" id="349f-1caa-6a5e-2664">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Drohne Repair Specialization" hidden="false" id="f23a-c4aa-ac1f-9e90">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Vehicle Mechanic Specialization" hidden="false" id="27dc-434f-2b03-d12d">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ground Crew Training" hidden="false" id="3e60-b66f-1d30-21f4">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Aircraft Operation" hidden="false" id="128e-6741-98f5-8aaa">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pilot Certification" hidden="false" id="6c1c-38ef-506d-3b1c">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Ace Pilot Certification" hidden="false" id="4ce3-bc0c-c00d-436f">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Leadership" hidden="false" id="8eae-c1bf-0451-6533">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="New Orders" hidden="false" id="a280-c8c9-c10d-6c85">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Soldiering" hidden="false" id="59a2-dc3a-0ff7-04e5">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Marksmanship" hidden="false" id="f44b-ebb9-46f1-9db2">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rocketpack Operation" hidden="false" id="468d-d58d-e28d-8b41">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Exo Operation" hidden="false" id="79c2-56c9-d849-0d53">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blitzwerfer Operation" hidden="false" id="fc69-d1ae-3d33-0fa0">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Panzer" hidden="false" id="2cbe-3acd-e220-1c57">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Driver Certification" hidden="false" id="363f-486c-5746-47d1">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gunner Certification" hidden="false" id="a60f-eab0-7603-f195">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Loader Certification" hidden="false" id="99c5-7ea9-2d89-18b9">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Animal Handling" hidden="false" id="f152-3642-fff2-151f">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cavalry Training" hidden="false" id="c12e-8f1d-ec02-7ae6">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Houndmaster Training" hidden="false" id="2809-e2be-a197-1fc7">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Panzer Chassis" id="3c55-fd24-c1cb-4f46" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot;" hidden="true" id="75e8-54e8-18ea-79b0">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="E-25 &quot;Panzer&quot;" hidden="true" id="f137-3e2e-5c0e-c63a">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="210"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="E-50 &quot;Tiger&quot;" hidden="true" id="afdd-ed17-e25a-0103">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="260"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="2341-f0b7-4735-0833" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
+        <entryLink import="true" name="Panzer Mobility" hidden="false" id="a735-f9ff-8c2a-5d03" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Panzer Chassis Upgrade" id="eeae-b378-e97d-29db" hidden="false">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="self" shared="true" id="54a8-fdbb-ca2b-651f"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Airdrop Parachute" hidden="true" id="5681-2952-d94d-0839">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Funkbienekord Ausf. A" hidden="true" id="bba4-279a-dc0d-325f">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Uparmored Chassis" hidden="true" id="2056-f0a1-9767-ee82">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Zimmermit" hidden="true" id="ce40-a6de-e5fa-9dfb">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Panzer Mobility" id="f6ff-c1f1-4399-2607" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Junkers Uberfliegenmotor-60 “Düsenketten”" hidden="true" id="0ff8-ed28-d923-8e1c">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="200"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Maybach Vierling-Panzer-Lauffläche “Vierling”" hidden="true" id="af71-77a2-4933-683b">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Maybach Zweiling-Panzer-Lauffläche “Opa”" hidden="true" id="4b49-be62-149b-ad70">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="160"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="SpinnenPanzerFabrik Spinnenaktuator 50 “Spinnen”" hidden="true" id="2f7a-6035-4597-7a2f">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="SpinnenPanzerFabrik Spinnenaktuator 58 “Nädelbiene”" hidden="true" id="497d-477b-2817-69a0">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="210"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Panzer Mobility Upgrades" id="42a9-9edc-5f30-300d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Uparmoured Mobility" hidden="true" id="02b2-78d8-e152-60b7">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="361d-154b-ae4e-cafa"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Panzer Turret" id="0966-4bd1-1db8-a943" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Drohne Rack" hidden="true" id="4b57-7859-95dd-d043">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
+          </costs>
+          <modifiers>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="67b9-a861-72a8-701e" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Drohne" hidden="false" id="4177-c245-67b9-4d74" type="selectionEntryGroup" targetId="a259-84b1-60c2-b435"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Turret" hidden="true" id="6459-6330-437d-c9d8">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Artillery Carriage" hidden="true" id="084f-ac77-c47a-c434">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Open Topped Cupola" hidden="true" id="ce35-4e13-c8ac-e134">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Light Turret" hidden="true" id="7717-ac44-ad72-c023">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="0872-2ea5-dacb-5b6b" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="75e8-54e8-18ea-79b0" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Platform" hidden="true" id="a302-a032-02a8-d3a1">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Casemate" hidden="true" id="0cbc-937f-e816-36b1">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ee9-ba80-cac8-7798"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Panzer Turret Upgrades" id="f974-c286-9d14-e1f6" hidden="false">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2aab-0400-e647-7a4c"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hull Mount" hidden="true" id="e410-925c-ed2d-e5c9">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Heavy Weapons" hidden="false" id="615f-59df-2ba0-b60f" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a08-ed36-3dcb-9129" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Up-Armoured Turret" hidden="true" id="a9e8-221c-b8e9-b8ef">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Zwitterling Upgrade" hidden="true" id="000d-26bd-eab0-24b1">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="65a0-fd96-15af-e0b7" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Vierling Upgrade" hidden="true" id="e2f1-0d63-ea03-4ee1">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="65a0-fd96-15af-e0b7" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Coaxial Mount" hidden="true" id="1ddf-c8f5-2fd6-f0b0">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Heavy Weapons" hidden="false" id="bdec-ce9f-116a-679c" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a20-a710-522b-69b2" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Topfblende/Saukopf Mantlet" hidden="true" id="e5c7-6e22-401d-d6a3">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b255-6c06-a35a-0879" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="b72d-a08a-2414-8c49" name="Sidearm" hidden="false"/>
-    <rule id="3f1d-4475-54df-0527" name="Primary" hidden="false"/>
+    <rule id="b72d-a08a-2414-8c49" name="Upgrade(Type)" hidden="false">
+      <description>Upgrades:
+Cannot be used directly, but instead is equipped onto another piece of Equipment.</description>
+    </rule>
+    <rule id="3f1d-4475-54df-0527" name="Rüstung(Type)" hidden="false">
+      <description>Rustung Weapons:
+Count as Heavy Weapons with Setup(+1) to infantry models.
+Heavy Weapons to Exosuit equipped models.
+Primary weapons to Exoframe equipped models.</description>
+    </rule>
     <rule id="1a8c-1134-eff7-750c" name="Heavy Weapon" hidden="false"/>
     <rule id="bf40-cae8-3ccf-b705" name="Grenade" hidden="false"/>
-    <rule id="a99c-0ab8-62ec-1d59" name="Energy" hidden="false"/>
+    <rule id="a99c-0ab8-62ec-1d59" name="Exomod(Medium Panzer Weapons)" hidden="false">
+      <description>Medium Panzer Weapons with this rule:
+Are treated as Heavy Weapons when used by Exoframe equipped models</description>
+    </rule>
+    <rule name="Grenade(Type)" id="4b11-3b2e-77df-a55d" hidden="false">
+      <description>Grenade Equipment: 
+May be used to make a shooting attack.
+Do not have to be currently equipped in hands to do so</description>
+    </rule>
+    <rule name="Airborne(Infantry Model)" id="f865-3cee-7041-cc2b" hidden="false">
+      <description>Models with this rule:
+May paradrop onto the battlefield during deployment, so long as they have an Aircraft, Hover, Hovercraft, or Glider vehicle that can transport them.</description>
+    </rule>
+    <rule name="Airborne(Multipart Equipment)" id="dff0-b2a6-1d68-28e4" hidden="false">
+      <description>Multipart Equipment with this rule:
+Confer the Airborne rule to all models in a crew or passenger slot in this equipment.</description>
+    </rule>
+    <rule name="Airborne(Infantry Equipment)" id="8038-1970-8258-adba" hidden="false">
+      <description>Infantry Equipment with this rule:
+Confer the Airborne rule to a model equipped with this equipment</description>
+    </rule>
+    <rule name="Artillery(3)" id="8e23-b810-de95-5bbc" hidden="false">
+      <description>Equipment with this rule:
+May be used for “Order Fire Support” Orders within a number of hexes equal to (x) on the campaign map.</description>
+    </rule>
+    <rule name="Artillery(1)" id="d4e8-5a2f-46e9-074c" hidden="false">
+      <description>Equipment with this rule:
+May be used for “Order Fire Support” Orders within a number of hexes equal to x on the campaign map.</description>
+    </rule>
+    <rule name="Artillery(2)" id="b590-ad98-cca5-163d" hidden="false">
+      <description>Equipment with this rule:
+May be used for “Order Fire Support” Orders within a number of hexes equal to x on the campaign map.</description>
+    </rule>
+    <rule name="Backpack(1)" id="bc91-4bc5-38a7-1956" hidden="false">
+      <description>Equipment with this ruleL
+May have up to (x) number of equipment with the Backpack Type</description>
+    </rule>
+    <rule name="Backpack(2)" id="6981-1a39-7b5f-6426" hidden="false">
+      <description>Equipment with this ruleL
+May have up to (x) number of equipment with the Backpack Type</description>
+    </rule>
+    <rule name="Battery(6)" id="770e-a2d8-050d-ac0f" hidden="false">
+      <description>Equipment with this rule:
+Can store up to X Blitz energy.</description>
+    </rule>
+    <rule name="Backpack(3)" id="8faa-b708-4bbe-1095" hidden="false">
+      <description>Equipment with this ruleL
+May have up to (x) number of equipment with the Backpack Type</description>
+    </rule>
+    <rule name="Battery(+1)" id="9e07-540d-253d-ac8e" hidden="false">
+      <description>Equipment with this rule:
+Can store up to X Blitz energy.</description>
+    </rule>
+    <rule name="Battery(2)" id="c868-c81f-6916-e6f8" hidden="false">
+      <description>Equipment with this rule:
+Can store up to X Blitz energy.</description>
+    </rule>
+    <rule name="Battery(3)" id="2155-eb71-f7c9-f242" hidden="false">
+      <description>Equipment with this rule:
+Can store up to X Blitz energy.</description>
+    </rule>
+    <rule name="Battery(4)" id="10f0-d0bf-43dc-b2eb" hidden="false">
+      <description>Equipment with this rule:
+Can store up to X Blitz energy.</description>
+    </rule>
+    <rule name="Battery(5)" id="9e06-4074-4f89-fc5b" hidden="false">
+      <description>Equipment with this rule:
+Can store up to X Blitz energy.</description>
+    </rule>
+    <rule name="Battery(7)" id="6269-b344-09df-1bde" hidden="false">
+      <description>Equipment with this rule:
+Can store up to X Blitz energy.</description>
+    </rule>
+    <rule name="Battery(8)" id="3f0a-2168-db07-6cec" hidden="false">
+      <description>Equipment with this rule:
+Can store up to X Blitz energy.</description>
+    </rule>
+    <rule name="Battery(20)" id="17c0-1e2f-c0aa-fa84" hidden="false">
+      <description>Equipment with this rule:
+Can store up to X Blitz energy.</description>
+    </rule>
+    <rule name="Bayonet" id="d588-67e4-e6d5-e8f0" hidden="false">
+      <description>Equipment with this rule:
+May be attached to a weapon as an Underslung Upgrade. If used this way, it gains a +1” modifier to its range.</description>
+    </rule>
+    <rule name="Beast(Equipment)" id="8dc1-93b1-32a0-a111" hidden="false">
+      <description>Equipment with this rule:
+May only be equipped to infantry with this rule.</description>
+    </rule>
+    <rule name="Beast(Model)" id="5efc-90b0-0dc8-59ac" hidden="false">
+      <description>Models with this rule: 
+Must be commanded by a model without this rule during combat.</description>
+    </rule>
+    <rule name="Bipod(1)" id="dc24-f0ba-277a-6b58" hidden="false">
+      <description>Equipment with this rule:
+Treat X additional shots as the first shot so long as the Infantry using it is prone or is in cover.</description>
+    </rule>
+    <rule name="Bombard(18-48)" id="369c-e276-3600-7fa5" hidden="false">
+      <description>Equipment with this rule:
+Only gain any innate accuracy bonuses while targeting a unit within the (x-y) range.
+May ignore terrain and cover effects unless it has overhead coverage.</description>
+    </rule>
+    <rule name="Booster(2&quot;)" id="1bac-493b-dd7b-2344" hidden="false">
+      <description>Equipment with this rule:
+Grants the wearer extra mobility equal to (x).</description>
+    </rule>
+    <rule name="Capacitor(2)" id="9590-2918-56c0-a4eb" hidden="false">
+      <description>Equipment with this rule:
+Has a rate of fire equal to (x).</description>
+    </rule>
+    <rule name="Booster(4&quot;)" id="f182-8eb2-75cf-e3d4" hidden="false">
+      <description>Equipment with this rule:
+Grants the wearer extra mobility equal to (x).</description>
+    </rule>
+    <rule name="Booster(6&quot;)" id="c8c0-90b0-d227-6d08" hidden="false">
+      <description>Equipment with this rule:
+Grants the wearer extra mobility equal to (x).</description>
+    </rule>
+    <rule name="Capacitor(1)" id="44dd-4d9e-6c8c-4d86" hidden="false">
+      <description>Equipment with this rule:
+Has a rate of fire equal to (x).</description>
+    </rule>
+    <rule name="Carrier(6)" id="d8c1-1780-c22d-e30a" hidden="false">
+      <description>Equipment with this rule:
+May mount up to (x) Drohne on them.</description>
+    </rule>
+    <rule name="Carrier(1)" id="91f5-97a6-54ac-72ab" hidden="false">
+      <description>Equipment with this rule:
+May mount up to (x) Drohne on them.</description>
+    </rule>
+    <rule name="Carrier(2)" id="757a-1a72-46e1-60f8" hidden="false">
+      <description>Equipment with this rule:
+May mount up to (x) Drohne on them.</description>
+    </rule>
+    <rule name="Dogfight" id="2171-7184-3a94-adcb" hidden="false">
+      <description>Equipment with this rule:
+Ignores the accuracy penalty when targeting Aircraft and Hovercraft Multipart Equipment in a shooting attack if equipped to an Aircraft or Hovercraft Multipart Equipment.</description>
+    </rule>
+    <rule name="Carrier(4)" id="0585-e289-1a1e-6def" hidden="false">
+      <description>Equipment with this rule:
+May mount up to (x) Drohne on them.</description>
+    </rule>
+    <rule name="Consumable" id="ba9d-7ef1-84a8-c8f4" hidden="false">
+      <description>Equipment with this rule:
+Is destroyed upon use.</description>
+    </rule>
+    <rule name="Cover(Equipment)(2)" id="56a3-7a3b-48c0-69b0" hidden="false">
+      <description>Equipment with this rule:
+Provide (x) armour to infantry models that are crewing, manning, embarked upon, or using the equipment, as well as models hiding behind the equipment. They take damage equal to the damage removed via armor if possible.
+The Equipment with this rule does not apply their armor value as damage reduction to this damage.</description>
+    </rule>
+    <rule name="Cover(Terrain)(1)" id="92b6-9de3-69cc-b695" hidden="false">
+      <description>Terrain pieces with this rule:
+Provide (x) armour to infantry models that have line of sight blocked for at least half of the targeted model during an attack roll.</description>
+    </rule>
+    <rule name="Cover(Equipment)(1)" id="cb33-ca90-1e47-1108" hidden="false">
+      <description>Equipment with this rule:
+Provide (x) armour to infantry models that are crewing, manning, embarked upon, or using the equipment, as well as models hiding behind the equipment. They take damage equal to the damage removed via armor if possible.
+The Equipment with this rule does not apply their armor value as damage reduction to this damage.</description>
+    </rule>
+    <rule id="98a2-2a4b-cbba-9b7b" name="Energy(1)" hidden="false">
+      <description>Equipment with this rule:
+Cost (x) amount of Blitz Energy to activate with an action.</description>
+    </rule>
+    <rule id="93d5-d5b9-6a07-5feb" name="Energy(2)" hidden="false">
+      <description>Equipment with this rule:
+Cost (x) amount of Blitz Energy to activate with an action.</description>
+    </rule>
+    <rule id="1001-264b-a327-2bf2" name="Energy(4)" hidden="false">
+      <description>Equipment with this rule:
+Cost (x) amount of Blitz Energy to activate with an action.</description>
+    </rule>
+    <rule id="0551-95c8-3947-241a" name="Magproof" hidden="false">
+      <description>Equipment with this rule:
+Causes equipment targeting it to ignore the benefits of the Magnetic rule.</description>
+    </rule>
+    <rule id="8ad0-6e92-123d-2686" name="Exomod(Light Panzer Weapons)" hidden="false">
+      <description>Light Panzer Weapons with this rule:
+Are treated as Rüstung Weapons.</description>
+    </rule>
+    <rule id="750b-650e-a792-a853" name="Exomod(Weapon Frame)" hidden="false">
+      <description>Weapon Frames with this rule:
+Give the Exomod rule to the equipped weapon</description>
+    </rule>
+    <rule id="2825-472b-62cb-7bbc" name="Explosive" hidden="false">
+      <description>Equipment with this rule:
+Destroy equipment dropped by infantry they down that lack an Armour value.</description>
+    </rule>
+    <rule id="9b94-3787-34f1-61bb" name="Flak" hidden="false">
+      <description>Equipment with this rule:
+Deals double damage to Airplane, Hovercraft, and Glider Multipart Equipments. 
+Deals 1.5x damage, rounded down, to infantry models without an armour value.</description>
+    </rule>
+    <rule id="e409-01a3-3f44-75a1" name="Flame" hidden="false">
+      <description>Equipment with this rule:
+Deal half damage against Multipart Equipment targets.</description>
+    </rule>
+    <rule id="d328-d509-6940-c386" name="Fortification" hidden="false">
+      <description>Equipment with this rule:
+Allow the owner of the equipped model to place the fortification in parenthesis while defending.</description>
+    </rule>
+    <rule id="c6c0-71af-076b-4f90" name="Freeze" hidden="false">
+      <description>Equipment with this rule:
+Lowers the armour value of a target it hits for 3 turns by half, rounded up.</description>
+    </rule>
+    <rule id="e50f-a20e-c4a2-0f86" name="Offhand(Type)" hidden="false">
+      <description>Offhand Equipment: 
+May be equipped and used alongside sidearms.</description>
+    </rule>
+    <rule id="017b-5ec1-102f-2c99" name="Magnetic(Equipment)" hidden="false">
+      <description>Equipment with this rule:
+Automatically succeed Attack Rolls against Multipart Equipments and Equipment with the Armour type.</description>
+    </rule>
+    <rule id="b955-f3f3-f78f-f954" name="Magnetic(Ordnance)" hidden="false">
+      <description>Ordnance with this rule:
+Gain a +2 to any rolls on Attack Rolls against Multipart Equipments and Equipment with the Armour type.</description>
+    </rule>
+    <rule id="2e47-3c3e-0179-e721" name="Min Range(120&quot;)" hidden="false">
+      <description>Equipment with this rule:
+May not target models within (x) distance to the user.</description>
+    </rule>
+    <rule id="383e-df0e-7995-ac4e" name="Maul" hidden="false">
+      <description>Models with this rule: 
+Only receive their accuracy bonus when performing a melee attack.</description>
+    </rule>
+    <rule name="Open Topped" id="6243-27d0-de86-9178" hidden="false">
+      <description>A Vehicle Part with this rule:
+Allows passengers of the vehicle to fire their weapons.
+
+
+A Unit firing a weapon in this way:
+Has a cover value equal to the armor value of the vehicle.
+Can be targeted as normal by enemies firing on the vehicle.
+May not use equipment with the Setup rule(unless they are mounted on the vehicle).</description>
+    </rule>
+    <rule name="Officer" id="6db1-a53e-b354-7ee0" hidden="false">
+      <description>A Formation with this rule
+Requires one of the models within it to be designated as the Officer.</description>
+    </rule>
+    <rule name="Radius(3&quot;)" id="a6af-7c4f-836a-427f" hidden="false">
+      <description>Weapon Equipment and Ordinance Equipment, with this rule:
+Apply their effects in a radial area in inches equal to (x).</description>
+    </rule>
+    <rule name="Ordnance(x)" id="7268-4ecf-28b5-df1b" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Overdrive(1)" id="ec73-e8db-6584-3f11" hidden="false">
+      <description>Equipment with this rule:
+May spend their Energy cost to move an additional 6” times (x) during their movement.</description>
+    </rule>
+    <rule name="Piercing(1)" id="71aa-a433-caa2-dc68" hidden="false">
+      <description>Equipment with this rule:
+Bypass an amount of armor equal to (x) when dealing damage.</description>
+    </rule>
+    <rule name="Piercing(2)" id="e166-a701-2c14-2275" hidden="false">
+      <description>Equipment with this rule:
+Bypass an amount of armor equal to (x) when dealing damage.</description>
+    </rule>
+    <rule name="Piercing(3)" id="5238-a413-8b1a-fe25" hidden="false">
+      <description>Equipment with this rule:
+Bypass an amount of armor equal to (x) when dealing damage.</description>
+    </rule>
+    <rule name="Piercing(4)" id="fc55-ea27-b63c-e0ed" hidden="false">
+      <description>Equipment with this rule:
+Bypass an amount of armor equal to (x) when dealing damage.</description>
+    </rule>
+    <rule name="Radio(3,0)" id="0f17-7afb-1daf-0132" hidden="false">
+      <description>Equipment or Tiles with this rule:
+Allow forces issuing commands on the campaign map to treat (x) hexes around the tile or force with the equipment as their command range, so long as they also have an Equipment with the Radio rule and are within that range.
+
+
+Lower the command range of enemy Forces by (y) if that force is within the (x) tile radius on the campaign map(to a minimum of 1)</description>
+    </rule>
+    <rule name="Radio(3,1)" id="23bb-23f4-c1f6-cd5c" hidden="false">
+      <description>Equipment or Tiles with this rule:
+Allow forces issuing commands on the campaign map to treat (x) hexes around the tile or force with the equipment as their command range, so long as they also have an Equipment with the Radio rule and are within that range.
+
+
+Lower the command range of enemy Forces by (y) if that force is within the (x) tile radius on the campaign map(to a minimum of 1)</description>
+    </rule>
+    <rule name="Radio(+1,+1)" id="6d0a-b990-c755-5896" hidden="false">
+      <description>Equipment or Tiles with this rule:
+Allow forces issuing commands on the campaign map to treat (x) hexes around the tile or force with the equipment as their command range, so long as they also have an Equipment with the Radio rule and are within that range.
+
+
+Lower the command range of enemy Forces by (y) if that force is within the (x) tile radius on the campaign map(to a minimum of 1)</description>
+    </rule>
+    <rule name="Radio(+1,+2)" id="8e15-c6d0-397c-b9c2" hidden="false">
+      <description>Equipment or Tiles with this rule:
+Allow forces issuing commands on the campaign map to treat (x) hexes around the tile or force with the equipment as their command range, so long as they also have an Equipment with the Radio rule and are within that range.
+
+
+Lower the command range of enemy Forces by (y) if that force is within the (x) tile radius on the campaign map(to a minimum of 1)</description>
+    </rule>
+    <rule name="RC(2,48&quot;)" id="9bf8-67f5-f474-298b" hidden="false">
+      <description>Equipment with this rule:
+May be operated instead of an attack to allow up to (x) automatons to act in the current turn.
+Grant RC coverage within (y) radius.</description>
+    </rule>
+    <rule name="Radius(1&quot;)" id="e3dc-ae45-d11e-b334" hidden="false">
+      <description>Weapon Equipment and Ordinance Equipment, with this rule:
+Apply their effects in a radial area in inches equal to (x).</description>
+    </rule>
+    <rule name="Radius(2&quot;)" id="11d0-d8e8-183e-a54d" hidden="false">
+      <description>Weapon Equipment and Ordinance Equipment, with this rule:
+Apply their effects in a radial area in inches equal to (x).</description>
+    </rule>
+    <rule name="Radius(6&quot;)" id="690b-b8c2-b84b-6891" hidden="false">
+      <description>Weapon Equipment and Ordinance Equipment, with this rule:
+Apply their effects in a radial area in inches equal to (x).</description>
+    </rule>
+    <rule name="Radius(5&quot;)" id="3fb0-40bf-2635-e7d6" hidden="false">
+      <description>Weapon Equipment and Ordinance Equipment, with this rule:
+Apply their effects in a radial area in inches equal to (x).</description>
+    </rule>
+    <rule name="Radius(4&quot;)" id="a4a2-71a2-d5af-b2ac" hidden="false">
+      <description>Weapon Equipment and Ordinance Equipment, with this rule:
+Apply their effects in a radial area in inches equal to (x).</description>
+    </rule>
+    <rule name="Radius(18&quot;)" id="8f50-e168-4bf7-d313" hidden="false">
+      <description>Weapon Equipment and Ordinance Equipment, with this rule:
+Apply their effects in a radial area in inches equal to (x).</description>
+    </rule>
+    <rule name="RC(1,36&quot;)" id="660a-0f17-4943-01a9" hidden="false">
+      <description>Equipment with this rule:
+May be operated instead of an attack to allow up to (x) automatons to act in the current turn.
+Grant RC coverage within (y) radius.</description>
+    </rule>
+    <rule name="RC(4,48&quot;)" id="1faf-e2e8-b6d4-e315" hidden="false">
+      <description>Equipment with this rule:
+May be operated instead of an attack to allow up to (x) automatons to act in the current turn.
+Grant RC coverage within (y) radius.</description>
+    </rule>
+    <rule name="RC(10,Mapwide)" id="f6f8-7ba9-2709-6335" hidden="false">
+      <description>Equipment with this rule:
+May be operated instead of an attack to allow up to (x) automatons to act in the current turn.
+Grant RC coverage within (y) radius.</description>
+    </rule>
+    <rule name="Recharge(0)" id="70c9-dfe0-b2da-0a72" hidden="false">
+      <description>Equipment with this rule:
+Recharges (x) amount of blitz energy a turn.
+
+
+Additionally, they may be used to fully recharge Blitz equipment in between Combats on the Campaign turn by the other units in their unit.</description>
+    </rule>
+    <rule name="Recharge(+1)" id="b4a6-86d0-5cd1-ce88" hidden="false">
+      <description>Equipment with this rule:
+Recharges (x) amount of blitz energy a turn.
+
+
+Additionally, they may be used to fully recharge Blitz equipment in between Combats on the Campaign turn by the other units in their unit.</description>
+    </rule>
+    <rule name="Recharge(2)" id="4cab-3565-ddca-7a10" hidden="false">
+      <description>Equipment with this rule:
+Recharges (x) amount of blitz energy a turn.
+
+
+Additionally, they may be used to fully recharge Blitz equipment in between Combats on the Campaign turn by the other units in their unit.</description>
+    </rule>
+    <rule name="Recharge(3)" id="65f8-8ae4-bfd6-f22c" hidden="false">
+      <description>Equipment with this rule:
+Recharges (x) amount of blitz energy a turn.
+
+
+Additionally, they may be used to fully recharge Blitz equipment in between Combats on the Campaign turn by the other units in their unit.</description>
+    </rule>
+    <rule name="Recharge(1)" id="0bed-6621-7605-2518" hidden="false">
+      <description>Equipment with this rule:
+Recharges (x) amount of blitz energy a turn.
+
+
+Additionally, they may be used to fully recharge Blitz equipment in between Combats on the Campaign turn by the other units in their unit.</description>
+    </rule>
+    <rule name="Battery(1)" id="8c71-b27a-a5b8-7dac" hidden="false">
+      <description>Equipment with this rule:
+Can store up to X Blitz energy.</description>
+    </rule>
+    <rule name="Recharge(4)" id="1c05-7bcc-3164-50ef" hidden="false">
+      <description>Equipment with this rule:
+Recharges (x) amount of blitz energy a turn.
+
+
+Additionally, they may be used to fully recharge Blitz equipment in between Combats on the Campaign turn by the other units in their unit.</description>
+    </rule>
+    <rule name="Reload(1,8)" id="9a5f-1f5f-6de7-36ab" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Repack(2)" id="22c3-8c8d-bde8-6b66" hidden="false">
+      <description>Equipment with this rule:
+Is considered Consumable, unless the force using them spends (x) turns repacking/reassembling the equipment. If the force using an equipment with this rule wins the combat, they automatically Repack all equipment with this rule.</description>
+    </rule>
+    <rule name="Reload(1,20)" id="b8af-95b2-008a-741d" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Reload(1,6)" id="a65e-6e34-ba99-d2a9" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Reload(2,6)" id="3e1a-ee44-7a7d-8fc2" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Reload(1,10)" id="c706-1ddf-2f5d-4d6e" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Reload(1,1)" id="6e97-e9b3-d855-88a4" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Reload(1,4)" id="ecf4-2215-dfe2-493b" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Reload(4,6)" id="42d0-5d14-9266-a5c1" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Reload(1,5)" id="8f24-b9e3-6356-ec2e" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Reload(20,1)" id="8997-a91b-cbec-69f1" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Repack(1)" id="5554-d947-278c-40f9" hidden="false">
+      <description>Equipment with this rule:
+Is considered Consumable, unless the force using them spends (x) turns repacking/reassembling the equipment. If the force using an equipment with this rule wins the combat, they automatically Repack all equipment with this rule.</description>
+    </rule>
+    <rule name="Repair(4,+4)" id="1b86-45b5-f502-fa8f" hidden="false">
+      <description>Models and Equipment with this rule:
+May repair Equipment instead of shooting.
+When they repair, they may repair (x) Durability per turn up to (y) total.</description>
+    </rule>
+    <rule name="Rifle Grenade(Equipment)(6&quot;)" id="53f5-567b-e21e-fff1" hidden="false">
+      <description>Weapon Equipment with this rule:
+May fire rifle grenades (x) inches per firepower the base weapon has.</description>
+    </rule>
+    <rule name="Repair(1,5)" id="4315-3b8d-dc72-c232" hidden="false">
+      <description>Models and Equipment with this rule:
+May repair Equipment instead of shooting.
+When they repair, they may repair (x) Durability per turn up to (y) total.</description>
+    </rule>
+    <rule name="Repair(+0,+3)" id="f6e3-64cd-28fd-7e3d" hidden="false">
+      <description>Models and Equipment with this rule:
+May repair Equipment instead of shooting.
+When they repair, they may repair (x) Durability per turn up to (y) total.</description>
+    </rule>
+    <rule name="Repair(2,+2)" id="486e-b2a6-863f-00c1" hidden="false">
+      <description>Models and Equipment with this rule:
+May repair Equipment instead of shooting.
+When they repair, they may repair (x) Durability per turn up to (y) total.</description>
+    </rule>
+    <rule name="Repair(4,12)" id="0da0-2351-32b5-3aad" hidden="false">
+      <description>Models and Equipment with this rule:
+May repair Equipment instead of shooting.
+When they repair, they may repair (x,-) Durability per turn up to (-,y) total.</description>
+    </rule>
+    <rule name="Silent" id="9bb6-aaef-3556-d45b" hidden="false">
+      <description>Equipment with this rule:
+Does not automatically break stealth when used.</description>
+    </rule>
+    <rule name="Rifle Grenade(Ordnance)" id="5acb-e700-b751-4395" hidden="false">
+      <description>Ordinance Equipment with this rule:
+May be used as ammunition when firing rifle grenades.</description>
+    </rule>
+    <rule name="Self Destruct" id="f9e8-1d8d-7877-d517" hidden="false">
+      <description>Equipment with this rule:
+Destroys itself upon attacking.
+
+
+If the equipment also has the Radius(x) rule, the radius is centered on the middle of this model.</description>
+    </rule>
+    <rule name="Setup(1)" id="b5d9-785f-97a3-5aae" hidden="false">
+      <description>Equipment with this rule:
+Require (x) combat turns to setup and breakdown before they can be used or moved respectively.</description>
+    </rule>
+    <rule name="Zeroing" id="73d4-9ef4-01fc-676c" hidden="false">
+      <description>Equipment with this rule:
+Benefits from an additional accuracy bonus equal to +x after (x) turns of standing still.</description>
+    </rule>
+    <rule name="Sniper" id="3d7f-4a8f-0c01-44b0" hidden="false">
+      <description>Equipment with this rule:
+May choose which model in a target formation they target. If they do so, they may only make one shot with the weapon in that attack, regardless of any extra RoF in its profile.
+
+
+If the equipment also has Zeroing, then this rule only affects the equipment when zeroed.</description>
+    </rule>
+    <rule name="Stimulant(1)" id="2f65-4899-404b-0d3f" hidden="false">
+      <description>Equipment with this rule:
+Can be used during the Logistics phase to remove a point of exhaustion for the next Campaign Turn. You gain two points of Exhaustion in the following Logistics Phase</description>
+    </rule>
+    <rule name="Thruster(2&quot;)" id="e70e-4fb0-86bb-5a23" hidden="false">
+      <description>Equipment with this rule: 
+Grant the wearer the ability to move vertically equal to (x).
+Ignore terrain under (x) height when moving.</description>
+    </rule>
+    <rule name="Thruster(6&quot;)" id="0991-bcb5-5362-7294" hidden="false">
+      <description>Equipment with this rule: 
+Grant the wearer the ability to move vertically equal to (x).
+Ignore terrain under (x) height when moving.</description>
+    </rule>
+    <rule name="Thruster(3&quot;)" id="5391-947d-9f58-85df" hidden="false">
+      <description>Equipment with this rule: 
+Grant the wearer the ability to move vertically equal to (x).
+Ignore terrain under (x) height when moving.</description>
+    </rule>
+    <rule name="Thruster(8&quot;)" id="8f12-bc00-bcdc-7ce2" hidden="false">
+      <description>Equipment with this rule: 
+Grant the wearer the ability to move vertically equal to (x).
+Ignore terrain under (x) height when moving.</description>
+    </rule>
+    <rule name="Treatment(1,4)" id="bb46-9f13-083f-359d" hidden="false">
+      <description>Models with this rule: 
+May heal another infantry’s wounds instead of shooting. The model being treated may only move or shoot during the turn it is being treated. This action heals (x,-) Durability per turn up to (-,y) durability total. 
+
+
+May target a downed, non automaton infantry to stabilize them to 2 Durability once per combat. After combat, any friendly or captured downed models from that combat may add (x) to their survival roll, so long as the model with this rule is not also downed.</description>
+    </rule>
+    <rule name="Treatment(+3,+10)" id="84c6-fcb6-f2d3-8dd0" hidden="false">
+      <description>Models with this rule: 
+May heal another infantry’s wounds instead of shooting. The model being treated may only move or shoot during the turn it is being treated. This action heals (x,-) Durability per turn up to (-,y) durability total. 
+
+
+May target a downed, non automaton infantry to stabilize them to 2 Durability once per combat. After combat, any friendly or captured downed models from that combat may add (x) to their survival roll, so long as the model with this rule is not also downed.</description>
+    </rule>
+    <rule name="Treatment(2,+2)" id="7c78-20cf-fbc3-f771" hidden="false">
+      <description>Models with this rule: 
+May heal another infantry’s wounds instead of shooting. The model being treated may only move or shoot during the turn it is being treated. This action heals (x,-) Durability per turn up to (-,y) durability total. 
+
+
+May target a downed, non automaton infantry to stabilize them to 2 Durability once per combat. After combat, any friendly or captured downed models from that combat may add (x) to their survival roll, so long as the model with this rule is not also downed.</description>
+    </rule>
+    <rule name="Treatment(+1,+2)" id="f321-8a01-b820-4361" hidden="false">
+      <description>Models with this rule: 
+May heal another infantry’s wounds instead of shooting. The model being treated may only move or shoot during the turn it is being treated. This action heals (x,-) Durability per turn up to (-,y) durability total. 
+
+
+May target a downed, non automaton infantry to stabilize them to 2 Durability once per combat. After combat, any friendly or captured downed models from that combat may add (x) to their survival roll, so long as the model with this rule is not also downed.</description>
+    </rule>
+    <rule name="Repair(+3,+10)" id="f307-8444-9b92-8168" hidden="false">
+      <description>Models and Equipment with this rule:
+May repair Equipment instead of shooting.
+When they repair, they may repair (x) Durability per turn up to (y) total.</description>
+    </rule>
+    <rule name="Treatment(4,+4)" id="f231-a023-8c06-2d1d" hidden="false">
+      <description>Models with this rule: 
+May heal another infantry’s wounds instead of shooting. The model being treated may only move or shoot during the turn it is being treated. This action heals (x,-) Durability per turn up to (-,y) durability total. 
+
+
+May target a downed, non automaton infantry to stabilize them to 2 Durability once per combat. After combat, any friendly or captured downed models from that combat may add (x) to their survival roll, so long as the model with this rule is not also downed.</description>
+    </rule>
+    <rule name="Volunteer(1,5)" id="918f-e6b8-4e5f-ded3" hidden="false">
+      <description>Infantry with this rule:
+Gain additional infantry of the same type equal to y, for every (x) infantry purchased during force creation or army reinforcement.</description>
+    </rule>
+    <rule name="Automaton(Type)" id="e94a-def6-3d06-e9bd" hidden="false">
+      <description>Animal Infantry:
+May not use equipment nor gain training that does not specifically say it can be used by that infantry model via special rules.</description>
+    </rule>
+    <rule name="Military(Type)" id="2591-7a20-dcf7-f3ce" hidden="false">
+      <description>Military Infantry:
+Gain Soldiering Proficiency for free. The accuracy bonus for this is already calculated in their profile.</description>
+    </rule>
+    <rule name="Animal Infantry(Type)" id="234c-b4a2-0b85-fbc2" hidden="false">
+      <description>Automaton Infantry: 
+Require an infantry equipped with equipment that has the RC rule to use that equipment to act.
+Can only be activated within it’s allies RC coverage.</description>
+    </rule>
+    <rule name="Civilian(Type)" id="d685-e0d5-0362-bdcb" hidden="false">
+      <description>Forces containing only Civilian Infantry:
+Begin a campaign with one additional reputation with village tiles.</description>
+    </rule>
+    <rule name="Collaborator(Type)" id="d768-caf8-b65d-1d44" hidden="false">
+      <description>Forces containing Collaborator Infantry:
+Gain a -1 to their reputation with towns with the same nationality as the collaborator.</description>
+    </rule>
+    <rule name="Combat Drug(Type)" id="3424-8c4b-a527-00f0" hidden="false">
+      <description>Combat Drug Equipment:
+Does not take up a slot in a Uniform</description>
+    </rule>
+    <rule name="Airplane(Type)" id="ebdc-0796-3a32-038e" hidden="false">
+      <description>Airplane Weapon Equipment:
+May only be equipped on Aircraft, Weapon Frame Equipment, and Towed Weapon Mounts.</description>
+    </rule>
+    <rule name="Armour(Type)" id="1870-d101-aa11-febe" hidden="false">
+      <description>Armour Equipment:
+Take up the Armour slot on an infantry model.</description>
+    </rule>
+    <rule name="Backpack(Type)" id="d551-f9d4-bcfe-51a9" hidden="false">
+      <description>Backpack Equipment:
+Takes up a Backpack slot in a Uniform.
+Backpack is a secondary type that some equipment has in addition to its primary type.
+Cannot be stored in an Equipment slot.</description>
+    </rule>
+    <rule name="Addiction(2+)" id="7498-0a5d-0c52-ef6c" hidden="false">
+      <description>Equipment with this Rule:
+Must make an Addiction roll with a required roll of (x). If the Addiction roll is failed, the model becomes addicted to using the equipment. 
+If the equipment is a Combat Drug, the model must use the Combat Drug every Campaign Turn or immediately gain a point of exhaustion. They do not gain the positive effect of the Combat Drug if it is used to combat addiction.</description>
+    </rule>
+    <rule name="Heavy Weapon(Type)" id="17d5-7121-b66c-ef4f" hidden="false">
+      <description>Heavy Weapon Equipment:
+May be equipped and used by a single model, but must move at half speed. This penalty can be mitigated by keeping a number of Infantry equal to their crew value within 1” of them while moving.</description>
+    </rule>
+    <rule id="da10-59f2-a754-98a6" name="Lightning" hidden="false">
+      <description>Equipment with this rule:
+Ignores the Armor value of their target.</description>
+    </rule>
+    <rule id="0eae-2642-06c1-11f7" name="Lightning(Type)" hidden="false">
+      <description>Lightning Upgrades: 
+May only be used on weapons with the Lightning rule. 
+
+
+You may only have one Lightning Upgrade equipped at any one time.</description>
+    </rule>
+    <rule id="6b24-f8f9-eac2-25b0" name="Magazine(Type)" hidden="false">
+      <description>Magazine Upgrades:
+May be used on any weapon that has the Magazine rule.
+x is the type of magazine the upgrade can be applied to.
+If the Magazine Upgrade has the Reload rule, replace the Reload rule on the weapon it&apos;s being applied to with the one from the upgrade’s profile.
+Weapons with the Magazine rule:
+May be upgraded with a single Magazine upgrade of the matching type.</description>
+    </rule>
+    <rule id="1810-4fb1-0e4e-d9d2" name="Melee(Type)" hidden="false">
+      <description>Melee Equipment:
+May only be used to make a close combat attack action.</description>
+    </rule>
+    <rule id="4150-51e0-8bd9-44b8" name="Muzzle(x+/-)(Type)" hidden="false">
+      <description>Muzzle Upgrades:
+May be used on any weapon that has the Muzzle rule, and a firepower matching the restrictions in parenthesis. 
+
+
+You may only have one Muzzle item Upgrade equipped at any one time.</description>
+    </rule>
+    <rule id="79e3-47d5-77fb-57a1" name="Power Slot(Type)" hidden="false">
+      <description>Equipment with the Power Slot rule:
+May equip Power Sources as if they were Rüstung.</description>
+    </rule>
+    <rule id="5f59-8e73-94af-85ce" name="Primary(Type)" hidden="false">
+      <description>Primary Arms:
+May be equipped by infantry models that are not crewing an enclosed vehicle.</description>
+    </rule>
+    <rule id="b7a7-cc53-984c-8aa5" name="Sidearm(Type)" hidden="false">
+      <description>Sidearms:
+May be used with Offhand equipment freely. 
+May be actively equipped while crewing any vehicle. 
+May be used in Close Combat if more than 3” away from the nearest model.</description>
+    </rule>
+    <rule id="156d-27fa-f212-74df" name="Sight(Type)" hidden="false">
+      <description>Sight Upgrades:
+May be used on any weapon that has the Sight rule. 
+You may only have one Sight Upgrade equipped at any one time.</description>
+    </rule>
+    <rule id="bf7b-70a7-cb48-0bed" name="Tool(Type)" hidden="false">
+      <description>Tools:
+Must be equipped to the Weapon Slot to be used but may not be used as a weapon.</description>
+    </rule>
+    <rule id="69b1-a231-d329-c8f1" name="Underslung(Type)" hidden="false">
+      <description>Underslung Upgrades:
+May be used on any weapon with the Underslung rule. 
+You may only have one Underslung Upgrade at any one time.</description>
+    </rule>
+    <rule name="Hover(Land)" id="2d9b-2c10-1354-9260" hidden="false">
+      <description>Mobility Parts with the Hover(Land) rule:
+May move over cover if it is 3” tall or less.
+Does not damage Cover when moving over it in this way.</description>
+    </rule>
+    <rule name="APC(Type)" id="8f77-33b4-aa02-70db" hidden="false">
+      <description>APC Chassis:
+Must be equipped with a Vehicle Mobility Part.
+May take the Forward Pintle Mount and Rear Pintle Mount.</description>
+    </rule>
+    <rule name="Car(Type)" id="f19b-1aa1-f168-9d79" hidden="false">
+      <description>Car Chassis:
+Must be equipped with a Vehicle Mobility Part.
+May take the Forward Pintle Mount and 360 Pintle Mount.</description>
+    </rule>
+    <rule name="Chassis(Type)" id="c2f1-a660-d18b-26ef" hidden="false">
+      <description>Chassis Upgrades:
+Are permanently applied to the Chassis of a vehicle.</description>
+    </rule>
+    <rule name="Düsenhuber(Type)" id="0e3e-f774-e534-d5e1" hidden="false">
+      <description>Düsenhuber:
+ Must be equipped with a Düsenhuber Mobility Part.</description>
+    </rule>
+    <rule name="Flatbed" id="435d-d53a-0c6b-f325" hidden="false">
+      <description>Equipment with the Flatbed rule:
+May have a piece of equipment with the Vehicle, Light Panzer, or Medium Panzer loaded onto them for transport. 
+A multipart equipment embarked this way may be crewed and fired while embarked.</description>
+    </rule>
+    <rule name="Mobility(Type)" id="f76b-ffdb-20e6-6891" hidden="false">
+      <description>Mobility Upgrades: 
+Are permanently applied to the Mobility of a vehicle. 
+You may only have one Mobility Upgrade.</description>
+    </rule>
+    <rule name="Half-Tracked" id="1255-4876-4d98-7578" hidden="false">
+      <description>Mobility Parts with the Half-Tracked rule:
+Destroys Light Cover when moving through it.</description>
+    </rule>
   </sharedRules>
 </gameSystem>
