@@ -53,7 +53,7 @@
         <categoryLink id="658b-a2b5-7d95-2ee3" name="Faction Formations" hidden="false" targetId="c74a-6498-63d2-89fb" primary="false"/>
         <categoryLink name="Multipart Equipment" hidden="false" id="768f-b0de-6b73-1164" targetId="5020-e810-c95a-b39d"/>
         <categoryLink name="Mobile Bases" hidden="false" id="6a00-c23d-3ffd-dea1" targetId="45b3-5bb4-1df7-06bd"/>
-        <categoryLink name="Reference" hidden="false" id="f699-0d2f-104d-f721" targetId="c1d7-f7b9-4d5d-909b" type="category"/>
+        <categoryLink name="Reference" hidden="false" id="f699-0d2f-104d-f721" targetId="c1d7-f7b9-4d5d-909b"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -398,6 +398,23 @@
         </entryLink>
         <entryLink import="true" name="Motorized Options" hidden="false" id="6e44-ddf0-8059-74f8" type="selectionEntryGroup" targetId="f0dc-fc28-959c-0329"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="Panzergrenadiers (Motorized Fireteam)" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tank Crew" hidden="false" id="4f97-b5ec-9e54-c502">
       <entryLinks>
@@ -417,6 +434,23 @@
         <categoryLink name="Generic Formation" hidden="false" id="462f-980d-8d2d-4cc2" targetId="225b-b208-7d55-5943" primary="true"/>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="b010-9201-e57b-c1d9" primary="false" name="Vehicle Crew"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="Panzergruppe(Tank Crew)" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Heavy Weapons Team" hidden="false" id="af7d-59ed-2373-4f39">
       <categoryLinks>
@@ -444,6 +478,23 @@
           </constraints>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="Ersatzgruppen(Fireteam)" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="a429-92a0-3658-f03f" name="Lone Wolf" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -4327,10 +4378,11 @@ Primary weapons to Exoframe equipped models.</description>
       <description>Medium Panzer Weapons with this rule:
 Are treated as Heavy Weapons when used by Exoframe equipped models</description>
     </rule>
-    <rule name="Grenade(Type)" id="4b11-3b2e-77df-a55d" hidden="false">
-      <description>Grenade Equipment: 
-May be used to make a shooting attack.
-Do not have to be currently equipped in hands to do so</description>
+    <rule name="Heavy Panzer(Type)" id="4b11-3b2e-77df-a55d" hidden="false">
+      <description>Heavy Panzer Chassis:
+Must be equipped with Panzer Mobility
+Must be equipped with either the Casemate, Heavy Turret, or Artillery Carriage Weapon Vehicle Mounts. 
+May only be equipped with Medium or Heavy Panzer Weapons.</description>
     </rule>
     <rule name="Airborne(Infantry Model)" id="f865-3cee-7041-cc2b" hidden="false">
       <description>Models with this rule:
@@ -4914,9 +4966,9 @@ Begin a campaign with one additional reputation with village tiles.</description
       <description>Forces containing Collaborator Infantry:
 Gain a -1 to their reputation with towns with the same nationality as the collaborator.</description>
     </rule>
-    <rule name="Combat Drug(Type)" id="3424-8c4b-a527-00f0" hidden="false">
-      <description>Combat Drug Equipment:
-Does not take up a slot in a Uniform</description>
+    <rule name="Exosuit(Type)" id="3424-8c4b-a527-00f0" hidden="false">
+      <description>Exosuits:
+Are powered armours that do not change the model’s type from Infantry to Rüstung.</description>
     </rule>
     <rule name="Airplane(Type)" id="ebdc-0796-3a32-038e" hidden="false">
       <description>Airplane Weapon Equipment:
@@ -4999,28 +5051,20 @@ Must be equipped to the Weapon Slot to be used but may not be used as a weapon.<
 May be used on any weapon with the Underslung rule. 
 You may only have one Underslung Upgrade at any one time.</description>
     </rule>
-    <rule name="Hover(Land)" id="2d9b-2c10-1354-9260" hidden="false">
-      <description>Mobility Parts with the Hover(Land) rule:
-May move over cover if it is 3” tall or less.
-Does not damage Cover when moving over it in this way.</description>
+    <rule name="Integrated Weapon Mount" id="2d9b-2c10-1354-9260" hidden="false">
+      <description>Integrated Weapon Mounts: 
+Add their durability to the Chassis of the vehicle.
+Use whichever armour value is higher.</description>
     </rule>
     <rule name="APC(Type)" id="8f77-33b4-aa02-70db" hidden="false">
       <description>APC Chassis:
 Must be equipped with a Vehicle Mobility Part.
 May take the Forward Pintle Mount and Rear Pintle Mount.</description>
     </rule>
-    <rule name="Car(Type)" id="f19b-1aa1-f168-9d79" hidden="false">
-      <description>Car Chassis:
-Must be equipped with a Vehicle Mobility Part.
-May take the Forward Pintle Mount and 360 Pintle Mount.</description>
-    </rule>
-    <rule name="Chassis(Type)" id="c2f1-a660-d18b-26ef" hidden="false">
+    <rule name="Chassis(Type)" id="f19b-1aa1-f168-9d79" hidden="false">
       <description>Chassis Upgrades:
-Are permanently applied to the Chassis of a vehicle.</description>
-    </rule>
-    <rule name="Düsenhuber(Type)" id="0e3e-f774-e534-d5e1" hidden="false">
-      <description>Düsenhuber:
- Must be equipped with a Düsenhuber Mobility Part.</description>
+Are permanently applied to the Chassis of a Multipart Equipment. 
+You may only have one Chassis Upgrade.</description>
     </rule>
     <rule name="Flatbed" id="435d-d53a-0c6b-f325" hidden="false">
       <description>Equipment with the Flatbed rule:
@@ -5035,6 +5079,87 @@ You may only have one Mobility Upgrade.</description>
     <rule name="Half-Tracked" id="1255-4876-4d98-7578" hidden="false">
       <description>Mobility Parts with the Half-Tracked rule:
 Destroys Light Cover when moving through it.</description>
+    </rule>
+    <rule name="Back(Type)" id="c879-1730-10ce-f372" hidden="false">
+      <description>Rüstung Back Upgrades:
+May only be equipped on Rüstung with the Back rule.</description>
+    </rule>
+    <rule name="Arm(Type)" id="2b87-159c-acef-661c" hidden="false">
+      <description>Rüstung Arm Upgrades:
+May only be equipped on Rüstung with the Arm rule.</description>
+    </rule>
+    <rule name="Chest(Type)" id="ee5e-d16d-f509-e219" hidden="false">
+      <description>Rüstung Chest Upgrades:
+May only be equipped on Rüstung with the Chest rule.</description>
+    </rule>
+    <rule name="Car(Type)" id="c473-a011-004f-364b" hidden="false">
+      <description>Car Chassis:
+Must be equipped with a Vehicle Mobility Part.
+May take the Forward Pintle Mount and 360 Pintle Mount.</description>
+    </rule>
+    <rule name="Combat Drug(Type)" id="db1b-b5e6-d459-1431" hidden="false">
+      <description>Combat Drug Equipment:
+Does not take up a slot in a Uniform</description>
+    </rule>
+    <rule name="Düsenhuber(Type)" id="8f9a-4fa5-9d74-ec26" hidden="false">
+      <description>Hovercraft Mobility with the Düsenhuber type:
+Grant a -1 to all shooting rolls done by passengers and crew of the vehicle it is equipped to.
+Additionally, if the Düsenhuber has moved in its most recent turn, all units targeting the Vehicle have -2 to target it unless their weapon has the Flak rule.
+
+
+Hovercraft Chassis with the Düsenhuber type:
+Must be equipped with a Hovercraft Mobility with the Düsenhuber type.
+May be equipped with a Hovercraft Weapon Mount. 
+May not be ridden unless the rider has equipment with the Exosuit type.
+May not be crewed if the model has equipment with the Exoframe type.
+</description>
+    </rule>
+    <rule name="Exoframe(Type)" id="c6f8-164f-4900-098a" hidden="false">
+      <description>Exoframes:
+Change the wearing Infantry’s model type to Rüstung.
+Allow the model to wield Heavy weapons as Primary, Primary as Sidearms, and Light Panzer weapons as Heavy.</description>
+    </rule>
+    <rule name="Glider(Type)" id="00b6-4ff1-ceae-6b01" hidden="false">
+      <description>Glider Aircraft:
+Cannot be equipped with Airplane Mobility but may equip an Airplane Weapon if applicable. 
+May also be towed by a Fighter.</description>
+    </rule>
+    <rule name="Fighter(Type)" id="a962-6afe-7893-1940" hidden="false">
+      <description>Fighter Aircraft:
+Must be equipped with Airplane Mobility and Airplane Weapon</description>
+    </rule>
+    <rule name="Grenade(Type)" id="ca9f-8287-78d0-ecf3" hidden="false">
+      <description>Grenade Equipment: 
+May be used to make a shooting attack.
+Do not have to be currently equipped in hands to do so</description>
+    </rule>
+    <rule name="Head(Type)" id="364f-a2f7-f5e3-da95" hidden="false">
+      <description>Rüstung Head Upgrades:
+May only be equipped on Rüstung with the Head rule.</description>
+    </rule>
+    <rule name="Hover(Land)" id="3d3f-0df1-cabe-bae3" hidden="false">
+      <description>Mobility Parts with the Hover(Land) rule:
+May move over cover if it is 3” tall or less.
+Does not damage Cover when moving over it in this way.</description>
+    </rule>
+    <rule name="Leg(Type)" id="7df9-5990-b20a-41c7" hidden="false">
+      <description>Rüstung Leg Upgrades:
+May only be equipped on Rüstung with the Leg rule.</description>
+    </rule>
+    <rule name="Hovercraft Weapon Mount" id="2c55-a39c-acf6-6fe6" hidden="false">
+      <description>Hovercraft Weapon Mounts:
+May be equipped with a type of equipment detailed in their profile</description>
+    </rule>
+    <rule name="Hover(Type)" id="1808-596f-8502-f39b" hidden="false">
+      <description>Hover Aircraft:
+May stop moving midflight and hold position.
+Incur a -1 to all shooting done by all passengers if it has moved in the turn it attempts an attack.
+Additionally:
+Enemy Units that target Hover Aircraft with a shooting attack incur a -2 penalty if it has moved in it’s previous turn.</description>
+    </rule>
+    <rule name="Jet(Type)" id="0226-ad85-f445-62fe" hidden="false">
+      <description>Jet Aircraft:
+May move anywhere from half to full movement if they are not Crash Landing.</description>
     </rule>
   </sharedRules>
 </gameSystem>
