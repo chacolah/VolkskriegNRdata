@@ -4386,7 +4386,7 @@ May only be equipped with Medium or Heavy Panzer Weapons.</description>
     </rule>
     <rule name="Airborne(Infantry Model)" id="f865-3cee-7041-cc2b" hidden="false">
       <description>Models with this rule:
-May paradrop onto the battlefield during deployment, so long as they have an Aircraft, Hover, Hovercraft, or Glider vehicle that can transport them.</description>
+May paradrop onto the battlefield during deployment, so long as they have an Aircraft, Himmelschloss, Hover, Hovercraft, or Glider vehicle that can transport them.</description>
     </rule>
     <rule name="Airborne(Multipart Equipment)" id="dff0-b2a6-1d68-28e4" hidden="false">
       <description>Multipart Equipment with this rule:
@@ -4561,7 +4561,7 @@ Give the Exomod rule to the equipped weapon</description>
     </rule>
     <rule id="2825-472b-62cb-7bbc" name="Explosive" hidden="false">
       <description>Equipment with this rule:
-Destroy equipment dropped by infantry they down that lack an Armour value.</description>
+Destroy equipment dropped by infantry that are downed by this equipment, if the equipment does not have an armor value.</description>
     </rule>
     <rule id="9b94-3787-34f1-61bb" name="Flak" hidden="false">
       <description>Equipment with this rule:
@@ -5092,10 +5092,10 @@ May only be equipped on Rüstung with the Arm rule.</description>
       <description>Rüstung Chest Upgrades:
 May only be equipped on Rüstung with the Chest rule.</description>
     </rule>
-    <rule name="Car(Type)" id="c473-a011-004f-364b" hidden="false">
-      <description>Car Chassis:
+    <rule name="Truck(Type)" id="c473-a011-004f-364b" hidden="false">
+      <description>Truck Vehicles:
 Must be equipped with a Vehicle Mobility Part.
-May take the Forward Pintle Mount and 360 Pintle Mount.</description>
+May be upgraded with Truck Upgrades.</description>
     </rule>
     <rule name="Combat Drug(Type)" id="db1b-b5e6-d459-1431" hidden="false">
       <description>Combat Drug Equipment:
@@ -5111,8 +5111,7 @@ Hovercraft Chassis with the Düsenhuber type:
 Must be equipped with a Hovercraft Mobility with the Düsenhuber type.
 May be equipped with a Hovercraft Weapon Mount. 
 May not be ridden unless the rider has equipment with the Exosuit type.
-May not be crewed if the model has equipment with the Exoframe type.
-</description>
+May not be crewed if the model has equipment with the Exoframe type.</description>
     </rule>
     <rule name="Exoframe(Type)" id="c6f8-164f-4900-098a" hidden="false">
       <description>Exoframes:
@@ -5160,6 +5159,11 @@ Enemy Units that target Hover Aircraft with a shooting attack incur a -2 penalty
     <rule name="Jet(Type)" id="0226-ad85-f445-62fe" hidden="false">
       <description>Jet Aircraft:
 May move anywhere from half to full movement if they are not Crash Landing.</description>
+    </rule>
+    <rule name="Car(Type)" id="d87b-bcae-79b6-33bc" hidden="false">
+      <description>Car Chassis:
+Must be equipped with a Vehicle Mobility Part.
+May take the Forward Pintle Mount and 360 Pintle Mount.</description>
     </rule>
   </sharedRules>
 </gameSystem>
