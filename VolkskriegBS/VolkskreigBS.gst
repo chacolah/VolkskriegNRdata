@@ -5092,10 +5092,10 @@ May only be equipped on Rüstung with the Arm rule.</description>
       <description>Rüstung Chest Upgrades:
 May only be equipped on Rüstung with the Chest rule.</description>
     </rule>
-    <rule name="Truck(Type)" id="c473-a011-004f-364b" hidden="false">
-      <description>Truck Vehicles:
-Must be equipped with a Vehicle Mobility Part.
-May be upgraded with Truck Upgrades.</description>
+    <rule name="Truckbed(10,1)" id="c473-a011-004f-364b" hidden="false">
+      <description>Vehicles with this rule:
+May carry either: (x,-) infantry models or (-,y) Towed Weapon Mounts on their truck bed.
+If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons with the Setup rule may be fired from the truck bed. The crew of a Towed Weapon Mount does not count toward this cap and may ride alongside the weapon they crew.</description>
     </rule>
     <rule name="Combat Drug(Type)" id="db1b-b5e6-d459-1431" hidden="false">
       <description>Combat Drug Equipment:
@@ -5164,6 +5164,11 @@ May move anywhere from half to full movement if they are not Crash Landing.</des
       <description>Car Chassis:
 Must be equipped with a Vehicle Mobility Part.
 May take the Forward Pintle Mount and 360 Pintle Mount.</description>
+    </rule>
+    <rule name="Truck(Type)" id="d0fe-e55f-2c1f-fdd7" hidden="false">
+      <description>Truck Vehicles:
+Must be equipped with a Vehicle Mobility Part.
+May be upgraded with Truck Upgrades.</description>
     </rule>
   </sharedRules>
 </gameSystem>
