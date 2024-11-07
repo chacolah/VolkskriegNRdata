@@ -1225,8 +1225,61 @@
         <entryLink import="true" name="Rüstung Weapons" hidden="false" id="a35f-b61b-2ff0-1cc2" type="selectionEntryGroup" targetId="f4bd-58c2-e0c3-a665"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Power Sources" id="e11f-3da3-396d-00c2" hidden="false"/>
-    <selectionEntryGroup name="Armour Platings" id="6de1-d553-8767-0740" hidden="false"/>
+    <selectionEntryGroup name="Power Sources" id="e11f-3da3-396d-00c2" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blitzleitunmotor-60" hidden="false" id="4f64-9943-410e-04fa">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="false" id="667d-ccfb-63cd-a2b3">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blitzleitunmotor-56" hidden="false" id="2a97-2fcb-c4fd-87ff">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Armour Platings" id="6de1-d553-8767-0740" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="e29b-068a-c798-9c10">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Schwerer Panzerung" hidden="true" id="219b-0a34-808e-aeeb">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="45"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
     <selectionEntryGroup name="Drohne" id="a259-84b1-60c2-b435" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Funkbiene Ausf C “Wespe”" hidden="true" id="ba26-a493-57e2-40fd">
@@ -1289,10 +1342,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -1305,10 +1364,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -1322,9 +1387,15 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -1337,10 +1408,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -1358,10 +1435,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -1374,10 +1457,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -1392,11 +1481,43 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="7.5cm Kampfwagenkanone" hidden="true" id="e404-ff8f-5ca2-5915">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="165"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1421,11 +1542,25 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="350"/>
           </costs>
+          <modifiers>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="17cm Kampfwagenkanone" hidden="true" id="2c28-3ce9-3f44-2ee9">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="450"/>
           </costs>
+          <modifiers>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1676,6 +1811,17 @@
                   <costs>
                     <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1688,16 +1834,49 @@
                   <costs>
                     <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Flat Car" hidden="true" id="7324-eae7-bcc5-85a4">
                   <costs>
                     <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Passenger Car" hidden="true" id="e218-6488-b037-4fc5">
                   <costs>
                     <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -1707,6 +1886,17 @@
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
@@ -1805,6 +1995,7 @@
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
@@ -1821,6 +2012,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -2259,6 +2451,11 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
@@ -2276,6 +2473,11 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
@@ -2289,26 +2491,81 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="145"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flammpanzer 38" hidden="true" id="b537-2eac-6912-ba65">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="525"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="SdKfz. 251" hidden="true" id="20a8-fd29-1b6b-309b">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="290"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Type 82 Kubelwagen" hidden="true" id="1c41-22c8-5280-9e06">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="185"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="PzKPFw II “Luchs”" hidden="true" id="1949-4270-db04-2d5e">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="425"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="PzJäger “Wanze”" hidden="true" id="9a10-87e6-960f-2c2c">
           <costs>
@@ -2319,16 +2576,49 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="575"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="StuG III Ausf. G" hidden="true" id="83b1-de2d-08d4-896d">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="625"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="PzKpfw III" hidden="true" id="9571-b1e0-438f-70ce">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="525"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -2882,6 +3172,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -2899,6 +3190,17 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="false" id="95aa-e12c-4f60-c55a"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2987,6 +3289,22 @@
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="self" shared="false" id="9aea-9b5f-6428-40a6"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Zimmermit" hidden="true" id="5ee1-3a9d-e0f8-3c78">
                   <costs>
@@ -2995,6 +3313,22 @@
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="self" shared="false" id="e3d9-ce6f-a635-9a5c"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <modifiers>
@@ -3059,6 +3393,17 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="false" id="00f4-e4b6-7450-7ed1"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Düsenruck" hidden="true" id="e1fd-2399-26d9-bd4d">
           <costs>
@@ -3110,6 +3455,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -3136,6 +3482,22 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
           </costs>
+          <modifiers>
+            <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -3209,6 +3571,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -3225,6 +3588,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -3236,6 +3600,17 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="110"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -3277,6 +3652,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -3324,6 +3700,17 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fock-Wulf Überfliegen-27" hidden="true" id="5559-0cf5-6510-4a02">
           <costs>
@@ -3339,6 +3726,17 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="110"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -3357,6 +3755,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -3373,6 +3772,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -3598,10 +3998,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3609,11 +4015,43 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="210"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="E-50 &quot;Tiger&quot;" hidden="true" id="afdd-ed17-e25a-0103">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="260"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3667,10 +4105,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3678,6 +4122,17 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -3708,10 +4163,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3724,10 +4185,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3735,38 +4202,48 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="SpinnenPanzerFabrik Spinnenaktuator 58 “Nädelbiene”" hidden="true" id="497d-477b-2817-69a0">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="210"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Panzer Mobility Upgrades" id="42a9-9edc-5f30-300d" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Uparmoured Mobility" hidden="true" id="02b2-78d8-e152-60b7">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="361d-154b-ae4e-cafa"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Panzer Mobility Upgrades" hidden="false" id="d1e3-73d1-c590-6d94" type="selectionEntryGroup" targetId="42a9-9edc-5f30-300d"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Turret" id="0966-4bd1-1db8-a943" hidden="false">
       <selectionEntries>
@@ -3784,10 +4261,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
           <entryLinks>
@@ -3798,29 +4281,42 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Artillery Carriage" hidden="true" id="084f-ac77-c47a-c434">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
           </costs>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="any" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3833,10 +4329,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3852,6 +4354,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="or">
@@ -3864,6 +4367,11 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Platform" hidden="true" id="a302-a032-02a8-d3a1">
@@ -3875,10 +4383,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3891,10 +4405,16 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3902,134 +4422,9 @@
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ee9-ba80-cac8-7798"/>
       </constraints>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Panzer Turret Upgrades" id="f974-c286-9d14-e1f6" hidden="false">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2aab-0400-e647-7a4c"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hull Mount" hidden="true" id="e410-925c-ed2d-e5c9">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Heavy Weapons" hidden="false" id="615f-59df-2ba0-b60f" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a08-ed36-3dcb-9129" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Up-Armoured Turret" hidden="true" id="a9e8-221c-b8e9-b8ef">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Zwitterling Upgrade" hidden="true" id="000d-26bd-eab0-24b1">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="65a0-fd96-15af-e0b7" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Vierling Upgrade" hidden="true" id="e2f1-0d63-ea03-4ee1">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="65a0-fd96-15af-e0b7" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Coaxial Mount" hidden="true" id="1ddf-c8f5-2fd6-f0b0">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-              </costs>
-              <entryLinks>
-                <entryLink import="true" name="Heavy Weapons" hidden="false" id="bdec-ce9f-116a-679c" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a20-a710-522b-69b2" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Topfblende/Saukopf Mantlet" hidden="true" id="e5c7-6e22-401d-d6a3">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b255-6c06-a35a-0879" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Panzer Turret Upgrades" hidden="false" id="2220-a098-ff0e-309f" type="selectionEntryGroup" targetId="f974-c286-9d14-e1f6"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Vehicle Chassis" id="1a77-4918-f32e-5dfb" hidden="false">
       <selectionEntries>
@@ -4042,12 +4437,19 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Multipart Equipment" hidden="false" id="932c-e771-f4b1-0e99" targetId="5020-e810-c95a-b39d" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Leichter Panzerspähwagen" hidden="true" id="0872-2ea5-dacb-5b6b">
           <costs>
@@ -4059,16 +4461,64 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
+          <categoryLinks>
+            <categoryLink name="Multipart Equipment" hidden="false" id="352f-c29e-c5c6-5719" targetId="5020-e810-c95a-b39d" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Schützen Panzerspähwagen" hidden="true" id="1f6a-f29f-89ef-723a">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="175"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Multipart Equipment" hidden="false" id="376f-081b-3adb-c785" targetId="5020-e810-c95a-b39d" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Opel Blitz" hidden="true" id="9243-8acc-a029-ce71">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Multipart Equipment" hidden="false" id="e3e8-5849-1db2-be8b" targetId="5020-e810-c95a-b39d" primary="false"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4308,6 +4758,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4318,6 +4769,17 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Junkers Uberfliegen 59 “Düsenkubel”" hidden="true" id="73d0-e98b-de28-c484">
           <costs>
@@ -4344,6 +4806,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -4353,12 +4816,218 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Vehicle Mobility Upgrades" id="c508-bf6c-4dfb-12c2" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="true" id="d6d1-6b4b-3896-3637"/>
-          </selectionEntries>
-        </selectionEntryGroup>
+        <selectionEntryGroup name="Vehicle Mobility Upgrades" id="c508-bf6c-4dfb-12c2" hidden="false"/>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Contract" id="748e-981c-24f1-1c02" hidden="false"/>
+    <selectionEntryGroup name="Panzer Mobility Upgrades" id="42a9-9edc-5f30-300d" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Uparmoured Mobility" hidden="true" id="02b2-78d8-e152-60b7">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="361d-154b-ae4e-cafa"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Panzer Turret Upgrades" id="f974-c286-9d14-e1f6" hidden="false">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2aab-0400-e647-7a4c"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hull Mount" hidden="true" id="e410-925c-ed2d-e5c9">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Weapons" hidden="false" id="615f-59df-2ba0-b60f" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a08-ed36-3dcb-9129" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Up-Armoured Turret" hidden="true" id="a9e8-221c-b8e9-b8ef">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Zwitterling Upgrade" hidden="true" id="000d-26bd-eab0-24b1">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="65a0-fd96-15af-e0b7" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Vierling Upgrade" hidden="true" id="e2f1-0d63-ea03-4ee1">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="65a0-fd96-15af-e0b7" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Coaxial Mount" hidden="true" id="1ddf-c8f5-2fd6-f0b0">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Weapons" hidden="false" id="bdec-ce9f-116a-679c" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a20-a710-522b-69b2" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Topfblende/Saukopf Mantlet" hidden="true" id="e5c7-6e22-401d-d6a3">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b255-6c06-a35a-0879" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
