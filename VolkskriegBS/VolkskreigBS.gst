@@ -2426,6 +2426,11 @@
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Huot Automatic Rifle Kit" hidden="true" id="8819-504d-22d9-c1a1">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Weapon Upgrades" id="5c5a-b887-68a9-27a6" hidden="false">
@@ -2781,6 +2786,16 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bren Light Machine Gun MKIV*" hidden="true" id="c444-46e3-a85f-a6e4">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Boys AT Rifle MKII*" hidden="true" id="d75e-0785-0d44-b90e">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="unit" shared="true" id="b434-cfea-e3ce-7608" percentValue="true"/>
@@ -3000,6 +3015,31 @@
           </modifiers>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rifle, Short Ross-Garand" hidden="true" id="98b9-a718-c2c3-8faf">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ross MKIV*" hidden="true" id="48f0-d516-70c6-09fc">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sten Submachine Gun MKVI*" hidden="true" id="d6d5-9d47-96ab-743b">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="23"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sten Submachine Gun MKV**" hidden="true" id="2a3d-09fc-05fb-da5d">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sterling Submachine Gun MKIII" hidden="true" id="755c-742d-82b8-fc64">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5839,5 +5879,6 @@ May take the Forward Pintle Mount and 360 Pintle Mount.</description>
 Must be equipped with a Vehicle Mobility Part.
 May be upgraded with Truck Upgrades.</description>
     </rule>
+    <rule name="Surplus" id="5705-4637-2b89-5c53" hidden="false"/>
   </sharedRules>
 </gameSystem>
