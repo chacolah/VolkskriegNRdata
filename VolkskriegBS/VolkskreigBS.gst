@@ -779,6 +779,7 @@
           <entryLinks>
             <entryLink id="ad90-4be2-b7f3-b236" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
             <entryLink id="ddcd-50e6-adc6-d773" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="144d-6271-6189-1683" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
@@ -808,6 +809,7 @@
           <entryLinks>
             <entryLink id="b83e-7578-84bf-5dfe" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
             <entryLink id="f244-fdcf-16bf-bf14" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="db1e-0843-68ad-391a" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
@@ -860,6 +862,7 @@
           <entryLinks>
             <entryLink id="b555-c733-6197-eac8" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
             <entryLink id="d1e5-1639-b794-6311" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="459e-198a-83b5-973b" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
@@ -889,6 +892,7 @@
           <entryLinks>
             <entryLink id="08c7-546b-b016-3fab" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
             <entryLink id="c34b-745a-b038-e61c" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="95e0-8d1b-3668-24e1" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
@@ -931,6 +935,7 @@
           <entryLinks>
             <entryLink id="1b3d-23db-fb34-55ab" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
             <entryLink id="2fb6-5c39-3982-9354" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="d057-75b1-7a26-80b1" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
@@ -960,6 +965,7 @@
           <entryLinks>
             <entryLink id="e8ae-0851-54da-f82f" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
             <entryLink id="9b4a-ad9a-b943-bcd1" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="d711-84a9-36e5-acc3" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
@@ -989,6 +995,7 @@
           <entryLinks>
             <entryLink id="9d68-da78-af81-e5d0" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
             <entryLink id="e0c0-4e26-a26a-905c" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="4104-d034-6556-2168" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
@@ -1029,6 +1036,7 @@
           <entryLinks>
             <entryLink id="b6a1-f76b-80dd-4913" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
             <entryLink id="a3e9-5013-8213-1ce4" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="b1c5-950d-d5d0-67e6" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
@@ -1054,6 +1062,7 @@
           <entryLinks>
             <entryLink id="ba37-b0b5-abf5-907a" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
             <entryLink id="a7e9-76ab-7eca-3e65" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="22cb-b452-eff0-ab4a" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="2"/>
@@ -1094,6 +1103,7 @@
           <entryLinks>
             <entryLink id="999b-d5a0-02ea-2738" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
             <entryLink id="e5f6-166e-33fd-641f" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
+            <entryLink import="true" name="Armour" hidden="false" id="4ef6-60e1-c641-db9c" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
           </entryLinks>
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
@@ -1131,9 +1141,6 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Armour" hidden="false" id="459e-198a-83b5-973b" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
-      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d989-b48f-e6ca-0175" name="Backpack Equipment" hidden="false" collective="false" import="true">
       <selectionEntries>
@@ -1141,6 +1148,33 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
           </costs>
+          <profiles>
+            <profile name="Astrolite Smock" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="d878-630e-d7a6-9f87">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Backpack</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Mechanic&apos;s Toolkit" hidden="false" id="8b90-855d-f3a8-4b47">
           <costs>
@@ -1248,11 +1282,51 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
           </costs>
+          <profiles>
+            <profile name="Emergency Repair Kit" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1bca-113a-9bf8-6ac7">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Tool</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Repair(2,+2)" id="bb8b-1f0a-4f8a-a81b" hidden="false" type="rule" targetId="486e-b2a6-863f-00c1"/>
+            <infoLink name="Consumable" id="2f0d-b7ab-ef44-e043" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="First Aid Kit" hidden="false" id="415b-257e-0f2b-722a">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Consumable" id="88fb-cec5-ef4e-1e6f" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
+            <infoLink name="Treatment(2,+2)" id="48f4-174a-69ef-aadb" hidden="false" type="rule" targetId="7c78-20cf-fbc3-f771"/>
+          </infoLinks>
+          <profiles>
+            <profile name="First Aid Kit" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="ef29-0d34-92d4-1e77">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Tool</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Pervitin Ration" hidden="false" id="995d-91a2-ed61-1ac6">
           <costs>
@@ -1271,6 +1345,48 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Pervitin Ration" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1354-89d1-b36e-85a5">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Combat Drug</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Consumable" id="f445-fe5f-1d78-c85c" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
+            <infoLink name="Addiction(2+)" id="4062-73b8-d575-171a" hidden="false" type="rule" targetId="464e-c9e9-f0df-8c72"/>
+            <infoLink name="Stimulant(1)" id="d91b-6e8d-c73e-a9b5" hidden="false" type="rule" targetId="2f65-4899-404b-0d3f"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Schutzschild 55" hidden="true" id="6032-c575-bed5-bbab">
+          <profiles>
+            <profile name="Schutzschild 55" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="476f-70ad-7795-6c75">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+5</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9611-3a05-00c4-2372" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -1597,6 +1713,26 @@
           <entryLinks>
             <entryLink import="true" name="Animal Equipment" hidden="false" id="3109-0333-79f7-d874" type="selectionEntryGroup" targetId="8031-0e27-ee07-ea27"/>
           </entryLinks>
+          <profiles>
+            <profile name="Attack Dog" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="5fcd-df98-7316-8c54">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">9&quot;</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">2&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+6</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">1</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Animal</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Beast(Model)" id="3de6-98f4-8459-13b3" hidden="false" type="rule" targetId="5efc-90b0-0dc8-59ac"/>
+            <infoLink name="Maul" id="6a1c-ff69-e200-07e0" hidden="false" type="rule" targetId="383e-df0e-7995-ac4e"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="unit" import="true" name="Horse" hidden="true" id="8498-cf7a-983d-94dc">
           <costs>
@@ -1624,6 +1760,25 @@
           <entryLinks>
             <entryLink import="true" name="Animal Equipment" hidden="false" id="4949-ac0d-3bbf-07d5" type="selectionEntryGroup" targetId="8031-0e27-ee07-ea27"/>
           </entryLinks>
+          <profiles>
+            <profile name="Horse" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1544-6f70-faea-17d0">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">12&quot;</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/1</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">12</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Animal</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Mount" id="25d7-2f64-865a-6377" hidden="false" type="rule" targetId="6223-817c-f736-a7a4"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -1934,6 +2089,7 @@
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="1154-bcd0-320d-6ce3" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+            <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="24af-0307-2c76-461c" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3a-b666-b28e-fccb"/>
@@ -1993,6 +2149,7 @@
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="7e43-009b-590b-f027" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+            <entryLink import="true" name="Ordnance(37x249)" hidden="false" id="c688-38f0-ef74-0a41" type="selectionEntryGroup" targetId="9f60-cb3f-23ef-1e6c"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0255-bcf1-caed-3464"/>
@@ -2051,6 +2208,7 @@
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="6569-0631-f5d2-ff58" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+            <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="727e-ec6e-15b4-8e84" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7617-541b-fae7-d675"/>
@@ -2110,6 +2268,7 @@
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="2787-be43-7415-0063" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+            <entryLink import="true" name="Ordnance(37x249)" hidden="false" id="874c-0917-5a66-f7cd" type="selectionEntryGroup" targetId="9f60-cb3f-23ef-1e6c"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e830-3b5e-0dbc-da9e"/>
@@ -2141,6 +2300,7 @@
           </costs>
           <entryLinks>
             <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="9deb-8d6b-68ad-ef68" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+            <entryLink import="true" name="Ordnance(88mmR Raketen)" hidden="false" id="ee0a-46bc-33ec-8670" type="selectionEntryGroup" targetId="d05b-3125-1324-17c9"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef13-feee-ecda-e2b8"/>
@@ -2190,6 +2350,7 @@
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="ffac-df03-1988-6b3f" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+            <entryLink import="true" name="Ordnance(30x90RB)" hidden="false" id="96a3-3191-786b-6a8e" type="selectionEntryGroup" targetId="1524-2ee1-ee20-237d"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e27-9df8-c4e8-7fc0"/>
@@ -2520,6 +2681,22 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
           </costs>
+          <profiles>
+            <profile name="Armoured Tack" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="116b-e8df-e5b1-2831">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Mount</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Hundsrüstung Ausf. A “Blondi”" hidden="true" id="b5da-e485-a16d-c366">
           <modifiers>
@@ -2544,6 +2721,22 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
           </costs>
+          <profiles>
+            <profile name="Hundsrüstung Ausf. A “Blondi”" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0cd8-0218-a13c-abe3">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+1&quot;</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">+3</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Beast</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Astrolite Horse Tack" hidden="true" id="a0f8-bd46-99f7-a54f">
           <modifiers>
@@ -2565,10 +2758,29 @@
             </modifier>
           </modifiers>
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
           </costs>
+          <profiles>
+            <profile name="Astrolite Horse Tack" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="f5ac-13cb-b8de-5306">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">15</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Mount</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7045-33e8-6fd9-3962"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Trains" id="059a-ee15-ceed-7fae" hidden="false">
       <selectionEntries>
@@ -2825,319 +3037,6 @@
           </modifiers>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Ordnance" id="a184-0bff-6c1e-c269" hidden="false">
-      <selectionEntryGroups>
-        <selectionEntryGroup name="128x869R" id="9f17-cb2c-326e-1c1a" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="128x869R(HE)" hidden="true" id="5b39-dae1-1b41-0fa7">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="170mmSC" id="cae0-6958-7467-ca5b" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="170mmSC(HE)" hidden="true" id="b7e1-b229-f756-ecf5">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="20x138B" id="9d63-d028-84de-2850" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="20x138B(Flak)" hidden="true" id="4d1c-a52b-b4ee-59c5">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="20x138B(HE)" hidden="true" id="7bbf-a499-e455-31ce">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="30cm Raketen" id="1f7e-c361-836a-fb47" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="30cm Raketen" hidden="true" id="ed86-94b6-1590-21d9">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="88x822R" id="903a-6368-8ff3-a3ae" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="88x822R(HE)" hidden="true" id="45eb-127f-773a-3644">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="20mmR" id="978e-093f-f659-911b" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="20mmR(Flak)" hidden="true" id="1a52-f4b8-842d-589c">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="30x90RB" id="e7d2-0e26-1586-aa22" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="30x90RB(HE)" hidden="true" id="d56c-ed4e-5d57-2f5e">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="37x249" id="b32c-abe8-2007-8e8c" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="37x249(HE)" hidden="true" id="c96e-5958-1b6b-741c">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="75x714R" id="77a8-57dd-806a-3b3f" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="75x714R(HE)" hidden="true" id="ea0c-3e7b-71a2-8f7b">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="88mmR Raketen" id="8495-7d01-8f34-537b" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="88mmR Raketen(HEAT)" hidden="true" id="5f00-c517-0718-17ae">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Rifle Grenade" id="95c2-f8f7-9372-f9e4" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HHL)" hidden="true" id="4033-8565-389a-f39c">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HE)" hidden="true" id="a304-8a2b-04f4-b470">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HE+)" hidden="true" id="14a8-dc80-bfb6-1649">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HEAT)" hidden="true" id="a278-a5e3-6579-7327">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Rifle Grenade(Smoke)" hidden="true" id="999b-f95f-7d0c-9b52">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="StuP Grenade" id="9198-5014-77ea-04c2" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="StuP Grenade(HE)" hidden="true" id="5c37-d633-6ec7-d7c0">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="StuP Grenade(HEAT)" hidden="true" id="a5b1-0392-1ed3-d844">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="13"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="StuP Grenade(Smoke)" hidden="true" id="d327-0b9c-8f44-d6b5">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="7"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="37mm Shell" id="13cf-f090-506c-8a18" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="37mm Shell, Smoke" hidden="false" id="692c-2085-4270-8a3e">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="3"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="37mm Shell, HE" hidden="false" id="4e52-6cbb-ba3b-0a14">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="3"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Blitz Cylinder" id="086a-db81-e7a4-2dd3" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="General Electric “Zippy” Recharging Cylinder" hidden="false" id="f775-9a86-93ca-d97c">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup name="Weapon Upgrades" id="d392-edda-29f7-df9e" hidden="false">
       <selectionEntries>
@@ -3772,6 +3671,30 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94d8-87e7-62f8-8cb7"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Breda M30 / l.MG 098(i)" hidden="true" id="183d-8937-d79e-e830" collective="false">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d474-d97e-4176-573b"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Breda M30B / l.MG 098(i) Ausf. B" hidden="true" id="ffb5-2d25-59e4-a61f" collective="false">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1258-74c2-2a59-e785"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lanciafiamme Spelleggiato Modello 35" hidden="true" id="c7dc-29fa-85d1-1ee8" collective="false">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f8-a6a7-4f0f-f5d7"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <constraints>
         <constraint type="min" value="0" field="selections" scope="unit" shared="true" id="b434-cfea-e3ce-7608" percentValue="true"/>
@@ -3804,6 +3727,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ece-d639-e4e4-2bc0"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Underslung" id="887c-31f1-8afd-99f4" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Muzzle" id="f7a7-5a93-09e9-e9fd" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Sight" id="2e0e-96c6-3f9c-99ff" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Volksssturmgewehr-60" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2ebb-0135-f80a-dead">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maschinenpistole-55" hidden="true" id="e73c-b8c7-9dbc-01f1" collective="false">
           <modifiers>
@@ -3828,6 +3772,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3193-e5e1-69cb-0413"/>
           </constraints>
+          <profiles>
+            <profile name="Maschinenpistole-55" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="189b-68b0-b599-eeaf">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sight" id="4dbc-7338-440a-2585" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+            <infoLink name="Muzzle" id="7ff5-37ce-48ba-6851" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maschinenpistole-49" hidden="true" id="c57d-c56f-5441-2714" collective="false">
           <modifiers>
@@ -3854,6 +3818,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e089-83d5-fcfa-b2e6"/>
           </constraints>
+          <profiles>
+            <profile name="Maschinenpistole-49" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9f62-4f74-031c-6e8d">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Surplus" id="53ed-4eeb-8efa-7b4e" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+            <infoLink name="Muzzle" id="24b3-1f88-5f0e-76fe" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maschinenkarabiner-55" hidden="true" id="5173-7b1f-e523-d07c" collective="false">
           <costs>
@@ -3869,6 +3853,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1016-5677-aaae-5634"/>
           </constraints>
+          <profiles>
+            <profile name="Maschinenkarabiner-55" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="38cd-c532-4a4c-ea64">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Underslung" id="ce4a-1c6a-0aa9-d477" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Sight" id="bf92-3c4c-9634-8ea1" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+            <infoLink name="Muzzle" id="6a6e-0bf6-56a8-2b61" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Karabiner-98m" hidden="false" id="4b4c-74ef-eadf-f5c3" collective="false">
           <modifiers>
@@ -3885,14 +3890,55 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17f4-fec7-ef7b-697f"/>
           </constraints>
+          <profiles>
+            <profile name="Karabiner-98m" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="ec23-0a43-21d1-bb56">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Surplus" id="3b06-cff6-b33e-3b7e" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+            <infoLink name="Sight" id="26ae-657f-4564-dfaa" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+            <infoLink name="Underslung" id="136a-7676-0746-eaff" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Muzzle" id="919a-04c1-efed-2f34" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="M1917 Browning Automatic Rifle" hidden="true" id="5701-bfae-cfac-792e" collective="false">
+        <selectionEntry type="upgrade" import="true" name="M1903 Springfield Rifle" hidden="true" id="5701-bfae-cfac-792e" collective="false">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7304-e892-71f1-5688"/>
           </constraints>
+          <profiles>
+            <profile name="M1903 Springfield Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="bea7-fc98-5971-0132">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sight" id="082b-9b99-e380-37bf" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="General Electric M1959 Amplified Light Rifle" hidden="true" id="ea2a-0fdb-ab48-950f" collective="false">
           <costs>
@@ -3901,6 +3947,33 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6148-639f-d1ac-a995"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Underslung" id="9942-8408-073f-1036" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Energy(3)" id="00d5-d693-8a01-a010" hidden="false" type="rule" targetId="1001-264b-a327-2bf2"/>
+            <infoLink name="Ordnance(Blitz Cylinder)" id="0737-30c8-d350-a3b0" hidden="false" type="rule" targetId="c2a6-35a6-a1e2-384e"/>
+            <infoLink name="Piercing(2)" id="d72f-f2f2-8bac-d520" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
+            <infoLink name="Reload(1,1)" id="dce8-5824-2f43-b1e6" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+            <infoLink name="Sight" id="8150-d228-7044-5e48" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="General Electric M1959 Amplified Light Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="8431-bb8a-d29b-8079">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">8</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(Blitz Cyinder)" hidden="false" id="616e-9d7d-d83c-e342" type="selectionEntryGroup" targetId="645b-4c17-563a-1542"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="M1939 Johnson Semi Auto Rifle" hidden="true" id="fbea-06fe-595f-4988" collective="false">
           <costs>
@@ -3909,6 +3982,25 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95ae-3f62-b41c-5530"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Underslung" id="57f8-f743-cd0f-1157" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="M1939 Johnson Semi Auto Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2ff8-f16f-1b52-5bc3">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="GM M1944 Hyde Machine Gun" hidden="true" id="d246-ddfe-a1b5-b8e1" collective="false">
           <costs>
@@ -3917,6 +4009,22 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c0-51e4-4549-ca75"/>
           </constraints>
+          <profiles>
+            <profile name="GM M1944 Hyde Machine Gun" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="a2cb-c928-8680-c51d">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Gewehr-55 (Gustloff)" hidden="true" id="47e4-9a78-ced8-0cf1" collective="false">
           <modifiers>
@@ -3936,6 +4044,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3d4-e4dd-4db4-4181"/>
           </constraints>
+          <profiles>
+            <profile name="Gewehr-55 (Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0ad2-c7d3-25fe-12a7">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Muzzle" id="fb1f-74b4-c9b5-9447" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Sight" id="11ae-55da-e62a-6419" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Gewehr-55 (Walther)" hidden="true" id="d183-51fb-ae7c-295c" collective="false">
           <costs>
@@ -3944,6 +4072,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34ce-4613-c5bb-0c0c"/>
           </constraints>
+          <profiles>
+            <profile name="Gewehr-55 (Walther)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="de61-c9e9-044e-4eb6">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sniper" id="fad6-81ec-5d5f-08ae" hidden="false" type="rule" targetId="010c-d754-414f-6102"/>
+            <infoLink name="Sight" id="5f11-6d32-200d-53da" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+            <infoLink name="Muzzle" id="67b0-88ec-f17f-3bfe" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fallschimjägergewehr-56" hidden="true" id="1167-a795-6890-c22d" collective="false">
           <modifiers>
@@ -3963,6 +4112,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb3a-d592-d4a4-10e2"/>
           </constraints>
+          <profiles>
+            <profile name="Fallschimjägergewehr-56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="c856-9d68-8a9c-b7b9">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sight" id="c868-ea48-b279-e03d" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+            <infoLink name="Bipod(1)" id="0f43-fa6c-0006-0075" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+            <infoLink name="Muzzle" id="d856-d40a-c6f0-4865" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="870 Shotgun" hidden="true" id="6249-666c-5083-d21e" collective="false">
           <costs>
@@ -3971,14 +4141,52 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="510a-26ce-4d0e-65a7"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Reload(1,6)" id="73a9-5da3-9fa1-0ebc" hidden="false" type="rule" targetId="a65e-6e34-ba99-d2a9"/>
+          </infoLinks>
+          <profiles>
+            <profile name="870 Shotgun" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="85f1-8c88-8ef3-1621">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">9&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="&quot;Detroit Special&quot; SMG" hidden="true" id="e05c-a97f-7bef-19d0" collective="false">
+        <selectionEntry type="upgrade" import="true" name="GM &quot;Detroit Special&quot; SMG" hidden="true" id="e05c-a97f-7bef-19d0" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ceaf-bc28-3fb8-d4a3"/>
           </constraints>
+          <profiles>
+            <profile name="GM &quot;Detroit Special&quot; SMG" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="85cc-8c16-3e8d-ed07">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Homemade" id="97d8-d61e-0cca-d3be" hidden="false" type="rule" targetId="9b94-3787-34f1-61bb"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kylsprutegevär M/51" hidden="true" id="a3a7-1373-1865-de74">
           <costs>
@@ -3987,6 +4195,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5be3-eb8b-b32c-4000"/>
           </constraints>
+          <profiles>
+            <profile name="Kylsprutegevär M/51" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="d53c-fe1c-3d29-0b05">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Freeze" id="24a8-7a6a-05af-e30f" hidden="false" type="rule" targetId="c6c0-71af-076b-4f90"/>
+            <infoLink name="Muzzle" id="470d-6cf6-16f7-67e7" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Energy(1)" id="d525-6b01-b848-81dc" hidden="false" type="rule" targetId="98a2-2a4b-cbba-9b7b"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kulsprutepistol m/46" hidden="true" id="1981-62d2-d27d-a648">
           <costs>
@@ -3995,6 +4224,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a13-a4d7-740d-eaa7"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Underslung" id="70fc-7f98-30c8-8f44" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Muzzle" id="6f75-601c-908b-21ea" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Sight" id="033a-26ec-5376-206e" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Kulsprutepistol m/46" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="b627-c23e-2183-0b8a">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ljungman Automatfallskärmsjägaregevär m/47" hidden="true" id="1f17-e051-279a-3a80">
           <costs>
@@ -4003,6 +4253,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d730-1ae7-1951-f33c"/>
           </constraints>
+          <profiles>
+            <profile name="Ljungman Automatfallskärmsjägaregevär m/47" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="73a9-9550-af02-620c">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Underslung" id="ff56-964c-3976-eb26" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Muzzle" id="5f35-9e46-9a03-aa44" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Sight" id="3c4d-8de5-24a3-c303" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Orita 1941/50" hidden="true" id="9581-0cb3-d0a9-72c2">
           <costs>
@@ -4018,6 +4289,25 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2db-d085-f012-c742"/>
           </constraints>
+          <profiles>
+            <profile name="Orita 1941/50" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9064-1fba-8714-60bd">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Muzzle" id="0a9a-7e29-5d31-c1ef" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Orita 1947" hidden="true" id="3939-3cb3-5a49-2285">
           <costs>
@@ -4033,6 +4323,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df57-9a18-da67-3620"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Sight" id="0ce1-81f5-8ab0-e5cb" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+            <infoLink name="Muzzle" id="dee2-c463-17a0-3f7f" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Orita 1947" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7c22-2c1d-7522-611d">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kampfpistole-50" hidden="true" id="d589-cb62-c332-d064" collective="false">
           <modifiers>
@@ -4052,6 +4362,30 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6d3-f638-c719-75bf"/>
           </constraints>
+          <profiles>
+            <profile name="Kampfpistole-50" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="d5f1-e870-dcb6-94ea">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Reload(1,4)" id="b2ed-20e1-4e1d-4ee2" hidden="false" type="rule" targetId="4fe8-c19c-3af1-ad4c"/>
+            <infoLink name="Rifle Grenade(Ordnance)" id="6e6c-e94b-b33c-432f" hidden="false" type="rule" targetId="5acb-e700-b751-4395"/>
+            <infoLink name="Sight" id="0d9c-45ae-8001-03ec" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(StuP Grenade)" hidden="false" id="4d2b-c42d-f0e5-15e8" type="selectionEntryGroup" targetId="737e-140d-6ab5-787a"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rifle, Short Ross-Garand" hidden="true" id="98b9-a718-c2c3-8faf">
           <costs>
@@ -4060,6 +4394,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c599-6c76-a446-427f"/>
           </constraints>
+          <profiles>
+            <profile name="Rifle, Short Ross-Garand" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="a983-3cc4-9af5-c921">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Underslung" id="5ba0-312e-f559-1b27" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Muzzle" id="f8b1-fb01-fe46-490a" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Sight" id="a2d8-d3a7-9e13-25f6" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ross MKIV*" hidden="true" id="48f0-d516-70c6-09fc">
           <costs>
@@ -4068,6 +4423,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1b4-0f47-95fc-d16d"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Underslung" id="ca0c-13d8-f2ba-9839" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Muzzle" id="1750-0c82-a4dc-dcb7" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Sight" id="df28-9c96-ee78-7798" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Ross MKIV*" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="f6c5-27a9-16ea-df12">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sten Submachine Gun MKVI*" hidden="true" id="d6d5-9d47-96ab-743b">
           <costs>
@@ -4076,6 +4452,28 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e00-04b2-42a1-749d"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Muzzle" id="684c-85aa-8006-afaa" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Surplus" id="d0f6-82ba-4a54-158b" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+            <infoLink name="Silent" id="42ac-37e8-8ae0-43c0" hidden="false" type="rule" targetId="9bb6-aaef-3556-d45b"/>
+            <infoLink name="Underslung" id="0700-c8eb-5f66-8dfb" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Sten Submachine Gun MKVI*" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0f77-2bd0-6cc9-a8d4">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sten Submachine Gun MKV**" hidden="true" id="2a3d-09fc-05fb-da5d">
           <costs>
@@ -4084,6 +4482,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9418-6a37-d23f-0644"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Underslung" id="446b-18da-6ddc-7ce3" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Muzzle" id="68f9-2c73-2ec4-e405" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Surplus" id="7523-91f4-b1ba-4a7f" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Sten Submachine Gun MKV**" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="274c-db83-5fb9-74d6">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sterling Submachine Gun MKIII" hidden="true" id="755c-742d-82b8-fc64">
           <costs>
@@ -4092,14 +4511,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f412-0a23-9cfa-35b9"/>
           </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Breda M30 / l.MG 098(i)" hidden="true" id="183d-8937-d79e-e830" collective="false">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d474-d97e-4176-573b"/>
-          </constraints>
+          <infoLinks>
+            <infoLink name="Muzzle" id="dce9-b7fc-5e0d-1d3f" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Underslung" id="d581-faf7-7753-247e" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Sterling Submachine Gun MKIII" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="858c-ea00-a488-0348">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Carcano 91/45" hidden="true" id="460d-22d1-c41e-717a" collective="false">
           <costs>
@@ -4108,6 +4539,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="932a-9e0c-03e2-9ae7"/>
           </constraints>
+          <profiles>
+            <profile name="Carcano 91/45" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="fa32-cc3b-554b-29c1">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Underslung" id="4fb8-eb61-e159-8db6" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Sight" id="aa47-4277-a44b-5b95" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="MAB 38/46 / MP739(i) Aust. C" hidden="true" id="3969-91ea-da3c-b90b" collective="false">
           <costs>
@@ -4116,6 +4567,25 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fdd-93d4-2143-cea6"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Bayonet" id="d021-4bf4-6f9f-dc5a" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
+          </infoLinks>
+          <profiles>
+            <profile name="MAB 38/46 / MP739(i) Aust. C" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="952b-3e29-1acb-9bee">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="MAB 38 / MP739(i)" hidden="true" id="6ba1-6ce5-b154-6736" collective="false">
           <costs>
@@ -4124,22 +4594,25 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dc8-32ca-be7c-d063"/>
           </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Lanciafiamme Spelleggiato Modello 35" hidden="true" id="c7dc-29fa-85d1-1ee8" collective="false">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f8-a6a7-4f0f-f5d7"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Breda M30B / l.MG 098(i) Ausf. B" hidden="true" id="ffb5-2d25-59e4-a61f" collective="false">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1258-74c2-2a59-e785"/>
-          </constraints>
+          <profiles>
+            <profile name="MAB 38 / MP739(i)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="8934-3ce0-cbae-c45a">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Bayonet" id="7b1a-ad00-1982-82db" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Suomi m/31" hidden="true" id="30fb-8f36-6567-176f" collective="false">
           <costs>
@@ -4148,6 +4621,25 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b8f-d77b-9c65-494a"/>
           </constraints>
+          <profiles>
+            <profile name="Suomi m/31" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="264b-a855-cfd3-6c88">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">5</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Surplus" id="cec8-6eb7-d8c2-2d93" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ljungman Automatgevär m/42" hidden="true" id="50a2-6096-5f31-daec">
           <costs>
@@ -4156,6 +4648,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14dc-044a-252f-fe37"/>
           </constraints>
+          <profiles>
+            <profile name="Ljungman Automatgevär m/42" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="665f-3c4c-7bde-68d4">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sight" id="bd6f-1e0c-df67-92ea" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+            <infoLink name="Muzzle" id="7bbb-2632-3337-e5c8" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="M1923 Pederson Selfloading Rifle" hidden="true" id="d855-1603-6772-8871" collective="false">
           <costs>
@@ -4164,14 +4676,107 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4625-4f5a-c801-d8c4"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Underslung" id="45fd-ad95-c984-fc66" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="M1923 Pederson Selfloading Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9fd4-4352-ca27-3361">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="M1944 Johnson Automatic Rifle" hidden="true" id="eee1-17fb-fdb2-727a" collective="false">
+        <selectionEntry type="upgrade" import="true" name="M1946 Johnson Automatic Rifle" hidden="true" id="eee1-17fb-fdb2-727a" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e0d-77db-2317-8bc7"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Underslung" id="9d68-f288-0214-1da7" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Sight" id="3904-fca3-6fd7-d8ce" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="M1946 Johnson Automatic Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7cdc-398d-1bd8-edda">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-&quot;</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="M1917 Browning Automatic Rifle" hidden="true" id="77ab-d74f-ddd6-b943" collective="false">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dc7-467c-c80b-28c3"/>
+          </constraints>
+          <profiles>
+            <profile name="M1917 Browning Automatic Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="ed84-c2b0-fe89-247b">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Bipod(1)" id="08fe-1de2-fcec-762c" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Suomi m/45" hidden="true" id="e3d5-0647-82de-ee24" collective="false">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2832-9636-3d5c-22e4"/>
+          </constraints>
+          <profiles>
+            <profile name="Suomi m/45" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3034-c188-a6af-bbdb">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">5</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Underslung" id="f966-98a5-83b3-1e6e" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -4191,6 +4796,25 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ded-1cce-6c67-01d0"/>
           </constraints>
+          <profiles>
+            <profile name="Volkspistole 60" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6550-b6bf-eb62-3c03">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Muzzle" id="343b-022d-5ba3-20ce" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sturmpistole 47" hidden="true" id="788b-b111-9631-b18a" collective="false">
           <modifiers>
@@ -4215,6 +4839,28 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5abf-2f02-968f-598e"/>
           </constraints>
+          <profiles>
+            <profile name="Sturmpistole 47" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="bc5d-3f66-46ef-910f">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ordnance(StuP Grenade)" id="8843-df4c-a37e-0888" hidden="false" type="rule" targetId="e1fc-c9de-5530-7e3e"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(StuP Grenade)" hidden="false" id="30a8-0ce8-4dae-7974" type="selectionEntryGroup" targetId="737e-140d-6ab5-787a"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Pistole-55 Luger" hidden="true" id="007c-6e44-454d-36eb" collective="false">
           <modifiers>
@@ -4239,6 +4885,25 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9066-6463-1eeb-53a5"/>
           </constraints>
+          <profiles>
+            <profile name="Pistole-55 Luger" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="34b1-51e5-26f4-0961">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Muzzle" id="fb95-f1e6-c862-0a7c" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Pistolkarabiner-54 Biesensteiel" hidden="true" id="424c-8f66-8e1f-d0f2" collective="false">
           <modifiers>
@@ -4263,6 +4928,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4300-1a56-d5d1-2699"/>
           </constraints>
+          <profiles>
+            <profile name="Pistolkarabiner-54 Biesensteiel" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9373-0ee8-0e64-1a77">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Muzzle" id="bac7-92fa-625e-8783" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Sight" id="d3be-70f7-1091-5359" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maschinenpistole-54 Schnellfeuer" hidden="true" id="fe59-0e7c-eee3-f449" collective="false">
           <costs>
@@ -4271,6 +4956,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd22-1017-4bf8-dbd0"/>
           </constraints>
+          <profiles>
+            <profile name="Maschinenpistole-54 Schnellfeuer" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1cb7-6106-0881-5b81">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Muzzle" id="4e29-e6d1-c495-25ab" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Underbarrel" id="2bde-6fb1-50ef-c238" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Klappspaten 38" hidden="true" id="444d-2a02-98a7-d692" collective="false">
           <costs>
@@ -4301,6 +5006,25 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b30a-c9a8-e2d8-63d0"/>
           </constraints>
+          <profiles>
+            <profile name="Klappspaten 38" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="e6b9-d2e9-be04-2973">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">1&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fortification" id="e4aa-eed9-765a-d6d1" hidden="false" type="rule" targetId="d328-d509-6940-c386"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blitzwerfenpistole-59" hidden="true" id="e37a-3325-d765-68b3" collective="false">
           <costs>
@@ -4316,6 +5040,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ae0-96cb-1147-d527"/>
           </constraints>
+          <profiles>
+            <profile name="Blitzwerfenpistole-59" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3bce-404b-5c74-30d8">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">*</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Capacitor(1)" id="e8c3-1a6f-504b-5ca2" hidden="false" type="rule" targetId="44dd-4d9e-6c8c-4d86"/>
+            <infoLink name="Lightning" id="82e6-db57-28a1-51e6" hidden="false" type="rule" targetId="da10-59f2-a754-98a6"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Bayonet" hidden="false" id="95bf-877d-1c5d-a242" collective="false">
           <costs>
@@ -4325,6 +5069,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6604-3e71-8b33-a447"/>
           </constraints>
+          <profiles>
+            <profile name="Bayonet" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3ad3-93a8-3895-cd15">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">1&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Underslung, Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Underslung" id="cd0a-96cb-72a2-31a7" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Bayonet" id="bdbb-d7f6-b525-72ed" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="9mm Pocket Pistol" hidden="true" id="8f71-ef28-efcc-739f" collective="false">
           <modifiers>
@@ -4345,6 +5109,22 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0f4-bfcc-4c0c-6d18"/>
           </constraints>
+          <profiles>
+            <profile name="9mm Pocket Pistol" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1eb6-9827-cc18-0533">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">6&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">1</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="General Electric M1958 Amplified Light Pistol" hidden="true" id="1043-20ce-01ff-41b0" collective="false">
           <costs>
@@ -4353,6 +5133,30 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9466-54e8-c222-15c2"/>
           </constraints>
+          <profiles>
+            <profile name="General Electric M1958 Amplified Light Pistol" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="a6df-eadd-578e-6b26">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">16</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ordnance(Blitz Cylinder)" id="faed-bfb3-850b-bec5" hidden="false" type="rule" targetId="c2a6-35a6-a1e2-384e"/>
+            <infoLink name="Energy(2)" id="1597-8800-434b-9ecb" hidden="false" type="rule" targetId="93d5-d5b9-6a07-5feb"/>
+            <infoLink name="Reload(1,1)" id="d51a-d324-a0b9-5e37" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(Blitz Cyinder)" hidden="false" id="ebbe-d03d-bae6-b272" type="selectionEntryGroup" targetId="645b-4c17-563a-1542"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Colt M1912A1" hidden="true" id="fc7c-bb63-86be-b69a" collective="false">
           <costs>
@@ -4361,6 +5165,22 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd0b-7782-259c-7b1e"/>
           </constraints>
+          <profiles>
+            <profile name="Colt M1912A1" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="f9ec-c3f5-5cd8-a3e2">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name=".38 Revolver" hidden="true" id="42b1-9a6c-7f6d-6a14" collective="false">
           <costs>
@@ -4369,6 +5189,25 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b61-57f1-115f-5e76"/>
           </constraints>
+          <profiles>
+            <profile name=".38 Revolver" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="bf88-e36d-12fb-b4b3">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Reload(1,6)" id="7db7-cc15-5691-c219" hidden="false" type="rule" targetId="a65e-6e34-ba99-d2a9"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -5291,6 +6130,27 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="M50/I Stielhandgranate" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1a15-4c12-a729-9a00">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">8&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Explosive" id="c25c-ce4d-23aa-469b" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Radius(1&quot;)" id="28cc-987e-d2e0-130a" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
+            <infoLink name="Consumable" id="0aa2-1176-0fb8-bbb4" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="HaftHallodung-5" hidden="true" id="f0d2-d60f-5085-b721">
           <costs>
@@ -5307,6 +6167,29 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="HaftHallodung-5" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="f47e-171a-bd6b-3fd3">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">2&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">8</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Radius(2&quot;)" id="2f97-6926-b56d-bd8b" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+            <infoLink name="Explosive" id="840d-3d55-76c3-45cc" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Magnetic(Equipment)" id="1a9d-9004-2ca0-6637" hidden="false" type="rule" targetId="017b-5ec1-102f-2c99"/>
+            <infoLink name="Consumable" id="4036-a11d-afa7-f043" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
+            <infoLink name="Piercing(3)" id="00ee-6452-0954-96ff" hidden="false" type="rule" targetId="5238-a413-8b1a-fe25"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="M50/II Nebelhandgranate" hidden="true" id="490f-ad1d-6dcc-1efa">
           <costs>
@@ -5323,11 +6206,52 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="M50/II Nebelhandgranate" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="4c40-fdd7-7f19-54d2">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">8&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">1</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Consumable" id="45c5-9d65-9c61-7ffa" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
+            <infoLink name="Smoke(6&quot;)" id="9e08-06e5-d410-0a2c" hidden="false" type="rule" targetId="3d7f-4a8f-0c01-44b0"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Improvised Explosives" hidden="true" id="fb48-25da-f759-1e65">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
           </costs>
+          <profiles>
+            <profile name="Improvised Explosives" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="67f2-7c75-c284-d6ce">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">8&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Radius(3&quot;)" id="c4a7-415d-5054-61fd" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
+            <infoLink name="Consumable" id="3c5d-0a55-23cd-cce8" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
+            <infoLink name="Explosive" id="67c5-8c26-5ba9-d9b0" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -5338,7 +6262,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Hardpoint: LPW" hidden="false" id="b899-0342-31c1-36cd" type="selectionEntryGroup" targetId="b7cf-f6ad-ac7d-5032"/>
+            <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="410f-e54c-9949-b34b" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5355,6 +6279,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af82-142e-4e10-abc4"/>
           </constraints>
+          <profiles>
+            <profile name="Rüstungfahrlafette-56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7b23-fc33-33e9-663a">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rüstung Weapon Frame</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Exomod(Medium Panzer Weapons)" id="e8ed-dcd7-d902-2ed5" hidden="false" type="rule" targetId="a99c-0ab8-62ec-1d59"/>
+            <infoLink name="Exomod(Light Panzer Weapons)" id="92e6-2683-1170-7d70" hidden="false" type="rule" targetId="8ad0-6e92-123d-2686"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flakwerfengewehr" hidden="true" id="1230-9f60-b6d6-e901">
           <costs>
@@ -5396,6 +6340,9 @@
             <infoLink name="Magazine(20x138B)" id="588d-6186-1c9b-f829" hidden="false" type="rule" targetId="10b3-df7f-3cce-b5e1"/>
             <infoLink name="Ordnance(20x138B)" id="e327-c84b-fea7-b46c" hidden="false" type="rule" targetId="7268-4ecf-28b5-df1b"/>
           </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="7987-aa7e-a1e3-9809" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rüstungabwehrbuchse-53(S)" hidden="true" id="d36d-4f72-6c35-794d">
           <costs>
@@ -5432,11 +6379,14 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Sight(Type)" id="3007-9be0-278f-dff8" hidden="false" type="rule" targetId="156d-27fa-f212-74df"/>
+            <infoLink name="Sight" id="3007-9be0-278f-dff8" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
             <infoLink name="Magazine(20x138B)" id="3a5e-6042-1cbb-43c0" hidden="false" type="rule" targetId="10b3-df7f-3cce-b5e1"/>
             <infoLink name="Ordnance(20x138B)" id="dc0c-1226-8807-9953" hidden="false" type="rule" targetId="7268-4ecf-28b5-df1b"/>
             <infoLink name="Reload(1,5)" id="43aa-7c5f-84f7-442a" hidden="false" type="rule" targetId="8f24-b9e3-6356-ec2e"/>
           </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="bf88-af99-a2fb-1639" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -7297,6 +8247,766 @@
         <constraint type="max" value="2" field="selections" scope="self" shared="true" id="ec6d-7e53-19f0-729e"/>
       </constraints>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(30x90RB)" id="1524-2ee1-ee20-237d" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="30x90RB(HE)" hidden="true" id="d56c-ed4e-5d57-2f5e">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Explosive" id="a1be-8212-9535-9088" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(2)" id="ce44-7cd9-74b0-5b47" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
+            <infoLink name="Radius(1&quot;)" id="d3d6-8cf1-b156-ac49" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
+          </infoLinks>
+          <profiles>
+            <profile name="30x90RB(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="86d8-c6ca-9939-b884">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">8</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">30x90RB</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(30cm Raketen)" id="bf0a-3ba9-51c2-29f2" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="30cm Raketen" hidden="true" id="ed86-94b6-1590-21d9">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="30cm Raketen" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="a229-54e4-122d-2904">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">30cm Raketen</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Explosive" id="c097-e906-1c0e-ad0a" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(2)" id="77f6-74ff-0382-86cb" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
+            <infoLink name="Radius(5&quot;)" id="1030-afc5-db07-23e3" hidden="false" type="rule" targetId="3fb0-40bf-2635-e7d6"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(38mm Shell)" id="f32a-1428-9554-6300" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="38mm Shell, HE" hidden="false" id="4e52-6cbb-ba3b-0a14">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="3"/>
+          </costs>
+          <profiles>
+            <profile name="38mm Shell, HE" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="663c-b6a3-4027-430b">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">38mm Shell</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Radius(2&quot;)" id="e74d-1c87-73f1-42bc" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+            <infoLink name="Explosive" id="2839-ae3b-2547-4cde" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="38mm Shell, Smoke" hidden="false" id="692c-2085-4270-8a3e">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="3"/>
+          </costs>
+          <profiles>
+            <profile name="38mm Shell, Smoke" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3487-63d2-1e8a-7cbc">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">38mm Shell</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Smoke(4&quot;)" id="9a37-e1ea-c0af-c0db" hidden="false" type="rule" targetId="1e23-aece-8c4c-6457"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(20x138B)" id="5c0b-9864-cf46-6adc" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="20x138B(Flak)" hidden="true" id="5c1a-6cbc-ec98-0585">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Radius(3&quot;)" id="96a9-3173-e1d0-9b95" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
+            <infoLink name="Flak" id="c7e1-5c17-adce-d98e" hidden="false" type="rule" targetId="caec-bfef-a91a-a302"/>
+          </infoLinks>
+          <profiles>
+            <profile name="20x138B(Flak)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0845-5b2b-ac4c-985d">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">20x138B</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="20x138B(HE)" hidden="true" id="fcd6-4796-725a-58f9">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Explosive" id="6570-29a5-1241-b311" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(3)" id="6ae9-f543-4bd3-ae66" hidden="false" type="rule" targetId="5238-a413-8b1a-fe25"/>
+            <infoLink name="Radius(3&quot;)" id="7545-b5aa-91bd-93e4" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="20x138B(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="341a-2589-0c36-4170">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">20x138B</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(20mmR)" id="7298-5fca-3cda-41fc" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="20mmR(Flak)" hidden="true" id="6522-dec9-4e23-219a">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
+          </costs>
+          <profiles>
+            <profile name="20mmR(Flak)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="e3b2-29aa-45fc-b098">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">20mmR</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Flak" id="18aa-a455-6ab7-0776" hidden="false" type="rule" targetId="caec-bfef-a91a-a302"/>
+            <infoLink name="Piercing(1)" id="d782-27dc-d544-7e9b" hidden="false" type="rule" targetId="71aa-a433-caa2-dc68"/>
+            <infoLink name="Radius(2&quot;)" id="709f-0e4b-f4b5-cd59" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(37x249)" id="9f60-cb3f-23ef-1e6c" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="37x249(HE)" hidden="true" id="c96e-5958-1b6b-741c">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Explosive" id="fecb-c578-0710-5e99" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(3)" id="8c4d-299c-68aa-df51" hidden="false" type="rule" targetId="5238-a413-8b1a-fe25"/>
+            <infoLink name="Radius(2&quot;)" id="bbeb-fd30-e0b3-2065" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="37x249(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="71ea-a603-d9d5-2478">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">37x249</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(75x714R)" id="7666-e18c-e2a5-5354" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="75x714R(HE)" hidden="true" id="ea0c-3e7b-71a2-8f7b">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Explosive" id="68f5-6b08-57d1-6de7" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(4)" id="74db-ffe8-b780-75f1" hidden="false" type="rule" targetId="cc59-130d-ef0b-4987"/>
+            <infoLink name="Radius(2&quot;)" id="d5f3-74df-9021-9f4d" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="75x714R(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9fa0-7dd9-9d00-8de8">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">13</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">75x714R</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(88mmR Raketen)" id="d05b-3125-1324-17c9" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="88mmR Raketen(HEAT)" hidden="true" id="5f00-c517-0718-17ae">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="88mmR Raketen(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="c996-26f4-06a0-92fb">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">88mmR Raketen</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Explosive" id="77ff-f392-343f-3716" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(2)" id="a8c9-3301-c783-9862" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
+            <infoLink name="Radius(1&quot;)" id="7df0-6a90-a51f-48d2" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(88x822R)" id="5cae-b6ed-b1d5-e187" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="88x822R(HE)" hidden="true" id="45eb-127f-773a-3644">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+          </costs>
+          <profiles>
+            <profile name="88x822R(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2823-b5f7-0887-2863">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">15</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">88x822R</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Explosive" id="3b0a-b773-cc0c-3733" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(5)" id="4b82-93e5-7874-054e" hidden="false" type="rule" targetId="fc55-ea27-b63c-e0ed"/>
+            <infoLink name="Radius(3&quot;)" id="9bed-f03f-1fce-db62" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(128x869R)" id="e7a6-68f5-8e2f-1fca" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="128x869R(HE)" hidden="true" id="5b39-dae1-1b41-0fa7">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+          </costs>
+          <profiles>
+            <profile name="128x869R(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2584-3f4d-7cc2-f80b">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">20</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">128x869R</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Piercing(3)" id="0acf-9b31-1b46-9b10" hidden="false" type="rule" targetId="5238-a413-8b1a-fe25"/>
+            <infoLink name="Explosive" id="f8e5-2e0b-616f-acec" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Radius(3&quot;)" id="bc9f-c2f5-6449-0404" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(170mmSC)" id="6efa-31e4-4c9e-ffc8" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="170mmSC(HE)" hidden="true" id="b7e1-b229-f756-ecf5">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Explosive" id="2054-c1ce-0e0c-2346" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(4)" id="49ac-90a7-bef3-2b5c" hidden="false" type="rule" targetId="fc55-ea27-b63c-e0ed"/>
+            <infoLink name="Radius(3&quot;)" id="a228-24ce-94d4-5ac5" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="170mmSC(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0274-b993-87a0-035c">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">25</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">170mmSC</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(Blitz Cyinder)" id="645b-4c17-563a-1542" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="General Electric “Zippy” Recharging Cylinder" hidden="false" id="f775-9a86-93ca-d97c">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="General Electric “Zippy” Recharging Cylinder" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0ca5-fdd6-50a4-2fd1">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Blitz Cylinder</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Battery(4)" id="3d77-8bb1-c887-b37d" hidden="false" type="rule" targetId="10f0-d0bf-43dc-b2eb"/>
+            <infoLink name="Recharge(1)" id="d853-f4cb-32b0-f180" hidden="false" type="rule" targetId="0bed-6621-7605-2518"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(Rifle Grenade)" id="85e2-8812-ea50-b4a7" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HE)" hidden="true" id="a304-8a2b-04f4-b470">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Explosive" id="9424-8ccd-4027-2548" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Radius(1&quot;)" id="68b6-a43c-27ee-633c" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Rifle Grenade(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="4237-acf1-7a8e-4715">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HE+)" hidden="true" id="14a8-dc80-bfb6-1649">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Rifle Grenade(HE+)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="cb74-8080-99bc-dd2a">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Explosive" id="445a-ef14-47b2-aadb" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Radius(2&quot;)" id="6d5d-ee6b-dfc4-955e" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HEAT)" hidden="true" id="a278-a5e3-6579-7327">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Explosive" id="70a0-97a6-dbb1-bcfb" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(1)" id="7d71-a1d0-9ade-287d" hidden="false" type="rule" targetId="71aa-a433-caa2-dc68"/>
+            <infoLink name="Radius(1&quot;)" id="4ce4-61e6-99dc-46fb" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Rifle Grenade(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7ce7-4909-1250-4d92">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HHL)" hidden="true" id="4033-8565-389a-f39c">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Rifle Grenade(HHL)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2e56-1fdd-44d2-c498">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-4</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Magnetic(Ordnance)" id="d98e-ba70-288e-1dec" hidden="false" type="rule" targetId="b955-f3f3-f78f-f954"/>
+            <infoLink name="Piercing(2)" id="6270-07ec-0e3b-1745" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
+            <infoLink name="Radius(1&quot;)" id="fe40-1d00-b6d8-23bd" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
+            <infoLink name="Explosive" id="c652-c011-0ee3-cddd" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rifle Grenade(Smoke)" hidden="true" id="999b-f95f-7d0c-9b52">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Smoke(6&quot;)" id="3cd1-9174-735c-4ae3" hidden="false" type="rule" targetId="3d7f-4a8f-0c01-44b0"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Rifle Grenade(Smoke)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="abdc-0404-dffa-78ae">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(StuP Grenade)" id="737e-140d-6ab5-787a" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="StuP Grenade(HE)" hidden="true" id="5c37-d633-6ec7-d7c0">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="StuP Grenade(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="637a-7719-d5a9-482c">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-2</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">StuP Grenage</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Explosive" id="681d-1535-2cf5-a56f" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Radius(2&quot;)" id="0b02-288c-8953-2381" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="StuP Grenade(HEAT)" hidden="true" id="a5b1-0392-1ed3-d844">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="13"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Explosive" id="efc7-81e9-f571-67e4" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(1)" id="5238-bd53-4317-f211" hidden="false" type="rule" targetId="71aa-a433-caa2-dc68"/>
+            <infoLink name="Radius(1&quot;)" id="80ec-0ebe-3439-2960" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
+          </infoLinks>
+          <profiles>
+            <profile name="StuP Grenade(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="568d-1a99-286c-3ff2">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-3</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">StuP Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="StuP Grenade(Smoke)" hidden="true" id="d327-0b9c-8f44-d6b5">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="7"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="StuP Grenade(Smoke)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="4515-8b47-1933-b60b">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-1</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">StuP Grenade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Smoke(6&quot;)" id="af5e-2118-a875-2733" hidden="false" type="rule" targetId="3d7f-4a8f-0c01-44b0"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b72d-a08a-2414-8c49" name="Upgrade(Type)" hidden="false">
@@ -7481,7 +9191,7 @@ Cost (x) amount of Blitz Energy to activate with an action.</description>
       <description>Equipment with this rule:
 Cost (x) amount of Blitz Energy to activate with an action.</description>
     </rule>
-    <rule id="1001-264b-a327-2bf2" name="Energy(4)" hidden="false">
+    <rule id="1001-264b-a327-2bf2" name="Energy(3)" hidden="false">
       <description>Equipment with this rule:
 Cost (x) amount of Blitz Energy to activate with an action.</description>
     </rule>
@@ -7501,16 +9211,18 @@ Give the Exomod rule to the equipped weapon</description>
       <description>Equipment with this rule:
 Destroy equipment dropped by infantry that are downed by this equipment, if the equipment does not have an armor value.</description>
     </rule>
-    <rule id="9b94-3787-34f1-61bb" name="Flak" hidden="false">
-      <description>Equipment with this rule:
-Deals double damage to Airplane, Hovercraft, and Glider Multipart Equipments. 
-Deals 1.5x damage, rounded down, to infantry models without an armour value.</description>
+    <rule id="9b94-3787-34f1-61bb" name="Homemade" hidden="false">
+      <description>Equipment with this rule: 
+Is considered to have the Surplus rule.
+Is immediately Destroyed if it suffers a jam.
+
+</description>
     </rule>
     <rule id="e409-01a3-3f44-75a1" name="Flame" hidden="false">
       <description>Equipment with this rule:
 Deal half damage against Multipart Equipment targets.</description>
     </rule>
-    <rule id="d328-d509-6940-c386" name="Fortification" hidden="false">
+    <rule id="d328-d509-6940-c386" name="Fortification(Foxhole)" hidden="false">
       <description>Equipment with this rule:
 Allow the owner of the equipped model to place the fortification in parenthesis while defending.</description>
     </rule>
@@ -7576,7 +9288,7 @@ Bypass an amount of armor equal to (x) when dealing damage.</description>
       <description>Equipment with this rule:
 Bypass an amount of armor equal to (x) when dealing damage.</description>
     </rule>
-    <rule name="Piercing(4)" id="fc55-ea27-b63c-e0ed" hidden="false">
+    <rule name="Piercing(5)" id="fc55-ea27-b63c-e0ed" hidden="false">
       <description>Equipment with this rule:
 Bypass an amount of armor equal to (x) when dealing damage.</description>
     </rule>
@@ -7808,14 +9520,14 @@ Require (x) combat turns to setup and breakdown before they can be used or moved
       <description>Equipment with this rule:
 Benefits from an additional accuracy bonus equal to +x after (x) turns of standing still.</description>
     </rule>
-    <rule name="Sniper" id="3d7f-4a8f-0c01-44b0" hidden="false">
+    <rule name="Smoke(6&quot;)" id="3d7f-4a8f-0c01-44b0" hidden="false">
       <description>Equipment with this rule:
 May choose which model in a target formation they target. If they do so, they may only make one shot with the weapon in that attack, regardless of any extra RoF in its profile.
 
 
 If the equipment also has Zeroing, then this rule only affects the equipment when zeroed.</description>
     </rule>
-    <rule name="Stimulant(1)" id="2f65-4899-404b-0d3f" hidden="false">
+    <rule name="Stimulant" id="2f65-4899-404b-0d3f" hidden="false">
       <description>Equipment with this rule:
 Can be used during the Logistics phase to remove a point of exhaustion for the next Campaign Turn. You gain two points of Exhaustion in the following Logistics Phase</description>
     </rule>
@@ -8131,7 +9843,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
 May be used (x,-) times before needing to be reloaded.
 Has a reloading process takes (-,y) amount of actions.</description>
     </rule>
-    <rule name="Ordnance(x)" id="e1fc-c9de-5530-7e3e" hidden="false">
+    <rule name="Ordnance(StuP Grenade)" id="e1fc-c9de-5530-7e3e" hidden="false">
       <description>Equipment with this rule:
 Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
@@ -8195,26 +9907,78 @@ May equip a number of Rüstung Arm Upgrades equal to (x).</description>
       <description>Equipment with this rule:
 May equip a number of Rüstung Shoulder Upgrades equal to (x).</description>
     </rule>
-    <rule name="Arm(1)" id="6223-817c-f736-a7a4" hidden="false">
+    <rule name="Mount" id="6223-817c-f736-a7a4" hidden="false">
       <description>Equipment with this rule:
-May equip a number of Rüstung Arm Upgrades equal to (x).</description>
+May be ridden by an infantry model with Animal Handling training.
+Is considered to have the Beast rule.
+Loses the Beast rule if ridden by a model with the Animal Handling training.
+
+</description>
     </rule>
     <rule name="Autoloader(Shoulder)" id="fdb2-6c4d-6ca6-5f80" hidden="false">
       <description>Equipment with this rule:
 Removes the Reload rule from weapons in the slot specified by (x).</description>
     </rule>
-    <rule name="Addiction(2+)" id="464e-c9e9-f0df-8c72" hidden="false">
+    <rule name="Addiction(3+)" id="464e-c9e9-f0df-8c72" hidden="false">
       <description>Equipment with this Rule:
 Must make an Addiction roll with a required roll of (x). If the Addiction roll is failed, the model becomes addicted to using the equipment. 
 If the equipment is a Combat Drug, the model must use the Combat Drug every Campaign Turn or immediately gain a point of exhaustion. They do not gain the positive effect of the Combat Drug if it is used to combat addiction.</description>
     </rule>
-    <rule name="Underbarrel" id="1101-21cb-ae99-eb0d" hidden="false">
+    <rule name="Underslung" id="1101-21cb-ae99-eb0d" hidden="false">
       <description>Equipment with this rule:
-May equip a Underbarrel Upgrade.</description>
+May equip a Underslung Upgrade.</description>
     </rule>
     <rule name="Sight" id="cb7e-78d1-f895-f39b" hidden="false">
       <description>Equipment with this rule:
 May equip a Sight Upgrade.</description>
+    </rule>
+    <rule name="Addiction(2+)" id="9fd1-2e92-a445-f8b5" hidden="false">
+      <description>Equipment with this Rule:
+Must make an Addiction roll with a required roll of (x). If the Addiction roll is failed, the model becomes addicted to using the equipment. 
+If the equipment is a Combat Drug, the model must use the Combat Drug every Campaign Turn or immediately gain a point of exhaustion. They do not gain the positive effect of the Combat Drug if it is used to combat addiction.</description>
+    </rule>
+    <rule name="Sniper" id="010c-d754-414f-6102" hidden="false">
+      <description>Equipment with this rule:
+May choose which model in a target formation they target. If they do so, they may only make one shot with the weapon in that attack, regardless of any extra RoF in its profile.
+
+
+If the equipment also has Zeroing, then this rule only affects the equipment when zeroed.</description>
+    </rule>
+    <rule name="Smoke(4&quot;)" id="1e23-aece-8c4c-6457" hidden="false">
+      <description>Equipment with this rule:
+May choose which model in a target formation they target. If they do so, they may only make one shot with the weapon in that attack, regardless of any extra RoF in its profile.
+
+
+If the equipment also has Zeroing, then this rule only affects the equipment when zeroed.</description>
+    </rule>
+    <rule name="Ordnance(x)" id="0ec6-0ca4-b63f-b541" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Ordnance(Blitz Cylinder)" id="c2a6-35a6-a1e2-384e" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule id="c174-da51-44ee-0997" name="Fortification" hidden="false">
+      <description>Equipment with this rule:
+Allow the owner of the equipped model to place the fortification in parenthesis while defending.</description>
+    </rule>
+    <rule id="7853-fc7a-6895-3460" name="Energy(4)" hidden="false">
+      <description>Equipment with this rule:
+Cost (x) amount of Blitz Energy to activate with an action.</description>
+    </rule>
+    <rule id="caec-bfef-a91a-a302" name="Flak" hidden="false">
+      <description>Equipment with this rule:
+Deals double damage to Airplane, Hovercraft, and Glider Multipart Equipments. 
+Deals 1.5x damage, rounded down, to infantry models without an armour value.</description>
+    </rule>
+    <rule name="Arm(1)" id="8cef-2dc9-d1cc-7ce2" hidden="false">
+      <description>Equipment with this rule:
+May equip a number of Rüstung Arm Upgrades equal to (x).</description>
+    </rule>
+    <rule name="Piercing(4)" id="cc59-130d-ef0b-4987" hidden="false">
+      <description>Equipment with this rule:
+Bypass an amount of armor equal to (x) when dealing damage.</description>
     </rule>
   </sharedRules>
 </gameSystem>
