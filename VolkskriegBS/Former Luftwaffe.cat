@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="1ddf-beb7-26d2-ef25" name="Former Reich/ Luftwaffe" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="eeb3-567d-708a-f896" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <selectionEntries>
+  <sharedSelectionEntries>
     <selectionEntry id="b995-b3ba-e01b-92e0" name="Himmelschlossen" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
@@ -9,21 +9,8 @@
         <categoryLink name="Mobile Bases" hidden="false" id="a97b-258b-94fb-8e9e" targetId="45b3-5bb4-1df7-06bd" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry id="eb52-59ce-0b93-e19c" name="Fallschirmjäger Squad" hidden="false" collective="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink id="a4b1-d52d-2059-f380" name="Faction Formations" hidden="false" targetId="c74a-6498-63d2-89fb" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
-      </costs>
-      <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="679d-381d-f471-ac74" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="974f-4c66-6614-c424"/>
-            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="ceab-2eaa-29df-171d" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-    </selectionEntry>
-  </selectionEntries>
+  </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink targetId="b995-b3ba-e01b-92e0" id="b3fc-03f9-0d93-8a61" type="selectionEntry" name="Himmelschlossen" hidden="false" collective="false"/>
+  </entryLinks>
 </catalogue>
