@@ -1363,8 +1363,8 @@
           </profiles>
           <infoLinks>
             <infoLink name="Consumable" id="f445-fe5f-1d78-c85c" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
-            <infoLink name="Addiction(2+)" id="4062-73b8-d575-171a" hidden="false" type="rule" targetId="464e-c9e9-f0df-8c72"/>
-            <infoLink name="Stimulant(1)" id="d91b-6e8d-c73e-a9b5" hidden="false" type="rule" targetId="2f65-4899-404b-0d3f"/>
+            <infoLink name="Addiction(3+)" id="4062-73b8-d575-171a" hidden="false" type="rule" targetId="464e-c9e9-f0df-8c72"/>
+            <infoLink name="Stimulant" id="d91b-6e8d-c73e-a9b5" hidden="false" type="rule" targetId="2f65-4899-404b-0d3f"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Schutzschild 55" hidden="true" id="6032-c575-bed5-bbab">
@@ -2065,8 +2065,9 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2127,6 +2128,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2186,6 +2188,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2246,6 +2249,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2326,6 +2330,17 @@
             <infoLink name="Ordnance(88mmR Raketen)" id="a3b0-b7c9-187c-f3ee" hidden="false" type="rule" targetId="a334-f8a4-fbc4-259d"/>
             <infoLink name="Reload(4,6)" id="af91-e375-47bb-c15c" hidden="false" type="rule" targetId="42d0-5d14-9266-a5c1"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="30cm Raketenwerfer" hidden="true" id="78b6-b08a-d31a-d148">
           <costs>
@@ -2338,6 +2353,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2387,6 +2403,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2469,6 +2486,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2492,6 +2510,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -2524,6 +2543,15 @@
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5e2a-9dff-05e5-de25" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="8f7b-d57a-2aca-4351" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
@@ -2539,6 +2567,15 @@
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <entryLinks>
             <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="5af3-5232-b3bf-6600" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
@@ -2553,6 +2590,15 @@
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <entryLinks>
@@ -3180,6 +3226,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3215,6 +3262,17 @@
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <costs>
@@ -3429,6 +3487,37 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e57-4fbc-da03-9bff"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Raketen Panzerbüchse-58" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="e1e5-ef10-8524-8f41">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ordnance(88mmR Raketen)" id="6d65-de95-4c97-42b8" hidden="false" type="rule" targetId="a334-f8a4-fbc4-259d"/>
+            <infoLink name="Reload(1,1)" id="66ba-11e8-04de-5797" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzerfaust-60" hidden="true" id="5124-31d0-40a6-cf70" collective="false">
           <modifiers>
@@ -3444,6 +3533,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3460,6 +3550,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbe8-ba7b-be53-d794"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Consumable" id="f788-5cd2-3bbf-289b" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
+            <infoLink name="Piercing(1)" id="64bc-0976-a5a7-1b68" hidden="false" type="rule" targetId="71aa-a433-caa2-dc68"/>
+            <infoLink name="Explosive" id="4e71-f827-6a67-26f6" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Panzerfaust-60" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="23a7-3195-caeb-905e">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapons</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzerbüchse-54(Gustloff)" hidden="true" id="d4b1-9876-1b6b-81a0" collective="false">
           <modifiers>
@@ -3473,6 +3584,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3484,6 +3596,29 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27e2-c0f9-c866-02b1"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Bipod(1)" id="beb8-7f1f-bbc8-0798" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+            <infoLink name="Sniper" id="35b5-a037-0929-9ddd" hidden="false" type="rule" targetId="010c-d754-414f-6102"/>
+            <infoLink name="Piercing(1)" id="0714-17c6-dde6-5312" hidden="false" type="rule" targetId="71aa-a433-caa2-dc68"/>
+            <infoLink name="Zeroing" id="f8f9-9cd6-d8c6-b9ba" hidden="false" type="rule" targetId="73d4-9ef4-01fc-676c"/>
+            <infoLink name="Sight" id="85e8-54e8-91ba-25cf" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Panzerbüchse-54(Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="b583-0901-24e7-de63">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzerbüchse-54(Cz)" hidden="true" id="88d5-c07c-682b-5b88" collective="false">
           <costs>
@@ -3492,6 +3627,38 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="988d-be7c-a49b-11b9"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Bipod(1)" id="2640-c811-56a5-e673" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+            <infoLink name="Piercing(1)" id="91aa-fdb2-2d10-5788" hidden="false" type="rule" targetId="71aa-a433-caa2-dc68"/>
+            <infoLink name="Sight" id="452a-441e-477c-008e" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Panzerbüchse-54(Cz)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1985-d250-8d51-0084">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Machinengewehr-56" hidden="true" id="3cf8-46de-ed2d-aec6" collective="false">
           <costs>
@@ -3500,6 +3667,38 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43b3-f4c8-9a37-cbb5"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Setup(1)" id="0a51-15dc-9086-57d1" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
+            <infoLink name="Crewed" id="a668-a3c7-7f6d-a00a" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+            <infoLink name="Bipod(1)" id="aa81-6191-e943-d651" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Machinengewehr-56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3720-2612-bdba-02b0">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">5</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Granatwerfer-53" hidden="true" id="ddde-35d1-528c-95f5" collective="false">
           <modifiers>
@@ -3508,6 +3707,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3519,6 +3719,31 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cb2-fc3d-740a-4f44"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Radius(2&quot;)" id="3d1f-1792-2e52-7c80" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+            <infoLink name="Crewed" id="9e32-339c-aa4c-987b" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+            <infoLink name="Artillery(1)" id="b303-8274-6929-3fc7" hidden="false" type="rule" targetId="d4e8-5a2f-46e9-074c"/>
+            <infoLink name="Bombard(18-48)" id="591c-d6a3-2a4d-e5bf" hidden="false" type="rule" targetId="369c-e276-3600-7fa5"/>
+            <infoLink name="Explosive" id="04f1-5b43-e8b8-dfe5" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Setup(1)" id="64b8-a81c-5ab3-5873" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
+            <infoLink name="Zeroing" id="f9e6-abe5-1aa0-ef5a" hidden="false" type="rule" targetId="73d4-9ef4-01fc-676c"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Granatwerfer-53" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="61b1-be50-beef-2d69">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">48&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/1</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Granatbüchse-54(Gustloff)" hidden="true" id="2800-a6bf-347f-8f74" collective="false">
           <modifiers>
@@ -3527,6 +3752,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3538,6 +3764,30 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73f0-972a-7faf-ee5d"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Bipod(1)" id="3236-90b7-8ba0-69c2" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+            <infoLink name="Sight" id="04e3-2aca-4d13-2fa0" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+            <infoLink name="Ordnance(Rifle Grenade)" id="2317-a1bf-0b33-bb62" hidden="false" type="rule" targetId="c3f2-138f-d3c2-c033"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(Rifle Grenade)" hidden="false" id="b853-7b78-4d6c-8911" type="selectionEntryGroup" targetId="85e2-8812-ea50-b4a7"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Granatbüchse-54(Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="72ac-1908-24cb-fab3">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fliegerfaust-55" hidden="true" id="5f16-2682-4506-23a9" collective="false">
           <modifiers>
@@ -3548,6 +3798,7 @@
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -3564,6 +3815,30 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c62-a358-6abd-23aa"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Ordnance(20mmR)" id="069a-9c2c-bafd-d68a" hidden="false" type="rule" targetId="a886-469a-73c4-5694"/>
+            <infoLink name="Reload(1,8)" id="119a-7f39-9da8-5299" hidden="false" type="rule" targetId="9a5f-1f5f-6de7-36ab"/>
+            <infoLink name="Crewed" id="266b-14d2-648d-7638" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(20mmR)" hidden="false" id="908d-ac0b-70c6-e5d9" type="selectionEntryGroup" targetId="7298-5fca-3cda-41fc"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Fliegerfaust-55" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="e2e2-bb15-2281-32e3">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">8</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flammenwerfer-47" hidden="true" id="c5b2-f9bf-20c1-a0bf" collective="false">
           <modifiers>
@@ -3572,6 +3847,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3583,6 +3859,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2434-a752-2ff1-ef4a"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Radius(2&quot;)" id="adeb-38e8-11a0-cc69" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+            <infoLink name="Flame" id="9463-40f3-7291-0989" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Flammenwerfer-47" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6c7d-094e-f023-d0d3">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blitzwerfengewehr-59" hidden="true" id="3848-e115-3a35-9e94" collective="false">
           <costs>
@@ -3594,10 +3890,39 @@
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="5e2a-9dff-05e5-de25" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a597-14ab-f081-d3fd"/>
           </constraints>
+          <profiles>
+            <profile name="Blitzwerfengewehr-59" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6cf1-0fef-35f5-c2c5">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">*</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Capacitor(2)" id="de92-9bf9-8f45-4a0e" hidden="false" type="rule" targetId="9590-2918-56c0-a4eb"/>
+            <infoLink name="Lightning" id="ff1d-ed08-1238-9db6" hidden="false" type="rule" targetId="da10-59f2-a754-98a6"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kulspruta m/37" hidden="true" id="d742-7393-5c67-cd46">
           <costs>
@@ -3606,6 +3931,37 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41ab-ebe4-6c43-321b"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Surplus" id="dc02-ac84-f50b-be97" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+            <infoLink name="Bipod(1)" id="b4af-599c-f167-7e89" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Kulspruta m/37" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7bca-375e-4614-dbcd">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kylsprutgevär m/57" hidden="true" id="fe9c-a2c5-9887-d63e">
           <costs>
@@ -3614,6 +3970,38 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1389-4057-b951-f6c8"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Crewed" id="7986-b7c0-9ee6-18e3" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+            <infoLink name="Bipod(1)" id="0aa3-6b3c-73d3-1c5c" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+            <infoLink name="Setup(1)" id="4f1b-82bf-961f-a6a7" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Kylsprutgevär m/57" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="68f4-e625-1146-0aa9">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="M1953 Grenade Rifle" hidden="true" id="9d75-7845-7c58-293f">
           <costs>
@@ -3622,6 +4010,40 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4e2-448a-362a-80d3"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Reload(1,4)" id="b356-d056-db69-22df" hidden="false" type="rule" targetId="4fe8-c19c-3af1-ad4c"/>
+            <infoLink name="Ordnance(38mm Shell)" id="b267-fe2a-218d-0efb" hidden="false" type="rule" targetId="0ec6-0ca4-b63f-b541"/>
+          </infoLinks>
+          <profiles>
+            <profile name="M1953 Grenade Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="26f2-6197-3451-c5ca">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(38mm Shell)" hidden="false" id="1677-4b53-bee7-66b8" type="selectionEntryGroup" targetId="f32a-1428-9554-6300"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Bren Light Machine Gun MKIV*" hidden="true" id="c444-46e3-a85f-a6e4">
           <costs>
@@ -3630,6 +4052,39 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48a2-a1bf-0666-78c6"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Bren Light Machine Gun MKIV*" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7105-6b4f-bb46-5106">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapons</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Underslung" id="a53e-38ab-51e3-4f60" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Muzzle" id="5c6a-da4e-607f-03c0" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+            <infoLink name="Sight" id="ec91-f7f3-cd37-74b2" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+            <infoLink name="Surplus" id="796e-733e-a160-f266" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Boys AT Rifle MKII*" hidden="true" id="d75e-0785-0d44-b90e">
           <costs>
@@ -3638,6 +4093,39 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d247-f582-8f7e-ec76"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Sight" id="8121-a48f-c621-bc10" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+            <infoLink name="Bipod(1)" id="5c3d-abc9-eeb6-1d0f" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+            <infoLink name="Reload(1,5)" id="04c0-7d85-aca6-66e5" hidden="false" type="rule" targetId="8f24-b9e3-6356-ec2e"/>
+            <infoLink name="Surplus" id="eb4e-b933-530f-ab35" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Boys AT Rifle MKII*" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7da4-ff7c-b78d-256b">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kylspruta m/61" hidden="true" id="a3d1-7dbf-f040-e68d">
           <costs>
@@ -3646,6 +4134,37 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dcc-6a5a-36da-a56f"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Freeze" id="0228-6f09-2433-686e" hidden="false" type="rule" targetId="c6c0-71af-076b-4f90"/>
+            <infoLink name="Energy(1)" id="e46a-0452-b190-efae" hidden="false" type="rule" targetId="98a2-2a4b-cbba-9b7b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Kylspruta m/61" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9ec4-942e-87fc-899f">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">8&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+5</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Carl Gustav Granatgevär m/50" hidden="true" id="f4d8-821a-1264-d5d1">
           <costs>
@@ -3654,6 +4173,39 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39f2-3862-9227-0b68"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Crewed" id="11ca-1511-ddf1-f2a9" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+            <infoLink name="Reload(1,1)" id="6a6e-018b-6f2b-892b" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+            <infoLink name="Backblast(2&quot;,6)" id="c358-2dde-a44a-c197" hidden="false" type="rule" targetId="b2f6-9fc8-409d-755b"/>
+            <infoLink name="Ordnance(84x245 RCL)" id="6be4-41e5-aabf-fd98" hidden="false" type="rule" targetId="47bc-18a6-594f-5fbb"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Carl Gustav Granatgevär m/50" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="b08a-641f-6483-9d6b">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">48&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/1</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kulspruta m/42" hidden="true" id="43c6-c057-2d61-d775">
           <costs>
@@ -3662,6 +4214,39 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01a2-a907-b7c0-4c26"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Setup(1)" id="faec-6b0b-6bda-ac97" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
+            <infoLink name="Crewed" id="69a2-4623-9af1-0034" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+            <infoLink name="Bipod(1)" id="847d-9ecc-943a-6912" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+            <infoLink name="Reload(1,20)" id="5be3-b154-c7bb-e2a2" hidden="false" type="rule" targetId="b8af-95b2-008a-741d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Kulspruta m/42" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="453a-0a90-fc6c-961b">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Lewis 1913 Automatic Machine Gun" hidden="true" id="dc70-1903-19dc-c85a">
           <costs>
@@ -3670,6 +4255,36 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94d8-87e7-62f8-8cb7"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Lewis 1913 Automatic Machine Gun" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0b66-7ce6-5f4d-ef5d">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">5</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Bipod(1)" id="b5a6-74dd-e16e-c8ad" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Breda M30 / l.MG 098(i)" hidden="true" id="183d-8937-d79e-e830" collective="false">
           <costs>
@@ -3678,6 +4293,37 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d474-d97e-4176-573b"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Surplus" id="6897-1b41-0480-6793" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+            <infoLink name="Bipod(1)" id="c994-cb22-1178-a27f" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Breda M30 / l.MG 098(i)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0df5-a2f2-7f04-8dc1">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Breda M30B / l.MG 098(i) Ausf. B" hidden="true" id="ffb5-2d25-59e4-a61f" collective="false">
           <costs>
@@ -3686,6 +4332,36 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1258-74c2-2a59-e785"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Bipod(1)" id="2288-c635-cd9c-5040" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Breda M30B / l.MG 098(i) Ausf. B" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3f0c-88ca-57ff-671a">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Lanciafiamme Spelleggiato Modello 35" hidden="true" id="c7dc-29fa-85d1-1ee8" collective="false">
           <costs>
@@ -3694,6 +4370,37 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11f8-a6a7-4f0f-f5d7"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Radius(2&quot;)" id="2333-74fe-cf4a-22f2" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+            <infoLink name="Flame" id="ec84-69d0-3ea7-0f4b" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Lanciafiamme Spelleggiato Modello 35" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="c9e9-407b-5849-e51c">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">10&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -4974,7 +5681,7 @@
           </profiles>
           <infoLinks>
             <infoLink name="Muzzle" id="4e29-e6d1-c495-25ab" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
-            <infoLink name="Underbarrel" id="2bde-6fb1-50ef-c238" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+            <infoLink name="Underslung" id="2bde-6fb1-50ef-c238" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Klappspaten 38" hidden="true" id="444d-2a02-98a7-d692" collective="false">
@@ -5023,7 +5730,7 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink name="Fortification" id="e4aa-eed9-765a-d6d1" hidden="false" type="rule" targetId="d328-d509-6940-c386"/>
+            <infoLink name="Fortification(Foxhole)" id="e4aa-eed9-765a-d6d1" hidden="false" type="rule" targetId="d328-d509-6940-c386"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blitzwerfenpistole-59" hidden="true" id="e37a-3325-d765-68b3" collective="false">
@@ -5254,7 +5961,7 @@
             <infoLink name="Back(1)" id="e365-beb3-1162-7c82" hidden="false" type="rule" targetId="465d-2fe8-2e21-c5f1"/>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="Armour Platings" hidden="false" id="8124-fcc3-233a-e876" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
+            <entryLink import="true" name="Rüstung Platings" hidden="false" id="8124-fcc3-233a-e876" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="28ae-f6ff-50ab-beda" sortIndex="1">
                   <costs>
@@ -5430,7 +6137,7 @@
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink import="true" name="Armour Platings" hidden="false" id="ec82-0bfc-08de-073c" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
+            <entryLink import="true" name="Rüstung Platings" hidden="false" id="ec82-0bfc-08de-073c" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="18fe-d5a8-c429-8b51" sortIndex="1">
                   <costs>
@@ -5630,7 +6337,7 @@
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink import="true" name="Armour Platings" hidden="false" id="c1ed-009d-98f7-e1cd" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
+            <entryLink import="true" name="Rüstung Platings" hidden="false" id="c1ed-009d-98f7-e1cd" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="44c0-fba4-9e36-7d2a" sortIndex="1">
                   <costs>
@@ -6529,17 +7236,21 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cff1-b603-b2a4-4862" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b7cf-f6ad-ac7d-5032" shared="true"/>
-                  </conditions>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cff1-b603-b2a4-4862" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b7cf-f6ad-ac7d-5032" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -6555,17 +7266,21 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cff1-b603-b2a4-4862" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4808-889f-7b19-d48d" shared="true"/>
-                  </conditions>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cff1-b603-b2a4-4862" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4808-889f-7b19-d48d" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -6894,6 +7609,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -6920,6 +7636,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -6945,6 +7662,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -6971,6 +7689,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -6997,8 +7716,9 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7025,6 +7745,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7051,6 +7772,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7161,6 +7883,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7178,6 +7901,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7200,6 +7924,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7221,6 +7946,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7242,6 +7968,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7786,6 +8513,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7811,6 +8539,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7861,6 +8590,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7894,6 +8624,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7991,6 +8722,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8019,6 +8751,7 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8052,6 +8785,7 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8450,7 +9184,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Ordnance(20mmR)" id="7298-5fca-3cda-41fc" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="20mmR(Flak)" hidden="true" id="6522-dec9-4e23-219a">
+        <selectionEntry type="upgrade" import="true" name="20mmR(Flak)x8" hidden="true" id="6522-dec9-4e23-219a">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
           </costs>
@@ -8658,7 +9392,7 @@
           </costs>
           <infoLinks>
             <infoLink name="Explosive" id="2054-c1ce-0e0c-2346" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
-            <infoLink name="Piercing(4)" id="49ac-90a7-bef3-2b5c" hidden="false" type="rule" targetId="fc55-ea27-b63c-e0ed"/>
+            <infoLink name="Piercing(5)" id="49ac-90a7-bef3-2b5c" hidden="false" type="rule" targetId="fc55-ea27-b63c-e0ed"/>
             <infoLink name="Radius(3&quot;)" id="a228-24ce-94d4-5ac5" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
           </infoLinks>
           <profiles>
@@ -9214,9 +9948,7 @@ Destroy equipment dropped by infantry that are downed by this equipment, if the 
     <rule id="9b94-3787-34f1-61bb" name="Homemade" hidden="false">
       <description>Equipment with this rule: 
 Is considered to have the Surplus rule.
-Is immediately Destroyed if it suffers a jam.
-
-</description>
+Is immediately Destroyed if it suffers a jam.</description>
     </rule>
     <rule id="e409-01a3-3f44-75a1" name="Flame" hidden="false">
       <description>Equipment with this rule:
@@ -9516,7 +10248,7 @@ If the equipment also has the Radius(x) rule, the radius is centered on the midd
       <description>Equipment with this rule:
 Require (x) combat turns to setup and breakdown before they can be used or moved respectively.</description>
     </rule>
-    <rule name="Zeroing" id="73d4-9ef4-01fc-676c" hidden="false">
+    <rule name="Zeroing(+1)" id="73d4-9ef4-01fc-676c" hidden="false">
       <description>Equipment with this rule:
 Benefits from an additional accuracy bonus equal to +x after (x) turns of standing still.</description>
     </rule>
@@ -9853,21 +10585,15 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
     </rule>
     <rule name="Equipment(1)" id="35a2-6f19-5be4-81dd" hidden="false">
       <description>Equipment with this rule:
-Is capable of having *x) number of non-Armour Infantry Equipment equipped to the model that wears this Equipment.
-
-</description>
+Is capable of having *x) number of non-Armour Infantry Equipment equipped to the model that wears this Equipment.</description>
     </rule>
     <rule name="Equipment(2)" id="1737-a786-9db8-7462" hidden="false">
       <description>Equipment with this rule:
-Is capable of having (x) number of non-Armour Infantry Equipment equipped to the model that wears this Equipment.
-
-</description>
+Is capable of having (x) number of non-Armour Infantry Equipment equipped to the model that wears this Equipment.</description>
     </rule>
     <rule name="Equipment(3)" id="d397-b9a9-da72-7308" hidden="false">
       <description>Equipment with this rule:
-Is capable of having (x) number of non-Armour Infantry Equipment equipped to the model that wears this Equipment.
-
-</description>
+Is capable of having (x) number of non-Armour Infantry Equipment equipped to the model that wears this Equipment.</description>
     </rule>
     <rule name="Consumable" id="0ffc-3d86-bff5-0210" hidden="false">
       <description>Equipment with this rule:
@@ -9875,9 +10601,7 @@ Is destroyed upon use.</description>
     </rule>
     <rule name="Equipment(4)" id="95f8-f1cc-f9c1-fbee" hidden="false">
       <description>Equipment with this rule:
-Is capable of having (x) number of non-Armour Infantry Equipment equipped to the model that wears this Equipment.
-
-</description>
+Is capable of having (x) number of non-Armour Infantry Equipment equipped to the model that wears this Equipment.</description>
     </rule>
     <rule name="Back(1)" id="465d-2fe8-2e21-c5f1" hidden="false">
       <description>Equipment with this rule:
@@ -9911,9 +10635,7 @@ May equip a number of Rüstung Shoulder Upgrades equal to (x).</description>
       <description>Equipment with this rule:
 May be ridden by an infantry model with Animal Handling training.
 Is considered to have the Beast rule.
-Loses the Beast rule if ridden by a model with the Animal Handling training.
-
-</description>
+Loses the Beast rule if ridden by a model with the Animal Handling training.</description>
     </rule>
     <rule name="Autoloader(Shoulder)" id="fdb2-6c4d-6ca6-5f80" hidden="false">
       <description>Equipment with this rule:
@@ -9951,7 +10673,7 @@ May choose which model in a target formation they target. If they do so, they ma
 
 If the equipment also has Zeroing, then this rule only affects the equipment when zeroed.</description>
     </rule>
-    <rule name="Ordnance(x)" id="0ec6-0ca4-b63f-b541" hidden="false">
+    <rule name="Ordnance(38mm Shell)" id="0ec6-0ca4-b63f-b541" hidden="false">
       <description>Equipment with this rule:
 Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
@@ -9979,6 +10701,35 @@ May equip a number of Rüstung Arm Upgrades equal to (x).</description>
     <rule name="Piercing(4)" id="cc59-130d-ef0b-4987" hidden="false">
       <description>Equipment with this rule:
 Bypass an amount of armor equal to (x) when dealing damage.</description>
+    </rule>
+    <rule name="Crewed" id="9b23-9cb3-4736-bcea" hidden="false">
+      <description>Equipment with this rule:
+Lower the Setup(x) rule by one if the equipment has more models manning it then the required crew.
+Heavy Weapons with this rule:
+Lower the Reload rule by one if the equipment has more models manning it then the required crew.
+If no crew requirement is listed and there is another model within an inch of this model.
+Panzer Weapons with this rule:
+Lower the Reload rule by one if the equipment has more models manning it then the required crew.</description>
+    </rule>
+    <rule name="Ordnance(20mmR)" id="a886-469a-73c4-5694" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Ordnance(Rifle Grenade)" id="c3f2-138f-d3c2-c033" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Ordnance(84x245 RCL)" id="47bc-18a6-594f-5fbb" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Backblast(2&quot;,6)" id="b2f6-9fc8-409d-755b" hidden="false">
+      <description>Equipment with this rule:
+Deals (-,y) damage to any Models within an (x,-) inch long line behind it, in the direction opposite of the targeted model</description>
+    </rule>
+    <rule name="Ordnance(x)" id="c224-2e16-4f96-1ad5" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
   </sharedRules>
 </gameSystem>
