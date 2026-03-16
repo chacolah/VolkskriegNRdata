@@ -1131,6 +1131,9 @@
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Armour" hidden="false" id="459e-198a-83b5-973b" type="selectionEntryGroup" targetId="ddb7-fbbd-773b-eca4"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="d989-b48f-e6ca-0175" name="Backpack Equipment" hidden="false" collective="false" import="true">
       <selectionEntries>
@@ -1678,20 +1681,96 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
           </costs>
+          <profiles>
+            <profile name="Blitzleitunmotor-60" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="64f6-16dc-ca63-a129">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Power</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Recharge(2)" id="0b9a-dd0a-1b7a-5b1c" hidden="false" type="rule" targetId="4cab-3565-ddca-7a10"/>
+            <infoLink name="Battery(2)" id="d571-d22e-141b-0300" hidden="false" type="rule" targetId="c868-c81f-6916-e6f8"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="false" id="667d-ccfb-63cd-a2b3">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
           </costs>
+          <profiles>
+            <profile name="Blitzleitungmotor Ausf. A" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="5c49-8e41-d924-288b">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Power</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Recharge(2)" id="374c-6fa9-043d-4b4a" hidden="false" type="rule" targetId="4cab-3565-ddca-7a10"/>
+            <infoLink name="Battery(8)" id="9941-ec7c-8f40-9f3d" hidden="false" type="rule" targetId="3f0a-2168-db07-6cec"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blitzleitunmotor-56" hidden="false" id="2a97-2fcb-c4fd-87ff">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
           </costs>
+          <profiles>
+            <profile name="Blitzleitunmotor-56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="8aa7-38f1-cb51-a2ae">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Power</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Recharge(1)" id="78fa-9085-7125-ec66" hidden="false" type="rule" targetId="0bed-6621-7605-2518"/>
+            <infoLink name="Battery(4)" id="484b-c5c7-9d1c-7e71" hidden="false" type="rule" targetId="10f0-d0bf-43dc-b2eb"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cae-74af-8842-6af3" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2100-282d-d9c9-f64f" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="2100-282d-d9c9-f64f">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="47ac-5c2e-448f-87f0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d2d5-bcfa-096f-b605" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Armour Platings" id="6de1-d553-8767-0740" hidden="false">
+    <selectionEntryGroup name="Rüstung Platings" id="6de1-d553-8767-0740" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="e29b-068a-c798-9c10">
           <costs>
@@ -1708,6 +1787,25 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb3-f3eb-f45b-5c11" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Leichte Panzerung" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="ed6c-413e-7dcf-c776">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Plating</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Schwerer Panzerung" hidden="true" id="219b-0a34-808e-aeeb">
           <costs>
@@ -1724,8 +1822,31 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1d9-3dd7-ceca-e4a9" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Schwerer Panzerung" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="b2cd-be40-f890-b621">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">6</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Plating</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a15b-bbe8-532e-ba96" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="35ef-1d0c-eb0c-2cf8" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Drohne" id="a259-84b1-60c2-b435" hidden="false">
       <selectionEntries>
@@ -2574,8 +2695,30 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Hummerschale 51/56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9337-fe3b-af8c-d878">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">2</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Armour</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Power Slot(Type)" id="1a1b-77e9-1001-990d" hidden="false" type="rule" targetId="79e3-47d5-77fb-57a1"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Power Sources" hidden="false" id="92f3-4876-b297-9949" type="selectionEntryGroup" targetId="e11f-3da3-396d-00c2"/>
+          </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Uberfiege- Booten Ausf. B “Frosch”" hidden="true" id="47ac-5c2e-448f-87f0">
+        <selectionEntry type="upgrade" import="true" name="Uberfliege- Booten Ausf. B “Frosch”" hidden="true" id="47ac-5c2e-448f-87f0">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
           </costs>
@@ -2590,12 +2733,38 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Power Sources" hidden="false" id="6627-c922-e3a4-2336" type="selectionEntryGroup" targetId="e11f-3da3-396d-00c2"/>
+          </entryLinks>
+          <profiles>
+            <profile name="Uberfliege- Booten Ausf. B “Frosch”" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="69df-64d1-d636-2713">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Armour</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Energy(2)" id="dd10-0806-93ba-f98d" hidden="false" type="rule" targetId="93d5-d5b9-6a07-5feb"/>
+            <infoLink name="Airborne(Infantry Equipment)" id="d380-11f8-653e-7eff" hidden="false" type="rule" targetId="8038-1970-8258-adba"/>
+            <infoLink name="Power Slot(Type)" id="8f8b-c22c-78df-68ed" hidden="false" type="rule" targetId="79e3-47d5-77fb-57a1"/>
+            <infoLink name="Thruster(6&quot;)" id="9372-0e86-752d-d3f0" hidden="false" type="rule" targetId="0991-bcb5-5362-7294"/>
+            <infoLink name="Booster(2&quot;)" id="25f7-9321-1ad7-99da" hidden="false" type="rule" targetId="1bac-493b-dd7b-2344"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Rüstung" hidden="false" id="0abb-2021-5060-0a91" type="selectionEntryGroup" targetId="d2d5-bcfa-096f-b605">
+        <entryLink import="true" name="Rüstung" hidden="true" id="0abb-2021-5060-0a91" type="selectionEntryGroup" targetId="d2d5-bcfa-096f-b605">
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -4225,6 +4394,183 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="false" id="b248-2e57-6aa8-b6a5"/>
           </constraints>
+          <profiles>
+            <profile name="Leichrüstung Ausf. A/58 “Eierschale”" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6d2c-488f-f3c8-1ddd">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">2</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exoframe</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Battery(4)" id="f508-67bd-8e5a-788b" hidden="false" type="rule" targetId="10f0-d0bf-43dc-b2eb"/>
+            <infoLink name="Back(1)" id="e365-beb3-1162-7c82" hidden="false" type="rule" targetId="465d-2fe8-2e21-c5f1"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Armour Platings" hidden="false" id="8124-fcc3-233a-e876" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="28ae-f6ff-50ab-beda" sortIndex="1">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="b968-5519-065d-a332"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Schwerer Panzerung" hidden="true" id="ddaf-f111-93c4-5103" sortIndex="2">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="0554-e794-23d7-8a78"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Rüstung Plating Upgrades" id="0075-f3cd-eeca-0c50" hidden="true">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Plating Up-Armor" hidden="true" id="b986-e024-472a-aea9">
+                      <costs>
+                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="self" shared="false" id="9aea-9b5f-6428-40a6"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Zimmermit" hidden="true" id="5ee1-3a9d-e0f8-3c78">
+                      <costs>
+                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="self" shared="false" id="e3d9-ce6f-a635-9a5c"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d2d5-bcfa-096f-b605" shared="true"/>
+                      </conditions>
+                      <comment>Checks if Rüstung for future proofing armour plating system</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="06a8-8112-c220-210e"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b382-78c1-e14d-7a29" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power Sources" hidden="false" id="e56f-bc77-636d-f187" type="selectionEntryGroup" targetId="e11f-3da3-396d-00c2">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="true" id="60e9-7e4a-6f8b-feb5">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor-56" hidden="true" id="3b62-33c0-ce5c-0e03">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Schnellladenmotor-60" hidden="true" id="9c1a-48d3-7004-5624">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6c0-fe52-cc58-805f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac1c-2947-033c-6bca"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Rüstung Back Upgrades" hidden="false" id="2ddc-7e53-3ce9-7d31" type="selectionEntryGroup" targetId="3a2a-2a34-1ee6-7311"/>
+            <entryLink import="true" name="Rüstung Arm Upgrades" hidden="false" id="9e78-6907-7b8a-dccb" type="selectionEntryGroup" targetId="0988-c5c4-6121-eb7b"/>
+            <entryLink import="true" name="Rüstung Head Upgrades" hidden="false" id="19a0-8f03-d38f-a5b3" type="selectionEntryGroup" targetId="7595-050c-4604-4017"/>
+            <entryLink import="true" name="Rüstung Leg Upgrades" hidden="false" id="2b96-acb4-3561-e6ae" type="selectionEntryGroup" targetId="ad9e-d2e4-79b1-d5a5"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Rüstung Upgrades" id="4d8c-d397-6af4-9047" hidden="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="67f2-dc40-72eb-2a95"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Schwererrüstung Aust. C/55 “Ritter”" hidden="true" id="b397-854e-e216-4012">
           <costs>
@@ -4244,6 +4590,187 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Armour Platings" hidden="false" id="ec82-0bfc-08de-073c" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="18fe-d5a8-c429-8b51" sortIndex="1">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="0330-5394-cd4f-d7a6"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Schwerer Panzerung" hidden="true" id="4f68-3c42-c758-fdb3" sortIndex="2">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="12cc-1944-c132-62b4"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Rüstung Plating Upgrades" id="f348-b349-87bc-7e0a" hidden="true">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Plating Up-Armor" hidden="true" id="229f-9f1e-ea58-1c28">
+                      <costs>
+                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="self" shared="false" id="4da7-2d8a-ea58-34f8"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Zimmermit" hidden="true" id="671a-539c-1bc9-1910">
+                      <costs>
+                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="self" shared="false" id="589c-3c23-a8dd-7646"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d2d5-bcfa-096f-b605" shared="true"/>
+                      </conditions>
+                      <comment>Checks if Rüstung for future proofing armour plating system</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="0301-e747-267f-e640"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bd8-ea88-d697-6f74" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power Sources" hidden="false" id="85ff-16ec-ed34-505b" type="selectionEntryGroup" targetId="e11f-3da3-396d-00c2">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="true" id="8846-b5b0-37bf-500b">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor-56" hidden="true" id="6c5c-5375-9cf0-2d18">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Schnellladenmotor-60" hidden="true" id="d64b-22d9-9acb-2b62">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6581-a39b-e143-3316"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9291-bac4-1b0e-084a"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Rüstung Back Upgrades" hidden="false" id="bd2f-15c3-de9a-8b46" type="selectionEntryGroup" targetId="3a2a-2a34-1ee6-7311"/>
+            <entryLink import="true" name="Rüstung Arm Upgrades" hidden="false" id="c411-e4e2-4f35-d277" type="selectionEntryGroup" targetId="0988-c5c4-6121-eb7b"/>
+            <entryLink import="true" name="Rüstung Head Upgrades" hidden="false" id="5eb0-78c0-cb39-7008" type="selectionEntryGroup" targetId="7595-050c-4604-4017"/>
+            <entryLink import="true" name="Rüstung Leg Upgrades" hidden="false" id="1a93-5d5f-a967-b528" type="selectionEntryGroup" targetId="ad9e-d2e4-79b1-d5a5"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Rüstung Upgrades" id="ae69-6bf0-5b22-8206" hidden="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d49a-94d6-e9c2-ae51"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Battery(4)" id="e387-1789-9c0c-150a" hidden="false" type="rule" targetId="10f0-d0bf-43dc-b2eb"/>
+            <infoLink name="Back(1)" id="b215-037a-f007-e0ff" hidden="false" type="rule" targetId="465d-2fe8-2e21-c5f1"/>
+            <infoLink name="Chest(1)" id="039e-0736-c856-ffc7" hidden="false" type="rule" targetId="c979-71e3-60ab-e31c"/>
+            <infoLink name="Arm(2)" id="bfd1-8a93-6093-ed3f" hidden="false" type="rule" targetId="5126-38e3-0074-4b94"/>
+            <infoLink name="Leg(1)" id="8e39-78f1-290d-875d" hidden="false" type="rule" targetId="ab4a-4b1e-d235-917b"/>
+            <infoLink name="Head(1)" id="ea07-344a-c5c4-5e6f" hidden="false" type="rule" targetId="b505-870d-edca-952b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Schwererrüstung Aust. C/55 “Ritter”" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="62d2-e93c-1593-947a">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exosuit</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Landsverk Motorrustning m/56" hidden="true" id="26d0-86d9-0d87-5772">
           <costs>
@@ -4255,169 +4782,199 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or"/>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Power Sources" hidden="false" id="e408-cd38-af4d-7703" type="selectionEntryGroup" targetId="e11f-3da3-396d-00c2">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="true" id="354f-0fad-0586-80ca">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor-56" hidden="true" id="2084-d768-446f-baed">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Schnellladenmotor-60" hidden="true" id="27fd-31cd-fadd-c7e2">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1d2-4fca-a4f9-c7cc-min"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1d2-4fca-a4f9-c7cc-max"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Armour Platings" hidden="false" id="8124-fcc3-233a-e876" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="28ae-f6ff-50ab-beda" sortIndex="1">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="false" id="b968-5519-065d-a332"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Schwerer Panzerung" hidden="true" id="ddaf-f111-93c4-5103" sortIndex="2">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="false" id="0554-e794-23d7-8a78"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Rüstung Plating Upgrades" id="0075-f3cd-eeca-0c50" hidden="true">
+          <entryLinks>
+            <entryLink import="true" name="Armour Platings" hidden="false" id="c1ed-009d-98f7-e1cd" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Plating Up-Armor" hidden="true" id="b986-e024-472a-aea9">
+                <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="44c0-fba4-9e36-7d2a" sortIndex="1">
                   <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="9aea-9b5f-6428-40a6"/>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="5331-ac7d-bcef-c25d"/>
                   </constraints>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
-                    </modifier>
-                    <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
                     </modifier>
                   </modifiers>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Zimmermit" hidden="true" id="5ee1-3a9d-e0f8-3c78">
+                <selectionEntry type="upgrade" import="true" name="Schwerer Panzerung" hidden="true" id="8d40-dd0e-2e39-500b" sortIndex="2">
                   <costs>
-                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
                   </costs>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="e3d9-ce6f-a635-9a5c"/>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="b1fc-b404-e2dd-a5f5"/>
                   </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Rüstung Plating Upgrades" id="18ba-4be8-b8d3-b201" hidden="true">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Plating Up-Armor" hidden="true" id="52e1-52ab-0420-196c">
+                      <costs>
+                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="self" shared="false" id="a8ba-bcb0-95f5-ec50"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Zimmermit" hidden="true" id="ae16-4465-d109-fe45">
+                      <costs>
+                        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="self" shared="false" id="369b-8bbe-2e41-791d"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d2d5-bcfa-096f-b605" shared="true"/>
+                      </conditions>
+                      <comment>Checks if Rüstung for future proofing armour plating system</comment>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="self" shared="false" id="baac-d7c3-ac95-c67b"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="342b-8441-5e4d-d378" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power Sources" hidden="false" id="e408-cd38-af4d-7703" type="selectionEntryGroup" targetId="e11f-3da3-396d-00c2">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="true" id="354f-0fad-0586-80ca">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor-56" hidden="true" id="2084-d768-446f-baed">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+                  </costs>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
-                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
-                    <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="force" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true" includeChildForces="false"/>
-                      </conditions>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Schnellladenmotor-60" hidden="true" id="27fd-31cd-fadd-c7e2">
+                  <costs>
+                    <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </selectionEntry>
               </selectionEntries>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d2d5-bcfa-096f-b605" shared="true"/>
-                  </conditions>
-                  <comment>Checks if Rüstung for future proofing armour plating system</comment>
-                </modifier>
-              </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="false" id="06a8-8112-c220-210e"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1d2-4fca-a4f9-c7cc-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1d2-4fca-a4f9-c7cc-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Rüstung Back Upgrades" hidden="false" id="f792-5b33-f715-91b0" type="selectionEntryGroup" targetId="3a2a-2a34-1ee6-7311"/>
+            <entryLink import="true" name="Rüstung Arm Upgrades" hidden="false" id="7ce2-1255-4d3b-1569" type="selectionEntryGroup" targetId="0988-c5c4-6121-eb7b"/>
+            <entryLink import="true" name="Rüstung Head Upgrades" hidden="false" id="7f9f-d7b1-432d-fc4b" type="selectionEntryGroup" targetId="7595-050c-4604-4017"/>
+            <entryLink import="true" name="Rüstung Leg Upgrades" hidden="false" id="215f-bbab-2eb6-c2c2" type="selectionEntryGroup" targetId="ad9e-d2e4-79b1-d5a5"/>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Rüstung Upgrades" id="9750-3148-e537-e3a6" hidden="false">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8f73-e483-8d2c-7d40"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b382-78c1-e14d-7a29" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Rüstung Arm Upgrades" hidden="false" id="7ce2-1255-4d3b-1569" type="selectionEntryGroup" targetId="0988-c5c4-6121-eb7b"/>
-        <entryLink import="true" name="Rüstung Back Upgrades" hidden="false" id="2ddc-7e53-3ce9-7d31" type="selectionEntryGroup" targetId="3a2a-2a34-1ee6-7311"/>
-        <entryLink import="true" name="Rüstung Head Upgrades" hidden="false" id="7f9f-d7b1-432d-fc4b" type="selectionEntryGroup" targetId="7595-050c-4604-4017"/>
-        <entryLink import="true" name="Rüstung Leg Upgrades" hidden="false" id="215f-bbab-2eb6-c2c2" type="selectionEntryGroup" targetId="ad9e-d2e4-79b1-d5a5"/>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Rüstung Upgrades" id="ae69-6bf0-5b22-8206" hidden="false">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d49a-94d6-e9c2-ae51"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <profiles>
+            <profile name="Landsverk Motorrustning m/56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="d529-8590-6967-2c6f">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exosuit</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Head(1)" id="11eb-9d56-d31e-09b1" hidden="false" type="rule" targetId="b505-870d-edca-952b"/>
+            <infoLink name="Battery(3)" id="7282-f300-2230-ece7" hidden="false" type="rule" targetId="2155-eb71-f7c9-f242"/>
+            <infoLink name="Back(1)" id="5d17-1bf6-11a2-1637" hidden="false" type="rule" targetId="465d-2fe8-2e21-c5f1"/>
+            <infoLink name="Chest(1)" id="ffcb-743f-34b4-29ed" hidden="false" type="rule" targetId="c979-71e3-60ab-e31c"/>
+            <infoLink name="Shoulder(2)" id="5bfa-d6d5-56be-9384" hidden="false" type="rule" targetId="1e21-0557-c602-f477"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f453-8d92-14c0-3cd3"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung Arm Upgrades" id="0988-c5c4-6121-eb7b" hidden="false">
       <constraints>
@@ -4439,6 +4996,25 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Funkbienen Rüstungarray" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="adc2-589e-2ad1-dc6c">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Arm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Carrier(2)" id="579b-0cb5-29ba-1ba8" hidden="false" type="rule" targetId="757a-1a72-46e1-60f8"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -4446,7 +5022,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Blitzleitungmotorruck-60" hidden="true" id="ae0e-4962-3250-cd7d">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="false" id="00f4-e4b6-7450-7ed1"/>
@@ -4462,10 +5038,29 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Blitzleitungmotorruck-60" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="764b-890d-fa6b-4476">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Recharge(+1)" id="5547-9f69-9416-23a3" hidden="false" type="rule" targetId="b4a6-86d0-5cd1-ce88"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Düsenruck" hidden="true" id="e1fd-2399-26d9-bd4d">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="false" id="9cc9-a952-d3c5-c051"/>
@@ -4481,10 +5076,31 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Düsenruck" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0272-a523-5dab-a3b2">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Energy(1)" id="6992-eff4-b84c-e34d" hidden="false" type="rule" targetId="98a2-2a4b-cbba-9b7b"/>
+            <infoLink name="Booster(4&quot;)" id="19d1-a3db-7117-7b7b" hidden="false" type="rule" targetId="f182-8eb2-75cf-e3d4"/>
+            <infoLink name="Thruster(8&quot;)" id="47d3-e5ba-aca7-f69d" hidden="false" type="rule" targetId="8f12-bc00-bcdc-7ce2"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Raketenruck" hidden="true" id="a8ad-4338-0fd8-f6eb">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="false" id="61ef-c611-cc3a-6888"/>
@@ -4500,10 +5116,31 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Raketenruck" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="293e-24bb-31d3-807b">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Thruster(6&quot;)" id="c066-11af-b67a-3bf1" hidden="false" type="rule" targetId="0991-bcb5-5362-7294"/>
+            <infoLink name="Booster(2&quot;)" id="e21d-89d7-dc86-f428" hidden="false" type="rule" targetId="1bac-493b-dd7b-2344"/>
+            <infoLink name="Energy(1)" id="0b53-cdd6-7387-d32e" hidden="false" type="rule" targetId="98a2-2a4b-cbba-9b7b"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Funkbienenkord Ausf. D" hidden="true" id="f3f9-9d8c-fe8f-c959">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="false" id="88a3-7212-b678-d506"/>
@@ -4520,6 +5157,26 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Funkbienenkord Ausf. D" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="5178-6b43-34e1-dbd7">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="RC(2,48&quot;)" id="e711-e594-36ff-914d" hidden="false" type="rule" targetId="9bf8-67f5-f474-298b"/>
+            <infoLink name="Carrier(1)" id="61d7-a168-1669-2228" hidden="false" type="rule" targetId="91f5-97a6-54ac-72ab"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Automatladarre m/59" hidden="true" id="84e7-2d68-3791-d672">
           <costs>
@@ -4531,10 +5188,33 @@
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
-                <conditionGroup type="or"/>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Automatladarre m/59" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9b0e-5fcf-81f3-1303">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Autoloader(Shoulder)" id="e291-bfde-434c-1a2b" hidden="false" type="rule" targetId="fdb2-6c4d-6ca6-5f80"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -4571,6 +5251,26 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Übersteuerung  Servos" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="fa37-20f8-eb56-5ac4">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Leg</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Energy(2)" id="04cb-b180-167c-e2bc" hidden="false" type="rule" targetId="93d5-d5b9-6a07-5feb"/>
+            <infoLink name="Overdrive(1)" id="bb98-808f-9c69-23aa" hidden="false" type="rule" targetId="ec73-e8db-6584-3f11"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -4675,6 +5375,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d596-e191-2c3c-60d8"/>
           </constraints>
+          <profiles>
+            <profile name="Flakwerfengewehr" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0128-2378-579b-e48a">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rüstung Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Reload(1,6)" id="af85-e9b4-fc48-c7aa" hidden="false" type="rule" targetId="a65e-6e34-ba99-d2a9"/>
+            <infoLink name="Magazine(20x138B)" id="588d-6186-1c9b-f829" hidden="false" type="rule" targetId="10b3-df7f-3cce-b5e1"/>
+            <infoLink name="Ordnance(20x138B)" id="e327-c84b-fea7-b46c" hidden="false" type="rule" targetId="7268-4ecf-28b5-df1b"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rüstungabwehrbuchse-53(S)" hidden="true" id="d36d-4f72-6c35-794d">
           <costs>
@@ -4694,6 +5415,28 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69c8-a057-d7f1-8c84"/>
           </constraints>
+          <profiles>
+            <profile name="Rüstungabwehrbuchse-53(S)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="30d9-a502-7ddf-a5dc">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rüstung Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sight(Type)" id="3007-9be0-278f-dff8" hidden="false" type="rule" targetId="156d-27fa-f212-74df"/>
+            <infoLink name="Magazine(20x138B)" id="3a5e-6042-1cbb-43c0" hidden="false" type="rule" targetId="10b3-df7f-3cce-b5e1"/>
+            <infoLink name="Ordnance(20x138B)" id="dc0c-1226-8807-9953" hidden="false" type="rule" targetId="7268-4ecf-28b5-df1b"/>
+            <infoLink name="Reload(1,5)" id="43aa-7c5f-84f7-442a" hidden="false" type="rule" targetId="8f24-b9e3-6356-ec2e"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -7179,10 +7922,9 @@ Takes up a Backpack slot in a Uniform.
 Backpack is a secondary type that some equipment has in addition to its primary type.
 Cannot be stored in an Equipment slot.</description>
     </rule>
-    <rule name="Addiction(2+)" id="7498-0a5d-0c52-ef6c" hidden="false">
-      <description>Equipment with this Rule:
-Must make an Addiction roll with a required roll of (x). If the Addiction roll is failed, the model becomes addicted to using the equipment. 
-If the equipment is a Combat Drug, the model must use the Combat Drug every Campaign Turn or immediately gain a point of exhaustion. They do not gain the positive effect of the Combat Drug if it is used to combat addiction.</description>
+    <rule name="Muzzle" id="7498-0a5d-0c52-ef6c" hidden="false">
+      <description>Equipment with this rule:
+May equip a MuzzleUpgrade.</description>
     </rule>
     <rule name="Heavy Weapon(Type)" id="17d5-7121-b66c-ef4f" hidden="false">
       <description>Heavy Weapon Equipment:
@@ -7277,7 +8019,9 @@ Destroys Light Cover when moving through it.</description>
     </rule>
     <rule name="Back(Type)" id="c879-1730-10ce-f372" hidden="false">
       <description>Rüstung Back Upgrades:
-May only be equipped on Rüstung with the Back rule.</description>
+May only be equipped on Rüstung with the Back rule.
+Equipment with this rule:
+May equip a number of upgrades equal to (x)</description>
     </rule>
     <rule name="Arm(Type)" id="2b87-159c-acef-661c" hidden="false">
       <description>Rüstung Arm Upgrades:
@@ -7422,6 +8166,55 @@ Is destroyed upon use.</description>
 Is capable of having (x) number of non-Armour Infantry Equipment equipped to the model that wears this Equipment.
 
 </description>
+    </rule>
+    <rule name="Back(1)" id="465d-2fe8-2e21-c5f1" hidden="false">
+      <description>Equipment with this rule:
+May equip a number of Rüstung Back Upgrades equal to (x).</description>
+    </rule>
+    <rule name="Chest(1)" id="c979-71e3-60ab-e31c" hidden="false">
+      <description>Equipment with this rule:
+May equip a number of Rüstung Chest Upgrades equal to (x).</description>
+    </rule>
+    <rule name="Leg(1)" id="ab4a-4b1e-d235-917b" hidden="false">
+      <description>Equipment with this rule:
+May equip a number of Rüstung Leg Upgrades equal to (x).</description>
+    </rule>
+    <rule name="Head(1)" id="b505-870d-edca-952b" hidden="false">
+      <description>Equipment with this rule:
+May equip a number of Rüstung HeadUpgrades equal to (x).</description>
+    </rule>
+    <rule name="Shoulder(1)" id="0224-75a8-55af-2f0e" hidden="false">
+      <description>Equipment with this rule:
+May equip a number of Rüstung Shoulder Upgrades equal to (x).</description>
+    </rule>
+    <rule name="Arm(2)" id="5126-38e3-0074-4b94" hidden="false">
+      <description>Equipment with this rule:
+May equip a number of Rüstung Arm Upgrades equal to (x).</description>
+    </rule>
+    <rule name="Shoulder(2)" id="1e21-0557-c602-f477" hidden="false">
+      <description>Equipment with this rule:
+May equip a number of Rüstung Shoulder Upgrades equal to (x).</description>
+    </rule>
+    <rule name="Arm(1)" id="6223-817c-f736-a7a4" hidden="false">
+      <description>Equipment with this rule:
+May equip a number of Rüstung Arm Upgrades equal to (x).</description>
+    </rule>
+    <rule name="Autoloader(Shoulder)" id="fdb2-6c4d-6ca6-5f80" hidden="false">
+      <description>Equipment with this rule:
+Removes the Reload rule from weapons in the slot specified by (x).</description>
+    </rule>
+    <rule name="Addiction(2+)" id="464e-c9e9-f0df-8c72" hidden="false">
+      <description>Equipment with this Rule:
+Must make an Addiction roll with a required roll of (x). If the Addiction roll is failed, the model becomes addicted to using the equipment. 
+If the equipment is a Combat Drug, the model must use the Combat Drug every Campaign Turn or immediately gain a point of exhaustion. They do not gain the positive effect of the Combat Drug if it is used to combat addiction.</description>
+    </rule>
+    <rule name="Underbarrel" id="1101-21cb-ae99-eb0d" hidden="false">
+      <description>Equipment with this rule:
+May equip a Underbarrel Upgrade.</description>
+    </rule>
+    <rule name="Sight" id="cb7e-78d1-f895-f39b" hidden="false">
+      <description>Equipment with this rule:
+May equip a Sight Upgrade.</description>
     </rule>
   </sharedRules>
 </gameSystem>
