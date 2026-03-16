@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1ddf-beb7-26d2-ef25" name="Former Luftwaffe" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="eeb3-567d-708a-f896" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="1ddf-beb7-26d2-ef25" name="Former Reich/ Luftwaffe" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="eeb3-567d-708a-f896" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
     <selectionEntry id="b995-b3ba-e01b-92e0" name="Himmelschlossen" hidden="false" collective="false" import="true" type="upgrade">
       <costs>
