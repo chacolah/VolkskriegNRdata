@@ -1013,7 +1013,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile id="2e22-c209-74c8-c87d" name="Soldier" hidden="false" typeId="13eb-a53b-a583-5387" typeName="Stats">
+            <profile name="Conscript" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="02ba-8ca3-796d-0f88">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">7</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1024,8 +1024,7 @@
                 <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
                 <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
                 <characteristic name="DUR" typeId="4f35-654d-7514-6eda">6</characteristic>
-                <characteristic typeId="9a48-6489-0584-2aae" name="TYPE"/>
-                <characteristic typeId="b0b9-eecb-5404-4ff8" name="Special Rules"/>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Civilian</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1073,19 +1072,18 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Soldier" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6fb0-355d-19d5-974b">
+            <profile name="Police" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6fb0-355d-19d5-974b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">7</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
                 <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
                 <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
                 <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
                 <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
                 <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
                 <characteristic name="DUR" typeId="4f35-654d-7514-6eda">6</characteristic>
-                <characteristic typeId="9a48-6489-0584-2aae" name="TYPE"/>
-                <characteristic typeId="b0b9-eecb-5404-4ff8" name="Special Rules"/>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Civilian</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1156,14 +1154,13 @@
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">7</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
                 <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
                 <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
                 <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
                 <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
                 <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
                 <characteristic name="DUR" typeId="4f35-654d-7514-6eda">6</characteristic>
-                <characteristic typeId="9a48-6489-0584-2aae" name="TYPE"/>
-                <characteristic typeId="b0b9-eecb-5404-4ff8" name="Special Rules"/>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Military</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1440,6 +1437,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3a-b666-b28e-fccb"/>
           </constraints>
+          <profiles>
+            <profile name="2cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="557b-e78b-518e-e39b">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Magazine(20x138B)" id="42d2-88ed-078d-f723" hidden="false" type="rule" targetId="10b3-df7f-3cce-b5e1"/>
+            <infoLink name="Ordnance(20x138B)" id="e786-3533-bc32-4dcf" hidden="false" type="rule" targetId="7268-4ecf-28b5-df1b"/>
+            <infoLink name="Reload(1,5)" id="5ca6-16a2-7bc9-7296" hidden="false" type="rule" targetId="8f24-b9e3-6356-ec2e"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="3.7cm Kampfwagenkanone" hidden="true" id="3d5c-ff51-8bff-1bc2">
           <costs>
@@ -1478,6 +1496,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0255-bcf1-caed-3464"/>
           </constraints>
+          <profiles>
+            <profile name="3.7cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="5b5a-14fe-a690-df40">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ordnance(37x249)" id="e98a-4792-bc23-5127" hidden="false" type="rule" targetId="35cc-2a2d-3301-17d2"/>
+            <infoLink name="Reload(1,1)" id="c5ec-6da7-26cf-b60b" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="2cm Maschinenekampfwagenkanone" hidden="true" id="bd3f-23ae-ad88-6d9b">
           <costs>
@@ -1516,6 +1554,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7617-541b-fae7-d675"/>
           </constraints>
+          <profiles>
+            <profile name="2cm Maschinenekampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="c94b-a386-faf3-6b7e">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ordnance(20x138B)" id="fcb8-2469-418f-cb97" hidden="false" type="rule" targetId="7268-4ecf-28b5-df1b"/>
+            <infoLink name="Magazine(20x138B)" id="1eb4-b41f-a1fd-0602" hidden="false" type="rule" targetId="10b3-df7f-3cce-b5e1"/>
+            <infoLink name="Reload(1,5)" id="c000-dc76-9416-1a03" hidden="false" type="rule" targetId="8f24-b9e3-6356-ec2e"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="3.7cm Maschinenkampfwagenkanone" hidden="true" id="5ce9-f2f2-742b-a0fe">
           <costs>
@@ -1554,6 +1613,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e830-3b5e-0dbc-da9e"/>
           </constraints>
+          <profiles>
+            <profile name="3.7cm Maschinenkampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6857-6d47-6de8-f19a">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Ordnance(37x249)" id="7bb4-e3e7-6372-eb9b" hidden="false" type="rule" targetId="35cc-2a2d-3301-17d2"/>
+            <infoLink name="Reload(1,4)" id="fbfc-529b-f870-8ec0" hidden="false" type="rule" targetId="4fe8-c19c-3af1-ad4c"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Raketenpanzerbüchse-58 x6" hidden="true" id="7ac3-de43-2226-c7bf">
           <costs>
@@ -1565,6 +1644,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef13-feee-ecda-e2b8"/>
           </constraints>
+          <profiles>
+            <profile name="Raketenpanzerbüchse-58 x6" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="50c3-a838-5771-ffe7">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Surplus" id="84a0-b4a7-3813-f770" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+            <infoLink name="Ordnance(88mmR Raketen)" id="a3b0-b7c9-187c-f3ee" hidden="false" type="rule" targetId="a334-f8a4-fbc4-259d"/>
+            <infoLink name="Reload(4,6)" id="af91-e375-47bb-c15c" hidden="false" type="rule" targetId="42d0-5d14-9266-a5c1"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="30cm Raketenwerfer" hidden="true" id="78b6-b08a-d31a-d148">
           <costs>
@@ -1593,6 +1693,26 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e27-9df8-c4e8-7fc0"/>
           </constraints>
+          <profiles>
+            <profile name="30cm Raketenwerfer" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="f3fa-4705-2caf-2bcf">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">96</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Artillery(1)" id="c0b5-165c-68eb-e54c" hidden="false" type="rule" targetId="d4e8-5a2f-46e9-074c"/>
+            <infoLink name="Ordnance(30cmR)" id="d8d8-d5d2-e60b-b448" hidden="false" type="rule" targetId="4f7c-bc08-6f07-6f4a"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kampfwagenfeuerwerfer-51" hidden="true" id="b0e7-a9a5-14c3-f883">
           <costs>
@@ -1621,6 +1741,27 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ad5-737d-2976-7efa"/>
           </constraints>
+          <profiles>
+            <profile name="Kampfwagenfeuerwerfer-51" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7a5c-bc41-d8e3-f84e">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">0</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">0</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">0</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Flame" id="4e47-38ac-234d-c3df" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
+            <infoLink name="Reload(1,1)" id="38c0-7a60-5f7a-a47e" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+            <infoLink name="Radius(6&quot;)" id="0550-e95b-c4cc-f4ec" hidden="false" type="rule" targetId="690b-b8c2-b84b-6891"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Lanciafiamme Modello 52" hidden="true" id="ab9b-23ce-f872-fba7">
           <costs>
@@ -6161,7 +6302,7 @@ Requires one of the models within it to be designated as the Officer.</descripti
       <description>Weapon Equipment and Ordinance Equipment, with this rule:
 Apply their effects in a radial area in inches equal to (x).</description>
     </rule>
-    <rule name="Ordnance(x)" id="7268-4ecf-28b5-df1b" hidden="false">
+    <rule name="Ordnance(20x138B)" id="7268-4ecf-28b5-df1b" hidden="false">
       <description>Equipment with this rule:
 Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
@@ -6337,7 +6478,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
 May be used (x,-) times before needing to be reloaded.
 Has a reloading process takes (-,y) amount of actions.</description>
     </rule>
-    <rule name="Reload(1,4)" id="ecf4-2215-dfe2-493b" hidden="false">
+    <rule name="Reload(1,3)" id="ecf4-2215-dfe2-493b" hidden="false">
       <description>Equipment with this rule: 
 May be used (x,-) times before needing to be reloaded.
 Has a reloading process takes (-,y) amount of actions.</description>
@@ -6714,5 +6855,34 @@ Must be equipped with a Vehicle Mobility Part.
 May be upgraded with Truck Upgrades.</description>
     </rule>
     <rule name="Surplus" id="5705-4637-2b89-5c53" hidden="false"/>
+    <rule id="10b3-df7f-3cce-b5e1" name="Magazine(20x138B)" hidden="false">
+      <description>Magazine Upgrades:
+May be used on any weapon that has the Magazine rule.
+x is the type of magazine the upgrade can be applied to.
+If the Magazine Upgrade has the Reload rule, replace the Reload rule on the weapon it&apos;s being applied to with the one from the upgrade’s profile.
+Weapons with the Magazine rule:
+May be upgraded with a single Magazine upgrade of the matching type.</description>
+    </rule>
+    <rule name="Ordnance(37x249)" id="35cc-2a2d-3301-17d2" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Ordnance(88mmR Raketen)" id="a334-f8a4-fbc4-259d" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Reload(1,4)" id="4fe8-c19c-3af1-ad4c" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="Ordnance(x)" id="e1fc-c9de-5530-7e3e" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Ordnance(30cmR)" id="4f7c-bc08-6f07-6f4a" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
   </sharedRules>
 </gameSystem>
