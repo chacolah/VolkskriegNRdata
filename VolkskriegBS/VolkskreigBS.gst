@@ -1190,7 +1190,6 @@
     <selectionEntryGroup name="Panzer" id="31e1-cfc2-0836-5b24" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Panzer Chassis" hidden="false" id="90d9-c2f3-9a01-b4c3" type="selectionEntryGroup" targetId="3c55-fd24-c1cb-4f46"/>
-        <entryLink import="true" name="Panzer Turret" hidden="false" id="f926-7fe7-cc27-6032" type="selectionEntryGroup" targetId="0966-4bd1-1db8-a943"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung" id="d2d5-bcfa-096f-b605" hidden="false">
@@ -1353,7 +1352,23 @@
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="6f3a-b666-b28e-fccb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="000d-26bd-eab0-24b1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="6f3a-b666-b28e-fccb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e2f1-0d63-ea03-4ee1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="1154-bcd0-320d-6ce3" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3a-b666-b28e-fccb"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="3.7cm Kampfwagenkanone" hidden="true" id="3d5c-ff51-8bff-1bc2">
           <costs>
@@ -1375,7 +1390,23 @@
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="0255-bcf1-caed-3464">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="000d-26bd-eab0-24b1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="0255-bcf1-caed-3464">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e2f1-0d63-ea03-4ee1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="7e43-009b-590b-f027" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0255-bcf1-caed-3464"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="2cm Maschinenekampfwagenkanone" hidden="true" id="bd3f-23ae-ad88-6d9b">
           <costs>
@@ -1397,7 +1428,23 @@
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="7617-541b-fae7-d675">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="000d-26bd-eab0-24b1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="7617-541b-fae7-d675">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e2f1-0d63-ea03-4ee1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="6569-0631-f5d2-ff58" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7617-541b-fae7-d675"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="3.7cm Maschinenkampfwagenkanone" hidden="true" id="5ce9-f2f2-742b-a0fe">
           <costs>
@@ -1419,12 +1466,34 @@
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="2" field="e830-3b5e-0dbc-da9e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="000d-26bd-eab0-24b1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="e830-3b5e-0dbc-da9e">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e2f1-0d63-ea03-4ee1" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="2787-be43-7415-0063" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e830-3b5e-0dbc-da9e"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Raketenpanzerbüchse-58 x6" hidden="true" id="7ac3-de43-2226-c7bf">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="9deb-8d6b-68ad-ef68" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef13-feee-ecda-e2b8"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="30cm Raketenwerfer" hidden="true" id="78b6-b08a-d31a-d148">
           <costs>
@@ -1447,6 +1516,12 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="ffac-df03-1988-6b3f" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e27-9df8-c4e8-7fc0"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kampfwagenfeuerwerfer-51" hidden="true" id="b0e7-a9a5-14c3-f883">
           <costs>
@@ -1469,11 +1544,14 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="4747-98cd-8898-7a3d" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ad5-737d-2976-7efa"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="1154-bcd0-320d-6ce3" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
-      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Medium Panzer Weapons" id="9044-29f4-7d2a-6895" hidden="false">
       <selectionEntries>
@@ -1497,6 +1575,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="455c-19d5-bf1e-93f3" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="7.5cm Kampfwagenkanone" hidden="true" id="e404-ff8f-5ca2-5915">
           <costs>
@@ -1518,11 +1599,11 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="05a4-f226-9c1a-6480" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="3cff-6805-4602-c5e4" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
-      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Heavy Panzer Weapons" id="65a0-fd96-15af-e0b7" hidden="false">
       <selectionEntries>
@@ -1537,6 +1618,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="8f7b-d57a-2aca-4351" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="12.8cm Kampfwagenkanone" hidden="true" id="1d5e-adb5-a55e-23e1">
           <costs>
@@ -1549,6 +1633,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="5af3-5232-b3bf-6600" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="17cm Kampfwagenkanone" hidden="true" id="2c28-3ce9-3f44-2ee9">
           <costs>
@@ -1561,11 +1648,11 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="ebe7-606e-869d-b87d" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="6b11-e5a1-8c77-25db" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
-      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Tankette" id="26d4-a494-82a2-4bed" hidden="false">
       <selectionEntries>
@@ -1649,7 +1736,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Motorcycle" id="61c1-9d80-aced-71df" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="BMW R75" hidden="true" id="db37-3e47-7443-f615">
+        <selectionEntry type="upgrade" import="true" name="BMW R100" hidden="true" id="db37-3e47-7443-f615">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="110"/>
           </costs>
@@ -1662,11 +1749,7 @@
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
               </costs>
               <entryLinks>
-                <entryLink import="true" name="Heavy Weapons" hidden="false" id="de5e-d75d-9c9c-ca27" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c04a-0b5c-4651-2751"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="9416-3922-626f-8b8e" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
               </entryLinks>
             </selectionEntry>
           </selectionEntries>
@@ -1960,30 +2043,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Fahrlafette 51" hidden="true" id="8bae-605a-7a31-4d56">
           <entryLinks>
-            <entryLink import="true" name="Medium Panzer Weapons" hidden="false" id="04b0-5ce9-aa27-19c7" type="selectionEntryGroup" targetId="9044-29f4-7d2a-6895">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edcb-1040-054e-b5c3"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="0" field="edcb-1040-054e-b5c3">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e5be-4e23-05ec-5280" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Light Panzer Weapons" hidden="false" id="e5be-4e23-05ec-5280" type="selectionEntryGroup" targetId="b255-6c06-a35a-0879">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b276-40c0-70a0-e245"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="0" field="b276-40c0-70a0-e245">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="04b0-5ce9-aa27-19c7" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="8587-006b-9b06-e1ef" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Schutzschild-51" hidden="true" id="be47-f87a-5bf8-89d3">
@@ -2002,6 +2062,9 @@
                   </conditionGroups>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2c9-ca3e-dab6-4b92"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -2443,6 +2506,8 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7fbb-3556-ad71-b3e5" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b0e7-a9a5-14c3-f883" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="78b6-b08a-d31a-d148" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7ac3-de43-2226-c7bf" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2465,6 +2530,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0700-832e-5eed-4918"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Muzzle Brake" hidden="true" id="05e3-f6aa-ec80-f614">
           <modifiers>
@@ -2474,6 +2542,8 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b0e7-a9a5-14c3-f883" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7fbb-3556-ad71-b3e5" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="78b6-b08a-d31a-d148" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7ac3-de43-2226-c7bf" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2487,6 +2557,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="665e-ed78-86a6-a6c4"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -2642,6 +2715,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="70"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e57-4fbc-da03-9bff"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzerfaust-60" hidden="true" id="5124-31d0-40a6-cf70" collective="false">
           <modifiers>
@@ -2663,6 +2739,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbe8-ba7b-be53-d794"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzerbüchse-54(Gustloff)" hidden="true" id="d4b1-9876-1b6b-81a0" collective="false">
           <modifiers>
@@ -2684,16 +2763,25 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27e2-c0f9-c866-02b1"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzerbüchse-54(Cz)" hidden="true" id="88d5-c07c-682b-5b88" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="988d-be7c-a49b-11b9"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Machinengewehr-56" hidden="true" id="3cf8-46de-ed2d-aec6" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43b3-f4c8-9a37-cbb5"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Granatwerfer-53" hidden="true" id="ddde-35d1-528c-95f5" collective="false">
           <modifiers>
@@ -2710,6 +2798,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="70"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cb2-fc3d-740a-4f44"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Granatbüchse-54(Gustloff)" hidden="true" id="2800-a6bf-347f-8f74" collective="false">
           <modifiers>
@@ -2726,6 +2817,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="105"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73f0-972a-7faf-ee5d"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fliegerfaust-55" hidden="true" id="5f16-2682-4506-23a9" collective="false">
           <modifiers>
@@ -2742,6 +2836,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c62-a358-6abd-23aa"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flammenwerfer-47" hidden="true" id="c5b2-f9bf-20c1-a0bf" collective="false">
           <modifiers>
@@ -2758,6 +2855,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="70"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2434-a752-2ff1-ef4a"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blitzwerfengewehr-59" hidden="true" id="3848-e115-3a35-9e94" collective="false">
           <costs>
@@ -2770,31 +2870,49 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a597-14ab-f081-d3fd"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kulspruta m/61" hidden="true" id="d742-7393-5c67-cd46">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="95"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41ab-ebe4-6c43-321b"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kulsprutgevär m/57" hidden="true" id="fe9c-a2c5-9887-d63e">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="70"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1389-4057-b951-f6c8"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Lewis 1913 Automatic MAchine Gun" hidden="true" id="9d75-7845-7c58-293f">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4e2-448a-362a-80d3"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Bren Light Machine Gun MKIV*" hidden="true" id="c444-46e3-a85f-a6e4">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48a2-a1bf-0666-78c6"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Boys AT Rifle MKII*" hidden="true" id="d75e-0785-0d44-b90e">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d247-f582-8f7e-ec76"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -2825,6 +2943,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ece-d639-e4e4-2bc0"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maschinenpistole-55" hidden="true" id="e73c-b8c7-9dbc-01f1" collective="false">
           <modifiers>
@@ -2846,6 +2967,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3193-e5e1-69cb-0413"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maschinenpistole-49" hidden="true" id="c57d-c56f-5441-2714" collective="false">
           <modifiers>
@@ -2869,6 +2993,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="22"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e089-83d5-fcfa-b2e6"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maschinenkarabiner-55" hidden="true" id="5173-7b1f-e523-d07c" collective="false">
           <costs>
@@ -2881,6 +3008,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1016-5677-aaae-5634"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Karabiner-98m" hidden="false" id="4b4c-74ef-eadf-f5c3" collective="false">
           <modifiers>
@@ -2894,26 +3024,41 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
           </costs>
           <comment>Kar98m is set to visible for all as its a universal equipment for former reich</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17f4-fec7-ef7b-697f"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="M1923 Pederson Rifle" hidden="true" id="5701-bfae-cfac-792e" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7304-e892-71f1-5688"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="M1944 Johnson Automatic Rifle" hidden="true" id="ea2a-0fdb-ab48-950f" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6148-639f-d1ac-a995"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="M1939 Johnson Semi Auto Rifle" hidden="true" id="fbea-06fe-595f-4988" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95ae-3f62-b41c-5530"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="GM M1944 Hyde Machine Gun" hidden="true" id="d246-ddfe-a1b5-b8e1" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c0-51e4-4549-ca75"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Gewehr-55 (Gustloff)" hidden="true" id="47e4-9a78-ced8-0cf1" collective="false">
           <modifiers>
@@ -2930,11 +3075,17 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3d4-e4dd-4db4-4181"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Gewehr-55 (Walther)" hidden="true" id="d183-51fb-ae7c-295c" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34ce-4613-c5bb-0c0c"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fallschimjägergewehr-56" hidden="true" id="1167-a795-6890-c22d" collective="false">
           <modifiers>
@@ -2951,31 +3102,49 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb3a-d592-d4a4-10e2"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="870 Shotgun" hidden="true" id="6249-666c-5083-d21e" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="510a-26ce-4d0e-65a7"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="&quot;Detroit Special&quot; SMG" hidden="true" id="e05c-a97f-7bef-19d0" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ceaf-bc28-3fb8-d4a3"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kulsprutegevär M/51" hidden="true" id="a3a7-1373-1865-de74">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5be3-eb8b-b32c-4000"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kylsprutepistol m/46" hidden="true" id="1981-62d2-d27d-a648">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a13-a4d7-740d-eaa7"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ljungman Automatgevär m/42" hidden="true" id="1f17-e051-279a-3a80">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d730-1ae7-1951-f33c"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Orita 1941/50" hidden="true" id="9581-0cb3-d0a9-72c2">
           <costs>
@@ -2988,6 +3157,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2db-d085-f012-c742"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Orita 1947" hidden="true" id="3939-3cb3-5a49-2285">
           <costs>
@@ -3000,6 +3172,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df57-9a18-da67-3620"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kampfpistole-50" hidden="true" id="d589-cb62-c332-d064" collective="false">
           <modifiers>
@@ -3016,31 +3191,49 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6d3-f638-c719-75bf"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rifle, Short Ross-Garand" hidden="true" id="98b9-a718-c2c3-8faf">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c599-6c76-a446-427f"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ross MKIV*" hidden="true" id="48f0-d516-70c6-09fc">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1b4-0f47-95fc-d16d"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sten Submachine Gun MKVI*" hidden="true" id="d6d5-9d47-96ab-743b">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="23"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e00-04b2-42a1-749d"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sten Submachine Gun MKV**" hidden="true" id="2a3d-09fc-05fb-da5d">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9418-6a37-d23f-0644"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sterling Submachine Gun MKIII" hidden="true" id="755c-742d-82b8-fc64">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f412-0a23-9cfa-35b9"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -3057,6 +3250,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ded-1cce-6c67-01d0"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sturmpistole 47" hidden="true" id="788b-b111-9631-b18a" collective="false">
           <modifiers>
@@ -3078,6 +3274,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5abf-2f02-968f-598e"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Pistole-55 Luger" hidden="true" id="007c-6e44-454d-36eb" collective="false">
           <modifiers>
@@ -3099,6 +3298,9 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="7"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9066-6463-1eeb-53a5"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Pistolkarabiner-54 Biesensteiel" hidden="true" id="424c-8f66-8e1f-d0f2" collective="false">
           <modifiers>
@@ -3120,11 +3322,17 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4300-1a56-d5d1-2699"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Maschinenpistole-54 Schnellfeuer" hidden="true" id="fe59-0e7c-eee3-f449" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd22-1017-4bf8-dbd0"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Klappspaten 38" hidden="true" id="444d-2a02-98a7-d692" collective="false">
           <costs>
@@ -3152,6 +3360,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b30a-c9a8-e2d8-63d0"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blitzwerfenpistole-59" hidden="true" id="e37a-3325-d765-68b3" collective="false">
           <costs>
@@ -3164,12 +3375,18 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ae0-96cb-1147-d527"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Bayonet" hidden="false" id="95bf-877d-1c5d-a242" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
           </costs>
           <comment>Bayonet is marked as visible for all as its the most basic weapon an infantry model can have</comment>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6604-3e71-8b33-a447"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="9mm Pocket Pistol" hidden="true" id="8f71-ef28-efcc-739f" collective="false">
           <modifiers>
@@ -3187,16 +3404,25 @@
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0f4-bfcc-4c0c-6d18"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name=".38 Revolver" hidden="true" id="1043-20ce-01ff-41b0" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9466-54e8-c222-15c2"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Colt M1912A1" hidden="true" id="fc7c-bb63-86be-b69a" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd0b-7782-259c-7b1e"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -3618,6 +3844,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af82-142e-4e10-abc4"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flakwerfengewehr" hidden="true" id="1230-9f60-b6d6-e901">
           <costs>
@@ -3635,6 +3864,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d596-e191-2c3c-60d8"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rüstungabwehrbuchse-53(S)" hidden="true" id="d36d-4f72-6c35-794d">
           <costs>
@@ -3651,6 +3883,9 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69c8-a057-d7f1-8c84"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <constraints>
@@ -3886,13 +4121,22 @@
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7626-6633-32cd-dc51"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Medic Training" hidden="false" id="347c-b0c3-e7c9-5c16">
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b3bb-871a-5f8b-7a67"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1f2-efe9-4e4f-9d5e"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Engineer Certification" hidden="false" id="1305-eb8b-a80b-32bb">
           <costs>
@@ -3903,6 +4147,9 @@
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7b8-410a-b69c-9b77"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Radio Control Specialization" hidden="false" id="349f-1caa-6a5e-2664">
               <costs>
@@ -3913,20 +4160,35 @@
                   <costs>
                     <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99dc-51a1-e18a-506d"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b083-257b-335d-8a39"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Vehicle Mechanic Specialization" hidden="false" id="27dc-434f-2b03-d12d">
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4093-ec46-5c37-1e7b"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Ground Crew Training" hidden="false" id="3e60-b66f-1d30-21f4">
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75cf-6cfc-1cfd-5d01"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fff1-f806-6bd0-484c"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Aircraft Operation" hidden="false" id="128e-6741-98f5-8aaa">
           <costs>
@@ -3942,10 +4204,19 @@
                   <costs>
                     <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
                   </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fd6-3a55-39bb-d118"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e28-8cff-1586-22b9"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a9a-29e9-1afa-2ea9"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Leadership" hidden="false" id="8eae-c1bf-0451-6533">
           <costs>
@@ -3958,6 +4229,9 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fd7-b8de-c865-bd6c"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Soldiering" hidden="false" id="59a2-dc3a-0ff7-04e5">
           <costs>
@@ -3968,23 +4242,38 @@
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cc8-b1b7-6cad-5c59"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Rocketpack Operation" hidden="false" id="468d-d58d-e28d-8b41">
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d490-dbfa-6bc3-6df8"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Exo Operation" hidden="false" id="79c2-56c9-d849-0d53">
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc98-3340-3f4e-afe4"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Blitzwerfer Operation" hidden="false" id="fc69-d1ae-3d33-0fa0">
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a84-6b4e-84c9-b978"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a74-5cbe-3372-008c"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzer" hidden="false" id="2cbe-3acd-e220-1c57">
           <costs>
@@ -3995,18 +4284,30 @@
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec73-e012-eb8f-9036"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Gunner Certification" hidden="false" id="a60f-eab0-7603-f195">
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="936a-24a1-b830-3c6c"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Loader Certification" hidden="false" id="99c5-7ea9-2d89-18b9">
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1849-b0cd-4f4a-becd"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ff3-b3db-1ac4-e6ee"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Animal Handling" hidden="false" id="f152-3642-fff2-151f">
           <costs>
@@ -4017,21 +4318,30 @@
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fd1-a84e-4c0a-e514"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Houndmaster Training" hidden="false" id="2809-e2be-a197-1fc7">
               <costs>
                 <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9fb-b467-5cfa-205f"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21a5-74b5-823f-a153"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Chassis" id="3c55-fd24-c1cb-4f46" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot;" hidden="true" id="75e8-54e8-18ea-79b0">
+        <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot; (Turreted)" hidden="true" id="75e8-54e8-18ea-79b0">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="220"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4050,10 +4360,14 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: LPW" hidden="false" id="757e-ae70-5ec5-b481" type="selectionEntryGroup" targetId="b7cf-f6ad-ac7d-5032"/>
+            <entryLink import="true" name="Panzer (Turreted) Upgrades" hidden="false" id="2916-a6eb-1e14-f4ac" type="selectionEntryGroup" targetId="f974-c286-9d14-e1f6"/>
+          </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="E-25 &quot;Panzer&quot;" hidden="true" id="f137-3e2e-5c0e-c63a">
+        <selectionEntry type="upgrade" import="true" name="E-25 &quot;Panzer&quot; (Turreted)" hidden="true" id="f137-3e2e-5c0e-c63a">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="210"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="300"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4071,10 +4385,13 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="ef2d-4488-891f-b372" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
+          </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="E-50 &quot;Tiger&quot;" hidden="true" id="afdd-ed17-e25a-0103">
+        <selectionEntry type="upgrade" import="true" name="E-50 &quot;Tiger&quot; (Turreted)" hidden="true" id="afdd-ed17-e25a-0103">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="260"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="350"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4092,12 +4409,119 @@
               </conditions>
             </modifier>
           </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: HPW" hidden="false" id="9e9a-8435-3277-292a" type="selectionEntryGroup" targetId="019c-97e7-5698-7ed7"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot; (Drohne Rack)" hidden="true" id="db9b-2bde-47e0-6930">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="250"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Carrier(4)" id="9e13-2031-7637-3041" hidden="false" type="rule" targetId="0585-e289-1a1e-6def"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot; (Casemate)" hidden="true" id="230e-861d-07f9-6652">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="240"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: LPW" hidden="false" id="d0cc-9ec9-2fa6-1c54" type="selectionEntryGroup" targetId="b7cf-f6ad-ac7d-5032"/>
+            <entryLink import="true" name="Panzer (Casemate) Upgrades" hidden="false" id="4cc0-2a03-85fb-24ab" type="selectionEntryGroup" targetId="3e80-a3cb-ad20-244e"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="E-25 &quot;Panzer&quot; (Casemate)" hidden="true" id="b88d-4a94-81b9-9d40">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="290"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="beb1-2294-c475-89e6" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
+            <entryLink import="true" name="Panzer (Casemate) Upgrades" hidden="false" id="b94c-4b45-5beb-322c" type="selectionEntryGroup" targetId="3e80-a3cb-ad20-244e"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="E-50 &quot;Tiger&quot; (Casemate)" hidden="true" id="8f3a-cb82-0747-bde3">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="320"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: HPW" hidden="false" id="3e98-a8c4-0e71-f4fe" type="selectionEntryGroup" targetId="019c-97e7-5698-7ed7"/>
+            <entryLink import="true" name="Panzer (Casemate) Upgrades" hidden="false" id="3c3f-69ce-b2a6-1b04" type="selectionEntryGroup" targetId="3e80-a3cb-ad20-244e"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="2341-f0b7-4735-0833" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
         <entryLink import="true" name="Panzer Mobility" hidden="false" id="a735-f9ff-8c2a-5d03" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c003-9fd2-74a2-c8f3"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Chassis Upgrade" id="eeae-b378-e97d-29db" hidden="false">
       <constraints>
@@ -4285,190 +4709,9 @@
         <entryLink import="true" name="Panzer Mobility Upgrades" hidden="false" id="d1e3-73d1-c590-6d94" type="selectionEntryGroup" targetId="42a9-9edc-5f30-300d"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Panzer Turret" id="0966-4bd1-1db8-a943" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Drohne Rack" hidden="true" id="4b57-7859-95dd-d043">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
-          </costs>
-          <modifiers>
-            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="67b9-a861-72a8-701e" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <entryLinks>
-            <entryLink import="true" name="Drohne" hidden="false" id="4177-c245-67b9-4d74" type="selectionEntryGroup" targetId="a259-84b1-60c2-b435"/>
-          </entryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Heavy Turret" hidden="true" id="6459-6330-437d-c9d8">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Artillery Carriage" hidden="true" id="084f-ac77-c47a-c434">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Open Topped Cupola" hidden="true" id="ce35-4e13-c8ac-e134">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Light Turret" hidden="true" id="7717-ac44-ad72-c023">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="0872-2ea5-dacb-5b6b" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="75e8-54e8-18ea-79b0" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Platform" hidden="true" id="a302-a032-02a8-d3a1">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Casemate" hidden="true" id="0cbc-937f-e816-36b1">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ee9-ba80-cac8-7798"/>
-      </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Panzer Turret Upgrades" hidden="false" id="2220-a098-ff0e-309f" type="selectionEntryGroup" targetId="f974-c286-9d14-e1f6"/>
-      </entryLinks>
-    </selectionEntryGroup>
     <selectionEntryGroup name="Vehicle Chassis" id="1a77-4918-f32e-5dfb" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Kübelwagen" hidden="true" id="7994-61ae-daf6-84f7">
+        <selectionEntry type="upgrade" import="true" name="Kübelwagen Type 121" hidden="true" id="7994-61ae-daf6-84f7">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
           </costs>
@@ -4490,10 +4733,13 @@
           <categoryLinks>
             <categoryLink name="Multipart Equipment" hidden="false" id="932c-e771-f4b1-0e99" targetId="5020-e810-c95a-b39d" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="28a6-f51d-b988-eb3c" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
+          </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Leichter Panzerspähwagen" hidden="true" id="0872-2ea5-dacb-5b6b">
+        <selectionEntry type="upgrade" import="true" name="Leichter Panzerspähwagen (Turreted)" hidden="true" id="0872-2ea5-dacb-5b6b">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4513,10 +4759,13 @@
           <categoryLinks>
             <categoryLink name="Multipart Equipment" hidden="false" id="352f-c29e-c5c6-5719" targetId="5020-e810-c95a-b39d" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: LPW" hidden="false" id="a987-67ee-96ce-a1ab" type="selectionEntryGroup" targetId="b7cf-f6ad-ac7d-5032"/>
+          </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Schützen Panzerspähwagen" hidden="true" id="1f6a-f29f-89ef-723a">
+        <selectionEntry type="upgrade" import="true" name="Schützen Panzerwagen" hidden="true" id="1f6a-f29f-89ef-723a">
           <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="175"/>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="170"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4536,6 +4785,9 @@
           <categoryLinks>
             <categoryLink name="Multipart Equipment" hidden="false" id="376f-081b-3adb-c785" targetId="5020-e810-c95a-b39d" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="09f0-33cc-27f8-b25b" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Opel Blitz" hidden="true" id="9243-8acc-a029-ce71">
           <costs>
@@ -4559,6 +4811,84 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Leichter Panzerspähwagen (Cupola)" hidden="true" id="4d5e-dead-eaf6-d27c">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Multipart Equipment" hidden="false" id="c708-f768-8ae8-0bb8" targetId="5020-e810-c95a-b39d" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="82bc-287f-1b45-000e" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Leichter Panzerspähwagen (Platform)" hidden="true" id="7142-5ae1-6b24-9cde">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="160"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Multipart Equipment" hidden="false" id="a893-af24-f92f-7e50" targetId="5020-e810-c95a-b39d" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="2955-80a0-cd10-e6e8" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Schützen Panzerwagen (Turreted)" hidden="true" id="b779-6138-aa55-8e88">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Multipart Equipment" hidden="false" id="c173-5558-add3-958f" targetId="5020-e810-c95a-b39d" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="6bbe-37ef-ffb2-5e2d" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4889,7 +5219,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="361d-154b-ae4e-cafa"/>
       </constraints>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Panzer Turret Upgrades" id="f974-c286-9d14-e1f6" hidden="false">
+    <selectionEntryGroup name="Panzer (Turreted) Upgrades" id="f974-c286-9d14-e1f6" hidden="false">
       <constraints>
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2aab-0400-e647-7a4c"/>
       </constraints>
@@ -4899,11 +5229,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Heavy Weapons" hidden="false" id="615f-59df-2ba0-b60f" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a08-ed36-3dcb-9129" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="8eb1-277a-15c2-ed36" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4921,44 +5247,15 @@
               </conditions>
             </modifier>
           </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Up-Armoured Turret" hidden="true" id="a9e8-221c-b8e9-b8ef">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9104-46dc-da8b-d1a0"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Zwitterling Upgrade" hidden="true" id="000d-26bd-eab0-24b1">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
           </costs>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="65a0-fd96-15af-e0b7" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="or">
@@ -4974,7 +5271,25 @@
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="019c-97e7-5698-7ed7" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4808-889f-7b19-d48d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="0" field="beef-45c5-27c4-4fcd">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e2f1-0d63-ea03-4ee1" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beef-45c5-27c4-4fcd"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Vierling Upgrade" hidden="true" id="e2f1-0d63-ea03-4ee1">
           <costs>
@@ -4985,8 +5300,8 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="65a0-fd96-15af-e0b7" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="019c-97e7-5698-7ed7" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4808-889f-7b19-d48d" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5006,18 +5321,22 @@
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="497e-c37e-2180-50fb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="000d-26bd-eab0-24b1" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="497e-c37e-2180-50fb"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Coaxial Mount" hidden="true" id="1ddf-c8f5-2fd6-f0b0">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink import="true" name="Heavy Weapons" hidden="false" id="bdec-ce9f-116a-679c" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a20-a710-522b-69b2" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="8306-b8a7-a806-3048" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5036,8 +5355,128 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae32-bcc4-77e7-3789"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Topfblende/Saukopf Mantlet" hidden="true" id="e5c7-6e22-401d-d6a3">
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Hardpoint: HWM" id="7227-fc9d-5a22-6e21" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Heavy Weapons" hidden="false" id="1468-1530-d2ad-bc98" type="selectionEntryGroup" targetId="580e-77ca-e747-456b"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8929-8dbf-7762-822e-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8929-8dbf-7762-822e-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Hardpoint: LPW" id="b7cf-f6ad-ac7d-5032" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Heavy Weapons" hidden="false" id="0b8d-1985-0c9d-becc" type="selectionEntryGroup" targetId="580e-77ca-e747-456b"/>
+        <entryLink import="true" name="Light Panzer Weapons" hidden="false" id="b7f1-f9fc-218d-2c94" type="selectionEntryGroup" targetId="b255-6c06-a35a-0879"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e52-7c75-7b31-4869-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e52-7c75-7b31-4869-max" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="1e52-7c75-7b31-4869-max">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="000d-26bd-eab0-24b1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="4" field="1e52-7c75-7b31-4869-max">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="e2f1-0d63-ea03-4ee1" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Hardpoint: MPW" id="4808-889f-7b19-d48d" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Light Panzer Weapons" hidden="false" id="35ea-9dc5-afab-dae8" type="selectionEntryGroup" targetId="b255-6c06-a35a-0879"/>
+        <entryLink import="true" name="Medium Panzer Weapons" hidden="false" id="4dbf-5369-5aa6-7351" type="selectionEntryGroup" targetId="9044-29f4-7d2a-6895"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5af-7099-ea6e-fc07-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5af-7099-ea6e-fc07-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Hardpoint: HPW" id="019c-97e7-5698-7ed7" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Medium Panzer Weapons" hidden="false" id="5d47-ddb9-18ec-dc81" type="selectionEntryGroup" targetId="9044-29f4-7d2a-6895"/>
+        <entryLink import="true" name="Heavy Panzer Weapons" hidden="false" id="54b9-901b-e9a5-d0c8" type="selectionEntryGroup" targetId="65a0-fd96-15af-e0b7"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88f2-2679-4384-2f74-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88f2-2679-4384-2f74-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Panzer (Casemate) Upgrades" id="3e80-a3cb-ad20-244e" hidden="false">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2d7a-f7f4-1bfe-baff"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hull Mount" hidden="true" id="7ff7-d29e-918f-0455">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Heavy Weapons" hidden="false" id="f2f3-6f71-9885-f85a" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0f00-b67c-6a29-1fa7" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80aa-ec46-6f05-9b4b"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Coaxial Mount" hidden="true" id="b311-88c0-7b8e-bedb">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="5810-0b05-d19d-ead5" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="36ff-ce91-eacc-a49f" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c958-bec7-e815-bd37"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Topfblende/Saukopf Mantlet" hidden="true" id="807e-1113-1932-aa48">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
@@ -5066,6 +5505,9 @@
               </conditions>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65b9-892a-1703-ad71"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
