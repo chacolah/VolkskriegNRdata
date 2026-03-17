@@ -39,7 +39,7 @@
         <characteristicType name="Movement Speed" id="6146-2fae-73d7-8b66"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="8a4d-b3bb-809a-def0" name="Model Stats" kind="model" sortIndex="2">
+    <profileType id="8a4d-b3bb-809a-def0" name="Infantry " kind="model" sortIndex="2">
       <characteristicTypes>
         <characteristicType id="9c65-64a7-48bc-a290" name="MOB" kind="annotation"/>
         <characteristicType id="d420-75d0-f7f8-0d43" name="RNG" kind="annotation"/>
@@ -458,7 +458,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Motorized Fireteam" hidden="false" id="4db9-63dc-45d0-8165">
+    <selectionEntry type="unit" import="true" name="Motorized Fireteam" hidden="false" id="4db9-63dc-45d0-8165" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="a76f-e314-054d-6f6c" targetId="225b-b208-7d55-5943" primary="true"/>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="c50e-d137-f475-03bc" primary="false" name="Vehicle Crew"/>
@@ -493,7 +493,7 @@
         <profile name="Motorized Fireteam" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="f0c2-1c6e-6d89-4018"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Tank Crew" hidden="false" id="4f97-b5ec-9e54-c502">
+    <selectionEntry type="unit" import="true" name="Tank Crew" hidden="false" id="4f97-b5ec-9e54-c502" subType="unit-group">
       <entryLinks>
         <entryLink import="true" name="Infantry Models" hidden="false" id="e5c9-2489-6239-86d2" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
           <constraints>
@@ -532,7 +532,7 @@
         <profile name="Tank Crew" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="b723-1992-dcb6-bb81"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Heavy Weapons Team" hidden="false" id="af7d-59ed-2373-4f39">
+    <selectionEntry type="unit" import="true" name="Heavy Weapons Team" hidden="false" id="af7d-59ed-2373-4f39" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="2a4c-0e11-486b-85fc" targetId="225b-b208-7d55-5943" primary="true"/>
       </categoryLinks>
@@ -548,7 +548,7 @@
         <profile name="Heavy Weapons Team" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="99b3-7756-a447-ef14"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="5421-975e-b89f-d17e">
+    <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="5421-975e-b89f-d17e" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="dedd-4217-c781-12ec" targetId="225b-b208-7d55-5943" primary="true"/>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="e549-6893-1d79-0d40" primary="false" name="Vehicle Crew"/>
@@ -582,7 +582,7 @@
         <profile name="Fireteam" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="84d3-1bcd-f163-6836"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="a429-92a0-3658-f03f" name="Lone Wolf" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a429-92a0-3658-f03f" name="Lone Wolf" hidden="false" collective="false" import="true" type="unit" subType="unit-group">
       <categoryLinks>
         <categoryLink id="d223-9ee8-d9db-4275" name="Generic Formation" hidden="false" targetId="225b-b208-7d55-5943" primary="true"/>
       </categoryLinks>
@@ -624,7 +624,7 @@
         <profile name="Flight Crew" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="3dcb-cc5e-d3ec-d6a1"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Towed Weapon Crew" hidden="false" id="29d6-e1d7-2bd1-d962">
+    <selectionEntry type="unit" import="true" name="Towed Weapon Crew" hidden="false" id="29d6-e1d7-2bd1-d962" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="b1b7-f3c1-6c97-bc39" targetId="225b-b208-7d55-5943" primary="true"/>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="89f0-fb55-90f6-d941" primary="false" name="Vehicle Crew"/>
@@ -662,7 +662,7 @@
         <categoryLink name="Reference" hidden="false" id="4155-07b2-8f8e-29f5" targetId="c1d7-f7b9-4d5d-909b" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fallschirmjäger Squad" hidden="true" id="eb52-59ce-0b93-e19c" collective="false">
+    <selectionEntry type="unit" import="true" name="Fallschirmjäger Squad" hidden="true" id="eb52-59ce-0b93-e19c" collective="false" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="a4b1-d52d-2059-f380" targetId="c74a-6498-63d2-89fb" primary="true"/>
       </categoryLinks>
@@ -685,7 +685,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fallschirmkradschutzen Team" hidden="true" id="481e-4081-4e1c-a16b" collective="false">
+    <selectionEntry type="unit" import="true" name="Fallschirmkradschutzen Team" hidden="true" id="481e-4081-4e1c-a16b" collective="false" subType="unit-group">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="50bc-1e3d-75f0-2551" targetId="c74a-6498-63d2-89fb" primary="true"/>
       </categoryLinks>
@@ -716,7 +716,7 @@
         <profile name="Fallschirmkradschutzen Team" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="a40b-cb37-96d2-7597"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Fallschirmpanzergruppe" hidden="true" id="90be-0b30-7a5e-db8b">
+    <selectionEntry type="unit" import="true" name="Fallschirmpanzergruppe" hidden="true" id="90be-0b30-7a5e-db8b" subType="unit-group">
       <entryLinks>
         <entryLink import="true" name="Infantry Models" hidden="false" id="050e-4789-9ce1-a39d" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
           <constraints>
@@ -1628,7 +1628,19 @@
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a74-5cbe-3372-008c"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="16fe-8681-1eed-a20d"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="set" value="0" field="costs"/>
+                <modifier type="set" value="1" field="16fe-8681-1eed-a20d"/>
+              </modifiers>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true"/>
+              </conditions>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzer" hidden="false" id="2cbe-3acd-e220-1c57">
           <costs>
@@ -2584,7 +2596,7 @@ Is considered Consumable, unless the force using them spends (x) turns repacking
 May repair Equipment instead of shooting.
 When they repair, they may repair (x) Durability per turn up to (y) total.</description>
     </rule>
-    <rule name="Rifle Grenade(Equipment)(6&quot;)" id="53f5-567b-e21e-fff1" hidden="false">
+    <rule name="Rifle Grenade(6&quot;)" id="53f5-567b-e21e-fff1" hidden="false">
       <description>Weapon Equipment with this rule:
 May fire rifle grenades (x) inches per firepower the base weapon has.</description>
     </rule>
@@ -2611,10 +2623,6 @@ When they repair, they may repair (x,-) Durability per turn up to (-,y) total.</
     <rule name="Silent" id="9bb6-aaef-3556-d45b" hidden="false">
       <description>Equipment with this rule:
 Does not automatically break stealth when used.</description>
-    </rule>
-    <rule name="Rifle Grenade(Ordnance)" id="5acb-e700-b751-4395" hidden="false">
-      <description>Ordinance Equipment with this rule:
-May be used as ammunition when firing rifle grenades.</description>
     </rule>
     <rule name="Self Destruct" id="f9e8-1d8d-7877-d517" hidden="false">
       <description>Equipment with this rule:
@@ -3194,7 +3202,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(88mR Raketen), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3255,7 +3263,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapons</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Consumable, Explosive, Piercing(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3307,7 +3315,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Piercing(1), Sight, Sniper, Zeroing(+1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4080,7 +4088,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(38mm Shell), Reload(1,4)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4127,7 +4135,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Setup(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1">Bipod(1), Crewed, Setup(1)</attribute>
@@ -4171,7 +4179,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Piercing(1), Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4717,11 +4725,51 @@ If either of these are -, then any value is applicable.</description>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Repair(4,+4)" id="8d0f-f79c-ec5b-43db" hidden="false" type="rule" targetId="1b86-45b5-f502-fa8f"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Mechanic&apos;s Toolkit" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="17ee-1b2a-13b3-61d4">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Backpack, Tool</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Repair(4,+4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Medical Bag" hidden="false" id="b215-d942-0761-c727">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Treatment(4,+4)" id="af1c-f5f3-fded-6abf" hidden="false" type="rule" targetId="f231-a023-8c06-2d1d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Medical Bag" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ed49-cade-9dae-4e84">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Backpack, Tool</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Treatment(4,+4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Parachute" hidden="false" id="83c3-1e17-fe71-4d13">
       <costs>
@@ -4742,6 +4790,9 @@ If either of these are -, then any value is applicable.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Airborne" id="9a7c-9e0a-24cc-ed7f" hidden="false" type="rule" targetId="8038-1970-8258-adba"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hummerschale 51/56" hidden="true" id="b1a9-1816-d8f6-581c">
       <costs>
@@ -4816,7 +4867,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Armour</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Airborne, Booster(2&quot;), Energy(2), Power Slot, Thruster(6&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5114,7 +5165,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Aircraft/Panzer</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Dogfight, Piercing(2), Radius(1&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5164,7 +5215,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Aircraft/Light Panzer</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Dogfight, Radius(1&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5354,19 +5405,19 @@ If either of these are -, then any value is applicable.</description>
         <entryLink import="true" name="Hardpoint: ACW" hidden="false" id="be22-a830-623b-d2f3" type="selectionEntryGroup" targetId="cff1-b603-b2a4-4862"/>
       </entryLinks>
       <profiles>
-        <profile name="Messerschmitt 265 &quot;Schwalbe&quot;" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="b66f-8f76-bf2d-d828">
+        <profile name="Messerschmitt 265 &quot;Schwalbe&quot;" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b66f-8f76-bf2d-d828">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/1</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">30</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Aircraft, Fighter</characteristic>
-            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-2</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">30</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Aircraft, Fighter</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
@@ -5399,19 +5450,19 @@ If either of these are -, then any value is applicable.</description>
         </entryLink>
       </entryLinks>
       <profiles>
-        <profile name="Messerschmitt-Junkers 213 &quot;Falke&quot;" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="a2de-a22c-1093-fe39">
+        <profile name="Messerschmitt-Junkers 213 &quot;Falke&quot;" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="a2de-a22c-1093-fe39">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-1</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/1</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">25</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Aircraft, Fighter</characteristic>
-            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-1</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">25</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Aircraft, Fighter</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
@@ -5589,7 +5640,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Combat Drug</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Addiction(3+), Consumable, Stimulant</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6284,7 +6335,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(88mmR Raketen),Reload(4,6), Surplus</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7244,7 +7295,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Radius(1&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7280,7 +7331,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Radius(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7325,7 +7376,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(1), Radius(1&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7361,7 +7412,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Magnetic, Piercing(2), Radius(1&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7406,7 +7457,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Smoke(6&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7442,7 +7493,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">StuP Grenage</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Radius(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7487,7 +7538,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">StuP Grenade</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing, Radius(1&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7523,7 +7574,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">StuP Grenade</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Smoke(6&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8261,7 +8312,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">10</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Towed Weapon Mount Upgrade</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Cover(+1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8302,6 +8353,26 @@ If either of these are -, then any value is applicable.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46c7-98c5-83f0-6cf0" includeChildSelections="false"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Magproof" id="647f-9022-f160-53ee" hidden="false" type="rule" targetId="0551-95c8-3947-241a"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Zimmermit" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0f85-55cc-ac36-18e7">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Chassis Upgrade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Magproof</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Junkers Uberfliegenmotor-60 “Düsenketten”" hidden="true" id="0ff8-ed28-d923-8e1c">
       <costs>
@@ -9031,7 +9102,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9062,7 +9133,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9096,7 +9167,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9127,7 +9198,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9159,7 +9230,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Sight, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9187,7 +9258,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bayonet</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9221,7 +9292,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bayonet</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9256,7 +9327,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9307,7 +9378,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Surplus</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9355,7 +9426,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9394,7 +9465,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9436,7 +9507,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9464,7 +9535,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9502,7 +9573,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9535,7 +9606,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Surplus, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9569,7 +9640,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Silent, Surplus, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9601,7 +9672,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9629,7 +9700,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Surplus</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9660,7 +9731,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9703,7 +9774,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10115,7 +10186,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Booster(2&quot;), Energy(1), Thruster(6&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10729,7 +10800,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exosuit</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Arm(2), Back(1), Battery(4), Chest(1), Head(1), Leg(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10770,7 +10841,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Leg</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Energy(2), Overdrive(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10975,7 +11046,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rüstung Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Magazine(20x138B), Ordnance(20x138B), Reload(1,5), Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11027,7 +11098,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rüstung Weapon Frame</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Exomod(Light Panzer Weapons), Exomod(Medium Panzer Weapons)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11319,7 +11390,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11367,7 +11438,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11414,7 +11485,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11462,7 +11533,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(StuP Grenade)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11503,7 +11574,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11823,6 +11894,26 @@ If either of these are -, then any value is applicable.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Passenger Car" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="8e4f-391a-a9d9-b796">
+          <characteristics>
+            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
+            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
+            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
+            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
+            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
+            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
+            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/16</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
+            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">25</characteristic>
+            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Railcar</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Cover(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Cover(2)" id="bce8-58e2-1e3a-34a8" hidden="false" type="rule" targetId="56a3-7a3b-48c0-69b0"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Armoured Train Engine" hidden="true" id="a9e5-80f0-2183-325f">
       <costs>
@@ -12520,19 +12611,19 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Truckbed(10,1)" id="397e-a57b-cfd5-cf54" hidden="false" type="rule" targetId="c473-a011-004f-364b"/>
       </infoLinks>
       <profiles>
-        <profile name="Opel Blitz" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="9270-10d0-f4b3-bc29">
+        <profile name="Opel Blitz" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="9270-10d0-f4b3-bc29">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/2</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, Truck</characteristic>
-            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-2</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/2</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Vehicle, Truck</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Truckbed(10,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0), Truckbed(10,1)</attribute>
@@ -12572,19 +12663,19 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Truckbed(8,-)" id="7c89-a69f-cfa3-7853" hidden="false" type="rule" targetId="9182-6e6b-e4a8-ea4d"/>
       </infoLinks>
       <profiles>
-        <profile name="Schützen Panzerwagen" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="9bbd-1e60-14df-9765">
+        <profile name="Schützen Panzerwagen" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="9bbd-1e60-14df-9765">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/1</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, APC</characteristic>
-            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-2</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Vehicle, APC</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Open-topped, Recharge(0), Truckbed(8,0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Open-topped, Recharge(0), Truckbed(8,0)</attribute>
@@ -12592,7 +12683,7 @@ If either of these are -, then any value is applicable.</description>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Schützen Panzerwagen (Turreted)" hidden="true" id="b779-6138-aa55-8e88">
+    <selectionEntry type="upgrade" import="true" name="Schützen Panzerwagen (Casemte)" hidden="true" id="b779-6138-aa55-8e88">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
       </costs>
@@ -12616,7 +12707,7 @@ If either of these are -, then any value is applicable.</description>
         <categoryLink name="Multipart Equipment" hidden="false" id="c173-5558-add3-958f" targetId="5020-e810-c95a-b39d" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="6bbe-37ef-ffb2-5e2d" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
+        <entryLink import="true" name="Hardpoint: LPW" hidden="false" id="6bbe-37ef-ffb2-5e2d" type="selectionEntryGroup" targetId="b7cf-f6ad-ac7d-5032"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Open Topped" id="8cb1-3bc9-26ed-2759" hidden="false" type="rule" targetId="6243-27d0-de86-9178"/>
@@ -12624,7 +12715,7 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Truckbed(8,-)" id="8e66-9347-1294-c770" hidden="false" type="rule" targetId="9182-6e6b-e4a8-ea4d"/>
       </infoLinks>
       <profiles>
-        <profile name="Schützen Panzerwagen (Turreted)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="a5e8-388f-63d9-b348">
+        <profile name="Schützen Panzerwagen (Casemate)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="a5e8-388f-63d9-b348">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -12977,6 +13068,26 @@ If either of these are -, then any value is applicable.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Silent" id="a2d0-86d8-07d7-ea96" hidden="false" type="rule" targetId="9bb6-aaef-3556-d45b"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Schalldämpfer-54" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="69cb-8153-aed9-2c5e">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-3</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-1</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Muzzle(4+)</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Silent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scheissbecher-48" hidden="true" id="4990-c8be-6641-0913">
       <costs>
@@ -12993,6 +13104,30 @@ If either of these are -, then any value is applicable.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(Rifle Grenade)" hidden="false" id="d2c3-3214-43c5-413e" type="selectionEntryGroup" targetId="85e2-8812-ea50-b4a7"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Rifle Grenade(Equipment)(6&quot;)" id="3c6c-3326-dc2d-1217" hidden="false" type="rule" targetId="53f5-567b-e21e-fff1"/>
+        <infoLink name="Ordnance(Rifle Grenade)" id="c817-3373-6be9-69ea" hidden="false" type="rule" targetId="c3f2-138f-d3c2-c033"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Scheissbecher-48" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0fde-7cd3-0121-4861">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">*</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Muzzle(3-5)</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(Rifle Grenade), Rifle Grenade(6&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Zielfernrohr-52" hidden="true" id="4b07-67f6-77f0-1928">
       <costs>
@@ -13009,6 +13144,23 @@ If either of these are -, then any value is applicable.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Zielfernrohr-52" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6bf7-e249-b3af-476e">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">+6</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sight</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Drohne-Array Ausf. A" hidden="true" id="6178-9806-73db-1cbb">
       <costs>
