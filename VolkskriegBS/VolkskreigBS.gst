@@ -4354,7 +4354,7 @@ If either of these are -, then any value is applicable.</description>
         </entryLink>
       </entryLinks>
       <profiles>
-        <profile name="Funkbiene Ausf C “Wespe”" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="af75-fcfa-2a40-05b0">
+        <profile name="Funkbiene Ausf C “Wespe”" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="af75-fcfa-2a40-05b0">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">8</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -4404,7 +4404,7 @@ If either of these are -, then any value is applicable.</description>
         </entryLink>
       </entryLinks>
       <profiles>
-        <profile name="Leichte  Funkbiene Ausf. A “Hummel”" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="57f2-3b09-6cfe-04fd">
+        <profile name="Leichte  Funkbiene Ausf. A “Hummel”" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="57f2-3b09-6cfe-04fd">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">10</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -4432,7 +4432,7 @@ If either of these are -, then any value is applicable.</description>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
       </costs>
       <profiles>
-        <profile name="Leichte Funkbiene Ausf. D “Blitz Hornisse”" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="51e3-88dd-5bae-c37d">
+        <profile name="Leichte Funkbiene Ausf. D “Blitz Hornisse”" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="51e3-88dd-5bae-c37d">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">10</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">12</characteristic>
@@ -4475,7 +4475,7 @@ If either of these are -, then any value is applicable.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Leichter Ladungsträger “Goliath” Ausf. A" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="286f-d9d9-9f9c-6b18">
+        <profile name="Leichter Ladungsträger “Goliath” Ausf. A" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="286f-d9d9-9f9c-6b18">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">12</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -4489,6 +4489,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Automaton, Drohne</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Consumable, Explosive, Piercing(2), Radius(4&quot;), Self Destruct</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+          </attributes>
         </profile>
       </profiles>
       <infoLinks>
@@ -4528,6 +4531,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Automaton, Drohne</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,1)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -4743,6 +4749,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Backpack, Tool</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Repair(4,+4)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -4768,6 +4777,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Backpack, Tool</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Treatment(4,+4)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -5365,7 +5377,7 @@ If either of these are -, then any value is applicable.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="DFS-230" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="30bf-e7e9-cc00-060b">
+        <profile name="DFS-230" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="30bf-e7e9-cc00-060b">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -5420,7 +5432,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8"/>
           </attributes>
         </profile>
       </profiles>
@@ -5465,7 +5477,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8"/>
           </attributes>
         </profile>
       </profiles>
@@ -5499,7 +5511,7 @@ If either of these are -, then any value is applicable.</description>
         </entryLink>
       </entryLinks>
       <profiles>
-        <profile name="Düsenhuber Ausf. C “Die Glocke”" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="93c7-b80f-8318-b20a">
+        <profile name="Düsenhuber Ausf. C “Die Glocke”" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="93c7-b80f-8318-b20a">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-12</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -5716,7 +5728,7 @@ If either of these are -, then any value is applicable.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Conscript" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="02ba-8ca3-796d-0f88">
+        <profile name="Conscript" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="02ba-8ca3-796d-0f88">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -5779,7 +5791,7 @@ If either of these are -, then any value is applicable.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Police" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="6fb0-355d-19d5-974b">
+        <profile name="Police" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="6fb0-355d-19d5-974b">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -5860,7 +5872,7 @@ If either of these are -, then any value is applicable.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Soldier" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="2354-6082-eb8f-a340">
+        <profile name="Soldier" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="2354-6082-eb8f-a340">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -6308,6 +6320,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flame, Radius(3&quot;)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -6493,7 +6508,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8"/>
           </attributes>
         </profile>
       </profiles>
@@ -6535,7 +6550,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8"/>
           </attributes>
         </profile>
       </profiles>
@@ -7808,7 +7823,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8">Recharge(0)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -7859,7 +7874,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Carrier(4), Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Carrier(4), Recharge(0)</attribute>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8">Carrier(4), Recharge(0)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -7910,7 +7925,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8">Recharge(0)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -7960,7 +7975,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8">Recharge(0)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -8009,7 +8024,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8"/>
           </attributes>
         </profile>
       </profiles>
@@ -8059,7 +8074,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8">Recharge(0)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -8108,7 +8123,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8">Recharge(0)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -8179,7 +8194,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Open-Topped, Recharge(0), Surplus</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8"/>
           </attributes>
         </profile>
       </profiles>
@@ -8227,7 +8242,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8"/>
           </attributes>
         </profile>
       </profiles>
@@ -8257,7 +8272,7 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Cover(Equipment)(1)" id="320a-aeda-fc06-0eb0" hidden="false" type="rule" targetId="cb33-ca90-1e47-1108"/>
       </infoLinks>
       <profiles>
-        <profile name="Fahrlafette 51" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="5873-4b1c-9556-affd">
+        <profile name="Fahrlafette 51" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="5873-4b1c-9556-affd">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -8371,6 +8386,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Chassis Upgrade</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Magproof</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -11781,7 +11799,7 @@ If either of these are -, then any value is applicable.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Freight Train Engine" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="2480-711e-8387-c749">
+        <profile name="Freight Train Engine" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="2480-711e-8387-c749">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">20</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -11817,7 +11835,7 @@ If either of these are -, then any value is applicable.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Cattle Car" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="0901-0ba2-6ae5-e357">
+        <profile name="Cattle Car" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="0901-0ba2-6ae5-e357">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -11856,7 +11874,7 @@ If either of these are -, then any value is applicable.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Flat Car" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="ce84-f265-c587-5b00">
+        <profile name="Flat Car" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="ce84-f265-c587-5b00">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -11895,7 +11913,7 @@ If either of these are -, then any value is applicable.</description>
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Passenger Car" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="8e4f-391a-a9d9-b796">
+        <profile name="Passenger Car" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="8e4f-391a-a9d9-b796">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -11909,6 +11927,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Railcar</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Cover(2)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+          </attributes>
         </profile>
       </profiles>
       <infoLinks>
@@ -12194,6 +12215,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(2), Cold Weather, Equipment(2)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -12426,7 +12450,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8">Recharge(0)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -12477,7 +12501,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Open-Topped, Recharge(0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Open-Topped, Recharge(0)</attribute>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8">Open-Topped, Recharge(0)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -12514,7 +12538,7 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Open Topped" id="c1a1-243f-fbe0-c2a1" hidden="false" type="rule" targetId="6243-27d0-de86-9178"/>
       </infoLinks>
       <profiles>
-        <profile name="Leichter Panzerspähwagen (Platform)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="a49a-4f3a-f4e9-fc11">
+        <profile name="Leichter Panzerspähwagen (Platform)" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="a49a-4f3a-f4e9-fc11">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -12564,7 +12588,7 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Recharge(0)" id="9a2f-d342-e6bd-7393" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <profiles>
-        <profile name="Leichter Panzerspähwagen (Turreted)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="595a-c7bd-6395-896a">
+        <profile name="Leichter Panzerspähwagen (Turreted)" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="595a-c7bd-6395-896a">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -12626,7 +12650,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Truckbed(10,1)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0), Truckbed(10,1)</attribute>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8">Recharge(0), Truckbed(10,1)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -12678,7 +12702,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Open-topped, Recharge(0), Truckbed(8,0)</characteristic>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Open-topped, Recharge(0), Truckbed(8,0)</attribute>
+            <attribute name="Rules" typeId="5833-d661-c3f4-d4f8">Open-topped, Recharge(0), Truckbed(8,0)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -12715,7 +12739,7 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Truckbed(8,-)" id="8e66-9347-1294-c770" hidden="false" type="rule" targetId="9182-6e6b-e4a8-ea4d"/>
       </infoLinks>
       <profiles>
-        <profile name="Schützen Panzerwagen (Casemate)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="a5e8-388f-63d9-b348">
+        <profile name="Schützen Panzerwagen (Casemate)" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="a5e8-388f-63d9-b348">
           <characteristics>
             <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
             <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
@@ -12911,6 +12935,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Magazine(20x138B)</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,10)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
       <infoLinks>
@@ -12950,6 +12977,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Magazine(29x138B)</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,20)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -12983,6 +13013,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Underslung Upgrade</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flame, Radius(2&quot;), Reload(1,1)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
       <infoLinks>
@@ -13021,6 +13054,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Underslung</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
       <infoLinks>
@@ -13050,6 +13086,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Weapon Upgrade, Conversion Kit</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Conversion Kit(3-4,1), Heavy, Surplus</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -13086,6 +13125,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Muzzle(4+)</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Silent</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -13126,6 +13168,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Muzzle(3-5)</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(Rifle Grenade), Rifle Grenade(6&quot;)</characteristic>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -13159,6 +13204,9 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sight</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
