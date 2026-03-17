@@ -23,6 +23,7 @@
         <characteristicType id="7be1-9d43-d1fb-960a" name="ARM"/>
         <characteristicType id="4f35-654d-7514-6eda" name="DUR"/>
         <characteristicType name="TYPE" id="9a48-6489-0584-2aae"/>
+        <characteristicType name="Rules" id="556d-f99b-9ae9-1e73" kind="longText"/>
       </characteristicTypes>
       <attributeTypes>
         <attributeType name="Rules" id="ddde-92bb-030b-66d1" kind="annotation"/>
@@ -40,19 +41,20 @@
     </profileType>
     <profileType id="8a4d-b3bb-809a-def0" name="Model Stats" kind="model" sortIndex="2">
       <characteristicTypes>
-        <characteristicType id="9c65-64a7-48bc-a290" name="MOB"/>
-        <characteristicType id="d420-75d0-f7f8-0d43" name="RNG"/>
-        <characteristicType id="3934-2233-8d9b-1482" name="ROT"/>
-        <characteristicType id="bc43-b0f1-e705-ecd3" name="ACC"/>
-        <characteristicType id="6649-5bc2-ccce-8644" name="FP"/>
-        <characteristicType id="219c-900c-30d9-cd81" name="RoF"/>
-        <characteristicType id="269d-3880-bbc2-ec5a" name="CAP"/>
-        <characteristicType id="7f71-92e2-a444-f967" name="ARM"/>
-        <characteristicType id="d5a4-f90e-6162-fcf4" name="DUR"/>
-        <characteristicType name="TYPE" id="c526-fe11-bb57-08cb"/>
+        <characteristicType id="9c65-64a7-48bc-a290" name="MOB" kind="annotation"/>
+        <characteristicType id="d420-75d0-f7f8-0d43" name="RNG" kind="annotation"/>
+        <characteristicType id="3934-2233-8d9b-1482" name="ROT" kind="annotation"/>
+        <characteristicType id="bc43-b0f1-e705-ecd3" name="ACC" kind="annotation"/>
+        <characteristicType id="6649-5bc2-ccce-8644" name="FP" kind="annotation"/>
+        <characteristicType id="219c-900c-30d9-cd81" name="RoF" kind="annotation"/>
+        <characteristicType id="269d-3880-bbc2-ec5a" name="CAP" kind="annotation"/>
+        <characteristicType id="7f71-92e2-a444-f967" name="ARM" kind="annotation"/>
+        <characteristicType id="d5a4-f90e-6162-fcf4" name="DUR" kind="annotation"/>
+        <characteristicType name="TYPE" id="c526-fe11-bb57-08cb" kind="longText"/>
+        <characteristicType name="Rules" id="3a99-baf9-1b88-9f69" kind="longText"/>
       </characteristicTypes>
       <attributeTypes>
-        <attributeType name="Rules" id="48f5-eb0c-400a-1d7e" kind="annotation"/>
+        <attributeType name="Rules" id="48f5-eb0c-400a-1d7e" kind="longText"/>
       </attributeTypes>
     </profileType>
     <profileType id="1944-0872-1c39-2eff" name="Uniform Stats" kind="weapon" sortIndex="3">
@@ -67,9 +69,46 @@
         <characteristicType id="43df-59b2-c04e-17b8" name="ARM"/>
         <characteristicType id="5cca-d7ba-bf11-456e" name="DUR"/>
         <characteristicType name="TYPE" id="cfba-3806-95d3-d55c"/>
+        <characteristicType name="Rules" id="827f-a6d4-4225-7454" kind="longText"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Formation" id="838f-a1ac-7561-32a8" hidden="false" kind="model" sortIndex="1"/>
+    <profileType id="d640-9e1c-0aab-a8fe" name="Chassis Stats" kind="model" sortIndex="2">
+      <characteristicTypes>
+        <characteristicType id="4765-2056-04fc-a63a" name="MOB" kind="annotation"/>
+        <characteristicType id="32d9-b3ed-6939-718f" name="RNG" kind="annotation"/>
+        <characteristicType id="9735-744c-cafa-32d7" name="ROT" kind="annotation"/>
+        <characteristicType id="0cdf-adf8-db4b-821f" name="ACC" kind="annotation"/>
+        <characteristicType id="2365-03a0-e9ba-2e10" name="FP" kind="annotation"/>
+        <characteristicType id="da7b-0522-4e1b-f41c" name="RoF" kind="annotation"/>
+        <characteristicType id="1239-734a-67cf-33e5" name="CAP" kind="annotation"/>
+        <characteristicType id="118c-8424-f0b3-baf0" name="ARM" kind="annotation"/>
+        <characteristicType id="3529-e61e-009b-c1a0" name="DUR" kind="annotation"/>
+        <characteristicType name="TYPE" id="48be-3b84-9024-2037" kind="longText"/>
+        <characteristicType name="Rules" id="70ad-4ffe-b303-85b8" kind="longText"/>
+      </characteristicTypes>
+      <attributeTypes>
+        <attributeType name="Rules" id="5833-d661-c3f4-d4f8" kind="longText"/>
+      </attributeTypes>
+    </profileType>
+    <profileType id="8346-ecfb-e6c1-4d32" name="Mobility Stats" kind="weapon" sortIndex="4">
+      <characteristicTypes>
+        <characteristicType id="4067-806a-2ec1-6195" name="MOB"/>
+        <characteristicType id="e0f3-33df-99f3-c210" name="RNG"/>
+        <characteristicType id="3265-7207-7231-b0e6" name="ROT"/>
+        <characteristicType id="a149-1148-d0ae-471c" name="ACC"/>
+        <characteristicType id="6bbb-281e-939e-85e2" name="FP"/>
+        <characteristicType id="d5d5-f292-857f-4466" name="RoF"/>
+        <characteristicType id="a852-1f35-2ba4-d734" name="CAP"/>
+        <characteristicType id="ad23-a7a7-3ecf-9405" name="ARM"/>
+        <characteristicType id="cf19-448a-e24f-1989" name="DUR"/>
+        <characteristicType name="TYPE" id="c83c-3d3c-5c2c-d3a2"/>
+        <characteristicType name="Rules" id="7533-febd-de2f-1b77" kind="longText"/>
+      </characteristicTypes>
+      <attributeTypes>
+        <attributeType name="Rules" id="8f43-8243-44c4-fb09" kind="annotation"/>
+      </attributeTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="f5ad-1da5-2ad4-cb2e" name="Faction Bookkeeping" hidden="false"/>
@@ -1367,13 +1406,13 @@
       </modifiers>
       <entryLinks>
         <entryLink targetId="c8e7-0960-c2ea-a597" id="df7b-0cfc-c15e-d26a" type="selectionEntry" name="Rüstungfahrlafette-56" hidden="true"/>
-        <entryLink targetId="1230-9f60-b6d6-e901" id="5d40-4e68-0488-69d3" type="selectionEntry" name="Flakwerfengewehr 56" hidden="true"/>
+        <entryLink targetId="1230-9f60-b6d6-e901" id="5d40-4e68-0488-69d3" type="selectionEntry" name="Flakwerfengewehr" hidden="true"/>
         <entryLink targetId="d36d-4f72-6c35-794d" id="dee7-09e2-f1ee-b7af" type="selectionEntry" name="Rüstungabwehrbuchse-53(S)" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Aircraft Chassis" id="c40a-bdec-b181-0f30" hidden="false">
       <entryLinks>
-        <entryLink targetId="d728-d153-db2f-9425" id="d338-84ea-db9c-fcfe" type="selectionEntry" name="Messerschmitt-Junkers 213" hidden="true"/>
+        <entryLink targetId="d728-d153-db2f-9425" id="d338-84ea-db9c-fcfe" type="selectionEntry" name="Messerschmitt-Junkers 213 &quot;Falke&quot;" hidden="true"/>
         <entryLink targetId="8012-6c4f-f740-d341" id="a502-1a30-0800-1aa4" type="selectionEntry" name="DFS-230" hidden="true"/>
         <entryLink targetId="bbd7-7acd-38c1-57ff" id="a796-bd27-9b1e-4227" type="selectionEntry" name="Messerschmitt 265 &quot;Schwalbe&quot;" hidden="true"/>
       </entryLinks>
@@ -1699,6 +1738,7 @@
                 <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
                 <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
                 <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Chassis</characteristic>
+                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
               </characteristics>
               <attributes>
                 <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -1753,7 +1793,7 @@
       <entryLinks>
         <entryLink targetId="c508-bf6c-4dfb-12c2" id="f394-6cbd-dca3-9fd5" type="selectionEntryGroup" name="Vehicle Mobility Upgrades" hidden="false"/>
         <entryLink targetId="3305-175d-99f7-59bf" id="31f7-4c94-0637-4d50" type="selectionEntry" name="Volkswagen Autoachse 46" hidden="true"/>
-        <entryLink targetId="7d0e-f50a-8156-5a55" id="5301-2f42-a894-3a91" type="selectionEntry" name="Landsverk Zweibeinigemaschine 56 “Hahnebiene”" hidden="true"/>
+        <entryLink targetId="7d0e-f50a-8156-5a55" id="5301-2f42-a894-3a91" type="selectionEntry" name="Landsverk Vierbeinige- maschine 56 “Hundsbiene”" hidden="true"/>
         <entryLink targetId="cd47-7f9e-1449-ea52" id="77f6-cf00-8b05-5ed9" type="selectionEntry" name="Demag-Maybach Halbkettenantrieb 46" hidden="true"/>
         <entryLink targetId="73d0-e98b-de28-c484" id="7bee-eaa5-93d2-0253" type="selectionEntry" name="Junkers Uberfliegen 59 “Düsenkubel”" hidden="true"/>
       </entryLinks>
@@ -1876,7 +1916,7 @@
       <entryLinks>
         <entryLink targetId="5293-7e8e-a782-a528" id="53e5-3701-86b9-e141" type="selectionEntry" name="Sidecar (R100)" hidden="true"/>
         <entryLink targetId="7170-a032-5f7f-ec4c" id="0002-a878-2e50-8664" type="selectionEntry" name="Funkbienekord Drohne-Array Ausf. A" hidden="true"/>
-        <entryLink targetId="7b48-86a3-ed4a-e77a" id="9019-0c17-8a8a-2773" type="selectionEntry" name="Airdrop Parachute(Motorcycle)" hidden="true"/>
+        <entryLink targetId="7b48-86a3-ed4a-e77a" id="9019-0c17-8a8a-2773" type="selectionEntry" name="Airdrop Parachute" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Tankette Upgrades" id="3718-7ced-d71a-4de6" hidden="false">
@@ -2016,7 +2056,11 @@
                 <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
                 <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
                 <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Chassis Upgrade, APC/Scout Car</characteristic>
+                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
               </characteristics>
+              <attributes>
+                <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+              </attributes>
             </profile>
           </profiles>
           <infoLinks>
@@ -2043,7 +2087,7 @@
         <entryLink targetId="9f8b-0249-7b07-8e6e" id="73e8-03fc-a7da-e9e4" type="selectionEntry" name="Rear Pintle Mount" hidden="true"/>
         <entryLink targetId="c915-c290-a759-5fec" id="c294-6e63-20fa-bd12" type="selectionEntry" name="Front Facing Pintle Mount" hidden="true"/>
         <entryLink targetId="3660-4c27-bbff-d231" id="e87e-00de-db88-4053" type="selectionEntry" name="Funkbienekord Ausf. B" hidden="true"/>
-        <entryLink targetId="c4ab-6773-48cf-c1de" id="ace1-4643-fc82-416a" type="selectionEntry" name="Funkbienekord Ausf. A" hidden="true"/>
+        <entryLink targetId="c4ab-6773-48cf-c1de" id="ace1-4643-fc82-416a" type="selectionEntry" name="Funkbienekord Ausf. A (Car)" hidden="true"/>
         <entryLink import="true" name="Airdrop Parachute" hidden="false" id="5b26-f4f4-3cb2-283d" type="selectionEntry" targetId="7b48-86a3-ed4a-e77a"/>
         <entryLink targetId="6178-9806-73db-1cbb" id="82e9-d3fa-1a00-c5d7" type="selectionEntry" name="Drohne-Array Ausf. A" hidden="true"/>
         <entryLink targetId="e095-613e-c7b2-593b" id="af72-1274-e301-6634" type="selectionEntry" name="360 Pintle Mount" hidden="true">
@@ -2060,7 +2104,11 @@
                 <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
                 <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
                 <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Chassis Upgrade, Car</characteristic>
+                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
               </characteristics>
+              <attributes>
+                <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+              </attributes>
             </profile>
           </profiles>
         </entryLink>
@@ -2085,7 +2133,10 @@ Count as Heavy Weapons with Setup(+1) to infantry models.
 Heavy Weapons to Exosuit equipped models.
 Primary weapons to Exoframe equipped models.</description>
     </rule>
-    <rule id="1a8c-1134-eff7-750c" name="Heavy Weapon" hidden="false"/>
+    <rule id="1a8c-1134-eff7-750c" name="Heavy Weapon" hidden="false">
+      <description>Heavy Weapon Equipment:
+May be equipped and used by a single model, but must move at half speed. This penalty can be mitigated by keeping a number of Infantry equal to their crew value within 1” of them while moving.</description>
+    </rule>
     <rule id="bf40-cae8-3ccf-b705" name="Grenade" hidden="false"/>
     <rule id="a99c-0ab8-62ec-1d59" name="Exomod(Medium Panzer Weapons)" hidden="false">
       <description>Medium Panzer Weapons with this rule:
@@ -2105,7 +2156,7 @@ May paradrop onto the battlefield during deployment, so long as they have an Air
       <description>Multipart Equipment with this rule:
 Confer the Airborne rule to all models in a crew or passenger slot in this equipment.</description>
     </rule>
-    <rule name="Airborne(Infantry Equipment)" id="8038-1970-8258-adba" hidden="false">
+    <rule name="Airborne" id="8038-1970-8258-adba" hidden="false">
       <description>Infantry Equipment with this rule:
 Confer the Airborne rule to a model equipped with this equipment</description>
     </rule>
@@ -2173,13 +2224,11 @@ Can store up to X Blitz energy.</description>
       <description>Equipment with this rule:
 May be attached to a weapon as an Underslung Upgrade. If used this way, it gains a +1” modifier to its range.</description>
     </rule>
-    <rule name="Beast(Equipment)" id="8dc1-93b1-32a0-a111" hidden="false">
-      <description>Equipment with this rule:
-May only be equipped to infantry with this rule.</description>
-    </rule>
-    <rule name="Beast(Model)" id="5efc-90b0-0dc8-59ac" hidden="false">
+    <rule name="Beast" id="5efc-90b0-0dc8-59ac" hidden="false">
       <description>Models with this rule: 
-Must be commanded by a model without this rule during combat.</description>
+Must be commanded by a model without this rule during combat.
+Equipment with this rule:
+May only be equipped to infantry with this rule.</description>
     </rule>
     <rule name="Bipod(1)" id="dc24-f0ba-277a-6b58" hidden="false">
       <description>Equipment with this rule:
@@ -2235,7 +2284,7 @@ May mount up to (x) Drohne on them.</description>
 Ignore 1 level of Cold Weather effects.
 Ignores the effects of the Freeze rule.</description>
     </rule>
-    <rule name="Cover(Equipment)(2)" id="56a3-7a3b-48c0-69b0" hidden="false">
+    <rule name="Cover(2)" id="56a3-7a3b-48c0-69b0" hidden="false">
       <description>Equipment with this rule:
 Provide (x) armour to infantry models that are crewing, manning, embarked upon, or using the equipment, as well as models hiding behind the equipment. They take damage equal to the damage removed via armor if possible.
 The Equipment with this rule does not apply their armor value as damage reduction to this damage.</description>
@@ -2244,7 +2293,7 @@ The Equipment with this rule does not apply their armor value as damage reductio
       <description>Terrain pieces with this rule:
 Provide (x) armour to infantry models that have line of sight blocked for at least half of the targeted model during an attack roll.</description>
     </rule>
-    <rule name="Cover(Equipment)(1)" id="cb33-ca90-1e47-1108" hidden="false">
+    <rule name="Cover(1)" id="cb33-ca90-1e47-1108" hidden="false">
       <description>Equipment with this rule:
 Provide (x) armour to infantry models that are crewing, manning, embarked upon, or using the equipment, as well as models hiding behind the equipment. They take damage equal to the damage removed via armor if possible.
 The Equipment with this rule does not apply their armor value as damage reduction to this damage.</description>
@@ -2298,12 +2347,10 @@ Lowers the armour value of a target it hits for 3 turns by half, rounded up.</de
       <description>Offhand Equipment: 
 May be equipped and used alongside sidearms.</description>
     </rule>
-    <rule id="017b-5ec1-102f-2c99" name="Magnetic(Equipment)" hidden="false">
+    <rule id="017b-5ec1-102f-2c99" name="Magnetic" hidden="false">
       <description>Equipment with this rule:
-Automatically succeed Attack Rolls against Multipart Equipments and Equipment with the Armour type.</description>
-    </rule>
-    <rule id="b955-f3f3-f78f-f954" name="Magnetic(Ordnance)" hidden="false">
-      <description>Ordnance with this rule:
+Automatically succeed Attack Rolls against Multipart Equipments and Equipment with the Armour type.
+Ordnance with this rule:
 Gain a +2 to any rolls on Attack Rolls against Multipart Equipments and Equipment with the Armour type.</description>
     </rule>
     <rule id="2e47-3c3e-0179-e721" name="Min Range(120&quot;)" hidden="false">
@@ -2314,7 +2361,7 @@ May not target models within (x) distance to the user.</description>
       <description>Models with this rule: 
 Only receive their accuracy bonus when performing a melee attack.</description>
     </rule>
-    <rule name="Open Topped" id="6243-27d0-de86-9178" hidden="false">
+    <rule name="Open-Topped" id="6243-27d0-de86-9178" hidden="false">
       <description>A Vehicle Part with this rule:
 Allows passengers of the vehicle to fire their weapons.
 
@@ -2702,10 +2749,6 @@ Cannot be stored in an Equipment slot.</description>
       <description>Equipment with this rule:
 May equip a Muzzle Upgrade.</description>
     </rule>
-    <rule name="Heavy Weapon(Type)" id="17d5-7121-b66c-ef4f" hidden="false">
-      <description>Heavy Weapon Equipment:
-May be equipped and used by a single model, but must move at half speed. This penalty can be mitigated by keeping a number of Infantry equal to their crew value within 1” of them while moving.</description>
-    </rule>
     <rule id="da10-59f2-a754-98a6" name="Lightning" hidden="false">
       <description>Equipment with this rule:
 Ignores the Armor value of their target.</description>
@@ -2736,7 +2779,7 @@ May be used on any weapon that has the Muzzle rule, and a firepower matching the
 
 You may only have one Muzzle item Upgrade equipped at any one time.</description>
     </rule>
-    <rule id="79e3-47d5-77fb-57a1" name="Power Slot(Type)" hidden="false">
+    <rule id="79e3-47d5-77fb-57a1" name="Power Slot" hidden="false">
       <description>Equipment with the Power Slot rule:
 May equip Power Sources as if they were Rüstung.</description>
     </rule>
@@ -3079,7 +3122,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <description>Equipment with this rule:
 Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
-    <rule name="Cover(Equipment)(+1)" id="9993-944a-8391-1ab8" hidden="false">
+    <rule name="Cover(+1)" id="9993-944a-8391-1ab8" hidden="false">
       <description>Equipment with this rule:
 Provide (x) armour to infantry models that are crewing, manning, embarked upon, or using the equipment, as well as models hiding behind the equipment. They take damage equal to the damage removed via armor if possible.
 The Equipment with this rule does not apply their armor value as damage reduction to this damage.</description>
@@ -3108,6 +3151,15 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
       <description>Vehicles with this rule:
 May carry either: (x,-) infantry models or (-,y) Towed Weapon Mounts on their truck bed.
 If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons with the Setup rule may be fired from the truck bed. The crew of a Towed Weapon Mount does not count toward this cap and may ride alongside the weapon they crew.</description>
+    </rule>
+    <rule name="Heavy" id="ed1a-2db2-508f-15e3" hidden="false">
+      <description>Equipment Upgrades with this rule:
+Change the upgraded weapon’s type to Heavy Weapon.</description>
+    </rule>
+    <rule id="d13e-cba1-3f4c-73bb" name="Conversion Kit(3-4,1)" hidden="false">
+      <description>Equipment Upgrades with this rule:
+Can only be applied to weapons with x Firepower and y RoF)
+If either of these are -, then any value is applicable.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -3142,6 +3194,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3202,6 +3255,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapons</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3253,6 +3307,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3296,6 +3351,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Capacitor(2), Energy(2), Lightning</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3303,8 +3359,9 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Capacitor(2)" id="de92-9bf9-8f45-4a0e" hidden="false" type="rule" targetId="9590-2918-56c0-a4eb"/>
+        <infoLink name="Energy(2)" id="de92-9bf9-8f45-4a0e" hidden="false" type="rule" targetId="93d5-d5b9-6a07-5feb"/>
         <infoLink name="Lightning" id="ff1d-ed08-1238-9db6" hidden="false" type="rule" targetId="da10-59f2-a754-98a6"/>
+        <infoLink name="Capacitor(2)" id="ad59-b977-98cf-9dc7" hidden="false" type="rule" targetId="9590-2918-56c0-a4eb"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boys AT Rifle MKII*" hidden="true" id="d75e-0785-0d44-b90e">
@@ -3344,6 +3401,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Reload(1,5), Sight, Surplus</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3386,6 +3444,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Surplus</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3427,6 +3486,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3465,6 +3525,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapons</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Surplus, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3516,6 +3577,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backblast(2&quot;,6), Crewed, Ordnance(84x245 RCL), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3562,6 +3624,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flame, Radius(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3616,6 +3679,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Crewed, Ordnance(20mmR), Reload(1,8)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3663,6 +3727,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Ordnance(Rifle Grenade), Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3711,6 +3776,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Artillery(1), Bombard(18-48), Crewed, Explosive, Radius(2&quot;), Setup(1), Zeroing(+1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3756,6 +3822,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Reload(1,20), Setup(1), Surplus</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3800,6 +3867,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Reload(1,20), Setup(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3841,6 +3909,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3883,6 +3952,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Energy(1), Freeze</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3925,6 +3995,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flame, Radius(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -3963,6 +4034,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4008,6 +4080,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4018,7 +4091,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <entryLink import="true" name="Ordnance(38mm Shell)" hidden="false" id="1677-4b53-bee7-66b8" type="selectionEntryGroup" targetId="f32a-1428-9554-6300"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Machinengewehr-56" hidden="true" id="3cf8-46de-ed2d-aec6" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Maschinengewehr-56" hidden="true" id="3cf8-46de-ed2d-aec6" collective="false">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
@@ -4042,7 +4115,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Bipod(1)" id="aa81-6191-e943-d651" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
       </infoLinks>
       <profiles>
-        <profile name="Machinengewehr-56" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3720-2612-bdba-02b0">
+        <profile name="Maschinengewehr-56" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3720-2612-bdba-02b0">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -4054,9 +4127,10 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1">Bipod(1), Crewed, Setup(1)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -4097,6 +4171,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4146,6 +4221,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Panzer Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Artillery(1), Ordnance(128x869R), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4194,6 +4270,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Panzer Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Artillery(1), Ordnance(170SC), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4245,6 +4322,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Panzer Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(20), Capacitor(2), Energy(4), Lightning, Recharge(2), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4280,6 +4358,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">12</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Automaton, Drohne</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Thruster(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Thruster(2&quot;)</attribute>
@@ -4329,6 +4408,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">12</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Automaton, Drohne</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Thruster(3&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Thruster(3&quot;)</attribute>
@@ -4356,6 +4436,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">12</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Automaton, Drohne</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Battery(4), Energy(1), Lightning, Recharge(1), Thruster(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Battery(4), Energy(1), Lightning, Recharge(1), Thruster(2&quot;)</attribute>
@@ -4385,11 +4466,62 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
           </conditionGroups>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Leichter Ladungsträger “Goliath” Ausf. A" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="286f-d9d9-9f9c-6b18">
+          <characteristics>
+            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">12</characteristic>
+            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
+            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
+            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
+            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">5</characteristic>
+            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
+            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
+            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">10</characteristic>
+            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Automaton, Drohne</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Consumable, Explosive, Piercing(2), Radius(4&quot;), Self Destruct</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Self Destruct" id="3b64-9d8a-f7db-e612" hidden="false" type="rule" targetId="f9e8-1d8d-7877-d517"/>
+        <infoLink name="Consumable" id="40b4-2f26-c0c1-0e15" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
+        <infoLink name="Explosive" id="d070-12ea-b0a7-68ce" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+        <infoLink name="Radius(4&quot;)" id="e564-e062-e92c-a95d" hidden="false" type="rule" targetId="a4a2-71a2-d5af-b2ac"/>
+        <infoLink name="Piercing(2)" id="09ee-01d2-cec5-5e39" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leichter Ladungsträger “Goliath” Ausf. B" hidden="true" id="7b1a-94ba-297c-2191">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Reload(1,1)" id="331b-1dc1-df62-c0a1" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Panzerfaust-60" hidden="false" id="1e06-2263-b1d7-7b3e" type="selectionEntry" targetId="5124-31d0-40a6-cf70">
+          <modifiers>
+            <modifier type="set" value="0" field="7439-07e0-82ef-c431"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Leichter Ladungsträger “Goliath” Ausf. B" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="fd97-37c4-8a55-9a7c">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">12</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">30</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">10</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Automaton, Drohne</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="HaftHallodung-5" hidden="true" id="f0d2-d60f-5085-b721">
       <costs>
@@ -4419,6 +4551,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Consumable, Explosive, Magnetic, Piercing(3), Radius(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4450,6 +4583,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Consumable, Explosive, Radius(3&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4490,6 +4624,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Consumable, Explosive, Radius(1&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4530,6 +4665,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Smoke(6&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4558,6 +4694,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Backpack</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4634,6 +4771,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">2</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Armour</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Power Slot</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4678,6 +4816,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Armour</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4733,6 +4872,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Animal</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Beast, Maul</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4783,6 +4923,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">12</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Animal</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Mount</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4830,7 +4971,8 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Mount</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Mount Equipment</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4872,7 +5014,8 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">15</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Mount</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Mount Equipment</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4916,6 +5059,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">+3</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Beast</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -4970,6 +5114,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Aircraft/Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5019,6 +5164,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Aircraft/Light Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5047,7 +5193,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">5</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Aircraft Mobility, Hover</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -5068,7 +5218,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">2</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Aircraft Mobility, Jet</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -5100,7 +5254,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">3</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Aircraft Mobility, Propeller</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -5132,7 +5290,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">3</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Aircraft Mobility, Rocket</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -5164,7 +5326,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Aircraft, Glider</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -5200,7 +5366,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">30</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Aircraft, Fighter</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -5241,7 +5411,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">25</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Aircraft, Fighter</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -5286,7 +5460,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">15</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Hovercraft Chassis, Düsenhuber</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -5315,7 +5493,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">10</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Hovercraft Mobility, Düsenhuber</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -5336,6 +5518,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Tool</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Consumable, Repair(2,+2)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5368,6 +5551,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Tool</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Consumable, Treatment(2,+2)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5405,6 +5589,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Combat Drug</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5431,6 +5616,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Melee</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5449,6 +5635,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5490,6 +5677,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Civilian</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
@@ -5552,6 +5740,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Civilian</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
@@ -5632,6 +5821,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Military</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
@@ -5708,6 +5898,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Magazine(20x138B), Ordnance(20x138B), Reload(1,5)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5772,6 +5963,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Magazine(20x138B), Ordnance(20x138B), Reload(1,5)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5836,6 +6028,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(37x249), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5899,6 +6092,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(37x249), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -5952,6 +6146,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Artillery(1), Ordnance(30cmR)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6004,6 +6199,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">0</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">0</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flame, Radius(6&quot;), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6042,6 +6238,27 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="246d-d4ac-25c3-cf7b"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Radius(3&quot;)" id="c109-f45c-cf28-2c09" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
+        <infoLink name="Flame" id="2bf8-7c46-3022-1872" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Lanciafiamme Modello 52" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="2541-c1dd-7706-9514">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flame, Radius(3&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Raketenpanzerbüchse-58 x6" hidden="true" id="7ac3-de43-2226-c7bf">
       <costs>
@@ -6067,6 +6284,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6132,6 +6350,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Medium Panzer Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(75x714R), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6181,6 +6400,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Medium Panzer Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(88x822), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6207,18 +6427,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <entryLink import="true" name="Motorcycle Upgrades" hidden="false" id="3e79-908f-db70-41ca" type="selectionEntryGroup" targetId="b629-a3b4-2431-11ee"/>
       </entryLinks>
       <profiles>
-        <profile name="BMW R100" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="0d44-007b-4752-ac09">
+        <profile name="BMW R100" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="0d44-007b-4752-ac09">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">10</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/1</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">15</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Motorcycle, Wheeled</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">10</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">15</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Motorcycle, Wheeled</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
@@ -6248,18 +6469,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <entryLink import="true" name="Motorcycle Upgrades" hidden="false" id="01f7-e7f0-8a8d-9b4b" type="selectionEntryGroup" targetId="b629-a3b4-2431-11ee"/>
       </entryLinks>
       <profiles>
-        <profile name="Kettenkrad" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="e97d-ee78-2e9e-76f4">
+        <profile name="Kettenkrad" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="e97d-ee78-2e9e-76f4">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">9</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/4</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Motorcycle, Half-Tracked</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">9</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/4</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Motorcycle, Half-Tracked</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
@@ -6335,6 +6557,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Motorcycle Upgrade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Airborne</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6366,6 +6589,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a"/>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda"/>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Carrier(1), RC(1,36&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6414,6 +6638,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidecar/Wheeled</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6504,6 +6729,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">20mmR</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flak, Piercing(1), Radius(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6548,6 +6774,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">20x138B</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flak, Radius(3&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6588,6 +6815,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">20x138B</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(3), Radius(3&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6612,6 +6840,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">30cm Raketen</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(2), Radius(5&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6657,6 +6886,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">30x90RB</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(2), Radius(1&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6697,6 +6927,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">37x249</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(3), Radius(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6721,6 +6952,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">38mm Shell</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Radius(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6749,6 +6981,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">38mm Shell</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Smoke(4&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6781,6 +7014,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">75x714R</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(4), Radius(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6805,6 +7039,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">84x245 RCL</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(2), Radius(2&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6845,6 +7080,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">88mmR Raketen</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing, Radius(1&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6874,6 +7110,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">88x822R</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(5), Radius(3&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6903,6 +7140,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">128x869R</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(3), Radius(3&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6937,6 +7175,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">170mmSC</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(5), Radius(3&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6961,6 +7200,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Blitz Cylinder</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(4), Recharge(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7004,6 +7244,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7039,6 +7280,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7083,6 +7325,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7118,6 +7361,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7125,7 +7369,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Magnetic(Ordnance)" id="d98e-ba70-288e-1dec" hidden="false" type="rule" targetId="b955-f3f3-f78f-f954"/>
+        <infoLink name="Magnetic" id="d98e-ba70-288e-1dec" hidden="false" type="rule" targetId="017b-5ec1-102f-2c99"/>
         <infoLink name="Piercing(2)" id="6270-07ec-0e3b-1745" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
         <infoLink name="Radius(1&quot;)" id="fe40-1d00-b6d8-23bd" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
         <infoLink name="Explosive" id="c652-c011-0ee3-cddd" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
@@ -7162,6 +7406,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rifle Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7197,6 +7442,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">StuP Grenage</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7241,6 +7487,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">StuP Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7276,6 +7523,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">StuP Grenade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7494,18 +7742,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Recharge(0)" id="d222-52fc-f1a9-7f34" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <profiles>
-        <profile name="E-10 &quot;Luchs&quot; (Casemate)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="45ce-d32d-9c64-5f0c">
+        <profile name="E-10 &quot;Luchs&quot; (Casemate)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="45ce-d32d-9c64-5f0c">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">60</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">3/0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">70</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Light Panzer, Casemate</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-2</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">60</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">70</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer, Casemate</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
@@ -7544,18 +7793,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="5763-108c-a5ec-addd" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
       </entryLinks>
       <profiles>
-        <profile name="E-10 &quot;Luchs&quot; (Drohne Rack)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="e3da-ba3b-0e5c-8d2e">
+        <profile name="E-10 &quot;Luchs&quot; (Drohne Rack)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="e3da-ba3b-0e5c-8d2e">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-4</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">3/0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">55</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Light Panzer</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-4</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">55</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Carrier(4), Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Carrier(4), Recharge(0)</attribute>
@@ -7594,18 +7844,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Recharge(0)" id="93b4-1c91-f6dc-1b0f" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <profiles>
-        <profile name="E-10 &quot;Luchs&quot; (Turreted)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="ecde-9305-ed19-607e">
+        <profile name="E-10 &quot;Luchs&quot; (Turreted)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="ecde-9305-ed19-607e">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-1</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">270</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">3/0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">55</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Light Panzer, Turreted</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-1</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">270</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">55</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer, Turreted</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
@@ -7643,18 +7894,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Recharge(0)" id="4764-401a-e4e9-21d6" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <profiles>
-        <profile name="E-25 &quot;Panzer&quot; (Casemate)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="8253-b18f-80c6-08c6">
+        <profile name="E-25 &quot;Panzer&quot; (Casemate)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="8253-b18f-80c6-08c6">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-4</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">60</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">4/0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">3</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">60</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Medium Panzer, Casemate</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-4</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">60</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">60</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer, Casemate</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
@@ -7691,18 +7943,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Recharge(0)" id="39fd-36d3-435b-46f7" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <profiles>
-        <profile name="E-25 &quot;Panzer&quot; (Turreted)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="2701-25e9-b786-fd77">
+        <profile name="E-25 &quot;Panzer&quot; (Turreted)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="2701-25e9-b786-fd77">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-4</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">270</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">5/0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">3</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">75</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb"/>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-4</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">270</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">5/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">75</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037"/>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
@@ -7740,18 +7993,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Recharge(0)" id="f179-ba18-fc22-759f" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <profiles>
-        <profile name="E-50 &quot;Tiger&quot; (Casemate)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="2774-e998-3ca9-1c94">
+        <profile name="E-50 &quot;Tiger&quot; (Casemate)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="2774-e998-3ca9-1c94">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-6</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">60</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">4/0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">4</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">100</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Heavy Panzer, Casemate</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-6</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">60</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">4</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">100</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Heavy Panzer, Casemate</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
@@ -7788,18 +8042,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Recharge(0)" id="cf01-6cf9-005a-875e" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <profiles>
-        <profile name="E-50 &quot;Tiger&quot; (Turreted)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="2190-6604-2266-7cb2">
+        <profile name="E-50 &quot;Tiger&quot; (Turreted)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="2190-6604-2266-7cb2">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-6</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">270</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">5/0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">4</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">95</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Heavy Panzer, Turreted</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-6</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">270</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">5/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">4</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">95</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Heavy Panzer, Turreted</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
@@ -7841,6 +8096,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Tankette HWM Upgrade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7857,18 +8113,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="d807-baa9-7935-2be3" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
       </entryLinks>
       <profiles>
-        <profile name="Borgward IV “Wanze”" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="d242-2bba-a84d-ef74">
+        <profile name="Borgward IV “Wanze”" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="d242-2bba-a84d-ef74">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">8</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/1</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">40</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Tankette</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">8</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Tankette</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Open-Topped, Recharge(0), Surplus</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
@@ -7904,18 +8161,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Recharge(0)" id="f594-2014-31d2-ed20" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <profiles>
-        <profile name="Kugelpanzer II" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="33e9-e9fa-08d4-3dfd">
+        <profile name="Kugelpanzer II" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="33e9-e9fa-08d4-3dfd">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">8</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">40</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Tankette</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">8</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Tankette</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
@@ -7960,6 +8218,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Towed Weapon Mount</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Cover(+1), Crewed</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Cover(+1)</attribute>
@@ -8002,6 +8261,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">10</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Towed Weapon Mount Upgrade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8072,6 +8332,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Hover</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8114,6 +8375,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Tracks</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8156,6 +8418,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">30</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Tracks</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8197,6 +8460,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">25</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Walker</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8238,6 +8502,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Walker</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8268,6 +8533,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,6)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8295,6 +8561,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Sight, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8337,6 +8604,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Muzzle, Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8377,6 +8645,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Energy(3), Ordnance(Blitz Cylinder), Piercing(2), Reload(1,1), Sight, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8418,6 +8687,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8449,6 +8719,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Sniper</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8481,6 +8752,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Homemade</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8511,6 +8783,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8549,6 +8822,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(Rifle Grenade), Reload(1,4), Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8556,9 +8830,9 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Reload(1,4)" id="b2ed-20e1-4e1d-4ee2" hidden="false" type="rule" targetId="4fe8-c19c-3af1-ad4c"/>
-        <infoLink name="Rifle Grenade(Ordnance)" id="6e6c-e94b-b33c-432f" hidden="false" type="rule" targetId="5acb-e700-b751-4395"/>
+        <infoLink name="Ordnance(Rifle Grenade)" id="b2ed-20e1-4e1d-4ee2" hidden="false" type="rule" targetId="c3f2-138f-d3c2-c033"/>
         <infoLink name="Sight" id="0d9c-45ae-8001-03ec" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+        <infoLink name="Reload(1,4)" id="1d1e-87cb-7d30-509c" hidden="false" type="rule" targetId="4fe8-c19c-3af1-ad4c"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Ordnance(StuP Grenade)" hidden="false" id="4d2b-c42d-f0e5-15e8" type="selectionEntryGroup" targetId="737e-140d-6ab5-787a"/>
@@ -8592,6 +8866,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Surplus, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8630,6 +8905,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8657,6 +8933,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Energy(1), Freeze, Muzzle</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8665,7 +8942,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
       </profiles>
       <infoLinks>
         <infoLink name="Freeze" id="24a8-7a6a-05af-e30f" hidden="false" type="rule" targetId="c6c0-71af-076b-4f90"/>
-        <infoLink name="Muzzle" id="470d-6cf6-16f7-67e7" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+        <infoLink name="Surplus" id="470d-6cf6-16f7-67e7" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
         <infoLink name="Energy(1)" id="d525-6b01-b848-81dc" hidden="false" type="rule" targetId="98a2-2a4b-cbba-9b7b"/>
       </infoLinks>
     </selectionEntry>
@@ -8689,6 +8966,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8721,6 +8999,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8752,6 +9031,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8782,6 +9062,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8815,6 +9096,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8845,6 +9127,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8876,6 +9159,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8903,6 +9187,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8936,6 +9221,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -8970,6 +9256,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9020,6 +9307,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9067,6 +9355,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9105,6 +9394,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9146,6 +9436,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9173,6 +9464,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9210,6 +9502,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9242,6 +9535,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9275,6 +9569,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9306,6 +9601,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9333,6 +9629,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9363,6 +9660,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9405,6 +9703,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9429,6 +9728,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Power</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(8), Recharge(2)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9457,6 +9757,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Power</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(4), Recharge(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9485,6 +9786,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Power</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(2), Recharge(2)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9599,6 +9901,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Arm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Carrier(2)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9640,6 +9943,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Autoloader(Shoulder)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9681,6 +9985,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Recharge(+1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9722,6 +10027,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Booster(4&quot;), Energy(1), Thruster(8&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9766,6 +10072,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Carrier(1), RC(2,48&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -9808,6 +10115,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Back</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10008,6 +10316,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exosuit</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Back(1), Battery(3), Chest(1), Head(1), Shoulder(2)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10055,6 +10364,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">2</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exoframe</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Back(1), Battery(4)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10419,6 +10729,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exosuit</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10459,6 +10770,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Leg</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10501,6 +10813,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Plating</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10539,6 +10852,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">6</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Plating</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10582,7 +10896,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="0aed-3e43-b1c9-eede" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Flakwerfengewehr" hidden="true" id="1230-9f60-b6d6-e901">
+    <selectionEntry type="upgrade" import="true" name="Flakwerfengewehr 56" hidden="true" id="1230-9f60-b6d6-e901">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
@@ -10602,7 +10916,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d596-e191-2c3c-60d8"/>
       </constraints>
       <profiles>
-        <profile name="Flakwerfengewehr" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0128-2378-579b-e48a">
+        <profile name="Flakwerfengewehr 56" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0128-2378-579b-e48a">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
@@ -10614,6 +10928,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rüstung Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Magazine(20x138B), Ordnance(20x138B), Reload(1,6)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10660,6 +10975,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rüstung Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10711,6 +11027,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Rüstung Weapon Frame</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10742,6 +11059,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,6)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10784,6 +11102,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10812,6 +11131,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Underslung, Melee</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bayonet</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10819,7 +11139,6 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Underslung" id="cd0a-96cb-72a2-31a7" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
         <infoLink name="Bayonet" id="bdbb-d7f6-b525-72ed" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
       </infoLinks>
     </selectionEntry>
@@ -10850,6 +11169,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Capacitor(1), Energy(2), Lightning</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10857,8 +11177,9 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Capacitor(1)" id="e8c3-1a6f-504b-5ca2" hidden="false" type="rule" targetId="44dd-4d9e-6c8c-4d86"/>
+        <infoLink name="Energy(2)" id="e8c3-1a6f-504b-5ca2" hidden="false" type="rule" targetId="93d5-d5b9-6a07-5feb"/>
         <infoLink name="Lightning" id="82e6-db57-28a1-51e6" hidden="false" type="rule" targetId="da10-59f2-a754-98a6"/>
+        <infoLink name="Capacitor(1)" id="9f89-2a6a-a8e3-8a4d" hidden="false" type="rule" targetId="44dd-4d9e-6c8c-4d86"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Colt M1912A1" hidden="true" id="fc7c-bb63-86be-b69a" collective="false">
@@ -10881,6 +11202,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10908,6 +11230,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Energy(2), Ordnance(Blitz Cylinder), Reload(1,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10965,6 +11288,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Melee</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Fortification(Foxhole)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -10995,6 +11319,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11042,6 +11367,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11088,6 +11414,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11135,6 +11462,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11175,6 +11503,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11393,7 +11722,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">25</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Train Engine</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -11425,6 +11758,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Railcar</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Cover(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Cover(1)</attribute>
@@ -11463,6 +11797,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">0</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Railcar</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Flatbed</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Flatbed</attribute>
@@ -11517,7 +11852,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">30</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Train Engine Upgrade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -11554,6 +11893,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(1), Equipment(2)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11598,6 +11938,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(1), Equipment(3)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11646,6 +11987,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(1), Equipment(4)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11679,6 +12021,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(1), Equipment(2)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11712,6 +12055,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(1), Equipment(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11744,6 +12088,23 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Equipment(2)" id="b8eb-4736-fe39-01f3" hidden="false" type="rule" targetId="1737-a786-9db8-7462"/>
         <infoLink name="Cold Weather" id="60ef-3536-0f15-fff0" hidden="false" type="rule" targetId="ba9d-7ef1-84a8-c8f4"/>
       </infoLinks>
+      <profiles>
+        <profile name="m/1949 Uniform" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="16f0-448c-14b7-4389">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(2), Cold Weather, Equipment(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="c391-1ab6-2593-9efc" name="M45 Sprungkittel" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -11783,6 +12144,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(3), Equipment(1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11829,6 +12191,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(2), Equipment(2)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11873,6 +12236,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(2), Equipment(3)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11918,6 +12282,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(3), Equipment(2)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -11934,11 +12299,12 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11954,18 +12320,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Recharge(0)" id="93e7-2de5-d790-6c81" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <profiles>
-        <profile name="Kübelwagen Type 121" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="b684-7f48-4d00-2062">
+        <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/3</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, Car</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-2</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/3</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Vehicle, Car</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
@@ -11982,11 +12349,12 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12003,18 +12371,19 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <infoLink name="Recharge(0)" id="9f92-9854-1ff3-50e3" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <profiles>
-        <profile name="Leichter Panzerspähwagen (Cupola)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="a0f8-650c-e3db-4375">
+        <profile name="Leichter Panzerspähwagen (Cupola)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="a0f8-650c-e3db-4375">
           <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">-2</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">360</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">3/0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, Scout Car</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-2</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">360</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Vehicle, Scout Car</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Open-Topped, Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Open-Topped, Recharge(0)</attribute>
@@ -12036,6 +12405,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12048,7 +12418,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="2955-80a0-cd10-e6e8" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Truckbed(4,0)" id="469a-f0e5-5427-6ec8" hidden="false" type="rule" targetId="ea6b-e7e5-69db-6864"/>
+        <infoLink name="Truckbed(-4,-)" id="469a-f0e5-5427-6ec8" hidden="false" type="rule" targetId="ea6b-e7e5-69db-6864"/>
         <infoLink name="Recharge(0)" id="a41b-2a05-cf6c-e4d3" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
         <infoLink name="Open Topped" id="c1a1-243f-fbe0-c2a1" hidden="false" type="rule" targetId="6243-27d0-de86-9178"/>
       </infoLinks>
@@ -12065,6 +12435,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">30</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, Scout Car</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Open-Topped, Recharge(0), Truckbed(4,0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Open-Topped, Recharge(0), Truckbed(4,0)</attribute>
@@ -12086,6 +12457,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12113,6 +12485,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">30</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, Scout Car</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Recharge(0)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0)</attribute>
@@ -12159,10 +12532,10 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, Truck</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
           <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0), Truckbed(10,1)
-</attribute>
+            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Recharge(0), Truckbed(10,1)</attribute>
           </attributes>
         </profile>
       </profiles>
@@ -12181,6 +12554,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12195,7 +12569,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
       <infoLinks>
         <infoLink name="Open Topped" id="39df-2af1-dc53-5e7c" hidden="false" type="rule" targetId="6243-27d0-de86-9178"/>
         <infoLink name="Recharge(0)" id="3052-60c8-df42-6e38" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
-        <infoLink name="Truckbed(8,0)" id="7c89-a69f-cfa3-7853" hidden="false" type="rule" targetId="9182-6e6b-e4a8-ea4d"/>
+        <infoLink name="Truckbed(8,-)" id="7c89-a69f-cfa3-7853" hidden="false" type="rule" targetId="9182-6e6b-e4a8-ea4d"/>
       </infoLinks>
       <profiles>
         <profile name="Schützen Panzerwagen" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="9bbd-1e60-14df-9765">
@@ -12210,6 +12584,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, APC</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Open-topped, Recharge(0), Truckbed(8,0)</attribute>
@@ -12231,6 +12606,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12245,7 +12621,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
       <infoLinks>
         <infoLink name="Open Topped" id="8cb1-3bc9-26ed-2759" hidden="false" type="rule" targetId="6243-27d0-de86-9178"/>
         <infoLink name="Recharge(0)" id="3878-41d2-f9ca-0903" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
-        <infoLink name="Truckbed(8,0)" id="8e66-9347-1294-c770" hidden="false" type="rule" targetId="9182-6e6b-e4a8-ea4d"/>
+        <infoLink name="Truckbed(8,-)" id="8e66-9347-1294-c770" hidden="false" type="rule" targetId="9182-6e6b-e4a8-ea4d"/>
       </infoLinks>
       <profiles>
         <profile name="Schützen Panzerwagen (Turreted)" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="a5e8-388f-63d9-b348">
@@ -12260,6 +12636,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, APC</characteristic>
+            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e">Open-Topped, Recharge(0), Truckbed(8,0)</attribute>
@@ -12296,7 +12673,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Half-Track</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -12328,7 +12709,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Hover</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -12360,7 +12745,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Walker</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -12393,7 +12782,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Wheeled</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -12412,6 +12805,26 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
           </conditionGroups>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="20x138B 10rnd Magazine" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="353a-8268-e724-74ab">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Magazine(20x138B)</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,10)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Reload(1,10)" id="964b-6c7a-7ca8-6ceb" hidden="false" type="rule" targetId="c706-1ddf-2f5d-4d6e"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="20x138B 20rnd Magazine" hidden="true" id="868c-7d87-c84a-3669">
       <costs>
@@ -12428,6 +12841,26 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Reload(1,20)" id="bda4-429b-4eb3-c470" hidden="false" type="rule" targetId="b8af-95b2-008a-741d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="20x138B 20rnd Magazine" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="851c-f850-5984-81dd">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Magazine(29x138B)</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,20)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Anbauflammenwerfer-48" hidden="true" id="9486-f80a-2c9d-c445">
       <costs>
@@ -12444,6 +12877,28 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
           </conditionGroups>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Anbauflammenwerfer-48" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="347a-1876-88ab-926a">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">6&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Underslung Upgrade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flame, Radius(2&quot;), Reload(1,1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Radius(2&quot;)" id="4d11-b032-0650-4cae" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+        <infoLink name="Reload(1,1)" id="64f6-c1fa-bf48-d816" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+        <infoLink name="Flame" id="d24b-8227-e35d-9eb5" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bipod" hidden="true" id="0e35-eb62-a09c-8139">
       <costs>
@@ -12460,11 +12915,52 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
           </conditionGroups>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Bipod" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b85e-2825-c2e2-333c">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Underslung</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bipod(1)" id="6261-654c-3d41-2084" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Huot Automatic Rifle Kit" hidden="true" id="8819-504d-22d9-c1a1">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Conversion Kit(3-4,1)" id="f0e9-bba6-f4d5-7ffb" hidden="false" type="rule" targetId="d13e-cba1-3f4c-73bb"/>
+        <infoLink name="Heavy" id="0190-52e8-81ba-0904" hidden="false" type="rule" targetId="ed1a-2db2-508f-15e3"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Huot Automatic Rifle Kit" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1ee4-fc55-601d-12b9">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-1</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">+2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Weapon Upgrade, Conversion Kit</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Conversion Kit(3-4,1), Heavy, Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Schalldämpfer-54" hidden="true" id="b728-1e0f-05a7-4142">
       <costs>
@@ -12555,6 +13051,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a"/>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda"/>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Carrier(4)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1">Carrier(4)</attribute>
@@ -12626,6 +13123,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Chassis Upgrade, APC/Scout Car</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Carrier(4), Truckbed(-2,-)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1">Carrier(4), Truckbed(-2,-)</attribute>
@@ -12677,6 +13175,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Chassis Upgrade, Car</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">RC(2,48&quot;)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1">RC(2,48&quot;)</attribute>
@@ -12726,6 +13225,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Chassis Upgrade, APC/Scout Car</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">RC(4,48&quot;), Truckbed(-2,-)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1">RC(4,48&quot;), Truckbed(-2,-)</attribute>
@@ -12766,6 +13266,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Chassis Upgrade, APC</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Truckbed(-4,1)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1">Truckbed(-4,1)</attribute>
@@ -12807,7 +13308,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Chassis, Car, Scout Car/APC</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -12842,7 +13347,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Chassis Upgrade, Car, Scout Car, APC</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
     </selectionEntry>
@@ -12863,7 +13372,11 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Hovercraft Weapon Mount, Düsenhuber</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
         </profile>
       </profiles>
       <entryLinks>
