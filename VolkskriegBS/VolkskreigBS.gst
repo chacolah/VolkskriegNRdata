@@ -11,7 +11,7 @@
     </costType>
   </costTypes>
   <profileTypes>
-    <profileType id="13eb-a53b-a583-5387" name="Stats">
+    <profileType id="13eb-a53b-a583-5387" name="Equipment Stats" kind="weapon">
       <characteristicTypes>
         <characteristicType id="8663-15fe-1559-12b8" name="MOB"/>
         <characteristicType id="808e-7a55-4969-f2bb" name="RNG"/>
@@ -33,6 +33,34 @@
         <characteristicType name="Heat Limit" id="fa40-8e71-0932-c3e7"/>
         <characteristicType name="Bay Amount" id="f33c-047b-177a-6b10"/>
         <characteristicType name="Movement Speed" id="6146-2fae-73d7-8b66"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="8a4d-b3bb-809a-def0" name="Model Stats" kind="model">
+      <characteristicTypes>
+        <characteristicType id="9c65-64a7-48bc-a290" name="MOB"/>
+        <characteristicType id="d420-75d0-f7f8-0d43" name="RNG"/>
+        <characteristicType id="3934-2233-8d9b-1482" name="ROT"/>
+        <characteristicType id="bc43-b0f1-e705-ecd3" name="ACC"/>
+        <characteristicType id="6649-5bc2-ccce-8644" name="FP"/>
+        <characteristicType id="219c-900c-30d9-cd81" name="RoF"/>
+        <characteristicType id="269d-3880-bbc2-ec5a" name="CAP"/>
+        <characteristicType id="7f71-92e2-a444-f967" name="ARM"/>
+        <characteristicType id="d5a4-f90e-6162-fcf4" name="DUR"/>
+        <characteristicType name="TYPE" id="c526-fe11-bb57-08cb"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="1944-0872-1c39-2eff" name="Uniform Stats" kind="weapon">
+      <characteristicTypes>
+        <characteristicType id="cec7-069a-3482-657d" name="MOB"/>
+        <characteristicType id="e0e6-179e-5687-2300" name="RNG"/>
+        <characteristicType id="efbb-6820-8c37-5654" name="ROT"/>
+        <characteristicType id="2a03-8ae5-13b1-03f3" name="ACC"/>
+        <characteristicType id="4842-59fb-176b-821e" name="FP"/>
+        <characteristicType id="6c97-45fc-94b0-4ce4" name="RoF"/>
+        <characteristicType id="bd13-e9c4-5b82-f3aa" name="CAP"/>
+        <characteristicType id="43df-59b2-c04e-17b8" name="ARM"/>
+        <characteristicType id="5cca-d7ba-bf11-456e" name="DUR"/>
+        <characteristicType name="TYPE" id="cfba-3806-95d3-d55c"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -755,6 +783,19 @@
             </modifier>
           </modifiers>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Nordic" hidden="true" id="4e8b-8405-b5bb-d1d9">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="cf88-434c-a1b5-c58c" name="Uniform" hidden="false" collective="false" import="true" defaultSelectionEntryId="80d3-ce6d-5579-5a3c">
@@ -789,7 +830,7 @@
             <infoLink name="Equipment(1)" id="62c8-6d34-cf5a-d183" hidden="false" type="rule" targetId="35a2-6f19-5be4-81dd"/>
           </infoLinks>
           <profiles>
-            <profile name="M45 Sprungkittel" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="4cde-dc51-7feb-4e8d">
+            <profile name="M45 Sprungkittel" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="4cde-dc51-7feb-4e8d">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -830,7 +871,7 @@
             <infoLink name="Backpack(2)" id="7b0c-d9c1-9cc6-64bb" hidden="false" type="rule" targetId="6981-1a39-7b5f-6426"/>
           </infoLinks>
           <profiles>
-            <profile name="M55 Feldanzug" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="706d-510c-8107-a07d">
+            <profile name="M55 Feldanzug" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="706d-510c-8107-a07d">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -872,7 +913,7 @@
             <infoLink name="Equipment(2)" id="46c7-fcd2-26d5-5caf" hidden="false" type="rule" targetId="1737-a786-9db8-7462"/>
           </infoLinks>
           <profiles>
-            <profile name="M56 Sprungkittel" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="e548-0e24-418e-7011">
+            <profile name="M56 Sprungkittel" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="e548-0e24-418e-7011">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -915,7 +956,7 @@
             <infoLink name="Backpack(2)" id="1bf8-e181-5013-b103" hidden="false" type="rule" targetId="6981-1a39-7b5f-6426"/>
           </infoLinks>
           <profiles>
-            <profile name="M46 Feldanzug" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="389d-0907-669d-d7dd">
+            <profile name="M46 Feldanzug" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="389d-0907-669d-d7dd">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -945,7 +986,7 @@
             <infoLink name="Equipment(2)" id="f443-8512-fe30-4224" hidden="false" type="rule" targetId="1737-a786-9db8-7462"/>
           </infoLinks>
           <profiles>
-            <profile name="Basic Uniform" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7851-c5f4-a035-912d">
+            <profile name="Basic Uniform" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7851-c5f4-a035-912d">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -975,7 +1016,7 @@
             <infoLink name="Backpack(1)" id="dab2-f5a7-8021-c7bf" hidden="false" type="rule" targetId="bc91-4bc5-38a7-1956"/>
           </infoLinks>
           <profiles>
-            <profile name="Civilian Clothes" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="aa1f-5b2a-82de-be3d">
+            <profile name="Civilian Clothes" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="aa1f-5b2a-82de-be3d">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1016,7 +1057,7 @@
             <infoLink name="Equipment(4)" id="3260-f703-d08f-733f" hidden="false" type="rule" targetId="95f8-f1cc-f9c1-fbee"/>
           </infoLinks>
           <profiles>
-            <profile name="&apos;54 Webbing" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0fca-0cfd-6d83-bdbe">
+            <profile name="&apos;54 Webbing" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0fca-0cfd-6d83-bdbe">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1079,7 +1120,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="&apos;37 Webbing" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0722-b231-f00f-fcd7">
+            <profile name="&apos;37 Webbing" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0722-b231-f00f-fcd7">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1120,7 +1161,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="&apos;48 Webbing" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="4aab-b8f4-b010-e23d">
+            <profile name="&apos;48 Webbing" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="4aab-b8f4-b010-e23d">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1149,7 +1190,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
           </costs>
           <profiles>
-            <profile name="Astrolite Smock" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="d878-630e-d7a6-9f87">
+            <profile name="Astrolite Smock" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="d878-630e-d7a6-9f87">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1283,7 +1324,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
           </costs>
           <profiles>
-            <profile name="Emergency Repair Kit" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1bca-113a-9bf8-6ac7">
+            <profile name="Emergency Repair Kit" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1bca-113a-9bf8-6ac7">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1312,7 +1353,7 @@
             <infoLink name="Treatment(2,+2)" id="48f4-174a-69ef-aadb" hidden="false" type="rule" targetId="7c78-20cf-fbc3-f771"/>
           </infoLinks>
           <profiles>
-            <profile name="First Aid Kit" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="ef29-0d34-92d4-1e77">
+            <profile name="First Aid Kit" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ef29-0d34-92d4-1e77">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1346,7 +1387,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Pervitin Ration" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1354-89d1-b36e-85a5">
+            <profile name="Pervitin Ration" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1354-89d1-b36e-85a5">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1369,7 +1410,7 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Schutzschild 55" hidden="true" id="6032-c575-bed5-bbab">
           <profiles>
-            <profile name="Schutzschild 55" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="476f-70ad-7795-6c75">
+            <profile name="Schutzschild 55" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="476f-70ad-7795-6c75">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1512,18 +1553,18 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Conscript" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="02ba-8ca3-796d-0f88">
+            <profile name="Conscript" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="02ba-8ca3-796d-0f88">
               <characteristics>
-                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">7</characteristic>
-                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
-                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
-                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
-                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">6</characteristic>
-                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Civilian</characteristic>
+                <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
+                <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
+                <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
+                <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">+1</characteristic>
+                <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
+                <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
+                <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
+                <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
+                <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
+                <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Civilian</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1571,18 +1612,18 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Police" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6fb0-355d-19d5-974b">
+            <profile name="Police" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="6fb0-355d-19d5-974b">
               <characteristics>
-                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">7</characteristic>
-                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
-                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
-                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
-                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">6</characteristic>
-                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Civilian</characteristic>
+                <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
+                <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
+                <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
+                <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">+2</characteristic>
+                <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
+                <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
+                <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
+                <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
+                <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
+                <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Civilian</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1648,18 +1689,18 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Soldier" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2354-6082-eb8f-a340">
+            <profile name="Soldier" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="2354-6082-eb8f-a340">
               <characteristics>
-                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">7</characteristic>
-                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
-                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
-                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
-                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">6</characteristic>
-                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Military</characteristic>
+                <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
+                <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
+                <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
+                <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">+2</characteristic>
+                <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
+                <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
+                <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
+                <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
+                <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
+                <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Military</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1714,7 +1755,7 @@
             <entryLink import="true" name="Animal Equipment" hidden="false" id="3109-0333-79f7-d874" type="selectionEntryGroup" targetId="8031-0e27-ee07-ea27"/>
           </entryLinks>
           <profiles>
-            <profile name="Attack Dog" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="5fcd-df98-7316-8c54">
+            <profile name="Attack Dog" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5fcd-df98-7316-8c54">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">9&quot;</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">2&quot;</characteristic>
@@ -1761,7 +1802,7 @@
             <entryLink import="true" name="Animal Equipment" hidden="false" id="4949-ac0d-3bbf-07d5" type="selectionEntryGroup" targetId="8031-0e27-ee07-ea27"/>
           </entryLinks>
           <profiles>
-            <profile name="Horse" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1544-6f70-faea-17d0">
+            <profile name="Horse" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1544-6f70-faea-17d0">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">12&quot;</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1837,7 +1878,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
           </costs>
           <profiles>
-            <profile name="Blitzleitunmotor-60" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="64f6-16dc-ca63-a129">
+            <profile name="Blitzleitunmotor-60" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="64f6-16dc-ca63-a129">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1862,7 +1903,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
           </costs>
           <profiles>
-            <profile name="Blitzleitungmotor Ausf. A" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="5c49-8e41-d924-288b">
+            <profile name="Blitzleitungmotor Ausf. A" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5c49-8e41-d924-288b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1887,7 +1928,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
           </costs>
           <profiles>
-            <profile name="Blitzleitunmotor-56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="8aa7-38f1-cb51-a2ae">
+            <profile name="Blitzleitunmotor-56" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="8aa7-38f1-cb51-a2ae">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1946,7 +1987,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb3-f3eb-f45b-5c11" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Leichte Panzerung" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="ed6c-413e-7dcf-c776">
+            <profile name="Leichte Panzerung" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ed6c-413e-7dcf-c776">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -1981,7 +2022,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1d9-3dd7-ceca-e4a9" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile name="Schwerer Panzerung" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="b2cd-be40-f890-b621">
+            <profile name="Schwerer Panzerung" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b2cd-be40-f890-b621">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -2096,7 +2137,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3a-b666-b28e-fccb"/>
           </constraints>
           <profiles>
-            <profile name="2cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="557b-e78b-518e-e39b">
+            <profile name="2cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="557b-e78b-518e-e39b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
@@ -2157,7 +2198,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0255-bcf1-caed-3464"/>
           </constraints>
           <profiles>
-            <profile name="3.7cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="5b5a-14fe-a690-df40">
+            <profile name="3.7cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5b5a-14fe-a690-df40">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42</characteristic>
@@ -2217,7 +2258,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7617-541b-fae7-d675"/>
           </constraints>
           <profiles>
-            <profile name="2cm Maschinenekampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="c94b-a386-faf3-6b7e">
+            <profile name="2cm Maschinenekampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c94b-a386-faf3-6b7e">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
@@ -2278,7 +2319,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e830-3b5e-0dbc-da9e"/>
           </constraints>
           <profiles>
-            <profile name="3.7cm Maschinenkampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6857-6d47-6de8-f19a">
+            <profile name="3.7cm Maschinenkampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6857-6d47-6de8-f19a">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42</characteristic>
@@ -2310,7 +2351,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef13-feee-ecda-e2b8"/>
           </constraints>
           <profiles>
-            <profile name="Raketenpanzerbüchse-58 x6" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="50c3-a838-5771-ffe7">
+            <profile name="Raketenpanzerbüchse-58 x6" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="50c3-a838-5771-ffe7">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
@@ -2372,7 +2413,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e27-9df8-c4e8-7fc0"/>
           </constraints>
           <profiles>
-            <profile name="30cm Raketenwerfer" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="f3fa-4705-2caf-2bcf">
+            <profile name="30cm Raketenwerfer" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="f3fa-4705-2caf-2bcf">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">96</characteristic>
@@ -2421,7 +2462,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ad5-737d-2976-7efa"/>
           </constraints>
           <profiles>
-            <profile name="Kampfwagenfeuerwerfer-51" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7a5c-bc41-d8e3-f84e">
+            <profile name="Kampfwagenfeuerwerfer-51" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7a5c-bc41-d8e3-f84e">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
@@ -2728,7 +2769,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
           </costs>
           <profiles>
-            <profile name="Armoured Tack" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="116b-e8df-e5b1-2831">
+            <profile name="Armoured Tack" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="116b-e8df-e5b1-2831">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -2768,7 +2809,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
           </costs>
           <profiles>
-            <profile name="Hundsrüstung Ausf. A “Blondi”" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0cd8-0218-a13c-abe3">
+            <profile name="Hundsrüstung Ausf. A “Blondi”" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0cd8-0218-a13c-abe3">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+1&quot;</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -2807,7 +2848,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
           </costs>
           <profiles>
-            <profile name="Astrolite Horse Tack" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="f5ac-13cb-b8de-5306">
+            <profile name="Astrolite Horse Tack" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="f5ac-13cb-b8de-5306">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -2954,7 +2995,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Hummerschale 51/56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9337-fe3b-af8c-d878">
+            <profile name="Hummerschale 51/56" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9337-fe3b-af8c-d878">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -2995,7 +3036,7 @@
             <entryLink import="true" name="Power Sources" hidden="false" id="6627-c922-e3a4-2336" type="selectionEntryGroup" targetId="e11f-3da3-396d-00c2"/>
           </entryLinks>
           <profiles>
-            <profile name="Uberfliege- Booten Ausf. B “Frosch”" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="69df-64d1-d636-2713">
+            <profile name="Uberfliege- Booten Ausf. B “Frosch”" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="69df-64d1-d636-2713">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -3499,7 +3540,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Raketen Panzerbüchse-58" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="e1e5-ef10-8524-8f41">
+            <profile name="Raketen Panzerbüchse-58" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="e1e5-ef10-8524-8f41">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -3556,7 +3597,7 @@
             <infoLink name="Explosive" id="4e71-f827-6a67-26f6" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
           </infoLinks>
           <profiles>
-            <profile name="Panzerfaust-60" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="23a7-3195-caeb-905e">
+            <profile name="Panzerfaust-60" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="23a7-3195-caeb-905e">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12&quot;</characteristic>
@@ -3600,11 +3641,11 @@
             <infoLink name="Bipod(1)" id="beb8-7f1f-bbc8-0798" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
             <infoLink name="Sniper" id="35b5-a037-0929-9ddd" hidden="false" type="rule" targetId="010c-d754-414f-6102"/>
             <infoLink name="Piercing(1)" id="0714-17c6-dde6-5312" hidden="false" type="rule" targetId="71aa-a433-caa2-dc68"/>
-            <infoLink name="Zeroing" id="f8f9-9cd6-d8c6-b9ba" hidden="false" type="rule" targetId="73d4-9ef4-01fc-676c"/>
+            <infoLink name="Zeroing(+1)" id="f8f9-9cd6-d8c6-b9ba" hidden="false" type="rule" targetId="73d4-9ef4-01fc-676c"/>
             <infoLink name="Sight" id="85e8-54e8-91ba-25cf" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
           </infoLinks>
           <profiles>
-            <profile name="Panzerbüchse-54(Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="b583-0901-24e7-de63">
+            <profile name="Panzerbüchse-54(Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b583-0901-24e7-de63">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
@@ -3644,7 +3685,7 @@
             <infoLink name="Sight" id="452a-441e-477c-008e" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
           </infoLinks>
           <profiles>
-            <profile name="Panzerbüchse-54(Cz)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1985-d250-8d51-0084">
+            <profile name="Panzerbüchse-54(Cz)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1985-d250-8d51-0084">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
@@ -3684,7 +3725,7 @@
             <infoLink name="Bipod(1)" id="aa81-6191-e943-d651" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
           </infoLinks>
           <profiles>
-            <profile name="Machinengewehr-56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3720-2612-bdba-02b0">
+            <profile name="Machinengewehr-56" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3720-2612-bdba-02b0">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -3726,10 +3767,10 @@
             <infoLink name="Bombard(18-48)" id="591c-d6a3-2a4d-e5bf" hidden="false" type="rule" targetId="369c-e276-3600-7fa5"/>
             <infoLink name="Explosive" id="04f1-5b43-e8b8-dfe5" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
             <infoLink name="Setup(1)" id="64b8-a81c-5ab3-5873" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
-            <infoLink name="Zeroing" id="f9e6-abe5-1aa0-ef5a" hidden="false" type="rule" targetId="73d4-9ef4-01fc-676c"/>
+            <infoLink name="Zeroing(+1)" id="f9e6-abe5-1aa0-ef5a" hidden="false" type="rule" targetId="73d4-9ef4-01fc-676c"/>
           </infoLinks>
           <profiles>
-            <profile name="Granatwerfer-53" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="61b1-be50-beef-2d69">
+            <profile name="Granatwerfer-53" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="61b1-be50-beef-2d69">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">48&quot;</characteristic>
@@ -3773,7 +3814,7 @@
             <entryLink import="true" name="Ordnance(Rifle Grenade)" hidden="false" id="b853-7b78-4d6c-8911" type="selectionEntryGroup" targetId="85e2-8812-ea50-b4a7"/>
           </entryLinks>
           <profiles>
-            <profile name="Granatbüchse-54(Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="72ac-1908-24cb-fab3">
+            <profile name="Granatbüchse-54(Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="72ac-1908-24cb-fab3">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
@@ -3824,7 +3865,7 @@
             <entryLink import="true" name="Ordnance(20mmR)" hidden="false" id="908d-ac0b-70c6-e5d9" type="selectionEntryGroup" targetId="7298-5fca-3cda-41fc"/>
           </entryLinks>
           <profiles>
-            <profile name="Fliegerfaust-55" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="e2e2-bb15-2281-32e3">
+            <profile name="Fliegerfaust-55" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="e2e2-bb15-2281-32e3">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -3864,7 +3905,7 @@
             <infoLink name="Flame" id="9463-40f3-7291-0989" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
           </infoLinks>
           <profiles>
-            <profile name="Flammenwerfer-47" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6c7d-094e-f023-d0d3">
+            <profile name="Flammenwerfer-47" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6c7d-094e-f023-d0d3">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12&quot;</characteristic>
@@ -3904,7 +3945,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a597-14ab-f081-d3fd"/>
           </constraints>
           <profiles>
-            <profile name="Blitzwerfengewehr-59" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6cf1-0fef-35f5-c2c5">
+            <profile name="Blitzwerfengewehr-59" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6cf1-0fef-35f5-c2c5">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
@@ -3947,7 +3988,7 @@
             <infoLink name="Bipod(1)" id="b4af-599c-f167-7e89" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
           </infoLinks>
           <profiles>
-            <profile name="Kulspruta m/37" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7bca-375e-4614-dbcd">
+            <profile name="Kulspruta m/37" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7bca-375e-4614-dbcd">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
@@ -3963,7 +4004,7 @@
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Kylsprutgevär m/57" hidden="true" id="fe9c-a2c5-9887-d63e">
+        <selectionEntry type="upgrade" import="true" name="Kulsprutgevär m/57" hidden="true" id="fe9c-a2c5-9887-d63e">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="70"/>
           </costs>
@@ -3987,7 +4028,7 @@
             <infoLink name="Setup(1)" id="4f1b-82bf-961f-a6a7" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
           </infoLinks>
           <profiles>
-            <profile name="Kylsprutgevär m/57" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="68f4-e625-1146-0aa9">
+            <profile name="Kulsprutgevär m/57" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="68f4-e625-1146-0aa9">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -4026,7 +4067,7 @@
             <infoLink name="Ordnance(38mm Shell)" id="b267-fe2a-218d-0efb" hidden="false" type="rule" targetId="0ec6-0ca4-b63f-b541"/>
           </infoLinks>
           <profiles>
-            <profile name="M1953 Grenade Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="26f2-6197-3451-c5ca">
+            <profile name="M1953 Grenade Rifle" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="26f2-6197-3451-c5ca">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
@@ -4064,7 +4105,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Bren Light Machine Gun MKIV*" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7105-6b4f-bb46-5106">
+            <profile name="Bren Light Machine Gun MKIV*" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7105-6b4f-bb46-5106">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -4111,7 +4152,7 @@
             <infoLink name="Surplus" id="eb4e-b933-530f-ab35" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
           </infoLinks>
           <profiles>
-            <profile name="Boys AT Rifle MKII*" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7da4-ff7c-b78d-256b">
+            <profile name="Boys AT Rifle MKII*" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7da4-ff7c-b78d-256b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -4150,7 +4191,7 @@
             <infoLink name="Energy(1)" id="e46a-0452-b190-efae" hidden="false" type="rule" targetId="98a2-2a4b-cbba-9b7b"/>
           </infoLinks>
           <profiles>
-            <profile name="Kylspruta m/61" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9ec4-942e-87fc-899f">
+            <profile name="Kylspruta m/61" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9ec4-942e-87fc-899f">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">8&quot;</characteristic>
@@ -4166,7 +4207,7 @@
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Carl Gustav Granatgevär m/50" hidden="true" id="f4d8-821a-1264-d5d1">
+        <selectionEntry type="upgrade" import="true" name="Carl Gustaf Granatgevär m/50" hidden="true" id="f4d8-821a-1264-d5d1">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
           </costs>
@@ -4178,6 +4219,7 @@
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
@@ -4191,7 +4233,7 @@
             <infoLink name="Ordnance(84x245 RCL)" id="6be4-41e5-aabf-fd98" hidden="false" type="rule" targetId="47bc-18a6-594f-5fbb"/>
           </infoLinks>
           <profiles>
-            <profile name="Carl Gustav Granatgevär m/50" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="b08a-641f-6483-9d6b">
+            <profile name="Carl Gustav Granatgevär m/50" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b08a-641f-6483-9d6b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">48&quot;</characteristic>
@@ -4206,6 +4248,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(84x245 RCL)" hidden="false" id="7786-941b-5f1e-96c4" type="selectionEntryGroup" targetId="5cae-b6ed-b1d5-e187"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kulspruta m/42" hidden="true" id="43c6-c057-2d61-d775">
           <costs>
@@ -4232,7 +4277,7 @@
             <infoLink name="Reload(1,20)" id="5be3-b154-c7bb-e2a2" hidden="false" type="rule" targetId="b8af-95b2-008a-741d"/>
           </infoLinks>
           <profiles>
-            <profile name="Kulspruta m/42" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="453a-0a90-fc6c-961b">
+            <profile name="Kulspruta m/42" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="453a-0a90-fc6c-961b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
@@ -4267,7 +4312,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Lewis 1913 Automatic Machine Gun" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0b66-7ce6-5f4d-ef5d">
+            <profile name="Lewis 1913 Automatic Machine Gun" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0b66-7ce6-5f4d-ef5d">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -4309,7 +4354,7 @@
             <infoLink name="Bipod(1)" id="c994-cb22-1178-a27f" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
           </infoLinks>
           <profiles>
-            <profile name="Breda M30 / l.MG 098(i)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0df5-a2f2-7f04-8dc1">
+            <profile name="Breda M30 / l.MG 098(i)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0df5-a2f2-7f04-8dc1">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -4347,7 +4392,7 @@
             <infoLink name="Bipod(1)" id="2288-c635-cd9c-5040" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
           </infoLinks>
           <profiles>
-            <profile name="Breda M30B / l.MG 098(i) Ausf. B" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3f0c-88ca-57ff-671a">
+            <profile name="Breda M30B / l.MG 098(i) Ausf. B" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3f0c-88ca-57ff-671a">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -4386,7 +4431,7 @@
             <infoLink name="Flame" id="ec84-69d0-3ea7-0f4b" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
           </infoLinks>
           <profiles>
-            <profile name="Lanciafiamme Spelleggiato Modello 35" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="c9e9-407b-5849-e51c">
+            <profile name="Lanciafiamme Spelleggiato Modello 35" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c9e9-407b-5849-e51c">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">10&quot;</characteristic>
@@ -4440,7 +4485,7 @@
             <infoLink name="Sight" id="2e0e-96c6-3f9c-99ff" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
           </infoLinks>
           <profiles>
-            <profile name="Volksssturmgewehr-60" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2ebb-0135-f80a-dead">
+            <profile name="Volksssturmgewehr-60" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="2ebb-0135-f80a-dead">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24</characteristic>
@@ -4480,7 +4525,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3193-e5e1-69cb-0413"/>
           </constraints>
           <profiles>
-            <profile name="Maschinenpistole-55" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="189b-68b0-b599-eeaf">
+            <profile name="Maschinenpistole-55" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="189b-68b0-b599-eeaf">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -4526,7 +4571,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e089-83d5-fcfa-b2e6"/>
           </constraints>
           <profiles>
-            <profile name="Maschinenpistole-49" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9f62-4f74-031c-6e8d">
+            <profile name="Maschinenpistole-49" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9f62-4f74-031c-6e8d">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
@@ -4561,7 +4606,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1016-5677-aaae-5634"/>
           </constraints>
           <profiles>
-            <profile name="Maschinenkarabiner-55" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="38cd-c532-4a4c-ea64">
+            <profile name="Maschinenkarabiner-55" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="38cd-c532-4a4c-ea64">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -4598,7 +4643,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17f4-fec7-ef7b-697f"/>
           </constraints>
           <profiles>
-            <profile name="Karabiner-98m" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="ec23-0a43-21d1-bb56">
+            <profile name="Karabiner-98m" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ec23-0a43-21d1-bb56">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
@@ -4628,7 +4673,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7304-e892-71f1-5688"/>
           </constraints>
           <profiles>
-            <profile name="M1903 Springfield Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="bea7-fc98-5971-0132">
+            <profile name="M1903 Springfield Rifle" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="bea7-fc98-5971-0132">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -4663,7 +4708,7 @@
             <infoLink name="Sight" id="8150-d228-7044-5e48" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
           </infoLinks>
           <profiles>
-            <profile name="General Electric M1959 Amplified Light Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="8431-bb8a-d29b-8079">
+            <profile name="General Electric M1959 Amplified Light Rifle" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="8431-bb8a-d29b-8079">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -4693,7 +4738,7 @@
             <infoLink name="Underslung" id="57f8-f743-cd0f-1157" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
           </infoLinks>
           <profiles>
-            <profile name="M1939 Johnson Semi Auto Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2ff8-f16f-1b52-5bc3">
+            <profile name="M1939 Johnson Semi Auto Rifle" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="2ff8-f16f-1b52-5bc3">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
@@ -4717,7 +4762,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8c0-51e4-4549-ca75"/>
           </constraints>
           <profiles>
-            <profile name="GM M1944 Hyde Machine Gun" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="a2cb-c928-8680-c51d">
+            <profile name="GM M1944 Hyde Machine Gun" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="a2cb-c928-8680-c51d">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
@@ -4752,7 +4797,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3d4-e4dd-4db4-4181"/>
           </constraints>
           <profiles>
-            <profile name="Gewehr-55 (Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0ad2-c7d3-25fe-12a7">
+            <profile name="Gewehr-55 (Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0ad2-c7d3-25fe-12a7">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -4780,7 +4825,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34ce-4613-c5bb-0c0c"/>
           </constraints>
           <profiles>
-            <profile name="Gewehr-55 (Walther)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="de61-c9e9-044e-4eb6">
+            <profile name="Gewehr-55 (Walther)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="de61-c9e9-044e-4eb6">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
@@ -4820,7 +4865,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb3a-d592-d4a4-10e2"/>
           </constraints>
           <profiles>
-            <profile name="Fallschimjägergewehr-56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="c856-9d68-8a9c-b7b9">
+            <profile name="Fallschimjägergewehr-56" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c856-9d68-8a9c-b7b9">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -4852,7 +4897,7 @@
             <infoLink name="Reload(1,6)" id="73a9-5da3-9fa1-0ebc" hidden="false" type="rule" targetId="a65e-6e34-ba99-d2a9"/>
           </infoLinks>
           <profiles>
-            <profile name="870 Shotgun" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="85f1-8c88-8ef3-1621">
+            <profile name="870 Shotgun" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="85f1-8c88-8ef3-1621">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">9&quot;</characteristic>
@@ -4876,7 +4921,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ceaf-bc28-3fb8-d4a3"/>
           </constraints>
           <profiles>
-            <profile name="GM &quot;Detroit Special&quot; SMG" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="85cc-8c16-3e8d-ed07">
+            <profile name="GM &quot;Detroit Special&quot; SMG" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="85cc-8c16-3e8d-ed07">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
@@ -4903,14 +4948,14 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5be3-eb8b-b32c-4000"/>
           </constraints>
           <profiles>
-            <profile name="Kylsprutegevär M/51" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="d53c-fe1c-3d29-0b05">
+            <profile name="Kylsprutegevär M/51" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="d53c-fe1c-3d29-0b05">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
-                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">8&quot;</characteristic>
                 <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
                 <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
-                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
                 <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
                 <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
                 <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
@@ -4937,7 +4982,7 @@
             <infoLink name="Sight" id="033a-26ec-5376-206e" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
           </infoLinks>
           <profiles>
-            <profile name="Kulsprutepistol m/46" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="b627-c23e-2183-0b8a">
+            <profile name="Kulsprutepistol m/46" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b627-c23e-2183-0b8a">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
@@ -4961,7 +5006,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d730-1ae7-1951-f33c"/>
           </constraints>
           <profiles>
-            <profile name="Ljungman Automatfallskärmsjägaregevär m/47" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="73a9-9550-af02-620c">
+            <profile name="Ljungman Automatfallskärmsjägaregevär m/47" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="73a9-9550-af02-620c">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
@@ -4997,7 +5042,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a2db-d085-f012-c742"/>
           </constraints>
           <profiles>
-            <profile name="Orita 1941/50" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9064-1fba-8714-60bd">
+            <profile name="Orita 1941/50" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9064-1fba-8714-60bd">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
@@ -5035,7 +5080,7 @@
             <infoLink name="Muzzle" id="dee2-c463-17a0-3f7f" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
           </infoLinks>
           <profiles>
-            <profile name="Orita 1947" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7c22-2c1d-7522-611d">
+            <profile name="Orita 1947" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7c22-2c1d-7522-611d">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
@@ -5070,7 +5115,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6d3-f638-c719-75bf"/>
           </constraints>
           <profiles>
-            <profile name="Kampfpistole-50" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="d5f1-e870-dcb6-94ea">
+            <profile name="Kampfpistole-50" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="d5f1-e870-dcb6-94ea">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
@@ -5102,7 +5147,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c599-6c76-a446-427f"/>
           </constraints>
           <profiles>
-            <profile name="Rifle, Short Ross-Garand" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="a983-3cc4-9af5-c921">
+            <profile name="Rifle, Short Ross-Garand" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="a983-3cc4-9af5-c921">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
@@ -5136,7 +5181,7 @@
             <infoLink name="Sight" id="df28-9c96-ee78-7798" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
           </infoLinks>
           <profiles>
-            <profile name="Ross MKIV*" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="f6c5-27a9-16ea-df12">
+            <profile name="Ross MKIV*" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="f6c5-27a9-16ea-df12">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
@@ -5166,7 +5211,7 @@
             <infoLink name="Underslung" id="0700-c8eb-5f66-8dfb" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
           </infoLinks>
           <profiles>
-            <profile name="Sten Submachine Gun MKVI*" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0f77-2bd0-6cc9-a8d4">
+            <profile name="Sten Submachine Gun MKVI*" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0f77-2bd0-6cc9-a8d4">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -5195,7 +5240,7 @@
             <infoLink name="Surplus" id="7523-91f4-b1ba-4a7f" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
           </infoLinks>
           <profiles>
-            <profile name="Sten Submachine Gun MKV**" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="274c-db83-5fb9-74d6">
+            <profile name="Sten Submachine Gun MKV**" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="274c-db83-5fb9-74d6">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -5223,7 +5268,7 @@
             <infoLink name="Underslung" id="d581-faf7-7753-247e" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
           </infoLinks>
           <profiles>
-            <profile name="Sterling Submachine Gun MKIII" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="858c-ea00-a488-0348">
+            <profile name="Sterling Submachine Gun MKIII" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="858c-ea00-a488-0348">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24</characteristic>
@@ -5247,7 +5292,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="932a-9e0c-03e2-9ae7"/>
           </constraints>
           <profiles>
-            <profile name="Carcano 91/45" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="fa32-cc3b-554b-29c1">
+            <profile name="Carcano 91/45" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="fa32-cc3b-554b-29c1">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -5278,7 +5323,7 @@
             <infoLink name="Bayonet" id="d021-4bf4-6f9f-dc5a" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
           </infoLinks>
           <profiles>
-            <profile name="MAB 38/46 / MP739(i) Aust. C" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="952b-3e29-1acb-9bee">
+            <profile name="MAB 38/46 / MP739(i) Aust. C" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="952b-3e29-1acb-9bee">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -5302,7 +5347,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dc8-32ca-be7c-d063"/>
           </constraints>
           <profiles>
-            <profile name="MAB 38 / MP739(i)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="8934-3ce0-cbae-c45a">
+            <profile name="MAB 38 / MP739(i)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="8934-3ce0-cbae-c45a">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
@@ -5329,7 +5374,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b8f-d77b-9c65-494a"/>
           </constraints>
           <profiles>
-            <profile name="Suomi m/31" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="264b-a855-cfd3-6c88">
+            <profile name="Suomi m/31" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="264b-a855-cfd3-6c88">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
@@ -5356,7 +5401,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="14dc-044a-252f-fe37"/>
           </constraints>
           <profiles>
-            <profile name="Ljungman Automatgevär m/42" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="665f-3c4c-7bde-68d4">
+            <profile name="Ljungman Automatgevär m/42" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="665f-3c4c-7bde-68d4">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
@@ -5387,7 +5432,7 @@
             <infoLink name="Underslung" id="45fd-ad95-c984-fc66" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
           </infoLinks>
           <profiles>
-            <profile name="M1923 Pederson Selfloading Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9fd4-4352-ca27-3361">
+            <profile name="M1923 Pederson Selfloading Rifle" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9fd4-4352-ca27-3361">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -5415,7 +5460,7 @@
             <infoLink name="Sight" id="3904-fca3-6fd7-d8ce" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
           </infoLinks>
           <profiles>
-            <profile name="M1946 Johnson Automatic Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7cdc-398d-1bd8-edda">
+            <profile name="M1946 Johnson Automatic Rifle" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7cdc-398d-1bd8-edda">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -5439,7 +5484,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dc7-467c-c80b-28c3"/>
           </constraints>
           <profiles>
-            <profile name="M1917 Browning Automatic Rifle" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="ed84-c2b0-fe89-247b">
+            <profile name="M1917 Browning Automatic Rifle" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ed84-c2b0-fe89-247b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -5466,7 +5511,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2832-9636-3d5c-22e4"/>
           </constraints>
           <profiles>
-            <profile name="Suomi m/45" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3034-c188-a6af-bbdb">
+            <profile name="Suomi m/45" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3034-c188-a6af-bbdb">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
@@ -5504,7 +5549,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ded-1cce-6c67-01d0"/>
           </constraints>
           <profiles>
-            <profile name="Volkspistole 60" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6550-b6bf-eb62-3c03">
+            <profile name="Volkspistole 60" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6550-b6bf-eb62-3c03">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
@@ -5547,7 +5592,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5abf-2f02-968f-598e"/>
           </constraints>
           <profiles>
-            <profile name="Sturmpistole 47" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="bc5d-3f66-46ef-910f">
+            <profile name="Sturmpistole 47" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="bc5d-3f66-46ef-910f">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
@@ -5593,7 +5638,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9066-6463-1eeb-53a5"/>
           </constraints>
           <profiles>
-            <profile name="Pistole-55 Luger" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="34b1-51e5-26f4-0961">
+            <profile name="Pistole-55 Luger" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="34b1-51e5-26f4-0961">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
@@ -5636,7 +5681,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4300-1a56-d5d1-2699"/>
           </constraints>
           <profiles>
-            <profile name="Pistolkarabiner-54 Biesensteiel" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9373-0ee8-0e64-1a77">
+            <profile name="Pistolkarabiner-54 Biesensteiel" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9373-0ee8-0e64-1a77">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24</characteristic>
@@ -5664,7 +5709,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd22-1017-4bf8-dbd0"/>
           </constraints>
           <profiles>
-            <profile name="Maschinenpistole-54 Schnellfeuer" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1cb7-6106-0881-5b81">
+            <profile name="Maschinenpistole-54 Schnellfeuer" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1cb7-6106-0881-5b81">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
@@ -5714,7 +5759,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b30a-c9a8-e2d8-63d0"/>
           </constraints>
           <profiles>
-            <profile name="Klappspaten 38" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="e6b9-d2e9-be04-2973">
+            <profile name="Klappspaten 38" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="e6b9-d2e9-be04-2973">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">1&quot;</characteristic>
@@ -5748,7 +5793,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ae0-96cb-1147-d527"/>
           </constraints>
           <profiles>
-            <profile name="Blitzwerfenpistole-59" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3bce-404b-5c74-30d8">
+            <profile name="Blitzwerfenpistole-59" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3bce-404b-5c74-30d8">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12</characteristic>
@@ -5777,7 +5822,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6604-3e71-8b33-a447"/>
           </constraints>
           <profiles>
-            <profile name="Bayonet" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3ad3-93a8-3895-cd15">
+            <profile name="Bayonet" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3ad3-93a8-3895-cd15">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">1&quot;</characteristic>
@@ -5817,7 +5862,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0f4-bfcc-4c0c-6d18"/>
           </constraints>
           <profiles>
-            <profile name="9mm Pocket Pistol" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1eb6-9827-cc18-0533">
+            <profile name="9mm Pocket Pistol" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1eb6-9827-cc18-0533">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">6&quot;</characteristic>
@@ -5841,7 +5886,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9466-54e8-c222-15c2"/>
           </constraints>
           <profiles>
-            <profile name="General Electric M1958 Amplified Light Pistol" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="a6df-eadd-578e-6b26">
+            <profile name="General Electric M1958 Amplified Light Pistol" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="a6df-eadd-578e-6b26">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">16</characteristic>
@@ -5873,7 +5918,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cd0b-7782-259c-7b1e"/>
           </constraints>
           <profiles>
-            <profile name="Colt M1912A1" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="f9ec-c3f5-5cd8-a3e2">
+            <profile name="Colt M1912A1" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="f9ec-c3f5-5cd8-a3e2">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12</characteristic>
@@ -5897,7 +5942,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b61-57f1-115f-5e76"/>
           </constraints>
           <profiles>
-            <profile name=".38 Revolver" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="bf88-e36d-12fb-b4b3">
+            <profile name=".38 Revolver" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="bf88-e36d-12fb-b4b3">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12</characteristic>
@@ -5941,7 +5986,7 @@
             <constraint type="max" value="1" field="selections" scope="self" shared="false" id="b248-2e57-6aa8-b6a5"/>
           </constraints>
           <profiles>
-            <profile name="Leichrüstung Ausf. A/58 “Eierschale”" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="6d2c-488f-f3c8-1ddd">
+            <profile name="Leichrüstung Ausf. A/58 “Eierschale”" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6d2c-488f-f3c8-1ddd">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -6302,7 +6347,7 @@
             <infoLink name="Head(1)" id="ea07-344a-c5c4-5e6f" hidden="false" type="rule" targetId="b505-870d-edca-952b"/>
           </infoLinks>
           <profiles>
-            <profile name="Schwererrüstung Aust. C/55 “Ritter”" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="62d2-e93c-1593-947a">
+            <profile name="Schwererrüstung Aust. C/55 “Ritter”" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="62d2-e93c-1593-947a">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -6494,7 +6539,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <profiles>
-            <profile name="Landsverk Motorrustning m/56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="d529-8590-6967-2c6f">
+            <profile name="Landsverk Motorrustning m/56" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="d529-8590-6967-2c6f">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -6543,7 +6588,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Funkbienen Rüstungarray" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="adc2-589e-2ad1-dc6c">
+            <profile name="Funkbienen Rüstungarray" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="adc2-589e-2ad1-dc6c">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -6585,7 +6630,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Blitzleitungmotorruck-60" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="764b-890d-fa6b-4476">
+            <profile name="Blitzleitungmotorruck-60" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="764b-890d-fa6b-4476">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -6623,7 +6668,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Düsenruck" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0272-a523-5dab-a3b2">
+            <profile name="Düsenruck" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0272-a523-5dab-a3b2">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -6663,7 +6708,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Raketenruck" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="293e-24bb-31d3-807b">
+            <profile name="Raketenruck" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="293e-24bb-31d3-807b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">+1</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -6704,7 +6749,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Funkbienenkord Ausf. D" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="5178-6b43-34e1-dbd7">
+            <profile name="Funkbienenkord Ausf. D" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5178-6b43-34e1-dbd7">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
@@ -6743,7 +6788,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Automatladarre m/59" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9b0e-5fcf-81f3-1303">
+            <profile name="Automatladarre m/59" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9b0e-5fcf-81f3-1303">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -6798,7 +6843,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Übersteuerung  Servos" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="fa37-20f8-eb56-5ac4">
+            <profile name="Übersteuerung  Servos" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="fa37-20f8-eb56-5ac4">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -6838,7 +6883,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="M50/I Stielhandgranate" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="1a15-4c12-a729-9a00">
+            <profile name="M50/I Stielhandgranate" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1a15-4c12-a729-9a00">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">8&quot;</characteristic>
@@ -6875,7 +6920,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="HaftHallodung-5" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="f47e-171a-bd6b-3fd3">
+            <profile name="HaftHallodung-5" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="f47e-171a-bd6b-3fd3">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">2&quot;</characteristic>
@@ -6914,7 +6959,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="M50/II Nebelhandgranate" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="4c40-fdd7-7f19-54d2">
+            <profile name="M50/II Nebelhandgranate" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="4c40-fdd7-7f19-54d2">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">8&quot;</characteristic>
@@ -6939,7 +6984,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
           </costs>
           <profiles>
-            <profile name="Improvised Explosives" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="67f2-7c75-c284-d6ce">
+            <profile name="Improvised Explosives" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="67f2-7c75-c284-d6ce">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">8&quot;</characteristic>
@@ -6987,7 +7032,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af82-142e-4e10-abc4"/>
           </constraints>
           <profiles>
-            <profile name="Rüstungfahrlafette-56" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7b23-fc33-33e9-663a">
+            <profile name="Rüstungfahrlafette-56" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7b23-fc33-33e9-663a">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -7027,7 +7072,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d596-e191-2c3c-60d8"/>
           </constraints>
           <profiles>
-            <profile name="Flakwerfengewehr" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0128-2378-579b-e48a">
+            <profile name="Flakwerfengewehr" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0128-2378-579b-e48a">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
@@ -7070,7 +7115,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69c8-a057-d7f1-8c84"/>
           </constraints>
           <profiles>
-            <profile name="Rüstungabwehrbuchse-53(S)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="30d9-a502-7ddf-a5dc">
+            <profile name="Rüstungabwehrbuchse-53(S)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="30d9-a502-7ddf-a5dc">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
@@ -9004,7 +9049,7 @@
             <infoLink name="Radius(1&quot;)" id="d3d6-8cf1-b156-ac49" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
           </infoLinks>
           <profiles>
-            <profile name="30x90RB(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="86d8-c6ca-9939-b884">
+            <profile name="30x90RB(HE)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="86d8-c6ca-9939-b884">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9029,7 +9074,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
           <profiles>
-            <profile name="30cm Raketen" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="a229-54e4-122d-2904">
+            <profile name="30cm Raketen" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="a229-54e4-122d-2904">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9059,7 +9104,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="3"/>
           </costs>
           <profiles>
-            <profile name="38mm Shell, HE" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="663c-b6a3-4027-430b">
+            <profile name="38mm Shell, HE" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="663c-b6a3-4027-430b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9084,7 +9129,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="3"/>
           </costs>
           <profiles>
-            <profile name="38mm Shell, Smoke" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="3487-63d2-1e8a-7cbc">
+            <profile name="38mm Shell, Smoke" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3487-63d2-1e8a-7cbc">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9127,7 +9172,7 @@
             <infoLink name="Flak" id="c7e1-5c17-adce-d98e" hidden="false" type="rule" targetId="caec-bfef-a91a-a302"/>
           </infoLinks>
           <profiles>
-            <profile name="20x138B(Flak)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0845-5b2b-ac4c-985d">
+            <profile name="20x138B(Flak)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0845-5b2b-ac4c-985d">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9164,7 +9209,7 @@
             <infoLink name="Radius(3&quot;)" id="7545-b5aa-91bd-93e4" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
           </infoLinks>
           <profiles>
-            <profile name="20x138B(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="341a-2589-0c36-4170">
+            <profile name="20x138B(HE)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="341a-2589-0c36-4170">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9189,7 +9234,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
           </costs>
           <profiles>
-            <profile name="20mmR(Flak)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="e3b2-29aa-45fc-b098">
+            <profile name="20mmR(Flak)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="e3b2-29aa-45fc-b098">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9235,7 +9280,7 @@
             <infoLink name="Radius(2&quot;)" id="bbeb-fd30-e0b3-2065" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
           </infoLinks>
           <profiles>
-            <profile name="37x249(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="71ea-a603-d9d5-2478">
+            <profile name="37x249(HE)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="71ea-a603-d9d5-2478">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9265,7 +9310,7 @@
             <infoLink name="Radius(2&quot;)" id="d5f3-74df-9021-9f4d" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
           </infoLinks>
           <profiles>
-            <profile name="75x714R(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="9fa0-7dd9-9d00-8de8">
+            <profile name="75x714R(HE)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9fa0-7dd9-9d00-8de8">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9301,7 +9346,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="88mmR Raketen(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="c996-26f4-06a0-92fb">
+            <profile name="88mmR Raketen(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c996-26f4-06a0-92fb">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9324,32 +9369,32 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Ordnance(88x822R)" id="5cae-b6ed-b1d5-e187" hidden="false">
+    <selectionEntryGroup name="Ordnance(84x245 RCL)" id="5cae-b6ed-b1d5-e187" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="88x822R(HE)" hidden="true" id="45eb-127f-773a-3644">
+        <selectionEntry type="upgrade" import="true" name="84x245 RCL (HEAT)" hidden="true" id="45eb-127f-773a-3644">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
           </costs>
           <profiles>
-            <profile name="88x822R(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2823-b5f7-0887-2863">
+            <profile name="84x245 RCL (HEAT)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c228-f26e-010c-8f57">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
                 <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
                 <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">15</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
                 <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
                 <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
                 <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
                 <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">88x822R</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">84x245 RCL</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink name="Explosive" id="3b0a-b773-cc0c-3733" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
-            <infoLink name="Piercing(5)" id="4b82-93e5-7874-054e" hidden="false" type="rule" targetId="fc55-ea27-b63c-e0ed"/>
-            <infoLink name="Radius(3&quot;)" id="9bed-f03f-1fce-db62" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
+            <infoLink name="Piercing(2)" id="4b82-93e5-7874-054e" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
+            <infoLink name="Radius(2&quot;)" id="9bed-f03f-1fce-db62" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -9361,7 +9406,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
           </costs>
           <profiles>
-            <profile name="128x869R(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2584-3f4d-7cc2-f80b">
+            <profile name="128x869R(HE)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="2584-3f4d-7cc2-f80b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9396,7 +9441,7 @@
             <infoLink name="Radius(3&quot;)" id="a228-24ce-94d4-5ac5" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
           </infoLinks>
           <profiles>
-            <profile name="170mmSC(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0274-b993-87a0-035c">
+            <profile name="170mmSC(HE)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0274-b993-87a0-035c">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9421,7 +9466,7 @@
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
           <profiles>
-            <profile name="General Electric “Zippy” Recharging Cylinder" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="0ca5-fdd6-50a4-2fd1">
+            <profile name="General Electric “Zippy” Recharging Cylinder" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0ca5-fdd6-50a4-2fd1">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9465,7 +9510,7 @@
             <infoLink name="Radius(1&quot;)" id="68b6-a43c-27ee-633c" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
           </infoLinks>
           <profiles>
-            <profile name="Rifle Grenade(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="4237-acf1-7a8e-4715">
+            <profile name="Rifle Grenade(HE)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="4237-acf1-7a8e-4715">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9497,7 +9542,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Rifle Grenade(HE+)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="cb74-8080-99bc-dd2a">
+            <profile name="Rifle Grenade(HE+)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="cb74-8080-99bc-dd2a">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9538,7 +9583,7 @@
             <infoLink name="Radius(1&quot;)" id="4ce4-61e6-99dc-46fb" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
           </infoLinks>
           <profiles>
-            <profile name="Rifle Grenade(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="7ce7-4909-1250-4d92">
+            <profile name="Rifle Grenade(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7ce7-4909-1250-4d92">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9570,7 +9615,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="Rifle Grenade(HHL)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="2e56-1fdd-44d2-c498">
+            <profile name="Rifle Grenade(HHL)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="2e56-1fdd-44d2-c498">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-4</characteristic>
@@ -9611,7 +9656,7 @@
             <infoLink name="Smoke(6&quot;)" id="3cd1-9174-735c-4ae3" hidden="false" type="rule" targetId="3d7f-4a8f-0c01-44b0"/>
           </infoLinks>
           <profiles>
-            <profile name="Rifle Grenade(Smoke)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="abdc-0404-dffa-78ae">
+            <profile name="Rifle Grenade(Smoke)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="abdc-0404-dffa-78ae">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -9647,7 +9692,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="StuP Grenade(HE)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="637a-7719-d5a9-482c">
+            <profile name="StuP Grenade(HE)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="637a-7719-d5a9-482c">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-2</characteristic>
@@ -9688,7 +9733,7 @@
             <infoLink name="Radius(1&quot;)" id="80ec-0ebe-3439-2960" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
           </infoLinks>
           <profiles>
-            <profile name="StuP Grenade(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="568d-1a99-286c-3ff2">
+            <profile name="StuP Grenade(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="568d-1a99-286c-3ff2">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-3</characteristic>
@@ -9720,7 +9765,7 @@
             </modifier>
           </modifiers>
           <profiles>
-            <profile name="StuP Grenade(Smoke)" typeId="13eb-a53b-a583-5387" typeName="Stats" hidden="false" id="4515-8b47-1933-b60b">
+            <profile name="StuP Grenade(Smoke)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="4515-8b47-1933-b60b">
               <characteristics>
                 <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
                 <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-1</characteristic>
@@ -9737,6 +9782,36 @@
           </profiles>
           <infoLinks>
             <infoLink name="Smoke(6&quot;)" id="af5e-2118-a875-2733" hidden="false" type="rule" targetId="3d7f-4a8f-0c01-44b0"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(88x822R)" id="2bd1-9c94-1e68-21df" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="88x822R(HE)" hidden="true" id="9980-8dd5-a5ed-cee7">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+          </costs>
+          <profiles>
+            <profile name="88x822R(HE)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7655-05a6-4f2f-3033">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">15</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">88x822R</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Explosive" id="7953-a690-9ca1-3d8b" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+            <infoLink name="Piercing(5)" id="fe67-c0a0-b43c-4678" hidden="false" type="rule" targetId="fc55-ea27-b63c-e0ed"/>
+            <infoLink name="Radius(3&quot;)" id="48e1-d477-0ec1-0a30" hidden="false" type="rule" targetId="a6af-7c4f-836a-427f"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -10368,7 +10443,7 @@ Cannot be stored in an Equipment slot.</description>
     </rule>
     <rule name="Muzzle" id="7498-0a5d-0c52-ef6c" hidden="false">
       <description>Equipment with this rule:
-May equip a MuzzleUpgrade.</description>
+May equip a Muzzle Upgrade.</description>
     </rule>
     <rule name="Heavy Weapon(Type)" id="17d5-7121-b66c-ef4f" hidden="false">
       <description>Heavy Weapon Equipment:
