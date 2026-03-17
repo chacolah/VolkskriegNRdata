@@ -2709,6 +2709,25 @@
           <entryLinks>
             <entryLink import="true" name="Motorcycle Upgrades" hidden="false" id="3e79-908f-db70-41ca" type="selectionEntryGroup" targetId="b629-a3b4-2431-11ee"/>
           </entryLinks>
+          <profiles>
+            <profile name="BMW R100" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="0d44-007b-4752-ac09">
+              <characteristics>
+                <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">10</characteristic>
+                <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
+                <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
+                <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
+                <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
+                <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
+                <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/1</characteristic>
+                <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
+                <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">15</characteristic>
+                <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Motorcycle, Wheeled</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Recharge(0)" id="e9eb-3cc4-3b8b-3e7a" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Kettenkrad" hidden="true" id="890f-32b2-3f42-8544">
           <costs>
@@ -2728,6 +2747,25 @@
           <entryLinks>
             <entryLink import="true" name="Motorcycle Upgrades" hidden="false" id="01f7-e7f0-8a8d-9b4b" type="selectionEntryGroup" targetId="b629-a3b4-2431-11ee"/>
           </entryLinks>
+          <profiles>
+            <profile name="Kettenkrad" typeId="8a4d-b3bb-809a-def0" typeName="Model Stats" hidden="false" id="e97d-ee78-2e9e-76f4">
+              <characteristics>
+                <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">9</characteristic>
+                <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
+                <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
+                <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">-</characteristic>
+                <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
+                <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
+                <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/4</characteristic>
+                <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
+                <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
+                <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Motorcycle, Half-Tracked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Recharge(0)" id="8d44-787f-7122-7d9e" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -8926,11 +8964,50 @@
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="725f-87d0-485c-7b24"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f846-0018-6466-82b8"/>
           </constraints>
+          <profiles>
+            <profile name="Airdrop Parachute" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="fa55-3d58-6f35-eba4">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Motorcycle Upgrade</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Airborne(Infantry Equipment)" id="ecdf-44c5-d9d0-0f0c" hidden="false" type="rule" targetId="8038-1970-8258-adba"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Funkbienekord Drohne-Array Ausf. A" hidden="true" id="7170-a032-5f7f-ec4c">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
           </costs>
+          <infoLinks>
+            <infoLink name="RC(1,36&quot;)" id="6bed-4304-b361-8094" hidden="false" type="rule" targetId="660a-0f17-4943-01a9"/>
+            <infoLink name="Carrier(1)" id="c007-2c61-237d-af5b" hidden="false" type="rule" targetId="91f5-97a6-54ac-72ab"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Funkbienekord Drohne-Array Ausf. A" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7c90-5eb4-6f91-ee37">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">+1/-2</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a"/>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda"/>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae"/>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sidecar (R100)" hidden="true" id="5293-7e8e-a782-a528">
           <constraints>
@@ -8960,6 +9037,22 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Sidecar (R100)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0768-dc3c-8a76-edd4">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-/2</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidecar/Wheeled</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <constraints>
