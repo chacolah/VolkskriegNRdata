@@ -3738,7 +3738,10 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
       </modifiers>
       <infoLinks>
         <infoLink name="Surplus" id="dc02-ac84-f50b-be97" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
-        <infoLink name="Bipod(1)" id="b4af-599c-f167-7e89" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+        <infoLink name="Setup(1)" id="b4af-599c-f167-7e89" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
+        <infoLink name="Bipod(1)" id="4a2a-1779-8fab-ad09" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+        <infoLink name="Reload(1,20)" id="bb50-d36a-3f28-3b42" hidden="false" type="rule" targetId="b8af-95b2-008a-741d"/>
+        <infoLink name="Crewed" id="a743-a188-cb1b-e43a" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
       </infoLinks>
       <profiles>
         <profile name="Kulspruta m/37" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7bca-375e-4614-dbcd">
@@ -3823,9 +3826,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink name="Crewed" id="7986-b7c0-9ee6-18e3" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
         <infoLink name="Bipod(1)" id="0aa3-6b3c-73d3-1c5c" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
-        <infoLink name="Setup(1)" id="4f1b-82bf-961f-a6a7" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
       </infoLinks>
       <profiles>
         <profile name="Kulsprutgevär m/57" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="68f4-e625-1146-0aa9">
@@ -3873,7 +3874,7 @@ If the vehicle has the Open-topped rule, Towed Weapon Mounts and Heavy Weapons w
         <profile name="Kylspruta m/61" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9ec4-942e-87fc-899f">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">8&quot;</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12&quot;</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+5</characteristic>
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
