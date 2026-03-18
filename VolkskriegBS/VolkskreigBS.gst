@@ -454,7 +454,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Motorized Fireteam" hidden="false" id="4db9-63dc-45d0-8165" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Motorized Fireteam" hidden="false" id="4db9-63dc-45d0-8165">
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="a76f-e314-054d-6f6c" targetId="225b-b208-7d55-5943" primary="true"/>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="c50e-d137-f475-03bc" primary="false" name="Vehicle Crew"/>
@@ -489,7 +489,7 @@
         <profile name="Motorized Fireteam" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="f0c2-1c6e-6d89-4018"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Tank Crew" hidden="false" id="4f97-b5ec-9e54-c502" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Tank Crew" hidden="false" id="4f97-b5ec-9e54-c502">
       <entryLinks>
         <entryLink import="true" name="Infantry Models" hidden="false" id="e5c9-2489-6239-86d2" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
           <constraints>
@@ -528,7 +528,7 @@
         <profile name="Tank Crew" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="b723-1992-dcb6-bb81"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Heavy Weapons Team" hidden="false" id="af7d-59ed-2373-4f39" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Heavy Weapons Team" hidden="false" id="af7d-59ed-2373-4f39">
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="2a4c-0e11-486b-85fc" targetId="225b-b208-7d55-5943" primary="true"/>
       </categoryLinks>
@@ -578,7 +578,7 @@
         <profile name="Fireteam" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="84d3-1bcd-f163-6836"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="a429-92a0-3658-f03f" name="Lone Wolf" hidden="false" collective="false" import="true" type="unit" subType="unit-group">
+    <selectionEntry id="a429-92a0-3658-f03f" name="Lone Wolf" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="d223-9ee8-d9db-4275" name="Generic Formation" hidden="false" targetId="225b-b208-7d55-5943" primary="true"/>
       </categoryLinks>
@@ -620,7 +620,7 @@
         <profile name="Flight Crew" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="3dcb-cc5e-d3ec-d6a1"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Towed Weapon Crew" hidden="false" id="29d6-e1d7-2bd1-d962" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Towed Weapon Crew" hidden="false" id="29d6-e1d7-2bd1-d962">
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="b1b7-f3c1-6c97-bc39" targetId="225b-b208-7d55-5943" primary="true"/>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="89f0-fb55-90f6-d941" primary="false" name="Vehicle Crew"/>
@@ -658,7 +658,7 @@
         <categoryLink name="Reference" hidden="false" id="4155-07b2-8f8e-29f5" targetId="c1d7-f7b9-4d5d-909b" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Fallschirmjäger Squad" hidden="true" id="eb52-59ce-0b93-e19c" collective="false" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Fallschirmjäger Squad" hidden="true" id="eb52-59ce-0b93-e19c" collective="false">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="a4b1-d52d-2059-f380" targetId="c74a-6498-63d2-89fb" primary="true"/>
       </categoryLinks>
@@ -689,7 +689,7 @@
         <infoLink targetId="e158-29b1-1ccc-ff36" id="f1c5-0efc-825c-6873" type="rule" name="Fallschirmjäger Training" hidden="false"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Fallschirmkradschutzen Team" hidden="true" id="481e-4081-4e1c-a16b" collective="false" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Fallschirmkradschutzen Team" hidden="true" id="481e-4081-4e1c-a16b" collective="false">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="50bc-1e3d-75f0-2551" targetId="c74a-6498-63d2-89fb" primary="true"/>
       </categoryLinks>
@@ -737,7 +737,7 @@
         <profile name="Fallschirmkradschutzen Team" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="a40b-cb37-96d2-7597"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Fallschirmpanzergruppe" hidden="true" id="90be-0b30-7a5e-db8b" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Fallschirmpanzergruppe" hidden="true" id="90be-0b30-7a5e-db8b">
       <entryLinks>
         <entryLink import="true" name="Infantry Models" hidden="false" id="050e-4789-9ce1-a39d" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
           <constraints>
@@ -780,7 +780,7 @@
             <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
-        <modifier type="add" value="{this} Requires at least one Panzer Officer." field="error">
+        <modifier type="add" value="{this} Requires at least one Panzer" field="error">
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="parent" childId="31e1-cfc2-0836-5b24" shared="true" includeChildSelections="true"/>
           </conditions>
@@ -793,7 +793,7 @@
         <infoLink name="Fallschirmjäger Training" id="6590-91e3-17d6-6433" hidden="false" targetId="e158-29b1-1ccc-ff36" type="rule"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Osttruppen" hidden="true" id="a344-f3e9-85f8-8d32" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Osttruppen" hidden="true" id="a344-f3e9-85f8-8d32">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="4281-bc66-eaee-2390" targetId="c74a-6498-63d2-89fb" primary="true"/>
       </categoryLinks>
@@ -835,7 +835,7 @@
         <infoLink targetId="6bf9-01a1-550e-23eb" id="a0a9-aa67-e4c8-444b" type="rule" name="You Can Trust Osttruppen" hidden="false"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Nachtjäger Squad" hidden="true" id="3824-958e-a415-e308" collective="false" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Nachtjäger Squad" hidden="true" id="3824-958e-a415-e308" collective="false">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="e0af-ba05-6728-a046" targetId="c74a-6498-63d2-89fb" primary="true"/>
       </categoryLinks>
@@ -866,6 +866,39 @@
         <infoLink targetId="f279-cc6f-a0e5-cff4" id="cabc-8218-2b64-b183" type="rule" name="Nachtjäger Training" hidden="false"/>
         <infoLink name="Fallschirmjäger Training" id="b4f7-39c2-e53d-c25d" hidden="false" targetId="e158-29b1-1ccc-ff36" type="rule"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sturmrittergruppe" hidden="true" id="aced-9645-77a6-8498">
+      <categoryLinks>
+        <categoryLink targetId="c74a-6498-63d2-89fb" id="539a-9f15-5ff1-83a1" primary="true" name="Faction Formations"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Run and Gun" id="f786-89cd-7935-381d" hidden="false">
+          <description>Rüstung in this formation may fire their weapons with a -2 modifier after doing the Go!Go!Go! Order.
+Rüstung in this formation only have to spend the Energy cost once for both movements when performing the Go!Go!Go! order.</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Infantry Models" hidden="false" id="0857-882b-656b-eadb" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
+          <modifiers>
+            <modifier type="add" value="{this} Requires at least one Officer." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -914,18 +947,43 @@
       </constraints>
       <comment>Master weapon list for entire system + all factions</comment>
       <entryLinks>
-        <entryLink import="true" name="Heavy Weapons" hidden="false" id="5d6f-cca0-90fc-681f" type="selectionEntryGroup" targetId="580e-77ca-e747-456b"/>
-        <entryLink import="true" name="Primary Arms" hidden="false" id="7429-8b9d-91b7-247a" type="selectionEntryGroup" targetId="4fb9-7410-611a-138f"/>
-        <entryLink import="true" name="Sidearms/Melee" hidden="false" id="90ad-d44d-7afb-9fe1" type="selectionEntryGroup" targetId="8d16-f577-2371-6215"/>
+        <entryLink import="true" name="Heavy Weapons" hidden="false" id="5d6f-cca0-90fc-681f" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aced-9645-77a6-8498" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Primary Arms" hidden="false" id="7429-8b9d-91b7-247a" type="selectionEntryGroup" targetId="4fb9-7410-611a-138f">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aced-9645-77a6-8498" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Sidearms/Melee" hidden="false" id="90ad-d44d-7afb-9fe1" type="selectionEntryGroup" targetId="8d16-f577-2371-6215">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aced-9645-77a6-8498" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Sturmritter Weapons" hidden="false" id="0efd-20ac-ebd3-1d0d" type="selectionEntryGroup" targetId="27d9-fc25-bdc9-23f2"/>
       </entryLinks>
       <modifiers>
         <modifier type="add" value="All Nachtjäger Weapons must be Silent." field="error">
           <conditionGroups>
             <conditionGroup type="and">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="444d-2a02-98a7-d692" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="0b04-3e8a-0d13-f15e" shared="true" includeChildSelections="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="b728-1e0f-05a7-4142" shared="true" includeChildSelections="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="95bf-877d-1c5d-a242" shared="true" includeChildSelections="true"/>
                   </conditions>
@@ -933,6 +991,27 @@
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="3824-958e-a415-e308" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="Must be Sturmritter Weapon." field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="3cf8-46de-ed2d-aec6" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="5173-7b1f-e523-d07c" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="d4b1-9876-1b6b-81a0" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="2800-a6bf-347f-8f74" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aced-9645-77a6-8498" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -975,7 +1054,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditionGroups>
-                <conditionGroup type="or">
+                <conditionGroup type="and">
                   <conditions>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="a8ad-4338-0fd8-f6eb" shared="true" includeChildSelections="true"/>
                     <condition type="lessThan" value="1" field="selections" scope="parent" childId="47ac-5c2e-448f-87f0" shared="true" includeChildSelections="true"/>
@@ -1251,7 +1330,7 @@
       </modifiers>
       <entryLinks>
         <entryLink targetId="667d-ccfb-63cd-a2b3" id="a9cc-87aa-79af-b944" type="selectionEntry" name="Blitzleitungmotor Ausf. A" hidden="false"/>
-        <entryLink targetId="2a97-2fcb-c4fd-87ff" id="a890-2a48-6517-d4e7" type="selectionEntry" name="Blitzleitunmotor-56" hidden="false"/>
+        <entryLink targetId="2a97-2fcb-c4fd-87ff" id="a890-2a48-6517-d4e7" type="selectionEntry" name="Blitzleitungmotor-56" hidden="false"/>
         <entryLink import="true" name="Schnellladenmotor-60" hidden="false" id="4961-8353-d62f-8213" type="selectionEntry" targetId="d5f0-43fa-3315-3b55"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -1360,7 +1439,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Armour" id="ddb7-fbbd-773b-eca4" hidden="false">
       <entryLinks>
-        <entryLink targetId="47ac-5c2e-448f-87f0" id="6d88-c3f7-3325-0b35" type="selectionEntry" name="Uberfliege- Booten Ausf. B “Frosch”" hidden="true"/>
+        <entryLink targetId="47ac-5c2e-448f-87f0" id="6d88-c3f7-3325-0b35" type="selectionEntry" name="Uberfliegebooten Ausf. B “Frosch”" hidden="true"/>
         <entryLink targetId="b1a9-1816-d8f6-581c" id="8c40-b44c-87e8-7edb" type="selectionEntry" name="Hummerschale 51/56" hidden="true"/>
         <entryLink import="true" name="Rüstung" hidden="true" id="0abb-2021-5060-0a91" type="selectionEntryGroup" targetId="d2d5-bcfa-096f-b605">
           <modifiers>
@@ -1406,7 +1485,7 @@
     <selectionEntryGroup name="Surplus Vehicles" id="1b4a-ac83-f867-5a6d" hidden="false">
       <entryLinks>
         <entryLink targetId="5c81-68ad-b4fd-e74b" id="8cad-e330-031d-8c00" type="selectionEntry" name="Volkswagen Käfer" hidden="true"/>
-        <entryLink targetId="1c41-22c8-5280-9e06" id="c1db-3872-c998-4f7c" type="selectionEntry" name="Type 82 Kubelwagen" hidden="true"/>
+        <entryLink targetId="1c41-22c8-5280-9e06" id="c1db-3872-c998-4f7c" type="selectionEntry" name="Kubelwagen Type 82 " hidden="true"/>
         <entryLink targetId="9904-a67f-d563-a6ea" id="a5d9-2a20-c60a-72ad" type="selectionEntry" name="SdKfz 251/1 &quot;Hanomag&quot;" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -1517,12 +1596,20 @@
     <selectionEntryGroup name="Rüstung Frames" id="fdee-72dd-7c30-f69a" hidden="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f453-8d92-14c0-3cd3"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a9b8-2f6b-0808-92e9"/>
       </constraints>
       <entryLinks>
         <entryLink targetId="b397-854e-e216-4012" id="98c8-7711-5cbe-ddef" type="selectionEntry" name="Schwererrüstung Aust. C/55 “Ritter”" hidden="true"/>
         <entryLink targetId="5c93-567f-cbb1-45a7" id="5f8f-6dcd-1b2d-8feb" type="selectionEntry" name="Leichrüstung Ausf. A/58 “Eierschale”" hidden="true"/>
         <entryLink targetId="26d0-86d9-0d87-5772" id="9ca0-3481-01d6-72b5" type="selectionEntry" name="Landsverk Motorrustning m/56" hidden="true"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="1" field="a9b8-2f6b-0808-92e9">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aced-9645-77a6-8498" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung Arm Upgrades" id="0988-c5c4-6121-eb7b" hidden="false">
       <constraints>
@@ -1815,7 +1902,7 @@
             </modifierGroup>
           </modifierGroups>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Panzer" hidden="false" id="2cbe-3acd-e220-1c57">
+        <selectionEntry type="upgrade" import="true" name="Panzer Operation" hidden="false" id="2cbe-3acd-e220-1c57">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
           </costs>
@@ -2343,6 +2430,26 @@
         <entryLink targetId="1949-4270-db04-2d5e" id="df3b-2d1c-3625-a069" type="selectionEntry" name="PzKPFw II “Luchs”" hidden="true"/>
         <entryLink targetId="9571-b1e0-438f-70ce" id="cec1-a341-c000-0248" type="selectionEntry" name="PzKpfw III" hidden="true"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Sturmritter Weapons" id="27d9-fc25-bdc9-23f2" hidden="true">
+      <entryLinks>
+        <entryLink import="true" name="Raketen Panzerbüchse-58" hidden="false" id="d5bc-6d6e-1a33-574f" type="selectionEntry" targetId="8677-f449-be72-6b51"/>
+        <entryLink import="true" name="Maschinenkarabiner-55" hidden="false" id="e0fa-c2b4-4910-ca86" type="selectionEntry" targetId="5173-7b1f-e523-d07c"/>
+        <entryLink import="true" name="Maschinengewehr-56" hidden="false" id="e605-34c0-f9c7-b0be" type="selectionEntry" targetId="3cf8-46de-ed2d-aec6"/>
+        <entryLink import="true" name="Granatbüchse-54(Gustloff)" hidden="false" id="90bc-040b-c176-9069" type="selectionEntry" targetId="2800-a6bf-347f-8f74"/>
+        <entryLink import="true" name="Panzerbüchse-54(Gustloff)" hidden="false" id="b78c-b8d6-f44e-46b9" type="selectionEntry" targetId="d4b1-9876-1b6b-81a0"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aced-9645-77a6-8498" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -3157,11 +3264,7 @@ Mobility Parts with this rule:
 Must make a Surplus roll whenever the Multipart Equipment it is a part of moves. If it fails, the Mobility Part suffers a Breakdown.
 Rüstung, Chassis Parts, and Motorcycles with this rule:
 Must make a Surplus roll each turn, at the end of the Action Phase. If it fails, it suffers a Breakdown.
-Must make a Surplus roll whenever Blitz energy is expended from or by the equipment.
-
-
-
-</description>
+Must make a Surplus roll whenever Blitz energy is expended from or by the equipment.</description>
     </rule>
     <rule id="10b3-df7f-3cce-b5e1" name="Magazine(20x138B)" hidden="false">
       <description>Magazine Upgrades:
@@ -5924,7 +6027,7 @@ If either of these are -, then any value is applicable.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9611-3a05-00c4-2372" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry id="90ca-5e14-e27e-2c14" name="Conscript" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="90ca-5e14-e27e-2c14" name="Conscript" hidden="true" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -6007,7 +6110,7 @@ If either of these are -, then any value is applicable.</description>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Police" hidden="true" id="4482-3622-e77f-04fc" collective="false">
+    <selectionEntry type="model" import="true" name="Police" hidden="true" id="4482-3622-e77f-04fc" collective="false">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -6070,7 +6173,7 @@ If either of these are -, then any value is applicable.</description>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Soldier" hidden="true" id="c22f-1f20-3675-0286" collective="false">
+    <selectionEntry type="model" import="true" name="Soldier" hidden="true" id="c22f-1f20-3675-0286" collective="false">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
