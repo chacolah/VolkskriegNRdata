@@ -1464,16 +1464,10 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="8bae-605a-7a31-4d56" id="3f1f-923d-23eb-4a35" type="selectionEntry" name="Fahrlafette 51" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Weapon Upgrades" id="d392-edda-29f7-df9e" hidden="false">
+    <selectionEntryGroup name="Muzzle Upgrades" id="d392-edda-29f7-df9e" hidden="false">
       <entryLinks>
-        <entryLink targetId="4b07-67f6-77f0-1928" id="f4a9-b530-aa74-3c7f" type="selectionEntry" name="Zielfernrohr-52" hidden="true"/>
-        <entryLink targetId="a7c0-60bb-1bfd-b743" id="fc9e-3945-b4bf-7edd" type="selectionEntry" name="20x138B 10rnd Magazine" hidden="true"/>
         <entryLink targetId="4990-c8be-6641-0913" id="c083-57ff-2f09-7f99" type="selectionEntry" name="Scheissbecher-48" hidden="true"/>
         <entryLink targetId="b728-1e0f-05a7-4142" id="4f75-a9f1-60c7-285d" type="selectionEntry" name="Schalldämpfer-54" hidden="true"/>
-        <entryLink targetId="9486-f80a-2c9d-c445" id="28c4-4b82-49b9-2dac" type="selectionEntry" name="Anbauflammenwerfer-48" hidden="true"/>
-        <entryLink targetId="868c-7d87-c84a-3669" id="6d42-63d8-97f1-6331" type="selectionEntry" name="20x138B 20rnd Magazine" hidden="true"/>
-        <entryLink targetId="8819-504d-22d9-c1a1" id="04a2-28f6-bc7b-1e3b" type="selectionEntry" name="Huot Automatic Rifle Kit" hidden="true"/>
-        <entryLink targetId="0e35-eb62-a09c-8139" id="a6c6-1447-19de-e95e" type="selectionEntry" name="Bipod" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Weapon Upgrades" id="5c5a-b887-68a9-27a6" hidden="false">
@@ -1542,7 +1536,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
       <entryLinks>
         <entryLink targetId="bf68-8ed8-b6aa-d91e" id="b759-0c7c-0307-2fe3" type="selectionEntry" name="Volksssturmgewehr-60" hidden="true" collective="false"/>
-        <entryLink targetId="6249-666c-5083-d21e" id="e633-26e5-dc73-0563" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
+        <entryLink targetId="0dd5-2401-8c4c-1be4" id="e633-26e5-dc73-0563" type="selectionEntry" name="Double Barrel Shotgun" hidden="true" collective="false"/>
         <entryLink targetId="e3d5-0647-82de-ee24" id="76e3-1b23-e0a6-cd8a" type="selectionEntry" name="Suomi m/45" hidden="true" collective="false"/>
         <entryLink targetId="30fb-8f36-6567-176f" id="2570-f78e-d728-27fa" type="selectionEntry" name="Suomi m/31" hidden="true" collective="false"/>
         <entryLink targetId="755c-742d-82b8-fc64" id="5ce3-8c71-8bb7-8ecc" type="selectionEntry" name="Sterling Submachine Gun MKIII" hidden="true"/>
@@ -1575,6 +1569,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="50a2-6096-5f31-daec" id="a593-9cb5-7e93-6eb2" type="selectionEntry" name="Ljungman Automatgevär m/42" hidden="true"/>
         <entryLink targetId="d855-1603-6772-8871" id="7d88-5fa2-8bfa-20b2" type="selectionEntry" name="M1923 Pederson Selfloading Rifle" hidden="true" collective="false"/>
         <entryLink targetId="77ab-d74f-ddd6-b943" id="3dd9-9f51-ab8d-776c" type="selectionEntry" name="M1917 Browning Automatic Rifle" hidden="true" collective="false"/>
+        <entryLink targetId="6249-666c-5083-d21e" id="ed9d-fbfa-66d7-e35f" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Sidearms/Melee" id="8d16-f577-2371-6215" hidden="false">
@@ -2450,6 +2445,40 @@ Rüstung in this formation only have to spend the Energy cost once for both move
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Sight Upgrades" id="83a8-edc9-e790-d90e" hidden="false">
+      <entryLinks>
+        <entryLink targetId="4b07-67f6-77f0-1928" id="e521-915f-ce6d-5634" type="selectionEntry" name="Zielfernrohr-52" hidden="true"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Magazine Upgrades" id="9f52-75c7-552e-1a82" hidden="false">
+      <entryLinks>
+        <entryLink targetId="a7c0-60bb-1bfd-b743" id="5c52-eeac-eb63-cf17" type="selectionEntry" name="20x138B 10rnd Magazine" hidden="true"/>
+        <entryLink targetId="868c-7d87-c84a-3669" id="46ad-37d2-227c-62d4" type="selectionEntry" name="20x138B 20rnd Magazine" hidden="true"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Conversion Kits" id="5223-84c3-383e-92f0" hidden="false">
+      <entryLinks>
+        <entryLink targetId="8819-504d-22d9-c1a1" id="be3c-e957-2c56-38b7" type="selectionEntry" name="Huot Automatic Rifle Kit" hidden="true"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Underslung Upgrades" id="d637-62af-5c3f-c5e3" hidden="false">
+      <entryLinks>
+        <entryLink targetId="9486-f80a-2c9d-c445" id="1a81-aa71-d88b-8299" type="selectionEntry" name="Anbauflammenwerfer-48" hidden="true"/>
+        <entryLink targetId="0e35-eb62-a09c-8139" id="87ad-9fe4-a4c6-f621" type="selectionEntry" name="Bipod" hidden="true"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Weapon Upgrades" id="0bd8-aaff-0cf6-c6e4" hidden="false">
+      <entryLinks>
+        <entryLink targetId="4b07-67f6-77f0-1928" id="9e26-5f98-7823-367d" type="selectionEntry" name="Zielfernrohr-52" hidden="true"/>
+        <entryLink targetId="a7c0-60bb-1bfd-b743" id="2b8b-4a76-d6a0-039d" type="selectionEntry" name="20x138B 10rnd Magazine" hidden="true"/>
+        <entryLink targetId="4990-c8be-6641-0913" id="4c6f-2e56-a762-28a3" type="selectionEntry" name="Scheissbecher-48" hidden="true"/>
+        <entryLink targetId="b728-1e0f-05a7-4142" id="4757-9981-eeff-3127" type="selectionEntry" name="Schalldämpfer-54" hidden="true"/>
+        <entryLink targetId="9486-f80a-2c9d-c445" id="3a1c-99e1-281b-2a25" type="selectionEntry" name="Anbauflammenwerfer-48" hidden="true"/>
+        <entryLink targetId="868c-7d87-c84a-3669" id="13bc-c68e-f4c5-ac5f" type="selectionEntry" name="20x138B 20rnd Magazine" hidden="true"/>
+        <entryLink targetId="8819-504d-22d9-c1a1" id="138b-42bb-ec1e-096b" type="selectionEntry" name="Huot Automatic Rifle Kit" hidden="true"/>
+        <entryLink targetId="0e35-eb62-a09c-8139" id="4754-8b99-f43c-cfd0" type="selectionEntry" name="Bipod" hidden="true"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -3508,6 +3537,22 @@ If either of these are -, then any value is applicable.</description>
     <rule name="Nachtjäger Training" id="f279-cc6f-a0e5-cff4" hidden="false">
       <description>May immediately enter into an Ambush stance as if defending the tile upon deploying via Paradrop.</description>
     </rule>
+    <rule name="Double Barrel" id="1a0b-a6a9-46f0-fb8a" hidden="false">
+      <description>Equipment with this rule:
+May double their Rate of Fire when attacking.
+
+
+If the equipment also has the Reload rule, it also counts as having been fired twice for ammo usage purposes.
+
+
+
+</description>
+    </rule>
+    <rule name="Reload(2,1)" id="8b79-ab38-d8ac-0f12" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Raketen Panzerbüchse-58" hidden="true" id="8677-f449-be72-6b51" collective="false">
@@ -3667,6 +3712,9 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="0ffb-550a-53c4-bdae" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blitzwerfengewehr-59" hidden="true" id="3848-e115-3a35-9e94" collective="false">
       <costs>
@@ -3761,6 +3809,9 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="8795-fa47-f36f-50c4" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Breda M30 / l.MG 098(i)" hidden="true" id="183d-8937-d79e-e830" collective="false">
       <costs>
@@ -3891,6 +3942,11 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Sight" id="ec91-f7f3-cd37-74b2" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Surplus" id="796e-733e-a160-f266" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="35ce-9a3d-b73b-fef7" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="de80-5eea-ff1b-5d2c" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="9e48-8d37-2c77-f72d" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Carl Gustaf Granatgevär m/50" hidden="true" id="f4d8-821a-1264-d5d1">
       <costs>
@@ -4069,6 +4125,7 @@ If either of these are -, then any value is applicable.</description>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Ordnance(Rifle Grenade)" hidden="false" id="b853-7b78-4d6c-8911" type="selectionEntryGroup" targetId="85e2-8812-ea50-b4a7"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="46cb-3ca1-24b4-69f7" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
       </entryLinks>
       <profiles>
         <profile name="Granatbüchse-54(Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="72ac-1908-24cb-fab3">
@@ -4518,6 +4575,9 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="7510-d63f-303b-a128" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="12.8cm Kampfwagenkanone" hidden="true" id="1d5e-adb5-a55e-23e1">
       <costs>
@@ -6289,6 +6349,7 @@ If either of these are -, then any value is applicable.</description>
       <entryLinks>
         <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="1154-bcd0-320d-6ce3" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
         <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="24af-0307-2c76-461c" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
+        <entryLink import="true" name="Magazine Upgrades" hidden="false" id="293f-bc95-fbf2-13a0" type="selectionEntryGroup" targetId="9f52-75c7-552e-1a82"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3a-b666-b28e-fccb"/>
@@ -6354,6 +6415,7 @@ If either of these are -, then any value is applicable.</description>
       <entryLinks>
         <entryLink import="true" name="Panzer Weapon Upgrades" hidden="false" id="6569-0631-f5d2-ff58" type="selectionEntryGroup" targetId="5c5a-b887-68a9-27a6"/>
         <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="727e-ec6e-15b4-8e84" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
+        <entryLink import="true" name="Magazine Upgrades" hidden="false" id="a95c-8e4f-6f25-703b" type="selectionEntryGroup" targetId="9f52-75c7-552e-1a82"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7617-541b-fae7-d675"/>
@@ -9085,6 +9147,11 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Underslung" id="4fb8-eb61-e159-8db6" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
         <infoLink name="Sight" id="aa47-4277-a44b-5b95" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="ee48-0c0b-279f-19d8" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="91bd-5680-21e1-3c5c" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="859c-4a12-57fd-1003" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fallschimjägergewehr-56" hidden="true" id="1167-a795-6890-c22d" collective="false">
       <modifiers>
@@ -9129,6 +9196,10 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Bipod(1)" id="0f43-fa6c-0006-0075" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
         <infoLink name="Muzzle" id="d856-d40a-c6f0-4865" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="c69d-2910-f3e6-a2db" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="853d-cf0e-8312-ec09" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="General Electric M1959 Amplified Light Rifle" hidden="true" id="ea2a-0fdb-ab48-950f" collective="false">
       <costs>
@@ -9167,6 +9238,8 @@ If either of these are -, then any value is applicable.</description>
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Ordnance(Blitz Cyinder)" hidden="false" id="616e-9d7d-d83c-e342" type="selectionEntryGroup" targetId="645b-4c17-563a-1542"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="4b70-7a00-920f-f467" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="d6f9-d6d2-78dc-3c1a" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gewehr-55 (Gustloff)" hidden="true" id="47e4-9a78-ced8-0cf1" collective="false">
@@ -9212,6 +9285,10 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Muzzle" id="fb1f-74b4-c9b5-9447" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
         <infoLink name="Sight" id="11ae-55da-e62a-6419" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="01a0-3074-599c-784c" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="8220-25f5-a78e-5cf0" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gewehr-55 (Walther)" hidden="true" id="d183-51fb-ae7c-295c" collective="false">
       <costs>
@@ -9245,6 +9322,10 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Sight" id="5f11-6d32-200d-53da" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Muzzle" id="67b0-88ec-f17f-3bfe" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="bba6-7f2c-94f8-c6a9" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="9a88-9a80-79af-f418" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="GM &quot;Detroit Special&quot; SMG" hidden="true" id="e05c-a97f-7bef-19d0" collective="false">
       <costs>
@@ -9394,8 +9475,14 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Underslung" id="136a-7676-0746-eaff" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
         <infoLink name="Muzzle" id="919a-04c1-efed-2f34" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="fd7f-5732-1353-f4d8" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="05f7-7971-fe47-4bde" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="4351-e3c3-583a-317a" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="a6c6-38e3-ed47-2848" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Kulsprutepistol m/46" hidden="true" id="1981-62d2-d27d-a648">
+    <selectionEntry type="upgrade" import="true" name="Kulsprutepistol m/45" hidden="true" id="1981-62d2-d27d-a648">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
       </costs>
@@ -9405,7 +9492,6 @@ If either of these are -, then any value is applicable.</description>
       <infoLinks>
         <infoLink name="Underslung" id="70fc-7f98-30c8-8f44" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
         <infoLink name="Muzzle" id="6f75-601c-908b-21ea" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
-        <infoLink name="Sight" id="033a-26ec-5376-206e" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
       </infoLinks>
       <profiles>
         <profile name="Kulsprutepistol m/46" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b627-c23e-2183-0b8a">
@@ -9427,6 +9513,10 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="25d6-6402-3d17-c2a3" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="e2f6-08f6-3ac2-f3cd" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kylsprutegevär M/51" hidden="true" id="a3a7-1373-1865-de74">
       <costs>
@@ -9493,6 +9583,11 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Muzzle" id="5f35-9e46-9a03-aa44" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
         <infoLink name="Sight" id="3c4d-8de5-24a3-c303" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="8295-47da-8dc3-5e3a" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="6fcc-c45d-dc99-92f6" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="2dcf-dd79-4ff7-7d52" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ljungman Automatgevär m/42" hidden="true" id="50a2-6096-5f31-daec">
       <costs>
@@ -9525,6 +9620,10 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Sight" id="bd6f-1e0c-df67-92ea" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Muzzle" id="7bbb-2632-3337-e5c8" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="cb62-80da-489e-d555" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="c833-960a-5d41-70e7" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M1903 Springfield Rifle" hidden="true" id="5701-bfae-cfac-792e" collective="false">
       <costs>
@@ -9556,6 +9655,10 @@ If either of these are -, then any value is applicable.</description>
       <infoLinks>
         <infoLink name="Sight" id="082b-9b99-e380-37bf" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="6c2e-26b8-2996-f1df" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="598f-0c00-0af3-66a1" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M1917 Browning Automatic Rifle" hidden="true" id="77ab-d74f-ddd6-b943" collective="false">
       <costs>
@@ -9618,6 +9721,9 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="21e3-e44f-00ed-ca1d" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M1939 Johnson Semi Auto Rifle" hidden="true" id="fbea-06fe-595f-4988" collective="false">
       <costs>
@@ -9649,6 +9755,9 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="d885-b89f-1e7a-5307" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M1946 Johnson Automatic Rifle" hidden="true" id="eee1-17fb-fdb2-727a" collective="false">
       <costs>
@@ -9681,6 +9790,10 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="2c58-bf35-0d64-1dc3" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="ac53-0ac5-f6a2-a54b" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="MAB 38 / MP739(i)" hidden="true" id="6ba1-6ce5-b154-6736" collective="false">
       <costs>
@@ -9792,6 +9905,11 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Sight" id="bf92-3c4c-9634-8ea1" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Muzzle" id="6a6e-0bf6-56a8-2b61" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="b3a3-9889-ae92-a751" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="2775-aa11-0208-7332" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="0978-cbba-17e4-d602" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maschinenpistole-49" hidden="true" id="c57d-c56f-5441-2714" collective="false">
       <modifiers>
@@ -9842,6 +9960,9 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Surplus" id="53ed-4eeb-8efa-7b4e" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
         <infoLink name="Muzzle" id="24b3-1f88-5f0e-76fe" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="6699-3c16-774c-2ad9" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maschinenpistole-55" hidden="true" id="e73c-b8c7-9dbc-01f1" collective="false">
       <modifiers>
@@ -9891,6 +10012,10 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Sight" id="4dbc-7338-440a-2585" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Muzzle" id="7ff5-37ce-48ba-6851" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="83eb-5904-2362-1bb9" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="45a0-7fe0-f4e8-6f67" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Orita 1941/50" hidden="true" id="9581-0cb3-d0a9-72c2">
       <costs>
@@ -9929,6 +10054,9 @@ If either of these are -, then any value is applicable.</description>
       <infoLinks>
         <infoLink name="Muzzle" id="0a9a-7e29-5d31-c1ef" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="5a9f-bc74-0e14-b933" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Orita 1947" hidden="true" id="3939-3cb3-5a49-2285">
       <costs>
@@ -9968,6 +10096,10 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="745b-8deb-35cb-eecb" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="16d2-ea3f-1adb-a696" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rifle, Short Ross-Garand" hidden="true" id="98b9-a718-c2c3-8faf">
       <costs>
@@ -10001,6 +10133,11 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Muzzle" id="f8b1-fb01-fe46-490a" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
         <infoLink name="Sight" id="a2d8-d3a7-9e13-25f6" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="f8da-bac1-1cda-dfb7" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="ccc2-de7a-51b5-7dc5" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="c6a4-79bb-f833-0de4" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ross MKIV*" hidden="true" id="48f0-d516-70c6-09fc">
       <costs>
@@ -10034,6 +10171,18 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Conversion Kits" id="65f2-50a3-8af2-4f6e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Huot Automatic Rifle Kit" hidden="true" id="3a52-d474-6249-6183" targetId="8819-504d-22d9-c1a1" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="d4dd-be54-e320-4165" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="3dcf-7063-ab92-5874" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="987d-f2be-c3d9-f967" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sten Submachine Gun MKV**" hidden="true" id="2a3d-09fc-05fb-da5d">
       <costs>
@@ -10067,6 +10216,10 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="dca3-e4a4-4f12-34f6" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="a691-97b6-401d-1ce6" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sten Submachine Gun MKVI*" hidden="true" id="d6d5-9d47-96ab-743b">
       <costs>
@@ -10076,7 +10229,6 @@ If either of these are -, then any value is applicable.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e00-04b2-42a1-749d"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Muzzle" id="684c-85aa-8006-afaa" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
         <infoLink name="Surplus" id="d0f6-82ba-4a54-158b" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
         <infoLink name="Silent" id="42ac-37e8-8ae0-43c0" hidden="false" type="rule" targetId="9bb6-aaef-3556-d45b"/>
         <infoLink name="Underslung" id="0700-c8eb-5f66-8dfb" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
@@ -10094,13 +10246,16 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Silent, Surplus, Underslung</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Silent, Surplus, Underslung</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="0231-876f-cb05-9c7a" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sterling Submachine Gun MKIII" hidden="true" id="755c-742d-82b8-fc64">
       <costs>
@@ -10133,6 +10288,10 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="1cac-956e-e568-f4db" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="39b2-526d-1d66-49f6" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Suomi m/31" hidden="true" id="30fb-8f36-6567-176f" collective="false">
       <costs>
@@ -10164,6 +10323,9 @@ If either of these are -, then any value is applicable.</description>
       <infoLinks>
         <infoLink name="Surplus" id="cec8-6eb7-d8c2-2d93" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="ac2f-0e64-7a7c-8783" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Suomi m/45" hidden="true" id="e3d5-0647-82de-ee24" collective="false">
       <costs>
@@ -10195,6 +10357,9 @@ If either of these are -, then any value is applicable.</description>
       <infoLinks>
         <infoLink name="Underslung" id="f966-98a5-83b3-1e6e" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="5a1a-563a-c9aa-dafd" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Volksssturmgewehr-60" hidden="true" id="bf68-8ed8-b6aa-d91e" collective="false">
       <costs>
@@ -10235,6 +10400,11 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="c0ce-b479-e8f1-912b" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="70d0-cb47-b3b2-f1db" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="0a38-f94b-1e63-6ba2" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="false" id="667d-ccfb-63cd-a2b3">
       <costs>
@@ -10318,12 +10488,12 @@ If either of these are -, then any value is applicable.</description>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Blitzleitunmotor-60" hidden="false" id="4f64-9943-410e-04fa">
+    <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor-60" hidden="false" id="4f64-9943-410e-04fa">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
       </costs>
       <profiles>
-        <profile name="Blitzleitunmotor-60" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="64f6-16dc-ca63-a129">
+        <profile name="Blitzleitungmotor-60" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="64f6-16dc-ca63-a129">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -11491,6 +11661,7 @@ If either of these are -, then any value is applicable.</description>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="7987-aa7e-a1e3-9809" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
+        <entryLink import="true" name="Magazine Upgrades" hidden="false" id="62c8-80be-d2e4-72ca" type="selectionEntryGroup" targetId="9f52-75c7-552e-1a82"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rüstungabwehrbuchse-53(S)" hidden="true" id="d36d-4f72-6c35-794d">
@@ -11539,6 +11710,8 @@ If either of these are -, then any value is applicable.</description>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="bf88-af99-a2fb-1639" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
+        <entryLink import="true" name="Magazine Upgrades" hidden="false" id="d563-0e10-1aaf-8f81" type="selectionEntryGroup" targetId="9f52-75c7-552e-1a82"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="9438-0371-dd6b-9a9c" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rüstungfahrlafette-56" hidden="true" id="c8e7-0960-c2ea-a597">
@@ -11890,6 +12063,10 @@ If either of these are -, then any value is applicable.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="6ed3-579d-2aa9-7a3f" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="c60d-5ebb-a396-7977" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pistole-55 Luger" hidden="true" id="007c-6e44-454d-36eb" collective="false">
       <modifiers>
@@ -11938,6 +12115,9 @@ If either of these are -, then any value is applicable.</description>
       <infoLinks>
         <infoLink name="Muzzle" id="fb95-f1e6-c862-0a7c" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="555e-898b-d783-b3b5" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pistolkarabiner-54 Biesensteiel" hidden="true" id="424c-8f66-8e1f-d0f2" collective="false">
       <modifiers>
@@ -11986,6 +12166,9 @@ If either of these are -, then any value is applicable.</description>
         <infoLink name="Muzzle" id="bac7-92fa-625e-8783" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
         <infoLink name="Sight" id="d3be-70f7-1091-5359" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="35a4-eb5d-9fa5-cb74" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sturmpistole 47" hidden="true" id="788b-b111-9631-b18a" collective="false">
       <modifiers>
@@ -12074,6 +12257,9 @@ If either of these are -, then any value is applicable.</description>
       <infoLinks>
         <infoLink name="Muzzle" id="343b-022d-5ba3-20ce" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="724f-425f-066d-64ef" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flammpanzer 38" hidden="true" id="b537-2eac-6912-ba65">
       <costs>
@@ -13371,11 +13557,23 @@ If either of these are -, then any value is applicable.</description>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d36d-4f72-6c35-794d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c91d-f252-182d-3bba" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bd3f-23ae-ad88-6d9b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1230-9f60-b6d6-e901" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -13411,11 +13609,23 @@ If either of these are -, then any value is applicable.</description>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d36d-4f72-6c35-794d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c91d-f252-182d-3bba" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bd3f-23ae-ad88-6d9b" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1230-9f60-b6d6-e901" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -13554,6 +13764,28 @@ If either of these are -, then any value is applicable.</description>
           </attributes>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4b4c-74ef-eadf-f5c3" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="48f0-d516-70c6-09fc" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Schalldämpfer-54" hidden="true" id="b728-1e0f-05a7-4142">
       <costs>
@@ -13562,11 +13794,31 @@ If either of these are -, then any value is applicable.</description>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ba7f-eea6-7a9e-9c2d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5173-7b1f-e523-d07c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1167-a795-6890-c22d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="47e4-9a78-ced8-0cf1" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d183-51fb-ae7c-295c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4b4c-74ef-eadf-f5c3" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c57d-c56f-5441-2714" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e73c-b8c7-9dbc-01f1" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bf68-8ed8-b6aa-d91e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fe59-0e7c-eee3-f449" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="007c-6e44-454d-36eb" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="424c-8f66-8e1f-d0f2" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -13586,7 +13838,7 @@ If either of these are -, then any value is applicable.</description>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Muzzle(4+)</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Muzzle(2-4)</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Silent</characteristic>
           </characteristics>
           <attributes>
@@ -13602,11 +13854,26 @@ If either of these are -, then any value is applicable.</description>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5173-7b1f-e523-d07c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1167-a795-6890-c22d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="47e4-9a78-ced8-0cf1" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d183-51fb-ae7c-295c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4b4c-74ef-eadf-f5c3" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bf68-8ed8-b6aa-d91e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="424c-8f66-8e1f-d0f2" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -14185,6 +14452,42 @@ If either of these are -, then any value is applicable.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Double Barrel Shotgun" hidden="true" id="0dd5-2401-8c4c-1be4" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="173d-3395-af99-9f5d"/>
+      </constraints>
+      <profiles>
+        <profile name="Double Barrel Shotgun" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6fb0-cbbf-d605-a875">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">6&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Double Barrel, Reload(2,1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Reload(2,1)" id="c10d-c028-9f63-16e5" hidden="false" type="rule" targetId="8b79-ab38-d8ac-0f12"/>
+        <infoLink name="Double Barrel" id="39f0-f4ac-29e2-96a5" hidden="false" type="rule" targetId="1a0b-a6a9-46f0-fb8a"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
