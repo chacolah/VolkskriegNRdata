@@ -544,7 +544,7 @@
         <profile name="Heavy Weapons Team" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="99b3-7756-a447-ef14"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="5421-975e-b89f-d17e" subType="unit-group">
+    <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="5421-975e-b89f-d17e">
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="dedd-4217-c781-12ec" targetId="225b-b208-7d55-5943" primary="true"/>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="e549-6893-1d79-0d40" primary="false" name="Vehicle Crew"/>
@@ -900,6 +900,162 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="&quot;Haubitze zu Fuss&quot; Gruppe" hidden="true" id="a307-7d66-469f-0b03">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Faction Formations" hidden="false" id="941e-bad7-d321-ca4a" targetId="c74a-6498-63d2-89fb" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink targetId="5bc8-bab8-aa45-8a28" id="07e0-8531-0b74-5f9b" type="selectionEntryGroup" name="Rüstung Infantry" hidden="false" sortIndex="1"/>
+        <entryLink targetId="749f-382f-0ec4-aa73" id="1619-22de-d15d-6b02" type="selectionEntryGroup" name="Assistant Gunner" hidden="false" sortIndex="2"/>
+      </entryLinks>
+      <rules>
+        <rule name="Assistant Gunnery" id="91fa-3dbe-eab6-519f" hidden="false">
+          <description>The Rüstung Infantry in this formation ignores the Setup rule on weapons they have equipped, and gains the Reload(-1,-0) so long as the Assistant Gunner in this squad is within 1” and does not use its equipped weapon.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Panzer Begleit" hidden="true" id="301f-9052-2eb1-2a70">
+      <categoryLinks>
+        <categoryLink name="Faction Formations" hidden="false" id="e0f1-c1d5-6aad-00b7" targetId="c74a-6498-63d2-89fb" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Panzer" id="3d76-b17f-2469-f3e0" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Panzer Crew" id="42e5-2d0c-745a-08d9" hidden="false" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="3" field="selections" scope="self" shared="true" id="57da-21c0-a2b4-c7c0"/>
+                <constraint type="min" value="2" field="selections" scope="self" shared="true" id="c0e7-4e05-2f08-eb60"/>
+              </constraints>
+              <modifiers>
+                <modifier type="add" value="{this} must not be equipped with a Rüstung." field="error">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="5c93-567f-cbb1-45a7" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="b397-854e-e216-4012" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="26d0-86d9-0d87-5772" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Panzer Gunner" id="1ffb-1296-0d57-6899" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Conscript" hidden="false" id="a71e-553e-20d4-46cc" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+                    <entryLink import="true" name="Soldier" hidden="false" id="38d1-37dc-a8ab-e8ff" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                    <entryLink import="true" name="Police" hidden="false" id="7a86-66b0-aa27-d5fb" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="add" value="{this} must have Gunner Certification" field="error">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="a60f-eab0-7603-f195" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a8f-19bd-ba47-1e56"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b326-90ef-69e8-e6e6"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Panzer Loader" id="cceb-59fa-0283-e2ce" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Conscript" hidden="false" id="6990-ddf5-0b71-3aa5" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+                    <entryLink import="true" name="Soldier" hidden="false" id="e9cf-7f9a-c26d-3cb2" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                    <entryLink import="true" name="Police" hidden="false" id="e0b5-1fd6-57dc-595c" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="add" value="{this} must have Loader Certification" field="error">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="99c5-7ea9-2d89-18b9" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4513-ea87-b6ed-255f"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Panzer Driver" id="9912-6f7b-538c-7e0b" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Conscript" hidden="false" id="8c6d-2d7f-cbb2-43b5" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+                    <entryLink import="true" name="Soldier" hidden="false" id="1d7c-6e33-b98b-0ada" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                    <entryLink import="true" name="Police" hidden="false" id="bbd4-af10-940e-7f75" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="add" value="{this} must have Driver Certification" field="error">
+                      <conditions>
+                        <condition type="lessThan" value="1" field="selections" scope="parent" childId="363f-486c-5746-47d1" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a59-aa76-aaa2-44a1"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbce-c473-058c-ffa7"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Assault Gun" id="093f-4c67-da5b-4658" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="E-25 &quot;Panzer&quot; (Casemate)" hidden="false" id="49dd-936c-2eab-032b" type="selectionEntry" targetId="b88d-4a94-81b9-9d40"/>
+                <entryLink import="true" name="StuG III  Ausf. E" hidden="false" id="186b-6e67-723a-e24f" type="selectionEntry" targetId="10a4-1ae7-7950-c22f"/>
+                <entryLink import="true" name="StuG III Ausf. G" hidden="false" id="87ab-bba0-c7ed-c4d8" type="selectionEntry" targetId="83b1-de2d-08d4-896d"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59b8-3034-85c1-718f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67b9-5f70-d42c-f022"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Ersatzgruppen" id="8122-dd6d-0aba-e179" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Police" hidden="false" id="f181-50b6-2539-b53e" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+            <entryLink import="true" name="Conscript" hidden="false" id="5bf9-4118-b0c2-c4b1" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+            <entryLink import="true" name="Soldier" hidden="false" id="b064-6913-0ef7-fedb" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="8" field="selections" scope="self" shared="true" id="c72d-ea81-7c2f-e30e"/>
+            <constraint type="min" value="2" field="selections" scope="self" shared="true" id="a970-0677-78ae-5e4d"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="{this} must not be equipped with an Exoframe." field="error">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="26d0-86d9-0d87-5772" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="b397-854e-e216-4012" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Embarkation Drills" id="6560-a794-e6b2-8b97" hidden="false">
+          <description>Infantry models that are mounted upon the Panzer within this unit may embark or disembark for no movement cost.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="be23-c331-259d-7740" name="Equipped Weapons" hidden="false" collective="false" import="true" collapsible="true">
@@ -933,7 +1089,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d2d5-bcfa-096f-b605" shared="true" includeChildSelections="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="root-entry" childId="f4bd-58c2-e0c3-a665" shared="true" includeChildSelections="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="parent" childId="c8e7-0960-c2ea-a597" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="be23-c331-259d-7740" childId="any" shared="true"/>
               </conditions>
@@ -975,6 +1131,15 @@ Rüstung in this formation only have to spend the Energy cost once for both move
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Sturmritter Weapons" hidden="false" id="0efd-20ac-ebd3-1d0d" type="selectionEntryGroup" targetId="27d9-fc25-bdc9-23f2"/>
+        <entryLink import="true" name="Rüstung Weapons" hidden="false" id="e2f9-1d0b-5d60-bf33" type="selectionEntryGroup" targetId="f4bd-58c2-e0c3-a665">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fdee-72dd-7c30-f69a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <modifiers>
         <modifier type="add" value="All Nachtjäger Weapons must be Silent." field="error">
@@ -1018,6 +1183,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="0" field="f020-f788-c7ce-4bf6"/>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="8ca0-7c86-458e-73c2" name="Nationality" hidden="false" collective="false" import="true">
@@ -1281,34 +1447,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung" id="d2d5-bcfa-096f-b605" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Heavy Weapons" hidden="false" id="d496-cc73-295b-b858" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36b1-5fda-d30e-7403" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="36b1-5fda-d30e-7403">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f4bd-58c2-e0c3-a665" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="27e9-3d15-6712-c737" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="Primary Arms" hidden="false" id="27e9-3d15-6712-c737" type="selectionEntryGroup" targetId="4fb9-7410-611a-138f">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf02-5fe4-ca8f-c9cf" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="0" field="cf02-5fe4-ca8f-c9cf">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="f4bd-58c2-e0c3-a665" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="27e9-3d15-6712-c737" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
         <entryLink import="true" name="Rüstung Frames" hidden="false" id="9779-af16-922e-f06d" type="selectionEntryGroup" targetId="fdee-72dd-7c30-f69a" sortIndex="1"/>
-        <entryLink import="true" name="Rüstung Weapons" hidden="false" id="a35f-b61b-2ff0-1cc2" type="selectionEntryGroup" targetId="f4bd-58c2-e0c3-a665"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Power Sources" id="e11f-3da3-396d-00c2" hidden="false">
@@ -1469,6 +1608,9 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="4990-c8be-6641-0913" id="c083-57ff-2f09-7f99" type="selectionEntry" name="Scheissbecher-48" hidden="true"/>
         <entryLink targetId="b728-1e0f-05a7-4142" id="4f75-a9f1-60c7-285d" type="selectionEntry" name="Schalldämpfer-54" hidden="true"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="7860-352e-2fca-4c10"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Weapon Upgrades" id="5c5a-b887-68a9-27a6" hidden="false">
       <entryLinks>
@@ -1560,7 +1702,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="a3a7-1373-1865-de74" id="2ef2-b691-eaf9-cc6a" type="selectionEntry" name="Kylsprutegevär M/51" hidden="true"/>
         <entryLink targetId="d183-51fb-ae7c-295c" id="a8dc-508d-11c6-2733" type="selectionEntry" name="Gewehr-55 (Walther)" hidden="true" collective="false"/>
         <entryLink targetId="3969-91ea-da3c-b90b" id="5796-e026-a07f-7e17" type="selectionEntry" name="MAB 38/46 / MP739(i) Aust. C" hidden="true" collective="false"/>
-        <entryLink targetId="1981-62d2-d27d-a648" id="ccda-5e19-a58e-93e8" type="selectionEntry" name="Kulsprutepistol m/46" hidden="true"/>
+        <entryLink targetId="1981-62d2-d27d-a648" id="ccda-5e19-a58e-93e8" type="selectionEntry" name="Kulsprutepistol m/45" hidden="true"/>
         <entryLink targetId="6ba1-6ce5-b154-6736" id="c310-5aee-dd5e-7c4b" type="selectionEntry" name="MAB 38 / MP739(i)" hidden="true" collective="false"/>
         <entryLink targetId="e05c-a97f-7bef-19d0" id="3c56-0829-51c6-bde3" type="selectionEntry" name="GM &quot;Detroit Special&quot; SMG" hidden="true" collective="false"/>
         <entryLink targetId="d246-ddfe-a1b5-b8e1" id="4297-0f42-cde5-112b" type="selectionEntry" name="GM M1944 Hyde Machine Gun" hidden="true" collective="false"/>
@@ -1651,14 +1793,6 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="900e-c67e-0962-d0bc-max" includeChildSelections="false"/>
       </constraints>
-      <modifiers>
-        <modifier type="set" value="0" field="900e-c67e-0962-d0bc-max">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="d496-cc73-295b-b858" shared="true"/>
-            <condition type="atLeast" value="1" field="selections" scope="parent" childId="27e9-3d15-6712-c737" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink targetId="c8e7-0960-c2ea-a597" id="df7b-0cfc-c15e-d26a" type="selectionEntry" name="Rüstungfahrlafette-56" hidden="true"/>
         <entryLink targetId="1230-9f60-b6d6-e901" id="5d40-4e68-0488-69d3" type="selectionEntry" name="Flakwerfengewehr 56" hidden="true"/>
@@ -2450,12 +2584,18 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       <entryLinks>
         <entryLink targetId="4b07-67f6-77f0-1928" id="e521-915f-ce6d-5634" type="selectionEntry" name="Zielfernrohr-52" hidden="true"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="592f-ba7a-7e0d-4c54"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Magazine Upgrades" id="9f52-75c7-552e-1a82" hidden="false">
       <entryLinks>
         <entryLink targetId="a7c0-60bb-1bfd-b743" id="5c52-eeac-eb63-cf17" type="selectionEntry" name="20x138B 10rnd Magazine" hidden="true"/>
         <entryLink targetId="868c-7d87-c84a-3669" id="46ad-37d2-227c-62d4" type="selectionEntry" name="20x138B 20rnd Magazine" hidden="true"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a7ff-f897-55cd-245c"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Conversion Kits" id="5223-84c3-383e-92f0" hidden="false">
       <entryLinks>
@@ -2467,6 +2607,9 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="9486-f80a-2c9d-c445" id="1a81-aa71-d88b-8299" type="selectionEntry" name="Anbauflammenwerfer-48" hidden="true"/>
         <entryLink targetId="0e35-eb62-a09c-8139" id="87ad-9fe4-a4c6-f621" type="selectionEntry" name="Bipod" hidden="true"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a35a-d193-92b8-109d"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Weapon Upgrades" id="0bd8-aaff-0cf6-c6e4" hidden="false">
       <entryLinks>
@@ -2479,6 +2622,77 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="8819-504d-22d9-c1a1" id="138b-42bb-ec1e-096b" type="selectionEntry" name="Huot Automatic Rifle Kit" hidden="true"/>
         <entryLink targetId="0e35-eb62-a09c-8139" id="4754-8b99-f43c-cfd0" type="selectionEntry" name="Bipod" hidden="true"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="8cb8-1ed8-cf25-a488"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Assistant Gunner" id="749f-382f-0ec4-aa73" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Conscript" hidden="false" id="2d71-0ac7-69f6-329b" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+        <entryLink import="true" name="Police" hidden="false" id="3268-3339-6c58-fb2b" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+        <entryLink import="true" name="Soldier" hidden="false" id="3981-2c7d-90d9-4e03" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="add" value="{this} Must not be equipped with a Rüstung." field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="26d0-86d9-0d87-5772" shared="true" includeChildSelections="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="self" childId="5c93-567f-cbb1-45a7" shared="true" includeChildSelections="true"/>
+                <condition type="greaterThan" value="0" field="selections" scope="self" childId="b397-854e-e216-4012" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="{this} Must be equipped with a Sidearm or Melee Weapon." field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="4fb9-7410-611a-138f" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8d16-f577-2371-6215" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="055e-1e50-1c75-218a"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="247e-0b67-7947-5af4"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Rüstung Infantry" id="5bc8-bab8-aa45-8a28" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Conscript" hidden="false" id="f414-572f-89f0-aeaf" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+        <entryLink import="true" name="Soldier" hidden="false" id="344a-01e1-820d-9d23" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+        <entryLink import="true" name="Police" hidden="false" id="5352-cd0d-e2a7-7791" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f95-9de0-390c-fd75"/>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="7476-e353-b4c3-00e2"/>
+      </constraints>
+      <modifiers>
+        <modifier type="add" value="{this} Must be equipped with a Rüstung." field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="26d0-86d9-0d87-5772" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="5c93-567f-cbb1-45a7" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="b397-854e-e216-4012" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="{this} Must be equipped with a Heavy or Rüstung Weapon." field="error">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="580e-77ca-e747-456b" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="f4bd-58c2-e0c3-a665" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -3542,11 +3756,7 @@ If either of these are -, then any value is applicable.</description>
 May double their Rate of Fire when attacking.
 
 
-If the equipment also has the Reload rule, it also counts as having been fired twice for ammo usage purposes.
-
-
-
-</description>
+If the equipment also has the Reload rule, it also counts as having been fired twice for ammo usage purposes.</description>
     </rule>
     <rule name="Reload(2,1)" id="8b79-ab38-d8ac-0f12" hidden="false">
       <description>Equipment with this rule: 
@@ -5539,7 +5749,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cff1-b603-b2a4-4862" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4808-889f-7b19-d48d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9044-29f4-7d2a-6895" shared="true"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="or">
@@ -5594,7 +5804,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
                 <conditionGroup type="or">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cff1-b603-b2a4-4862" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b7cf-f6ad-ac7d-5032" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b255-6c06-a35a-0879" shared="true"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="or">
@@ -11068,7 +11278,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b248-2e57-6aa8-b6a5"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="80c4-0516-c33d-ea74"/>
       </constraints>
       <profiles>
         <profile name="Leichrüstung Ausf. A/58 “Eierschale”" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6d2c-488f-f3c8-1ddd">
@@ -11257,7 +11467,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="self" shared="false" id="95aa-e12c-4f60-c55a"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="95aa-e12c-4f60-c55a"/>
       </constraints>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -13601,6 +13811,9 @@ Has a reloading process takes (-,y) amount of actions.</description>
       <infoLinks>
         <infoLink name="Reload(1,10)" id="964b-6c7a-7ca8-6ceb" hidden="false" type="rule" targetId="c706-1ddf-2f5d-4d6e"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69dc-d1a6-ff7a-1497"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="20x138B 20rnd Magazine" hidden="true" id="868c-7d87-c84a-3669">
       <costs>
@@ -13653,6 +13866,9 @@ Has a reloading process takes (-,y) amount of actions.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dffd-7ea3-d8cc-f006"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Anbauflammenwerfer-48" hidden="true" id="9486-f80a-2c9d-c445">
       <costs>
@@ -13695,6 +13911,9 @@ Has a reloading process takes (-,y) amount of actions.</description>
         <infoLink name="Reload(1,1)" id="64f6-c1fa-bf48-d816" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
         <infoLink name="Flame" id="d24b-8227-e35d-9eb5" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6930-6294-f8e0-d9d8"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bipod" hidden="true" id="0e35-eb62-a09c-8139">
       <costs>
@@ -13735,6 +13954,9 @@ Has a reloading process takes (-,y) amount of actions.</description>
       <infoLinks>
         <infoLink name="Bipod(1)" id="6261-654c-3d41-2084" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b494-ca2b-1015-3a74"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Huot Automatic Rifle Kit" hidden="true" id="8819-504d-22d9-c1a1">
       <costs>
@@ -13846,6 +14068,9 @@ Has a reloading process takes (-,y) amount of actions.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac74-fd1a-f495-65e5"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Scheissbecher-48" hidden="true" id="4990-c8be-6641-0913">
       <costs>
@@ -13905,6 +14130,9 @@ Has a reloading process takes (-,y) amount of actions.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9929-f7f8-a06e-53a6"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Zielfernrohr-52" hidden="true" id="4b07-67f6-77f0-1928">
       <costs>
@@ -13942,6 +14170,9 @@ Has a reloading process takes (-,y) amount of actions.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7c2-6806-80da-fe00"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Drohne-Array Ausf. A" hidden="true" id="6178-9806-73db-1cbb">
       <costs>
