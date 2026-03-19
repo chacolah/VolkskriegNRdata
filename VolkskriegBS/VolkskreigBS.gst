@@ -114,6 +114,17 @@
     <categoryEntry name="Mobile Bases" id="45b3-5bb4-1df7-06bd" hidden="false"/>
     <categoryEntry name="Vehicle Crew" id="11cc-6f33-1d4d-4250" hidden="false"/>
     <categoryEntry name="Reference" id="c1d7-f7b9-4d5d-909b" hidden="false"/>
+    <categoryEntry name="Suomi" id="8bb3-f251-46c7-d4aa" hidden="false"/>
+    <categoryEntry name="Wehrmacht" id="6c5e-c727-3867-fbd9" hidden="false"/>
+    <categoryEntry name="Waffen-SS" id="b195-9bec-dbe8-2a39" hidden="false"/>
+    <categoryEntry name="Luftwaffe" id="b98c-8267-c39a-1ad4" hidden="false"/>
+    <categoryEntry name="British Commandos" id="7420-46c2-f16a-c4d2" hidden="false"/>
+    <categoryEntry name="London Underground" id="37ba-013d-eaa8-9835" hidden="false"/>
+    <categoryEntry name="Volkssturm/Volksfront" id="a670-7d76-7822-3244" hidden="false"/>
+    <categoryEntry name="Kriegsherren" id="43c4-75e3-3079-d8bd" hidden="false"/>
+    <categoryEntry name="Axis Mercenaries" id="9dae-da09-f60b-e0d3" hidden="false"/>
+    <categoryEntry name="Tyroler Konigsreich" id="ff63-d862-8a12-0c3e" hidden="false"/>
+    <categoryEntry name="Nordlander Reichstaat" id="7548-db8f-f8e0-25b6" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="81c7-604f-cfcf-fa87" name="Skirmish" hidden="false">
@@ -716,6 +727,7 @@
     <selectionEntry type="unit" import="true" name="Fallschirmjäger Squad" hidden="true" id="eb52-59ce-0b93-e19c" collective="false">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="a4b1-d52d-2059-f380" targetId="c74a-6498-63d2-89fb" primary="true"/>
+        <categoryLink name="Luftwaffe" hidden="false" id="4948-9b48-36c4-3fd5" targetId="b98c-8267-c39a-1ad4" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
@@ -747,6 +759,8 @@
     <selectionEntry type="unit" import="true" name="Fallschirmkradschutzen Team" hidden="true" id="481e-4081-4e1c-a16b" collective="false">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="50bc-1e3d-75f0-2551" targetId="c74a-6498-63d2-89fb" primary="true"/>
+        <categoryLink name="Luftwaffe" hidden="false" id="5702-3c8f-0452-d878" targetId="b98c-8267-c39a-1ad4" primary="false"/>
+        <categoryLink name="Vehicle Crew" hidden="false" id="7d86-9f8e-4340-f9c4" targetId="11cc-6f33-1d4d-4250" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
@@ -822,6 +836,7 @@
       <categoryLinks>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="5ffd-3401-8c34-a5d2" primary="false" name="Vehicle Crew"/>
         <categoryLink name="Faction Formations" hidden="false" id="de79-3add-4160-5837" targetId="c74a-6498-63d2-89fb" primary="true"/>
+        <categoryLink name="Luftwaffe" hidden="false" id="f7a3-9b1c-5ba8-7b80" targetId="b98c-8267-c39a-1ad4" primary="false"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -851,6 +866,7 @@
     <selectionEntry type="unit" import="true" name="Osttruppen" hidden="true" id="a344-f3e9-85f8-8d32">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="4281-bc66-eaee-2390" targetId="c74a-6498-63d2-89fb" primary="true"/>
+        <categoryLink name="Wehrmacht" hidden="false" id="c921-e974-9ec8-df0d" targetId="6c5e-c727-3867-fbd9" primary="false"/>
       </categoryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -893,6 +909,7 @@
     <selectionEntry type="unit" import="true" name="Nachtjäger Squad" hidden="true" id="3824-958e-a415-e308" collective="false">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="e0af-ba05-6728-a046" targetId="c74a-6498-63d2-89fb" primary="true"/>
+        <categoryLink name="Luftwaffe" hidden="false" id="feec-1ec1-16c2-3d49" targetId="b98c-8267-c39a-1ad4" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
@@ -925,6 +942,7 @@
     <selectionEntry type="unit" import="true" name="Sturmrittergruppe" hidden="true" id="aced-9645-77a6-8498">
       <categoryLinks>
         <categoryLink targetId="c74a-6498-63d2-89fb" id="539a-9f15-5ff1-83a1" primary="true" name="Faction Formations"/>
+        <categoryLink name="Wehrmacht" hidden="false" id="a8b4-bd29-621d-add2" targetId="6c5e-c727-3867-fbd9" primary="false"/>
       </categoryLinks>
       <rules>
         <rule name="Run and Gun" id="f786-89cd-7935-381d" hidden="false">
@@ -969,6 +987,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       </modifiers>
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="941e-bad7-d321-ca4a" targetId="c74a-6498-63d2-89fb" primary="true"/>
+        <categoryLink name="Wehrmacht" hidden="false" id="4004-fae8-2f4a-c75b" targetId="6c5e-c727-3867-fbd9" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink targetId="5bc8-bab8-aa45-8a28" id="07e0-8531-0b74-5f9b" type="selectionEntryGroup" name="Rüstung Infantry" hidden="false" sortIndex="1"/>
@@ -983,6 +1002,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
     <selectionEntry type="unit" import="true" name="Panzer Begleit" hidden="true" id="301f-9052-2eb1-2a70">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="e0f1-c1d5-6aad-00b7" targetId="c74a-6498-63d2-89fb" primary="true"/>
+        <categoryLink name="Wehrmacht" hidden="false" id="21ca-4d67-720c-d698" targetId="6c5e-c727-3867-fbd9" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Panzer" id="3d76-b17f-2469-f3e0" hidden="false">
@@ -6432,7 +6452,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
         <entryLink import="true" name="Proficiencies" hidden="false" id="19d5-12dd-23b0-27b0" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
       </entryLinks>
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Police" hidden="true" id="4482-3622-e77f-04fc" collective="false">
@@ -6495,7 +6515,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
         <entryLink import="true" name="Proficiencies" hidden="false" id="02dc-442c-da0b-e380" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
       </entryLinks>
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Soldier" hidden="true" id="c22f-1f20-3675-0286" collective="false">
@@ -6576,7 +6596,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
         <entryLink import="true" name="Proficiencies" hidden="false" id="17c4-8633-041f-e82a" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
       </entryLinks>
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="2cm Kampfwagenkanone" hidden="true" id="c91d-f252-182d-3bba">
