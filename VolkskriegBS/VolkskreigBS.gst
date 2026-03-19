@@ -149,7 +149,7 @@
       </categoryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="140f-0bf7-0277-9981-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="140f-0bf7-0277-9981-max" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="140f-0bf7-0277-9981-max" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Volksfront Militia" hidden="true" id="897a-db0b-4037-0669">
@@ -356,7 +356,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2506-8e07-dba6-5f7f" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Private Firma" hidden="true" id="7dd7-d207-38f8-2941">
+        <selectionEntry type="upgrade" import="true" name="Sicherheitsfirma" hidden="true" id="7dd7-d207-38f8-2941">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -440,7 +440,19 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76d0-bbcd-c5c5-c527" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Alpini" hidden="true" id="926e-84c5-bacc-0c99">
+        <selectionEntry type="upgrade" import="true" name="Megingjorddoktrin" hidden="true" id="926e-84c5-bacc-0c99">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98d9-2a82-df93-a90d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Alpini" hidden="true" id="7c86-a361-e4ec-035e">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -449,10 +461,53 @@
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98d9-2a82-df93-a90d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d84c-f5ac-1956-537a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fimbuldoktrin" hidden="true" id="fab7-a5e6-a260-3d46">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d827-f374-d78f-e680" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Enhärjardoktrin" hidden="true" id="e214-2182-4c3d-a537">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3de7-5b67-6682-cb30" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="This faction is not playable currently." field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Motorized Fireteam" hidden="false" id="4db9-63dc-45d0-8165">
       <categoryLinks>
