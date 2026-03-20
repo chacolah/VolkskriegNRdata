@@ -3838,6 +3838,36 @@ If the equipment also has the Reload rule, it also counts as having been fired t
 May be used (x,-) times before needing to be reloaded.
 Has a reloading process takes (-,y) amount of actions.</description>
     </rule>
+    <rule name="HPW" id="c2a7-8eb7-0e12-6161" hidden="false">
+      <description>Multipart Equipment with this rule:
+Have (x) Heavy Panzer Weapon Hardpoints
+May mount a Heavy Panzer Weapon or Medium Panzer Weapon on each hardpoint of this type.</description>
+    </rule>
+    <rule name="ACW" id="23e5-a42c-5f8b-f6c4" hidden="false">
+      <description>Multipart Equipment with this rule:
+Have an Aircraft Weapon hardpoint.
+May equip any Aircraft Weapon to this hardpoint.</description>
+    </rule>
+    <rule name="LPW" id="5351-0d0f-c62a-9944" hidden="false">
+      <description>Multipart Equipment with this rule:
+Have (x) Light Panzer Weapon Hardpoints
+May mount a Heavy Weapon or Light Panzer Weapon on each hardpoint of this type.</description>
+    </rule>
+    <rule name="HWM" id="aaef-c8e3-af3a-7c7c" hidden="false">
+      <description>Multipart Equipment with this rule:
+Have (x) Heavy Weapon Hardpoints
+May mount a Heavy Weapon on each hardpoint of this type.</description>
+    </rule>
+    <rule name="MPW" id="0fa1-af52-8e48-3509" hidden="false">
+      <description>Multipart Equipment with this rule:
+Have (x) Medium Panzer Weapon Hardpoints
+May mount a Light Panzer Weapon or Medium Panzer Weapon on each hardpoint of this type.</description>
+    </rule>
+    <rule name="HovW" id="f2a3-107a-df01-a731" hidden="false">
+      <description>Multipart Equipment with this rule:
+Have (x) Hovercraft Weapon Hardpoints
+May mount an Aircraft Weapon or Heavy Weapon on each hardpoint of this type.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Raketen Panzerbüchse-58" hidden="true" id="8677-f449-be72-6b51" collective="false">
