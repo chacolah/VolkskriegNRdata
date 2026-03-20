@@ -1608,7 +1608,12 @@ Rüstung in this formation only have to spend the Energy cost once for both move
     <selectionEntryGroup name="Aircraft" id="dd29-f2d3-2114-c0de" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Aircraft Chassis" hidden="false" id="9782-e243-a644-88d8" type="selectionEntryGroup" targetId="c40a-bdec-b181-0f30"/>
+        <entryLink import="true" name="Helicopter Chassis" hidden="false" id="b694-187c-89b1-86c3" type="selectionEntryGroup" targetId="97cf-4801-f72a-00d1"/>
+        <entryLink import="true" name="Hovercraft Chassis" hidden="false" id="0182-06e6-5b39-8519" type="selectionEntryGroup" targetId="7b21-7a40-dd91-a3b6"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="bbf9-f98f-b985-fd3b"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Motorcycle" id="61c1-9d80-aced-71df" hidden="false">
       <entryLinks>
@@ -2769,6 +2774,21 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         </modifier>
       </modifiers>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Helicopter Propulsion" id="eb14-28b5-634b-0f0d" hidden="false">
+      <entryLinks>
+        <entryLink targetId="3db9-d3cb-f8b7-8edb" id="32bc-2aef-711f-e963" type="selectionEntry" name="Focke-Achgelis Hubschrauberblätten" hidden="true"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Helicopter Chassis Upgrades" id="48a0-9b77-0223-1d25" hidden="false">
+      <entryLinks>
+        <entryLink targetId="337e-9548-3cf3-b961" id="3c6f-34a0-1f3c-c7fd" type="selectionEntry" name="Observer Weapon Mount" hidden="true"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Helicopter Chassis" id="97cf-4801-f72a-00d1" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Focke-Achgelis fa 223 &quot;Drache" hidden="false" id="313c-509c-8a4f-465b" type="selectionEntry" targetId="b71e-3cb0-daca-2e97"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b72d-a08a-2414-8c49" name="Upgrade(Type)" hidden="false">
@@ -3838,35 +3858,41 @@ If the equipment also has the Reload rule, it also counts as having been fired t
 May be used (x,-) times before needing to be reloaded.
 Has a reloading process takes (-,y) amount of actions.</description>
     </rule>
-    <rule name="HPW" id="c2a7-8eb7-0e12-6161" hidden="false">
+    <rule name="HPW(1)" id="c2a7-8eb7-0e12-6161" hidden="false">
       <description>Multipart Equipment with this rule:
 Have (x) Heavy Panzer Weapon Hardpoints
 May mount a Heavy Panzer Weapon or Medium Panzer Weapon on each hardpoint of this type.</description>
     </rule>
-    <rule name="ACW" id="23e5-a42c-5f8b-f6c4" hidden="false">
+    <rule name="ACW(1)" id="23e5-a42c-5f8b-f6c4" hidden="false">
       <description>Multipart Equipment with this rule:
-Have an Aircraft Weapon hardpoint.
-May equip any Aircraft Weapon to this hardpoint.</description>
+Have (x) Aircraft Weapon Hardpoints
+May mount an Aircraft Weapon on each hardpoint of this type.</description>
     </rule>
-    <rule name="LPW" id="5351-0d0f-c62a-9944" hidden="false">
+    <rule name="LPW(x)" id="5351-0d0f-c62a-9944" hidden="false">
       <description>Multipart Equipment with this rule:
 Have (x) Light Panzer Weapon Hardpoints
 May mount a Heavy Weapon or Light Panzer Weapon on each hardpoint of this type.</description>
     </rule>
-    <rule name="HWM" id="aaef-c8e3-af3a-7c7c" hidden="false">
+    <rule name="HWM(1)(Observer)" id="aaef-c8e3-af3a-7c7c" hidden="false">
       <description>Multipart Equipment with this rule:
 Have (x) Heavy Weapon Hardpoints
-May mount a Heavy Weapon on each hardpoint of this type.</description>
+May mount a Heavy Weapon on each hardpoint of this type.
+This weapon is controlled by the Observer.</description>
     </rule>
-    <rule name="MPW" id="0fa1-af52-8e48-3509" hidden="false">
+    <rule name="MPW(x)" id="0fa1-af52-8e48-3509" hidden="false">
       <description>Multipart Equipment with this rule:
 Have (x) Medium Panzer Weapon Hardpoints
 May mount a Light Panzer Weapon or Medium Panzer Weapon on each hardpoint of this type.</description>
     </rule>
-    <rule name="HovW" id="f2a3-107a-df01-a731" hidden="false">
+    <rule name="HovW(1)" id="f2a3-107a-df01-a731" hidden="false">
       <description>Multipart Equipment with this rule:
 Have (x) Hovercraft Weapon Hardpoints
 May mount an Aircraft Weapon or Heavy Weapon on each hardpoint of this type.</description>
+    </rule>
+    <rule name="HWM(1)" id="f7e1-8874-669d-84a6" hidden="false">
+      <description>Multipart Equipment with this rule:
+Have (x) Heavy Weapon Hardpoints
+May mount a Heavy Weapon on each hardpoint of this type.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -5951,12 +5977,12 @@ May mount an Aircraft Weapon or Heavy Weapon on each hardpoint of this type.</de
         <infoLink name="Dogfight" id="d087-8d48-4fc2-17e5" hidden="false" type="rule" targetId="2171-7184-3a94-adcb"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fock-Wulf Überfliegen-27" hidden="true" id="5559-0cf5-6510-4a02">
+    <selectionEntry type="upgrade" import="true" name="Focke-Wulf Überfliegen-27" hidden="true" id="5559-0cf5-6510-4a02">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="160"/>
       </costs>
       <profiles>
-        <profile name="Fock-Wulf Überfliegen-27" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="dd04-67a8-ab87-0cb3">
+        <profile name="Focke-Wulf Überfliegen-27" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="dd04-67a8-ab87-0cb3">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">12</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -14824,6 +14850,118 @@ May mount an Aircraft Weapon or Heavy Weapon on each hardpoint of this type.</de
         <infoLink name="Reload(2,1)" id="c10d-c028-9f63-16e5" hidden="false" type="rule" targetId="8b79-ab38-d8ac-0f12"/>
         <infoLink name="Double Barrel" id="39f0-f4ac-29e2-96a5" hidden="false" type="rule" targetId="1a0b-a6a9-46f0-fb8a"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Focke-Achgelis fa 223 &quot;Drache" hidden="true" id="b71e-3cb0-daca-2e97">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dae0-4a48-85f7-cda1"/>
+      </constraints>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
+      </costs>
+      <profiles>
+        <profile name="Focke-Achgelis fa 223 &quot;Drache" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="0e09-dbe8-f0d3-4c1c">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-4</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">2/4</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">-</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">25</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Helicopter Chassis</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink targetId="48a0-9b77-0223-1d25" id="e676-a6b6-69c9-f8d7" type="selectionEntryGroup" name="Helicopter Chassis Upgrades" hidden="false"/>
+        <entryLink targetId="eb14-28b5-634b-0f0d" id="bf60-382b-405a-35bd" type="selectionEntryGroup" name="Helicopter Propulsion" hidden="false"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Focke-Achgelis Hubschrauberblätten" hidden="true" id="3db9-d3cb-f8b7-8edb">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+      </costs>
+      <profiles>
+        <profile name="Focke-Achgelis Hubschrauberblätten" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9a0c-b989-1205-56d9">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">16</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">5</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Helicopter Propulsion</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="768d-4ebc-51bf-e1c8"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Observer Weapon Mount" hidden="true" id="337e-9548-3cf3-b961">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Observer Weapon Mount" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="96e6-0a2d-804f-7157">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">-</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">HWM(1)(Observer)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b511-16a7-8fd3-a72f"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
