@@ -14962,6 +14962,9 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b511-16a7-8fd3-a72f"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="b17a-98bb-70c3-113c" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
