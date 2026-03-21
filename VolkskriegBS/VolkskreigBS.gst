@@ -186,6 +186,21 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a5d-073a-949f-403d" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Assault Gun Doctrine" id="9aec-3be9-defd-7ef5" hidden="false">
+              <description>When a Panzer with the Casemate turret type Hulls Down, they may rotate without breaking their Hull Down status.
+Additionally, Panzers with the Casemate turret type add their Artillery value to their Attack Rolls when Hulled Down.
+Weapon Frames impart Reload(-1,0) upon weapons mounted to them that have the Reload rule.</description>
+            </rule>
+            <rule name="Kruppstahl" id="79c5-9ebe-ea5e-88ae" hidden="false">
+              <description>Panzer parts cost 10 Rm less to acquire and build(to a minimum of 5). 
+Panzer Weapons mounted on Vehicles, Weapon Frames, and Panzers get a +1 to Attack Rolls. 
+Panzer training costs 1 Rm to purchase. Loader, Gunner, and Driver Certifications cost 2 Rm instead of 5 Rm.</description>
+            </rule>
+            <rule name="Artillery Logistics" id="8aa7-3d95-0c5d-3d20" hidden="false">
+              <description>Forces with this loadout gain 1d3 HE ordinance for each Panzer Weapon with the Ordinance rule equipped to their Force at the start of every Campaign Week. This equipment arrives at their HQ.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzermensch" hidden="true" id="a0f9-dd73-0c1f-3523">
           <modifiers>
@@ -198,6 +213,17 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f33-d7fa-367a-17dd" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Rüstung Assault Doctrine" id="ef5e-6de4-0b0b-15bc" hidden="false">
+              <description>When deploying forces while attacking, models equipped with Rüstung may deploy an additional 6” away from their table edge or center of the map(whichever is applicable).</description>
+            </rule>
+            <rule name="Walking Panzers" id="d1e4-93ac-bcb3-40e1" hidden="false">
+              <description>Exoframes, and Rüstung Upgrades cost 20 Rm less. Additionally, Exo Training costs 1 Rm to purchase instead of 5 Rm.</description>
+            </rule>
+            <rule name="Rüstung Weapon Logistics" id="46ee-628c-f7fc-bb6b" hidden="false">
+              <description>Forces with this loadout receive 1d3 HE ordinance for every Panzer Weapon upgraded with a Rüstungfahrlafette-56 equipped to their Force at the start of every Campaign Week. This Equipment arrives at their HQ.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Ostfront Veterans" hidden="true" id="13a4-65c1-f62e-93fb">
           <modifiers>
@@ -210,6 +236,24 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b9e-21d0-11b7-83ce" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Veterans of the Fleischwolf" id="4ac3-23a9-b481-4cf1" hidden="false">
+              <description>MG-56, PzB-54(G), and MK-55 costs 10 Rm less. Additionally, infantry equipped with an MG-56, PzB-54(G), or MK-55 get +1 to hit with them.
+Pervitin Rations cost 10 Rm less. Addiction rolls are made with a +1 bonus(to a minimum chance of 1+).
+</description>
+            </rule>
+            <rule name="Osttruppen Auxiliaries" id="4425-da89-9488-f1cb" hidden="false">
+              <description>Forces with this loadout may purchase Romanian Soldier Infantry, Orita m1941/50, Orita m1947, and “Hetzer-Marașal” JagdPzKw Surplus Vehicles at normal cost. Hetzer Surplus vehicles may purchase the Retrofit upgrade at half cost.
+Forces with this loadout may also purchase Romanian Conscript Infantry for 15 Rm.</description>
+            </rule>
+            <rule name="Static Defense Doctrine" id="6924-28f0-ffa3-4285" hidden="false">
+              <description>Klappspaten 38 grant an additional inch of trenchline per soldier equipped.
+Additionally, if this force is defending against an attack, all weapons with the Setup rule begin play as if they had fully set up.</description>
+            </rule>
+            <rule name="Support Weapon Logistics" id="11f8-7ba1-24ef-9064" hidden="false">
+              <description>Forces with this loadout receive 1d6 HE ordinance for every Heavy Weapon with the Ordinance rule equipped to their Force at the start of every Campaign Week. This Equipment arrives at their HQ.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Wehrbauer" hidden="true" id="74ca-3703-5ab1-fe4e">
           <modifiers>
@@ -234,6 +278,19 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8063-1feb-0c26-2f8c" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Elite Training" id="030e-0c87-ca69-d5ed" hidden="false">
+              <description>Reich Soldiers from this force gain the Exo Training and Blitzwerfer Training for free.</description>
+            </rule>
+            <rule name="Blitzstoßtruppen" id="db38-04c7-d41f-d76a" hidden="false">
+              <description>Exosuits, Blitzwerfengehwer, and Blitzwerfernpistole cost 10 Rm less. 
+Infantry equipped with both a Rüstung and a Lightning weapon gain +1 to attack rolls while using Lightning weapons.</description>
+            </rule>
+            <rule name="Wunderwaffenentwicklungsgruppe Support" id="630b-6d7a-23b3-ca44" hidden="false">
+              <description>Vehicles and Panzers with the Recharge rule from this Force treat the rule as Recharge(+1). 
+Power Sources purchased by this Force are treated as having Battery(+1) and Recharge(+1).</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Waffenlager" hidden="true" id="92dc-829b-441a-7a6b">
           <modifiers>
@@ -282,6 +339,24 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a67a-1d0a-6721-1995" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Elite Training" id="76f9-e183-90d7-b3eb" hidden="false">
+              <description>Reich Soldiers from this force gain Animal Handling and Houndmaster Training Proficiencies for free.</description>
+            </rule>
+            <rule name="Ordnungpolizei" id="2c69-5afc-07e8-20a0" hidden="false">
+              <description>Hummerschale, Schutzschild, MP-49, and MP-55 cost 10 Rm less. 
+Infantry units equipped with both a Schutzschild and a Maschinenpistole may fire them as if they are a Sidearm.</description>
+            </rule>
+            <rule name="Collaborator Support" id="dd5b-c191-86b7-32c7" hidden="false">
+              <description>All Conscripts of a non-Reich nationality that are recruited by a Waffen-SS force from settlements gain the Collaborator rule. 
+
+
+Waffen-SS forces do not count infantry with the Collaborator rule when determining whether they receive the Multiple Nationality morale malus.
+
+
+Waffen-SS forces may choose one Design Company from a nationality that is not Former Reich and may purchase equipment from them at Army Generation at a 1.1x markup.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Funkbienenstock" hidden="true" id="67b9-a861-72a8-701e">
           <modifiers>
@@ -294,6 +369,21 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc85-204f-af22-f745" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Elite Training" id="95ee-fc13-3c6c-b732" hidden="false">
+              <description>Reich Soldiers from this force gain the Radio Control Specialist for free, and may purchase the Engineer Certification and Drohne Repair Specialization for 3Rm less.</description>
+            </rule>
+            <rule name="Radio Bienenstock" id="e70b-e4b2-2745-b62a" hidden="false">
+              <description>All Drohne cost 15 Rm less. 
+Funkbienekord and Funkbiene-Array Upgrades cost 10 less. 
+Drohne Training cost 3 Rm instead of 5 Rm</description>
+            </rule>
+            <rule name="Dronhefabrik Support" id="223d-c1a1-46f2-e2c4" hidden="false">
+              <description>Equipment with the RC rule have an additional 6” of range.
+Buying Radio Tower and Funkbienen Kontrollienrichtung improvements at half cost.
+Tiles this force controls that have the Radio Tower improvement have Radio(+1,+2).</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Fallschirmjäger" hidden="true" id="fd61-9380-b637-ee50">
           <modifiers>
@@ -306,6 +396,19 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6152-a64b-bbbe-e8e3" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Rapid Assembly Drills" id="bfa3-a6c6-976f-1bad" hidden="false">
+              <description>Infantry from a Force with this Loadout treat Equipment with the Setup rule they use as having Setup(-1).</description>
+            </rule>
+            <rule name="Übergigant Himmelschloss “Kaserne”" id="49e3-9113-7e9b-4e79" hidden="false">
+              <description>This Force begins play with an Übergigant Himmelschloss. 
+The Himmelschloss begins play with the following Toolings for its Workshop: Leichtrüstung-A, Raketenruck, FG-56, Fliegerfaust-55, Kettenkrad, Airdrop Parachute, DFS-230.
+The Himmelschloss begins play with a Paradrop Bay.</description>
+            </rule>
+            <rule name="Meteoric Strike" id="38e5-2fea-6fe6-07d6" hidden="false">
+              <description>When a Force with this Loadout Paradrop Deploys into combat they may Ambush deploy while doing so as well.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Verbrecher" hidden="true" id="174f-c884-ffa8-f5eb">
           <modifiers>
@@ -330,6 +433,19 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6476-25ae-c2f0-afba" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Skilled Artillerymen" id="2641-10ac-8ffa-4c21" hidden="false">
+              <description>All Equipment with the Artillery rule gain Artillery(+1) when used by infantry from a force with this Loadout.</description>
+            </rule>
+            <rule name="Übergigant Himmelschloss “Vögelnest”" id="577b-e03a-8d5e-5319" hidden="false">
+              <description>This Force begins play with an Übergigant Himmelschloss. 
+The Himmelschloss begins play with the following Toolings for its Workshop: Me-213 &quot;Falke&quot;, Düsentriebwerk-57, Mg-151, Mk-108, 30x90HE.
+The Himmelschloss begins play with a Launch Bay.</description>
+            </rule>
+            <rule name="Reichsvögel" id="1852-1365-72de-481a" hidden="false">
+              <description>Aircraft have +1 to hit rolls with all weapons.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Schwarze Maulwürfe" hidden="true" id="0b5c-1929-ca74-44b3">
           <modifiers>
@@ -366,6 +482,19 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2506-8e07-dba6-5f7f" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Brutal Reputation" id="c868-18ad-e8e8-cd85" hidden="false">
+              <description>Enemy forces must roll with a -1 modifier on their morale rolls, unless they have 3 Infamy or more.</description>
+            </rule>
+            <rule name="Übergigant Himmelschloss “Zyklop”" id="6081-92f4-74b0-8449" hidden="false">
+              <description>This Force begins play with an Übergigant Himmelschloss. 
+The Himmelschloss begins play with the following Toolings for its Workshop: Schutzschild, Hummerschale, Granatwerfer-53, Flammenwerfer-47, MP-55, 3.7cm KwK, Lafette-51, 37x249HE.
+The Himmelschloss begins play with an Artillery Bay.</description>
+            </rule>
+            <rule name="Urban Paratroops" id="dce3-8e50-b486-a84a" hidden="false">
+              <description>When a Force with this Loadout Paradrop Deploys into combat, they may ignore terrain when choosing their drop location.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sicherheitsfirma" hidden="true" id="7dd7-d207-38f8-2941">
           <modifiers>
@@ -1992,6 +2121,30 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b083-257b-335d-8a39"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="2" field="7439-07e0-82ef-c431">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Vehicle Mechanic Specialization" hidden="false" id="27dc-434f-2b03-d12d">
               <costs>
@@ -2008,11 +2161,31 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75cf-6cfc-1cfd-5d01"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="7439-07e0-82ef-c431">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fff1-f806-6bd0-484c"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="7439-07e0-82ef-c431">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Aircraft Operation" hidden="false" id="128e-6741-98f5-8aaa">
           <costs>
@@ -2036,11 +2209,25 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e28-8cff-1586-22b9"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="7439-07e0-82ef-c431">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a9a-29e9-1afa-2ea9"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="3" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Leadership" hidden="false" id="8eae-c1bf-0451-6533">
           <costs>
@@ -2056,6 +2243,13 @@ Rüstung in this formation only have to spend the Energy cost once for both move
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fd7-b8de-c865-bd6c"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Soldiering" hidden="false" id="59a2-dc3a-0ff7-04e5">
           <costs>
@@ -2077,6 +2271,13 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d490-dbfa-6bc3-6df8"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="3" field="7439-07e0-82ef-c431">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Exo Operation" hidden="false" id="79c2-56c9-d849-0d53">
               <costs>
@@ -2085,6 +2286,24 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc98-3340-3f4e-afe4"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="7439-07e0-82ef-c431">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5e2a-9dff-05e5-de25" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Blitzwerfer Operation" hidden="false" id="fc69-d1ae-3d33-0fa0">
               <costs>
@@ -2110,6 +2329,24 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               </conditions>
             </modifierGroup>
           </modifierGroups>
+          <modifiers>
+            <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5e2a-9dff-05e5-de25" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="3" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzer Operation" hidden="false" id="2cbe-3acd-e220-1c57">
           <costs>
@@ -2123,6 +2360,13 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec73-e012-eb8f-9036"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="4" field="7439-07e0-82ef-c431">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Gunner Certification" hidden="false" id="a60f-eab0-7603-f195">
               <costs>
@@ -2131,6 +2375,13 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="936a-24a1-b830-3c6c"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="4" field="7439-07e0-82ef-c431">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Loader Certification" hidden="false" id="99c5-7ea9-2d89-18b9">
               <costs>
@@ -2139,11 +2390,25 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1849-b0cd-4f4a-becd"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="4" field="7439-07e0-82ef-c431">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ff3-b3db-1ac4-e6ee"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="3" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Animal Handling" hidden="false" id="f152-3642-fff2-151f">
           <costs>
@@ -2165,11 +2430,37 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9fb-b467-5cfa-205f"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d3a0-0a6c-1e5a-32bc" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21a5-74b5-823f-a153"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d3a0-0a6c-1e5a-32bc" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -5111,6 +5402,17 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
       <infoLinks>
         <infoLink name="Thruster(2&quot;)" id="0be7-9104-d590-25d3" hidden="false" type="rule" targetId="e70e-4fb0-86bb-5a23"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="decrement" value="15" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leichte  Funkbiene Ausf. A “Hummel”" hidden="true" id="36c3-cc79-a3e6-b1db">
       <costs>
@@ -5122,6 +5424,15 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="15" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5193,6 +5504,17 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
         <infoLink name="Recharge(1)" id="d80b-fed4-dab2-f936" hidden="false" type="rule" targetId="0bed-6621-7605-2518"/>
         <infoLink name="Thruster(2&quot;)" id="4a7e-0c5e-ba7d-332a" hidden="false" type="rule" targetId="e70e-4fb0-86bb-5a23"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="decrement" value="15" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leichter Ladungsträger “Goliath” Ausf. A" hidden="true" id="9350-581a-028d-ec30">
       <costs>
@@ -5204,6 +5526,15 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="15" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5271,6 +5602,17 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </attributes>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="decrement" value="15" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="HaftHallodung-5" hidden="true" id="f0d2-d60f-5085-b721">
       <costs>
@@ -6600,7 +6942,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="13a4-65c1-f62e-93fb" shared="true"/>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5f5b-ffd4-c20c-23d6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7411,6 +7753,17 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </attributes>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sidecar (R100)" hidden="true" id="5293-7e8e-a782-a528">
       <constraints>
@@ -10947,6 +11300,20 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Funkbienen Rüstungarray" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="adc2-589e-2ad1-dc6c">
@@ -11031,6 +11398,11 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Blitzleitungmotorruck-60" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="764b-890d-fa6b-4476">
@@ -11072,6 +11444,11 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -11118,6 +11495,11 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Funkbienenkord Ausf. D" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5178-6b43-34e1-dbd7">
@@ -11160,6 +11542,11 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -11609,6 +11996,11 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="20" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a0f9-dd73-0c1f-3523" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <entryLinks>
@@ -14428,7 +14820,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Funkbienekord Ausf. A (Car)" hidden="true" id="c4ab-6773-48cf-c1de">
+    <selectionEntry type="upgrade" import="true" name="Funkbienekord Ausf. A" hidden="true" id="c4ab-6773-48cf-c1de">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
       </costs>
@@ -14456,12 +14848,21 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="RC(2,48&quot;)" id="6806-c5c1-d887-ae4c" hidden="false" type="rule" targetId="9bf8-67f5-f474-298b"/>
       </infoLinks>
       <profiles>
-        <profile name="Funkbienekord Ausf. A (Car)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="25fe-ad6b-2c5e-97e9">
+        <profile name="Funkbienekord Ausf. A" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="25fe-ad6b-2c5e-97e9">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
@@ -14502,6 +14903,15 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
