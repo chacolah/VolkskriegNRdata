@@ -378,10 +378,8 @@ Waffen-SS forces may choose one Design Company from a nationality that is not Fo
 Funkbienekord and Funkbiene-Array Upgrades cost 10 less. 
 Drohne Training cost 3 Rm instead of 5 Rm</description>
             </rule>
-            <rule name="Dronhefabrik Support" id="223d-c1a1-46f2-e2c4" hidden="false">
-              <description>Equipment with the RC rule have an additional 6” of range.
-Buying Radio Tower and Funkbienen Kontrollienrichtung improvements at half cost.
-Tiles this force controls that have the Radio Tower improvement have Radio(+1,+2).</description>
+            <rule name="Elite Training" id="040c-a931-a09b-0701" hidden="false">
+              <description>Reich Soldiers from this force gain the Radio Control Specialist for free, and may purchase the Engineer Certification and Drohne Repair Specialization for 3Rm less.</description>
             </rule>
           </rules>
         </selectionEntry>
