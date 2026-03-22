@@ -1809,7 +1809,8 @@ Rüstung in this formation only have to spend the Energy cost once for both move
     </selectionEntryGroup>
     <selectionEntryGroup name="Towed Weapon Mounts" id="2822-bad8-11ab-e301" hidden="false">
       <entryLinks>
-        <entryLink targetId="8bae-605a-7a31-4d56" id="3f1f-923d-23eb-4a35" type="selectionEntry" name="Fahrlafette 51" hidden="true"/>
+        <entryLink targetId="bc75-694f-67ff-035e" id="3f1f-923d-23eb-4a35" type="selectionEntry" name="40mm Lvakan Carriage" hidden="true"/>
+        <entryLink targetId="8bae-605a-7a31-4d56" id="e97c-189a-e550-16b5" type="selectionEntry" name="Fahrlafette 51" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Muzzle Upgrades" id="d392-edda-29f7-df9e" hidden="false">
@@ -15494,6 +15495,38 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </characteristics>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="40mm Lvakan Carriage" hidden="true" id="bc75-694f-67ff-035e">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
+      </costs>
+      <profiles>
+        <profile name="40mm Lvakan Carriage" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="52ec-c736-105f-ac24">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">60</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">-</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">15</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Towed Weapon Mount</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="6831-c63e-8107-f9b3" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
+      </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
