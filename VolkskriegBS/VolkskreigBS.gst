@@ -692,7 +692,7 @@ The Himmelschloss begins play with an Artillery Bay.</description>
         </entryLink>
         <entryLink import="true" name="Panzer" hidden="false" id="b5a4-b739-43ae-0f7a" type="selectionEntryGroup" targetId="31e1-cfc2-0836-5b24">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d330-f25b-2fda-ac7c"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="d330-f25b-2fda-ac7c" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -1210,9 +1210,11 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             </selectionEntryGroup>
             <selectionEntryGroup name="Assault Gun" id="093f-4c67-da5b-4658" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="E-25 &quot;Panzer&quot; (Casemate)" hidden="false" id="49dd-936c-2eab-032b" type="selectionEntry" targetId="b88d-4a94-81b9-9d40"/>
+                <entryLink import="true" name="Flammpanzer 38" hidden="false" id="49dd-936c-2eab-032b" type="selectionEntry" targetId="b537-2eac-6912-ba65"/>
                 <entryLink import="true" name="StuG III  Ausf. E" hidden="false" id="186b-6e67-723a-e24f" type="selectionEntry" targetId="10a4-1ae7-7950-c22f"/>
                 <entryLink import="true" name="StuG III Ausf. G" hidden="false" id="87ab-bba0-c7ed-c4d8" type="selectionEntry" targetId="83b1-de2d-08d4-896d"/>
+                <entryLink import="true" name="E-25 &quot;Panzer&quot; (Casemate)" hidden="false" id="62b2-f9ac-9699-90d3" type="selectionEntry" targetId="b88d-4a94-81b9-9d40"/>
+                <entryLink import="true" name="E-50 &quot;Tiger&quot; (Casemate)" hidden="false" id="1a20-3005-0a3b-7576" type="selectionEntry" targetId="8f3a-cb82-0747-bde3"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59b8-3034-85c1-718f"/>
@@ -2468,14 +2470,10 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="f137-3e2e-5c0e-c63a" id="ba26-0069-6f2a-4bba" type="selectionEntry" name="E-25 &quot;Panzer&quot; (Turreted)" hidden="true"/>
         <entryLink targetId="8f3a-cb82-0747-bde3" id="1cd4-9934-fc49-d5b9" type="selectionEntry" name="E-50 &quot;Tiger&quot; (Casemate)" hidden="true"/>
         <entryLink targetId="75e8-54e8-18ea-79b0" id="81a7-2e4a-7ce3-3027" type="selectionEntry" name="E-10 &quot;Luchs&quot; (Turreted)" hidden="true"/>
-        <entryLink import="true" name="Panzer Mobility" hidden="false" id="a735-f9ff-8c2a-5d03" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
         <entryLink targetId="b88d-4a94-81b9-9d40" id="0967-e8c6-bef6-1bda" type="selectionEntry" name="E-25 &quot;Panzer&quot; (Casemate)" hidden="true"/>
         <entryLink targetId="230e-861d-07f9-6652" id="52c7-227f-144b-bac9" type="selectionEntry" name="E-10 &quot;Luchs&quot; (Casemate)" hidden="true"/>
         <entryLink targetId="db9b-2bde-47e0-6930" id="dd3b-db4e-ff86-eb1a" type="selectionEntry" name="E-10 &quot;Luchs&quot; (Drohne Rack)" hidden="true"/>
       </entryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c003-9fd2-74a2-c8f3"/>
-      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Chassis Upgrade" id="eeae-b378-e97d-29db" hidden="false">
       <constraints>
@@ -2547,6 +2545,9 @@ Rüstung in this formation only have to spend the Energy cost once for both move
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="1ca5-56b2-a207-8ab8"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Vehicle Chassis" id="1a77-4918-f32e-5dfb" hidden="false">
       <entryLinks>
@@ -7337,27 +7338,8 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ad5-737d-2976-7efa"/>
       </constraints>
-      <profiles>
-        <profile name="Kampfwagenfeuerwerfer-51" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7a5c-bc41-d8e3-f84e">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">0</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">0</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">0</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flame, Radius(6&quot;), Reload(1,1)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="7a5c-bc41-d8e3-f84e" id="42b2-4bb2-32f8-ebb0" type="profile" name="Kampfwagenfeuerwerfer-51" hidden="false"/>
         <infoLink name="Flame" id="4e47-38ac-234d-c3df" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
         <infoLink name="Reload(1,1)" id="38c0-7a60-5f7a-a47e" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
         <infoLink name="Radius(6&quot;)" id="0550-e95b-c4cc-f4ec" hidden="false" type="rule" targetId="690b-b8c2-b84b-6891"/>
@@ -8980,6 +8962,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
         <entryLink import="true" name="Hardpoint: LPW" hidden="false" id="d0cc-9ec9-2fa6-1c54" type="selectionEntryGroup" targetId="b7cf-f6ad-ac7d-5032"/>
         <entryLink import="true" name="Panzer (Casemate) Upgrades" hidden="false" id="4cc0-2a03-85fb-24ab" type="selectionEntryGroup" targetId="3e80-a3cb-ad20-244e"/>
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="2341-f0b7-4735-0833" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
+        <entryLink import="true" name="Panzer Mobility" hidden="false" id="a735-f9ff-8c2a-5d03" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Recharge(0)" id="d222-52fc-f1a9-7f34" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
@@ -9004,6 +8987,9 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c003-9fd2-74a2-c8f3"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot; (Drohne Rack)" hidden="true" id="db9b-2bde-47e0-6930">
       <costs>
@@ -9034,6 +9020,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="5763-108c-a5ec-addd" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
+        <entryLink import="true" name="Panzer Mobility" hidden="false" id="f858-7720-4f70-e435" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
       </entryLinks>
       <profiles>
         <profile name="E-10 &quot;Luchs&quot; (Drohne Rack)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="e3da-ba3b-0e5c-8d2e">
@@ -9055,6 +9042,9 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c79-cdcf-1b6d-f5a4"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot; (Turreted)" hidden="true" id="75e8-54e8-18ea-79b0">
       <costs>
@@ -9082,6 +9072,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
         <entryLink import="true" name="Hardpoint: LPW" hidden="false" id="757e-ae70-5ec5-b481" type="selectionEntryGroup" targetId="b7cf-f6ad-ac7d-5032"/>
         <entryLink import="true" name="Panzer (Turreted) Upgrades" hidden="false" id="2916-a6eb-1e14-f4ac" type="selectionEntryGroup" targetId="f974-c286-9d14-e1f6"/>
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="2f4f-6be8-17da-f262" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
+        <entryLink import="true" name="Panzer Mobility" hidden="false" id="1a04-93e7-425f-93fd" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Recharge(0)" id="93b4-1c91-f6dc-1b0f" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
@@ -9106,6 +9097,9 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2aa-a107-8e03-dd61"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="E-25 &quot;Panzer&quot; (Casemate)" hidden="true" id="b88d-4a94-81b9-9d40">
       <costs>
@@ -9132,6 +9126,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
         <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="beb1-2294-c475-89e6" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
         <entryLink import="true" name="Panzer (Casemate) Upgrades" hidden="false" id="b94c-4b45-5beb-322c" type="selectionEntryGroup" targetId="3e80-a3cb-ad20-244e"/>
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="9bab-ea34-23da-b4a5" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
+        <entryLink import="true" name="Panzer Mobility" hidden="false" id="a45c-6b4b-c460-fffa" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Recharge(0)" id="4764-401a-e4e9-21d6" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
@@ -9156,6 +9151,9 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6842-92cd-abfe-1625"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="E-25 &quot;Panzer&quot; (Turreted)" hidden="true" id="f137-3e2e-5c0e-c63a">
       <costs>
@@ -9181,6 +9179,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
       <entryLinks>
         <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="ef2d-4488-891f-b372" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="7c7b-b231-2f2a-d948" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
+        <entryLink import="true" name="Panzer Mobility" hidden="false" id="bfc9-ffd8-4d6b-ffdb" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Recharge(0)" id="39fd-36d3-435b-46f7" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
@@ -9205,6 +9204,9 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b46-126d-9bed-59f7"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="E-50 &quot;Tiger&quot; (Casemate)" hidden="true" id="8f3a-cb82-0747-bde3">
       <costs>
@@ -9231,6 +9233,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
         <entryLink import="true" name="Hardpoint: HPW" hidden="false" id="3e98-a8c4-0e71-f4fe" type="selectionEntryGroup" targetId="019c-97e7-5698-7ed7"/>
         <entryLink import="true" name="Panzer (Casemate) Upgrades" hidden="false" id="3c3f-69ce-b2a6-1b04" type="selectionEntryGroup" targetId="3e80-a3cb-ad20-244e"/>
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="7da3-bd41-2450-880c" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
+        <entryLink import="true" name="Panzer Mobility" hidden="false" id="d15b-15aa-4f9f-ea3f" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Recharge(0)" id="f179-ba18-fc22-759f" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
@@ -9255,6 +9258,9 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21d8-f40b-7fd8-82ff"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="E-50 &quot;Tiger&quot; (Turreted)" hidden="true" id="afdd-ed17-e25a-0103">
       <costs>
@@ -9280,6 +9286,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
       <entryLinks>
         <entryLink import="true" name="Hardpoint: HPW" hidden="false" id="9e9a-8435-3277-292a" type="selectionEntryGroup" targetId="019c-97e7-5698-7ed7"/>
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="ed8d-0101-22a7-36db" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
+        <entryLink import="true" name="Panzer Mobility" hidden="false" id="645a-6b51-f65d-0f40" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Recharge(0)" id="cf01-6cf9-005a-875e" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
@@ -9304,6 +9311,9 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7089-159e-0d61-77d8"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Light Panzer Weapon Mount" hidden="true" id="4e88-8323-83af-6873">
       <costs>
@@ -12994,7 +13004,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flammpanzer 38" hidden="true" id="b537-2eac-6912-ba65">
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="525"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="575"/>
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -13012,6 +13022,37 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </conditions>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="Flammpanzer 38" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="67e5-c9f2-b03c-34ec">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">8&quot;</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">90</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer (Casemate)</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Maschinengewehr-56(Hull Mount)" id="50fb-e593-c5e8-0654" hidden="false" type="profile" targetId="3720-2612-bdba-02b0">
+          <modifiers>
+            <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Kampfwagenfeuerwerfer-51" id="327b-6858-2ef0-2004" hidden="false" type="profile" targetId="7a5c-bc41-d8e3-f84e">
+          <modifiers>
+            <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Recharge(0)" id="bd53-9545-d02b-a714" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+        <infoLink name="Surplus" id="2b6e-a1c1-4dda-7b60" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="PzJäger “Wanze”" hidden="true" id="9a10-87e6-960f-2c2c">
       <costs>
@@ -13142,7 +13183,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
       <profiles>
         <profile name="Kubelwagen Type 82 " typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="a946-be22-3735-2a69">
           <characteristics>
-            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">9</characteristic>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">12</characteristic>
             <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
             <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
             <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
@@ -15135,7 +15176,7 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
       <profiles>
         <profile name="SdKfz 251/1 &quot;Hanomag&quot;" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5513-e14c-6996-2dad">
           <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">10</characteristic>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">13</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
@@ -15374,6 +15415,93 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
         <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="b17a-98bb-70c3-113c" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pistol m/51" hidden="true" id="4440-28b2-3ba1-71f8">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Pistol m/51" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3762-4c69-e494-5001">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lahti L-35" hidden="true" id="1055-e984-8677-d696">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+      </costs>
+      <profiles>
+        <profile name="Lahti L-35" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="e71d-eb09-96d3-443d">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pistol m/40" hidden="true" id="a14c-07a7-da81-0d62">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+      </costs>
+      <profiles>
+        <profile name="Pistol m/40" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b10f-7bc1-5122-a2c8">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -15405,6 +15533,24 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
         <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
         <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Setup(1)</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Kampfwagenfeuerwerfer-51" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7a5c-bc41-d8e3-f84e">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">0</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">0</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">0</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flame, Radius(6&quot;), Reload(1,1)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
     </profile>
   </sharedProfiles>
 </gameSystem>
