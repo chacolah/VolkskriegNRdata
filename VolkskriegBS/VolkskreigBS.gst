@@ -1707,6 +1707,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="c91d-f252-182d-3bba" id="3577-7fb0-d84c-c5aa" type="selectionEntry" name="2cm Kampfwagenkanone" hidden="true"/>
         <entryLink targetId="bd3f-23ae-ad88-6d9b" id="afd5-5599-308a-ce0c" type="selectionEntry" name="2cm Maschinenekampfwagenkanone" hidden="true"/>
         <entryLink import="true" name="Aircraft Weapons" hidden="false" id="05ed-6691-f8c0-e571" type="selectionEntryGroup" targetId="d067-e269-8674-428e"/>
+        <entryLink import="true" name="20mm autokanon m/40" hidden="false" id="4ad2-b9e9-1e2f-0936" type="selectionEntry" targetId="ba2b-3b73-d6fa-759e"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Medium Panzer Weapons" id="9044-29f4-7d2a-6895" hidden="false">
@@ -1884,6 +1885,41 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="c444-46e3-a85f-a6e4" id="1e34-41e6-912f-edb0" type="selectionEntry" name="Bren Light Machine Gun MKIV*" hidden="true"/>
         <entryLink targetId="f4d8-821a-1264-d5d1" id="daeb-6707-f53e-5c5c" type="selectionEntry" name="Carl Gustaf Granatgevär m/50" hidden="true"/>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Lahti Saloranta M/26" hidden="true" id="c960-3527-52b3-13a9">
+          <profiles>
+            <profile name="Lahti Saloranta M/26" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0ae2-ff2c-f287-5a2e">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Surplus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Surplus" id="126f-8225-4657-8de4" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+            <infoLink name="Bipod(1)" id="def4-f627-ee2a-df38" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
       <entryLinks>
@@ -3080,6 +3116,12 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink import="true" name="Focke-Achgelis fa 223 &quot;Drache" hidden="false" id="313c-509c-8a4f-465b" type="selectionEntry" targetId="b71e-3cb0-daca-2e97"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(20x145R)" id="6d76-4873-7ac6-2b50" hidden="false">
+      <entryLinks>
+        <entryLink targetId="ba08-946b-6120-a8d0" id="a5ab-481e-4977-0408" type="selectionEntry" name="20x145R HE" hidden="true"/>
+        <entryLink targetId="654b-9fc8-d3ee-7a92" id="3334-6082-775a-be5c" type="selectionEntry" name="20x145R Flak" hidden="true"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b72d-a08a-2414-8c49" name="Upgrade(Type)" hidden="false">
@@ -4184,6 +4226,15 @@ May mount an Aircraft Weapon or Heavy Weapon on each hardpoint of this type.</de
       <description>Multipart Equipment with this rule:
 Have (x) Heavy Weapon Hardpoints
 May mount a Heavy Weapon on each hardpoint of this type.</description>
+    </rule>
+    <rule name="Ordnance(20x145R)" id="ecf8-b436-76e0-3b27" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Reload(1,25)" id="18c5-18f0-f8db-bbac" hidden="false">
+      <description>Equipment with this rule: 
+May be used (x,-) times before needing to be reloaded.
+Has a reloading process takes (-,y) amount of actions.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -15534,6 +15585,94 @@ May mount a Heavy Weapon on each hardpoint of this type.</description>
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="20x145R Flak" hidden="true" id="654b-9fc8-d3ee-7a92">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="20x145R Flak" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="f0d9-48ee-582c-92cb">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">20x145R</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Radius(3&quot;), Flak</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="20x145R HE" hidden="true" id="ba08-946b-6120-a8d0">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="20x145R HE" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="62e3-a3d4-d88c-0adb">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">20x145R</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Radius(1&quot;), Piercing(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="20mm autokanon m/40" hidden="true" id="ba2b-3b73-d6fa-759e">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="20mm autokanon m/40" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="74f3-e760-ad80-fdfd">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(20x145R), Reload(1,25)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Reload(1,25)" id="8bd6-71ab-db34-a14c" hidden="false" type="rule" targetId="18c5-18f0-f8db-bbac"/>
+        <infoLink name="Ordnance(20x145R)" id="5344-622a-1bd1-390d" hidden="false" type="rule" targetId="ecf8-b436-76e0-3b27"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
