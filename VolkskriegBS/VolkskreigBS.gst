@@ -239,8 +239,7 @@ Panzer training costs 1 Rm to purchase. Loader, Gunner, and Driver Certification
           <rules>
             <rule name="Veterans of the Fleischwolf" id="4ac3-23a9-b481-4cf1" hidden="false">
               <description>MG-56, PzB-54(G), and MK-55 costs 10 Rm less. Additionally, infantry equipped with an MG-56, PzB-54(G), or MK-55 get +1 to hit with them.
-Pervitin Rations cost 10 Rm less. Addiction rolls are made with a +1 bonus(to a minimum chance of 1+).
-</description>
+Pervitin Rations cost 10 Rm less. Addiction rolls are made with a +1 bonus(to a minimum chance of 1+).</description>
             </rule>
             <rule name="Osttruppen Auxiliaries" id="4425-da89-9488-f1cb" hidden="false">
               <description>Forces with this loadout may purchase Romanian Soldier Infantry, Orita m1941/50, Orita m1947, and “Hetzer-Marașal” JagdPzKw Surplus Vehicles at normal cost. Hetzer Surplus vehicles may purchase the Retrofit upgrade at half cost.
@@ -2059,7 +2058,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       </constraints>
       <entryLinks>
         <entryLink targetId="5e96-d8ea-e4c4-e6ed" id="83ba-0cb0-9685-08e1" type="selectionEntry" name="Messerschmitt Raketenmotor-92" hidden="true"/>
-        <entryLink targetId="5559-0cf5-6510-4a02" id="fe1c-47a4-2883-8799" type="selectionEntry" name="Fock-Wulf Überfliegen-27" hidden="true"/>
+        <entryLink targetId="5559-0cf5-6510-4a02" id="fe1c-47a4-2883-8799" type="selectionEntry" name="Focke-Wulf Überfliegen-27" hidden="true"/>
         <entryLink targetId="07d2-8eb0-3d17-1a41" id="f2b0-ee0e-88bc-7cd6" type="selectionEntry" name="Messerschmitt Flugzeugmotor-44" hidden="true"/>
         <entryLink targetId="eaee-5b9c-e04e-34c7" id="2acd-7913-f14a-a9f7" type="selectionEntry" name="Junkers Düsentriebwerk-57" hidden="true"/>
       </entryLinks>
@@ -2552,6 +2551,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
           </profiles>
         </entryLink>
         <entryLink import="true" name="Airdrop Parachute" hidden="false" id="4e4d-3d69-1bee-999c" type="selectionEntry" targetId="7b48-86a3-ed4a-e77a"/>
+        <entryLink import="true" name="Leichte Schürzen (Chassis)" hidden="false" id="81b4-78a0-09c2-c830" type="selectionEntry" targetId="1c7b-9ce4-b6cc-fd4c"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Mobility" id="f6ff-c1f1-4399-2607" hidden="false">
@@ -2923,7 +2923,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="9f8b-0249-7b07-8e6e" id="73e8-03fc-a7da-e9e4" type="selectionEntry" name="Rear Pintle Mount" hidden="true"/>
         <entryLink targetId="c915-c290-a759-5fec" id="c294-6e63-20fa-bd12" type="selectionEntry" name="Front Facing Pintle Mount" hidden="true"/>
         <entryLink targetId="3660-4c27-bbff-d231" id="e87e-00de-db88-4053" type="selectionEntry" name="Funkbienekord Ausf. B" hidden="true"/>
-        <entryLink targetId="c4ab-6773-48cf-c1de" id="ace1-4643-fc82-416a" type="selectionEntry" name="Funkbienekord Ausf. A (Car)" hidden="true"/>
+        <entryLink targetId="c4ab-6773-48cf-c1de" id="ace1-4643-fc82-416a" type="selectionEntry" name="Funkbienekord Ausf. A" hidden="true"/>
         <entryLink import="true" name="Airdrop Parachute" hidden="false" id="5b26-f4f4-3cb2-283d" type="selectionEntry" targetId="7b48-86a3-ed4a-e77a"/>
         <entryLink targetId="6178-9806-73db-1cbb" id="82e9-d3fa-1a00-c5d7" type="selectionEntry" name="Drohne-Array Ausf. A" hidden="true"/>
         <entryLink targetId="e095-613e-c7b2-593b" id="af72-1274-e301-6634" type="selectionEntry" name="360 Pintle Mount" hidden="true">
@@ -4196,10 +4196,9 @@ Has a reloading process takes (-,y) amount of actions.</description>
 Have (x) Heavy Panzer Weapon Hardpoints
 May mount a Heavy Panzer Weapon or Medium Panzer Weapon on each hardpoint of this type.</description>
     </rule>
-    <rule name="ACW(1)" id="23e5-a42c-5f8b-f6c4" hidden="false">
-      <description>Multipart Equipment with this rule:
-Have (x) Aircraft Weapon Hardpoints
-May mount an Aircraft Weapon on each hardpoint of this type.</description>
+    <rule name="Range(x1.5)" id="23e5-a42c-5f8b-f6c4" hidden="false">
+      <description>Equipment Upgrades with this rule:
+Multiplies or increases the Range of the upgraded Equipment by x.</description>
     </rule>
     <rule name="LPW(x)" id="5351-0d0f-c62a-9944" hidden="false">
       <description>Multipart Equipment with this rule:
@@ -4235,6 +4234,19 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <description>Equipment with this rule: 
 May be used (x,-) times before needing to be reloaded.
 Has a reloading process takes (-,y) amount of actions.</description>
+    </rule>
+    <rule name="ACW(1)" id="c775-52ba-7131-ef07" hidden="false">
+      <description>Multipart Equipment with this rule:
+Have (x) Aircraft Weapon Hardpoints
+May mount an Aircraft Weapon on each hardpoint of this type.</description>
+    </rule>
+    <rule name="Range(x)" id="6fb6-2245-dbc2-df7d" hidden="false">
+      <description>Equipment Upgrades with this rule:
+Multiplies or increases the Range of the upgraded Equipment by x.</description>
+    </rule>
+    <rule name="Projectile" id="9466-4f85-5233-d084" hidden="false">
+      <description>Equipment Upgrades with this rule:
+Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -5465,7 +5477,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichte  Funkbiene Ausf. A “Hummel”" hidden="true" id="36c3-cc79-a3e6-b1db">
+    <selectionEntry type="upgrade" import="true" name="Leichter  Funkbiene Ausf. A “Hummel”" hidden="true" id="36c3-cc79-a3e6-b1db">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
       </costs>
@@ -5524,7 +5536,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
         <infoLink name="Thruster(3&quot;)" id="9846-a688-428d-489a" hidden="false" type="rule" targetId="5391-947d-9f58-85df"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichte Funkbiene Ausf. D “Blitz Hornisse”" hidden="true" id="7f5e-b03d-8717-718f">
+    <selectionEntry type="upgrade" import="true" name="Leichter Funkbiene Ausf. D “Blitz Hornisse”" hidden="true" id="7f5e-b03d-8717-718f">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
       </costs>
@@ -7219,27 +7231,8 @@ Has a reloading process takes (-,y) amount of actions.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0255-bcf1-caed-3464"/>
       </constraints>
-      <profiles>
-        <profile name="3.7cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5b5a-14fe-a690-df40">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(37x249), Reload(1,1)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="5b5a-14fe-a690-df40" id="44ff-dbfd-61c5-710d" type="profile" name="3.7cm Kampfwagenkanone" hidden="false"/>
         <infoLink name="Ordnance(37x249)" id="e98a-4792-bc23-5127" hidden="false" type="rule" targetId="35cc-2a2d-3301-17d2"/>
         <infoLink name="Reload(1,1)" id="c5ec-6da7-26cf-b60b" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
       </infoLinks>
@@ -7522,29 +7515,10 @@ Has a reloading process takes (-,y) amount of actions.</description>
         <entryLink import="true" name="Ordnance(75x714R)" hidden="false" id="9227-116f-45db-34f8" type="selectionEntryGroup" targetId="7666-e18c-e2a5-5354"/>
       </entryLinks>
       <infoLinks>
+        <infoLink targetId="909e-3293-dbd3-3268" id="1417-ccb4-cb03-a314" type="profile" name="7.5cm Kampfwagenkanone" hidden="false"/>
         <infoLink name="Ordnance(75x714R)" id="91f3-3d38-f391-e5da" hidden="false" type="rule" targetId="8639-7ccd-f7c5-2c28"/>
         <infoLink name="Reload(1,1)" id="b976-bd1e-b14e-8ef2" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
       </infoLinks>
-      <profiles>
-        <profile name="7.5cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="909e-3293-dbd3-3268">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-4</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">48&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Medium Panzer Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(75x714R), Reload(1,1)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="8.8cm Kampfwagenkanone" hidden="true" id="58b9-6748-b5ff-3596">
       <costs>
@@ -11307,6 +11281,11 @@ Has a reloading process takes (-,y) amount of actions.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0700-832e-5eed-4918"/>
       </constraints>
+      <infoLinks>
+        <infoLink targetId="6dee-b9a1-a752-ccd1" id="9cfc-7f39-148b-c887" type="profile" name="Long Barrel" hidden="false"/>
+        <infoLink name="Projectile" id="88dd-940e-8f14-4b50" hidden="false" type="rule" targetId="9466-4f85-5233-d084"/>
+        <infoLink name="Range(x1.5)" id="97ac-64df-8044-1b01" hidden="false" type="rule" targetId="23e5-a42c-5f8b-f6c4"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Muzzle Brake" hidden="true" id="05e3-f6aa-ec80-f614">
       <modifiers>
@@ -11345,6 +11324,23 @@ Has a reloading process takes (-,y) amount of actions.</description>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="665e-ed78-86a6-a6c4"/>
       </constraints>
+      <profiles>
+        <profile name="Muzzle Brake" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="37ba-64a9-9885-a9ba">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Weapon Upgrade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Projectile</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Funkbienen Rüstungarray" hidden="true" id="7d2d-630c-ef6c-545e">
       <costs>
@@ -11838,7 +11834,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
         <infoLink name="Shoulder(2)" id="5bfa-d6d5-56be-9384" hidden="false" type="rule" targetId="1e21-0557-c602-f477"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichrüstung Ausf. A/58 “Eierschale”" hidden="true" id="5c93-567f-cbb1-45a7">
+    <selectionEntry type="upgrade" import="true" name="Leichterrüstung Ausf. A/58 “Eierschale”" hidden="true" id="5c93-567f-cbb1-45a7">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
       </costs>
@@ -12294,7 +12290,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
         <infoLink name="Overdrive(1)" id="bb98-808f-9c69-23aa" hidden="false" type="rule" targetId="ec73-e8db-6584-3f11"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="e29b-068a-c798-9c10">
+    <selectionEntry type="upgrade" import="true" name="Leichter Panzerung" hidden="true" id="e29b-068a-c798-9c10">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
       </costs>
@@ -13092,7 +13088,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Maschinengewehr-56(Hull Mount)" id="50fb-e593-c5e8-0654" hidden="false" type="profile" targetId="3720-2612-bdba-02b0">
+        <infoLink name="Maschinengewehr-56" id="50fb-e593-c5e8-0654" hidden="false" type="profile" targetId="3720-2612-bdba-02b0">
           <modifiers>
             <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
           </modifiers>
@@ -13162,13 +13158,14 @@ Has a reloading process takes (-,y) amount of actions.</description>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="StuG III  Ausf. E" hidden="true" id="10a4-1ae7-7950-c22f">
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="575"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="630"/>
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -13180,16 +13177,53 @@ Has a reloading process takes (-,y) amount of actions.</description>
           </conditions>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="StuG III  Ausf. E" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="c155-cd8a-3b75-77fd">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">7&quot;</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">90</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer, Casemate, Surplus</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Surplus" id="eed5-a0a2-4953-96f0" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Recharge(0)" id="c518-992f-35c2-d238" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+        <infoLink name="Maschinengewehr-56" id="5ee3-88bb-50f0-0fae" hidden="false" type="profile" targetId="3720-2612-bdba-02b0">
+          <modifiers>
+            <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
+            <modifier type="set" value="60" field="eb20-68aa-3af1-db2f"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="7.5cm Kampfwagenkanone" id="d7a0-0431-97e2-45af" hidden="false" type="profile" targetId="909e-3293-dbd3-3268">
+          <modifiers>
+            <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
+            <modifier type="set" value="60" field="eb20-68aa-3af1-db2f"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(75x714R)" hidden="false" id="92d9-59f3-1e0e-4696" type="selectionEntryGroup" targetId="7666-e18c-e2a5-5354"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="StuG III Ausf. G" hidden="true" id="83b1-de2d-08d4-896d">
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="625"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="710"/>
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -13201,6 +13235,53 @@ Has a reloading process takes (-,y) amount of actions.</description>
           </conditions>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="StuG III Ausf. G" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="3530-8ab7-139b-3172">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">5&quot;</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">4</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">98</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer, Surplus</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(75x714R)" hidden="false" id="ac06-2640-91b8-3539" type="selectionEntryGroup" targetId="7666-e18c-e2a5-5354"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="7.5cm Kampfwagenkanone(Long Barrel)" id="529f-4600-d720-992a" hidden="false" type="profile" targetId="909e-3293-dbd3-3268">
+          <modifiers>
+            <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
+            <modifier type="set" value="60" field="eb20-68aa-3af1-db2f"/>
+            <modifier type="set" value="72&quot;" field="808e-7a55-4969-f2bb"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Maschinengewehr-56" id="099d-4aac-2517-b2c2" hidden="false" type="profile" targetId="3720-2612-bdba-02b0">
+          <modifiers>
+            <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
+            <modifier type="set" value="60" field="eb20-68aa-3af1-db2f"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Leichte Schürzen (Chassis)" id="b906-5015-f7a8-f6f8" hidden="false" type="profile" targetId="ea40-99bf-3da6-a618">
+          <modifiers>
+            <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
+            <modifier type="set" value="-" field="7be1-9d43-d1fb-960a"/>
+            <modifier type="set" value="-" field="4f35-654d-7514-6eda"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Long Barrel" id="b98d-c89d-e856-0e1a" hidden="false" type="profile" targetId="6dee-b9a1-a752-ccd1">
+          <modifiers>
+            <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kubelwagen Type 82 " hidden="true" id="1c41-22c8-5280-9e06">
       <costs>
@@ -13211,6 +13292,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -15204,6 +15286,7 @@ Has a reloading process takes (-,y) amount of actions.</description>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -15674,6 +15757,14 @@ Has a reloading process takes (-,y) amount of actions.</description>
         <infoLink name="Ordnance(20x145R)" id="5344-622a-1bd1-390d" hidden="false" type="rule" targetId="ecf8-b436-76e0-3b27"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Leichter Schürzen (Chassis)" hidden="false" id="1c7b-9ce4-b6cc-fd4c">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+      </costs>
+      <infoLinks>
+        <infoLink targetId="ea40-99bf-3da6-a618" id="76a9-4b34-f286-9a38" type="profile" name="Leichte Schürzen (Chassis)" hidden="false"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -15723,6 +15814,72 @@ Has a reloading process takes (-,y) amount of actions.</description>
       <attributes>
         <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
       </attributes>
+    </profile>
+    <profile name="3.7cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5b5a-14fe-a690-df40">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(37x249), Reload(1,1)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="7.5cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="909e-3293-dbd3-3268">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-4</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">48&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Medium Panzer Weapon</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(75x714R), Reload(1,1)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="Long Barrel" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6dee-b9a1-a752-ccd1">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Weapon Upgrade</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Projectile, Range(x1.5)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Leichte Schürzen (Chassis)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ea40-99bf-3da6-a618">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+1</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">8</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Chassis Upgrade</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+      </characteristics>
     </profile>
   </sharedProfiles>
 </gameSystem>
