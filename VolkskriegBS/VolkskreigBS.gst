@@ -1606,6 +1606,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="415b-257e-0f2b-722a" id="9bed-7a67-a787-eb42" type="selectionEntry" name="First Aid Kit" hidden="false"/>
         <entryLink targetId="87a2-28e6-3475-3f4a" id="a06f-dbf4-d6b3-337e" type="selectionEntry" name="Emergency Repair Kit" hidden="false"/>
         <entryLink import="true" name="Consumable Explosives/Grenades" hidden="false" id="00a7-80e9-4cc6-d2c6" type="selectionEntryGroup" targetId="aaa1-c3dc-bdf7-de6c"/>
+        <entryLink import="true" name="Type 21 Jinkouraibin" hidden="false" id="8c49-ad27-5712-72eb" type="selectionEntry" targetId="8bb4-b47d-2572-6915"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="7c2e-83c8-444d-3436" name="Infantry Models" hidden="false" collective="false" import="true">
@@ -1683,16 +1684,16 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       </constraints>
       <entryLinks>
         <entryLink targetId="219b-0a34-808e-aeeb" id="e00c-c7a3-fc95-4371" type="selectionEntry" name="Schwerer Panzerung" hidden="true"/>
-        <entryLink targetId="e29b-068a-c798-9c10" id="1db1-81d6-4e82-8099" type="selectionEntry" name="Leichte Panzerung" hidden="true"/>
+        <entryLink targetId="e29b-068a-c798-9c10" id="1db1-81d6-4e82-8099" type="selectionEntry" name="Leichter Panzerung" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Drohne" id="a259-84b1-60c2-b435" hidden="false">
       <entryLinks>
         <entryLink targetId="7b1a-94ba-297c-2191" id="08c9-5fa3-3c39-2f59" type="selectionEntry" name="Leichter Ladungsträger “Goliath” Ausf. B" hidden="true"/>
-        <entryLink targetId="7f5e-b03d-8717-718f" id="c2d6-7c54-759d-cb4b" type="selectionEntry" name="Leichte Funkbiene Ausf. D “Blitz Hornisse”" hidden="true"/>
+        <entryLink targetId="7f5e-b03d-8717-718f" id="c2d6-7c54-759d-cb4b" type="selectionEntry" name="Leichter Funkbiene Ausf. D “Blitz Hornisse”" hidden="true"/>
         <entryLink targetId="9350-581a-028d-ec30" id="ffea-e3e4-85b3-35d9" type="selectionEntry" name="Leichter Ladungsträger “Goliath” Ausf. A" hidden="true"/>
         <entryLink targetId="ba26-a493-57e2-40fd" id="3623-d8cd-3b94-9bd5" type="selectionEntry" name="Funkbiene Ausf C “Wespe”" hidden="true"/>
-        <entryLink targetId="36c3-cc79-a3e6-b1db" id="2d68-16a2-2951-8d29" type="selectionEntry" name="Leichte  Funkbiene Ausf. A “Hummel”" hidden="true"/>
+        <entryLink targetId="36c3-cc79-a3e6-b1db" id="2d68-16a2-2951-8d29" type="selectionEntry" name="Leichter  Funkbiene Ausf. A “Hummel”" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Light Panzer Weapons" id="b255-6c06-a35a-0879" hidden="false">
@@ -1883,6 +1884,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="ffb5-2d25-59e4-a61f" id="19db-7afb-dfe1-1cc1" type="selectionEntry" name="Breda M30B / l.MG 098(i) Ausf. B" hidden="true" collective="false"/>
         <entryLink targetId="c444-46e3-a85f-a6e4" id="1e34-41e6-912f-edb0" type="selectionEntry" name="Bren Light Machine Gun MKIV*" hidden="true"/>
         <entryLink targetId="f4d8-821a-1264-d5d1" id="daeb-6707-f53e-5c5c" type="selectionEntry" name="Carl Gustaf Granatgevär m/50" hidden="true"/>
+        <entryLink import="true" name="Type 20 Kochi Rifle" hidden="false" id="303f-7408-0eb2-4e0b" type="selectionEntry" targetId="a6d1-86b9-2c47-ce4c"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Lahti Saloranta M/26" hidden="true" id="c960-3527-52b3-13a9">
@@ -1934,7 +1936,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="3939-3cb3-5a49-2285" id="7384-f916-6dc6-bf61" type="selectionEntry" name="Orita 1947" hidden="true"/>
         <entryLink targetId="9581-0cb3-d0a9-72c2" id="84d9-3f8d-f57e-983b" type="selectionEntry" name="Orita 1941/50" hidden="true"/>
         <entryLink targetId="e73c-b8c7-9dbc-01f1" id="9852-2693-63f0-95f8" type="selectionEntry" name="Maschinenpistole-55" hidden="true" collective="false"/>
-        <entryLink targetId="460d-22d1-c41e-717a" id="4130-22ea-d021-c520" type="selectionEntry" name="Carcano 91/45" hidden="true" collective="false"/>
+        <entryLink targetId="1b99-9c4f-0b78-e837" id="4130-22ea-d021-c520" type="selectionEntry" name="Type 99 Rifle" hidden="true" collective="false"/>
         <entryLink targetId="c57d-c56f-5441-2714" id="2209-5fd9-b1c1-4959" type="selectionEntry" name="Maschinenpistole-49" hidden="true" collective="false"/>
         <entryLink targetId="1167-a795-6890-c22d" id="6a88-9e3c-2b90-2154" type="selectionEntry" name="Fallschimjägergewehr-56" hidden="true" collective="false"/>
         <entryLink targetId="5173-7b1f-e523-d07c" id="8e79-4c9f-fd73-89d9" type="selectionEntry" name="Maschinenkarabiner-55" hidden="true" collective="false"/>
@@ -1957,6 +1959,9 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="d855-1603-6772-8871" id="7d88-5fa2-8bfa-20b2" type="selectionEntry" name="M1923 Pederson Selfloading Rifle" hidden="true" collective="false"/>
         <entryLink targetId="77ab-d74f-ddd6-b943" id="3dd9-9f51-ab8d-776c" type="selectionEntry" name="M1917 Browning Automatic Rifle" hidden="true" collective="false"/>
         <entryLink targetId="6249-666c-5083-d21e" id="ed9d-fbfa-66d7-e35f" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
+        <entryLink targetId="460d-22d1-c41e-717a" id="57b9-e945-736f-05b7" type="selectionEntry" name="Carcano 91/45" hidden="true" collective="false"/>
+        <entryLink targetId="cc1b-4735-90a8-49f6" id="9b81-8806-80b8-c0bd" type="selectionEntry" name="Type 2 Rifle" hidden="true" collective="false"/>
+        <entryLink targetId="1ce5-db6e-3074-4d6d" id="4cf5-f398-f61e-dd2c" type="selectionEntry" name="Type 100 Submachine Gun" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Sidearms/Melee" id="8d16-f577-2371-6215" hidden="false">
@@ -1982,7 +1987,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       </constraints>
       <entryLinks>
         <entryLink targetId="b397-854e-e216-4012" id="98c8-7711-5cbe-ddef" type="selectionEntry" name="Schwererrüstung Aust. C/55 “Ritter”" hidden="true"/>
-        <entryLink targetId="5c93-567f-cbb1-45a7" id="5f8f-6dcd-1b2d-8feb" type="selectionEntry" name="Leichrüstung Ausf. A/58 “Eierschale”" hidden="true"/>
+        <entryLink targetId="5c93-567f-cbb1-45a7" id="5f8f-6dcd-1b2d-8feb" type="selectionEntry" name="Leichterrüstung Ausf. A/58 “Eierschale”" hidden="true"/>
         <entryLink targetId="26d0-86d9-0d87-5772" id="9ca0-3481-01d6-72b5" type="selectionEntry" name="Landsverk Motorrustning m/56" hidden="true"/>
       </entryLinks>
       <modifiers>
@@ -2551,7 +2556,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
           </profiles>
         </entryLink>
         <entryLink import="true" name="Airdrop Parachute" hidden="false" id="4e4d-3d69-1bee-999c" type="selectionEntry" targetId="7b48-86a3-ed4a-e77a"/>
-        <entryLink import="true" name="Leichte Schürzen (Chassis)" hidden="false" id="81b4-78a0-09c2-c830" type="selectionEntry" targetId="1c7b-9ce4-b6cc-fd4c"/>
+        <entryLink import="true" name="Leichter Schürzen (Chassis)" hidden="false" id="81b4-78a0-09c2-c830" type="selectionEntry" targetId="1c7b-9ce4-b6cc-fd4c"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Mobility" id="f6ff-c1f1-4399-2607" hidden="false">
@@ -3222,8 +3227,10 @@ Can store up to X Blitz energy.</description>
 Can store up to X Blitz energy.</description>
     </rule>
     <rule name="Bayonet" id="d588-67e4-e6d5-e8f0" hidden="false">
-      <description>Equipment with this rule:
-May be attached to a weapon as an Underslung Upgrade. If used this way, it gains a +1” modifier to its range.</description>
+      <description>Melee Weapons with this rule:
+May be attached to a weapon as an Underslung Upgrade. If used this way, it gains a +1” modifier to its range.
+Primary Arms with this rule:
+Are considered to have an attached Bayonet from the generic armory as per the explanation above.</description>
     </rule>
     <rule name="Beast" id="5efc-90b0-0dc8-59ac" hidden="false">
       <description>Models with this rule: 
@@ -12629,27 +12636,8 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6604-3e71-8b33-a447"/>
       </constraints>
-      <profiles>
-        <profile name="Bayonet" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3ad3-93a8-3895-cd15">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">1&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Underslung, Melee</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bayonet</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="3ad3-93a8-3895-cd15" id="4289-123b-e4be-e533" type="profile" name="Bayonet" hidden="false"/>
         <infoLink name="Bayonet" id="bdbb-d7f6-b525-72ed" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
       </infoLinks>
     </selectionEntry>
@@ -13256,7 +13244,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
         <entryLink import="true" name="Ordnance(75x714R)" hidden="false" id="ac06-2640-91b8-3539" type="selectionEntryGroup" targetId="7666-e18c-e2a5-5354"/>
       </entryLinks>
       <infoLinks>
-        <infoLink name="7.5cm Kampfwagenkanone(Long Barrel)" id="529f-4600-d720-992a" hidden="false" type="profile" targetId="909e-3293-dbd3-3268">
+        <infoLink name="7.5cm Kampfwagenkanone" id="529f-4600-d720-992a" hidden="false" type="profile" targetId="909e-3293-dbd3-3268">
           <modifiers>
             <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
             <modifier type="set" value="60" field="eb20-68aa-3af1-db2f"/>
@@ -15765,6 +15753,285 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
         <infoLink targetId="ea40-99bf-3da6-a618" id="76a9-4b34-f286-9a38" type="profile" name="Leichte Schürzen (Chassis)" hidden="false"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Type 99 Rifle" hidden="true" id="1b99-9c4f-0b78-e837">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="7"/>
+      </costs>
+      <profiles>
+        <profile name="Type 99 Rifle" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9796-07be-ff90-bb02">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary Arm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bayonet, Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bayonet" id="250a-5640-18c3-8d4f" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
+        <infoLink name="Surplus" id="4737-2e05-b5f7-ad17" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Bayonet" id="753f-663d-4cce-5787" hidden="false" type="profile" targetId="3ad3-93a8-3895-cd15">
+          <modifiers>
+            <modifier type="set" value="Attached Bayonet" field="name"/>
+            <modifier type="set" value="2&quot;" field="808e-7a55-4969-f2bb"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a4a-0f78-f8d1-cad6" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Type 100 Submachine Gun" hidden="true" id="1ce5-db6e-3074-4d6d">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+      </costs>
+      <profiles>
+        <profile name="Type 100 Submachine Gun" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="f516-4c3f-62f3-f64d">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary Arm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bayonet, Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Surplus" id="95ed-c78f-c35d-82fc" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Bayonet" id="1cf2-c100-993d-c841" hidden="false" type="profile" targetId="3ad3-93a8-3895-cd15">
+          <modifiers>
+            <modifier type="set" value="Attached Bayonet" field="name"/>
+            <modifier type="set" value="2&quot;" field="808e-7a55-4969-f2bb"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bayonet" id="bfb5-ff53-44df-df43" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a4a-0f78-f8d1-cad6" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Type 2 Rifle" hidden="true" id="cc1b-4735-90a8-49f6">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
+      </costs>
+      <profiles>
+        <profile name="Type 2 Rifle" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="cedc-1053-eea9-f2e6">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary Arm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bayonet</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bayonet" id="18b5-dcf6-90fb-a373" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
+        <infoLink name="Bayonet" id="ce78-8ada-9ffd-afec" hidden="false" type="profile" targetId="3ad3-93a8-3895-cd15">
+          <modifiers>
+            <modifier type="set" value="Attached Bayonet" field="name"/>
+            <modifier type="set" value="2&quot;" field="808e-7a55-4969-f2bb"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a4a-0f78-f8d1-cad6" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Type 20 Kochi Rifle" hidden="true" id="a6d1-86b9-2c47-ce4c">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
+      </costs>
+      <profiles>
+        <profile name="Type 20 Kochi Rifle" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0d62-784b-2784-68cd">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">48&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Energy(1), Piercing(5), Reload(1,1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Reload(1,1)" id="5411-eda6-8dfc-0bde" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+        <infoLink name="Energy(1)" id="aadb-0091-2701-1503" hidden="false" type="rule" targetId="98a2-2a4b-cbba-9b7b"/>
+        <infoLink name="Piercing(5)" id="e724-09d2-7102-2f89" hidden="false" type="rule" targetId="fc55-ea27-b63c-e0ed"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a4a-0f78-f8d1-cad6" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Type 21 Jinkouraibin" hidden="true" id="8bb4-b47d-2572-6915">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a4a-0f78-f8d1-cad6" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Type 21 Jinkouraibin" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="de05-7735-0a9c-8167">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Equipment</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(2), Recharge(1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Battery(2)" id="5860-3318-a674-d4a3" hidden="false" type="rule" targetId="c868-c81f-6916-e6f8"/>
+        <infoLink name="Recharge(1)" id="43c0-25d9-67e1-3b10" hidden="false" type="rule" targetId="0bed-6621-7605-2518"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Katana" hidden="true" id="d8e9-6ad5-715b-011f">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+      </costs>
+      <profiles>
+        <profile name="Katana" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5e3b-d18e-648e-c3f3">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">1&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Melee</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a4a-0f78-f8d1-cad6" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tokubetsuna Sozai Katana" hidden="true" id="103a-ce92-e943-e53e">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Tokubetsuna Sozai Katana" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="79b9-1070-d872-4a38">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">1&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">8</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Melee</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Piercing(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a4a-0f78-f8d1-cad6" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Piercing(2)" id="c048-bb7a-bbd2-2bf5" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -15880,6 +16147,24 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
         <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Chassis Upgrade</characteristic>
         <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
       </characteristics>
+    </profile>
+    <profile name="Bayonet" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3ad3-93a8-3895-cd15">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">1&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Underslung, Melee</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bayonet</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
     </profile>
   </sharedProfiles>
 </gameSystem>
