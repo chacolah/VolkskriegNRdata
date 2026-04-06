@@ -1978,6 +1978,8 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="fc7c-bb63-86be-b69a" id="763b-f2e1-9a12-c8c9" type="selectionEntry" name="Colt M1912A1" hidden="true" collective="false"/>
         <entryLink targetId="444d-2a02-98a7-d692" id="0b04-3e8a-0d13-f15e" type="selectionEntry" name="Klappspaten 38" hidden="true" collective="false"/>
         <entryLink targetId="1043-20ce-01ff-41b0" id="a765-37dc-3ba6-953b" type="selectionEntry" name="General Electric M1958 Amplified Light Pistol" hidden="true" collective="false"/>
+        <entryLink import="true" name="Tokubetsuna Sozai Katana" hidden="false" id="59fa-c433-a217-1564" type="selectionEntry" targetId="103a-ce92-e943-e53e"/>
+        <entryLink import="true" name="Katana" hidden="false" id="cf55-ce5b-d0d2-0199" type="selectionEntry" targetId="d8e9-6ad5-715b-011f"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung Frames" id="fdee-72dd-7c30-f69a" hidden="false">
