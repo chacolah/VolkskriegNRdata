@@ -632,7 +632,7 @@ The Himmelschloss begins play with an Artillery Bay.</description>
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7fc5-ecb6-d3d8-516f" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
@@ -640,6 +640,8 @@ The Himmelschloss begins play with an Artillery Bay.</description>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a4a-0f78-f8d1-cad6" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f6c7-9982-580a-a0a0" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4271,8 +4273,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4434,6 +4437,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -4707,9 +4711,10 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4754,9 +4759,10 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4858,9 +4864,10 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5221,9 +5228,10 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5248,6 +5256,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -5299,6 +5308,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5350,6 +5360,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5399,6 +5410,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5484,6 +5496,15 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="b195-9bec-dbe8-2a39" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leichter  Funkbiene Ausf. A “Hummel”" hidden="true" id="36c3-cc79-a3e6-b1db">
@@ -5495,6 +5516,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -5586,6 +5608,15 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="b195-9bec-dbe8-2a39" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Leichter Ladungsträger “Goliath” Ausf. A" hidden="true" id="9350-581a-028d-ec30">
@@ -5597,6 +5628,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -5684,6 +5716,15 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="b195-9bec-dbe8-2a39" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="HaftHallodung-5" hidden="true" id="f0d2-d60f-5085-b721">
@@ -5695,8 +5736,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5769,8 +5811,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5811,8 +5854,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5967,10 +6011,16 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="roster" childId="d3a0-0a6c-1e5a-32bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -6009,6 +6059,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -6643,7 +6694,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6689,7 +6742,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6841,6 +6896,25 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9611-3a05-00c4-2372" includeChildSelections="false"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="b195-9bec-dbe8-2a39" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="roster" childId="d3a0-0a6c-1e5a-32bc" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="90ca-5e14-e27e-2c14" name="Conscript" hidden="true" collective="false" import="true" type="model">
       <modifiers>
@@ -6995,6 +7069,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
               <conditionGroups>
@@ -7147,6 +7222,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7258,6 +7334,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7322,6 +7399,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7376,6 +7454,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7509,6 +7588,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7631,6 +7711,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -7668,6 +7749,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
@@ -7774,6 +7856,15 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="and">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="67b9-a861-72a8-701e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="b195-9bec-dbe8-2a39" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7927,6 +8018,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -7944,6 +8036,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -7984,8 +8077,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8051,6 +8145,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -8067,8 +8162,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8109,8 +8205,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8233,6 +8330,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -8280,6 +8378,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -8346,6 +8445,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -8387,6 +8487,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -8428,6 +8529,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -8809,6 +8911,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8942,6 +9045,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8980,9 +9084,10 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9093,6 +9198,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9147,6 +9253,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9201,6 +9308,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9254,6 +9362,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9308,6 +9417,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9362,6 +9472,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -9435,7 +9546,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9484,6 +9597,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9525,6 +9639,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9566,6 +9681,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -9626,6 +9742,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9664,6 +9781,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9707,6 +9825,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9749,6 +9868,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9791,6 +9911,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -10063,6 +10184,17 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="bba6-7f2c-94f8-c6a9" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="9a88-9a80-79af-f418" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="b195-9bec-dbe8-2a39" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="GM &quot;Detroit Special&quot; SMG" hidden="true" id="e05c-a97f-7bef-19d0" collective="false">
       <costs>
@@ -10608,6 +10740,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -10712,8 +10845,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11219,6 +11353,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11274,6 +11409,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11322,6 +11458,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11361,6 +11498,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11459,6 +11597,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12269,6 +12408,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12309,6 +12449,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12348,6 +12489,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12424,6 +12566,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12472,6 +12615,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12526,6 +12670,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12653,6 +12798,15 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="5e2a-9dff-05e5-de25" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="b195-9bec-dbe8-2a39" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ae0-96cb-1147-d527"/>
@@ -12761,8 +12915,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12858,8 +13013,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -13352,6 +13508,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -13388,6 +13545,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -13427,6 +13585,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -13466,6 +13625,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -13505,6 +13665,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -13888,6 +14049,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -14309,8 +14471,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14346,6 +14509,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -14382,6 +14546,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -14418,8 +14583,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14457,8 +14623,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="or">
@@ -14512,8 +14679,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="or">
@@ -14566,6 +14734,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -14610,8 +14779,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14706,8 +14876,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
                 <conditionGroup type="or">
@@ -14829,8 +15000,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14882,8 +15054,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14925,6 +15098,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -14951,8 +15125,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -15005,8 +15180,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -15064,8 +15240,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -15119,8 +15296,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -15260,7 +15438,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -15322,6 +15502,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -15383,6 +15564,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
