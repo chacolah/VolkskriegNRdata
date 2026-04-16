@@ -1261,6 +1261,30 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bicycle Team" hidden="false" id="c228-5d31-2caa-5079">
+      <categoryLinks>
+        <categoryLink name="Generic Formation" hidden="false" id="7eaa-92a9-e091-c83a" targetId="225b-b208-7d55-5943" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Infantry Models" hidden="false" id="f389-b671-8781-8cea" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ef5f-1132-3ece-7fa7"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88f1-eb32-e5b6-4ec5"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bicycle" hidden="false" id="829a-b033-454d-5509" type="selectionEntryGroup" targetId="fec4-1eb8-df2e-556c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68bd-781e-6e72-6e59"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="878a-7b8c-a38d-459a"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Bicycle Familiarity" id="38fc-aea4-4773-dcc4" hidden="false">
+          <description>+1 Mobility while on Bicycles.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="be23-c331-259d-7740" name="Equipped Weapons" hidden="false" collective="false" import="true" collapsible="true">
@@ -3137,6 +3161,11 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="654b-9fc8-d3ee-7a92" id="3334-6082-775a-be5c" type="selectionEntry" name="20x145R Flak" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Bicycle" id="fec4-1eb8-df2e-556c" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Bicycle" hidden="false" id="a8c2-25fe-87dc-8dfc" type="selectionEntry" targetId="9f91-d407-924d-8974"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b72d-a08a-2414-8c49" name="Upgrade(Type)" hidden="false">
@@ -4264,6 +4293,10 @@ Multiplies or increases the Range of the upgraded Equipment by x.</description>
     <rule name="Projectile" id="9466-4f85-5233-d084" hidden="false">
       <description>Equipment Upgrades with this rule:
 Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</description>
+    </rule>
+    <rule name="Bicycle" id="43c0-4de3-1e77-3fe7" hidden="false">
+      <description>Equipment with this rule:
+Is affected by the Mobility modifiers of mounted infantry.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -16263,6 +16296,31 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
       </modifiers>
       <infoLinks>
         <infoLink name="Piercing(2)" id="c048-bb7a-bbd2-2bf5" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bicycle" hidden="false" id="9f91-d407-924d-8974">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+      </costs>
+      <profiles>
+        <profile name="Bicycle" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="a0af-b8f6-8f29-a3d3">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">8&quot;</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">-</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">10</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Bicycle</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Bicycle</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bicycle" id="bec1-eefb-e317-6922" hidden="false" type="rule" targetId="43c0-4de3-1e77-3fe7"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
