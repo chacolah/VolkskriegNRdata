@@ -1927,7 +1927,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
       <entryLinks>
         <entryLink targetId="bf68-8ed8-b6aa-d91e" id="b759-0c7c-0307-2fe3" type="selectionEntry" name="Volksssturmgewehr-60" hidden="true" collective="false"/>
-        <entryLink targetId="0dd5-2401-8c4c-1be4" id="e633-26e5-dc73-0563" type="selectionEntry" name="Double Barrel Shotgun" hidden="true" collective="false"/>
+        <entryLink targetId="0dd5-2401-8c4c-1be4" id="e633-26e5-dc73-0563" type="selectionEntry" name="Double Barrel Shotgun" hidden="false" collective="false"/>
         <entryLink targetId="e3d5-0647-82de-ee24" id="76e3-1b23-e0a6-cd8a" type="selectionEntry" name="Suomi m/45" hidden="true" collective="false"/>
         <entryLink targetId="30fb-8f36-6567-176f" id="2570-f78e-d728-27fa" type="selectionEntry" name="Suomi m/31" hidden="true" collective="false"/>
         <entryLink targetId="755c-742d-82b8-fc64" id="5ce3-8c71-8bb7-8ecc" type="selectionEntry" name="Sterling Submachine Gun MKIII" hidden="true"/>
@@ -1975,7 +1975,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
           </costs>
         </entryLink>
         <entryLink targetId="788b-b111-9631-b18a" id="6284-fe95-8989-7c07" type="selectionEntry" name="Sturmpistole 47" hidden="true" collective="false"/>
-        <entryLink targetId="8f71-ef28-efcc-739f" id="46a1-35fc-6a0a-68d1" type="selectionEntry" name="9mm Pocket Pistol" hidden="true" collective="false"/>
+        <entryLink targetId="8f71-ef28-efcc-739f" id="46a1-35fc-6a0a-68d1" type="selectionEntry" name="9mm Pocket Pistol" hidden="false" collective="false"/>
         <entryLink targetId="424c-8f66-8e1f-d0f2" id="01b6-ddc6-2f2d-70cb" type="selectionEntry" name="Pistolkarabiner-54 Biesensteiel" hidden="true" collective="false"/>
         <entryLink targetId="007c-6e44-454d-36eb" id="2f85-0f71-4e01-602e" type="selectionEntry" name="Pistole-55 Luger" hidden="true" collective="false"/>
         <entryLink targetId="95bf-877d-1c5d-a242" id="13e9-981c-bb25-8ea8" type="selectionEntry" name="Bayonet" hidden="false" collective="false"/>
@@ -15761,11 +15761,15 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
       </profiles>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <modifierGroups>
