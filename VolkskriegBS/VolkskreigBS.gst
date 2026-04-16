@@ -1986,7 +1986,8 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="1043-20ce-01ff-41b0" id="a765-37dc-3ba6-953b" type="selectionEntry" name="General Electric M1958 Amplified Light Pistol" hidden="true" collective="false"/>
         <entryLink import="true" name="Tokubetsuna Sozai Katana" hidden="false" id="59fa-c433-a217-1564" type="selectionEntry" targetId="103a-ce92-e943-e53e"/>
         <entryLink import="true" name="Katana" hidden="false" id="cf55-ce5b-d0d2-0199" type="selectionEntry" targetId="d8e9-6ad5-715b-011f"/>
-        <entryLink targetId="42b1-9a6c-7f6d-6a14" id="bd96-22d0-5c8a-f76b" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
+        <entryLink targetId="1055-e984-8677-d696" id="bd96-22d0-5c8a-f76b" type="selectionEntry" name="Lahti L-35" hidden="true" collective="false"/>
+        <entryLink targetId="42b1-9a6c-7f6d-6a14" id="20f8-67b3-deae-bf93" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung Frames" id="fdee-72dd-7c30-f69a" hidden="false">
@@ -15821,44 +15822,41 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Pistol m/40" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" childName="Reich Collaborators/ Nordischer Reichstaat"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pistol m/40" hidden="true" id="a14c-07a7-da81-0d62">
-      <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
-      </costs>
-      <profiles>
-        <profile name="Pistol m/40" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b10f-7bc1-5122-a2c8">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
-          </characteristics>
-        </profile>
-      </profiles>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set" value="Pistol m/40" field="name"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="40mm Lvakan Carriage" hidden="true" id="bc75-694f-67ff-035e">
       <costs>
