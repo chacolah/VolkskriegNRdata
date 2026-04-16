@@ -1934,7 +1934,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="d6d5-9d47-96ab-743b" id="1789-087b-b527-cede" type="selectionEntry" name="Sten Submachine Gun MKVI*" hidden="true"/>
         <entryLink targetId="48f0-d516-70c6-09fc" id="9d8b-4d4f-7228-4783" type="selectionEntry" name="Ross MKIV*" hidden="true"/>
         <entryLink targetId="2a3d-09fc-05fb-da5d" id="4059-78ad-0e1a-0963" type="selectionEntry" name="Sten Submachine Gun MKV**" hidden="true"/>
-        <entryLink targetId="98b9-a718-c2c3-8faf" id="5d47-efc9-ab9d-149f" type="selectionEntry" name="Rifle, Short Ross-Garand" hidden="true"/>
+        <entryLink targetId="98b9-a718-c2c3-8faf" id="5d47-efc9-ab9d-149f" type="selectionEntry" name="Rifle, Short Ross-Garand MkI*" hidden="true"/>
         <entryLink targetId="3939-3cb3-5a49-2285" id="7384-f916-6dc6-bf61" type="selectionEntry" name="Orita 1947" hidden="true"/>
         <entryLink targetId="9581-0cb3-d0a9-72c2" id="84d9-3f8d-f57e-983b" type="selectionEntry" name="Orita 1941/50" hidden="true"/>
         <entryLink targetId="e73c-b8c7-9dbc-01f1" id="9852-2693-63f0-95f8" type="selectionEntry" name="Maschinenpistole-55" hidden="true" collective="false"/>
@@ -1969,7 +1969,11 @@ Rüstung in this formation only have to spend the Energy cost once for both move
     <selectionEntryGroup name="Sidearms/Melee" id="8d16-f577-2371-6215" hidden="false">
       <entryLinks>
         <entryLink targetId="ba7f-eea6-7a9e-9c2d" id="751f-859e-bca4-5dc5" type="selectionEntry" name="Volkspistole 60" hidden="true" collective="false"/>
-        <entryLink targetId="42b1-9a6c-7f6d-6a14" id="6329-db63-55dc-1487" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
+        <entryLink targetId="4440-28b2-3ba1-71f8" id="6329-db63-55dc-1487" type="selectionEntry" name="Browning Hi-Power" hidden="true" collective="false">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
+          </costs>
+        </entryLink>
         <entryLink targetId="788b-b111-9631-b18a" id="6284-fe95-8989-7c07" type="selectionEntry" name="Sturmpistole 47" hidden="true" collective="false"/>
         <entryLink targetId="8f71-ef28-efcc-739f" id="46a1-35fc-6a0a-68d1" type="selectionEntry" name="9mm Pocket Pistol" hidden="true" collective="false"/>
         <entryLink targetId="424c-8f66-8e1f-d0f2" id="01b6-ddc6-2f2d-70cb" type="selectionEntry" name="Pistolkarabiner-54 Biesensteiel" hidden="true" collective="false"/>
@@ -1982,6 +1986,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="1043-20ce-01ff-41b0" id="a765-37dc-3ba6-953b" type="selectionEntry" name="General Electric M1958 Amplified Light Pistol" hidden="true" collective="false"/>
         <entryLink import="true" name="Tokubetsuna Sozai Katana" hidden="false" id="59fa-c433-a217-1564" type="selectionEntry" targetId="103a-ce92-e943-e53e"/>
         <entryLink import="true" name="Katana" hidden="false" id="cf55-ce5b-d0d2-0199" type="selectionEntry" targetId="d8e9-6ad5-715b-011f"/>
+        <entryLink targetId="42b1-9a6c-7f6d-6a14" id="bd96-22d0-5c8a-f76b" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung Frames" id="fdee-72dd-7c30-f69a" hidden="false">
@@ -7070,7 +7075,9 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -10972,7 +10979,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="16d2-ea3f-1adb-a696" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Rifle, Short Ross-Garand" hidden="true" id="98b9-a718-c2c3-8faf">
+    <selectionEntry type="upgrade" import="true" name="Rifle, Short Ross-Garand MkI*" hidden="true" id="98b9-a718-c2c3-8faf">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
       </costs>
@@ -10980,7 +10987,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c599-6c76-a446-427f"/>
       </constraints>
       <profiles>
-        <profile name="Rifle, Short Ross-Garand" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="a983-3cc4-9af5-c921">
+        <profile name="Rifle, Short Ross-Garand MkI*" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="a983-3cc4-9af5-c921">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
@@ -12735,13 +12742,8 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
         <infoLink name="Reload(1,6)" id="7db7-cc15-5691-c219" hidden="false" type="rule" targetId="a65e-6e34-ba99-d2a9"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="9mm Pocket Pistol" hidden="true" id="8f71-ef28-efcc-739f" collective="false">
+    <selectionEntry type="upgrade" import="true" name="9mm Pocket Pistol" hidden="false" id="8f71-ef28-efcc-739f" collective="false">
       <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
         <modifier type="decrement" value="5" field="7439-07e0-82ef-c431">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="897a-db0b-4037-0669" shared="true"/>
@@ -15571,14 +15573,7 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Double Barrel Shotgun" hidden="true" id="0dd5-2401-8c4c-1be4" collective="false">
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <selectionEntry type="upgrade" import="true" name="Double Barrel Shotgun" hidden="false" id="0dd5-2401-8c4c-1be4" collective="false">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
       </costs>
@@ -15722,12 +15717,12 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
         <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="b17a-98bb-70c3-113c" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pistol m/51" hidden="true" id="4440-28b2-3ba1-71f8">
+    <selectionEntry type="upgrade" import="true" name="Browning Hi-Power" hidden="true" id="4440-28b2-3ba1-71f8">
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
       </costs>
       <profiles>
-        <profile name="Pistol m/51" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3762-4c69-e494-5001">
+        <profile name="Browning Hi-Power" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3762-4c69-e494-5001">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
@@ -15741,15 +15736,67 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Pistol, No. II, Inglis MkII*" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="Pistol m/51" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set" value="Pistol, No. II, Inglis MkII*" field="name"/>
+            <modifier type="set" value="7" field="7439-07e0-82ef-c431"/>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup type="and">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+          <modifiers>
+            <modifier type="set" value="10" field="7439-07e0-82ef-c431"/>
+            <modifier type="set" value="Pistol m/51" field="name"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lahti L-35" hidden="true" id="1055-e984-8677-d696">
       <costs>
