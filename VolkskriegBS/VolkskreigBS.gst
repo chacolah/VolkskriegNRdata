@@ -4502,6 +4502,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -4635,6 +4636,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -11116,6 +11118,18 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="ccc2-de7a-51b5-7dc5" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="c6a4-79bb-f833-0de4" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ross MKIV*" hidden="true" id="48f0-d516-70c6-09fc">
       <costs>
@@ -11161,6 +11175,19 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="3dcf-7063-ab92-5874" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="987d-f2be-c3d9-f967" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sten Submachine Gun MKV**" hidden="true" id="2a3d-09fc-05fb-da5d">
       <costs>
@@ -11198,6 +11225,18 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="dca3-e4a4-4f12-34f6" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="a691-97b6-401d-1ce6" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sten Submachine Gun MKVI*" hidden="true" id="d6d5-9d47-96ab-743b">
       <costs>
@@ -11234,6 +11273,18 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
       <entryLinks>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="0231-876f-cb05-9c7a" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sterling Submachine Gun MKIII" hidden="true" id="755c-742d-82b8-fc64">
       <costs>
@@ -11270,6 +11321,18 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="1cac-956e-e568-f4db" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="39b2-526d-1d66-49f6" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Suomi M31" hidden="true" id="30fb-8f36-6567-176f" collective="false">
       <costs>
@@ -15057,6 +15120,9 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b743-fe3f-50fd-ce55"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Schalldämpfer-54" hidden="true" id="b728-1e0f-05a7-4142">
       <costs>
@@ -16042,7 +16108,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
           </conditions>
         </modifier>
