@@ -1888,6 +1888,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         </modifier>
       </modifiers>
       <entryLinks>
+        <entryLink targetId="c960-3527-52b3-13a9" id="b675-7977-0b96-069d" type="selectionEntry" name="Lahti Saloranta M/26" hidden="true"/>
         <entryLink targetId="88d5-c07c-682b-5b88" id="06b8-69f9-667f-bbd1" type="selectionEntry" name="Panzerbüchse-54(Cz)" hidden="true" collective="false"/>
         <entryLink targetId="d4b1-9876-1b6b-81a0" id="a889-6bd4-9631-18f7" type="selectionEntry" name="Panzerbüchse-54(Gustloff)" hidden="true" collective="false"/>
         <entryLink targetId="3cf8-46de-ed2d-aec6" id="6982-4e18-af13-98dc" type="selectionEntry" name="Maschinengewehr-56" hidden="true" collective="false"/>
@@ -1911,42 +1912,8 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="c444-46e3-a85f-a6e4" id="1e34-41e6-912f-edb0" type="selectionEntry" name="Bren Light Machine Gun MKIV*" hidden="true"/>
         <entryLink targetId="f4d8-821a-1264-d5d1" id="daeb-6707-f53e-5c5c" type="selectionEntry" name="Carl Gustaf Granatgevär m/50" hidden="true"/>
         <entryLink import="true" name="Type 20 Kochi Rifle" hidden="false" id="303f-7408-0eb2-4e0b" type="selectionEntry" targetId="a6d1-86b9-2c47-ce4c"/>
+        <entryLink import="true" name="Degtjarev M/27 &quot;Emma&quot;" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Lahti Saloranta M/26" hidden="true" id="c960-3527-52b3-13a9">
-          <profiles>
-            <profile name="Lahti Saloranta M/26" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0ae2-ff2c-f287-5a2e">
-              <characteristics>
-                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
-                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
-                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
-                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
-                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
-                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Surplus</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Surplus" id="126f-8225-4657-8de4" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
-            <infoLink name="Bipod(1)" id="def4-f627-ee2a-df38" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
-          </infoLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
       <entryLinks>
@@ -1964,7 +1931,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="e73c-b8c7-9dbc-01f1" id="9852-2693-63f0-95f8" type="selectionEntry" name="Maschinenpistole-55" hidden="true" collective="false"/>
         <entryLink targetId="1b99-9c4f-0b78-e837" id="4130-22ea-d021-c520" type="selectionEntry" name="Type 99 Rifle" hidden="true" collective="false"/>
         <entryLink targetId="c57d-c56f-5441-2714" id="2209-5fd9-b1c1-4959" type="selectionEntry" name="Maschinenpistole-49" hidden="true" collective="false"/>
-        <entryLink targetId="1167-a795-6890-c22d" id="6a88-9e3c-2b90-2154" type="selectionEntry" name="Fallschimjägergewehr-56" hidden="true" collective="false"/>
+        <entryLink targetId="a71f-537d-b15f-3c56" id="6a88-9e3c-2b90-2154" type="selectionEntry" name="Fallschimjägergewehr-43(Krieghoff)" hidden="true" collective="false"/>
         <entryLink targetId="5173-7b1f-e523-d07c" id="8e79-4c9f-fd73-89d9" type="selectionEntry" name="Maschinenkarabiner-55" hidden="true" collective="false"/>
         <entryLink targetId="ea2a-0fdb-ab48-950f" id="ef8f-342c-800d-b592" type="selectionEntry" name="General Electric M1959 Amplified Light Rifle" hidden="true" collective="false"/>
         <entryLink targetId="fbea-06fe-595f-4988" id="d5e3-5157-d72e-9390" type="selectionEntry" name="M1939 Johnson Semi Auto Rifle" hidden="true" collective="false"/>
@@ -1988,6 +1955,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="460d-22d1-c41e-717a" id="57b9-e945-736f-05b7" type="selectionEntry" name="Carcano 91/45" hidden="true" collective="false"/>
         <entryLink targetId="cc1b-4735-90a8-49f6" id="9b81-8806-80b8-c0bd" type="selectionEntry" name="Type 2 Rifle" hidden="true" collective="false"/>
         <entryLink targetId="1ce5-db6e-3074-4d6d" id="4cf5-f398-f61e-dd2c" type="selectionEntry" name="Type 100 Submachine Gun" hidden="true" collective="false"/>
+        <entryLink targetId="1167-a795-6890-c22d" id="77c8-1c4e-e3c9-d7be" type="selectionEntry" name="Fallschimjägergewehr-56" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Sidearms/Melee" id="8d16-f577-2371-6215" hidden="false">
@@ -5284,9 +5252,15 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="Konekivääri M48" field="name">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -11297,7 +11271,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="39b2-526d-1d66-49f6" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Suomi m/31" hidden="true" id="30fb-8f36-6567-176f" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Suomi M31" hidden="true" id="30fb-8f36-6567-176f" collective="false">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
       </costs>
@@ -11305,7 +11279,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5b8f-d77b-9c65-494a"/>
       </constraints>
       <profiles>
-        <profile name="Suomi m/31" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="264b-a855-cfd3-6c88">
+        <profile name="Suomi M31" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="264b-a855-cfd3-6c88">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
@@ -11331,7 +11305,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="ac2f-0e64-7a7c-8783" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Suomi m/45" hidden="true" id="e3d5-0647-82de-ee24" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Suomi M45" hidden="true" id="e3d5-0647-82de-ee24" collective="false">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
       </costs>
@@ -11339,7 +11313,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2832-9636-3d5c-22e4"/>
       </constraints>
       <profiles>
-        <profile name="Suomi m/45" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3034-c188-a6af-bbdb">
+        <profile name="Suomi M45" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3034-c188-a6af-bbdb">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
@@ -16519,6 +16493,124 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
       <infoLinks>
         <infoLink name="Bicycle" id="bec1-eefb-e317-6922" hidden="false" type="rule" targetId="43c0-4de3-1e77-3fe7"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Degtjarev M/27 &quot;Emma&quot;" hidden="true" id="7b1b-105b-93fe-e44a" collective="false">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb6-1d81-09f3-b17b"/>
+      </constraints>
+      <profiles>
+        <profile name="Degtjarev M/27 &quot;Emma&quot;" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="cba1-663d-ffb6-88ac">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Surplus</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Surplus" id="52e9-0be6-249e-8e02" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Bipod(1)" id="a021-5b61-a59d-125f" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fallschimjägergewehr-43(Krieghoff)" hidden="true" id="a71f-537d-b15f-3c56" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97d8-ca9a-e241-d7b4"/>
+      </constraints>
+      <profiles>
+        <profile name="Fallschimjägergewehr-43(Krieghoff)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="d06d-e029-c3a8-54ec">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1)</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bipod(1)" id="b828-c195-8cb8-9119" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lahti Saloranta M26/43" hidden="true" id="c960-3527-52b3-13a9">
+      <profiles>
+        <profile name="Lahti Saloranta M/26" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0ae2-ff2c-f287-5a2e">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Surplus" id="126f-8225-4657-8de4" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Bipod(1)" id="def4-f627-ee2a-df38" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
