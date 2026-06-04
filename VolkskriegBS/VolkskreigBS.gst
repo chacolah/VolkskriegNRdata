@@ -841,6 +841,24 @@ The Himmelschloss begins play with an Artillery Bay.</description>
       <categoryLinks>
         <categoryLink name="Reference" hidden="false" id="c294-9607-944b-5add" targetId="c1d7-f7b9-4d5d-909b" primary="true"/>
       </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Active Factions" id="9c29-5716-c9bd-b8db" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Kriegsherren" hidden="false" id="22ca-be19-d310-c3f2"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Scenario" id="a886-990e-92bb-745d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Der Deutsches Volkskrieg" hidden="false" id="ee99-67d8-188f-e233"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Front" id="20b3-661a-03db-810e" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Reich Countryside" hidden="false" id="e398-6068-75ea-7b95"/>
+            <selectionEntry type="upgrade" import="true" name="1st Battle of Berlin" hidden="false" id="cbb8-b723-b6b6-7c07"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Armoury Reference" hidden="false" id="56e0-4445-47e8-d5b8">
       <categoryLinks>
@@ -1888,7 +1906,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink targetId="c960-3527-52b3-13a9" id="b675-7977-0b96-069d" type="selectionEntry" name="Lahti Saloranta M/26" hidden="true"/>
+        <entryLink targetId="c960-3527-52b3-13a9" id="b675-7977-0b96-069d" type="selectionEntry" name="Lahti Saloranta M26/43" hidden="true"/>
         <entryLink targetId="88d5-c07c-682b-5b88" id="06b8-69f9-667f-bbd1" type="selectionEntry" name="Panzerbüchse-54(Cz)" hidden="true" collective="false"/>
         <entryLink targetId="d4b1-9876-1b6b-81a0" id="a889-6bd4-9631-18f7" type="selectionEntry" name="Panzerbüchse-54(Gustloff)" hidden="true" collective="false"/>
         <entryLink targetId="3cf8-46de-ed2d-aec6" id="6982-4e18-af13-98dc" type="selectionEntry" name="Maschinengewehr-56" hidden="true" collective="false"/>
@@ -1919,8 +1937,8 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       <entryLinks>
         <entryLink targetId="bf68-8ed8-b6aa-d91e" id="b759-0c7c-0307-2fe3" type="selectionEntry" name="Volksssturmgewehr-60" hidden="true" collective="false"/>
         <entryLink targetId="0dd5-2401-8c4c-1be4" id="e633-26e5-dc73-0563" type="selectionEntry" name="Double Barrel Shotgun" hidden="false" collective="false"/>
-        <entryLink targetId="e3d5-0647-82de-ee24" id="76e3-1b23-e0a6-cd8a" type="selectionEntry" name="Suomi m/45" hidden="true" collective="false"/>
-        <entryLink targetId="30fb-8f36-6567-176f" id="2570-f78e-d728-27fa" type="selectionEntry" name="Suomi m/31" hidden="true" collective="false"/>
+        <entryLink targetId="e3d5-0647-82de-ee24" id="76e3-1b23-e0a6-cd8a" type="selectionEntry" name="Suomi M45" hidden="true" collective="false"/>
+        <entryLink targetId="30fb-8f36-6567-176f" id="2570-f78e-d728-27fa" type="selectionEntry" name="Suomi M31" hidden="true" collective="false"/>
         <entryLink targetId="755c-742d-82b8-fc64" id="5ce3-8c71-8bb7-8ecc" type="selectionEntry" name="Sterling Submachine Gun MKIII" hidden="true"/>
         <entryLink targetId="d6d5-9d47-96ab-743b" id="1789-087b-b527-cede" type="selectionEntry" name="Sten Submachine Gun MKVI*" hidden="true"/>
         <entryLink targetId="48f0-d516-70c6-09fc" id="9d8b-4d4f-7228-4783" type="selectionEntry" name="Ross MKIV*" hidden="true"/>
