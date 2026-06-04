@@ -16578,7 +16578,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <infoLink name="Bicycle" id="bec1-eefb-e317-6922" hidden="false" type="rule" targetId="43c0-4de3-1e77-3fe7"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Degtjarev M/27 &quot;Emma&quot;" hidden="true" id="7b1b-105b-93fe-e44a" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Degtjarev M27 &quot;Emma&quot;" hidden="true" id="7b1b-105b-93fe-e44a" collective="false">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
       </costs>
@@ -16586,7 +16586,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abb6-1d81-09f3-b17b"/>
       </constraints>
       <profiles>
-        <profile name="Degtjarev M/27 &quot;Emma&quot;" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="cba1-663d-ffb6-88ac">
+        <profile name="Degtjarev M27 &quot;Emma&quot;" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="cba1-663d-ffb6-88ac">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
