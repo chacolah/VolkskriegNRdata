@@ -844,7 +844,8 @@ The Himmelschloss begins play with an Artillery Bay.</description>
       <selectionEntryGroups>
         <selectionEntryGroup name="Active Factions" id="9c29-5716-c9bd-b8db" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Kriegsherren" hidden="false" id="22ca-be19-d310-c3f2"/>
+            <selectionEntry type="upgrade" import="true" name="Soldnerbüro" hidden="false" id="22ca-be19-d310-c3f2"/>
+            <selectionEntry type="upgrade" import="true" name="Kriegsherren" hidden="false" id="dd97-a633-ca8d-67bf"/>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Scenario" id="a886-990e-92bb-745d" hidden="false">
@@ -856,6 +857,12 @@ The Himmelschloss begins play with an Artillery Bay.</description>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Reich Countryside" hidden="false" id="e398-6068-75ea-7b95"/>
             <selectionEntry type="upgrade" import="true" name="1st Battle of Berlin" hidden="false" id="cbb8-b723-b6b6-7c07"/>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Campaign Modifiers" id="c3a2-1b2a-2a6e-d8a6" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Weltraumtruppen" hidden="false" id="5e28-5bd4-ea5d-1c9e"/>
+            <selectionEntry type="upgrade" import="true" name="Onkel Gustav" hidden="false" id="b64f-2f1f-5501-19e1"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1303,6 +1310,36 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Smuggler Team" hidden="true" id="e767-bf8e-151a-eb1e" collective="false">
+      <categoryLinks>
+        <categoryLink name="Faction Formations" hidden="false" id="5de0-f87f-7fbb-c9ca" targetId="c74a-6498-63d2-89fb" primary="true"/>
+        <categoryLink name="Luftwaffe" hidden="false" id="e0a5-61f4-1bcb-0edd" targetId="b98c-8267-c39a-1ad4" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Merc Pool" hidden="false" id="7b14-0754-f1dc-1b62" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="Seasoned Smugglers" id="32ef-feaf-667c-b837" hidden="false">
+          <description>Each infantry model within this unit may grant a single Primary Arm or Sidearm the Holdout rule so long as they have a Backpack slot available.
+
+
+If the formation is equipped with a Car, then they may grant up to 2 Heavy weapons and 6 Explosives, Primary Arms, or Ordnance the Holdout rule.
+
+
+If the formation is equipped with a Truck with the Flatbed rule, they may grant up to 4 Heavy weapons or 1 Towed Weapon Mount with a Light Panzer weapon, and up to 12 Explosives, Primary Arms, or Ordnance the Holdout rule.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="be23-c331-259d-7740" name="Equipped Weapons" hidden="false" collective="false" import="true" collapsible="true">
@@ -1441,7 +1478,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       <entryLinks>
         <entryLink targetId="4b0f-30cf-4f9a-8ab5" id="8375-4434-15cc-b3b1" type="selectionEntry" name="Romanian" hidden="true"/>
         <entryLink targetId="5f5b-ffd4-c20c-23d6" id="79f0-1b55-f134-5e0d" type="selectionEntry" name="Reich" hidden="true" collective="false"/>
-        <entryLink targetId="760a-c393-2149-d586" id="6fe2-326c-06f2-7b25" type="selectionEntry" name="British" hidden="true"/>
+        <entryLink targetId="760a-c393-2149-d586" id="6fe2-326c-06f2-7b25" type="selectionEntry" name="French" hidden="true"/>
         <entryLink targetId="4e8b-8405-b5bb-d1d9" id="4cdf-4a40-df9b-4956" type="selectionEntry" name="Nordic" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -1875,10 +1912,117 @@ Rüstung in this formation only have to spend the Energy cost once for both move
     </selectionEntryGroup>
     <selectionEntryGroup name="Surplus Vehicles" id="1b4a-ac83-f867-5a6d" hidden="false">
       <entryLinks>
-        <entryLink targetId="5c81-68ad-b4fd-e74b" id="8cad-e330-031d-8c00" type="selectionEntry" name="Volkswagen Käfer" hidden="true"/>
-        <entryLink targetId="1c41-22c8-5280-9e06" id="c1db-3872-c998-4f7c" type="selectionEntry" name="Kubelwagen Type 82 " hidden="true"/>
-        <entryLink targetId="9904-a67f-d563-a6ea" id="a5d9-2a20-c60a-72ad" type="selectionEntry" name="SdKfz 251/1 &quot;Hanomag&quot;" hidden="true"/>
+        <entryLink targetId="5c81-68ad-b4fd-e74b" id="8cad-e330-031d-8c00" type="selectionEntry" name="Volkswagen Käfer" hidden="true">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="145"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6cb1-79df-5642-19bf" shared="true" childName="Reich Soldier w/ Surplus Vehicle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Volkswagen Käfer" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ee18-eeee-9a90-fe37">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">8</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/3</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">0</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">40</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Car</characteristic>
+                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Surplus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Surplus" id="3754-d3a4-5552-7b93" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+          </infoLinks>
+        </entryLink>
+        <entryLink targetId="1c41-22c8-5280-9e06" id="c1db-3872-c998-4f7c" type="selectionEntry" name="Kubelwagen Type 82 " hidden="true">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="185"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6cb1-79df-5642-19bf" shared="true" childName="Reich Soldier w/ Surplus Vehicle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink targetId="9904-a67f-d563-a6ea" id="a5d9-2a20-c60a-72ad" type="selectionEntry" name="SdKfz 251/1 &quot;Hanomag&quot;" hidden="true">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="270"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6cb1-79df-5642-19bf" shared="true" childName="Reich Soldier w/ Surplus Vehicle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Opel Blitz (Civilian)" hidden="true" id="7819-ae93-efa7-8fd2">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="185"/>
+          </costs>
+          <profiles>
+            <profile name="Opel Blitz (Civilian)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="0c6b-c1ef-01da-e470">
+              <characteristics>
+                <characteristic name="MOB" typeId="4765-2056-04fc-a63a">12</characteristic>
+                <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+                <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+                <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+                <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+                <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+                <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/2</characteristic>
+                <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+                <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
+                <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Truck</characteristic>
+                <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus, Truckbed(10,1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Truckbed(10,1)" id="78fd-f032-6ac5-73a8" hidden="false" type="rule" targetId="c473-a011-004f-364b"/>
+            <infoLink name="Recharge(0)" id="4a5f-1cd7-4ff9-4987" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+            <infoLink name="Surplus" id="9b80-82bc-7587-9d25" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6cb1-79df-5642-19bf" shared="true" childName="Reich Soldier w/ Surplus Vehicle"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Luftwaffe"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4fe5-9481-73ea-f0a7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Merc Pool"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="31e1-cfc2-0836-5b24" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Motorized Options" id="f0dc-fc28-959c-0329" hidden="false">
       <entryLinks>
@@ -2296,28 +2440,6 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Leadership" hidden="false" id="8eae-c1bf-0451-6533">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
-          </costs>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="New Orders" hidden="false" id="a280-c8c9-c10d-6c85">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fd7-b8de-c865-bd6c"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="2" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Soldiering" hidden="false" id="59a2-dc3a-0ff7-04e5">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
@@ -2415,68 +2537,6 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Panzer Operation" hidden="false" id="2cbe-3acd-e220-1c57">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
-          </costs>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Driver Certification" hidden="false" id="363f-486c-5746-47d1">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec73-e012-eb8f-9036"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="4" field="7439-07e0-82ef-c431">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gunner Certification" hidden="false" id="a60f-eab0-7603-f195">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="936a-24a1-b830-3c6c"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="4" field="7439-07e0-82ef-c431">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Loader Certification" hidden="false" id="99c5-7ea9-2d89-18b9">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1849-b0cd-4f4a-becd"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="4" field="7439-07e0-82ef-c431">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ff3-b3db-1ac4-e6ee"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="3" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Animal Handling" hidden="false" id="f152-3642-fff2-151f">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
@@ -2530,6 +2590,10 @@ Rüstung in this formation only have to spend the Energy cost once for both move
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink targetId="2cbe-3acd-e220-1c57" id="7c7d-d6ec-5bd3-6c91" type="selectionEntry" name="Panzer Operation" hidden="false"/>
+        <entryLink targetId="8eae-c1bf-0451-6533" id="7753-0b6a-ffaa-b138" type="selectionEntry" name="Leadership" hidden="false"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Chassis" id="3c55-fd24-c1cb-4f46" hidden="false">
       <entryLinks>
@@ -2634,11 +2698,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             <entryLink import="true" name="Vehicle Mobility" hidden="false" id="16ca-a3d2-47b6-871d" type="selectionEntryGroup" targetId="1364-e764-5169-52c9"/>
           </entryLinks>
         </entryLink>
-        <entryLink targetId="9243-8acc-a029-ce71" id="30c4-4d84-2e33-f9ff" type="selectionEntry" name="Opel Blitz" hidden="true">
-          <entryLinks>
-            <entryLink import="true" name="Vehicle Mobility" hidden="false" id="e643-5237-f192-b6d7" type="selectionEntryGroup" targetId="1364-e764-5169-52c9"/>
-          </entryLinks>
-        </entryLink>
+        <entryLink targetId="9243-8acc-a029-ce71" id="30c4-4d84-2e33-f9ff" type="selectionEntry" name="Opel Blitz" hidden="true"/>
         <entryLink targetId="7994-61ae-daf6-84f7" id="44d5-a222-df4f-9723" type="selectionEntry" name="Kübelwagen Type 121" hidden="true">
           <entryLinks>
             <entryLink import="true" name="Vehicle Mobility" hidden="false" id="a5a8-ea35-a2ac-77d4" type="selectionEntryGroup" targetId="1364-e764-5169-52c9"/>
@@ -3158,6 +3218,397 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       <entryLinks>
         <entryLink import="true" name="Bicycle" hidden="false" id="a8c2-25fe-87dc-8dfc" type="selectionEntry" targetId="9f91-d407-924d-8974"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Merc Pool" id="4fe5-9481-73ea-f0a7" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Reich Conscript w/ MP-49" hidden="true" id="891d-7509-8f86-320b">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Conscript" id="d206-7714-bace-2af0" hidden="false" type="profile" targetId="02ba-8ca3-796d-0f88"/>
+            <infoLink name="Maschinenpistole-49" id="5f28-0dda-d2cd-feaa" hidden="false" type="profile" targetId="9f62-4f74-031c-6e8d"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" childName="Former Reich/ Axis Mercenaries"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reich Conscript w/ Kar98m" hidden="true" id="f353-467e-cfe3-e63a">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Conscript" id="f581-465b-631d-70d9" hidden="false" type="profile" targetId="02ba-8ca3-796d-0f88"/>
+            <infoLink name="Karabiner-98m" id="9e8b-faf3-e9a9-7dbb" hidden="false" type="profile" targetId="ec23-0a43-21d1-bb56"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" childName="Former Reich/ Axis Mercenaries"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reich Soldier w/ G-55(W)" hidden="true" id="1a20-dc60-5e73-4058">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Soldier" id="8584-d4e5-bd3f-28ef" hidden="false" type="profile" targetId="2354-6082-eb8f-a340"/>
+            <infoLink name="Gewehr-55 (Walther)" id="1a93-b899-57bf-bbde" hidden="false" type="profile" targetId="de61-c9e9-044e-4eb6"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" childName="Former Reich/ Axis Mercenaries"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reich Soldier w/ MP-55" hidden="true" id="4d7c-d08c-56be-a588">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Soldier" id="3a14-eb1d-fd90-3f20" hidden="false" type="profile" targetId="2354-6082-eb8f-a340"/>
+            <infoLink name="Maschinenpistole-55" id="c761-7265-0d53-0e73" hidden="false" type="profile" targetId="189b-68b0-b599-eeaf"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" childName="Former Reich/ Axis Mercenaries"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reich Soldier w/ P-55L and Leadership Training" hidden="true" id="af09-8ceb-7080-20b1">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Soldier" id="b184-c6c9-804c-f264" hidden="false" type="profile" targetId="2354-6082-eb8f-a340"/>
+            <infoLink name="Pistole-55 Luger" id="5438-3daa-4a81-d9d1" hidden="false" type="profile" targetId="34b1-51e5-26f4-0961"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" childName="Former Reich/ Axis Mercenaries"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Leadership" hidden="false" id="50c9-6cba-1327-0489" type="selectionEntry" targetId="8eae-c1bf-0451-6533">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af09-8ceb-7080-20b1" shared="true" childName="Reich Soldier w/ P-55L and Leadership Training"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reich Conscript w/ MG-56" hidden="true" id="a9be-30c0-64ef-aeb5">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Conscript" id="48ea-9de6-1f39-d966" hidden="false" type="profile" targetId="02ba-8ca3-796d-0f88"/>
+            <infoLink name="Maschinengewehr-56" id="e258-aa24-ca94-6dd7" hidden="false" type="profile" targetId="3720-2612-bdba-02b0"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" childName="Former Reich/ Axis Mercenaries"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reich Conscript w/ PzB-54(G)" hidden="true" id="07e8-f2cc-3158-660b">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Conscript" id="a55e-1fc5-ad80-2f77" hidden="false" type="profile" targetId="02ba-8ca3-796d-0f88"/>
+            <infoLink name="Panzerbüchse-54(Gustloff)" id="621e-8c59-759d-36cf" hidden="false" type="profile" targetId="b583-0901-24e7-de63"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" childName="Former Reich/ Axis Mercenaries"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reich Soldier w/ Surplus Vehicle" hidden="true" id="6cb1-79df-5642-19bf">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="160"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Soldier" id="2852-8313-57f1-7265" hidden="false" type="profile" targetId="2354-6082-eb8f-a340"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" childName="Former Reich/ Axis Mercenaries"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Surplus Vehicles" hidden="false" id="dc4c-8a98-c3cb-2c20" type="selectionEntryGroup" targetId="1b4a-ac83-f867-5a6d"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reich Soldier w/ RPB-58 with 4 88mmR Raketen(HEAT) rounds" hidden="true" id="9481-5488-27db-4cce">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Soldier" id="c29a-6f2d-fcf3-f7c4" hidden="false" type="profile" targetId="2354-6082-eb8f-a340"/>
+            <infoLink name="88mmR Raketen(HEAT)" id="766c-07b4-0c37-08af" hidden="false" type="profile" targetId="c996-26f4-06a0-92fb"/>
+            <infoLink name="Raketen Panzerbüchse-58" id="0feb-4041-605c-b87d" hidden="false" type="profile" targetId="e1e5-ef10-8524-8f41"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" childName="Former Reich/ Axis Mercenaries"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reich Soldier w/ Mk-55" hidden="true" id="cd1c-dc9f-71ad-6964">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Soldier" id="3131-4680-b7e8-2e93" hidden="false" type="profile" targetId="2354-6082-eb8f-a340"/>
+            <infoLink name="Maschinenkarabiner-55" id="4758-2484-ecee-1d04" hidden="false" type="profile" targetId="38cd-c532-4a4c-ea64"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" childName="Former Reich/ Axis Mercenaries"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -4318,27 +4769,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditionGroups>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile name="Raketen Panzerbüchse-58" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="e1e5-ef10-8524-8f41">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(88mR Raketen), Reload(1,1)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="e1e5-ef10-8524-8f41" id="cb57-c154-586a-fe34" type="profile" name="Raketen Panzerbüchse-58" hidden="false"/>
         <infoLink name="Ordnance(88mmR Raketen)" id="6d65-de95-4c97-42b8" hidden="false" type="rule" targetId="a334-f8a4-fbc4-259d"/>
         <infoLink name="Reload(1,1)" id="66ba-11e8-04de-5797" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
       </infoLinks>
@@ -4439,32 +4871,13 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27e2-c0f9-c866-02b1"/>
       </constraints>
       <infoLinks>
+        <infoLink targetId="b583-0901-24e7-de63" id="1cca-38c6-670a-d792" type="profile" name="Panzerbüchse-54(Gustloff)" hidden="false"/>
         <infoLink name="Bipod(1)" id="beb8-7f1f-bbc8-0798" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
         <infoLink name="Sniper" id="35b5-a037-0929-9ddd" hidden="false" type="rule" targetId="010c-d754-414f-6102"/>
         <infoLink name="Piercing(1)" id="0714-17c6-dde6-5312" hidden="false" type="rule" targetId="71aa-a433-caa2-dc68"/>
         <infoLink name="Zeroing(+1)" id="f8f9-9cd6-d8c6-b9ba" hidden="false" type="rule" targetId="73d4-9ef4-01fc-676c"/>
         <infoLink name="Sight" id="85e8-54e8-91ba-25cf" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
       </infoLinks>
-      <profiles>
-        <profile name="Panzerbüchse-54(Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b583-0901-24e7-de63">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Piercing(1), Sight, Sniper, Zeroing(+1)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <entryLinks>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="0ffb-550a-53c4-bdae" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
       </entryLinks>
@@ -7027,26 +7440,6 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditionGroups>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile name="Conscript" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="02ba-8ca3-796d-0f88">
-          <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">+1</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Civilian</characteristic>
-            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
-          </attributes>
-        </profile>
-      </profiles>
       <entryLinks>
         <entryLink id="dd0d-cd17-56bc-f1b3" name="Nationality" hidden="false" collective="false" import="true" targetId="8ca0-7c86-458e-73c2" type="selectionEntryGroup">
           <constraints>
@@ -7064,6 +7457,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
       </costs>
+      <infoLinks>
+        <infoLink targetId="02ba-8ca3-796d-0f88" id="f1b0-2bff-d53c-3cc3" type="profile" name="Conscript" hidden="false"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Police" hidden="true" id="4482-3622-e77f-04fc" collective="false">
       <modifiers>
@@ -7090,26 +7486,6 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditionGroups>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile name="Police" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="6fb0-355d-19d5-974b">
-          <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">+2</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Civilian</characteristic>
-            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
-          </attributes>
-        </profile>
-      </profiles>
       <entryLinks>
         <entryLink import="true" name="Nationality" hidden="false" id="988b-17dd-9458-9f35" collective="false" targetId="8ca0-7c86-458e-73c2" type="selectionEntryGroup">
           <constraints>
@@ -7127,6 +7503,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
       </costs>
+      <infoLinks>
+        <infoLink targetId="6fb0-355d-19d5-974b" id="feae-b295-3bff-a9a5" type="profile" name="Police" hidden="false"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Soldier" hidden="true" id="c22f-1f20-3675-0286" collective="false">
       <modifiers>
@@ -7174,26 +7553,6 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditionGroups>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile name="Soldier" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="2354-6082-eb8f-a340">
-          <characteristics>
-            <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
-            <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
-            <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
-            <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">+2</characteristic>
-            <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
-            <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
-            <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
-            <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Military</characteristic>
-            <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
-          </attributes>
-        </profile>
-      </profiles>
       <entryLinks>
         <entryLink import="true" name="Nationality" hidden="false" id="69c7-6707-860a-7ab9" collective="false" targetId="8ca0-7c86-458e-73c2" type="selectionEntryGroup">
           <constraints>
@@ -7211,6 +7570,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
       </costs>
+      <infoLinks>
+        <infoLink targetId="2354-6082-eb8f-a340" id="6896-3892-8950-f2cc" type="profile" name="Soldier" hidden="false"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="2cm Kampfwagenkanone" hidden="true" id="c91d-f252-182d-3bba">
       <costs>
@@ -8476,27 +8838,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditionGroups>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile name="88mmR Raketen(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c996-26f4-06a0-92fb">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">88mmR Raketen</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing, Radius(1&quot;)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="c996-26f4-06a0-92fb" id="9e6d-4b52-4967-0d67" type="profile" name="88mmR Raketen(HEAT)" hidden="false"/>
         <infoLink name="Explosive" id="77ff-f392-343f-3716" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
         <infoLink name="Piercing(2)" id="a8c9-3301-c783-9862" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
         <infoLink name="Radius(1&quot;)" id="7df0-6a90-a51f-48d2" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
@@ -10277,34 +10620,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34ce-4613-c5bb-0c0c"/>
       </constraints>
-      <profiles>
-        <profile name="Gewehr-55 (Walther)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="de61-c9e9-044e-4eb6">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Sniper</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-          <modifiers>
-            <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="de61-c9e9-044e-4eb6" id="cc66-da2c-4f6e-dd27" type="profile" name="Gewehr-55 (Walther)" hidden="false"/>
         <infoLink name="Sniper" id="fad6-81ec-5d5f-08ae" hidden="false" type="rule" targetId="010c-d754-414f-6102"/>
         <infoLink name="Sight" id="5f11-6d32-200d-53da" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Muzzle" id="67b0-88ec-f17f-3bfe" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
@@ -10447,39 +10764,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17f4-fec7-ef7b-697f"/>
       </constraints>
-      <profiles>
-        <profile name="Karabiner-98m" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ec23-0a43-21d1-bb56">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Surplus, Underslung</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-          <modifiers>
-            <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="roster" childId="897a-db0b-4037-0669" shared="true" includeChildSelections="true" includeChildForces="true" childName="Volksfront Militia"/>
-              </conditions>
-            </modifier>
-            <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="ec23-0a43-21d1-bb56" id="dd7d-9db1-c9f2-0cea" type="profile" name="Karabiner-98m" hidden="false"/>
         <infoLink name="Surplus" id="3b06-cff6-b33e-3b7e" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
         <infoLink name="Sight" id="26ae-657f-4564-dfaa" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Underslung" id="136a-7676-0746-eaff" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
@@ -10891,27 +11177,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1016-5677-aaae-5634"/>
       </constraints>
-      <profiles>
-        <profile name="Maschinenkarabiner-55" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="38cd-c532-4a4c-ea64">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Underslung</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="38cd-c532-4a4c-ea64" id="c638-8227-e7a8-7b09" type="profile" name="Maschinenkarabiner-55" hidden="false"/>
         <infoLink name="Underslung" id="ce4a-1c6a-0aa9-d477" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
         <infoLink name="Sight" id="bf92-3c4c-9634-8ea1" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Muzzle" id="6a6e-0bf6-56a8-2b61" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
@@ -10948,34 +11215,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e089-83d5-fcfa-b2e6"/>
       </constraints>
-      <profiles>
-        <profile name="Maschinenpistole-49" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9f62-4f74-031c-6e8d">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Surplus</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-          <modifiers>
-            <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="9f62-4f74-031c-6e8d" id="9a5b-6aad-46ae-886f" type="profile" name="Maschinenpistole-49" hidden="false"/>
         <infoLink name="Surplus" id="53ed-4eeb-8efa-7b4e" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
         <infoLink name="Muzzle" id="24b3-1f88-5f0e-76fe" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
@@ -11008,27 +11249,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3193-e5e1-69cb-0413"/>
       </constraints>
-      <profiles>
-        <profile name="Maschinenpistole-55" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="189b-68b0-b599-eeaf">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="189b-68b0-b599-eeaf" id="6552-8a13-c20f-369b" type="profile" name="Maschinenpistole-55" hidden="false"/>
         <infoLink name="Sight" id="4dbc-7338-440a-2585" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Muzzle" id="7ff5-37ce-48ba-6851" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
@@ -13275,34 +13497,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9066-6463-1eeb-53a5"/>
       </constraints>
-      <profiles>
-        <profile name="Pistole-55 Luger" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="34b1-51e5-26f4-0961">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Muzzle</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-          <modifiers>
-            <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="roster" childId="897a-db0b-4037-0669" shared="true" includeChildSelections="true" includeChildForces="true" childName="Volksfront Militia"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="34b1-51e5-26f4-0961" id="4ab5-a9ee-3965-93e6" type="profile" name="Pistole-55 Luger" hidden="false"/>
         <infoLink name="Muzzle" id="fb95-f1e6-c862-0a7c" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
         <infoLink name="Holdout" id="0021-f8dc-4d74-0f5f" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
@@ -13780,9 +13976,10 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4fe5-9481-73ea-f0a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true" childName="Merc Pool"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Luftwaffe"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4fe5-9481-73ea-f0a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true" childName="Merc Pool"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14623,11 +14820,12 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14657,6 +14855,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Vehicle Mobility" hidden="false" id="789b-b4fa-5b27-14d2" type="selectionEntryGroup" targetId="1364-e764-5169-52c9"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Schützen Panzerwagen" hidden="true" id="1f6a-f29f-89ef-723a">
       <costs>
@@ -14771,9 +14972,10 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14811,6 +15013,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14848,6 +15051,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14886,6 +15090,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -17031,6 +17236,90 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Panzer Operation" hidden="false" id="2cbe-3acd-e220-1c57">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Driver Certification" hidden="false" id="363f-486c-5746-47d1">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec73-e012-eb8f-9036"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Gunner Certification" hidden="false" id="a60f-eab0-7603-f195">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="936a-24a1-b830-3c6c"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Loader Certification" hidden="false" id="99c5-7ea9-2d89-18b9">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1849-b0cd-4f4a-becd"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="4" field="7439-07e0-82ef-c431">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ff3-b3db-1ac4-e6ee"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Leadership" hidden="false" id="8eae-c1bf-0451-6533">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="New Order" hidden="false" id="a280-c8c9-c10d-6c85">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fd7-b8de-c865-bd6c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -17171,6 +17460,255 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <attributes>
         <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
       </attributes>
+    </profile>
+    <profile name="Conscript" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="02ba-8ca3-796d-0f88">
+      <characteristics>
+        <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
+        <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
+        <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
+        <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">+1</characteristic>
+        <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
+        <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
+        <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
+        <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
+        <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
+        <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Civilian</characteristic>
+        <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+      </attributes>
+    </profile>
+    <profile name="Soldier" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="2354-6082-eb8f-a340">
+      <characteristics>
+        <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
+        <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
+        <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
+        <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">+2</characteristic>
+        <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
+        <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
+        <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
+        <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
+        <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
+        <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Military</characteristic>
+        <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+      </attributes>
+    </profile>
+    <profile name="Police" typeId="8a4d-b3bb-809a-def0" typeName="Infantry " hidden="false" id="6fb0-355d-19d5-974b">
+      <characteristics>
+        <characteristic name="MOB" typeId="9c65-64a7-48bc-a290">7</characteristic>
+        <characteristic name="RNG" typeId="d420-75d0-f7f8-0d43">-</characteristic>
+        <characteristic name="ROT" typeId="3934-2233-8d9b-1482">-</characteristic>
+        <characteristic name="ACC" typeId="bc43-b0f1-e705-ecd3">+2</characteristic>
+        <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
+        <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
+        <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
+        <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
+        <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">6</characteristic>
+        <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Civilian</characteristic>
+        <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="48f5-eb0c-400a-1d7e"/>
+      </attributes>
+    </profile>
+    <profile name="Karabiner-98m" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ec23-0a43-21d1-bb56">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Surplus, Underslung</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+      <modifiers>
+        <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="roster" childId="897a-db0b-4037-0669" shared="true" includeChildSelections="true" includeChildForces="true" childName="Volksfront Militia"/>
+          </conditions>
+        </modifier>
+        <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </profile>
+    <profile name="Maschinenpistole-49" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9f62-4f74-031c-6e8d">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Surplus</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+      <modifiers>
+        <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </profile>
+    <profile name="Gewehr-55 (Walther)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="de61-c9e9-044e-4eb6">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Sniper</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+      <modifiers>
+        <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </profile>
+    <profile name="Panzerbüchse-54(Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b583-0901-24e7-de63">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Piercing(1), Sight, Sniper, Zeroing(+1)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="Maschinenkarabiner-55" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="38cd-c532-4a4c-ea64">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight, Underslung</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="Raketen Panzerbüchse-58" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="e1e5-ef10-8524-8f41">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(88mR Raketen), Reload(1,1)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="88mmR Raketen(HEAT)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c996-26f4-06a0-92fb">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">88mmR Raketen</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing, Radius(1&quot;)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="Maschinenpistole-55" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="189b-68b0-b599-eeaf">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="Pistole-55 Luger" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="34b1-51e5-26f4-0961">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Muzzle</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+      <modifiers>
+        <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="roster" childId="897a-db0b-4037-0669" shared="true" includeChildSelections="true" includeChildForces="true" childName="Volksfront Militia"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
   </sharedProfiles>
 </gameSystem>
