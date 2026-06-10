@@ -460,13 +460,22 @@ The Himmelschloss begins play with a Launch Bay.</description>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" includeChildSelections="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" includeChildSelections="false" childName="Former Reich/ Wehrmacht"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" includeChildSelections="false" childName="Former Reich/ Waffen SS"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" includeChildSelections="false" childName="Former Reich/ Luftwaffe"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" includeChildSelections="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" includeChildSelections="false" childName="Former Reich/ Tyoler Konigsreich"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fef-3d73-cdc4-16ff" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Deserteur" id="a134-2911-83cb-305c" hidden="false">
+              <description>Forces who pick this rule are technically Kreigsherren forces and do not gain any rules based on the chosen faction.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Berufskraft" hidden="true" id="68bb-5240-ed19-84de">
           <modifiers>
@@ -1707,6 +1716,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
           </modifiers>
         </entryLink>
         <entryLink targetId="90ca-5e14-e27e-2c14" id="3ac8-e203-9b40-b5c4" type="selectionEntry" name="Conscript" hidden="true" collective="false"/>
+        <entryLink import="true" name="Merc Pool" hidden="false" id="bba5-e5a2-c4fc-d0c6" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Animals" id="d7b1-7c81-c1f1-7043" hidden="false">
@@ -3280,7 +3290,8 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
                     <conditionGroup type="or">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="22ca-be19-d310-c3f2" shared="true" includeChildSelections="true" includeChildForces="true" childName="Soldnerbüro"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd97-a633-ca8d-67bf" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kriegsherren"/>
                       </conditions>
                     </conditionGroup>
                     <conditionGroup type="or">
