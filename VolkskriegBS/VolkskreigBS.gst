@@ -1930,7 +1930,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="c444-46e3-a85f-a6e4" id="1e34-41e6-912f-edb0" type="selectionEntry" name="Bren Light Machine Gun MKIV*" hidden="true"/>
         <entryLink targetId="f4d8-821a-1264-d5d1" id="daeb-6707-f53e-5c5c" type="selectionEntry" name="Carl Gustaf Granatgevär m/50" hidden="true"/>
         <entryLink import="true" name="Type 20 Kochi Rifle" hidden="false" id="303f-7408-0eb2-4e0b" type="selectionEntry" targetId="a6d1-86b9-2c47-ce4c"/>
-        <entryLink import="true" name="Degtjarev M/27 &quot;Emma&quot;" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
+        <entryLink import="true" name="Degtjarev M27 &quot;Emma&quot;" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
@@ -1969,11 +1969,15 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="50a2-6096-5f31-daec" id="a593-9cb5-7e93-6eb2" type="selectionEntry" name="Ljungman Automatgevär m/42" hidden="true"/>
         <entryLink targetId="d855-1603-6772-8871" id="7d88-5fa2-8bfa-20b2" type="selectionEntry" name="M1923 Pederson Selfloading Rifle" hidden="true" collective="false"/>
         <entryLink targetId="77ab-d74f-ddd6-b943" id="3dd9-9f51-ab8d-776c" type="selectionEntry" name="M1917 Browning Automatic Rifle" hidden="true" collective="false"/>
-        <entryLink targetId="6249-666c-5083-d21e" id="ed9d-fbfa-66d7-e35f" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
+        <entryLink targetId="4c88-28bf-177f-9bcb" id="ed9d-fbfa-66d7-e35f" type="selectionEntry" name="MAT-49" hidden="true" collective="false"/>
         <entryLink targetId="460d-22d1-c41e-717a" id="57b9-e945-736f-05b7" type="selectionEntry" name="Carcano 91/45" hidden="true" collective="false"/>
         <entryLink targetId="cc1b-4735-90a8-49f6" id="9b81-8806-80b8-c0bd" type="selectionEntry" name="Type 2 Rifle" hidden="true" collective="false"/>
         <entryLink targetId="1ce5-db6e-3074-4d6d" id="4cf5-f398-f61e-dd2c" type="selectionEntry" name="Type 100 Submachine Gun" hidden="true" collective="false"/>
         <entryLink targetId="1167-a795-6890-c22d" id="77c8-1c4e-e3c9-d7be" type="selectionEntry" name="Fallschimjägergewehr-56" hidden="true" collective="false"/>
+        <entryLink targetId="6249-666c-5083-d21e" id="1af8-65a1-3b68-af44" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
+        <entryLink targetId="ed03-4bff-824f-1eed" id="9f10-8610-c0f3-e0b7" type="selectionEntry" name="MAS-36" hidden="true" collective="false"/>
+        <entryLink targetId="a4ff-d706-fe31-0d2c" id="b268-adf8-7b57-67cb" type="selectionEntry" name="MAS-38" hidden="true" collective="false"/>
+        <entryLink targetId="c2b9-96be-4729-bad1" id="e8fe-af8d-b7e9-783f" type="selectionEntry" name="MAS-44/56" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Sidearms/Melee" id="8d16-f577-2371-6215" hidden="false">
@@ -1997,7 +2001,9 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink import="true" name="Tokubetsuna Sozai Katana" hidden="false" id="59fa-c433-a217-1564" type="selectionEntry" targetId="103a-ce92-e943-e53e"/>
         <entryLink import="true" name="Katana" hidden="false" id="cf55-ce5b-d0d2-0199" type="selectionEntry" targetId="d8e9-6ad5-715b-011f"/>
         <entryLink targetId="1055-e984-8677-d696" id="bd96-22d0-5c8a-f76b" type="selectionEntry" name="Lahti L-35" hidden="true" collective="false"/>
-        <entryLink targetId="42b1-9a6c-7f6d-6a14" id="20f8-67b3-deae-bf93" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
+        <entryLink targetId="55f0-1ee7-51b1-f25c" id="20f8-67b3-deae-bf93" type="selectionEntry" name="Modele 1935S" hidden="true" collective="false"/>
+        <entryLink targetId="42b1-9a6c-7f6d-6a14" id="f10a-c2ba-4fde-acb9" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
+        <entryLink targetId="a1a9-a850-c159-ece5" id="77f6-bdff-bffb-a75d" type="selectionEntry" name="MAC-49" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung Frames" id="fdee-72dd-7c30-f69a" hidden="false">
@@ -3031,7 +3037,8 @@ Rüstung in this formation only have to spend the Energy cost once for both move
     </selectionEntryGroup>
     <selectionEntryGroup name="Conversion Kits" id="5223-84c3-383e-92f0" hidden="false">
       <entryLinks>
-        <entryLink targetId="8819-504d-22d9-c1a1" id="be3c-e957-2c56-38b7" type="selectionEntry" name="Huot Automatic Rifle Kit" hidden="true"/>
+        <entryLink targetId="e48e-b9ef-0ac0-3d70" id="be3c-e957-2c56-38b7" type="selectionEntry" name="Sawn-Off/Obrez" hidden="true"/>
+        <entryLink targetId="8819-504d-22d9-c1a1" id="77ff-2f3d-c10c-ba66" type="selectionEntry" name="Huot Automatic Rifle Kit" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Underslung Upgrades" id="d637-62af-5c3f-c5e3" hidden="false">
@@ -4283,6 +4290,10 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
     <rule name="Bicycle" id="43c0-4de3-1e77-3fe7" hidden="false">
       <description>Equipment with this rule:
 Is affected by the Mobility modifiers of mounted infantry.</description>
+    </rule>
+    <rule name="Holdout" id="cb91-d908-615c-ee4d" hidden="false">
+      <description>Equipment with this rule:
+May be hidden on the equipped unit for the purposes of Stealth and Contraband checks when applicable.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -7987,15 +7998,23 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="British" hidden="true" id="760a-c393-2149-d586">
+    <selectionEntry type="upgrade" import="true" name="French" hidden="true" id="760a-c393-2149-d586">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="and">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90ca-5e14-e27e-2c14" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90ca-5e14-e27e-2c14" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -10072,6 +10091,9 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="1075-0e39-748f-d427" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Carcano 91/45" hidden="true" id="460d-22d1-c41e-717a" collective="false">
       <costs>
@@ -12930,7 +12952,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,6)</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Reload(1,6)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -12939,6 +12961,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
       </profiles>
       <infoLinks>
         <infoLink name="Reload(1,6)" id="7db7-cc15-5691-c219" hidden="false" type="rule" targetId="a65e-6e34-ba99-d2a9"/>
+        <infoLink name="Holdout" id="f856-baeb-843c-fd8c" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="9mm Pocket Pistol" hidden="false" id="8f71-ef28-efcc-739f" collective="false">
@@ -12968,13 +12991,16 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
           </attributes>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Holdout" id="7487-a0a7-bd47-48bb" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bayonet" hidden="false" id="95bf-877d-1c5d-a242" collective="false">
       <costs>
@@ -13262,7 +13288,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Muzzle</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -13278,6 +13304,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
       </profiles>
       <infoLinks>
         <infoLink name="Muzzle" id="fb95-f1e6-c862-0a7c" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+        <infoLink name="Holdout" id="0021-f8dc-4d74-0f5f" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="555e-898b-d783-b3b5" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
@@ -13430,7 +13457,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Muzzle</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -13439,6 +13466,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
       </profiles>
       <infoLinks>
         <infoLink name="Muzzle" id="343b-022d-5ba3-20ce" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+        <infoLink name="Holdout" id="332b-71a0-0842-e972" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="724f-425f-066d-64ef" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
@@ -15890,6 +15918,9 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
         <infoLink name="Reload(2,1)" id="c10d-c028-9f63-16e5" hidden="false" type="rule" targetId="8b79-ab38-d8ac-0f12"/>
         <infoLink name="Double Barrel" id="39f0-f4ac-29e2-96a5" hidden="false" type="rule" targetId="1a0b-a6a9-46f0-fb8a"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="ecf1-7cca-0963-9c9e" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Focke-Achgelis fa 223 &quot;Drache" hidden="true" id="b71e-3cb0-daca-2e97">
       <constraints>
@@ -16023,7 +16054,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="Pistol, No. II, Inglis MkII*" field="name">
@@ -16090,6 +16121,9 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <infoLinks>
+        <infoLink name="Holdout" id="e57f-65e5-1ce5-1f0f" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lahti L-35" hidden="true" id="1055-e984-8677-d696">
       <costs>
@@ -16108,7 +16142,7 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="Pistol m/40" field="name">
@@ -16145,6 +16179,9 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <infoLinks>
+        <infoLink name="Holdout" id="a935-f099-a0c8-4087" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="40mm Lvakan Carriage" hidden="true" id="bc75-694f-67ff-035e">
       <costs>
@@ -16317,6 +16354,9 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="9b95-b318-d7a2-2c72" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Type 100 Submachine Gun" hidden="true" id="1ce5-db6e-3074-4d6d">
       <costs>
@@ -16693,6 +16733,301 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
           </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sawn-Off/Obrez" hidden="true" id="e48e-b9ef-0ac0-3d70">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+      </costs>
+      <profiles>
+        <profile name="Sawn-Off/Obrez" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6fe0-083a-ced5-0767">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">*</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">6&quot;*</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2*</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Conversion Kit</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ed03-4bff-824f-1eed" shared="true" childName="MAS-36"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4b4c-74ef-eadf-f5c3" shared="true" childName="Karabiner-98m"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="460d-22d1-c41e-717a" shared="true" childName="Carcano 91/45"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1b99-9c4f-0b78-e837" shared="true" childName="Type 99 Rifle"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0dd5-2401-8c4c-1be4" shared="true" childName="Double Barrel Shotgun"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6249-666c-5083-d21e" shared="true" childName="870 Shotgun"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5701-bfae-cfac-792e" shared="true" childName="M1903 Springfield Rifle"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="48f0-d516-70c6-09fc" shared="true" childName="Ross MKIV*"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Holdout" id="3e0f-7237-9461-81dc" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
+      </infoLinks>
+      <rules>
+        <rule name="Sawn-Off/Obrez" id="604b-fc0d-e44e-8444" hidden="false">
+          <description>*This upgrade sets the Mobility of the weapon to -, its range to 6”, and its Accuracy to +2.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="MAS-36" hidden="true" id="ed03-4bff-824f-1eed">
+      <infoLinks>
+        <infoLink name="Surplus" id="898e-2d1c-6161-de6d" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
+      <profiles>
+        <profile name="MAS-36" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6e38-89f4-4d5d-caba">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="240a-0914-6c1c-a96c" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="MAS-38" hidden="true" id="a4ff-d706-fe31-0d2c">
+      <profiles>
+        <profile name="MAS-38" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="2beb-945b-4c5e-fdb9">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">20&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="MAS-44/56" hidden="true" id="c2b9-96be-4729-bad1">
+      <profiles>
+        <profile name="MAS-44/56" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="a768-6596-a45e-2def">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Sight</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Sight" id="4602-7b59-13f0-d98f" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="441b-4403-f623-c511" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="MAT-49" hidden="true" id="4c88-28bf-177f-9bcb">
+      <profiles>
+        <profile name="MAT-49" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="fa50-1cc6-5101-2383">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="MAC-49" hidden="true" id="a1a9-a850-c159-ece5">
+      <infoLinks>
+        <infoLink name="Holdout" id="1f8e-03fb-e602-c90e" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="MAC-49" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="844e-2a6d-9629-ee58">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="7"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Modele 1935S" hidden="true" id="55f0-1ee7-51b1-f25c">
+      <infoLinks>
+        <infoLink name="Surplus" id="3e4c-31aa-aac2-448c" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Holdout" id="0a31-d9a1-2f02-4b70" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
+      </infoLinks>
+      <profiles>
+        <profile name="MAC-49" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="eb60-576a-987e-f4f4">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="4"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="British" hidden="true" id="ab30-426c-b183-a33a">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90ca-5e14-e27e-2c14" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
