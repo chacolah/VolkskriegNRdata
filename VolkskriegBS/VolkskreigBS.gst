@@ -1930,7 +1930,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <entryLink targetId="c444-46e3-a85f-a6e4" id="1e34-41e6-912f-edb0" type="selectionEntry" name="Bren Light Machine Gun MKIV*" hidden="true"/>
         <entryLink targetId="f4d8-821a-1264-d5d1" id="daeb-6707-f53e-5c5c" type="selectionEntry" name="Carl Gustaf Granatgevär m/50" hidden="true"/>
         <entryLink import="true" name="Type 20 Kochi Rifle" hidden="false" id="303f-7408-0eb2-4e0b" type="selectionEntry" targetId="a6d1-86b9-2c47-ce4c"/>
-        <entryLink import="true" name="Degtjarev M27 &quot;Emma&quot;" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
+        <entryLink import="true" name="Degtjarev M/27 &quot;Emma&quot;" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
@@ -3031,8 +3031,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
     </selectionEntryGroup>
     <selectionEntryGroup name="Conversion Kits" id="5223-84c3-383e-92f0" hidden="false">
       <entryLinks>
-        <entryLink targetId="1507-5300-ccaf-d1bc" id="be3c-e957-2c56-38b7" type="selectionEntry" name="Sawn Off/Obrez" hidden="true"/>
-        <entryLink targetId="8819-504d-22d9-c1a1" id="04dc-a6fa-fd2f-3032" type="selectionEntry" name="Huot Automatic Rifle Kit" hidden="true"/>
+        <entryLink targetId="8819-504d-22d9-c1a1" id="be3c-e957-2c56-38b7" type="selectionEntry" name="Huot Automatic Rifle Kit" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Underslung Upgrades" id="d637-62af-5c3f-c5e3" hidden="false">
@@ -4284,10 +4283,6 @@ Cannot be equipped on weapons with the Lightning, Freeze or Flame rules.</descri
     <rule name="Bicycle" id="43c0-4de3-1e77-3fe7" hidden="false">
       <description>Equipment with this rule:
 Is affected by the Mobility modifiers of mounted infantry.</description>
-    </rule>
-    <rule name="Holdout" id="10e9-ca70-132e-7c5a" hidden="false">
-      <description>Equipment with this rule:
-May be hidden on the equipped unit for the purposes of Stealth and Contraband checks when applicable.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -10077,9 +10072,6 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </attributes>
         </profile>
       </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Sawn Off/Obrez" hidden="false" id="6c7b-0ab5-8ea5-5ca7" type="selectionEntry" targetId="1507-5300-ccaf-d1bc"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Carcano 91/45" hidden="true" id="460d-22d1-c41e-717a" collective="false">
       <costs>
@@ -12938,7 +12930,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Reload(1,6)</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,6)</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -12946,8 +12938,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Holdout" id="7db7-cc15-5691-c219" hidden="false" type="rule" targetId="10e9-ca70-132e-7c5a"/>
-        <infoLink name="Reload(1,6)" id="6a67-389f-115f-c1fe" hidden="false" type="rule" targetId="a65e-6e34-ba99-d2a9"/>
+        <infoLink name="Reload(1,6)" id="7db7-cc15-5691-c219" hidden="false" type="rule" targetId="a65e-6e34-ba99-d2a9"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="9mm Pocket Pistol" hidden="false" id="8f71-ef28-efcc-739f" collective="false">
@@ -12977,16 +12968,13 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
           </attributes>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink name="Holdout" id="63d7-427f-fa4d-c553" hidden="false" type="rule" targetId="10e9-ca70-132e-7c5a"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bayonet" hidden="false" id="95bf-877d-1c5d-a242" collective="false">
       <costs>
@@ -12998,8 +12986,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       </constraints>
       <infoLinks>
         <infoLink targetId="3ad3-93a8-3895-cd15" id="4289-123b-e4be-e533" type="profile" name="Bayonet" hidden="false"/>
-        <infoLink name="Holdout" id="bdbb-d7f6-b525-72ed" hidden="false" type="rule" targetId="10e9-ca70-132e-7c5a"/>
-        <infoLink name="Bayonet" id="4004-4534-205e-8525" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
+        <infoLink name="Bayonet" id="bdbb-d7f6-b525-72ed" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blitzwerfenpistole-59" hidden="true" id="e37a-3325-d765-68b3" collective="false">
@@ -13275,7 +13262,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Muzzle</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -13290,8 +13277,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Holdout" id="fb95-f1e6-c862-0a7c" hidden="false" type="rule" targetId="10e9-ca70-132e-7c5a"/>
-        <infoLink name="Muzzle" id="e0ef-b7b7-274f-826a" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+        <infoLink name="Muzzle" id="fb95-f1e6-c862-0a7c" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="555e-898b-d783-b3b5" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
@@ -13444,7 +13430,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Muzzle</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -13452,8 +13438,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Holdout" id="343b-022d-5ba3-20ce" hidden="false" type="rule" targetId="10e9-ca70-132e-7c5a"/>
-        <infoLink name="Muzzle" id="d328-ca3c-3990-286c" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+        <infoLink name="Muzzle" id="343b-022d-5ba3-20ce" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="724f-425f-066d-64ef" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
@@ -15905,9 +15890,6 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <infoLink name="Reload(2,1)" id="c10d-c028-9f63-16e5" hidden="false" type="rule" targetId="8b79-ab38-d8ac-0f12"/>
         <infoLink name="Double Barrel" id="39f0-f4ac-29e2-96a5" hidden="false" type="rule" targetId="1a0b-a6a9-46f0-fb8a"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Conversion Kits" hidden="false" id="0a61-fc94-c647-5f67" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Focke-Achgelis fa 223 &quot;Drache" hidden="true" id="b71e-3cb0-daca-2e97">
       <constraints>
@@ -16041,7 +16023,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <modifiers>
             <modifier type="set" value="Pistol, No. II, Inglis MkII*" field="name">
@@ -16108,9 +16090,6 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-      <infoLinks>
-        <infoLink name="Holdout" id="648f-7d0b-b5eb-9c6a" hidden="false" type="rule" targetId="10e9-ca70-132e-7c5a"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lahti L-35" hidden="true" id="1055-e984-8677-d696">
       <costs>
@@ -16129,7 +16108,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
           <modifiers>
             <modifier type="set" value="Pistol m/40" field="name">
@@ -16166,9 +16145,6 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-      <infoLinks>
-        <infoLink name="Holdout" id="a891-b319-2320-9683" hidden="false" type="rule" targetId="10e9-ca70-132e-7c5a"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="40mm Lvakan Carriage" hidden="true" id="bc75-694f-67ff-035e">
       <costs>
@@ -16341,9 +16317,6 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditionGroups>
         </modifier>
       </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Conversion Kits" hidden="false" id="6d60-82ad-ba34-faf4" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Type 100 Submachine Gun" hidden="true" id="1ce5-db6e-3074-4d6d">
       <costs>
@@ -16723,47 +16696,6 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Sawn Off/Obrez" hidden="true" id="1507-5300-ccaf-d1bc">
-      <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
-      </costs>
-      <profiles>
-        <profile name="Sawn Off/Obrez" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="90f3-9bcd-491c-6252">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-*</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">6&quot;*</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2*</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Weapon Conversion</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Sawn Off/Obrez</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Holdout" id="07e8-adba-fa91-0e99" hidden="false" type="rule" targetId="10e9-ca70-132e-7c5a"/>
-      </infoLinks>
-      <rules>
-        <rule name="Sawn Off/Obrez" id="0a3b-481c-5519-81fb" hidden="false">
-          <description>*This upgrade sets the Mobility of the weapon to -, its range to 6”, and its Accuracy to +2.</description>
-        </rule>
-      </rules>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="945c-6038-04f2-788e" childId="any" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -16899,7 +16831,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
         <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
         <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Underslung, Melee</characteristic>
-        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bayonet, Holdout</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bayonet</characteristic>
       </characteristics>
       <attributes>
         <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
