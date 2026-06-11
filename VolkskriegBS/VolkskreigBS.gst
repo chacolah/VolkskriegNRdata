@@ -7412,9 +7412,10 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -7479,6 +7480,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -7528,6 +7530,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
               <conditionGroups>
