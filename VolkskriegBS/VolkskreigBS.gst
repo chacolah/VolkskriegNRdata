@@ -5005,6 +5005,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Tyroler Konigsreich"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -5048,6 +5049,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Tyroler Konigsreich"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -5396,6 +5398,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -5442,6 +5445,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -5487,6 +5491,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -5529,6 +5534,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -5572,6 +5578,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Tyroler Konigsreich"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -7938,6 +7945,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -8403,6 +8411,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -9014,6 +9023,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <infoLink name="Battery(4)" id="3d77-8bb1-c887-b37d" hidden="false" type="rule" targetId="10f0-d0bf-43dc-b2eb"/>
         <infoLink name="Recharge(1)" id="d853-f4cb-32b0-f180" hidden="false" type="rule" targetId="0bed-6621-7605-2518"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rifle Grenade(HE)" hidden="true" id="a304-8a2b-04f4-b470">
       <costs>
@@ -10452,6 +10472,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <entryLinks>
         <entryLink import="true" name="Conversion Kits" hidden="false" id="1075-0e39-748f-d427" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7fc5-ecb6-d3d8-516f" shared="true" childName="North American Armed Forces/ Three Cities Confederacy"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f6c7-9982-580a-a0a0" shared="true" childName="North American Armed Forces/ Patriot Militias"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Carcano 91/45" hidden="true" id="460d-22d1-c41e-717a" collective="false">
       <costs>
@@ -10489,6 +10521,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="91bd-5680-21e1-3c5c" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="859c-4a12-57fd-1003" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" childName="Former Reich/ Tyoler Konigsreich"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fallschimjägergewehr-56" hidden="true" id="1167-a795-6890-c22d" collective="false">
       <modifiers>
@@ -10578,6 +10622,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="4b70-7a00-920f-f467" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="d6f9-d6d2-78dc-3c1a" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gewehr-55 (Gustloff)" hidden="true" id="47e4-9a78-ced8-0cf1" collective="false">
       <modifiers>
@@ -10687,6 +10742,19 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <infoLinks>
         <infoLink name="Homemade" id="97d8-d61e-0cca-d3be" hidden="false" type="rule" targetId="9b94-3787-34f1-61bb"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7fc5-ecb6-d3d8-516f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="North American Armed Forces/ Three Cities Confederacy"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f6c7-9982-580a-a0a0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="North American Armed Forces/ Patriot Militias"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="GM M1944 Hyde Machine Gun" hidden="true" id="d246-ddfe-a1b5-b8e1" collective="false">
       <costs>
@@ -10715,6 +10783,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </attributes>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7fc5-ecb6-d3d8-516f" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="North American Armed Forces/ Three Cities Confederacy"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kampfpistole-50" hidden="true" id="d589-cb62-c332-d064" collective="false">
       <modifiers>
@@ -10828,6 +10908,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="25d6-6402-3d17-c2a3" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="e2f6-08f6-3ac2-f3cd" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kylsprutegevär M/51" hidden="true" id="a3a7-1373-1865-de74">
       <costs>
@@ -10861,6 +10953,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <infoLink name="Surplus" id="470d-6cf6-16f7-67e7" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
         <infoLink name="Energy(1)" id="d525-6b01-b848-81dc" hidden="false" type="rule" targetId="98a2-2a4b-cbba-9b7b"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ljungman Automatfallskärmsjägaregevär m/47" hidden="true" id="1f17-e051-279a-3a80">
       <costs>
@@ -10899,6 +11003,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="6fcc-c45d-dc99-92f6" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="2dcf-dd79-4ff7-7d52" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ljungman Automatgevär m/42" hidden="true" id="50a2-6096-5f31-daec">
       <costs>
@@ -10935,6 +11051,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="cb62-80da-489e-d555" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="c833-960a-5d41-70e7" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M1903 Springfield Rifle" hidden="true" id="5701-bfae-cfac-792e" collective="false">
       <costs>
@@ -10970,6 +11098,19 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Conversion Kits" hidden="false" id="6c2e-26b8-2996-f1df" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="598f-0c00-0af3-66a1" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7fc5-ecb6-d3d8-516f" shared="true" includeChildSelections="true" childName="North American Armed Forces/ Three Cities Confederacy"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" includeChildSelections="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f6c7-9982-580a-a0a0" shared="true" includeChildSelections="true" childName="North American Armed Forces/ Patriot Militias"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M1917 Browning Automatic Rifle" hidden="true" id="77ab-d74f-ddd6-b943" collective="false">
       <costs>
@@ -11001,6 +11142,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <infoLinks>
         <infoLink name="Bipod(1)" id="08fe-1de2-fcec-762c" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" includeChildSelections="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M1923 Pederson Selfloading Rifle" hidden="true" id="d855-1603-6772-8871" collective="false">
       <costs>
@@ -11035,6 +11187,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <entryLinks>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="21e3-e44f-00ed-ca1d" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" includeChildSelections="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M1939 Johnson Semi Auto Rifle" hidden="true" id="fbea-06fe-595f-4988" collective="false">
       <costs>
@@ -11069,6 +11232,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <entryLinks>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="d885-b89f-1e7a-5307" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" includeChildSelections="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="M1946 Johnson Automatic Rifle" hidden="true" id="eee1-17fb-fdb2-727a" collective="false">
       <costs>
@@ -11105,6 +11279,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="2c58-bf35-0d64-1dc3" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="ac53-0ac5-f6a2-a54b" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" includeChildSelections="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="MAB 38 / MP739(i)" hidden="true" id="6ba1-6ce5-b154-6736" collective="false">
       <costs>
@@ -11136,6 +11321,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <infoLinks>
         <infoLink name="Bayonet" id="7b1a-ad00-1982-82db" hidden="false" type="rule" targetId="d588-67e4-e6d5-e8f0"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Tyroler Konigsreich"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="MAB 38/46 / MP739(i) Aust. C" hidden="true" id="3969-91ea-da3c-b90b" collective="false">
       <costs>
@@ -11167,6 +11364,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </attributes>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Tyroler Konigsreich"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maschinenkarabiner-55" hidden="true" id="5173-7b1f-e523-d07c" collective="false">
       <costs>
@@ -11280,9 +11489,14 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="13a4-65c1-f62e-93fb" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" includeChildSelections="true" childName="Campaign Manager"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="13a4-65c1-f62e-93fb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -11321,9 +11535,14 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="13a4-65c1-f62e-93fb" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" includeChildSelections="true" childName="Campaign Manager"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="13a4-65c1-f62e-93fb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -11644,6 +11863,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <entryLinks>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="ac2f-0e64-7a7c-8783" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Suomi M45" hidden="true" id="e3d5-0647-82de-ee24" collective="false">
       <costs>
@@ -11678,6 +11909,18 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <entryLinks>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="5a1a-563a-c9aa-dafd" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Volksssturmgewehr-60" hidden="true" id="bf68-8ed8-b6aa-d91e" collective="false">
       <costs>
@@ -12256,6 +12499,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -12994,7 +13238,12 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or"/>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
@@ -13012,7 +13261,12 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or"/>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
@@ -13328,6 +13582,20 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </attributes>
         </profile>
       </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f6c7-9982-580a-a0a0" shared="true" childName="North American Armed Forces/ Patriot Militias"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="11.25mm Aut. Pistol m/1915 “Konsberg Colten”" field="name"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="General Electric M1958 Amplified Light Pistol" hidden="true" id="1043-20ce-01ff-41b0" collective="false">
       <costs>
@@ -13364,6 +13632,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <entryLinks>
         <entryLink import="true" name="Ordnance(Blitz Cyinder)" hidden="false" id="ebbe-d03d-bae6-b272" type="selectionEntryGroup" targetId="645b-4c17-563a-1542"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Klappspaten 38" hidden="true" id="444d-2a02-98a7-d692" collective="false">
       <costs>
@@ -14422,6 +14701,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -16171,6 +16451,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -16208,6 +16489,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -16381,6 +16663,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <modifier type="set" value="false" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
           </conditions>
         </modifier>
@@ -16874,6 +17157,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
               </conditions>
             </conditionGroup>
@@ -16951,6 +17235,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
           </conditions>
         </modifier>
@@ -17358,9 +17643,10 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" childName="Former Reich/ Volksfront-Volkssturm"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" childName="Former Reich/ Wehrmacht"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
