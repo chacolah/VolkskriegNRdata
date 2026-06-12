@@ -2085,6 +2085,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
         <entryLink targetId="f4d8-821a-1264-d5d1" id="daeb-6707-f53e-5c5c" type="selectionEntry" name="Carl Gustaf Granatgevär m/50" hidden="true"/>
         <entryLink import="true" name="Type 20 Kochi Rifle" hidden="false" id="303f-7408-0eb2-4e0b" type="selectionEntry" targetId="a6d1-86b9-2c47-ce4c"/>
         <entryLink import="true" name="Degtjarev M27 &quot;Emma&quot;" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
+        <entryLink import="true" name="vz.39/l.MG39(t)" hidden="false" id="ddb0-3c17-177e-ed9f" type="selectionEntry" targetId="1650-da94-b117-5d67"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
@@ -17333,6 +17334,45 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="vz.39/l.MG39(t)" hidden="true" id="1650-da94-b117-5d67">
+      <profiles>
+        <profile name="vz.39" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c8f1-a3fd-e2cb-5160">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" childName="Former Reich/ Wehrmacht"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bipod(1)" id="0fcf-837a-dde3-8306" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+        <infoLink name="Surplus" id="956b-36e3-ca01-fd16" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
