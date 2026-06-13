@@ -781,7 +781,7 @@ The Himmelschloss begins play with an Artillery Bay.</description>
         <profile name="Fireteam" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="84d3-1bcd-f163-6836"/>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="a429-92a0-3658-f03f" name="Lone Wolf" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a429-92a0-3658-f03f" name="K9 Team" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="d223-9ee8-d9db-4275" name="Generic Formation" hidden="false" targetId="225b-b208-7d55-5943" primary="true"/>
       </categoryLinks>
@@ -789,16 +789,33 @@ The Himmelschloss begins play with an Artillery Bay.</description>
         <entryLink id="fef3-a732-89fc-c293" name="Infantry Models" hidden="false" collective="false" import="true" targetId="7c2e-83c8-444d-3436" type="selectionEntryGroup">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d940-f7ca-6a58-4f53"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba2e-87a5-825b-7794"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ba2e-87a5-825b-7794"/>
           </constraints>
           <categoryLinks>
             <categoryLink id="c473-62e8-b61f-b8c9" name="Generic Formation" hidden="false" targetId="225b-b208-7d55-5943" primary="false"/>
           </categoryLinks>
         </entryLink>
+        <entryLink import="true" name="Attack Dog" hidden="false" id="795b-a697-1e15-0022" type="selectionEntry" targetId="1bbf-46f3-c06d-53a6">
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="814a-a30f-42a9-5f8f"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e074-e401-c508-9c54"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
-        <profile name="Lone Wolf" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="2dfa-2ef1-fce2-e0b7"/>
+        <profile name="Dog Handler" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="2dfa-2ef1-fce2-e0b7"/>
       </profiles>
+      <modifiers>
+        <modifier type="add" value="At least one Infantry Model must have Houndmaster Training" field="error">
+          <conditionGroups>
+            <conditionGroup type="not">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="2809-e2be-a197-1fc7" shared="true" includeChildSelections="true" childName="Houndmaster Training"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Flight Crew" hidden="false" id="2041-fd56-a5e5-f4ec">
       <categoryLinks>
@@ -1348,6 +1365,36 @@ If the formation is equipped with a Car, then they may grant up to 2 Heavy weapo
 If the formation is equipped with a Truck with the Flatbed rule, they may grant up to 4 Heavy weapons or 1 Towed Weapon Mount with a Light Panzer weapon, and up to 12 Explosives, Primary Arms, or Ordnance the Holdout rule.</description>
         </rule>
       </rules>
+      <profiles>
+        <profile name="Smuggler Team" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="1be5-dccc-38e1-f834">
+          <characteristics>
+            <characteristic name="Rules" typeId="a7a5-36ce-5500-d7b1"/>
+            <characteristic name="Infantry Requirement" typeId="3b68-03ba-341d-cba1"/>
+            <characteristic name="Training Requirement" typeId="1a8d-bc55-064d-ad46"/>
+            <characteristic name="Equipment Requirement" typeId="1e9e-6f37-6af9-1a06"/>
+            <characteristic name="Restrictions" typeId="1a05-ac63-ac8c-6210"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="3e42-913a-1b62-da8b" name="Lone Wolf" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="0481-e941-6dc8-39fb" name="Generic Formation" hidden="false" targetId="225b-b208-7d55-5943" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="70a5-c6fe-a6c8-2bb1" name="Infantry Models" hidden="false" collective="false" import="true" targetId="7c2e-83c8-444d-3436" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="15db-7bda-f880-1fd5"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dc7-51d2-e457-b589"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="019f-9cbf-2da5-b0d0" name="Generic Formation" hidden="false" targetId="225b-b208-7d55-5943" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Lone Wolf" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="af5f-e6ce-3a4f-547a"/>
+      </profiles>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -12384,6 +12431,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
               </conditions>
             </conditionGroup>
