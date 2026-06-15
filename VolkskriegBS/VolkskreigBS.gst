@@ -144,7 +144,18 @@
         <categoryLink id="b3f9-f222-b6fb-80f9" name="Faction Bookkeeping" hidden="false" targetId="f5ad-1da5-2ad4-cb2e" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="fa90-877f-b3dd-7aef" name="Equipped Weapons" hidden="false" collective="false" import="true" targetId="be23-c331-259d-7740" type="selectionEntryGroup"/>
+        <entryLink id="fa90-877f-b3dd-7aef" name="Towed Weapon Mounts" hidden="false" collective="false" import="true" targetId="2822-bad8-11ab-e301" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Vehicle" hidden="false" id="ab37-7282-e79d-2f9d" type="selectionEntryGroup" targetId="1d47-0b9e-b263-8bd2"/>
+        <entryLink import="true" name="Sidearms/Melee" hidden="false" id="5bde-f4ce-771a-4dc5" type="selectionEntryGroup" targetId="8d16-f577-2371-6215"/>
+        <entryLink import="true" name="Panzer" hidden="false" id="6948-2f25-82ee-b7e7" type="selectionEntryGroup" targetId="31e1-cfc2-0836-5b24"/>
+        <entryLink import="true" name="Aircraft" hidden="false" id="a502-cf7c-6592-b586" type="selectionEntryGroup" targetId="dd29-f2d3-2114-c0de"/>
+        <entryLink import="true" name="Animals(Beasts)" hidden="false" id="07c3-db1d-e1fa-d1f1" type="selectionEntryGroup" targetId="d7b1-7c81-c1f1-7043"/>
+        <entryLink import="true" name="Animals(Mounts)" hidden="false" id="ed15-561c-a928-dd34" type="selectionEntryGroup" targetId="11da-0b39-0be1-bdd0"/>
+        <entryLink import="true" name="Bicycle" hidden="false" id="cec0-4cea-fab9-7a5f" type="selectionEntryGroup" targetId="fec4-1eb8-df2e-556c"/>
+        <entryLink id="08f5-afe0-f396-2c70" name="Primary Arms" hidden="false" collective="false" import="true" targetId="4fb9-7410-611a-138f" type="selectionEntryGroup"/>
+        <entryLink id="cc8e-0a04-9a87-7d06" name="Heavy Weapons" hidden="false" collective="false" import="true" targetId="580e-77ca-e747-456b" type="selectionEntryGroup"/>
+        <entryLink id="15a4-633b-6ff6-6262" name="Rüstung Weapons" hidden="false" collective="false" import="true" targetId="f4bd-58c2-e0c3-a665" type="selectionEntryGroup"/>
+        <entryLink id="e262-b387-dafd-d8f6" name="Rüstung" hidden="false" collective="false" import="true" targetId="d2d5-bcfa-096f-b605" type="selectionEntryGroup"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Rm Count" hidden="false" id="09c1-9bbb-77d1-7a37" defaultAmount="0">
@@ -1398,7 +1409,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="be23-c331-259d-7740" name="Equipped Weapons" hidden="false" collective="false" import="true" collapsible="true">
+    <selectionEntryGroup id="be23-c331-259d-7740" name="Equipped Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
       <modifierGroups>
         <modifierGroup>
           <modifiers>
@@ -1443,7 +1454,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
       </constraints>
       <comment>Master weapon list for entire system + all factions</comment>
       <entryLinks>
-        <entryLink import="true" name="Heavy Weapons" hidden="false" id="5d6f-cca0-90fc-681f" type="selectionEntryGroup" targetId="580e-77ca-e747-456b">
+        <entryLink import="true" name="Heavy Weapons" hidden="false" id="5d6f-cca0-90fc-681f" type="selectionEntryGroup" targetId="580e-77ca-e747-456b" sortIndex="3">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -1452,7 +1463,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Primary Arms" hidden="false" id="7429-8b9d-91b7-247a" type="selectionEntryGroup" targetId="4fb9-7410-611a-138f">
+        <entryLink import="true" name="Primary Arms" hidden="false" id="7429-8b9d-91b7-247a" type="selectionEntryGroup" targetId="4fb9-7410-611a-138f" sortIndex="2">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -1461,7 +1472,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Sidearms/Melee" hidden="false" id="90ad-d44d-7afb-9fe1" type="selectionEntryGroup" targetId="8d16-f577-2371-6215">
+        <entryLink import="true" name="Sidearms/Melee" hidden="false" id="90ad-d44d-7afb-9fe1" type="selectionEntryGroup" targetId="8d16-f577-2371-6215" sortIndex="1">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -1470,8 +1481,8 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Sturmritter Weapons" hidden="false" id="0efd-20ac-ebd3-1d0d" type="selectionEntryGroup" targetId="27d9-fc25-bdc9-23f2"/>
-        <entryLink import="true" name="Rüstung Weapons" hidden="false" id="e2f9-1d0b-5d60-bf33" type="selectionEntryGroup" targetId="f4bd-58c2-e0c3-a665">
+        <entryLink import="true" name="Sturmritter Weapons" hidden="false" id="0efd-20ac-ebd3-1d0d" type="selectionEntryGroup" targetId="27d9-fc25-bdc9-23f2" sortIndex="5"/>
+        <entryLink import="true" name="Rüstung Weapons" hidden="false" id="e2f9-1d0b-5d60-bf33" type="selectionEntryGroup" targetId="f4bd-58c2-e0c3-a665" sortIndex="4">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -1767,9 +1778,8 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
         <entryLink import="true" name="Merc Pool" hidden="false" id="bba5-e5a2-c4fc-d0c6" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Animals" id="d7b1-7c81-c1f1-7043" hidden="false">
+    <selectionEntryGroup name="Animals(Beasts)" id="d7b1-7c81-c1f1-7043" hidden="false">
       <entryLinks>
-        <entryLink targetId="8498-cf7a-983d-94dc" id="1589-e73a-a028-7e43" type="selectionEntry" name="Horse" hidden="true"/>
         <entryLink targetId="1bbf-46f3-c06d-53a6" id="c618-96f1-f7fc-068d" type="selectionEntry" name="Attack Dog" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -1779,6 +1789,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Vehicle Chassis" hidden="false" id="10b5-58c2-63e3-855b" type="selectionEntryGroup" targetId="1a77-4918-f32e-5dfb"/>
+        <entryLink import="true" name="Surplus Vehicles" hidden="false" id="c9d4-d99e-d8df-2cdb" type="selectionEntryGroup" targetId="1b4a-ac83-f867-5a6d"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer" id="31e1-cfc2-0836-5b24" hidden="false">
@@ -3669,6 +3680,40 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
           </modifiers>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Mounts" id="5759-4f93-7001-c361" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Bicycle" hidden="false" id="7fa3-10d5-1c1d-3d7b" type="selectionEntryGroup" targetId="fec4-1eb8-df2e-556c"/>
+        <entryLink import="true" name="Motorcycle" hidden="false" id="821d-e1fb-fa80-ef5e" type="selectionEntryGroup" targetId="61c1-9d80-aced-71df"/>
+        <entryLink import="true" name="Animals(Mounts)" hidden="false" id="2896-8c72-ad81-7b9c" type="selectionEntryGroup" targetId="11da-0b39-0be1-bdd0"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c228-5d31-2caa-5079" shared="true" childName="Bicycle Team"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2041-fd56-a5e5-f4ec" shared="true" childName="Flight Crew"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f97-b5ec-9e54-c502" shared="true" childName="Tank Crew"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="301f-9052-2eb1-2a70" shared="true" childName="Panzer Begleit"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4db9-63dc-45d0-8165" shared="true" childName="Motorized Fireteam"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="481e-4081-4e1c-a16b" shared="true" childName="Fallschirmkradschutzen Team"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90be-0b30-7a5e-db8b" shared="true" childName="Fallschirmpanzergruppe"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a307-7d66-469f-0b03" shared="true" childName="&quot;Haubitze zu Fuss&quot; Gruppe"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a429-92a0-3658-f03f" shared="true" childName="K9 Team"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8ef-4ab6-5867-4f94"/>
+      </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Animals(Mounts)" id="11da-0b39-0be1-bdd0" hidden="false">
+      <entryLinks>
+        <entryLink targetId="8498-cf7a-983d-94dc" id="0d2e-40c9-503d-8f42" type="selectionEntry" name="Horse" hidden="true"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -7557,12 +7602,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </constraints>
         </entryLink>
         <entryLink id="631c-587b-61d7-d156" name="Equipped Weapons" hidden="false" collective="false" import="true" targetId="be23-c331-259d-7740" type="selectionEntryGroup"/>
-        <entryLink id="9058-6972-f1f2-2e5e" name="Uniform" hidden="false" collective="false" import="true" targetId="cf88-434c-a1b5-c58c" type="selectionEntryGroup">
+        <entryLink id="9058-6972-f1f2-2e5e" name="Mounts" hidden="false" collective="false" import="true" targetId="5759-4f93-7001-c361" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f05f-d602-9a0c-4274" type="max"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Proficiencies" hidden="false" id="19d5-12dd-23b0-27b0" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
+        <entryLink id="3512-f74f-538a-f569" name="Uniform" hidden="false" collective="false" import="true" targetId="cf88-434c-a1b5-c58c" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9927-4cc9-063c-dded" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
@@ -7611,6 +7661,11 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </constraints>
         </entryLink>
         <entryLink import="true" name="Proficiencies" hidden="false" id="02dc-442c-da0b-e380" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
+        <entryLink import="true" name="Mounts" hidden="false" id="62f3-1f68-2bd8-3f14" collective="false" targetId="5759-4f93-7001-c361" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e023-6827-ecfc-ea0b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
@@ -7674,12 +7729,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </constraints>
         </entryLink>
         <entryLink import="true" name="Equipped Weapons" hidden="false" id="5266-0015-83c6-c486" collective="false" targetId="be23-c331-259d-7740" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Uniform" hidden="false" id="749b-005d-a51a-1c9d" collective="false" targetId="cf88-434c-a1b5-c58c" type="selectionEntryGroup">
+        <entryLink import="true" name="Mounts" hidden="false" id="749b-005d-a51a-1c9d" collective="false" targetId="5759-4f93-7001-c361" type="selectionEntryGroup">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d25-68c7-84b2-47a6" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Proficiencies" hidden="false" id="17c4-8633-041f-e82a" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
+        <entryLink import="true" name="Uniform" hidden="false" id="b93d-c1c1-a05b-ab35" collective="false" targetId="cf88-434c-a1b5-c58c" type="selectionEntryGroup">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d130-4f1f-cff4-f569" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
