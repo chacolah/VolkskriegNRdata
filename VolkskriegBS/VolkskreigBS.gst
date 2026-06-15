@@ -1563,6 +1563,36 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Funksteuerungsteam" hidden="true" id="4bcb-5c3b-a842-0c6e">
+      <categoryLinks>
+        <categoryLink name="Faction Formations" hidden="false" id="1662-5838-28a4-2e77" targetId="c74a-6498-63d2-89fb" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Drohne Operators" id="66eb-8ae3-682d-18cf" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="false" id="f97a-b694-81ba-ad3c" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+            <entryLink import="true" name="Police" hidden="false" id="34fb-23b3-6029-d95d" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+            <entryLink import="true" name="Soldier" hidden="false" id="06f7-6526-477c-d805" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f6f2-a556-60ad-87d3"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e02e-f158-0dda-1790"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="be23-c331-259d-7740" name="Equipped Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
@@ -1760,6 +1790,24 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="{this} must be equipped with Drohne equipment." field="error" scope="parent" affects="recursive">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4bcb-5c3b-a842-0c6e" shared="true" childName="Funksteuerungsteam"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="7d2d-630c-ef6c-545e" shared="true" includeChildSelections="true" childName="Funkbienen Rüstungarray"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="a1eb-2636-cae5-c325" shared="true" includeChildSelections="true" childName="Drohnenträger 59"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="82dc-4710-511e-df9a" shared="true" includeChildSelections="true" childName="Funkkontrol-Rucksack 59"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="d989-b48f-e6ca-0175" name="Backpack Equipment" hidden="false" collective="false" import="true">
@@ -1835,8 +1883,101 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="83c3-1e17-fe71-4d13" id="a1a7-0eea-604e-83fc" type="selectionEntry" name="Parachute" hidden="false"/>
         <entryLink targetId="b215-d942-0761-c727" id="f3cf-421d-e05a-9b0d" type="selectionEntry" name="Medical Bag" hidden="false"/>
         <entryLink targetId="8b90-855d-f3a8-4b47" id="36a4-bfb9-974b-8f74" type="selectionEntry" name="Mechanic&apos;s Toolkit" hidden="false"/>
-        <entryLink targetId="c617-2a0b-8212-008c" id="3683-0660-45cb-ec84" type="selectionEntry" name="Astrolite Smock" hidden="true"/>
+        <entryLink targetId="c617-2a0b-8212-008c" id="3683-0660-45cb-ec84" type="selectionEntry" name="Astrolite Smock" hidden="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e880-3073-a03e-e58e"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Funkkontrol-Rucksack 59" hidden="true" id="82dc-4710-511e-df9a">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Funkkontrol-Rucksack 59" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ecf0-3fbe-d656-07c3">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Backpack</characteristic>
+                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">RC(1,36&quot;)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="RC(1,36&quot;)" id="4ba7-b9cc-25ce-12a4" hidden="false" type="rule" targetId="660a-0f17-4943-01a9"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cc2-cb08-bed1-3b85"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Drohnenträger 59" hidden="true" id="a1eb-2636-cae5-c325">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Drohnenträger 59" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="bdac-37af-7097-af72">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Backpack</characteristic>
+                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Carrier(1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Carrier(1)" id="4c67-de99-bf86-511c" hidden="false" type="rule" targetId="91f5-97a6-54ac-72ab"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink import="true" name="Drohne" hidden="false" id="9821-b765-e948-4754" type="selectionEntryGroup" targetId="a259-84b1-60c2-b435">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1471-240e-ff74-d215"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1af3-0668-0e6c-e4ab"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="2710-dcfa-aad6-9886" name="Infantry Equipment" hidden="false" collective="false" import="true">
       <constraints>
@@ -2108,8 +2249,16 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Armour" id="ddb7-fbbd-773b-eca4" hidden="false">
       <entryLinks>
-        <entryLink targetId="47ac-5c2e-448f-87f0" id="6d88-c3f7-3325-0b35" type="selectionEntry" name="Uberfliegebooten Ausf. B “Frosch”" hidden="true"/>
-        <entryLink targetId="b1a9-1816-d8f6-581c" id="8c40-b44c-87e8-7edb" type="selectionEntry" name="Hummerschale 51/56" hidden="true"/>
+        <entryLink targetId="47ac-5c2e-448f-87f0" id="6d88-c3f7-3325-0b35" type="selectionEntry" name="Uberfliegebooten Ausf. B “Frosch”" hidden="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccb4-d01c-bb1e-dc2c"/>
+          </constraints>
+        </entryLink>
+        <entryLink targetId="b1a9-1816-d8f6-581c" id="8c40-b44c-87e8-7edb" type="selectionEntry" name="Hummerschale 51/56" hidden="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ff0e-e64f-df4c-928b"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Rüstung" hidden="true" id="0abb-2021-5060-0a91" type="selectionEntryGroup" targetId="d2d5-bcfa-096f-b605">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -6254,7 +6403,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="b195-9bec-dbe8-2a39" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
               </conditions>
             </conditionGroup>
@@ -6368,7 +6517,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="b195-9bec-dbe8-2a39" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
               </conditions>
             </conditionGroup>
@@ -6478,7 +6627,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="b195-9bec-dbe8-2a39" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
               </conditions>
             </conditionGroup>
