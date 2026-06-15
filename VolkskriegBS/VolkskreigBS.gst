@@ -1592,6 +1592,11 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <rules>
+        <rule name="Drohne Calibration" id="d450-2029-f87d-9997" hidden="false">
+          <description>Drohnes controlled by infantry in this formation gain +1 ACC.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -2720,6 +2725,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
               </selectionEntries>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b083-257b-335d-8a39"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a3d6-5fba-06ff-18f4"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="0" field="7439-07e0-82ef-c431">
@@ -2743,6 +2749,11 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="a3d6-5fba-06ff-18f4">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4bcb-5c3b-a842-0c6e" shared="true" childName="Funksteuerungsteam"/>
+                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
