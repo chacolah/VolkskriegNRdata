@@ -702,6 +702,11 @@ The Himmelschloss begins play with an Artillery Bay.</description>
       <profiles>
         <profile name="Motorized Fireteam" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="f0c2-1c6e-6d89-4018"/>
       </profiles>
+      <rules>
+        <rule name="Military Drilling" id="2b0b-7b0a-2b86-644c" hidden="false">
+          <description>+1 when making morale rolls and when enacting orders.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tank Crew" hidden="false" id="4f97-b5ec-9e54-c502">
       <entryLinks>
@@ -741,6 +746,11 @@ The Himmelschloss begins play with an Artillery Bay.</description>
       <profiles>
         <profile name="Tank Crew" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="b723-1992-dcb6-bb81"/>
       </profiles>
+      <rules>
+        <rule name="Commander&apos;s Knowledge" id="3375-609c-e1eb-4192" hidden="false">
+          <description>All members are considered to have Panzer Training so long as the Tank Commander is not Downed, Pinned, or Broken.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Heavy Weapons Team" hidden="false" id="af7d-59ed-2373-4f39">
       <categoryLinks>
@@ -757,6 +767,11 @@ The Himmelschloss begins play with an Artillery Bay.</description>
       <profiles>
         <profile name="Heavy Weapons Team" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="99b3-7756-a447-ef14"/>
       </profiles>
+      <rules>
+        <rule name="Overwatch Training" id="9875-4be5-58ec-d9a1" hidden="false">
+          <description>+1 to hit while making Overwatch shots.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="5421-975e-b89f-d17e">
       <categoryLinks>
@@ -791,6 +806,11 @@ The Himmelschloss begins play with an Artillery Bay.</description>
       <profiles>
         <profile name="Fireteam" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="84d3-1bcd-f163-6836"/>
       </profiles>
+      <rules>
+        <rule name="Military Drilling" id="7230-9b27-18dc-7cf7" hidden="false">
+          <description>+1 when making morale rolls and when enacting orders.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry id="a429-92a0-3658-f03f" name="K9 Team" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -813,9 +833,6 @@ The Himmelschloss begins play with an Artillery Bay.</description>
           </constraints>
         </entryLink>
       </entryLinks>
-      <profiles>
-        <profile name="Dog Handler" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="2dfa-2ef1-fce2-e0b7"/>
-      </profiles>
       <modifiers>
         <modifier type="add" value="At least one Infantry Model must have Houndmaster Training" field="error">
           <conditionGroups>
@@ -827,6 +844,11 @@ The Himmelschloss begins play with an Artillery Bay.</description>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <rules>
+        <rule name="K9 Specialization" id="ca4d-8e9d-72a8-ce8c" hidden="false">
+          <description>Infantry Models with Houndmaster Training may command twice as many Beasts as normal.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Flight Crew" hidden="false" id="2041-fd56-a5e5-f4ec">
       <categoryLinks>
@@ -850,6 +872,11 @@ The Himmelschloss begins play with an Artillery Bay.</description>
       <profiles>
         <profile name="Flight Crew" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="3dcb-cc5e-d3ec-d6a1"/>
       </profiles>
+      <rules>
+        <rule name="Flight Experience" id="8416-5468-19b5-1316" hidden="false">
+          <description>+1 to rolls to make Aerial Maneuvers.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Towed Weapon Crew" hidden="false" id="29d6-e1d7-2bd1-d962">
       <categoryLinks>
@@ -873,6 +900,11 @@ The Himmelschloss begins play with an Artillery Bay.</description>
       <profiles>
         <profile name="Towed Weapon Crew" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="f128-0ddd-9284-aa6f"/>
       </profiles>
+      <rules>
+        <rule name="Reload Drills" id="2290-4e00-ffcd-4cb2" hidden="false">
+          <description>Modify the Towed Weapon’s Reload (x,y) characteristic by (-1,0) to a minimum of 0.</description>
+        </rule>
+      </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Campaign Reference" hidden="false" id="2abc-a7e3-1678-13a5">
       <categoryLinks>
@@ -1407,6 +1439,130 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
         <profile name="Lone Wolf" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="af5f-e6ce-3a4f-547a"/>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Berittene Polizei" hidden="true" id="44ba-e3d2-3bc5-9910">
+      <categoryLinks>
+        <categoryLink name="Faction Formations" hidden="false" id="0cd4-424f-079b-72b3" targetId="c74a-6498-63d2-89fb" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" childName="Former Reich/ Volksfront-Volkssturm"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="{this} Cannot contain any Multipart Equipment." field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="fdee-72dd-7c30-f69a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Police" hidden="false" id="d73c-8a6f-3716-eaf6" type="selectionEntry" targetId="4482-3622-e77f-04fc">
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="e786-1ecb-bfc0-a643"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a708-b297-561c-035a"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Mounted Marksmanship" id="2067-913d-c65e-5066" hidden="false">
+          <description>Infantry from this formation ignore the -2 penalty when firing a Primary weapon while mounted.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volksband" hidden="true" id="fb0d-6f6a-0cc9-8421">
+      <categoryLinks>
+        <categoryLink name="Faction Formations" hidden="false" id="5094-0d37-0eee-fcc6" targetId="c74a-6498-63d2-89fb" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Infantry Models" hidden="false" id="1bb1-7b1c-58c9-747d" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
+          <constraints>
+            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="0473-9c51-0f07-f397"/>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="883c-7320-a534-6d15"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="{this} Cannot contain any Multipart Equipment." field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="fdee-72dd-7c30-f69a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule name="For the Volksheld!" id="6368-a958-15d1-5b83" hidden="false">
+          <description>This formation’s Designated Officer is known as a Volksheld.
+While the Volksheld is alive, all morale rolls made by this formation are done with a +2 modifier.
+If the Volksheld is downed or killed all attack rolls made by this formation are done with a +1 modifier, and all Morale rolls made by this formation are done with a -1 modifier.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reichsmilitz" hidden="true" id="0aaa-e6e3-cf2c-cb8c">
+      <categoryLinks>
+        <categoryLink name="Faction Formations" hidden="false" id="9d06-87ac-8ab4-aa5e" targetId="c74a-6498-63d2-89fb" primary="true"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="add" value="{this} Requires at least one Officer." field="error">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" value="{this} Cannot contain any Multipart Equipment." field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="fdee-72dd-7c30-f69a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Infantry Models" hidden="false" id="b6ca-edf7-8f01-6b93" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
+          <constraints>
+            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="20dd-087e-c7f9-e2c0"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b614-5619-8164-4573"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <rules>
+        <rule name="Training Officer Acumen" id="8a49-a083-76c2-1ad3" hidden="false">
+          <description>All Reich Conscript infantry count as having Soldiering Proficiency so long as the Officer is not dead or downed.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="be23-c331-259d-7740" name="Equipped Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
@@ -1457,9 +1613,14 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
         <entryLink import="true" name="Heavy Weapons" hidden="false" id="5d6f-cca0-90fc-681f" type="selectionEntryGroup" targetId="580e-77ca-e747-456b" sortIndex="3">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aced-9645-77a6-8498" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="44ba-e3d2-3bc5-9910" shared="true" childName="Berittene Polizei"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aced-9645-77a6-8498" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -1488,6 +1649,15 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fdee-72dd-7c30-f69a" shared="true" includeChildSelections="true"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="44ba-e3d2-3bc5-9910" shared="true" childName="Berittene Polizei"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -3692,7 +3862,6 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c228-5d31-2caa-5079" shared="true" childName="Bicycle Team"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2041-fd56-a5e5-f4ec" shared="true" childName="Flight Crew"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f97-b5ec-9e54-c502" shared="true" childName="Tank Crew"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="301f-9052-2eb1-2a70" shared="true" childName="Panzer Begleit"/>
@@ -3701,6 +3870,9 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90be-0b30-7a5e-db8b" shared="true" childName="Fallschirmpanzergruppe"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a307-7d66-469f-0b03" shared="true" childName="&quot;Haubitze zu Fuss&quot; Gruppe"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a429-92a0-3658-f03f" shared="true" childName="K9 Team"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c228-5d31-2caa-5079" shared="true" childName="Bicycle Team"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0aaa-e6e3-cf2c-cb8c" shared="true" childName="Reichsmilitz"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fb0d-6f6a-0cc9-8421" shared="true" childName="Volksband"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4611,7 +4783,7 @@ May equip a number of Rüstung Shoulder Upgrades equal to (x).</description>
     </rule>
     <rule name="Mount" id="6223-817c-f736-a7a4" hidden="false">
       <description>Equipment with this rule:
-May be ridden by an infantry model with Animal Handling training.
+May be ridden by an infantry model. If this infantry model does not have Animal Handling training, they must succeed on a 4+ d10 roll to command the creature.
 Is considered to have the Beast rule.
 Loses the Beast rule if ridden by a model with the Animal Handling training.</description>
     </rule>
@@ -7613,6 +7785,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9927-4cc9-063c-dded" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="is Volksheld" hidden="false" id="b316-7029-f844-1e93" type="selectionEntry" targetId="6a03-128e-c2a2-e601"/>
       </entryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
@@ -7664,8 +7837,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Mounts" hidden="false" id="62f3-1f68-2bd8-3f14" collective="false" targetId="5759-4f93-7001-c361" type="selectionEntryGroup">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e023-6827-ecfc-ea0b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e71a-6063-a420-6fb4"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="e71a-6063-a420-6fb4">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="44ba-e3d2-3bc5-9910" shared="true" childName="Berittene Polizei"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
+        <entryLink import="true" name="is Volksheld" hidden="false" id="b9c3-5c34-cae8-5f80" type="selectionEntry" targetId="6a03-128e-c2a2-e601"/>
       </entryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
@@ -7740,6 +7922,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d130-4f1f-cff4-f569" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="is Volksheld" hidden="false" id="31ee-e355-f55f-5aff" type="selectionEntry" targetId="6a03-128e-c2a2-e601"/>
       </entryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
@@ -8484,6 +8667,13 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Drohne" hidden="false" id="56d2-b6d6-8499-0441" type="selectionEntryGroup" targetId="a259-84b1-60c2-b435">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89d4-40b2-d884-a69e"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sidecar (R100)" hidden="true" id="5293-7e8e-a782-a528">
       <constraints>
@@ -8599,10 +8789,22 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="1" field="472c-9182-f9c7-b27d">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0aaa-e6e3-cf2c-cb8c" shared="true" childName="Reichsmilitz"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="472c-9182-f9c7-b27d"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Romanian" hidden="true" id="4b0f-30cf-4f9a-8ab5">
       <modifiers>
@@ -12478,6 +12680,13 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <infoLinks>
         <infoLink name="Carrier(2)" id="579b-0cb5-29ba-1ba8" hidden="false" type="rule" targetId="757a-1a72-46e1-60f8"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Drohne" hidden="false" id="70cc-320b-c43c-c743" type="selectionEntryGroup" targetId="a259-84b1-60c2-b435">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a6c8-f7b7-c49b-17f7"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Automatladarre m/59" hidden="true" id="84e7-2d68-3791-d672">
       <costs>
@@ -12670,6 +12879,13 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <infoLink name="RC(2,48&quot;)" id="e711-e594-36ff-914d" hidden="false" type="rule" targetId="9bf8-67f5-f474-298b"/>
         <infoLink name="Carrier(1)" id="61d7-a168-1669-2228" hidden="false" type="rule" targetId="91f5-97a6-54ac-72ab"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Drohne" hidden="false" id="e0fc-9db3-428f-a94f" type="selectionEntryGroup" targetId="a259-84b1-60c2-b435">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7424-d122-db31-daa1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Raketenruck" hidden="true" id="a8ad-4338-0fd8-f6eb">
       <costs>
@@ -17968,6 +18184,19 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <infoLink name="Bipod(1)" id="0fcf-837a-dde3-8306" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
         <infoLink name="Surplus" id="956b-36e3-ca01-fd16" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="is Volksheld" hidden="true" id="6a03-128e-c2a2-e601">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fb0d-6f6a-0cc9-8421" shared="true" childName="Volksband"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="root-entry" shared="true" id="35a4-dc1b-6283-fc7a-min"/>
+        <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="35a4-dc1b-6283-fc7a-max"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
