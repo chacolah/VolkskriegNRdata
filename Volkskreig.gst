@@ -1546,6 +1546,16 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Police" hidden="false" id="d73c-8a6f-3716-eaf6" type="selectionEntry" targetId="4482-3622-e77f-04fc">
@@ -1593,6 +1603,16 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <rules>
         <rule name="For the Volksheld!" id="6368-a958-15d1-5b83" hidden="false">
@@ -1627,6 +1647,16 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
             <conditionGroup type="or">
               <conditions>
                 <condition type="greaterThan" value="0" field="selections" scope="parent" childId="fdee-72dd-7c30-f69a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
