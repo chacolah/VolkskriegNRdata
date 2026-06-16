@@ -529,7 +529,9 @@ The Himmelschloss begins play with an Artillery Bay.</description>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" includeChildSelections="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" includeChildSelections="false" childName="Former Reich/ Luftwaffe"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" includeChildSelections="false" childName="Former Reich/ Waffen SS"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" includeChildSelections="false" childName="Former Reich/ Wehrmacht"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -973,6 +975,16 @@ The Himmelschloss begins play with an Artillery Bay.</description>
             <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink targetId="e158-29b1-1ccc-ff36" id="f1c5-0efc-825c-6873" type="rule" name="Fallschirmjäger Training" hidden="false"/>
@@ -1022,6 +1034,16 @@ The Himmelschloss begins play with an Artillery Bay.</description>
           <conditions>
             <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <profiles>
@@ -1077,6 +1099,16 @@ The Himmelschloss begins play with an Artillery Bay.</description>
             <condition type="lessThan" value="1" field="selections" scope="parent" childId="31e1-cfc2-0836-5b24" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Fallschirmpanzer Crew" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="2aa4-edb7-0ca9-9678"/>
@@ -1111,6 +1143,16 @@ The Himmelschloss begins play with an Artillery Bay.</description>
             <conditionGroup type="or">
               <conditions>
                 <condition type="greaterThan" value="0" field="selections" scope="parent" childId="fdee-72dd-7c30-f69a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1155,6 +1197,16 @@ The Himmelschloss begins play with an Artillery Bay.</description>
             <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink targetId="f279-cc6f-a0e5-cff4" id="cabc-8218-2b64-b183" type="rule" name="Nachtjäger Training" hidden="false"/>
@@ -1193,6 +1245,16 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="&quot;Haubitze zu Fuss&quot; Gruppe" hidden="true" id="a307-7d66-469f-0b03">
@@ -1202,6 +1264,16 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             <conditionGroup type="and">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1353,6 +1425,16 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bicycle Team" hidden="false" id="c228-5d31-2caa-5079">
@@ -1393,6 +1475,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" childName="Deserteur" includeChildSelections="true" includeChildForces="true"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
           </conditions>
         </modifier>
@@ -1587,6 +1670,16 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Drohne Operators" id="66eb-8ae3-682d-18cf" hidden="false">
@@ -1648,6 +1741,16 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" includeChildSelections="true" includeChildForces="true" childName="Deserteur"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8cdf-74dc-30f9-31cc" shared="true" includeChildSelections="true" includeChildForces="true" childName="Veteran Kameraden"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
