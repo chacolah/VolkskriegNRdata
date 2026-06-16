@@ -124,7 +124,7 @@
     <categoryEntry name="Kriegsherren" id="43c4-75e3-3079-d8bd" hidden="false"/>
     <categoryEntry name="Axis Mercenaries" id="9dae-da09-f60b-e0d3" hidden="false"/>
     <categoryEntry name="Tyroler Konigsreich" id="ff63-d862-8a12-0c3e" hidden="false"/>
-    <categoryEntry name="Nordlander Reichstaat" id="7548-db8f-f8e0-25b6" hidden="false"/>
+    <categoryEntry name="Nordischer Reichstaat" id="7548-db8f-f8e0-25b6" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="81c7-604f-cfcf-fa87" name="Skirmish" hidden="false">
@@ -1606,6 +1606,53 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
           <description>Drohnes controlled by infantry in this formation gain +1 ACC.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Waffen-SS Alternative Procurement" hidden="true" id="974b-6066-b863-3fa2">
+      <categoryLinks>
+        <categoryLink name="Faction Bookkeeping" hidden="false" id="d146-7667-8225-8177" targetId="f5ad-1da5-2ad4-cb2e" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armoury Choice" hidden="false" id="565c-1e3e-79db-c461" defaultAmount="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Nordischer Reichsstaat Licenses" hidden="false" id="83c0-b262-9b6f-c4d3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="3f14-a7b1-8d7f-86cf"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tyroler Konigsreich Licenses" hidden="false" id="5ff1-eaa5-3392-3f90">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9ad6-e005-a6ff-46b3"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Suomi Licenses" hidden="false" id="8208-fd82-1fd6-47d6">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="42a9-2e7c-5e34-0a30"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Etat Francais Licenses" hidden="false" id="2931-ad0b-7954-a906">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="e8ef-13cb-8c69-4658"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="2bdd-4dfd-7b7d-2861"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="19c2-c23c-1fbd-bc6e"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
@@ -5442,6 +5489,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Tyroler Konigsreich"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ff1-eaa5-3392-3f90" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Tyroler Konigsreich Licenses"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -5487,6 +5535,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Tyroler Konigsreich"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ff1-eaa5-3392-3f90" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Tyroler Konigsreich Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5581,6 +5630,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5836,6 +5886,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5883,6 +5934,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5929,6 +5981,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5972,6 +6025,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6016,6 +6070,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Tyroler Konigsreich"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ff1-eaa5-3392-3f90" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Tyroler Konigsreich Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -9420,6 +9475,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11122,6 +11178,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" childName="Former Reich/ Tyoler Konigsreich"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ff1-eaa5-3392-3f90" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Tyroler Konigsreich Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11513,6 +11570,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11558,6 +11616,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11608,6 +11667,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11656,6 +11716,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11926,6 +11987,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Tyroler Konigsreich"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ff1-eaa5-3392-3f90" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Tyroler Konigsreich Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11969,6 +12031,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Tyroler Konigsreich"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5ff1-eaa5-3392-3f90" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Tyroler Konigsreich Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12481,6 +12544,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8208-fd82-1fd6-47d6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Suomi Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12527,6 +12591,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8208-fd82-1fd6-47d6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Suomi Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14238,6 +14303,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f6c7-9982-580a-a0a0" shared="true" childName="North American Armed Forces/ Patriot Militias"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14247,6 +14313,15 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="P 657(n) " field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -17361,6 +17436,10 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8208-fd82-1fd6-47d6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Suomi Licenses"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -17855,6 +17934,16 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="8208-fd82-1fd6-47d6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Suomi Licenses"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="l.MG 120(r) " field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" includeChildSelections="true" childName="Norischer Reichsstaat Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -17934,6 +18023,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="8208-fd82-1fd6-47d6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Suomi Licenses"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -18028,6 +18118,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2931-ad0b-7954-a906" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Etat Francais Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -18065,6 +18156,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2931-ad0b-7954-a906" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Etat Francais Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -18099,6 +18191,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2931-ad0b-7954-a906" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Etat Francais Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -18139,6 +18232,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2931-ad0b-7954-a906" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Etat Francais Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -18176,6 +18270,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2931-ad0b-7954-a906" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Etat Francais Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -18214,6 +18309,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="2931-ad0b-7954-a906" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Etat Francais Licenses"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
