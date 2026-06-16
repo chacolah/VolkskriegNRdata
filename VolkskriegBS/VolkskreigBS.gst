@@ -2980,10 +2980,17 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5e2a-9dff-05e5-de25" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true" includeChildSelections="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5e2a-9dff-05e5-de25" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -7953,10 +7960,11 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Waffen SS"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -9020,6 +9028,16 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0aaa-e6e3-cf2c-cb8c" shared="true" childName="Reichsmilitz"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90ca-5e14-e27e-2c14" shared="true" childName="Conscript"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
