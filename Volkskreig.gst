@@ -5580,8 +5580,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5718,8 +5719,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12504,6 +12506,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -12552,8 +12555,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -12648,8 +12652,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14445,6 +14450,26 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
           </attributes>
+          <modifiers>
+            <modifier type="set" value="11.25mm Aut. Pistol m/1915 “Konsberg Colten”" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="P 657(n)" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <modifiers>
@@ -15387,7 +15412,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true" childName="Former Commonwealth/ London Underground"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -15433,6 +15460,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
               </conditions>
             </conditionGroup>
@@ -17515,7 +17543,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -18073,6 +18103,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
           </attributes>
+          <modifiers>
+            <modifier type="set" value="l.MG 120(r) " field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" includeChildSelections="true" childName="Norischer Reichsstaat Licenses"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -18693,6 +18734,45 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rifle, Short Magazine Lee Enfield MkV*" hidden="true" id="93b3-ccef-4f95-4368">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+      </costs>
+      <profiles>
+        <profile name="Rifle, Short Magazine Lee Enfield MkV*" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1bc1-fa1e-23b1-b33f">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Surplus" id="7e62-7c2e-7210-9b72" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true" childName="Former Commonwealth/ London Underground"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
