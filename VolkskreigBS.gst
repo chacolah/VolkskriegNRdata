@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="eeb3-567d-708a-f896" name="VolkskreigBS" revision="1" battleScribeVersion="2.03" authorUrl="https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Justin Gourlay" authorContact="Discord: chacolah" type="gameSystem">
+<gameSystem id="eeb3-567d-708a-f896" name="VolkskreigNR" revision="1" battleScribeVersion="2.03" authorUrl="https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Justin Gourlay" authorContact="Discord: chacolah" type="gameSystem">
   <publications>
     <publication id="7280-690f-8cae-8d1e" name="Core Rules Doc" shortName="Volkskrieg" publisherUrl="https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/" publisher="Volkskrieg Living Rules Doc">
       <comment>Pub URL links to rulebook</comment>
@@ -654,14 +654,14 @@ The Himmelschloss begins play with an Artillery Bay.</description>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7fc5-ecb6-d3d8-516f" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" childName="Reich Collaborators/ Etat Francais"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="3a4a-0f78-f8d1-cad6" shared="true"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f6c7-9982-580a-a0a0" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2597,8 +2597,9 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink import="true" name="Katana" hidden="false" id="cf55-ce5b-d0d2-0199" type="selectionEntry" targetId="d8e9-6ad5-715b-011f"/>
         <entryLink targetId="1055-e984-8677-d696" id="bd96-22d0-5c8a-f76b" type="selectionEntry" name="Lahti L-35" hidden="true" collective="false"/>
         <entryLink targetId="55f0-1ee7-51b1-f25c" id="20f8-67b3-deae-bf93" type="selectionEntry" name="Modele 1935S" hidden="true" collective="false"/>
-        <entryLink targetId="42b1-9a6c-7f6d-6a14" id="f10a-c2ba-4fde-acb9" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
+        <entryLink targetId="248c-1ea5-04a0-37b7" id="f10a-c2ba-4fde-acb9" type="selectionEntry" name="Welrod" hidden="true" collective="false"/>
         <entryLink targetId="a1a9-a850-c159-ece5" id="77f6-bdff-bffb-a75d" type="selectionEntry" name="MAC-49" hidden="true" collective="false"/>
+        <entryLink targetId="42b1-9a6c-7f6d-6a14" id="86bf-4758-56a5-3389" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung Frames" id="fdee-72dd-7c30-f69a" hidden="false">
@@ -18526,6 +18527,44 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="701b-cc6b-de79-4113" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="e42f-231f-aa77-79a7" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Welrod" hidden="true" id="248c-1ea5-04a0-37b7">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Welrod" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c689-2fd0-fcf3-07c5">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Pistol</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout, Silent</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Silent" id="4b20-f241-87b0-5aea" hidden="false" type="rule" targetId="9bb6-aaef-3556-d45b"/>
+        <infoLink name="Holdout" id="3d7a-c81d-0004-ffd7" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
