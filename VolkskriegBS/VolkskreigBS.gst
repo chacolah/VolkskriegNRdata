@@ -1578,6 +1578,15 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="{this} Cannot contain any Multipart Equipment." field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="parent" childId="fdee-72dd-7c30-f69a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup name="Drohne Operators" id="66eb-8ae3-682d-18cf" hidden="false">
@@ -2512,10 +2521,11 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="cc1b-4735-90a8-49f6" id="9b81-8806-80b8-c0bd" type="selectionEntry" name="Type 2 Rifle" hidden="true" collective="false"/>
         <entryLink targetId="1ce5-db6e-3074-4d6d" id="4cf5-f398-f61e-dd2c" type="selectionEntry" name="Type 100 Submachine Gun" hidden="true" collective="false"/>
         <entryLink targetId="1167-a795-6890-c22d" id="77c8-1c4e-e3c9-d7be" type="selectionEntry" name="Fallschimjägergewehr-56" hidden="true" collective="false"/>
-        <entryLink targetId="6249-666c-5083-d21e" id="1af8-65a1-3b68-af44" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
         <entryLink targetId="ed03-4bff-824f-1eed" id="9f10-8610-c0f3-e0b7" type="selectionEntry" name="MAS-36" hidden="true" collective="false"/>
         <entryLink targetId="a4ff-d706-fe31-0d2c" id="b268-adf8-7b57-67cb" type="selectionEntry" name="MAS-38" hidden="true" collective="false"/>
         <entryLink targetId="c2b9-96be-4729-bad1" id="e8fe-af8d-b7e9-783f" type="selectionEntry" name="MAS-44/56" hidden="true" collective="false"/>
+        <entryLink targetId="6249-666c-5083-d21e" id="0299-08ac-7628-c361" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
+        <entryLink targetId="c522-06df-c434-ff16" id="5a18-15aa-ba98-7c17" type="selectionEntry" name="M39 Rifle" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Sidearms/Melee" id="8d16-f577-2371-6215" hidden="false">
@@ -4032,6 +4042,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a429-92a0-3658-f03f" shared="true" childName="K9 Team"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c228-5d31-2caa-5079" shared="true" childName="Bicycle Team"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0aaa-e6e3-cf2c-cb8c" shared="true" childName="Reichsmilitz"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4bcb-5c3b-a842-0c6e" shared="true" childName="Funksteuerungsteam"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fb0d-6f6a-0cc9-8421" shared="true" childName="Volksband"/>
               </conditions>
             </conditionGroup>
@@ -11980,7 +11991,17 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="Rynnäkkökivääri 57" field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -17951,7 +17972,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
                 </conditionGroup>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ed03-4bff-824f-1eed" shared="true" childName="MAS-36"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c522-06df-c434-ff16" shared="true" childName="M39 Rifle"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4b4c-74ef-eadf-f5c3" shared="true" childName="Karabiner-98m"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="460d-22d1-c41e-717a" shared="true" childName="Carcano 91/45"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1b99-9c4f-0b78-e837" shared="true" childName="Type 99 Rifle"/>
@@ -17959,6 +17980,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6249-666c-5083-d21e" shared="true" childName="870 Shotgun"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5701-bfae-cfac-792e" shared="true" childName="M1903 Springfield Rifle"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="48f0-d516-70c6-09fc" shared="true" childName="Ross MKIV*"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="ed03-4bff-824f-1eed" shared="true" childName="MAS-36"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -18357,6 +18379,39 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <constraint type="min" value="1" field="selections" scope="root-entry" shared="true" id="35a4-dc1b-6283-fc7a-min"/>
         <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="35a4-dc1b-6283-fc7a-max"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="M39 Rifle" hidden="true" id="c522-06df-c434-ff16" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7214-7375-61cf-7f69"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Surplus" id="08dd-2e50-fa76-2e27" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Sight" id="74f1-a993-8bc3-5210" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+        <infoLink name="Underslung" id="b934-650e-a357-ca4e" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+        <infoLink name="Muzzle" id="f839-3f26-39f2-4bc4" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+        <infoLink targetId="ec23-0a43-21d1-bb56" id="b2a0-5171-4ef7-2a68" type="profile" name="Karabiner-98m" hidden="false"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="af18-669e-a28d-3236" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="bc0f-e8ba-faf5-2492" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="701b-cc6b-de79-4113" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="e42f-231f-aa77-79a7" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
