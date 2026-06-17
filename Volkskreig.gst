@@ -1833,46 +1833,12 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="{this} must have at least 2 and no more than 5 infantry models within this Formation." field="warning"/>
       </modifiers>
       <rules>
         <rule name="Mounted Marksmanship" id="2067-913d-c65e-5066" hidden="false">
           <description>Infantry from this formation ignore the -2 penalty when firing a Primary weapon while mounted.</description>
         </rule>
       </rules>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Horsemen Team" id="a037-b107-2b00-f654" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Animals(Mounts)" hidden="false" id="75be-7747-20af-a503" type="selectionEntryGroup" targetId="11da-0b39-0be1-bdd0">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c27-6858-ca58-ecba"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Riders" id="ee63-ac70-c880-0a48" hidden="false">
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Driver" id="3785-1181-713a-b0dc" hidden="false" sortIndex="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Police" hidden="false" id="2954-d1cd-1bd9-2a08" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45c3-d695-d2e9-2a72"/>
-                  </constraints>
-                </selectionEntryGroup>
-                <selectionEntryGroup name="Rider" id="91db-af36-3c9b-cc5d" hidden="false" sortIndex="3">
-                  <entryLinks>
-                    <entryLink import="true" name="Police" hidden="false" id="5ac3-41f9-b302-e908" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
-                  </entryLinks>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c03-4da9-e664-a5f1"/>
-                  </constraints>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Motorcycle Team" hidden="false" id="655a-37d4-b81f-229a">
           <selectionEntryGroups>
@@ -1953,10 +1919,38 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
             </entryLink>
           </entryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Horseman Team" hidden="false" id="72f9-bc8d-20d3-20b8">
+          <entryLinks>
+            <entryLink import="true" name="Animals(Mounts)" hidden="false" id="75be-7747-20af-a503" type="selectionEntryGroup" targetId="11da-0b39-0be1-bdd0" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c27-6858-ca58-ecba"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Riders" id="ee63-ac70-c880-0a48" hidden="false" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Driver" id="3785-1181-713a-b0dc" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Police" hidden="false" id="2954-d1cd-1bd9-2a08" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45c3-d695-d2e9-2a72"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Rider" id="91db-af36-3c9b-cc5d" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Police" hidden="false" id="5ac3-41f9-b302-e908" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c03-4da9-e664-a5f1"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
       </selectionEntries>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0d2-1316-e811-8caf" includeChildSelections="true"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Volksband" hidden="true" id="fb0d-6f6a-0cc9-8421">
       <categoryLinks>
@@ -2789,7 +2783,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Motorcycle" id="61c1-9d80-aced-71df" hidden="false">
       <entryLinks>
-        <entryLink targetId="890f-32b2-3f42-8544" id="c387-e08b-24d8-a3bf" type="selectionEntry" name="Kettenkrad" hidden="true"/>
+        <entryLink targetId="890f-32b2-3f42-8544" id="c387-e08b-24d8-a3bf" type="selectionEntry" name="Kettenkrad Ausf. D" hidden="true"/>
         <entryLink targetId="db37-3e47-7443-f615" id="689d-71bf-fee5-7bf6" type="selectionEntry" name="BMW R100" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
@@ -4040,7 +4034,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="10a4-1ae7-7950-c22f" id="9ff3-900f-201b-2208" type="selectionEntry" name="StuG III  Ausf. E" hidden="true"/>
         <entryLink targetId="9a10-87e6-960f-2c2c" id="e5c4-37b2-057f-8321" type="selectionEntry" name="PzJäger “Wanze”" hidden="true"/>
         <entryLink targetId="1949-4270-db04-2d5e" id="df3b-2d1c-3625-a069" type="selectionEntry" name="PzKPFw II “Luchs”" hidden="true"/>
-        <entryLink targetId="9571-b1e0-438f-70ce" id="cec1-a341-c000-0248" type="selectionEntry" name="PzKpfw III" hidden="true"/>
+        <entryLink targetId="9571-b1e0-438f-70ce" id="cec1-a341-c000-0248" type="selectionEntry" name="PzKpfw III Ausf. E" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Sturmritter Weapons" id="27d9-fc25-bdc9-23f2" hidden="true">
@@ -8588,6 +8582,16 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="2" field="2386-e073-23d9-5cc3">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="44ba-e3d2-3bc5-9910" shared="true" childName="Berittene Polizei"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="5" field="d95d-05ff-06ca-da0f">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="root-entry" childId="44ba-e3d2-3bc5-9910" shared="true" childName="Berittene Polizei"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Nationality" hidden="false" id="988b-17dd-9458-9f35" collective="false" targetId="8ca0-7c86-458e-73c2" type="selectionEntryGroup">
@@ -8623,6 +8627,10 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <infoLinks>
         <infoLink targetId="6fb0-355d-19d5-974b" id="feae-b295-3bff-a9a5" type="profile" name="Police" hidden="false"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="99" field="selections" scope="root-entry" shared="true" id="d95d-05ff-06ca-da0f" includeChildSelections="true"/>
+        <constraint type="min" value="0" field="selections" scope="root-entry" shared="true" id="2386-e073-23d9-5cc3" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Soldier" hidden="true" id="c22f-1f20-3675-0286" collective="false">
       <modifiers>
