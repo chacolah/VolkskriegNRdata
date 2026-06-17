@@ -4246,6 +4246,11 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="8498-cf7a-983d-94dc" id="0d2e-40c9-503d-8f42" type="selectionEntry" name="Horse" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(PIAT)" id="871d-7efb-7412-3359" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Bomb, HE/AT, MkV" hidden="false" id="21d7-f8b5-0d7e-5b05" type="selectionEntry" targetId="52ef-08df-af56-e4b3"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b72d-a08a-2414-8c49" name="Upgrade(Type)" hidden="false">
@@ -5381,6 +5386,10 @@ Is affected by the Mobility modifiers of mounted infantry.</description>
     <rule name="Holdout" id="cb91-d908-615c-ee4d" hidden="false">
       <description>Equipment with this rule:
 May be hidden on the equipped unit for the purposes of Stealth and Contraband checks when applicable.</description>
+    </rule>
+    <rule name="Ordnance(PIAT)" id="8441-34ef-b64f-ba40" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -6596,7 +6605,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">3</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">12</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Automaton, Drohne</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Thruster(2&quot;)</characteristic>
@@ -6678,7 +6687,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">12</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Automaton, Drohne</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Thruster(3&quot;)</characteristic>
@@ -6706,7 +6715,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="6649-5bc2-ccce-8644">3</characteristic>
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">*</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">12</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Automaton, Drohne</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Battery(4), Energy(1), Lightning, Recharge(1), Thruster(2&quot;)</characteristic>
@@ -6781,7 +6790,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="6649-5bc2-ccce-8644">5</characteristic>
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">-</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">10</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Automaton, Drohne</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Consumable, Explosive, Piercing(2), Radius(4&quot;), Self Destruct</characteristic>
@@ -6823,7 +6832,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">10</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Automaton, Drohne</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Reload(1,1)</characteristic>
@@ -7036,7 +7045,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Backpack</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -7169,7 +7178,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">4</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">2</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Armour</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Power Slot</characteristic>
@@ -7414,7 +7423,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+3</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">15</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Mount Equipment</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -7459,7 +7468,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">4</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">+3</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Beast</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -7759,7 +7768,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/6</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">-</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Aircraft, Glider</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
@@ -7800,7 +7809,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">30</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Aircraft, Fighter</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
@@ -7846,7 +7855,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">25</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Aircraft, Fighter</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
@@ -7897,7 +7906,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">2/-</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">3</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">15</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Hovercraft Chassis, Düsenhuber</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69"/>
@@ -8055,7 +8064,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">3</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Melee</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -8234,11 +8243,12 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -8342,27 +8352,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3a-b666-b28e-fccb"/>
       </constraints>
-      <profiles>
-        <profile name="2cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="557b-e78b-518e-e39b">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Magazine(20x138B), Ordnance(20x138B), Reload(1,5)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="557b-e78b-518e-e39b" id="f483-8449-5f41-8400" type="profile" name="2cm Kampfwagenkanone" hidden="false"/>
         <infoLink name="Magazine(20x138B)" id="42d2-88ed-078d-f723" hidden="false" type="rule" targetId="10b3-df7f-3cce-b5e1"/>
         <infoLink name="Ordnance(20x138B)" id="e786-3533-bc32-4dcf" hidden="false" type="rule" targetId="7268-4ecf-28b5-df1b"/>
         <infoLink name="Reload(1,5)" id="5ca6-16a2-7bc9-7296" hidden="false" type="rule" targetId="8f24-b9e3-6356-ec2e"/>
@@ -8410,27 +8401,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7617-541b-fae7-d675"/>
       </constraints>
-      <profiles>
-        <profile name="2cm Maschinenekampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c94b-a386-faf3-6b7e">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Magazine(20x138B), Ordnance(20x138B), Reload(1,5)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="c94b-a386-faf3-6b7e" id="3d87-9ebe-e16f-aa77" type="profile" name="2cm Maschinenekampfwagenkanone" hidden="false"/>
         <infoLink name="Ordnance(20x138B)" id="fcb8-2469-418f-cb97" hidden="false" type="rule" targetId="7268-4ecf-28b5-df1b"/>
         <infoLink name="Magazine(20x138B)" id="1eb4-b41f-a1fd-0602" hidden="false" type="rule" targetId="10b3-df7f-3cce-b5e1"/>
         <infoLink name="Reload(1,5)" id="c000-dc76-9416-1a03" hidden="false" type="rule" targetId="8f24-b9e3-6356-ec2e"/>
@@ -8704,27 +8676,8 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef13-feee-ecda-e2b8"/>
       </constraints>
-      <profiles>
-        <profile name="Raketenpanzerbüchse-58 x6" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="50c3-a838-5771-ffe7">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(88mmR Raketen),Reload(4,6), Surplus</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="50c3-a838-5771-ffe7" id="69d0-bd44-bdef-a10b" type="profile" name="Raketenpanzerbüchse-58 x6" hidden="false"/>
         <infoLink name="Surplus" id="84a0-b4a7-3813-f770" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
         <infoLink name="Ordnance(88mmR Raketen)" id="a3b0-b7c9-187c-f3ee" hidden="false" type="rule" targetId="a334-f8a4-fbc4-259d"/>
         <infoLink name="Reload(4,6)" id="af91-e375-47bb-c15c" hidden="false" type="rule" targetId="42d0-5d14-9266-a5c1"/>
@@ -8854,7 +8807,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">15</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Motorcycle, Wheeled</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
@@ -8868,7 +8821,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <infoLink name="Recharge(0)" id="e9eb-3cc4-3b8b-3e7a" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Kettenkrad" hidden="true" id="890f-32b2-3f42-8544">
+    <selectionEntry type="upgrade" import="true" name="Kettenkrad Ausf. D" hidden="true" id="890f-32b2-3f42-8544">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="140"/>
       </costs>
@@ -8888,7 +8841,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Motorcycle Upgrades" hidden="false" id="01f7-e7f0-8a8d-9b4b" type="selectionEntryGroup" targetId="b629-a3b4-2431-11ee"/>
       </entryLinks>
       <profiles>
-        <profile name="Kettenkrad" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="e97d-ee78-2e9e-76f4">
+        <profile name="Kettenkrad Ausf. D" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="e97d-ee78-2e9e-76f4">
           <characteristics>
             <characteristic name="MOB" typeId="4765-2056-04fc-a63a">9</characteristic>
             <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
@@ -8897,7 +8850,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/4</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">5</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Motorcycle, Half-Tracked</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
@@ -10399,7 +10352,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">9</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">70</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer, Casemate</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
@@ -10454,7 +10407,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">6</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">55</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Carrier(4), Recharge(0)</characteristic>
@@ -10511,7 +10464,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">8</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">55</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer, Turreted</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
@@ -10566,7 +10519,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">13</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">60</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer, Casemate</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
@@ -10604,8 +10557,9 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="ef2d-4488-891f-b372" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
-        <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="7c7b-b231-2f2a-d948" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
+        <entryLink import="true" name="Panzer (Turreted) Upgrades" hidden="false" id="7c7b-b231-2f2a-d948" type="selectionEntryGroup" targetId="f974-c286-9d14-e1f6"/>
         <entryLink import="true" name="Panzer Mobility" hidden="false" id="bfc9-ffd8-4d6b-ffdb" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
+        <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="85cf-f6f7-5fd2-65b9" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Recharge(0)" id="39fd-36d3-435b-46f7" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
@@ -10620,7 +10574,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">5/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">11</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">75</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037"/>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
@@ -10675,7 +10629,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">4</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">18</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">100</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Heavy Panzer, Casemate</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
@@ -10715,6 +10669,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <entryLink import="true" name="Hardpoint: HPW" hidden="false" id="9e9a-8435-3277-292a" type="selectionEntryGroup" targetId="019c-97e7-5698-7ed7"/>
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="ed8d-0101-22a7-36db" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
         <entryLink import="true" name="Panzer Mobility" hidden="false" id="645a-6b51-f65d-0f40" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
+        <entryLink import="true" name="Panzer (Turreted) Upgrades" hidden="false" id="89e3-563c-074c-e8f0" type="selectionEntryGroup" targetId="f974-c286-9d14-e1f6"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Recharge(0)" id="cf01-6cf9-005a-875e" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
@@ -10729,7 +10684,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">5/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">4</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">16</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">95</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Heavy Panzer, Turreted</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
@@ -10805,7 +10760,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">5</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Tankette</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Open-Topped, Recharge(0), Surplus</characteristic>
@@ -10866,7 +10821,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">8</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Tankette</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
@@ -10914,7 +10869,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">1/1</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">2</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Towed Weapon Mount</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Cover(+1), Crewed</characteristic>
@@ -10960,7 +10915,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">10</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Towed Weapon Mount Upgrade</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Cover(+1)</characteristic>
@@ -11057,7 +11012,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Hover</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -11101,7 +11056,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Tracks</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -11146,7 +11101,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">30</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Tracks</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -11189,7 +11144,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">25</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Walker</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -11232,7 +11187,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Walker</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -13526,7 +13481,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exosuit</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Back(1), Battery(3), Chest(1), Head(1), Shoulder(2)</characteristic>
@@ -13575,7 +13530,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">2</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exoframe</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Back(1), Battery(4)</characteristic>
@@ -13946,7 +13901,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exosuit</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Arm(2), Back(1), Battery(4), Chest(1), Head(1), Leg(1)</characteristic>
@@ -14034,7 +13989,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Plating</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -14075,7 +14030,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">6</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Plating</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -14906,7 +14861,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">11</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">90</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer (Casemate)</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
@@ -14948,6 +14903,31 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Raketenpanzerbüchse-58 x6" id="b83a-6105-6d19-78be" hidden="false" type="profile" targetId="50c3-a838-5771-ffe7"/>
+        <infoLink name="Recharge(0)" id="a38c-e221-2217-aac7" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+        <infoLink name="Surplus" id="9c36-f9ad-b21b-77c4" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(88mmR Raketen)" hidden="false" id="4692-7281-c7f6-e728" type="selectionEntryGroup" targetId="d05b-3125-1324-17c9"/>
+      </entryLinks>
+      <profiles>
+        <profile name="PzJäger “Wanze”" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="2bd4-bbfe-f1e1-7bac">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">5</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">5</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">40</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Tankette</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Recharge(0), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="PzKPFw II “Luchs”" hidden="true" id="1949-4270-db04-2d5e">
       <costs>
@@ -14971,8 +14951,34 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditions>
         </modifier>
       </modifiers>
+      <profiles>
+        <profile name="PzKPFw II “Luchs”" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="d6fa-241d-e5c9-c978">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">6</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">3/0</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">9</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">85</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Recharge(0), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Recharge(0)" id="767a-a77a-a186-47a5" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+        <infoLink name="Maschinengewehr-56" id="f9f3-89be-060b-ce9d" hidden="false" type="profile" targetId="3720-2612-bdba-02b0"/>
+        <infoLink name="2cm Kampfwagenkanone" id="608e-32aa-c319-cb2d" hidden="false" type="profile" targetId="557b-e78b-518e-e39b"/>
+        <infoLink name="Surplus" id="57aa-d325-d164-76ef" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="a090-11b7-ecd7-ac40" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
+      </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="PzKpfw III" hidden="true" id="9571-b1e0-438f-70ce">
+    <selectionEntry type="upgrade" import="true" name="PzKpfw III Ausf. E" hidden="true" id="9571-b1e0-438f-70ce">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="525"/>
       </costs>
@@ -14993,6 +14999,32 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink name="Recharge(0)" id="c4a3-f668-1eea-7d08" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+        <infoLink name="Surplus" id="5db6-2bbd-efe5-e3e9" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="3.7cm Kampfwagenkanone" id="e4e1-ee5b-a37a-cbea" hidden="false" type="profile" targetId="5b5a-14fe-a690-df40"/>
+        <infoLink name="Maschinengewehr-56" id="83c8-7f10-7a93-76c1" hidden="false" type="profile" targetId="3720-2612-bdba-02b0"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(37x249)" hidden="false" id="7c19-c5b0-a2f7-341f" type="selectionEntryGroup" targetId="9f60-cb3f-23ef-1e6c"/>
+      </entryLinks>
+      <profiles>
+        <profile name="PzKpfw III Ausf. E" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="808c-a39a-4ee8-9d7d">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">8</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">3/0</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">11</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">85</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Medium Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Recharge(0), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="StuG III  Ausf. E" hidden="true" id="10a4-1ae7-7950-c22f">
       <costs>
@@ -15026,7 +15058,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">13</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">90</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer, Casemate, Surplus</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
@@ -15085,7 +15117,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">4</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">13</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">98</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer, Surplus</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
@@ -15166,7 +15198,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/3</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Surplus Vehicle</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
@@ -15528,7 +15560,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">4</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">+4</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Uniform</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Backpack(1), Equipment(4)</characteristic>
           </characteristics>
@@ -15921,7 +15953,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Vehicle, Scout Car</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Open-Topped, Recharge(0)</characteristic>
@@ -15973,7 +16005,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">2*0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">3</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">30</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, Scout Car</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Open-Topped, Recharge(0), Truckbed(4,0)</characteristic>
@@ -16023,7 +16055,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="6649-5bc2-ccce-8644">-</characteristic>
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">3/0</characteristic>
-            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">1</characteristic>
+            <characteristic name="ARM" typeId="7f71-92e2-a444-f967">3</characteristic>
             <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">30</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, Scout Car</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Recharge(0)</characteristic>
@@ -16217,7 +16249,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Half-Track</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -16255,7 +16287,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Hover</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -16293,7 +16325,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+1</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Walker</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -16332,7 +16364,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Wheeled</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
@@ -17248,7 +17280,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/1</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">5</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">40</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Surplus Vehicle, APC</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Open-Topped, Recharge(0), Surplus, Truckbed(8,0)</characteristic>
@@ -17380,7 +17412,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">2/4</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">-</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">25</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Helicopter Chassis</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
@@ -17649,7 +17681,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
             <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">-</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">15</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Towed Weapon Mount</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
@@ -18525,6 +18557,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ London Underground"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ British Commandos"/>
               </conditions>
             </conditionGroup>
@@ -18779,6 +18812,136 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PzKpfw 35/38(t)" hidden="true" id="44bd-90cc-7805-e479">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="460"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f0dc-fc28-959c-0329" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Recharge(0)" id="2410-f364-5a59-4cba" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+        <infoLink name="Surplus" id="3131-ccad-c16b-5458" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="3.7cm Kampfwagenkanone" id="a845-313a-beed-e048" hidden="false" type="profile" targetId="5b5a-14fe-a690-df40"/>
+        <infoLink name="Maschinengewehr-56" id="79ff-53a3-0a38-a4cd" hidden="false" type="profile" targetId="3720-2612-bdba-02b0"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(37x249)" hidden="false" id="45a6-1bcf-3d58-8a48" type="selectionEntryGroup" targetId="9f60-cb3f-23ef-1e6c"/>
+      </entryLinks>
+      <profiles>
+        <profile name="PzKpfw 35/38(t)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6aac-4002-ac49-62fc">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">7</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">3/0</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">9</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">75</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Medium Panzer</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Recharge(0), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bomb, HE/AT, MkV" hidden="true" id="52ef-08df-af56-e4b3">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Radius(2&quot;)" id="bb76-c7ca-8fa8-3fb7" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+        <infoLink name="Explosive" id="39c5-85ae-6388-918e" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+        <infoLink name="Piercing(5)" id="74f2-3890-77c2-5043" hidden="false" type="rule" targetId="fc55-ea27-b63c-e0ed"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Bomb, HE/AT, MkV" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9e64-d0e2-3fd3-5551">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">PIAT</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(5), Radius(2&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Projector, Infantry, Anti Tank" hidden="true" id="9c82-7359-9fb6-3d59">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Projector, Infantry, Anti Tank" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3a59-1dfc-c542-2625">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">*</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(PIAT), Reload(1,1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Ordnance(PIAT)" id="5bef-abd4-d0f9-7768" hidden="false" type="rule" targetId="8441-34ef-b64f-ba40"/>
+        <infoLink name="Reload(1,1)" id="7188-8c0f-d195-79b9" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(PIAT)" hidden="false" id="56e4-bf13-2932-fa6b" type="selectionEntryGroup" targetId="871d-7efb-7412-3359"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -18790,7 +18953,7 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
         <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
         <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
         <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/3</characteristic>
-        <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+        <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
         <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
         <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Vehicle, Car</characteristic>
         <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
@@ -19168,6 +19331,60 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
           </conditions>
         </modifier>
       </modifiers>
+    </profile>
+    <profile name="2cm Kampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="557b-e78b-518e-e39b">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Magazine(20x138B), Ordnance(20x138B), Reload(1,5)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="2cm Maschinenekampfwagenkanone" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c94b-a386-faf3-6b7e">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Magazine(20x138B), Ordnance(20x138B), Reload(1,5)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="Raketenpanzerbüchse-58 x6" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="50c3-a838-5771-ffe7">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(88mmR Raketen),Reload(4,6), Surplus</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
     </profile>
   </sharedProfiles>
 </gameSystem>
