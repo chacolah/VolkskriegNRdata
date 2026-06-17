@@ -676,12 +676,6 @@ The Himmelschloss begins play with an Artillery Bay.</description>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="c50e-d137-f475-03bc" primary="false" name="Vehicle Crew"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="c1cc-b42b-5d4a-1525" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="414d-c7e6-1394-23f5"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="023b-594f-bc96-de4b" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Motorized Options" hidden="false" id="6e44-ddf0-8059-74f8" type="selectionEntryGroup" targetId="f0dc-fc28-959c-0329"/>
       </entryLinks>
       <modifiers>
@@ -709,16 +703,86 @@ The Himmelschloss begins play with an Artillery Bay.</description>
           <description>+1 when making morale rolls and when enacting orders.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Motorized Crew" id="c1ce-a838-98c2-3437" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Driver" id="69b0-011b-0a84-69fc" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="6f57-c769-7b22-8d64" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="3f2e-9aca-550c-465c" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="38cc-a580-9f50-1bbb" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82c5-9c13-390c-0012"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sidecar Gunner" id="bd8e-c9ca-3ced-208a" hidden="true" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="e974-791b-9bc9-1915" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="8837-c408-79dc-b80e" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="39b3-775d-61cb-4d66" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beb3-5ce5-6677-82dc"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="5293-7e8e-a782-a528" shared="true" includeChildSelections="true" childName="Sidecar (R100)"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Rider" id="770b-c97f-5d1e-8b50" hidden="true" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="7da3-c931-3599-ae00" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="28a2-f2e2-a819-ccb7" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="4cf7-da74-53cc-06cb" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fea8-367b-f2ba-b32f"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="61c1-9d80-aced-71df" shared="true" includeChildSelections="true" childName="Motorcycle"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Gunner" id="58c2-1f42-bb1d-0fe3" hidden="true" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="9695-1161-27f4-1ecb" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="7877-6917-0384-9858" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="04d4-c0a4-79a5-71a9" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bba-1a1b-958a-969d"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="1a77-4918-f32e-5dfb" shared="true" includeChildSelections="true" childName="Vehicle Chassis"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="c9d4-d99e-d8df-2cdb" shared="true" includeChildSelections="true" childName="Surplus Vehicles"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb66-0aad-53df-abbb"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2d76-3e54-4418-14a6"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tank Crew" hidden="false" id="4f97-b5ec-9e54-c502">
       <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="e5c9-2489-6239-86d2" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5ba1-b1dc-eef0-ec52"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="f65d-a8ef-01ab-9943" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Panzer" hidden="false" id="b5a4-b739-43ae-0f7a" type="selectionEntryGroup" targetId="31e1-cfc2-0836-5b24">
+        <entryLink import="true" name="Panzer" hidden="false" id="b5a4-b739-43ae-0f7a" type="selectionEntryGroup" targetId="31e1-cfc2-0836-5b24" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="d330-f25b-2fda-ac7c" includeChildSelections="false"/>
           </constraints>
@@ -753,6 +817,70 @@ The Himmelschloss begins play with an Artillery Bay.</description>
           <description>All members are considered to have Panzer Training so long as the Tank Commander is not Downed, Pinned, or Broken.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Tank Crew" id="1129-2d57-6eae-853a" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Driver" id="04c3-1e43-eb4a-68dd" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="d5a2-8cd9-6358-6d3a" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="12e7-c17b-b4b5-781f" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="6647-21c7-9b7b-cb04" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f5d-b887-3475-4c31"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Commander" id="9071-bf2d-e4a2-12c7" hidden="false" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="14e0-32fc-528a-80d6" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="ba2d-8f30-a7e7-6984" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="902f-3c5e-8a53-ea67" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa15-effc-ab7c-c14d"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="26d4-a494-82a2-4bed" shared="true" includeChildSelections="true" childName="Tankette"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Gunner" id="7d89-0a26-a696-3d5a" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="a317-271d-a420-2d58" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="ccc1-547f-6594-726d" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="34d2-bfb8-34b1-fe85" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9101-656a-b324-c79f"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Loader" id="4a1c-2046-3752-bd51" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="0dbe-f2cf-3b24-516c" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="a0ed-fe90-85df-c0f3" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="65c5-d4c5-13f5-902a" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ecf-6d0c-9818-f115"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="26d4-a494-82a2-4bed" shared="true" includeChildSelections="true" childName="Tankette"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="self" shared="true" id="e594-2015-594e-7bed"/>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="4cf5-4fc4-22a7-0597"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Heavy Weapons Team" hidden="false" id="af7d-59ed-2373-4f39">
       <categoryLinks>
@@ -858,13 +986,7 @@ The Himmelschloss begins play with an Artillery Bay.</description>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="0d3b-0e8a-e23a-5eef" primary="false" name="Vehicle Crew"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="a620-6fb6-4e93-cf21" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4045-ea04-172c-9da0"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7d28-4a4f-da24-c6f6"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Aircraft" hidden="false" id="74fd-dddf-64cb-4190" type="selectionEntryGroup" targetId="dd29-f2d3-2114-c0de">
+        <entryLink import="true" name="Aircraft" hidden="false" id="74fd-dddf-64cb-4190" type="selectionEntryGroup" targetId="dd29-f2d3-2114-c0de" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ee8-7e0e-a201-31f3"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e64-5a09-504e-e30e"/>
@@ -879,6 +1001,46 @@ The Himmelschloss begins play with an Artillery Bay.</description>
           <description>+1 to rolls to make Aerial Maneuvers.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Flight Crew" id="818b-6f1a-49c5-9048" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Pilot" id="740a-64c2-8f61-d5d0" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="29ef-ea2a-1d86-c544" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="2457-c218-b0e3-d2ca" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="d6e9-a7e8-56da-05f5" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6ca-54c2-d80b-e179"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Observer/Co-Pilot" id="abe1-a800-9685-6020" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="6f0c-9176-1bac-3bcd" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="fa1d-a8af-e38e-d6fc" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="8889-0f84-c083-8516" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d28f-d04b-759f-8073"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Tail Gunner" id="750f-fe76-df5b-683f" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="9697-1494-2d93-5e6e" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="0565-3358-8809-7a6c" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="a0ab-bff0-be74-7336" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c450-b8c2-e9da-aac3"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="aa68-010d-1fbb-fd61"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc64-0c92-4377-a277"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Towed Weapon Crew" hidden="false" id="29d6-e1d7-2bd1-d962">
       <categoryLinks>
@@ -1000,13 +1162,7 @@ The Himmelschloss begins play with an Artillery Bay.</description>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="9010-1cf5-3f91-9cdd" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f387-b276-8ea3-8112"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="ca6b-f585-9f6e-d897" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Motorcycle" hidden="false" id="667d-5412-071b-c358" type="selectionEntryGroup" targetId="61c1-9d80-aced-71df">
+        <entryLink import="true" name="Motorcycle" hidden="false" id="667d-5412-071b-c358" type="selectionEntryGroup" targetId="61c1-9d80-aced-71df" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3644-6490-d587-bc33"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c72a-f9ea-9b9b-7546"/>
@@ -1049,16 +1205,53 @@ The Himmelschloss begins play with an Artillery Bay.</description>
       <profiles>
         <profile name="Fallschirmkradschutzen Team" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="a40b-cb37-96d2-7597"/>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Riders" id="074e-4b2c-d1a6-963b" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Driver" id="1796-ee7a-4754-c40c" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="cb23-7be2-b1ff-84f3" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="d374-aed1-c9ae-d6be" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="f838-2047-c1e5-2b40" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4844-2bfb-35d6-a173"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Sidecar Gunner" id="2615-4f39-03b7-a353" hidden="true" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="475c-55f6-eea4-cd99" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="0995-73c2-ae0a-532c" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="7e66-bc5a-f25e-b000" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21fa-5417-93e3-a760"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5293-7e8e-a782-a528" shared="true" includeChildSelections="true" childName="Sidecar (R100)"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Rider" id="df7e-1ae2-99d3-25eb" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="a55e-85c8-0a75-7a38" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="9796-839d-a86d-0877" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="6e97-eebe-f25f-ffd6" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53f6-59c2-aa6e-5697"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fallschirmpanzergruppe" hidden="true" id="90be-0b30-7a5e-db8b">
       <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="050e-4789-9ce1-a39d" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e478-f2f2-8c2a-f2ba"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="9cbd-2620-f5c4-a6aa" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Panzer" hidden="false" id="cf81-73b1-aa2c-827a" type="selectionEntryGroup" targetId="31e1-cfc2-0836-5b24">
+        <entryLink import="true" name="Panzer" hidden="false" id="cf81-73b1-aa2c-827a" type="selectionEntryGroup" targetId="31e1-cfc2-0836-5b24" sortIndex="2">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93be-5739-165d-892b"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb58-160f-d959-855e"/>
@@ -1116,6 +1309,70 @@ The Himmelschloss begins play with an Artillery Bay.</description>
       <infoLinks>
         <infoLink name="Fallschirmjäger Training" id="6590-91e3-17d6-6433" hidden="false" targetId="e158-29b1-1ccc-ff36" type="rule"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Tank Crew" id="4e52-95e9-edb8-6bf8" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Driver" id="f2f6-fbc6-1cf1-1d73" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="8414-3b96-6c13-5e6f" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="e32e-5022-4cd1-a8dd" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="42fd-f900-a9a6-d358" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b853-854a-8792-77e8"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Commander" id="d842-4932-15df-c939" hidden="false" sortIndex="4">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="bc54-86e2-6705-fd7a" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="50f5-b714-470b-076f" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="fbfd-1e1a-aa5c-d959" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffd7-a2fe-2c74-3c79"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="26d4-a494-82a2-4bed" shared="true" includeChildSelections="true" childName="Tankette"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Gunner" id="3282-31d3-80e0-66df" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="9a45-79bf-7bd0-1d80" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="1cc3-12ff-028b-7574" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="3d9c-c815-86f8-926b" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abad-ca8b-1460-961d"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Loader" id="fd36-0738-3dbc-9de1" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="1c70-eb6d-7a86-8726" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="df56-e243-1d21-0726" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="ff7a-120c-4729-6b10" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6a7-b26d-e5dd-f707"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="26d4-a494-82a2-4bed" shared="true" includeChildSelections="true" childName="Tankette"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="self" shared="true" id="1e8e-194e-58ab-10b7"/>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="0fc0-2d98-40b0-88f3"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Osttruppen" hidden="true" id="a344-f3e9-85f8-8d32">
       <categoryLinks>
@@ -1299,7 +1556,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <categoryLink name="Wehrmacht" hidden="false" id="21ca-4d67-720c-d698" targetId="6c5e-c727-3867-fbd9" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Panzer" id="3d76-b17f-2469-f3e0" hidden="false">
+        <selectionEntryGroup name="Panzer" id="3d76-b17f-2469-f3e0" hidden="false" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="Panzer Crew" id="42e5-2d0c-745a-08d9" hidden="false" sortIndex="1">
               <constraints>
@@ -1390,7 +1647,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Ersatzgruppen" id="8122-dd6d-0aba-e179" hidden="false">
+        <selectionEntryGroup name="Ersatzgruppen" id="8122-dd6d-0aba-e179" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink import="true" name="Police" hidden="false" id="f181-50b6-2539-b53e" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
             <entryLink import="true" name="Conscript" hidden="false" id="5bf9-4118-b0c2-c4b1" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
@@ -1442,13 +1699,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <categoryLink name="Generic Formation" hidden="false" id="7eaa-92a9-e091-c83a" targetId="225b-b208-7d55-5943" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="f389-b671-8781-8cea" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ef5f-1132-3ece-7fa7"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88f1-eb32-e5b6-4ec5"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Bicycle" hidden="false" id="829a-b033-454d-5509" type="selectionEntryGroup" targetId="fec4-1eb8-df2e-556c">
+        <entryLink import="true" name="Bicycle" hidden="false" id="829a-b033-454d-5509" type="selectionEntryGroup" targetId="fec4-1eb8-df2e-556c" sortIndex="2">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68bd-781e-6e72-6e59"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="878a-7b8c-a38d-459a"/>
@@ -1460,6 +1711,32 @@ Rüstung in this formation only have to spend the Energy cost once for both move
           <description>+1 Mobility while on Bicycles.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Riders" id="9cb5-1bef-cf04-bc57" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Driver" id="1f01-9e9f-f5d4-57ee" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="09e3-c65f-b9a2-7149" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="7e42-f7d0-6d26-a239" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="4557-4371-a75c-d3c7" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fba-c9ea-6099-9388"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Rider" id="a746-de0e-7bd8-0744" hidden="false" sortIndex="3">
+              <entryLinks>
+                <entryLink import="true" name="Soldier" hidden="false" id="db60-0de5-55e6-5245" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="a6ff-5caf-3c3f-e2fa" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="a048-70e7-0055-92d2" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="318a-8632-ae4e-4580"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Smuggler Team" hidden="true" id="e767-bf8e-151a-eb1e" collective="false">
       <categoryLinks>
@@ -1556,20 +1833,130 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="{this} must have at least 2 and no more than 5 infantry models within this Formation." field="warning"/>
       </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Police" hidden="false" id="d73c-8a6f-3716-eaf6" type="selectionEntry" targetId="4482-3622-e77f-04fc">
-          <constraints>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="e786-1ecb-bfc0-a643"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a708-b297-561c-035a"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <rules>
         <rule name="Mounted Marksmanship" id="2067-913d-c65e-5066" hidden="false">
           <description>Infantry from this formation ignore the -2 penalty when firing a Primary weapon while mounted.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Horsemen Team" id="a037-b107-2b00-f654" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Animals(Mounts)" hidden="false" id="75be-7747-20af-a503" type="selectionEntryGroup" targetId="11da-0b39-0be1-bdd0">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c27-6858-ca58-ecba"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Riders" id="ee63-ac70-c880-0a48" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Driver" id="3785-1181-713a-b0dc" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Police" hidden="false" id="2954-d1cd-1bd9-2a08" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45c3-d695-d2e9-2a72"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Rider" id="91db-af36-3c9b-cc5d" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Police" hidden="false" id="5ac3-41f9-b302-e908" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c03-4da9-e664-a5f1"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Motorcycle Team" hidden="false" id="655a-37d4-b81f-229a">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Riders" id="32d5-aaaa-4095-2193" hidden="false" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Driver" id="2e5d-2342-a678-7e93" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Police" hidden="false" id="08b6-d644-017c-9254" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c36b-95da-2a92-2d6a"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Sidecar Gunner" id="79a5-54ba-1dfd-f824" hidden="true" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Police" hidden="false" id="d1cd-798d-8aa4-4487" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a48-c436-596c-6077"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="5293-7e8e-a782-a528" shared="true" includeChildSelections="true" childName="Sidecar (R100)"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Rider" id="0c0f-c57c-8149-c296" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Police" hidden="false" id="af17-f24b-7f41-8980" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8bc-da51-88d2-4f9c"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Motorcycle" hidden="false" id="856a-afad-01b9-fc72" type="selectionEntryGroup" targetId="61c1-9d80-aced-71df" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9845-0dc4-f42e-9df1"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0a2a-1e48-cc1b-e3dc"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bicycle Team" hidden="false" id="fc18-29a5-aa61-f299">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Riders" id="c2b4-1ce9-7bae-8281" hidden="false" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Driver" id="80ab-24e5-2baf-50d0" hidden="false" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Police" hidden="false" id="42c8-1f7c-0be1-87d2" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75fc-add7-28f2-9ca7"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Rider" id="a97e-08a4-4566-2c80" hidden="false" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Police" hidden="false" id="4fbc-c84c-67e9-6f70" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="66ed-0b81-4b3b-355a"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Bicycle" hidden="false" id="f263-4eed-a6f1-0206" type="selectionEntryGroup" targetId="fec4-1eb8-df2e-556c" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1302-e4c3-2058-2db8"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6501-a12a-17a3-ee25"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c0d2-1316-e811-8caf" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Volksband" hidden="true" id="fb0d-6f6a-0cc9-8421">
       <categoryLinks>
@@ -2609,7 +2996,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     <selectionEntryGroup name="Motorized Options" id="f0dc-fc28-959c-0329" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Motorcycle" hidden="false" id="c82c-795a-d57b-4c88" type="selectionEntryGroup" targetId="61c1-9d80-aced-71df"/>
-        <entryLink import="true" name="Vehicle" hidden="false" id="5fab-9652-3cbe-f281" type="selectionEntryGroup" targetId="1d47-0b9e-b263-8bd2"/>
+        <entryLink import="true" name="Vehicle Chassis" hidden="false" id="5fab-9652-3cbe-f281" type="selectionEntryGroup" targetId="1a77-4918-f32e-5dfb"/>
         <entryLink import="true" name="Surplus Vehicles" hidden="false" id="676b-8c1b-5420-baa4" type="selectionEntryGroup" targetId="1b4a-ac83-f867-5a6d"/>
       </entryLinks>
       <constraints>
@@ -4223,7 +4610,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2041-fd56-a5e5-f4ec" shared="true" childName="Flight Crew"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4f97-b5ec-9e54-c502" shared="true" childName="Tank Crew"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="301f-9052-2eb1-2a70" shared="true" childName="Panzer Begleit"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4db9-63dc-45d0-8165" shared="true" childName="Motorized Fireteam"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="44ba-e3d2-3bc5-9910" shared="true" childName="Berittene Polizei"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="481e-4081-4e1c-a16b" shared="true" childName="Fallschirmkradschutzen Team"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90be-0b30-7a5e-db8b" shared="true" childName="Fallschirmpanzergruppe"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a307-7d66-469f-0b03" shared="true" childName="&quot;Haubitze zu Fuss&quot; Gruppe"/>
@@ -4232,6 +4619,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0aaa-e6e3-cf2c-cb8c" shared="true" childName="Reichsmilitz"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4bcb-5c3b-a842-0c6e" shared="true" childName="Funksteuerungsteam"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fb0d-6f6a-0cc9-8421" shared="true" childName="Volksband"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4db9-63dc-45d0-8165" shared="true" childName="Motorized Fireteam"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4243,7 +4631,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Animals(Mounts)" id="11da-0b39-0be1-bdd0" hidden="false">
       <entryLinks>
-        <entryLink targetId="8498-cf7a-983d-94dc" id="0d2e-40c9-503d-8f42" type="selectionEntry" name="Horse" hidden="true"/>
+        <entryLink targetId="8498-cf7a-983d-94dc" id="0d2e-40c9-503d-8f42" type="selectionEntry" name="Horse" hidden="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Ordnance(PIAT)" id="871d-7efb-7412-3359" hidden="false">
@@ -5468,7 +5856,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12&quot;</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -5610,7 +5998,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -6407,7 +6795,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">8</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -7312,6 +7700,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
@@ -8786,9 +9175,10 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8830,8 +9220,9 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -8867,10 +9258,15 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
     <selectionEntry type="upgrade" import="true" name="Airdrop Parachute" hidden="true" id="7b48-86a3-ed4a-e77a">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="add" value="{this} is required for Fallschirmkradschutzen." field="error">
           <conditionGroups>
@@ -8997,6 +9393,9 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </constraints>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8dbb-dc79-5337-ec7a"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sidecar (R100)" hidden="true" id="5293-7e8e-a782-a528">
       <constraints>
@@ -9018,9 +9417,10 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" childName="Former Reich/ Volksfront-Volkssturm"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" childName="Former Reich/ Volksfront-Volkssturm"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9171,7 +9571,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -9233,7 +9633,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -9278,7 +9678,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">8</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -9412,7 +9812,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">12</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -9521,7 +9921,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">13</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">15</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -9559,7 +9959,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -9624,7 +10024,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">15</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">18</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -9811,7 +10211,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -9850,7 +10250,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -9898,7 +10298,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -9937,7 +10337,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-4</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">8</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -10024,7 +10424,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-2</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -10072,7 +10472,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-3</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -13045,6 +13445,9 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </constraints>
         </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f748-6e43-71ba-88e6"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Automatladarre m/59" hidden="true" id="84e7-2d68-3791-d672">
       <costs>
@@ -17007,6 +17410,9 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa4f-9904-7966-89b9"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Funkbienekord Ausf. B" hidden="true" id="3660-4c27-bbff-d231">
       <costs>
@@ -17069,6 +17475,9 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </attributes>
         </profile>
       </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85cb-5f0c-eba1-b012"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Granatwerfer Platform" hidden="true" id="d280-cfa9-8a7a-ff10">
       <costs>
@@ -17719,7 +18128,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">6</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -17749,7 +18158,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">8</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -17948,7 +18357,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">48&quot;</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">16</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -19223,7 +19632,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
         <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
         <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
-        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">8</characteristic>
         <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
         <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
         <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
@@ -19277,7 +19686,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
         <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
         <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">5</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
         <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
         <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
         <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
