@@ -19420,7 +19420,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Bren Light Machine Gun MKIV*" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="44e4-8f9e-c787-5977">
+        <profile name="Vickers Machine Gun" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="44e4-8f9e-c787-5977">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
