@@ -3559,6 +3559,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="b88d-4a94-81b9-9d40" id="0967-e8c6-bef6-1bda" type="selectionEntry" name="E-25 &quot;Panzer&quot; (Casemate)" hidden="true"/>
         <entryLink targetId="230e-861d-07f9-6652" id="52c7-227f-144b-bac9" type="selectionEntry" name="E-10 &quot;Luchs&quot; (Casemate)" hidden="true"/>
         <entryLink targetId="db9b-2bde-47e0-6930" id="dd3b-db4e-ff86-eb1a" type="selectionEntry" name="E-10 &quot;Luchs&quot; (Drohne Rack)" hidden="true"/>
+        <entryLink import="true" name="Stridsvagn m/41" hidden="false" id="5d85-9b88-474e-af6a" type="selectionEntry" targetId="26e1-ddff-8a16-7a11"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Chassis Upgrade" id="eeae-b378-e97d-29db" hidden="false">
@@ -4614,6 +4615,11 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink import="true" name="Bomb, HE/AT, MkV" hidden="false" id="21d7-f8b5-0d7e-5b05" type="selectionEntry" targetId="52ef-08df-af56-e4b3"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(37x258mmR)" id="8578-4d03-ab9a-6c47" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="37x258mmR(HE)" hidden="false" id="d65b-9487-d85f-60ab" type="selectionEntry" targetId="4970-1ff7-4c4c-2534"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b72d-a08a-2414-8c49" name="Upgrade(Type)" hidden="false">
@@ -5620,7 +5626,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <description>Equipment with this rule:
 Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
-    <rule name="Ordnance(x)" id="defe-0600-91ce-25d1" hidden="false">
+    <rule name="Ordnance(37x258mmR)" id="defe-0600-91ce-25d1" hidden="false">
       <description>Equipment with this rule:
 Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
@@ -5761,6 +5767,10 @@ Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
     <rule name="Ablative(x,y)" id="5d9a-1642-bddc-1a29" hidden="false">
       <description>Equipment with this rule:
 Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
+    </rule>
+    <rule name="Ordnance(x)" id="0cc8-78b6-6112-2622" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -6419,7 +6429,6 @@ Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
         <infoLink name="Surplus" id="dc02-ac84-f50b-be97" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
         <infoLink name="Setup(1)" id="b4af-599c-f167-7e89" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
         <infoLink name="Bipod(1)" id="4a2a-1779-8fab-ad09" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
-        <infoLink name="Reload(1,20)" id="bb50-d36a-3f28-3b42" hidden="false" type="rule" targetId="b8af-95b2-008a-741d"/>
         <infoLink name="Crewed" id="a743-a188-cb1b-e43a" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
       </infoLinks>
       <profiles>
@@ -6435,7 +6444,7 @@ Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Reload(1,20), Setup(1), Surplus</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Setup(1), Surplus</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -6464,31 +6473,11 @@ Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
         </modifier>
       </modifiers>
       <infoLinks>
+        <infoLink targetId="453a-0a90-fc6c-961b" id="9456-b7ad-54d4-547e" type="profile" name="Kulspruta m/42" hidden="false"/>
         <infoLink name="Setup(1)" id="faec-6b0b-6bda-ac97" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
         <infoLink name="Crewed" id="69a2-4623-9af1-0034" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
         <infoLink name="Bipod(1)" id="847d-9ecc-943a-6912" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
-        <infoLink name="Reload(1,20)" id="5be3-b154-c7bb-e2a2" hidden="false" type="rule" targetId="b8af-95b2-008a-741d"/>
       </infoLinks>
-      <profiles>
-        <profile name="Kulspruta m/42" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="453a-0a90-fc6c-961b">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Reload(1,20), Setup(1)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kulsprutgevär m/57" hidden="true" id="fe9c-a2c5-9887-d63e">
       <costs>
@@ -19461,6 +19450,125 @@ Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="46af-1540-55d4-ef4f" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Stridsvagn m/41" hidden="true" id="26e1-ddff-8a16-7a11">
+      <profiles>
+        <profile name="Stridsvagn m/41" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="552b-78e5-88ac-262b">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a"/>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f"/>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7"/>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f"/>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10"/>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c"/>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5"/>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0"/>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0"/>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037"/>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Kulspruta m/42" id="b07d-1ce6-924c-e852" hidden="false" type="profile" targetId="453a-0a90-fc6c-961b">
+          <modifiers>
+            <modifier type="set" value="60" field="eb20-68aa-3af1-db2f"/>
+            <modifier type="set" value="Kulspruta m/42(Hull Mounted)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Kulspruta m/42" id="abf9-66f0-04fc-3b0a" hidden="false" type="profile" targetId="453a-0a90-fc6c-961b">
+          <modifiers>
+            <modifier type="set" value="270" field="eb20-68aa-3af1-db2f"/>
+            <modifier type="set" value="Kulspruta m/42(Coaxial)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="37mm Bofors m/38" id="719b-8beb-7773-15fe" hidden="false" type="profile" targetId="10db-8181-f837-cc54">
+          <modifiers>
+            <modifier type="set" value="270" field="eb20-68aa-3af1-db2f"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(37x258mmR)" hidden="false" id="35bd-527c-54e0-98fc" type="selectionEntryGroup" targetId="8578-4d03-ab9a-6c47"/>
+      </entryLinks>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="480"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="37mm Bofors m/38" hidden="true" id="6e4a-8963-1bf1-ff15">
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(37x258mmR)" hidden="false" id="3e95-04f1-496c-2193" type="selectionEntryGroup" targetId="8578-4d03-ab9a-6c47"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink targetId="10db-8181-f837-cc54" id="b0db-8d8b-e47b-5d10" type="profile" name="37mm Bofors m/38" hidden="false"/>
+        <infoLink name="Ordnance(37x258mmR)" id="31a7-762e-663d-e5bb" hidden="false" type="rule" targetId="defe-0600-91ce-25d1"/>
+      </infoLinks>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="135"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="37x258mmR(HE)" hidden="true" id="4970-1ff7-4c4c-2534">
+      <profiles>
+        <profile name="37x258mmR(HE)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="a0f2-d7b3-b1ae-4752">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">37x258mmR</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Explosive, Piercing(3), Radius(2&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Radius(2&quot;)" id="2e6b-94cc-87d6-73bd" hidden="false" type="rule" targetId="11d0-d8e8-183e-a54d"/>
+        <infoLink name="Piercing(3)" id="43b1-59ef-4823-ba84" hidden="false" type="rule" targetId="5238-a413-8b1a-fe25"/>
+        <infoLink name="Explosive" id="d1ff-4554-3110-6527" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -19904,6 +20012,39 @@ Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
       <attributes>
         <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
       </attributes>
+    </profile>
+    <profile name="Kulspruta m/42" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="453a-0a90-fc6c-961b">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Setup(1)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="37mm Bofors m/38" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="10db-8181-f837-cc54">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(37x258mmR)</characteristic>
+      </characteristics>
     </profile>
   </sharedProfiles>
 </gameSystem>
