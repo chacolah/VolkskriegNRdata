@@ -2988,7 +2988,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
       </modifiers>
       <entryLinks>
         <entryLink targetId="c960-3527-52b3-13a9" id="b675-7977-0b96-069d" type="selectionEntry" name="Lahti Saloranta M26/43" hidden="true"/>
-        <entryLink targetId="88d5-c07c-682b-5b88" id="06b8-69f9-667f-bbd1" type="selectionEntry" name="Panzerbüchse-54(Cz)" hidden="true" collective="false"/>
+        <entryLink targetId="9c82-7359-9fb6-3d59" id="06b8-69f9-667f-bbd1" type="selectionEntry" name="Projector, Infantry, Anti Tank" hidden="true" collective="false"/>
         <entryLink targetId="d4b1-9876-1b6b-81a0" id="a889-6bd4-9631-18f7" type="selectionEntry" name="Panzerbüchse-54(Gustloff)" hidden="true" collective="false"/>
         <entryLink targetId="3cf8-46de-ed2d-aec6" id="6982-4e18-af13-98dc" type="selectionEntry" name="Maschinengewehr-56" hidden="true" collective="false"/>
         <entryLink targetId="5124-31d0-40a6-cf70" id="d247-e3d9-7a77-9aaf" type="selectionEntry" name="Panzerfaust-60" hidden="true" collective="false"/>
@@ -3002,7 +3002,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="8677-f449-be72-6b51" id="2189-d4de-77fd-0a2b" type="selectionEntry" name="Raketen Panzerbüchse-58" hidden="true" collective="false"/>
         <entryLink targetId="43c6-c057-2d61-d775" id="3b78-4efc-43ed-1f58" type="selectionEntry" name="Kulspruta m/42" hidden="true"/>
         <entryLink targetId="2800-a6bf-347f-8f74" id="b8c6-2147-bbe8-f2f1" type="selectionEntry" name="Granatbüchse-54(Gustloff)" hidden="true" collective="false"/>
-        <entryLink targetId="3848-e115-3a35-9e94" id="084b-ea53-3638-b60c" type="selectionEntry" name="Blitzwerfengewehr-59" hidden="true" collective="false"/>
+        <entryLink targetId="92b4-bcb6-5738-21a0" id="084b-ea53-3638-b60c" type="selectionEntry" name="Vickers Machine Gun" hidden="true" collective="false"/>
         <entryLink targetId="5f16-2682-4506-23a9" id="2341-16c0-16fb-c3f7" type="selectionEntry" name="Fliegerfaust-55" hidden="true" collective="false"/>
         <entryLink targetId="d75e-0785-0d44-b90e" id="409e-a3cf-8f30-b46e" type="selectionEntry" name="Boys AT Rifle MKII*" hidden="true"/>
         <entryLink targetId="c5b2-f9bf-20c1-a0bf" id="84fc-27f5-4ea6-e1cf" type="selectionEntry" name="Flammenwerfer-47" hidden="true" collective="false"/>
@@ -3013,6 +3013,8 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink import="true" name="Type 20 Kochi Rifle" hidden="false" id="303f-7408-0eb2-4e0b" type="selectionEntry" targetId="a6d1-86b9-2c47-ce4c"/>
         <entryLink import="true" name="Degtjarev M27 &quot;Emma&quot;" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
         <entryLink import="true" name="vz.39/l.MG39(t)" hidden="false" id="ddb0-3c17-177e-ed9f" type="selectionEntry" targetId="1650-da94-b117-5d67"/>
+        <entryLink targetId="88d5-c07c-682b-5b88" id="1249-65e9-cd82-7625" type="selectionEntry" name="Panzerbüchse-54(Cz)" hidden="true" collective="false"/>
+        <entryLink targetId="3848-e115-3a35-9e94" id="c262-176b-2fc0-ddd1" type="selectionEntry" name="Blitzwerfengewehr-59" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
@@ -3652,7 +3654,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
           </entryLinks>
         </entryLink>
         <entryLink targetId="9243-8acc-a029-ce71" id="30c4-4d84-2e33-f9ff" type="selectionEntry" name="Opel Blitz" hidden="true"/>
-        <entryLink targetId="7994-61ae-daf6-84f7" id="44d5-a222-df4f-9723" type="selectionEntry" name="Kübelwagen Type 121" hidden="true">
+        <entryLink targetId="02eb-be8d-ea4a-2d30" id="44d5-a222-df4f-9723" type="selectionEntry" name="Morris &quot;Nuffy&quot; 4x4" hidden="true">
           <entryLinks>
             <entryLink import="true" name="Vehicle Mobility" hidden="false" id="a5a8-ea35-a2ac-77d4" type="selectionEntryGroup" targetId="1364-e764-5169-52c9"/>
           </entryLinks>
@@ -3665,6 +3667,11 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="7142-5ae1-6b24-9cde" id="e4aa-3604-1ee5-d1bf" type="selectionEntry" name="Leichter Panzerspähwagen (Platform)" hidden="true">
           <entryLinks>
             <entryLink import="true" name="Vehicle Mobility" hidden="false" id="4975-3032-9fe0-24fa" type="selectionEntryGroup" targetId="1364-e764-5169-52c9"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink targetId="7994-61ae-daf6-84f7" id="9a68-4086-5b20-4fe0" type="selectionEntry" name="Kübelwagen Type 121" hidden="true">
+          <entryLinks>
+            <entryLink import="true" name="Vehicle Mobility" hidden="false" id="b63d-a9a8-9583-e6b9" type="selectionEntryGroup" targetId="1364-e764-5169-52c9"/>
           </entryLinks>
         </entryLink>
       </entryLinks>
@@ -5747,6 +5754,14 @@ May be hidden on the equipped unit for the purposes of Stealth and Contraband ch
       <description>Equipment with this rule:
 Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
+    <rule name="Ablative(2,2)" id="4bc0-ff82-10e8-8b3d" hidden="false">
+      <description>Equipment with this rule:
+Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
+    </rule>
+    <rule name="Ablative(x,y)" id="5d9a-1642-bddc-1a29" hidden="false">
+      <description>Equipment with this rule:
+Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Raketen Panzerbüchse-58" hidden="true" id="8677-f449-be72-6b51" collective="false">
@@ -6936,7 +6951,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Funkbiene Ausf C “Wespe”" hidden="true" id="ba26-a493-57e2-40fd">
+    <selectionEntry type="model" import="true" name="Funkbiene Ausf C “Wespe”" hidden="true" id="ba26-a493-57e2-40fd">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
       </costs>
@@ -6996,7 +7011,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichter  Funkbiene Ausf. A “Hummel”" hidden="true" id="36c3-cc79-a3e6-b1db">
+    <selectionEntry type="model" import="true" name="Leichter  Funkbiene Ausf. A “Hummel”" hidden="true" id="36c3-cc79-a3e6-b1db">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
       </costs>
@@ -7057,7 +7072,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Thruster(3&quot;)" id="9846-a688-428d-489a" hidden="false" type="rule" targetId="5391-947d-9f58-85df"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichter Funkbiene Ausf. D “Blitz Hornisse”" hidden="true" id="7f5e-b03d-8717-718f">
+    <selectionEntry type="model" import="true" name="Leichter Funkbiene Ausf. D “Blitz Hornisse”" hidden="true" id="7f5e-b03d-8717-718f">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
       </costs>
@@ -7110,7 +7125,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichter Ladungsträger “Goliath” Ausf. A" hidden="true" id="9350-581a-028d-ec30">
+    <selectionEntry type="model" import="true" name="Leichter Ladungsträger “Goliath” Ausf. A" hidden="true" id="9350-581a-028d-ec30">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
       </costs>
@@ -7164,7 +7179,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Piercing(2)" id="09ee-01d2-cec5-5e39" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichter Ladungsträger “Goliath” Ausf. B" hidden="true" id="7b1a-94ba-297c-2191">
+    <selectionEntry type="model" import="true" name="Leichter Ladungsträger “Goliath” Ausf. B" hidden="true" id="7b1a-94ba-297c-2191">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
       </costs>
@@ -8099,7 +8114,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="DFS-230" hidden="true" id="8012-6c4f-f740-d341">
+    <selectionEntry type="model" import="true" name="DFS-230" hidden="true" id="8012-6c4f-f740-d341">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
       </costs>
@@ -8136,7 +8151,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Messerschmitt 265 &quot;Schwalbe&quot;" hidden="true" id="bbd7-7acd-38c1-57ff">
+    <selectionEntry type="model" import="true" name="Messerschmitt 265 &quot;Schwalbe&quot;" hidden="true" id="bbd7-7acd-38c1-57ff">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
       </costs>
@@ -8177,7 +8192,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Messerschmitt-Junkers 213 &quot;Falke&quot;" hidden="true" id="d728-d153-db2f-9425">
+    <selectionEntry type="model" import="true" name="Messerschmitt-Junkers 213 &quot;Falke&quot;" hidden="true" id="d728-d153-db2f-9425">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
       </costs>
@@ -9148,7 +9163,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="BMW R100" hidden="true" id="db37-3e47-7443-f615">
+    <selectionEntry type="model" import="true" name="BMW R100" hidden="true" id="db37-3e47-7443-f615">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="110"/>
       </costs>
@@ -9193,7 +9208,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Recharge(0)" id="e9eb-3cc4-3b8b-3e7a" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Kettenkrad Ausf. D" hidden="true" id="890f-32b2-3f42-8544">
+    <selectionEntry type="model" import="true" name="Kettenkrad Ausf. D" hidden="true" id="890f-32b2-3f42-8544">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="140"/>
       </costs>
@@ -10691,7 +10706,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beef-45c5-27c4-4fcd"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot; (Casemate)" hidden="true" id="230e-861d-07f9-6652">
+    <selectionEntry type="model" import="true" name="E-10 &quot;Luchs&quot; (Casemate)" hidden="true" id="230e-861d-07f9-6652">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="240"/>
       </costs>
@@ -10748,7 +10763,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c003-9fd2-74a2-c8f3"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot; (Drohne Rack)" hidden="true" id="db9b-2bde-47e0-6930">
+    <selectionEntry type="model" import="true" name="E-10 &quot;Luchs&quot; (Drohne Rack)" hidden="true" id="db9b-2bde-47e0-6930">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="250"/>
       </costs>
@@ -10803,7 +10818,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c79-cdcf-1b6d-f5a4"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="E-10 &quot;Luchs&quot; (Turreted)" hidden="true" id="75e8-54e8-18ea-79b0">
+    <selectionEntry type="model" import="true" name="E-10 &quot;Luchs&quot; (Turreted)" hidden="true" id="75e8-54e8-18ea-79b0">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="220"/>
       </costs>
@@ -10860,7 +10875,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2aa-a107-8e03-dd61"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="E-25 &quot;Panzer&quot; (Casemate)" hidden="true" id="b88d-4a94-81b9-9d40">
+    <selectionEntry type="model" import="true" name="E-25 &quot;Panzer&quot; (Casemate)" hidden="true" id="b88d-4a94-81b9-9d40">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="290"/>
       </costs>
@@ -10915,7 +10930,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6842-92cd-abfe-1625"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="E-25 &quot;Panzer&quot; (Turreted)" hidden="true" id="f137-3e2e-5c0e-c63a">
+    <selectionEntry type="model" import="true" name="E-25 &quot;Panzer&quot; (Turreted)" hidden="true" id="f137-3e2e-5c0e-c63a">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="300"/>
       </costs>
@@ -10970,7 +10985,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b46-126d-9bed-59f7"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="E-50 &quot;Tiger&quot; (Casemate)" hidden="true" id="8f3a-cb82-0747-bde3">
+    <selectionEntry type="model" import="true" name="E-50 &quot;Tiger&quot; (Casemate)" hidden="true" id="8f3a-cb82-0747-bde3">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="320"/>
       </costs>
@@ -11025,7 +11040,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21d8-f40b-7fd8-82ff"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="E-50 &quot;Tiger&quot; (Turreted)" hidden="true" id="afdd-ed17-e25a-0103">
+    <selectionEntry type="model" import="true" name="E-50 &quot;Tiger&quot; (Turreted)" hidden="true" id="afdd-ed17-e25a-0103">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="350"/>
       </costs>
@@ -11169,7 +11184,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Kugelpanzer II" hidden="true" id="46b7-9e8d-1d2b-3c5e">
+    <selectionEntry type="model" import="true" name="Kugelpanzer II" hidden="true" id="46b7-9e8d-1d2b-3c5e">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="200"/>
       </costs>
@@ -11214,7 +11229,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fahrlafette 51" hidden="true" id="8bae-605a-7a31-4d56">
+    <selectionEntry type="model" import="true" name="Fahrlafette 51" hidden="true" id="8bae-605a-7a31-4d56">
       <entryLinks>
         <entryLink targetId="be47-f87a-5bf8-89d3" id="7d3a-cae4-6ee7-a213" type="selectionEntry" name="Schutzschild-51" hidden="true"/>
         <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="8587-006b-9b06-e1ef" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
@@ -13680,7 +13695,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Energy(1)" id="0b53-cdd6-7387-d32e" hidden="false" type="rule" targetId="98a2-2a4b-cbba-9b7b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Landsverk Motorrustning m/56" hidden="true" id="26d0-86d9-0d87-5772">
+    <selectionEntry type="model" import="true" name="Landsverk Motorrustning m/56" hidden="true" id="26d0-86d9-0d87-5772">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
@@ -13884,7 +13899,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Shoulder(2)" id="5bfa-d6d5-56be-9384" hidden="false" type="rule" targetId="1e21-0557-c602-f477"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichterrüstung Ausf. A/58 “Eierschale”" hidden="true" id="5c93-567f-cbb1-45a7">
+    <selectionEntry type="model" import="true" name="Leichterrüstung Ausf. A/58 “Eierschale”" hidden="true" id="5c93-567f-cbb1-45a7">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
       </costs>
@@ -14087,7 +14102,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Schwererrüstung Aust. C/55 “Ritter”" hidden="true" id="b397-854e-e216-4012">
+    <selectionEntry type="model" import="true" name="Schwererrüstung Aust. C/55 “Ritter”" hidden="true" id="b397-854e-e216-4012">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
@@ -15268,7 +15283,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Surplus" id="2b6e-a1c1-4dda-7b60" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="PzJäger “Wanze”" hidden="true" id="9a10-87e6-960f-2c2c">
+    <selectionEntry type="model" import="true" name="PzJäger “Wanze”" hidden="true" id="9a10-87e6-960f-2c2c">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="340"/>
       </costs>
@@ -15314,7 +15329,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="PzKPFw II “Luchs”" hidden="true" id="1949-4270-db04-2d5e">
+    <selectionEntry type="model" import="true" name="PzKPFw II “Luchs”" hidden="true" id="1949-4270-db04-2d5e">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="425"/>
       </costs>
@@ -15363,7 +15378,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="a090-11b7-ecd7-ac40" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="PzKpfw III Ausf. E" hidden="true" id="9571-b1e0-438f-70ce">
+    <selectionEntry type="model" import="true" name="PzKpfw III Ausf. E" hidden="true" id="9571-b1e0-438f-70ce">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="525"/>
       </costs>
@@ -15411,7 +15426,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="StuG III  Ausf. E" hidden="true" id="10a4-1ae7-7950-c22f">
+    <selectionEntry type="model" import="true" name="StuG III  Ausf. E" hidden="true" id="10a4-1ae7-7950-c22f">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="630"/>
       </costs>
@@ -15470,7 +15485,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <entryLink import="true" name="Ordnance(75x714R)" hidden="false" id="92d9-59f3-1e0e-4696" type="selectionEntryGroup" targetId="7666-e18c-e2a5-5354"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="StuG III Ausf. G" hidden="true" id="83b1-de2d-08d4-896d">
+    <selectionEntry type="model" import="true" name="StuG III Ausf. G" hidden="true" id="83b1-de2d-08d4-896d">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="710"/>
       </costs>
@@ -15540,7 +15555,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Kubelwagen Type 82 " hidden="true" id="1c41-22c8-5280-9e06">
+    <selectionEntry type="model" import="true" name="Kubelwagen Type 82 " hidden="true" id="1c41-22c8-5280-9e06">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="185"/>
       </costs>
@@ -15596,7 +15611,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="145"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Freight Train Engine" hidden="true" id="cb86-e134-79a1-589a">
+    <selectionEntry type="model" import="true" name="Freight Train Engine" hidden="true" id="cb86-e134-79a1-589a">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
       </costs>
@@ -15634,7 +15649,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Cattle Car" hidden="true" id="4b61-21ca-696e-cfec">
+    <selectionEntry type="model" import="true" name="Cattle Car" hidden="true" id="4b61-21ca-696e-cfec">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
       </costs>
@@ -15675,7 +15690,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Cover(1)" id="6314-ccec-31a2-f25e" hidden="false" type="rule" targetId="cb33-ca90-1e47-1108"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Flat Car" hidden="true" id="7324-eae7-bcc5-85a4">
+    <selectionEntry type="model" import="true" name="Flat Car" hidden="true" id="7324-eae7-bcc5-85a4">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
       </costs>
@@ -15716,7 +15731,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Flatbed" id="3b87-eb6c-f992-b1dc" hidden="false" type="rule" targetId="435d-d53a-0c6b-f325"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Passenger Car" hidden="true" id="e218-6488-b037-4fc5">
+    <selectionEntry type="model" import="true" name="Passenger Car" hidden="true" id="e218-6488-b037-4fc5">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
       </costs>
@@ -16248,7 +16263,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Kübelwagen Type 121" hidden="true" id="7994-61ae-daf6-84f7">
+    <selectionEntry type="model" import="true" name="Kübelwagen Type 121" hidden="true" id="7994-61ae-daf6-84f7">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
       </costs>
@@ -16279,7 +16294,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Recharge(0)" id="93e7-2de5-d790-6c81" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichter Panzerspähwagen (Cupola)" hidden="true" id="4d5e-dead-eaf6-d27c">
+    <selectionEntry type="model" import="true" name="Leichter Panzerspähwagen (Cupola)" hidden="true" id="4d5e-dead-eaf6-d27c">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
       </costs>
@@ -16330,7 +16345,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichter Panzerspähwagen (Platform)" hidden="true" id="7142-5ae1-6b24-9cde">
+    <selectionEntry type="model" import="true" name="Leichter Panzerspähwagen (Platform)" hidden="true" id="7142-5ae1-6b24-9cde">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="160"/>
       </costs>
@@ -16382,7 +16397,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Leichter Panzerspähwagen (Turreted)" hidden="true" id="0872-2ea5-dacb-5b6b">
+    <selectionEntry type="model" import="true" name="Leichter Panzerspähwagen (Turreted)" hidden="true" id="0872-2ea5-dacb-5b6b">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
       </costs>
@@ -16432,7 +16447,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Opel Blitz" hidden="true" id="9243-8acc-a029-ce71">
+    <selectionEntry type="model" import="true" name="Opel Blitz" hidden="true" id="9243-8acc-a029-ce71">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="150"/>
       </costs>
@@ -16483,7 +16498,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <entryLink import="true" name="Vehicle Mobility" hidden="false" id="789b-b4fa-5b27-14d2" type="selectionEntryGroup" targetId="1364-e764-5169-52c9"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Schützen Panzerwagen" hidden="true" id="1f6a-f29f-89ef-723a">
+    <selectionEntry type="model" import="true" name="Schützen Panzerwagen" hidden="true" id="1f6a-f29f-89ef-723a">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="170"/>
       </costs>
@@ -16535,7 +16550,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Schützen Panzerwagen (Casemte)" hidden="true" id="b779-6138-aa55-8e88">
+    <selectionEntry type="model" import="true" name="Schützen Panzerwagen (Casemate)" hidden="true" id="b779-6138-aa55-8e88">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="180"/>
       </costs>
@@ -17609,7 +17624,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="SdKfz 251/1 &quot;Hanomag&quot;" hidden="true" id="9904-a67f-d563-a6ea">
+    <selectionEntry type="model" import="true" name="SdKfz 251/1 &quot;Hanomag&quot;" hidden="true" id="9904-a67f-d563-a6ea">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="185"/>
       </costs>
@@ -17767,7 +17782,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <entryLink import="true" name="Conversion Kits" hidden="false" id="ecf1-7cca-0963-9c9e" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Focke-Achgelis fa 223 &quot;Drache" hidden="true" id="b71e-3cb0-daca-2e97">
+    <selectionEntry type="model" import="true" name="Focke-Achgelis fa 223 &quot;Drache" hidden="true" id="b71e-3cb0-daca-2e97">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dae0-4a48-85f7-cda1"/>
       </constraints>
@@ -18039,7 +18054,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Holdout" id="a935-f099-a0c8-4087" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="40mm Lvakan Carriage" hidden="true" id="bc75-694f-67ff-035e">
+    <selectionEntry type="model" import="true" name="40mm Lvakan Carriage" hidden="true" id="bc75-694f-67ff-035e">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
       </costs>
@@ -18173,6 +18188,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       </costs>
       <infoLinks>
         <infoLink targetId="ea40-99bf-3da6-a618" id="76a9-4b34-f286-9a38" type="profile" name="Leichte Schürzen (Chassis)" hidden="false"/>
+        <infoLink name="Ablative(2,2)" id="e278-a64a-728e-d2ac" hidden="false" type="rule" targetId="4bc0-ff82-10e8-8b3d"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Type 99 Rifle" hidden="true" id="1b99-9c4f-0b78-e837">
@@ -18457,7 +18473,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Piercing(2)" id="c048-bb7a-bbd2-2bf5" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bicycle" hidden="false" id="9f91-d407-924d-8974">
+    <selectionEntry type="model" import="true" name="Bicycle" hidden="false" id="9f91-d407-924d-8974">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
@@ -19184,7 +19200,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="PzKpfw 35/38(t)" hidden="true" id="44bd-90cc-7805-e479">
+    <selectionEntry type="model" import="true" name="PzKpfw 35/38(t)" hidden="true" id="44bd-90cc-7805-e479">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="460"/>
       </costs>
@@ -19349,6 +19365,102 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Morris &quot;Nuffy&quot; 4x4" hidden="true" id="02eb-be8d-ea4a-2d30">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="90"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ British Commandos"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ London Underground"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Multipart Equipment" hidden="false" id="5430-a604-36bd-6c31" targetId="5020-e810-c95a-b39d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="6bb7-04c1-81fb-1561" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Recharge(0)" id="da98-b542-a7a4-a995" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Morris &quot;Nuffy&quot; 4x4" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="e5f5-5c3b-a4b0-a6ad">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">8</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">2/3</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Vehicle, Car</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vickers Machine Gun" hidden="true" id="92b4-bcb6-5738-21a0">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5581-b59b-7a63-4c46"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Bren Light Machine Gun MKIV*" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="44e4-8f9e-c787-5977">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapons</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Setup(1)</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Setup(1)" id="edc8-e64a-ee66-1de3" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
+        <infoLink name="Crewed" id="bfb9-3e51-37a6-b8e8" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+        <infoLink name="Bipod(1)" id="c35d-bb9c-aaee-1675" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="71a4-68fe-8141-a218" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="ce30-fe51-09ae-ad67" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="46af-1540-55d4-ef4f" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -19469,7 +19581,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+1</characteristic>
         <characteristic name="DUR" typeId="4f35-654d-7514-6eda">8</characteristic>
         <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Chassis Upgrade</characteristic>
-        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ablative(2,2)</characteristic>
       </characteristics>
     </profile>
     <profile name="Bayonet" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3ad3-93a8-3895-cd15">
