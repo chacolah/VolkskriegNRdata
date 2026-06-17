@@ -2902,7 +2902,8 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Surplus Vehicles" id="1b4a-ac83-f867-5a6d" hidden="false">
       <entryLinks>
-        <entryLink targetId="5c81-68ad-b4fd-e74b" id="8cad-e330-031d-8c00" type="selectionEntry" name="Volkswagen Käfer" hidden="true">
+        <entryLink targetId="7819-ae93-efa7-8fd2" id="ad81-9ddc-f5e6-579c" type="selectionEntry" name="Opel Blitz (Civilian)" hidden="false"/>
+        <entryLink targetId="5c81-68ad-b4fd-e74b" id="8cad-e330-031d-8c00" type="selectionEntry" name="Volkswagen Käfer" hidden="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="145"/>
           </costs>
@@ -2959,60 +2960,6 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
           </modifiers>
         </entryLink>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Opel Blitz (Civilian)" hidden="true" id="7819-ae93-efa7-8fd2">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="185"/>
-          </costs>
-          <profiles>
-            <profile name="Opel Blitz (Civilian)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="0c6b-c1ef-01da-e470">
-              <characteristics>
-                <characteristic name="MOB" typeId="4765-2056-04fc-a63a">12</characteristic>
-                <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
-                <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
-                <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
-                <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
-                <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
-                <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/2</characteristic>
-                <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
-                <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
-                <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Truck</characteristic>
-                <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus, Truckbed(10,1)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Truckbed(10,1)" id="78fd-f032-6ac5-73a8" hidden="false" type="rule" targetId="c473-a011-004f-364b"/>
-            <infoLink name="Recharge(0)" id="4a5f-1cd7-4ff9-4987" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
-            <infoLink name="Surplus" id="9b80-82bc-7587-9d25" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
-          </infoLinks>
-          <modifiers>
-            <modifier type="set" value="0" field="7439-07e0-82ef-c431">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6cb1-79df-5642-19bf" shared="true" childName="Reich Soldier w/ Surplus Vehicle"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Luftwaffe"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4fe5-9481-73ea-f0a7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Merc Pool"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="31e1-cfc2-0836-5b24" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Motorized Options" id="f0dc-fc28-959c-0329" hidden="false">
       <entryLinks>
@@ -15644,29 +15591,10 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Volkswagen Käfer" hidden="true" id="5c81-68ad-b4fd-e74b">
+    <selectionEntry type="upgrade" import="true" name="Volkswagen Käfer" hidden="false" id="5c81-68ad-b4fd-e74b">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="145"/>
       </costs>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4fe5-9481-73ea-f0a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true" childName="Merc Pool"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Luftwaffe"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4fe5-9481-73ea-f0a7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true" childName="Merc Pool"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="true" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="31e1-cfc2-0836-5b24" shared="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Freight Train Engine" hidden="true" id="cb86-e134-79a1-589a">
       <costs>
@@ -19386,6 +19314,40 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <entryLinks>
         <entryLink import="true" name="Ordnance(PIAT)" hidden="false" id="56e4-bf13-2932-fa6b" type="selectionEntryGroup" targetId="871d-7efb-7412-3359"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Opel Blitz (Civilian)" hidden="false" id="7819-ae93-efa7-8fd2">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="185"/>
+      </costs>
+      <profiles>
+        <profile name="Opel Blitz (Civilian)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="0c6b-c1ef-01da-e470">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">12</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/2</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">1</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Truck</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus, Truckbed(10,1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Truckbed(10,1)" id="78fd-f032-6ac5-73a8" hidden="false" type="rule" targetId="c473-a011-004f-364b"/>
+        <infoLink name="Recharge(0)" id="4a5f-1cd7-4ff9-4987" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+        <infoLink name="Surplus" id="9b80-82bc-7587-9d25" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6cb1-79df-5642-19bf" shared="true" childName="Reich Soldier w/ Surplus Vehicle"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
