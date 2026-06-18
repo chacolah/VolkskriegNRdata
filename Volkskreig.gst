@@ -4672,11 +4672,11 @@ May be used for “Order Fire Support” Orders within a number of hexes equal t
 May be used for “Order Fire Support” Orders within a number of hexes equal to x on the campaign map.</description>
     </rule>
     <rule name="Backpack(1)" id="bc91-4bc5-38a7-1956" hidden="false">
-      <description>Equipment with this ruleL
+      <description>Equipment with this rule:
 May have up to (x) number of equipment with the Backpack Type</description>
     </rule>
     <rule name="Backpack(2)" id="6981-1a39-7b5f-6426" hidden="false">
-      <description>Equipment with this ruleL
+      <description>Equipment with this rule:
 May have up to (x) number of equipment with the Backpack Type</description>
     </rule>
     <rule name="Battery(6)" id="770e-a2d8-050d-ac0f" hidden="false">
@@ -4684,7 +4684,7 @@ May have up to (x) number of equipment with the Backpack Type</description>
 Can store up to X Blitz energy.</description>
     </rule>
     <rule name="Backpack(3)" id="8faa-b708-4bbe-1095" hidden="false">
-      <description>Equipment with this ruleL
+      <description>Equipment with this rule:
 May have up to (x) number of equipment with the Backpack Type</description>
     </rule>
     <rule name="Battery(+1)" id="9e07-540d-253d-ac8e" hidden="false">
@@ -5236,7 +5236,7 @@ May only be equipped on Aircraft, Weapon Frame Equipment, and Towed Weapon Mount
       <description>Armour Equipment:
 Take up the Armour slot on an infantry model.</description>
     </rule>
-    <rule name="Backpack(Type)" id="d551-f9d4-bcfe-51a9" hidden="false">
+    <rule name="Backpack" id="d551-f9d4-bcfe-51a9" hidden="false">
       <description>Backpack Equipment:
 Takes up a Backpack slot in a Uniform.
 Backpack is a secondary type that some equipment has in addition to its primary type.
@@ -8466,11 +8466,14 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Waffen SS"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Waffen SS" sortIndex="3"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" sortIndex="4"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" sortIndex="8"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" sortIndex="2"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi" sortIndex="5"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais" sortIndex="6"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Nordischer Reichstaat" sortIndex="7"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ London Underground" sortIndex="1"/>
               </conditions>
               <conditionGroups>
                 <conditionGroup type="and">
@@ -8540,10 +8543,10 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager" sortIndex="5"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais" sortIndex="4"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" sortIndex="2"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" sortIndex="1"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -15317,6 +15320,14 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Raketenpanzerbüchse-58 x6" hidden="false" id="1b3d-d55e-00f4-452f" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f39f-809c-d23f-5d20-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f39f-809c-d23f-5d20-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="PzKPFw II “Luchs”" hidden="true" id="1949-4270-db04-2d5e">
       <costs>
@@ -15366,6 +15377,20 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <entryLinks>
         <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="a090-11b7-ecd7-ac40" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="2cm Kampfwagenkanone" hidden="false" id="21a6-f513-47d2-072d" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5101-525f-9b25-7bb1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5101-525f-9b25-7bb1-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Maschinengewehr-56" hidden="false" id="b69c-a3dd-8e8c-8f3c" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1619-399c-70a8-1534-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1619-399c-70a8-1534-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="PzKpfw III Ausf. E" hidden="true" id="9571-b1e0-438f-70ce">
       <costs>
@@ -15414,6 +15439,20 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="3.7cm Kampfwagenkanone" hidden="false" id="4f69-5c3d-c048-b6ac" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f30-95e3-2918-36a9-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f30-95e3-2918-36a9-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Maschinengewehr-56" hidden="false" id="209f-ec8f-be6c-251b" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5872-7a97-3103-551d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5872-7a97-3103-551d-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="StuG III  Ausf. E" hidden="true" id="10a4-1ae7-7950-c22f">
       <costs>
@@ -15473,6 +15512,20 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <entryLinks>
         <entryLink import="true" name="Ordnance(75x714R)" hidden="false" id="92d9-59f3-1e0e-4696" type="selectionEntryGroup" targetId="7666-e18c-e2a5-5354"/>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="7.5cm Kampfwagenkanone" hidden="false" id="55de-edbe-7f7d-8e93" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28a7-21d0-2b21-72ef-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28a7-21d0-2b21-72ef-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Maschinengewehr-56" hidden="false" id="11c7-f758-dd57-8c34" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc4c-dd18-5ff2-e679-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc4c-dd18-5ff2-e679-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="StuG III Ausf. G" hidden="true" id="83b1-de2d-08d4-896d">
       <costs>
@@ -15543,6 +15596,28 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </modifiers>
         </infoLink>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Maschinengewehr-56" hidden="false" id="0b01-72cf-fdb0-38dd" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="69e4-81cc-176b-9fee-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69e4-81cc-176b-9fee-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="7.5cm Kampfwagenkanone" hidden="false" id="09be-8544-facd-8f5e" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d979-f465-d71c-ddf0-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d979-f465-d71c-ddf0-max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Long Barrel" hidden="false" id="08e4-a801-adbe-6938" defaultAmount="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2da7-788c-02c0-05c2-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2da7-788c-02c0-05c2-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Kubelwagen Type 82 " hidden="true" id="1c41-22c8-5280-9e06">
       <costs>
@@ -15594,6 +15669,14 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Maschinengewehr-56" hidden="false" id="d668-ed03-17d1-2e06" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f91-f49b-e7bf-c804-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f91-f49b-e7bf-c804-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Volkswagen Käfer" hidden="false" id="5c81-68ad-b4fd-e74b">
       <costs>
@@ -17663,6 +17746,14 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Maschinengewehr-56" hidden="false" id="cfe9-feda-b568-70ac" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2f1-2ce5-1291-df41-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2f1-2ce5-1291-df41-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Wurfrahmen 40(6)" hidden="false" id="22de-e922-00cf-a5a2">
       <modifiers>
@@ -19237,6 +19328,20 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="3.7cm Kampfwagenkanone" hidden="false" id="4e07-26b2-6a9f-9aa6" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cfb3-48e2-0567-4bad-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfb3-48e2-0567-4bad-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Maschinengewehr-56" hidden="false" id="c427-2f63-eabf-22ac" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e669-c83b-2c4b-35c1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e669-c83b-2c4b-35c1-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bomb, HE/AT, MkV" hidden="true" id="52ef-08df-af56-e4b3">
       <costs>
@@ -19454,17 +19559,17 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <profiles>
         <profile name="Stridsvagn m/41" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="552b-78e5-88ac-262b">
           <characteristics>
-            <characteristic name="MOB" typeId="4765-2056-04fc-a63a"/>
-            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f"/>
-            <characteristic name="ROT" typeId="9735-744c-cafa-32d7"/>
-            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f"/>
-            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10"/>
-            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c"/>
-            <characteristic name="CAP" typeId="1239-734a-67cf-33e5"/>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0"/>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0"/>
-            <characteristic name="TYPE" typeId="48be-3b84-9024-2037"/>
-            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">7</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">9</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">75</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -19486,6 +19591,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <modifier type="set" value="270" field="eb20-68aa-3af1-db2f"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Recharge(0)" id="2b75-a07d-4d80-8e01" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -19505,6 +19611,26 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="480"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="37mm Bofors m/38" hidden="false" id="6e98-1315-069b-53dd" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5527-3187-fb21-1080-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5527-3187-fb21-1080-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kulspruta m/42(Coaxial)" hidden="false" id="7489-735a-8d61-7b25" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="299f-2dff-d326-15a1-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="299f-2dff-d326-15a1-max"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Kulspruta m/42(Hull Mounted)" hidden="false" id="407e-34fd-75a5-fbdb" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="deb3-ea98-cffb-4480-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="deb3-ea98-cffb-4480-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="37mm Bofors m/38" hidden="true" id="6e4a-8963-1bf1-ff15">
       <entryLinks>
