@@ -170,8 +170,8 @@
         <categoryLink targetId="f5ad-1da5-2ad4-cb2e" id="7330-41af-c53e-9ed1" primary="true" name="Faction Bookkeeping"/>
       </categoryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="140f-0bf7-0277-9981-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="140f-0bf7-0277-9981-max" includeChildSelections="false"/>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="140f-0bf7-0277-9981-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="self" shared="true" id="140f-0bf7-0277-9981-max" includeChildSelections="false"/>
       </constraints>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Volksfront Militia" hidden="true" id="897a-db0b-4037-0669">
@@ -470,13 +470,18 @@ The Himmelschloss begins play with a Launch Bay.</description>
         <selectionEntry type="upgrade" import="true" name="Deserteur" hidden="true" id="c8f6-fea8-d3f6-0cba">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" includeChildSelections="false" childName="Former Reich/ Wehrmacht"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" includeChildSelections="false" childName="Former Reich/ Waffen SS"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" includeChildSelections="false" childName="Former Reich/ Luftwaffe"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" includeChildSelections="false" childName="Former Reich/ Volksfront-Volkssturm"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" includeChildSelections="false" childName="Former Reich/ Tyoler Konigsreich"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" includeChildSelections="false" childName="Former Reich/ Wehrmacht"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" includeChildSelections="false" childName="Former Reich/ Waffen SS"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" includeChildSelections="false" childName="Former Reich/ Luftwaffe"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" includeChildSelections="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" includeChildSelections="false" childName="Former Reich/ Tyoler Konigsreich"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -528,11 +533,16 @@ The Himmelschloss begins play with an Artillery Bay.</description>
         <selectionEntry type="upgrade" import="true" name="Veteran Kameraden" hidden="true" id="8cdf-74dc-30f9-31cc">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" includeChildSelections="false" childName="Former Reich/ Luftwaffe"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" includeChildSelections="false" childName="Former Reich/ Waffen SS"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" includeChildSelections="false" childName="Former Reich/ Wehrmacht"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" includeChildSelections="false" childName="Campaign Manager"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" includeChildSelections="false" childName="Former Reich/ Luftwaffe"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" includeChildSelections="false" childName="Former Reich/ Waffen SS"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" includeChildSelections="false" childName="Former Reich/ Wehrmacht"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -2195,6 +2205,15 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mobile Bases" hidden="false" id="0c8d-ea58-81b2-9910">
+      <categoryLinks>
+        <categoryLink name="Mobile Bases" hidden="false" id="437c-4dce-065d-5c66" targetId="45b3-5bb4-1df7-06bd" primary="true"/>
+        <categoryLink name="Faction Bookkeeping" hidden="false" id="8a07-9b4d-650a-f4af" targetId="f5ad-1da5-2ad4-cb2e" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Himmelschlossen" hidden="false" id="c3e4-abf3-51ca-a426" type="selectionEntryGroup" targetId="57d3-7996-97c3-6d00"/>
+      </entryLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="be23-c331-259d-7740" name="Equipped Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
@@ -3639,7 +3658,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Vehicle Chassis" id="1a77-4918-f32e-5dfb" hidden="false">
       <entryLinks>
-        <entryLink targetId="b779-6138-aa55-8e88" id="4055-2ce6-686b-13ac" type="selectionEntry" name="Schützen Panzerwagen (Casemte)" hidden="true">
+        <entryLink targetId="b779-6138-aa55-8e88" id="4055-2ce6-686b-13ac" type="selectionEntry" name="Schützen Panzerwagen (Casemate)" hidden="true">
           <entryLinks>
             <entryLink import="true" name="Vehicle Mobility" hidden="false" id="bc9c-2f15-5fb7-6da7" type="selectionEntryGroup" targetId="1364-e764-5169-52c9"/>
           </entryLinks>
@@ -4619,6 +4638,157 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
       <entryLinks>
         <entryLink import="true" name="37x258mmR(HE)" hidden="false" id="d65b-9487-d85f-60ab" type="selectionEntry" targetId="4970-1ff7-4c4c-2534"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Himmelschlossen" id="57d3-7996-97c3-6d00" hidden="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Übergigant Himmelschloss “Kaserne”" hidden="true" id="aa92-5b40-15c1-5ad3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae91-e3cd-24ea-cdce"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e261-63b6-d241-f75d"/>
+          </constraints>
+          <entryLinks>
+            <entryLink targetId="2138-25bd-4618-db95" id="f807-3f3c-4506-eb2c" type="selectionEntryGroup" name="Empty Himmelschloss Bay" hidden="false"/>
+            <entryLink targetId="36f4-1003-164b-5562" id="a1a4-df35-3225-9b7d" type="selectionEntry" name="Paradrop Bay" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ace-639d-ca3c-0d03-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6ace-639d-ca3c-0d03-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="e261-63b6-d241-f75d">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fd61-9380-b637-ee50" shared="true" includeChildSelections="true" childName="Fallschirmjäger"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="fd61-9380-b637-ee50" shared="true" includeChildSelections="true" childName="Fallschirmjäger"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Übergigant Himmelschloss “Vögelnest”" hidden="true" id="65c5-2bc6-2787-f200">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59bb-140c-bd71-60b2"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b67b-f607-07a4-b2c9"/>
+          </constraints>
+          <entryLinks>
+            <entryLink targetId="e1a8-4ebd-84ea-0300" id="7df2-a27c-9e82-0816" type="selectionEntry" name="Launch Bay" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="01a9-b233-7f76-08d5-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01a9-b233-7f76-08d5-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Empty Himmelschloss Bay" hidden="false" id="7528-7194-cc45-ad4a" targetId="2138-25bd-4618-db95" type="selectionEntryGroup"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="b67b-f607-07a4-b2c9">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1974-ad78-e096-341e" shared="true" includeChildSelections="true" childName="Reichsvögel"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="1974-ad78-e096-341e" shared="true" includeChildSelections="true" childName="Reichsvögel"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Übergigant Himmelschloss “Zyklop”" hidden="true" id="b778-79d9-ad31-1f7d">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7be-8145-c710-7af6"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="117a-1106-b568-5494"/>
+          </constraints>
+          <entryLinks>
+            <entryLink targetId="cdcc-93a7-88ee-eb4d" id="c566-ecd0-3d96-97ba" type="selectionEntry" name="Artillery Bay" hidden="false">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f23e-f671-82c8-926e-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f23e-f671-82c8-926e-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Empty Himmelschloss Bay" hidden="false" id="7e60-a0c2-8ccd-efca" targetId="2138-25bd-4618-db95" type="selectionEntryGroup"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="117a-1106-b568-5494">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="68bb-5240-ed19-84de" shared="true" includeChildSelections="true" childName="Berufskraft"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="68bb-5240-ed19-84de" shared="true" includeChildSelections="true" childName="Berufskraft"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" childName="Former Reich/ Luftwaffe"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Empty Himmelschloss Bay" id="2138-25bd-4618-db95" hidden="false">
+      <entryLinks>
+        <entryLink targetId="bb96-c974-24de-c504" id="f305-7bd7-db38-1aed" type="selectionEntry" name="Radio Bay" hidden="false">
+          <modifiers>
+            <modifier type="set" value="400" field="7439-07e0-82ef-c431"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Artillery Bay" hidden="false" id="84cc-79fe-72c8-06e8" type="selectionEntry" targetId="cdcc-93a7-88ee-eb4d">
+          <modifiers>
+            <modifier type="set" value="400" field="7439-07e0-82ef-c431"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Paradrop Bay" hidden="false" id="5e86-b79f-0074-306d" type="selectionEntry" targetId="36f4-1003-164b-5562">
+          <modifiers>
+            <modifier type="set" value="400" field="7439-07e0-82ef-c431"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Launch Bay" hidden="false" id="4e88-2c9d-3bc3-b29c" type="selectionEntry" targetId="e1a8-4ebd-84ea-0300">
+          <modifiers>
+            <modifier type="set" value="400" field="7439-07e0-82ef-c431"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8689-6167-3d90-00d3"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -19694,6 +19864,62 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Piercing(3)" id="43b1-59ef-4823-ba84" hidden="false" type="rule" targetId="5238-a413-8b1a-fe25"/>
         <infoLink name="Explosive" id="d1ff-4554-3110-6527" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Artillery Bay" hidden="false" id="cdcc-93a7-88ee-eb4d">
+      <rules>
+        <rule name="Artillery Bay" id="1272-03df-fb3e-28a4" hidden="false">
+          <description>Artillery bays can be equipped with Panzer Weapons to a maximum of 4 points per bay with the following costs:
+
+
+Aircraft Weapon/Light Panzer Weapon 1
+Medium Panzer Weapon 2
+Heavy Panzer Weapon 4
+
+
+Weapons mounted in an Artillery Bay are considered to have the rule Artillery(+2).</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Launch Bay" hidden="false" id="e1a8-4ebd-84ea-0300">
+      <rules>
+        <rule name="Launch Bay" id="8b63-613f-c3c5-243a" hidden="false">
+          <description>Launch Bays can house up to 10 points worth of Aircraft with the following costs:
+
+
+Gliders 3
+Fighters/Helicopter 5
+Bomber/Hovercraft 10
+
+
+Additionally, Launch Bays have the Repair(4,12) rule for Aircraft only.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Paradrop Bay" hidden="false" id="36f4-1003-164b-5562">
+      <rules>
+        <rule name="Paradrop Bay" id="55d0-ef4b-439f-6689" hidden="false">
+          <description>Paradrop Bays allow for Airborne infantry/vehicles to Paradrop Deploy up to 3 Hexes away from the Übergigant. Each Paradrop Bay may deploy 10 points of Airborne models with the following costs(Embarked Crews and passengers do not count toward this cost):
+Infantry: 1
+Rüstung: 2
+Motorcycles: 2.5
+Cars/Tankettes: 3
+APC/Truck/Scout Car 10
+Light Panzer: 10</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Radio Bay" hidden="false" id="bb96-c974-24de-c504">
+      <rules>
+        <rule name="Radio Bay" id="05d6-62f2-81fd-ec3c" hidden="false">
+          <description>Radio Bays give the Übergigant Himmelschloss the Radio(3,1) rule. 
+
+
+Any Radio Bays installed after the first increases this by Radio(+1,+1).
+
+
+Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex within their command range.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
