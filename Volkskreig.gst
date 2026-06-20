@@ -1240,6 +1240,175 @@ This Hideout may be placed on a Village or Residential Tile.</description>
       <categoryLinks>
         <categoryLink name="Reference" hidden="false" id="4155-07b2-8f8e-29f5" targetId="c1d7-f7b9-4d5d-909b" primary="true"/>
       </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Turn References" id="59a9-d911-447b-536a" hidden="false">
+          <rules>
+            <rule name="!Turn Reference" id="eaac-d566-1a4e-2bb8" hidden="false">
+              <description>1. Order Phase:
+
+
+1a. Initiative:
+At the beginning of the Orders phase, each player must roll a 1d100 to determine turn order. Attackers gain a +10 to this roll on the first turn.
+
+1b. Orders:
+
+All Formations that contain an Officer may attempt an order. Each player chooses a formation and attempts their orders, following turn order until all formations have either attempted an order or forfeited their order phase.
+
+
+Orders are attempted by making a morale check. If the order succeeds, any effects that the order had will happen. If the order fails, nothing happens.
+
+
+2. Action Phase:
+
+
+2a. During the Action Phase, each player may choose a formation to make a Move Action and Shooting Action alternating through turn order until all player’s formations have acted. The move and attack actions may be taken in any order, but must be taken in the same order for the whole formation.
+
+
+
+Move Action:
+Any model may move a number of inches equal to their Mobility.
+
+
+Shooting Action
+Any model may use their shooting action to attack with any weapon, use a piece of equipment, or use any ability that can be “used instead of shooting”.
+
+
+Shooting attacks are made by choosing a model that is equipped with an equipment you wish to use, then choosing a target within the range value of that equipment. After a target is chosen, roll a d10, add any accuracy bonuses from the weapon and equipment to the roll. Compare this result to 10, and if it meets or exceeds 10, the attack succeeds. Every Attack resolved after this by this unit’s weapon uses the previous roll’s result -1 per number of attacks that have occurred. After finding that model’s number of hits, apply damage to that model’s target, and make Armour Penetration rolls for hits from weapons with the Piercing Rule. Then, deduct armour values from the damage dealt by that attack. 
+
+
+Continue doing this until all models in that model’s formation have either used their shooting action or passed. 
+
+
+2b. Check Pinning/Morale
+A formation that has been targeted by 20 or more shots, or has had more than a third of its active models Downed this turn is considered Pinned. Infantry models that are Pinned may only move OR shoot in their next Action Phase.
+
+
+Formations automatically unpin themselves if they have not been pinned again during the turn that they are pinned.
+
+
+A Formation that has been pinned for three turns in a row must make a Morale Roll.
+
+
+
+</description>
+            </rule>
+            <rule name="!Combat Setup" id="0d93-8628-1b28-95e4" hidden="false">
+              <description>1. Read the terrain generation rules for the Tile you are fighting on, and generate the terrain accordingly.
+2. Determine starting edges for the combat using the position and direction of the forces on the campaign map.
+3. Defending player(s) may choose to Make a Stand or do a Tactical Retreat.
+4. Players who Make a Stand may deploy their forces in the center of the table.
+5. Players who do a tactical retreat deploy on the table edge or corner opposite to the attacker.
+6. Attacking players who chose to Paradrop Deploy must deploy anywhere on the map that is not covered by terrain, and more than 12” away from an opponent’s units.
+7. All Players roll a d100 to determine Setup Order. Defenders gain a +10 bonus to this roll.
+8. Each player takes turns setting up their formations one at a time in turn order until all formations are placed.
+9. Any unit that may Redeploy may do so according to the rule that allows the redeployment.
+
+</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Active Tile" id="d016-d4bb-619d-d17f" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Village" hidden="false" id="b4e4-4fce-b690-d9c6">
+              <rules>
+                <rule name="!Tile Setup" id="4bb3-d781-20a7-4a4d" hidden="false">
+                  <description>Battles fought on Village tiles should contain 1d5+3 houses representing a section of the village in the center of the map. These structures provide 1 point of cover.
+
+
+
+</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Checkpoint" hidden="false" id="766c-a151-fc9b-ea9c">
+              <rules>
+                <rule name="!Tile Setup" id="d430-9761-b96e-b39a" hidden="false">
+                  <description>Battles fought on Checkpoints must represent a military checkpoint in a city road.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="City" hidden="false" id="9198-3c66-3690-87ea">
+              <rules>
+                <rule name="!Tile Setup" id="297d-3545-2081-bc5e" hidden="false">
+                  <description>Battles fought on City tiles should reflect a street lined with buildings in a metropolitan city. </description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="City Ruin" hidden="false" id="bd3a-15ee-0f6d-851e">
+              <rules>
+                <rule name="!Tile Setup" id="749d-4c24-4c6d-0e06" hidden="false">
+                  <description>Battles fought on City Ruins tiles should reflect a wartorn, bombed out metropolitan city.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Countryside" hidden="false" id="ab12-53a3-8aa2-e73b">
+              <rules>
+                <rule name="!Tile Setup" id="c370-5706-111e-b916" hidden="false">
+                  <description>Battles fought on Countryside tiles should contain one or more pieces of terrain representing a hedgerow or corral fencing, and contain a small farmhouse in the center of the table on a d10 roll of 6+. These structures provide one point of cover.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Factory" hidden="false" id="83c9-9a9d-84ab-4032">
+              <rules>
+                <rule name="!Tile Setup" id="0db1-edd8-d6e0-20ef" hidden="false">
+                  <description>Battles fought on a Factory tile should contain a central factory building, as well as 1d4 houses to represent worker’s lodging. These buildings provide 1 point of cover each.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Forest" hidden="false" id="feb7-2435-89af-617d">
+              <rules>
+                <rule name="!Tile Setup" id="cc45-8397-97cb-39b4" hidden="false">
+                  <description>Battles fought on Forest tiles are always considered to have 1 point of cover for all units, and should have area terrain to represent patches of trees with a road running through it.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lake" hidden="false" id="3dd1-9f9d-a069-0add">
+              <rules>
+                <rule name="!Tile Setup" id="3871-15d0-635d-e39f" hidden="false">
+                  <description>Combat may only be done by units that may cross over it. Models that are not mounted on, or riding on another model capable of traversing a Lake are immediately Downed.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Outpost" hidden="false" id="352e-6cdf-aae6-e6fa">
+              <rules>
+                <rule name="!Tile Setup" id="7eea-6404-c594-114c" hidden="false">
+                  <description>Battles fought on an Outpost tile are fought with terrain resembling a small military outpost, with 1d3+1 small buildings or barracks tents, as well as a perimeter of interrupted sandbags, or chain link fence. 
+
+
+Additionally, the defender may also choose to deploy inside of the outpost’s perimeter.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="River" hidden="false" id="6487-067d-3f33-6551">
+              <rules>
+                <rule name="!Tile Setup" id="9b02-435e-6754-ffd9" hidden="false">
+                  <description>Battles fought on River tiles are fought as if its the default tile for the map, but replacing any middle of map terrain with with a River running through it. If the tile would contain any buildings, they may be placed alongside the river.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Refuge" hidden="false" id="db6a-c960-270d-3e6a">
+              <rules>
+                <rule name="!Tile Setup" id="1ae2-2dd5-5d80-d807" hidden="false">
+                  <description>Battles fought on Refuge tiles should reflect a pocket of civilization amongst a wartorn city.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Train Station" hidden="false" id="cc77-3d8c-8c46-4b8c">
+              <rules>
+                <rule name="!Tile Setup" id="4f3a-4931-630a-993d" hidden="false">
+                  <description>If a Train Station tile is attacked, the battle is fought on a terrain generated as a Railway, ending in the center of the map, with a building representing the station placed alongside the tracks. Any Trains or Railcars on the tile must be represented if possible.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="c7e8-cd09-8c6b-913a-min"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c7e8-cd09-8c6b-913a-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fallschirmjäger Squad" hidden="true" id="eb52-59ce-0b93-e19c" collective="false">
       <categoryLinks>
