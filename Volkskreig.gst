@@ -778,6 +778,68 @@ This Hideout may be placed on a Village or Residential Tile.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3de7-5b67-6682-cb30" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reserviläiset" hidden="true" id="e975-1b4a-9d37-c102">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="daa5-095c-a28a-a35f" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Well Trained Conscripts" id="b70a-16cf-5a1f-a673" hidden="false">
+              <description>Conscripts from this force may purchase the Soldiering Proficiency for free.</description>
+            </rule>
+            <rule name="Tutta Munille!" id="9104-287b-42a0-7eb5" hidden="false">
+              <description>When an Conscript from this force is firing a weapon that has a RoF of 1, it gains +1 ACC.</description>
+            </rule>
+            <rule name="Begged, Borrowed, Stolen" id="f067-e342-46d9-2939" hidden="false">
+              <description>When a Conscript from this force fires a weapon that has the Surplus rule, it does not need to roll a Surplus Roll, and gains +1 to ACC.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tiedustelutarkka-ampujat" hidden="true" id="e5eb-be78-4c04-6063">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="56bf-0eb2-1816-4424" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Hiihtosotilaat" hidden="true" id="5915-4147-28fe-a3ab">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bdb-7bab-4235-17ce" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <modifiers>
         <modifier type="add" value="This faction is not playable currently." field="error">
@@ -3798,6 +3860,16 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90ca-5e14-e27e-2c14" shared="true" includeChildSelections="true" childName="Conscript"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e975-1b4a-9d37-c102" shared="true" includeChildSelections="true" childName="Reserviläiset"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
