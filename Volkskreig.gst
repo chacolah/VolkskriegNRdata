@@ -185,6 +185,19 @@
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ba8-c309-b745-868f" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Sporting Goods" id="24d3-6a09-bb92-e4c2" hidden="false">
+              <description>All Sidearms/Melee cost 5 Rm less to purchase at force creation.
+Karabiner-98m cost 5 Rm less.</description>
+            </rule>
+            <rule name="Hometown Heroes" id="751f-670d-8606-6cc0" hidden="false">
+              <description>Reich infantry recruited from this Village tile cost 3 Rm less.
+Their Village Tile begins play with the Medical Tent Improvement.</description>
+            </rule>
+            <rule name="Self Equipped" id="d8a2-bad7-a769-d318" hidden="false">
+              <description>Infantry in this Force gain +1 to attack rolls with Pistole-55/Luger, Maschinenpistole-54/Schnellfeuer, Pistole-Karabiner-54/Biesenstiel, Karabiner-98m, and 9mm Pocket Pistol.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panzer Elite" hidden="true" id="36ff-ce91-eacc-a49f">
           <modifiers>
@@ -276,6 +289,23 @@ Additionally, if this force is defending against an attack, all weapons with the
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="866f-e133-0413-3fe0" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Memories of the Old War" id="ebee-f893-fa24-4801" hidden="false">
+              <description>Infantry in this Force gain +1 to attack rolls with Karabiner-98m, Gewehr-55(W), Maschinengewehr-56, Maschinenpistole-49, Klappspaten 38, Schiessbecher-48, and Pistole-55/Luger.
+Additionally, Karabiner-98m lose the Surplus rule while they are equipped by Infantry from this force.</description>
+            </rule>
+            <rule name="Resettled Veterans" id="083b-cdff-9d77-a7a8" hidden="false">
+              <description>A Force with this loadout may purchase Reich Soldier infantry for 25 Rm.
+Reich infantry recruited from this Village tile come equipped with a Karabiner-98m and M46 Feldanzug. If the Martyrs to a Cause rule is triggered, the resulting infantry models are also equipped this way, but may choose to arm themselves from the tile as normal.
+Reich Conscripts recruited from this Village tile receive Soldiering Proficiency for free.
+Pervitin Rations cost 10 Rm less. Addiction rolls are made with a +1 bonus(to a minimum chance of 1+).</description>
+            </rule>
+            <rule name="Frontiersmen and Farmers" id="2980-f857-4cd1-c986" hidden="false">
+              <description>Klappspaten 38 cost 10 less Rm to purchase.
+Horses cost 15 less Rm to purchase.
+Attack Dogs cost 10 Rm less to purchase.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blitzkrieg" hidden="true" id="5e2a-9dff-05e5-de25">
           <modifiers>
@@ -313,6 +343,18 @@ Power Sources purchased by this Force are treated as having Battery(+1) and Rech
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54c0-4721-0579-df21" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Polizei Connections" id="8140-ba66-b91b-a4ea" hidden="false">
+              <description>Reich Police recruited from this settlement begin play with Soldiering Proficiency.</description>
+            </rule>
+            <rule name="Allied Requisitions" id="17ff-cc89-7166-dbd0" hidden="false">
+              <description>They may requisition weapons and equipment, but not vehicles, from their allies’ Equipment Lists at their home Village if they purchase at least 5 of them at once.</description>
+            </rule>
+            <rule name="Quartermasters" id="2839-2499-aa39-59f7" hidden="false">
+              <description>The Village tile they start in control of begins play with 3 MG-56s, 3 PzB-54(G)s, a Fahrlafette 51 with a 2cm Kampfwagen-Kanone, and 10 20x138B(HE) rounds.
+Their Village Tile begins play with the Armoury Improvement.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Volkssturm Garnison" hidden="true" id="0265-90ef-af22-e37d">
           <modifiers>
@@ -325,6 +367,19 @@ Power Sources purchased by this Force are treated as having Battery(+1) and Rech
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88cb-b81d-f546-5a72" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Standard Issue Surplus" id="1038-ecb5-4efd-37d5" hidden="false">
+              <description>Panzerfausts cost 5 less Rm and Volkssturmgewehrs cost 3 less Rm.</description>
+            </rule>
+            <rule name="Mustering Point" id="8134-6da7-f86c-4b3e" hidden="false">
+              <description>Reich Infantry recruited from this Village tile come equipped with a Volkssturmgewehr-60 and M55 Feldanzug. 
+Their Village Tile begins play with the Radio Tower Improvement.
+A Force with this loadout may purchase Reich Soldier Infantry.</description>
+            </rule>
+            <rule name="Fast Track Training" id="a64f-af31-0ebf-cfc4" hidden="false">
+              <description>Infantry in this Force gain +1 to attack rolls with Volkssturmgewehr-60 and Panzerfausts. </description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Nachrüstdepot" hidden="true" id="4527-dc55-a93b-dabf">
           <modifiers>
@@ -337,6 +392,18 @@ Power Sources purchased by this Force are treated as having Battery(+1) and Rech
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1b2-e252-8ddf-c2e0" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Retrofit Specialists" id="2fcd-e931-cb3d-3aae" hidden="false">
+              <description>The cost for purchasing the Retrofit upgrade for vehicles with the Surplus rule is halved when done on a settlement with a Garage.</description>
+            </rule>
+            <rule name="Motor Pool" id="13b5-fcd9-b7fa-3177" hidden="false">
+              <description>Repairs done for this force at this settlement cost one less Rm per point repaired if done on equipment with the Surplus rule. 
+Their Village begins play with the Garage Improvement.</description>
+            </rule>
+            <rule name="Field Repairs" id="25e1-b2b2-edf6-37c3" hidden="false">
+              <description>Vehicles with the Surplus rule used by this force may ignore failed Surplus tests out of combat.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Götterdämmerung" hidden="true" id="d3a0-0a6c-1e5a-32bc">
           <modifiers>
@@ -429,6 +496,20 @@ The Himmelschloss begins play with a Paradrop Bay.</description>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af76-3f0f-3e8e-e5fc" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="In Plain Sight" id="54d2-db4f-d197-e303" hidden="false">
+              <description>Verbrecher Kriegsherren forces may turn Residential City and Village tiles into hideouts. These tiles keep all of their upgrades.
+
+
+If one of these tiles are picked to be the first Hideout for this force, it automatically gains the Black Market upgrade for free.</description>
+            </rule>
+            <rule name="Protection Racket" id="9807-7a69-7858-12b6" hidden="false">
+              <description>Verbrecher forces gain Rm equal to half of the Rm production each Campaign Week in Villages that contain one of their Hideouts.</description>
+            </rule>
+            <rule name="Criminals and Lowlifes" id="fabe-0658-cb26-c032" hidden="false">
+              <description>The first Hideout this Force controls gains the Drug Lab improvement. When selling Pervitin Rations, they may be sold for 5Rm more.</description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Reichsvögel" hidden="true" id="1974-ad78-e096-341e">
           <modifiers>
@@ -451,7 +532,7 @@ The Himmelschloss begins play with the following Toolings for its Workshop: Me-2
 The Himmelschloss begins play with a Launch Bay.</description>
             </rule>
             <rule name="Reichsvögel" id="1852-1365-72de-481a" hidden="false">
-              <description>Aircraft have +1 to hit rolls with all weapons.</description>
+              <description>Aircraft have +1 to ACC with all weapons.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -491,6 +572,16 @@ The Himmelschloss begins play with a Launch Bay.</description>
             <rule name="Deserteur" id="a134-2911-83cb-305c" hidden="false">
               <description>Forces who pick this rule are technically Kreigsherren forces and do not gain any rules based on the chosen faction.</description>
             </rule>
+            <rule name="Battlefield Scavengers" id="a0f0-88ac-0a6f-5085" hidden="false">
+              <description>After a battle, roll a d10 for every piece of equipment destroyed in the battle. On an 8+, the equipment is no longer destroyed. Additionally, when repairing a multipart equipment with the Repair action in the campaign phase, you treat the Repair rule as having (+0,+3).</description>
+            </rule>
+            <rule name="Deserters and Cowards" id="c194-6367-c44c-ea4f" hidden="false">
+              <description>Deserteur Kriegsherren forces must pick a different Former Reich army list. They use that force to generate their initial force instead of the Merc Pool.
+Additionally, any force made up of the same army list the Kriegsherren force has picked this way receives a +1 to all morale rolls made while fighting against them.</description>
+            </rule>
+            <rule name="Barracks" id="cd4d-28ea-b522-8806" hidden="false">
+              <description>Deserteur Kriegsherren forces may turn Outpost and Checkpoint tiles into Hideouts. These tiles keep all of their upgrades.</description>
+            </rule>
           </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Berufskraft" hidden="true" id="68bb-5240-ed19-84de">
@@ -529,6 +620,21 @@ The Himmelschloss begins play with an Artillery Bay.</description>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cc9-b938-bde1-6d98" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Industry Connections" id="f5f2-b465-51f1-29d2" hidden="false">
+              <description>Pick one applicable design company to be your contractor. 
+You may purchase any equipment from their tooling list at force creation. 
+After holding a Factory for one week, that factory gets all Toolings for that design company added to it for free. 
+(These toolings can be removed, traded, sold, etc like any other toolings, but it can only happen once per factory.)</description>
+            </rule>
+            <rule name="Corporate Safehouse" id="9924-cbda-a3e9-5c70" hidden="false">
+              <description>The Hideout you begin play with has the Saferoom and Armoury Improvements for free. 
+This Hideout may be placed on a Factory Tile or its connected Village.</description>
+            </rule>
+            <rule name="Industry Contracts" id="b377-e788-8de8-f229" hidden="false">
+              <description>You get a weekly stipend of 25Rm for each Factory tile you or an ally controls. </description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Veteran Kameraden" hidden="true" id="8cdf-74dc-30f9-31cc">
           <modifiers>
@@ -548,6 +654,21 @@ The Himmelschloss begins play with an Artillery Bay.</description>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2830-f016-895d-e5d6" includeChildSelections="false"/>
           </constraints>
+          <rules>
+            <rule name="Fell Off the Truck" id="4a57-016d-6e5c-bf06" hidden="false">
+              <description>Pick one of the following:
+Luftwaffe, Waffen-SS, Wehrmacht
+You use that force’s Armoury Restrictions when creating your initial force.
+(This is represented by choosing this as your loadout from one of these three Factions in the New Recruit files.)</description>
+            </rule>
+            <rule name="Shooting Club" id="6572-230f-66fc-d1aa" hidden="false">
+              <description>The Hideout you begin play with has the Shooting Range and Armoury Improvements for free.
+This Hideout may be placed on a Village or Residential Tile.</description>
+            </rule>
+            <rule name="Military Contracts" id="c0ba-383b-ad62-c142" hidden="false">
+              <description>You get a weekly stipend of 25 Rm for each Factory, Village, City, Outpost, or Hideout you control. </description>
+            </rule>
+          </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Danziger Wache" hidden="true" id="1f5b-5090-bf8a-f92c">
           <modifiers>
