@@ -3143,6 +3143,50 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink import="true" name="Aircraft Weapons" hidden="false" id="05ed-6691-f8c0-e571" type="selectionEntryGroup" targetId="d067-e269-8674-428e"/>
         <entryLink import="true" name="20mm autokanon m/40" hidden="false" id="4ad2-b9e9-1e2f-0936" type="selectionEntry" targetId="ba2b-3b73-d6fa-759e"/>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="QF 2 Pounder" hidden="true" id="047d-80d5-0ffc-bdf6">
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="145"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink targetId="46e1-8024-4968-11bf" id="e6f7-476f-6c88-f973" type="rule" name="Ordnance(40×304mmR)" hidden="false"/>
+            <infoLink name="Reload(1,1)" id="0e1f-81c7-f573-46f3" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink targetId="d9a7-54c6-4d61-b4f0" id="a51c-94d8-b888-1d89" type="selectionEntryGroup" name="Ordnance(40×304mmR)" hidden="false"/>
+          </entryLinks>
+          <profiles>
+            <profile name="QF 2 Pounder" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="473f-3cd9-e046-3ed2">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
+                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(40x304mmR), Reload(1,1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Medium Panzer Weapons" id="9044-29f4-7d2a-6895" hidden="false">
       <entryLinks>
@@ -5152,6 +5196,11 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8689-6167-3d90-00d3"/>
       </constraints>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Ordnance(40×304mmR)" id="d9a7-54c6-4d61-b4f0" hidden="false">
+      <entryLinks>
+        <entryLink targetId="3bfa-0967-a09b-548f" id="ef8a-027c-a3a2-b8ed" type="selectionEntry" name="40×304mmR APT" hidden="true"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="b72d-a08a-2414-8c49" name="Upgrade(Type)" hidden="false">
@@ -6301,6 +6350,10 @@ Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
 Automatically nullifies (x,-) Devastating Hit(s) (-,y) times.</description>
     </rule>
     <rule name="Ordnance(x)" id="0cc8-78b6-6112-2622" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Ordnance(40×304mmR)" id="46e1-8024-4968-11bf" hidden="false">
       <description>Equipment with this rule:
 Uses another consumable resource with the same name as (x) when attacking.</description>
     </rule>
@@ -20282,6 +20335,44 @@ Any Radio Bays installed after the first increases this by Radio(+1,+1).
 Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex within their command range.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="40×304mmR APT" hidden="true" id="3bfa-0967-a09b-548f">
+      <infoLinks>
+        <infoLink name="Piercing(2)" id="cc01-b4e9-b4df-e846" hidden="false" type="rule" targetId="e166-a701-2c14-2275"/>
+      </infoLinks>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="12"/>
+      </costs>
+      <profiles>
+        <profile name="40×304mmR APT" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="09d7-0f22-5337-6905">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">9</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">40×304mmR</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Piercing(2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
