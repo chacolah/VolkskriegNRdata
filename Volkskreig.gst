@@ -377,7 +377,7 @@ Their Village Tile begins play with the Radio Tower Improvement.
 A Force with this loadout may purchase Reich Soldier Infantry.</description>
             </rule>
             <rule name="Fast Track Training" id="a64f-af31-0ebf-cfc4" hidden="false">
-              <description>Infantry in this Force gain +1 to attack rolls with Volkssturmgewehr-60 and Panzerfausts. </description>
+              <description>Infantry in this Force gain +1 to attack rolls with Volkssturmgewehr-60 and Panzerfausts.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -632,7 +632,7 @@ After holding a Factory for one week, that factory gets all Toolings for that de
 This Hideout may be placed on a Factory Tile or its connected Village.</description>
             </rule>
             <rule name="Industry Contracts" id="b377-e788-8de8-f229" hidden="false">
-              <description>You get a weekly stipend of 25Rm for each Factory tile you or an ally controls. </description>
+              <description>You get a weekly stipend of 25Rm for each Factory tile you or an ally controls.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -666,7 +666,7 @@ You use that force’s Armoury Restrictions when creating your initial force.
 This Hideout may be placed on a Village or Residential Tile.</description>
             </rule>
             <rule name="Military Contracts" id="c0ba-383b-ad62-c142" hidden="false">
-              <description>You get a weekly stipend of 25 Rm for each Factory, Village, City, Outpost, or Hideout you control. </description>
+              <description>You get a weekly stipend of 25 Rm for each Factory, Village, City, Outpost, or Hideout you control.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -1348,11 +1348,7 @@ A formation that has been targeted by 20 or more shots, or has had more than a t
 Formations automatically unpin themselves if they have not been pinned again during the turn that they are pinned.
 
 
-A Formation that has been pinned for three turns in a row must make a Morale Roll.
-
-
-
-</description>
+A Formation that has been pinned for three turns in a row must make a Morale Roll.</description>
             </rule>
             <rule name="!Combat Setup" id="0d93-8628-1b28-95e4" hidden="false">
               <description>1. Read the terrain generation rules for the Tile you are fighting on, and generate the terrain accordingly.
@@ -1363,9 +1359,7 @@ A Formation that has been pinned for three turns in a row must make a Morale Rol
 6. Attacking players who chose to Paradrop Deploy must deploy anywhere on the map that is not covered by terrain, and more than 12” away from an opponent’s units.
 7. All Players roll a d100 to determine Setup Order. Defenders gain a +10 bonus to this roll.
 8. Each player takes turns setting up their formations one at a time in turn order until all formations are placed.
-9. Any unit that may Redeploy may do so according to the rule that allows the redeployment.
-
-</description>
+9. Any unit that may Redeploy may do so according to the rule that allows the redeployment.</description>
             </rule>
           </rules>
         </infoGroup>
@@ -1376,11 +1370,7 @@ A Formation that has been pinned for three turns in a row must make a Morale Rol
             <selectionEntry type="upgrade" import="true" name="Village" hidden="false" id="b4e4-4fce-b690-d9c6">
               <rules>
                 <rule name="!Tile Setup" id="4bb3-d781-20a7-4a4d" hidden="false">
-                  <description>Battles fought on Village tiles should contain 1d5+3 houses representing a section of the village in the center of the map. These structures provide 1 point of cover.
-
-
-
-</description>
+                  <description>Battles fought on Village tiles should contain 1d5+3 houses representing a section of the village in the center of the map. These structures provide 1 point of cover.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -1394,7 +1384,7 @@ A Formation that has been pinned for three turns in a row must make a Morale Rol
             <selectionEntry type="upgrade" import="true" name="City" hidden="false" id="9198-3c66-3690-87ea">
               <rules>
                 <rule name="!Tile Setup" id="297d-3545-2081-bc5e" hidden="false">
-                  <description>Battles fought on City tiles should reflect a street lined with buildings in a metropolitan city. </description>
+                  <description>Battles fought on City tiles should reflect a street lined with buildings in a metropolitan city.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -3132,6 +3122,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Light Panzer Weapons" id="b255-6c06-a35a-0879" hidden="false">
       <entryLinks>
+        <entryLink targetId="047d-80d5-0ffc-bdf6" id="ebd8-5d53-40a2-2fc6" type="selectionEntry" name="QF 2 Pounder" hidden="true"/>
         <entryLink targetId="7ac3-de43-2226-c7bf" id="d3af-d785-aadc-1b25" type="selectionEntry" name="Raketenpanzerbüchse-58 x6" hidden="true"/>
         <entryLink targetId="5ce9-f2f2-742b-a0fe" id="ab67-db41-c2a7-b697" type="selectionEntry" name="3.7cm Maschinenkampfwagenkanone" hidden="true"/>
         <entryLink targetId="ab9b-23ce-f872-fba7" id="8877-b920-f72f-332c" type="selectionEntry" name="Lanciafiamme Modello 52" hidden="true"/>
@@ -3143,50 +3134,6 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink import="true" name="Aircraft Weapons" hidden="false" id="05ed-6691-f8c0-e571" type="selectionEntryGroup" targetId="d067-e269-8674-428e"/>
         <entryLink import="true" name="20mm autokanon m/40" hidden="false" id="4ad2-b9e9-1e2f-0936" type="selectionEntry" targetId="ba2b-3b73-d6fa-759e"/>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="QF 2 Pounder" hidden="true" id="047d-80d5-0ffc-bdf6">
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="145"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <infoLinks>
-            <infoLink targetId="46e1-8024-4968-11bf" id="e6f7-476f-6c88-f973" type="rule" name="Ordnance(40×304mmR)" hidden="false"/>
-            <infoLink name="Reload(1,1)" id="0e1f-81c7-f573-46f3" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink targetId="d9a7-54c6-4d61-b4f0" id="a51c-94d8-b888-1d89" type="selectionEntryGroup" name="Ordnance(40×304mmR)" hidden="false"/>
-          </entryLinks>
-          <profiles>
-            <profile name="QF 2 Pounder" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="473f-3cd9-e046-3ed2">
-              <characteristics>
-                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
-                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
-                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
-                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(40x304mmR), Reload(1,1)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Medium Panzer Weapons" id="9044-29f4-7d2a-6895" hidden="false">
       <entryLinks>
@@ -20373,6 +20320,48 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="QF 2 Pounder" hidden="true" id="047d-80d5-0ffc-bdf6">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="145"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink targetId="46e1-8024-4968-11bf" id="e6f7-476f-6c88-f973" type="rule" name="Ordnance(40×304mmR)" hidden="false"/>
+        <infoLink name="Reload(1,1)" id="0e1f-81c7-f573-46f3" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink targetId="d9a7-54c6-4d61-b4f0" id="a51c-94d8-b888-1d89" type="selectionEntryGroup" name="Ordnance(40×304mmR)" hidden="false"/>
+      </entryLinks>
+      <profiles>
+        <profile name="QF 2 Pounder" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="473f-3cd9-e046-3ed2">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(40x304mmR), Reload(1,1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
