@@ -3243,9 +3243,8 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Towed Weapon Mounts" id="2822-bad8-11ab-e301" hidden="false">
       <entryLinks>
-        <entryLink targetId="2b80-0fba-31ca-64c0" id="3f1f-923d-23eb-4a35" type="selectionEntry" name="Carriage MarkIV" hidden="true"/>
+        <entryLink targetId="bc75-694f-67ff-035e" id="3f1f-923d-23eb-4a35" type="selectionEntry" name="40mm Lvakan Carriage" hidden="true"/>
         <entryLink targetId="8bae-605a-7a31-4d56" id="e97c-189a-e550-16b5" type="selectionEntry" name="Fahrlafette 51" hidden="true"/>
-        <entryLink targetId="bc75-694f-67ff-035e" id="a756-7f5f-8b33-ea3a" type="selectionEntry" name="40mm Lvakan Carriage" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Muzzle Upgrades" id="d392-edda-29f7-df9e" hidden="false">
@@ -18684,7 +18683,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">15</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Towed Weapon Mount</characteristic>
-            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Crewed, Cover(1), MPW(1)</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8"/>
           </characteristics>
         </profile>
       </profiles>
@@ -18699,10 +18698,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </conditions>
         </modifier>
       </modifiers>
-      <infoLinks>
-        <infoLink name="Crewed" id="7bd8-ae2c-a76e-b7e6" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
-        <infoLink name="Cover(1)" id="81d3-c342-68db-c882" hidden="false" type="rule" targetId="cb33-ca90-1e47-1108"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="20x145R Flak" hidden="true" id="654b-9fc8-d3ee-7a92">
       <costs>
@@ -20326,7 +20321,6 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         </modifier>
       </modifiers>
     </selectionEntry>
-<<<<<<< Updated upstream
     <selectionEntry type="upgrade" import="true" name="QF 2 Pounder" hidden="true" id="047d-80d5-0ffc-bdf6">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="145"/>
@@ -20368,45 +20362,6 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
           </characteristics>
         </profile>
       </profiles>
-=======
-    <selectionEntry type="model" import="true" name="Carriage MarkIV" hidden="true" id="2b80-0fba-31ca-64c0">
-      <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="65"/>
-      </costs>
-      <profiles>
-        <profile name="Carriage MarkIV" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b5a3-9ead-3f52-476f">
-          <characteristics>
-            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">-</characteristic>
-            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
-            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">60</characteristic>
-            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
-            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
-            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
-            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
-            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">2</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">15</characteristic>
-            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Towed Weapon Mount</characteristic>
-            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Crewed, Cover(1), MPW(1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <entryLinks>
-        <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="b042-8780-2a01-ec82" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
-      </entryLinks>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <infoLinks>
-        <infoLink name="Cover(1)" id="0cf7-d8f2-9ea0-db45" hidden="false" type="rule" targetId="cb33-ca90-1e47-1108"/>
-        <infoLink name="Crewed" id="17fe-157d-a2b1-8eb4" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
-      </infoLinks>
->>>>>>> Stashed changes
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
