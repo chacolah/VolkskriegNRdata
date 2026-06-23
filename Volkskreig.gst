@@ -3243,8 +3243,9 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Towed Weapon Mounts" id="2822-bad8-11ab-e301" hidden="false">
       <entryLinks>
-        <entryLink targetId="bc75-694f-67ff-035e" id="3f1f-923d-23eb-4a35" type="selectionEntry" name="40mm Lvakan Carriage" hidden="true"/>
+        <entryLink targetId="7bf6-5bc5-7a6c-5c64" id="3f1f-923d-23eb-4a35" type="selectionEntry" name="Carriage MarkIV" hidden="true"/>
         <entryLink targetId="8bae-605a-7a31-4d56" id="e97c-189a-e550-16b5" type="selectionEntry" name="Fahrlafette 51" hidden="true"/>
+        <entryLink targetId="bc75-694f-67ff-035e" id="f948-08ee-28dc-4715" type="selectionEntry" name="40mm Lvakan Carriage" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Muzzle Upgrades" id="d392-edda-29f7-df9e" hidden="false">
@@ -20395,7 +20396,8 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <modifier type="set" value="false" field="hidden">
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
           </conditions>
         </modifier>
       </modifiers>
