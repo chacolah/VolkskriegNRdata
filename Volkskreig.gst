@@ -1241,13 +1241,7 @@ This Hideout may be placed on a Village or Residential Tile.</description>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="89f0-fb55-90f6-d941" primary="false" name="Vehicle Crew"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="cb90-b9f7-6e1c-ddab" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5c3c-c5b4-0092-b276"/>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8897-e5cf-7f95-484f"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Towed Weapon Mounts" hidden="false" id="64e7-04fd-8bbc-f167" type="selectionEntryGroup" targetId="2822-bad8-11ab-e301">
+        <entryLink import="true" name="Towed Weapon Mounts" hidden="false" id="64e7-04fd-8bbc-f167" type="selectionEntryGroup" targetId="2822-bad8-11ab-e301" sortIndex="4">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5a6-1d52-5cd6-1437"/>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aef1-5b32-fdd3-307d" includeChildSelections="false"/>
@@ -1262,6 +1256,39 @@ This Hideout may be placed on a Village or Residential Tile.</description>
           <description>Modify the Towed Weapon’s Reload (x,y) characteristic by (-1,0) to a minimum of 0.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Gunner" id="c1bd-6057-f7b9-4d26" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Police" hidden="false" id="2ee5-5208-c3b2-692b" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+            <entryLink import="true" name="Soldier" hidden="false" id="9841-06f7-6dc7-470c" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+            <entryLink import="true" name="Conscript" hidden="false" id="ff72-cc12-ffa5-d287" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb29-1ade-09e2-6136"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eaef-34da-7ce6-61ab"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Loader" id="4e0d-3400-56cd-4017" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Police" hidden="false" id="124a-f413-a3f4-e67b" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+            <entryLink import="true" name="Soldier" hidden="false" id="3dcb-1726-2b79-769f" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+            <entryLink import="true" name="Conscript" hidden="false" id="cb9f-e1ca-9b9d-030e" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="273f-bd99-da4e-3487"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Assistant Gunner" id="f7f3-d411-d15f-26d5" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Police" hidden="false" id="d57a-dddd-fe97-7613" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+            <entryLink import="true" name="Soldier" hidden="false" id="7a43-1fc4-98ab-6018" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+            <entryLink import="true" name="Conscript" hidden="false" id="2726-5f78-68f2-b23f" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afb0-15e4-c58c-4609"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Campaign Reference" hidden="false" id="2abc-a7e3-1678-13a5">
       <categoryLinks>
@@ -3821,7 +3848,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier type="set" value="0" field="costs"/>
+                <modifier type="set" value="0" field="7439-07e0-82ef-c431"/>
                 <modifier type="set" value="1" field="16fe-8681-1eed-a20d"/>
               </modifiers>
               <conditions>
@@ -4963,12 +4990,13 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="481e-4081-4e1c-a16b" shared="true" childName="Fallschirmkradschutzen Team"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90be-0b30-7a5e-db8b" shared="true" childName="Fallschirmpanzergruppe"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a307-7d66-469f-0b03" shared="true" childName="&quot;Haubitze zu Fuss&quot; Gruppe"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a429-92a0-3658-f03f" shared="true" childName="K9 Team"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="29d6-e1d7-2bd1-d962" shared="true" childName="Towed Weapon Crew"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c228-5d31-2caa-5079" shared="true" childName="Bicycle Team"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="0aaa-e6e3-cf2c-cb8c" shared="true" childName="Reichsmilitz"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4bcb-5c3b-a842-0c6e" shared="true" childName="Funksteuerungsteam"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="fb0d-6f6a-0cc9-8421" shared="true" childName="Volksband"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="4db9-63dc-45d0-8165" shared="true" childName="Motorized Fireteam"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="a429-92a0-3658-f03f" shared="true" childName="K9 Team"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -18693,10 +18721,14 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -20394,11 +20426,15 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
