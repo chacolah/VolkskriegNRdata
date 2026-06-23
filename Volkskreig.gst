@@ -3961,6 +3961,74 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="db9b-2bde-47e0-6930" id="dd3b-db4e-ff86-eb1a" type="selectionEntry" name="E-10 &quot;Luchs&quot; (Drohne Rack)" hidden="true"/>
         <entryLink import="true" name="Stridsvagn m/41" hidden="false" id="5d85-9b88-474e-af6a" type="selectionEntry" targetId="26e1-ddff-8a16-7a11"/>
       </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Matilda II" hidden="true" id="3014-6c39-9294-8e9a">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Matilda II" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="df4d-ac91-6784-c2d0">
+              <characteristics>
+                <characteristic name="MOB" typeId="4765-2056-04fc-a63a">8&quot;</characteristic>
+                <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+                <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+                <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+                <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+                <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+                <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
+                <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">12</characteristic>
+                <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">75</characteristic>
+                <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer(Turreted)</characteristic>
+                <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="480"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="BESA Machine Gun" id="6c14-2a68-e1f5-cd85" hidden="false" type="profile" targetId="7325-849e-f9c1-3eb1">
+              <modifiers>
+                <modifier type="set" value="270" field="eb20-68aa-3af1-db2f"/>
+                <modifier type="set" value="BESA Machine Gun(Coaxial)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="QF 2 Pounder" id="42fc-7aed-174e-f1df" hidden="false" type="profile" targetId="473f-3cd9-e046-3ed2">
+              <modifiers>
+                <modifier type="set" value="270" field="eb20-68aa-3af1-db2f"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Recharge(0)" id="8b87-6f70-2e0c-c42f" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="QF 2 Pounder" hidden="false" id="72e8-4a49-acd0-9635" defaultAmount="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b007-4022-a121-ab2d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b168-729e-a2be-f8d7"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="BESA Machine Gun(Coaxial)" hidden="false" id="0c7b-0f29-ea23-95cc" defaultAmount="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ca5-e334-452c-da5d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="108b-fde2-e4f1-d782"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Ordnance(40×304mmR)" hidden="false" id="a08f-a509-922a-b43a" type="selectionEntryGroup" targetId="d9a7-54c6-4d61-b4f0"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Chassis Upgrade" id="eeae-b378-e97d-29db" hidden="false">
       <constraints>
@@ -20093,36 +20161,12 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </conditionGroups>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile name="Vickers Machine Gun" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="44e4-8f9e-c787-5977">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/1</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapons</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Setup(1)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="44e4-8f9e-c787-5977" id="5a70-4f22-999a-a851" type="profile" name="Vickers Machine Gun" hidden="false"/>
         <infoLink name="Setup(1)" id="edc8-e64a-ee66-1de3" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
         <infoLink name="Crewed" id="bfb9-3e51-37a6-b8e8" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
         <infoLink name="Bipod(1)" id="c35d-bb9c-aaee-1675" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="Sight Upgrades" hidden="false" id="71a4-68fe-8141-a218" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
-        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="ce30-fe51-09ae-ad67" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
-        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="46af-1540-55d4-ef4f" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
-      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Stridsvagn m/41" hidden="true" id="26e1-ddff-8a16-7a11">
       <profiles>
@@ -20376,29 +20420,13 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         </modifier>
       </modifiers>
       <infoLinks>
+        <infoLink targetId="473f-3cd9-e046-3ed2" id="2857-d3e4-bb61-6b1e" type="profile" name="QF 2 Pounder" hidden="false"/>
         <infoLink targetId="46e1-8024-4968-11bf" id="e6f7-476f-6c88-f973" type="rule" name="Ordnance(40×304mmR)" hidden="false"/>
         <infoLink name="Reload(1,1)" id="0e1f-81c7-f573-46f3" hidden="false" type="rule" targetId="6e97-e9b3-d855-88a4"/>
       </infoLinks>
       <entryLinks>
         <entryLink targetId="d9a7-54c6-4d61-b4f0" id="a51c-94d8-b888-1d89" type="selectionEntryGroup" name="Ordnance(40×304mmR)" hidden="false"/>
       </entryLinks>
-      <profiles>
-        <profile name="QF 2 Pounder" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="473f-3cd9-e046-3ed2">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(40x304mmR), Reload(1,1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Carriage MarkIV" hidden="true" id="7bf6-5bc5-7a6c-5c64">
       <costs>
@@ -20440,6 +20468,33 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
       <infoLinks>
         <infoLink name="Cover(1)" id="d249-c756-2a2d-2fd0" hidden="false" type="rule" targetId="cb33-ca90-1e47-1108"/>
         <infoLink name="Crewed" id="93b8-acd0-1698-067f" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="BESA Machine Gun" hidden="true" id="ab95-f116-a7c4-1a18">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="55"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2a4-a8f7-939d-eb36"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink targetId="7325-849e-f9c1-3eb1" id="2d12-2b83-dd7a-6489" type="profile" name="BESA Machine Gun" hidden="false"/>
+        <infoLink name="Setup(1)" id="78fe-4af3-1fa6-94b7" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
+        <infoLink name="Crewed" id="cb9c-413d-7aba-3980" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+        <infoLink name="Bipod(1)" id="5123-02e5-c8b5-3f13" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -20917,6 +20972,57 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
         <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
         <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(37x258mmR)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vickers Machine Gun" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="44e4-8f9e-c787-5977">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">4</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/1</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapons</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Crewed, Setup(1)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="BESA Machine Gun" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="7325-849e-f9c1-3eb1">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/1</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapons</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+    </profile>
+    <profile name="QF 2 Pounder" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="473f-3cd9-e046-3ed2">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-3</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">42&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(40x304mmR), Reload(1,1)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
