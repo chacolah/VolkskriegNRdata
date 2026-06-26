@@ -840,6 +840,32 @@ This Hideout may be placed on a Village or Residential Tile.</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bdb-7bab-4235-17ce" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="OKGB Feld-Divizionen" hidden="true" id="955e-8c2d-28cb-1a40">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="55fe-fd17-7501-b147" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Alternative Recruitment Sources" id="ec3c-a04b-316a-a516" hidden="false">
+              <description>This force may purchase Belgian Conscripts for 25 Rm.
+Additionally, British Conscripts they purchase cost 5 Rm less.</description>
+            </rule>
+            <rule name="Grounded Forces" id="baf5-1726-e8ae-3d68" hidden="false">
+              <description>This Force does not begin play with an Übergigant Himmelschloss.
+Instead, this force begins play with an Outpost tile, and may capture and hold Village tiles. They may construct Himmelschloss as other Luftwaffe forces do.</description>
+            </rule>
+            <rule name="Secondary Logistics Preference" id="8952-2823-14c0-b759" hidden="false">
+              <description>This force may purchase FG-43(G), Kar-98m, MP-49, Kampfpistole-50, MG-13, and Fliegerfaust-55 for 5 Rm less.
+Additionally, they gain +1 ACC when using these weapons, and may ignore the first Surplus roll failure they make with these weapons each combat.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
       <modifiers>
         <modifier type="add" value="This faction is not playable currently." field="error">
@@ -2735,9 +2761,10 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
       <entryLinks>
         <entryLink targetId="4b0f-30cf-4f9a-8ab5" id="8375-4434-15cc-b3b1" type="selectionEntry" name="Romanian" hidden="true"/>
         <entryLink targetId="5f5b-ffd4-c20c-23d6" id="79f0-1b55-f134-5e0d" type="selectionEntry" name="Reich" hidden="true" collective="false"/>
-        <entryLink targetId="ab30-426c-b183-a33a" id="6fe2-326c-06f2-7b25" type="selectionEntry" name="British" hidden="true"/>
+        <entryLink targetId="465d-83b9-23eb-ba70" id="6fe2-326c-06f2-7b25" type="selectionEntry" name="Belgian" hidden="true"/>
         <entryLink targetId="4e8b-8405-b5bb-d1d9" id="4cdf-4a40-df9b-4956" type="selectionEntry" name="Nordic" hidden="true"/>
         <entryLink targetId="760a-c393-2149-d586" id="b8c1-f375-150b-128f" type="selectionEntry" name="French" hidden="true"/>
+        <entryLink targetId="ab30-426c-b183-a33a" id="9ddc-1539-3694-a5f3" type="selectionEntry" name="British" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="cf88-434c-a1b5-c58c" name="Uniform" hidden="false" collective="false" import="true" defaultSelectionEntryId="80d3-ce6d-5579-5a3c">
@@ -6895,6 +6922,15 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="5" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
@@ -6928,6 +6964,17 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
           </attributes>
+          <modifiers>
+            <modifier type="increment" value="1" field="84b5-b5ed-e973-b702">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
     </selectionEntry>
@@ -7345,7 +7392,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
               </conditions>
@@ -12326,7 +12372,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </modifier>
       </modifiers>
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb3a-d592-d4a4-10e2"/>
@@ -12590,6 +12636,15 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="5" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="60"/>
@@ -12615,6 +12670,17 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
           </attributes>
+          <modifiers>
+            <modifier type="increment" value="1" field="84b5-b5ed-e973-b702">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -12632,6 +12698,15 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="897a-db0b-4037-0669" shared="true" includeChildSelections="true"/>
           </conditions>
+        </modifier>
+        <modifier type="decrement" value="5" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
@@ -13231,6 +13306,15 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="d3a0-0a6c-1e5a-32bc" shared="true" includeChildSelections="true"/>
           </conditions>
+        </modifier>
+        <modifier type="decrement" value="5" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <costs>
@@ -19292,9 +19376,18 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="5" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97d8-ca9a-e241-d7b4"/>
@@ -19317,6 +19410,17 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
           </attributes>
+          <modifiers>
+            <modifier type="increment" value="1" field="84b5-b5ed-e973-b702">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -19668,6 +19772,16 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="5" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90ca-5e14-e27e-2c14" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Luftwaffe Feld-Divizionen"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Panzer Operation" hidden="false" id="2cbe-3acd-e220-1c57">
@@ -19754,9 +19868,9 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="vz.39/l.MG39(t)" hidden="true" id="1650-da94-b117-5d67">
+    <selectionEntry type="upgrade" import="true" name="vz.39/l.MG-39(t)" hidden="true" id="1650-da94-b117-5d67">
       <profiles>
-        <profile name="vz.39" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c8f1-a3fd-e2cb-5160">
+        <profile name="vz.39/lMG-39(t)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="c8f1-a3fd-e2cb-5160">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
@@ -19779,7 +19893,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" childName="Former Reich/ Volksfront-Volkssturm"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" childName="Former Reich/ Wehrmacht"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" childName="Former Reich/ Waffen SS"/>
               </conditions>
             </conditionGroup>
@@ -20497,6 +20610,86 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <infoLink name="Bipod(1)" id="5123-02e5-c8b5-3f13" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Maschinengewehr-13/l.MG30(ö)" hidden="true" id="7f5c-a126-fa53-148d">
+      <profiles>
+        <profile name="Maschinengewehr-13/l.MG-30(ö)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="fd23-6b8d-56be-4df9">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" childName="Former Reich/ Luftwaffe"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" childName="Former Reich/ Wehrmacht"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="5" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Bipod(1)" id="96ee-8e72-668a-da7c" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+        <infoLink name="Surplus" id="445b-1ae7-05a8-f1eb" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Belgian" hidden="true" id="465d-83b9-23eb-ba70">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90ca-5e14-e27e-2c14" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="955e-8c2d-28cb-1a40" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true" childName="OKGB Feld-Divizionen"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="5" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90ca-5e14-e27e-2c14" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Luftwaffe Feld-Divizionen"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -20720,6 +20913,15 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             <condition type="instanceOf" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
           </conditions>
         </modifier>
+        <modifier type="increment" value="1" field="84b5-b5ed-e973-b702">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </profile>
     <profile name="Maschinenpistole-49" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9f62-4f74-031c-6e8d">
@@ -20744,6 +20946,15 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
           </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="84b5-b5ed-e973-b702">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </profile>
