@@ -20731,7 +20731,7 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Flammpanzer 38" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="4112-be26-9606-9018">
+        <profile name="Jagdpanzer 38(t)" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="4112-be26-9606-9018">
           <characteristics>
             <characteristic name="MOB" typeId="4765-2056-04fc-a63a">8&quot;</characteristic>
             <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
@@ -20753,7 +20753,7 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Kampfwagenfeuerwerfer-51" id="6673-fb1a-037d-fa4d" hidden="false" type="profile" targetId="7a5c-bc41-d8e3-f84e">
+        <infoLink name="7.5cm Kampfwagenkanone" id="6673-fb1a-037d-fa4d" hidden="false" type="profile" targetId="909e-3293-dbd3-3268">
           <modifiers>
             <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
           </modifiers>
@@ -20761,6 +20761,9 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <infoLink name="Recharge(0)" id="4e3b-b9fe-9fb6-2f97" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
         <infoLink name="Surplus" id="6aed-09db-73f9-9e52" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(75x714R)" hidden="false" id="dd8b-cf7a-80f3-c82b" type="selectionEntryGroup" targetId="7666-e18c-e2a5-5354"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
