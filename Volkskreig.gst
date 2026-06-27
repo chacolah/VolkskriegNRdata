@@ -4506,12 +4506,14 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Surplus Panzer" id="46c1-d464-a383-d2a8" hidden="false">
       <entryLinks>
-        <entryLink targetId="b537-2eac-6912-ba65" id="60f8-0fd0-16e5-7e2f" type="selectionEntry" name="Flammpanzer 38" hidden="true"/>
+        <entryLink targetId="44bd-90cc-7805-e479" id="60f8-0fd0-16e5-7e2f" type="selectionEntry" name="PzKpfw 35/38(t)" hidden="true"/>
         <entryLink targetId="83b1-de2d-08d4-896d" id="0ad0-0eb4-b191-6cd5" type="selectionEntry" name="StuG III Ausf. G" hidden="true"/>
         <entryLink targetId="10a4-1ae7-7950-c22f" id="9ff3-900f-201b-2208" type="selectionEntry" name="StuG III  Ausf. E" hidden="true"/>
         <entryLink targetId="9a10-87e6-960f-2c2c" id="e5c4-37b2-057f-8321" type="selectionEntry" name="PzJäger “Wanze”" hidden="true"/>
         <entryLink targetId="1949-4270-db04-2d5e" id="df3b-2d1c-3625-a069" type="selectionEntry" name="PzKPFw II “Luchs”" hidden="true"/>
         <entryLink targetId="9571-b1e0-438f-70ce" id="cec1-a341-c000-0248" type="selectionEntry" name="PzKpfw III Ausf. E" hidden="true"/>
+        <entryLink targetId="b537-2eac-6912-ba65" id="82f8-c3c7-ce5e-9eef" type="selectionEntry" name="Flammpanzer 38" hidden="true"/>
+        <entryLink targetId="d9a6-f851-8b8c-9adf" id="acc8-21db-cf44-4bfd" type="selectionEntry" name="Jagdpanzer 38(t)" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Sturmritter Weapons" id="27d9-fc25-bdc9-23f2" hidden="true">
