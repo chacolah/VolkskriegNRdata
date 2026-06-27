@@ -3429,7 +3429,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="f4d8-821a-1264-d5d1" id="daeb-6707-f53e-5c5c" type="selectionEntry" name="Carl Gustaf Granatgevär m/50" hidden="true"/>
         <entryLink import="true" name="Type 20 Kochi Rifle" hidden="false" id="303f-7408-0eb2-4e0b" type="selectionEntry" targetId="a6d1-86b9-2c47-ce4c"/>
         <entryLink import="true" name="Degtjarev M27 &quot;Emma&quot;" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
-        <entryLink import="true" name="vz.39/l.MG39(t)" hidden="false" id="ddb0-3c17-177e-ed9f" type="selectionEntry" targetId="1650-da94-b117-5d67"/>
+        <entryLink import="true" name="vz.39/l.MG-39(t)" hidden="false" id="ddb0-3c17-177e-ed9f" type="selectionEntry" targetId="1650-da94-b117-5d67"/>
         <entryLink targetId="88d5-c07c-682b-5b88" id="1249-65e9-cd82-7625" type="selectionEntry" name="Panzerbüchse-54(Cz)" hidden="true" collective="false"/>
         <entryLink targetId="3848-e115-3a35-9e94" id="c262-176b-2fc0-ddd1" type="selectionEntry" name="Blitzwerfengewehr-59" hidden="true" collective="false"/>
       </entryLinks>
@@ -11288,6 +11288,23 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="65b9-892a-1703-ad71"/>
       </constraints>
+      <profiles>
+        <profile name="Topfblende/Saukopf Mantlet" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="49df-f912-b0fd-29fe">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">+30</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Casemate Upgrade</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Increases the firing angle by 30°.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vierling Upgrade" hidden="true" id="e2f1-0d63-ea03-4ee1">
       <costs>
@@ -11398,7 +11415,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Hardpoint: LPW" hidden="false" id="d0cc-9ec9-2fa6-1c54" type="selectionEntryGroup" targetId="b7cf-f6ad-ac7d-5032"/>
+        <entryLink import="true" name="Hardpoint: MPW" hidden="false" id="d0cc-9ec9-2fa6-1c54" type="selectionEntryGroup" targetId="4808-889f-7b19-d48d"/>
         <entryLink import="true" name="Panzer (Casemate) Upgrades" hidden="false" id="4cc0-2a03-85fb-24ab" type="selectionEntryGroup" targetId="3e80-a3cb-ad20-244e"/>
         <entryLink import="true" name="Panzer Chassis Upgrade" hidden="false" id="2341-f0b7-4735-0833" type="selectionEntryGroup" targetId="eeae-b378-e97d-29db"/>
         <entryLink import="true" name="Panzer Mobility" hidden="false" id="a735-f9ff-8c2a-5d03" type="selectionEntryGroup" targetId="f6ff-c1f1-4399-2607"/>
