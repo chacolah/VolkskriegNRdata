@@ -15961,8 +15961,9 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -15985,7 +15986,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">11</characteristic>
             <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">90</characteristic>
-            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer (Casemate)</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer (Casemate)</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
           </characteristics>
         </profile>
@@ -20706,6 +20707,60 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jagdpanzer 38(t)" hidden="true" id="d9a6-f851-8b8c-9adf">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="585"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f0dc-fc28-959c-0329" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Flammpanzer 38" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="4112-be26-9606-9018">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">8&quot;</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">11</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">90</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer (Casemate)</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Maschinengewehr-56" id="a3d0-74d4-594e-58f7" hidden="false" type="profile" targetId="3720-2612-bdba-02b0">
+          <modifiers>
+            <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Kampfwagenfeuerwerfer-51" id="6673-fb1a-037d-fa4d" hidden="false" type="profile" targetId="7a5c-bc41-d8e3-f84e">
+          <modifiers>
+            <modifier type="set" value="-" field="8663-15fe-1559-12b8"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Recharge(0)" id="4e3b-b9fe-9fb6-2f97" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+        <infoLink name="Surplus" id="6aed-09db-73f9-9e52" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
