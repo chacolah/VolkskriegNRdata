@@ -16637,6 +16637,15 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="2" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="&apos;37 Webbing" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0722-b231-f00f-fcd7">
@@ -16680,6 +16689,15 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="2" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -20030,10 +20048,33 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Surplus</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="" field="556d-f99b-9ae9-1e73">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Surplus" id="7e62-7c2e-7210-9b72" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Surplus" id="7e62-7c2e-7210-9b72" hidden="false" type="rule" targetId="5705-4637-2b89-5c53">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -20044,6 +20085,15 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true" childName="Former Commonwealth/ London Underground"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="3" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
