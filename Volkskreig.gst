@@ -13600,7 +13600,19 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       <infoLinks>
         <infoLink name="Underslung" id="446b-18da-6ddc-7ce3" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
         <infoLink name="Muzzle" id="68f9-2c73-2ec4-e405" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
-        <infoLink name="Surplus" id="7523-91f4-b1ba-4a7f" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Surplus" id="7523-91f4-b1ba-4a7f" hidden="false" type="rule" targetId="5705-4637-2b89-5c53">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Sten Submachine Gun MKV**" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="274c-db83-5fb9-74d6">
@@ -13620,6 +13632,17 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
           </attributes>
+          <modifiers>
+            <modifier type="set" value="Muzzle, Underslung" field="556d-f99b-9ae9-1e73">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <entryLinks>
@@ -13634,6 +13657,15 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="3" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -20049,7 +20081,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Surplus</characteristic>
           </characteristics>
           <modifiers>
-            <modifier type="set" value="" field="556d-f99b-9ae9-1e73">
+            <modifier type="set" field="556d-f99b-9ae9-1e73">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
