@@ -14473,35 +14473,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Rüstung Platings" hidden="false" id="c1ed-009d-98f7-e1cd" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="44c0-fba4-9e36-7d2a" sortIndex="1">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="false" id="5331-ac7d-bcef-c25d"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Schwerer Panzerung" hidden="true" id="8d40-dd0e-2e39-500b" sortIndex="2">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="false" id="b1fc-b404-e2dd-a5f5"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Rüstung Plating Upgrades" id="18ba-4be8-b8d3-b201" hidden="true">
               <selectionEntries>
@@ -14856,35 +14827,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Rüstung Platings" hidden="false" id="ec82-0bfc-08de-073c" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="18fe-d5a8-c429-8b51" sortIndex="1">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="false" id="0330-5394-cd4f-d7a6"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Schwerer Panzerung" hidden="true" id="4f68-3c42-c758-fdb3" sortIndex="2">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="false" id="12cc-1944-c132-62b4"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Rüstung Plating Upgrades" id="f348-b349-87bc-7e0a" hidden="true">
               <selectionEntries>
