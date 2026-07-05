@@ -2061,11 +2061,12 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             </selectionEntryGroup>
             <selectionEntryGroup name="Assault Gun" id="093f-4c67-da5b-4658" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Flammpanzer 38" hidden="false" id="49dd-936c-2eab-032b" type="selectionEntry" targetId="b537-2eac-6912-ba65"/>
+                <entryLink import="true" name="Jagdpanzer 38(t)" hidden="false" id="49dd-936c-2eab-032b" type="selectionEntry" targetId="d9a6-f851-8b8c-9adf"/>
                 <entryLink import="true" name="StuG III  Ausf. E" hidden="false" id="186b-6e67-723a-e24f" type="selectionEntry" targetId="10a4-1ae7-7950-c22f"/>
                 <entryLink import="true" name="StuG III Ausf. G" hidden="false" id="87ab-bba0-c7ed-c4d8" type="selectionEntry" targetId="83b1-de2d-08d4-896d"/>
                 <entryLink import="true" name="E-25 &quot;Panzer&quot; (Casemate)" hidden="false" id="62b2-f9ac-9699-90d3" type="selectionEntry" targetId="b88d-4a94-81b9-9d40"/>
                 <entryLink import="true" name="E-50 &quot;Tiger&quot; (Casemate)" hidden="false" id="1a20-3005-0a3b-7576" type="selectionEntry" targetId="8f3a-cb82-0747-bde3"/>
+                <entryLink import="true" name="Flammpanzer 38" hidden="false" id="628c-1d2f-5b80-8383" type="selectionEntry" targetId="b537-2eac-6912-ba65"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59b8-3034-85c1-718f"/>
@@ -14702,35 +14703,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Rüstung Platings" hidden="false" id="8124-fcc3-233a-e876" type="selectionEntryGroup" targetId="6de1-d553-8767-0740">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Leichte Panzerung" hidden="true" id="28ae-f6ff-50ab-beda" sortIndex="1">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="false" id="b968-5519-065d-a332"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Schwerer Panzerung" hidden="true" id="ddaf-f111-93c4-5103" sortIndex="2">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="self" shared="false" id="0554-e794-23d7-8a78"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup name="Rüstung Plating Upgrades" id="0075-f3cd-eeca-0c50" hidden="true">
               <selectionEntries>
@@ -15127,6 +15099,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Luftwaffe"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
