@@ -5545,19 +5545,19 @@ May spend their Energy cost to move an additional 6” times (x) during their mo
     </rule>
     <rule name="Piercing(1)" id="71aa-a433-caa2-dc68" hidden="false">
       <description>Equipment with this rule:
-Bypass an amount of armor equal to (x) when dealing damage.</description>
+Bypass an amount of armor equal to (x)d6 when dealing damage.</description>
     </rule>
     <rule name="Piercing(2)" id="e166-a701-2c14-2275" hidden="false">
       <description>Equipment with this rule:
-Bypass an amount of armor equal to (x) when dealing damage.</description>
+Bypass an amount of armor equal to (x)d6 when dealing damage.</description>
     </rule>
     <rule name="Piercing(3)" id="5238-a413-8b1a-fe25" hidden="false">
       <description>Equipment with this rule:
-Bypass an amount of armor equal to (x) when dealing damage.</description>
+Bypass an amount of armor equal to (x)d6 when dealing damage.</description>
     </rule>
     <rule name="Piercing(5)" id="fc55-ea27-b63c-e0ed" hidden="false">
       <description>Equipment with this rule:
-Bypass an amount of armor equal to (x) when dealing damage.</description>
+Bypass an amount of armor equal to (x)d6 when dealing damage.</description>
     </rule>
     <rule name="Radio(3,0)" id="0f17-7afb-1daf-0132" hidden="false">
       <description>Equipment or Tiles with this rule:
@@ -6238,7 +6238,7 @@ May equip a number of Rüstung Arm Upgrades equal to (x).</description>
     </rule>
     <rule name="Piercing(4)" id="cc59-130d-ef0b-4987" hidden="false">
       <description>Equipment with this rule:
-Bypass an amount of armor equal to (x) when dealing damage.</description>
+Bypass an amount of armor equal to (x)d6 when dealing damage.</description>
     </rule>
     <rule name="Crewed" id="9b23-9cb3-4736-bcea" hidden="false">
       <description>Equipment with this rule:
@@ -14543,45 +14543,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </constraints>
         </entryLink>
         <entryLink import="true" name="Power Sources" hidden="false" id="e408-cd38-af4d-7703" type="selectionEntryGroup" targetId="e11f-3da3-396d-00c2">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="true" id="354f-0fad-0586-80ca">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor-56" hidden="true" id="2084-d768-446f-baed">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Schnellladenmotor-60" hidden="true" id="27fd-31cd-fadd-c7e2">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1d2-4fca-a4f9-c7cc-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1d2-4fca-a4f9-c7cc-max"/>
@@ -14744,45 +14705,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </constraints>
         </entryLink>
         <entryLink import="true" name="Power Sources" hidden="false" id="e56f-bc77-636d-f187" type="selectionEntryGroup" targetId="e11f-3da3-396d-00c2">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="true" id="60e9-7e4a-6f8b-feb5">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor-56" hidden="true" id="3b62-33c0-ce5c-0e03">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Schnellladenmotor-60" hidden="true" id="9c1a-48d3-7004-5624">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6c0-fe52-cc58-805f"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac1c-2947-033c-6bca"/>
@@ -14897,45 +14819,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           </constraints>
         </entryLink>
         <entryLink import="true" name="Power Sources" hidden="false" id="85ff-16ec-ed34-505b" type="selectionEntryGroup" targetId="e11f-3da3-396d-00c2">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="true" id="8846-b5b0-37bf-500b">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor-56" hidden="true" id="6c5c-5375-9cf0-2d18">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Schnellladenmotor-60" hidden="true" id="d64b-22d9-9acb-2b62">
-              <costs>
-                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
-          </selectionEntries>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6581-a39b-e143-3316"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9291-bac4-1b0e-084a"/>
