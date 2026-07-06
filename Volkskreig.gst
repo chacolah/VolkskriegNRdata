@@ -3980,6 +3980,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Chassis" id="3c55-fd24-c1cb-4f46" hidden="false">
       <entryLinks>
+        <entryLink targetId="3014-6c39-9294-8e9a" id="07ed-9477-e6e0-921c" type="selectionEntry" name="Matilda II" hidden="true"/>
         <entryLink targetId="afdd-ed17-e25a-0103" id="afbf-26de-7a15-1c62" type="selectionEntry" name="E-50 &quot;Tiger&quot; (Turreted)" hidden="true"/>
         <entryLink targetId="f137-3e2e-5c0e-c63a" id="ba26-0069-6f2a-4bba" type="selectionEntry" name="E-25 &quot;Panzer&quot; (Turreted)" hidden="true"/>
         <entryLink targetId="8f3a-cb82-0747-bde3" id="1cd4-9934-fc49-d5b9" type="selectionEntry" name="E-50 &quot;Tiger&quot; (Casemate)" hidden="true"/>
@@ -3989,74 +3990,6 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="db9b-2bde-47e0-6930" id="dd3b-db4e-ff86-eb1a" type="selectionEntry" name="E-10 &quot;Luchs&quot; (Drohne Rack)" hidden="true"/>
         <entryLink import="true" name="Stridsvagn m/41" hidden="false" id="5d85-9b88-474e-af6a" type="selectionEntry" targetId="26e1-ddff-8a16-7a11"/>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Matilda II" hidden="true" id="3014-6c39-9294-8e9a">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <profiles>
-            <profile name="Matilda II" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="df4d-ac91-6784-c2d0">
-              <characteristics>
-                <characteristic name="MOB" typeId="4765-2056-04fc-a63a">8&quot;</characteristic>
-                <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
-                <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
-                <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
-                <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
-                <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
-                <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
-                <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">12</characteristic>
-                <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">75</characteristic>
-                <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer(Turreted)</characteristic>
-                <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Rm" typeId="7439-07e0-82ef-c431" value="480"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="BESA Machine Gun" id="6c14-2a68-e1f5-cd85" hidden="false" type="profile" targetId="7325-849e-f9c1-3eb1">
-              <modifiers>
-                <modifier type="set" value="270" field="eb20-68aa-3af1-db2f"/>
-                <modifier type="set" value="BESA Machine Gun(Coaxial)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="QF 2 Pounder" id="42fc-7aed-174e-f1df" hidden="false" type="profile" targetId="473f-3cd9-e046-3ed2">
-              <modifiers>
-                <modifier type="set" value="270" field="eb20-68aa-3af1-db2f"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Recharge(0)" id="8b87-6f70-2e0c-c42f" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="QF 2 Pounder" hidden="false" id="72e8-4a49-acd0-9635" defaultAmount="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b007-4022-a121-ab2d"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b168-729e-a2be-f8d7"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="BESA Machine Gun(Coaxial)" hidden="false" id="0c7b-0f29-ea23-95cc" defaultAmount="1">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ca5-e334-452c-da5d"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="108b-fde2-e4f1-d782"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Ordnance(40×304mmR)" hidden="false" id="a08f-a509-922a-b43a" type="selectionEntryGroup" targetId="d9a7-54c6-4d61-b4f0"/>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Panzer Chassis Upgrade" id="eeae-b378-e97d-29db" hidden="false">
       <constraints>
@@ -11437,7 +11370,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">9</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">70</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">50</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer, Casemate</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
@@ -11492,7 +11425,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">6</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">55</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Carrier(4), Recharge(0)</characteristic>
           </characteristics>
@@ -11549,7 +11482,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">8</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">55</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer, Turreted</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
@@ -11659,7 +11592,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">5/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">11</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">75</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">55</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037"/>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
@@ -11714,7 +11647,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">18</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">100</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">80</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Heavy Panzer, Casemate</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
@@ -11769,7 +11702,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">5/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">16</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">95</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">90</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Heavy Panzer, Turreted</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
@@ -11845,7 +11778,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/1</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">5</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">30</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Tankette</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Open-Topped, Recharge(0), Surplus</characteristic>
           </characteristics>
@@ -11906,7 +11839,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">8</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">40</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">30</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Tankette</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
@@ -12097,7 +12030,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">15</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Hover</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
@@ -12186,7 +12119,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+2</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">30</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">25</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Tracks</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
@@ -12229,7 +12162,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+2</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">25</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Walker</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
@@ -12272,7 +12205,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+1</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">15</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Panzer Mobility, Walker</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
@@ -15817,7 +15750,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">11</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">90</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">75</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer (Casemate)</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
           </characteristics>
@@ -15877,7 +15810,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/1</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">5</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">40</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">30</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Tankette</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Recharge(0), Surplus</characteristic>
           </characteristics>
@@ -15925,7 +15858,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">3/0</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">9</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">85</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">60</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Recharge(0), Surplus</characteristic>
           </characteristics>
@@ -15996,7 +15929,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">3/0</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">11</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">85</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">80</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Medium Panzer</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Recharge(0), Surplus</characteristic>
           </characteristics>
@@ -16050,7 +15983,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">13</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">90</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">85</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer, Casemate, Surplus</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
           </characteristics>
@@ -16123,7 +16056,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">13</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">98</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">93</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer, Surplus</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
           </characteristics>
@@ -17040,7 +16973,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">2*0</characteristic>
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">3</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">30</characteristic>
+            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">20</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, Scout Car</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Open-Topped, Recharge(0), Truckbed(4,0)</characteristic>
           </characteristics>
@@ -17090,7 +17023,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="219c-900c-30d9-cd81">-</characteristic>
             <characteristic name="CAP" typeId="269d-3880-bbc2-ec5a">3/0</characteristic>
             <characteristic name="ARM" typeId="7f71-92e2-a444-f967">3</characteristic>
-            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">30</characteristic>
+            <characteristic name="DUR" typeId="d5a4-f90e-6162-fcf4">25</characteristic>
             <characteristic name="TYPE" typeId="c526-fe11-bb57-08cb">Vehicle, Scout Car</characteristic>
             <characteristic name="Rules" typeId="3a99-baf9-1b88-9f69">Recharge(0)</characteristic>
           </characteristics>
@@ -17284,7 +17217,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+2</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">15</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Half-Track</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
@@ -17322,7 +17255,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">10</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Hover</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
@@ -17360,7 +17293,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+1</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">10</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Walker</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
@@ -17399,7 +17332,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">20</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">10</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Vehicle Mobility, Wheeled</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
           </characteristics>
@@ -19972,7 +19905,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">3/0</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">9</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">75</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">65</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Medium Panzer</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Recharge(0), Surplus</characteristic>
           </characteristics>
@@ -20193,7 +20126,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">3/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">9</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">75</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">70</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
           </characteristics>
@@ -20623,7 +20556,7 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
             <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
             <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">11</characteristic>
-            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">90</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">75</characteristic>
             <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Light Panzer (Casemate)</characteristic>
             <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0), Surplus</characteristic>
           </characteristics>
@@ -20647,6 +20580,72 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <entryLink import="true" name="Ordnance(75x714R)" hidden="false" id="dd8b-cf7a-80f3-c82b" type="selectionEntryGroup" targetId="7666-e18c-e2a5-5354"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Matilda II" hidden="true" id="3014-6c39-9294-8e9a">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true" childName="Former Commonwealth/ British Commandos"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Matilda II" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="df4d-ac91-6784-c2d0">
+          <characteristics>
+            <characteristic name="MOB" typeId="4765-2056-04fc-a63a">8&quot;</characteristic>
+            <characteristic name="RNG" typeId="32d9-b3ed-6939-718f">-</characteristic>
+            <characteristic name="ROT" typeId="9735-744c-cafa-32d7">-</characteristic>
+            <characteristic name="ACC" typeId="0cdf-adf8-db4b-821f">-</characteristic>
+            <characteristic name="FP" typeId="2365-03a0-e9ba-2e10">-</characteristic>
+            <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
+            <characteristic name="CAP" typeId="1239-734a-67cf-33e5">4/0</characteristic>
+            <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">12</characteristic>
+            <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">65</characteristic>
+            <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Medium Panzer(Turreted)</characteristic>
+            <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="480"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="BESA Machine Gun" id="6c14-2a68-e1f5-cd85" hidden="false" type="profile" targetId="7325-849e-f9c1-3eb1">
+          <modifiers>
+            <modifier type="set" value="270" field="eb20-68aa-3af1-db2f"/>
+            <modifier type="set" value="BESA Machine Gun(Coaxial)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="QF 2 Pounder" id="42fc-7aed-174e-f1df" hidden="false" type="profile" targetId="473f-3cd9-e046-3ed2">
+          <modifiers>
+            <modifier type="set" value="270" field="eb20-68aa-3af1-db2f"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Recharge(0)" id="8b87-6f70-2e0c-c42f" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="QF 2 Pounder" hidden="false" id="72e8-4a49-acd0-9635" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b007-4022-a121-ab2d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b168-729e-a2be-f8d7"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="BESA Machine Gun(Coaxial)" hidden="false" id="0c7b-0f29-ea23-95cc" defaultAmount="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ca5-e334-452c-da5d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="108b-fde2-e4f1-d782"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(40×304mmR)" hidden="false" id="a08f-a509-922a-b43a" type="selectionEntryGroup" targetId="d9a7-54c6-4d61-b4f0"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -20659,7 +20658,7 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <characteristic name="RoF" typeId="da7b-0522-4e1b-f41c">-</characteristic>
         <characteristic name="CAP" typeId="1239-734a-67cf-33e5">1/3</characteristic>
         <characteristic name="ARM" typeId="118c-8424-f0b3-baf0">3</characteristic>
-        <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">20</characteristic>
+        <characteristic name="DUR" typeId="3529-e61e-009b-c1a0">15</characteristic>
         <characteristic name="TYPE" typeId="48be-3b84-9024-2037">Vehicle, Car</characteristic>
         <characteristic name="Rules" typeId="70ad-4ffe-b303-85b8">Recharge(0)</characteristic>
       </characteristics>
