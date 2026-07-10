@@ -10213,11 +10213,12 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -10257,11 +10258,12 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
