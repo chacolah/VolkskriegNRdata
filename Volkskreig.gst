@@ -3432,7 +3432,8 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink import="true" name="Degtjarev M27 &quot;Emma&quot;" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
         <entryLink import="true" name="vz.39/l.MG-39(t)" hidden="false" id="ddb0-3c17-177e-ed9f" type="selectionEntry" targetId="1650-da94-b117-5d67"/>
         <entryLink targetId="88d5-c07c-682b-5b88" id="1249-65e9-cd82-7625" type="selectionEntry" name="Panzerbüchse-54(Cz)" hidden="true" collective="false"/>
-        <entryLink targetId="3848-e115-3a35-9e94" id="c262-176b-2fc0-ddd1" type="selectionEntry" name="Blitzwerfengewehr-59" hidden="true" collective="false"/>
+        <entryLink targetId="07f0-d6e6-be7c-1a54" id="c262-176b-2fc0-ddd1" type="selectionEntry" name="Lahti L-39" hidden="true" collective="false"/>
+        <entryLink targetId="3848-e115-3a35-9e94" id="fad6-bfc9-0406-c583" type="selectionEntry" name="Blitzwerfengewehr-59" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
@@ -6891,7 +6892,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">8</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1/0</characteristic>
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy</characteristic>
@@ -20644,6 +20645,59 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
       </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Ordnance(40×304mmR)" hidden="false" id="a08f-a509-922a-b43a" type="selectionEntryGroup" targetId="d9a7-54c6-4d61-b4f0"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lahti L-39" hidden="true" id="07f0-d6e6-be7c-1a54">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="130"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="343e-c141-1216-5145"/>
+      </constraints>
+      <profiles>
+        <profile name="Lahti L-39" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="23d7-063b-4816-4fd3">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-4</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Crewed, Magazine(20x138B), Ordnance(20x138B), Reload(1,5), Setup(1), Sight</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Crewed" id="584b-c6f1-793f-e1ac" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+        <infoLink name="Magazine(20x138B)" id="912f-6f4a-24c2-85dc" hidden="false" type="rule" targetId="10b3-df7f-3cce-b5e1"/>
+        <infoLink name="Ordnance(20x138B)" id="7661-83b3-c7ec-690c" hidden="false" type="rule" targetId="7268-4ecf-28b5-df1b"/>
+        <infoLink name="Reload(1,5)" id="f201-5a82-c825-add9" hidden="false" type="rule" targetId="8f24-b9e3-6356-ec2e"/>
+        <infoLink name="Sight" id="3e97-f6f5-8dce-5fc7" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+        <infoLink name="Setup(1)" id="5fde-2944-9807-8d58" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="8dde-66fd-7c84-b5bf" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
+        <entryLink import="true" name="Magazine Upgrades" hidden="false" id="d7f3-a99c-2c2c-dea9" type="selectionEntryGroup" targetId="9f52-75c7-552e-1a82"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="c274-c413-bd1a-4a8a" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
       </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
