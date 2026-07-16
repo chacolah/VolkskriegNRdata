@@ -2650,7 +2650,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Game Info" hidden="false" id="c076-de0a-68a1-edd8">
       <categoryLinks>
-        <categoryLink name="Faction Bookkeeping" hidden="false" id="982d-1576-4434-e782" targetId="f5ad-1da5-2ad4-cb2e" primary="false"/>
+        <categoryLink name="Reference" hidden="false" id="32ec-a251-d204-f62c" targetId="c1d7-f7b9-4d5d-909b" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Discord Link" hidden="false" id="6b48-c565-c410-851c">
@@ -2659,6 +2659,10 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
               <description>https://discord.gg/tCb5KZN</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e6f-4a95-1a41-311b-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e6f-4a95-1a41-311b-max"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Rulebook Link" hidden="false" id="456b-eb9f-3bea-6ae9">
           <rules>
@@ -2666,6 +2670,10 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
               <description>https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df1f-8bc5-f97d-2690-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df1f-8bc5-f97d-2690-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
