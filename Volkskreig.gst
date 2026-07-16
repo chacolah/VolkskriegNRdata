@@ -898,7 +898,7 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
         <entryLink import="true" name="Motorized Options" hidden="false" id="6e44-ddf0-8059-74f8" type="selectionEntryGroup" targetId="f0dc-fc28-959c-0329" sortIndex="2"/>
       </entryLinks>
       <modifiers>
-        <modifier type="set" value="Embarked Panzergrenadiers" field="name">
+        <modifier type="set" value="Panzergrenadiers (Motorized Fireteam)" field="name">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1018,7 +1018,7 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="Panzergrenadiers (Motorized Fireteam)" field="name">
+            <modifier type="set" value="Embarked Panzergrenadiers" field="name">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
