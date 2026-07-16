@@ -2648,6 +2648,27 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink import="true" name="Himmelschlossen" hidden="false" id="c3e4-abf3-51ca-a426" type="selectionEntryGroup" targetId="57d3-7996-97c3-6d00"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Game Info" hidden="false" id="c076-de0a-68a1-edd8">
+      <categoryLinks>
+        <categoryLink name="Faction Bookkeeping" hidden="false" id="982d-1576-4434-e782" targetId="f5ad-1da5-2ad4-cb2e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Discord Link" hidden="false" id="6b48-c565-c410-851c">
+          <rules>
+            <rule name="!!Discord Link:" id="2102-de38-8abf-a1f8" hidden="false">
+              <description>https://discord.gg/tCb5KZN</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rulebook Link" hidden="false" id="456b-eb9f-3bea-6ae9">
+          <rules>
+            <rule name="!!Rulebook Link:" id="ea86-f891-c688-32ca" hidden="false">
+              <description>https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="be23-c331-259d-7740" name="Equipped Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
