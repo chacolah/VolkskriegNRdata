@@ -895,10 +895,10 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="c50e-d137-f475-03bc" primary="false" name="Vehicle Crew"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Motorized Options" hidden="false" id="6e44-ddf0-8059-74f8" type="selectionEntryGroup" targetId="f0dc-fc28-959c-0329"/>
+        <entryLink import="true" name="Motorized Options" hidden="false" id="6e44-ddf0-8059-74f8" type="selectionEntryGroup" targetId="f0dc-fc28-959c-0329" sortIndex="2"/>
       </entryLinks>
       <modifiers>
-        <modifier type="set" value="Panzergrenadiers (Motorized Fireteam)" field="name">
+        <modifier type="set" value="Embarked Panzergrenadiers" field="name">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -923,7 +923,7 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
         </rule>
       </rules>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Motorized Crew" id="c1ce-a838-98c2-3437" hidden="false">
+        <selectionEntryGroup name="Motorized Crew" id="c1ce-a838-98c2-3437" hidden="false" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="Driver" id="69b0-011b-0a84-69fc" hidden="false" sortIndex="1">
               <entryLinks>
@@ -996,6 +996,44 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb66-0aad-53df-abbb"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="2d76-3e54-4418-14a6"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Embarked Fireteam" id="786c-7403-ea5d-5128" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Police" hidden="false" id="f6ce-0085-b3b9-b529" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+            <entryLink import="true" name="Conscript" hidden="false" id="0e17-b099-e68d-c1c5" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+            <entryLink import="true" name="Soldier" hidden="false" id="1dd9-956b-21a5-0e2f" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="self" shared="true" id="ac4b-85d5-c15f-1131"/>
+            <constraint type="min" value="2" field="selections" scope="self" shared="true" id="2fcb-5bb0-cb21-9741"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="{this} must not be equipped with an Exoframe." field="error">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="26d0-86d9-0d87-5772" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="b397-854e-e216-4012" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="Panzergrenadiers (Motorized Fireteam)" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -8479,6 +8517,28 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="decrement" value="30" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afdd-ed17-e25a-0103" shared="true" childName="E-50 &quot;Tiger&quot; (Turreted)" sortIndex="7"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bae-605a-7a31-4d56" shared="true" childName="Fahrlafette 51" sortIndex="1"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b88d-4a94-81b9-9d40" shared="true" childName="E-25 &quot;Panzer&quot; (Casemate)" sortIndex="4"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f137-3e2e-5c0e-c63a" shared="true" childName="E-25 &quot;Panzer&quot; (Turreted)" sortIndex="5"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="230e-861d-07f9-6652" shared="true" childName="E-10 &quot;Luchs&quot; (Casemate)" sortIndex="2"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="75e8-54e8-18ea-79b0" shared="true" childName="E-10 &quot;Luchs&quot; (Turreted)" sortIndex="3"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f3a-cb82-0747-bde3" shared="true" childName="E-50 &quot;Tiger&quot; (Casemate)" sortIndex="6"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61a1-5350-36a7-7d21"/>
@@ -8530,6 +8590,28 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Vehicle Builder"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="decrement" value="30" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="955e-8c2d-28cb-1a40" shared="true" includeChildSelections="true" childName="OKGB Feld-Divizionen"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="afdd-ed17-e25a-0103" shared="true" childName="E-50 &quot;Tiger&quot; (Turreted)" sortIndex="7"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bae-605a-7a31-4d56" shared="true" childName="Fahrlafette 51" sortIndex="1"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b88d-4a94-81b9-9d40" shared="true" childName="E-25 &quot;Panzer&quot; (Casemate)" sortIndex="4"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f137-3e2e-5c0e-c63a" shared="true" childName="E-25 &quot;Panzer&quot; (Turreted)" sortIndex="5"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="230e-861d-07f9-6652" shared="true" childName="E-10 &quot;Luchs&quot; (Casemate)" sortIndex="2"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="75e8-54e8-18ea-79b0" shared="true" childName="E-10 &quot;Luchs&quot; (Turreted)" sortIndex="3"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f3a-cb82-0747-bde3" shared="true" childName="E-50 &quot;Tiger&quot; (Casemate)" sortIndex="6"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
