@@ -898,7 +898,7 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
         <entryLink import="true" name="Motorized Options" hidden="false" id="6e44-ddf0-8059-74f8" type="selectionEntryGroup" targetId="f0dc-fc28-959c-0329" sortIndex="2"/>
       </entryLinks>
       <modifiers>
-        <modifier type="set" value="Panzergrenadiers (Motorized Fireteam)" field="name">
+        <modifier type="set" value="Panzergrenadiers" field="name">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -998,15 +998,6 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
           </constraints>
         </selectionEntryGroup>
         <selectionEntryGroup name="Embarked Fireteam" id="786c-7403-ea5d-5128" hidden="false" sortIndex="3">
-          <entryLinks>
-            <entryLink import="true" name="Police" hidden="false" id="f6ce-0085-b3b9-b529" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
-            <entryLink import="true" name="Conscript" hidden="false" id="0e17-b099-e68d-c1c5" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
-            <entryLink import="true" name="Soldier" hidden="false" id="1dd9-956b-21a5-0e2f" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="5" field="selections" scope="self" shared="true" id="ac4b-85d5-c15f-1131"/>
-            <constraint type="min" value="2" field="selections" scope="self" shared="true" id="2fcb-5bb0-cb21-9741"/>
-          </constraints>
           <modifiers>
             <modifier type="add" value="{this} must not be equipped with an Exoframe." field="error">
               <conditionGroups>
@@ -1034,6 +1025,110 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
               </conditionGroups>
             </modifier>
           </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Fireteam Officer" hidden="false" id="69e1-ed5c-4e78-1494" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Conscript" hidden="true" id="70c2-e424-6482-fb25" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+                <entryLink import="true" name="Police" hidden="true" id="0ce1-5706-30a2-3b5b" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Soldier" hidden="true" id="77f9-8458-b276-c052" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+                <entryLink import="true" name="Merc Pool" hidden="false" id="7a8f-061a-5e47-5267" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fa20-7c75-1812-163f-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa20-7c75-1812-163f-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="Unteroffizier" field="name">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fireteam Member" hidden="false" id="ec3e-50ca-542e-bbed" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Conscript" hidden="true" id="8d0f-0a16-f4d3-2c9c" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+                <entryLink import="true" name="Police" hidden="true" id="ef66-6d35-4e4e-823f" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Soldier" hidden="true" id="2886-4dbe-274a-31f1" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+                <entryLink import="true" name="Merc Pool" hidden="false" id="0498-749a-068f-f244" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61cc-6ea1-8cfd-bf8a"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f3fb-6430-13a5-264c"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="7" field="f3fb-6430-13a5-264c">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="Panzergrenadiers" field="name">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -1084,10 +1179,11 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
                 <entryLink import="true" name="Conscript" hidden="false" id="6647-21c7-9b7b-cb04" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f5d-b887-3475-4c31"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f5d-b887-3475-4c31"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f40-729e-462b-4e84"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Commander" id="9071-bf2d-e4a2-12c7" hidden="false" sortIndex="4">
+            <selectionEntryGroup name="Machine Gunner" id="9071-bf2d-e4a2-12c7" hidden="false" sortIndex="4">
               <entryLinks>
                 <entryLink import="true" name="Soldier" hidden="false" id="14e0-32fc-528a-80d6" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
                 <entryLink import="true" name="Police" hidden="false" id="ba2d-8f30-a7e7-6984" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
@@ -1136,6 +1232,14 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
             <constraint type="max" value="5" field="selections" scope="self" shared="true" id="e594-2015-594e-7bed"/>
             <constraint type="min" value="1" field="selections" scope="self" shared="true" id="4cf5-4fc4-22a7-0597"/>
           </constraints>
+          <modifiers>
+            <modifier type="add" value="{this} Requires at least one Panzer Officer." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="2cbe-3acd-e220-1c57" shared="true" includeChildSelections="true"/>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -1143,14 +1247,6 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="2a4c-0e11-486b-85fc" targetId="225b-b208-7d55-5943" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="23e1-7863-20e9-be94" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9a9c-a98d-88e0-18b3"/>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ccb7-9204-e65c-4733"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <profiles>
         <profile name="Heavy Weapons Team" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="99b3-7756-a447-ef14"/>
       </profiles>
@@ -1159,22 +1255,71 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
           <description>+1 to hit while making Overwatch shots.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Fireteam Officer" id="8669-c6a9-6a19-8ff1" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="a579-ef66-c0e0-1bbc" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="a507-3af8-0ecc-9beb" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="faad-0950-dbeb-17f7" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="a03b-cdb5-13d7-af34" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f4ad-ba87-7ba9-6e5f"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b47-6190-2521-aca7"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Fireteam Members" id="ffbb-35c1-1030-c46c" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="a6f4-f5c1-61ec-a7ca" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="0645-f4fe-dd8f-53f9" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="7a85-8ea8-717a-ed1e" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="bada-78d2-94dc-0468" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3d8-fd9c-ff6c-b03d-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3d8-fd9c-ff6c-b03d-max"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fireteam" hidden="false" id="5421-975e-b89f-d17e">
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="dedd-4217-c781-12ec" targetId="225b-b208-7d55-5943" primary="true"/>
         <categoryLink targetId="11cc-6f33-1d4d-4250" id="e549-6893-1d79-0d40" primary="false" name="Vehicle Crew"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="ee0d-90f1-5856-8201" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5f95-21e1-9e86-678c"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="3f41-24d7-7337-9467" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <modifiers>
-        <modifier type="set" value="Ersatzgruppen(Fireteam)" field="name">
+        <modifier type="set" value="Ersatzgruppen" field="name">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1198,26 +1343,133 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
           <description>+1 when making morale rolls and when enacting orders.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Fireteam Officer" id="064b-2128-ce86-3b1f" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="e01b-a6d1-24a6-e024" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="1cc0-49ce-223c-68a7" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="f084-8f56-e5a2-3da1" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="0846-792e-a5fe-0af9" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7459-1af8-4f7d-15b7-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7459-1af8-4f7d-15b7-max"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="Unteroffizier" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Fireteam Members" id="c470-ce95-cc30-070a" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="7b15-f3ed-9d16-3807" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="f9d6-df13-a530-0a19" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="4406-fd59-d1a3-c1bc" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="e711-3a69-0b8a-6445" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc1b-ef32-d308-e1af"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="be08-0b72-2a05-cc29"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="7" field="be08-0b72-2a05-cc29">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="Soldaten" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="a429-92a0-3658-f03f" name="K9 Team" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="d223-9ee8-d9db-4275" name="Generic Formation" hidden="false" targetId="225b-b208-7d55-5943" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="fef3-a732-89fc-c293" name="Infantry Models" hidden="false" collective="false" import="true" targetId="7c2e-83c8-444d-3436" type="selectionEntryGroup">
+        <entryLink import="true" name="Attack Dog" hidden="false" id="795b-a697-1e15-0022" type="selectionEntry" targetId="1bbf-46f3-c06d-53a6" sortIndex="2">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d940-f7ca-6a58-4f53"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ba2e-87a5-825b-7794"/>
+            <constraint type="max" value="2" field="selections" scope="a429-92a0-3658-f03f" shared="true" id="814a-a30f-42a9-5f8f"/>
+            <constraint type="min" value="1" field="selections" scope="a429-92a0-3658-f03f" shared="true" id="e074-e401-c508-9c54" includeChildSelections="false" automatic="false"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="c473-62e8-b61f-b8c9" name="Generic Formation" hidden="false" targetId="225b-b208-7d55-5943" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-        <entryLink import="true" name="Attack Dog" hidden="false" id="795b-a697-1e15-0022" type="selectionEntry" targetId="1bbf-46f3-c06d-53a6">
-          <constraints>
-            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="814a-a30f-42a9-5f8f"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e074-e401-c508-9c54"/>
-          </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="e074-e401-c508-9c54">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="root-entry" childId="c560-bbbd-6e9c-fdbb" shared="true" childName="Dog Handler" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="814a-a30f-42a9-5f8f">
+              <conditions>
+                <condition type="atLeast" value="2" field="selections" scope="root-entry" childId="c560-bbbd-6e9c-fdbb" shared="true" childName="Dog Handler" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <modifiers>
@@ -1236,6 +1488,39 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
           <description>Infantry Models with Houndmaster Training may command twice as many Beasts as normal.</description>
         </rule>
       </rules>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Dog Handler" hidden="false" id="c560-bbbd-6e9c-fdbb" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="c073-21dd-ce4d-f1ee" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="9efb-851f-4587-e532"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Police" hidden="true" id="3a54-7cf5-c4e8-4056" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="c3aa-2d06-fea5-8f51"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="57a8-d06a-7a2b-3aba" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a99d-599b-0856-a2a3"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="fc9b-14a0-6c2a-5463" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Flight Crew" hidden="false" id="2041-fd56-a5e5-f4ec">
       <categoryLinks>
@@ -1268,10 +1553,11 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
                 <entryLink import="true" name="Conscript" hidden="false" id="d6e9-a7e8-56da-05f5" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a6ca-54c2-d80b-e179"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a6ca-54c2-d80b-e179"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07e8-7332-16aa-0b01"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Observer/Co-Pilot" id="abe1-a800-9685-6020" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Observer/Co-Pilot" id="abe1-a800-9685-6020" hidden="false" sortIndex="3">
               <entryLinks>
                 <entryLink import="true" name="Soldier" hidden="false" id="6f0c-9176-1bac-3bcd" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
                 <entryLink import="true" name="Police" hidden="false" id="fa1d-a8af-e38e-d6fc" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
@@ -1281,7 +1567,7 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d28f-d04b-759f-8073"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Tail Gunner" id="750f-fe76-df5b-683f" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Gunner" id="750f-fe76-df5b-683f" hidden="false" sortIndex="2">
               <entryLinks>
                 <entryLink import="true" name="Soldier" hidden="false" id="9697-1494-2d93-5e6e" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
                 <entryLink import="true" name="Police" hidden="false" id="0565-3358-8809-7a6c" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
@@ -1561,14 +1847,6 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="679d-381d-f471-ac74" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="974f-4c66-6614-c424"/>
-            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="ceab-2eaa-29df-171d" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -1579,11 +1857,6 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="add" value="{this} Requires at least one Officer." field="error">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
-          </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -1599,6 +1872,63 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
       <infoLinks>
         <infoLink targetId="e158-29b1-1ccc-ff36" id="f1c5-0efc-825c-6873" type="rule" name="Fallschirmjäger Training" hidden="false"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Fallschirmjäger Officer" id="0766-8fa4-189b-1e95" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="0173-0375-c203-8d67" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="a510-55dc-e29b-375a" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="68b4-5fc6-3ce2-675a" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="af97-dab4-82c8-1668" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b62-6269-744d-63a6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7864-3714-c2e2-a87d" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Fallschirmjäger" id="1254-b053-3350-4acb" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="7ed4-2e77-a5fe-c283" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="57c6-d446-3e16-ea90" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="dcc9-c03c-b6be-978d" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="f33c-4a57-8ec0-01ef" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c69-ca8f-bd0c-42b7"/>
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="5827-9b05-99a2-0d0e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fallschirmkradschutzen Team" hidden="true" id="481e-4081-4e1c-a16b" collective="false">
       <categoryLinks>
@@ -1639,11 +1969,6 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="{this} Requires at least one Officer." field="error">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -1661,46 +1986,40 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
       <selectionEntryGroups>
         <selectionEntryGroup name="Riders" id="074e-4b2c-d1a6-963b" hidden="false" sortIndex="1">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Driver" id="1796-ee7a-4754-c40c" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Fallschirmjäger Officer" id="1796-ee7a-4754-c40c" hidden="false" sortIndex="1">
               <entryLinks>
                 <entryLink import="true" name="Soldier" hidden="false" id="cb23-7be2-b1ff-84f3" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
                 <entryLink import="true" name="Police" hidden="false" id="d374-aed1-c9ae-d6be" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
                 <entryLink import="true" name="Conscript" hidden="false" id="f838-2047-c1e5-2b40" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4844-2bfb-35d6-a173"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Sidecar Gunner" id="2615-4f39-03b7-a353" hidden="true" sortIndex="2">
-              <entryLinks>
-                <entryLink import="true" name="Soldier" hidden="false" id="475c-55f6-eea4-cd99" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
-                <entryLink import="true" name="Police" hidden="false" id="0995-73c2-ae0a-532c" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
-                <entryLink import="true" name="Conscript" hidden="false" id="7e66-bc5a-f25e-b000" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21fa-5417-93e3-a760"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4844-2bfb-35d6-a173"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c7d-dc94-e4ba-e04c"/>
               </constraints>
               <modifiers>
-                <modifier type="set" value="false" field="hidden">
+                <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5293-7e8e-a782-a528" shared="true" includeChildSelections="true" childName="Sidecar (R100)"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Rider" id="df7e-1ae2-99d3-25eb" hidden="false" sortIndex="3">
+            <selectionEntryGroup name="Fallschirmjäger" id="0602-a788-fd68-e531" hidden="false" sortIndex="2">
               <entryLinks>
-                <entryLink import="true" name="Soldier" hidden="false" id="a55e-85c8-0a75-7a38" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
-                <entryLink import="true" name="Police" hidden="false" id="9796-839d-a86d-0877" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
-                <entryLink import="true" name="Conscript" hidden="false" id="6e97-eebe-f25f-ffd6" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
+                <entryLink import="true" name="Soldier" hidden="false" id="e34b-fd9a-2ca8-a1a8" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
+                <entryLink import="true" name="Police" hidden="false" id="5233-43ec-b5d5-b7e9" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
+                <entryLink import="true" name="Conscript" hidden="false" id="59a4-a360-6615-73ed" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53f6-59c2-aa6e-5697"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7728-d265-f875-c95b"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Fallschirmjäger Training Drills" id="0ce4-896a-3164-74ff" hidden="false" targetId="e158-29b1-1ccc-ff36" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Fallschirmpanzergruppe" hidden="true" id="90be-0b30-7a5e-db8b">
       <entryLinks>
@@ -1765,7 +2084,7 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
         <profile name="Fallschirmpanzer Crew" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="2aa4-edb7-0ca9-9678"/>
       </profiles>
       <infoLinks>
-        <infoLink name="Fallschirmjäger Training" id="6590-91e3-17d6-6433" hidden="false" targetId="e158-29b1-1ccc-ff36" type="rule"/>
+        <infoLink name="Fallschirmjäger Training Drills" id="6590-91e3-17d6-6433" hidden="false" targetId="e158-29b1-1ccc-ff36" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Tank Crew" id="4e52-95e9-edb8-6bf8" hidden="false" sortIndex="1">
@@ -1780,7 +2099,7 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b853-854a-8792-77e8"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Commander" id="d842-4932-15df-c939" hidden="false" sortIndex="4">
+            <selectionEntryGroup name="Machine Gunner" id="d842-4932-15df-c939" hidden="false" sortIndex="4">
               <entryLinks>
                 <entryLink import="true" name="Soldier" hidden="false" id="bc54-86e2-6705-fd7a" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
                 <entryLink import="true" name="Police" hidden="false" id="50f5-b714-470b-076f" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
@@ -1848,11 +2167,6 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" value="{this} Requires at least one Officer." field="error">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
         <modifier type="add" value="{this} Cannot contain any Multipart Equipment." field="error">
           <conditionGroups>
             <conditionGroup type="or">
@@ -1873,17 +2187,113 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
           </conditionGroups>
         </modifier>
       </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="e550-9211-729c-3b17" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dde3-b8a5-e122-f407"/>
-            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="df47-036b-3239-466f"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <infoLinks>
         <infoLink targetId="6bf9-01a1-550e-23eb" id="a0a9-aa67-e4c8-444b" type="rule" name="You Can Trust Osttruppen" hidden="false"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Osttruppen Officer" hidden="false" id="8984-2faf-81cb-9a27" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="4ee8-52a0-2ef1-dd2a" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="d4c1-b01f-2e18-9cbd" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="6d21-c54b-8e1e-8853" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="3a09-6007-2d10-0d75" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0875-334c-0221-83ae-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0875-334c-0221-83ae-max"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="Unteroffizier" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ostruppen" hidden="false" id="66f1-9e43-d100-24cc" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="697b-4c01-734d-6fac" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="062d-81d3-a5a8-1639" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="1d6e-e0fd-35d2-cd05" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="5bd9-ba1c-6fe2-7ced" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed28-e7cc-406b-a674"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4b55-df93-db41-aced"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="7" field="4b55-df93-db41-aced">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="Panzergrenadiers" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="16a5-f8f2-0da5-6583" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Nachtjäger Squad" hidden="true" id="3824-958e-a415-e308" collective="false">
       <categoryLinks>
@@ -1893,14 +2303,6 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="7842-9cc3-09d3-7f8e" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="888d-d3cb-da88-2240"/>
-            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="c9bb-2e16-0f5d-ec24" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -1911,11 +2313,6 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="add" value="{this} Requires at least one Officer." field="error">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
-          </conditions>
         </modifier>
         <modifier type="set" value="true" field="hidden">
           <conditionGroups>
@@ -1929,9 +2326,68 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
         </modifier>
       </modifiers>
       <infoLinks>
+        <infoLink targetId="37eb-cfe6-332a-90d0" id="28dc-81c1-ada5-af98" type="rule" name="Stealth Infantry" hidden="false"/>
+        <infoLink targetId="b1a8-c026-4e30-baab" id="8311-68b6-3f41-6eb0" type="rule" name="Paradrop Capable" hidden="false"/>
         <infoLink targetId="f279-cc6f-a0e5-cff4" id="cabc-8218-2b64-b183" type="rule" name="Nachtjäger Training" hidden="false"/>
         <infoLink name="Fallschirmjäger Training" id="b4f7-39c2-e53d-c25d" hidden="false" targetId="e158-29b1-1ccc-ff36" type="rule"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Nachtjäger Officer" id="ef2b-e04f-d3dd-c9c8" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="d7d4-ecf7-2c11-1945" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="6311-c19b-e252-3670" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="caec-795d-6131-e4b1" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="71e6-b56a-0e15-7ae2" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="234a-8be4-8c82-9fbe"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8290-4ee6-1523-2b2f" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Nachtjäger" id="2fe8-224b-51de-a478" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="0692-d7fc-b7ca-5f5e" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="002f-5a1a-143a-5f40" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="da72-5dca-9041-f62c" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="41ce-4fa7-df46-abad" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1edc-1fcd-5ef5-fa03"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="0f2a-d58a-0f34-5c52" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sturmrittergruppe" hidden="true" id="aced-9645-77a6-8498">
       <categoryLinks>
@@ -1944,17 +2400,6 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
 Rüstung in this formation only have to spend the Energy cost once for both movements when performing the Go!Go!Go! order.</description>
         </rule>
       </rules>
-      <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="0857-882b-656b-eadb" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <modifiers>
-            <modifier type="add" value="{this} Requires at least one Officer." field="error">
-              <conditions>
-                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -1976,7 +2421,96 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" value="All Sturmritter must be equipped with an Exoframe or Exosuit." field="error">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="not">
+                      <conditions>
+                        <condition type="atLeast" value="2" field="selections" scope="root-entry" childId="fdee-72dd-7c30-f69a" shared="true" includeChildSelections="true" childName="Rüstung Frames"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="equalTo" value="2" field="selections" scope="root-entry" shared="true" childId="model" childName="model"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="not">
+                      <conditions>
+                        <condition type="atLeast" value="3" field="selections" scope="root-entry" childId="fdee-72dd-7c30-f69a" shared="true" includeChildSelections="true" childName="Rüstung Frames"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="equalTo" value="3" field="selections" scope="root-entry" childId="model" shared="true" childName="model"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Sturmritter Officer" id="e34d-175c-f640-ccff" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="6494-8e14-17b9-f527" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="9b5c-b316-7f36-3a5b" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="8c74-4c90-d9fd-10fb" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="05fc-ff6a-ac21-e300" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c789-6238-5377-1de6"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="59bb-c24f-4b7a-b38d"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Sturmritter" id="859e-ca46-55bd-1b6e" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="51f1-1e61-90a0-0538" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="3efb-c8e0-4027-7ebe" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="0df0-b733-ed0c-5a91" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="9ea0-7730-926c-fbfe" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ea9a-e5a5-389e-d7fe"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd52-c5f4-1a46-0a41"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="&quot;Haubitze zu Fuss&quot; Gruppe" hidden="true" id="a307-7d66-469f-0b03">
       <modifiers>
@@ -2021,7 +2555,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <categoryLink name="Wehrmacht" hidden="false" id="21ca-4d67-720c-d698" targetId="6c5e-c727-3867-fbd9" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Panzer" id="3d76-b17f-2469-f3e0" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Assault Gun Crew" id="3d76-b17f-2469-f3e0" hidden="false" sortIndex="1">
           <selectionEntryGroups>
             <selectionEntryGroup name="Panzer Crew" id="42e5-2d0c-745a-08d9" hidden="false" sortIndex="1">
               <constraints>
@@ -2039,6 +2573,12 @@ Rüstung in this formation only have to spend the Energy cost once for both move
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="add" value="{this} Requires at least one Panzer Officer." field="error">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="2cbe-3acd-e220-1c57" shared="true" includeChildSelections="true"/>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <selectionEntryGroups>
@@ -2113,16 +2653,7 @@ Rüstung in this formation only have to spend the Energy cost once for both move
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Ersatzgruppen" id="8122-dd6d-0aba-e179" hidden="false" sortIndex="2">
-          <entryLinks>
-            <entryLink import="true" name="Police" hidden="false" id="f181-50b6-2539-b53e" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
-            <entryLink import="true" name="Conscript" hidden="false" id="5bf9-4118-b0c2-c4b1" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
-            <entryLink import="true" name="Soldier" hidden="false" id="b064-6913-0ef7-fedb" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="8" field="selections" scope="self" shared="true" id="c72d-ea81-7c2f-e30e"/>
-            <constraint type="min" value="2" field="selections" scope="self" shared="true" id="a970-0677-78ae-5e4d"/>
-          </constraints>
+        <selectionEntryGroup name="Embarked Panzergrenadiers" id="8122-dd6d-0aba-e179" hidden="false" sortIndex="2">
           <modifiers>
             <modifier type="add" value="{this} must not be equipped with an Exoframe." field="error">
               <conditionGroups>
@@ -2135,6 +2666,63 @@ Rüstung in this formation only have to spend the Energy cost once for both move
               </conditionGroups>
             </modifier>
           </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Unteroffizier" hidden="false" id="50b4-3835-0ff8-9b17" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Conscript" hidden="true" id="ff71-810e-ddc2-8440" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+                <entryLink import="true" name="Police" hidden="true" id="0b4c-0651-18b6-6be9" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Soldier" hidden="true" id="c32e-29e1-a513-2474" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+                <entryLink import="true" name="Merc Pool" hidden="false" id="160f-3552-78bc-41a1" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb5c-e22b-a746-d2d2-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb5c-e22b-a746-d2d2-max"/>
+              </constraints>
+              <modifiers>
+                <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Panzergrenadiers" hidden="false" id="e5f8-0d34-335d-c4b4" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Conscript" hidden="true" id="a4fd-7fa3-b58c-4bd4" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+                <entryLink import="true" name="Police" hidden="true" id="be46-a7bd-c749-a04d" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Soldier" hidden="true" id="e31d-9828-e7f7-5c61" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+                <entryLink import="true" name="Merc Pool" hidden="false" id="f278-2281-56db-c6cc" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6d3f-e362-5b7a-00f2"/>
+                <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="94ab-37bf-67d2-fb1e"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <rules>
@@ -2169,45 +2757,40 @@ Rüstung in this formation only have to spend the Energy cost once for both move
       <categoryLinks>
         <categoryLink name="Generic Formation" hidden="false" id="7eaa-92a9-e091-c83a" targetId="225b-b208-7d55-5943" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Bicycle" hidden="false" id="829a-b033-454d-5509" type="selectionEntryGroup" targetId="fec4-1eb8-df2e-556c" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68bd-781e-6e72-6e59"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="878a-7b8c-a38d-459a"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <rules>
         <rule name="Bicycle Familiarity" id="38fc-aea4-4773-dcc4" hidden="false">
           <description>+1 Mobility while on Bicycles.</description>
         </rule>
       </rules>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Riders" id="9cb5-1bef-cf04-bc57" hidden="false" sortIndex="1">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bicycle Riders" hidden="false" id="9a72-ec9f-30ff-a79e">
           <selectionEntryGroups>
-            <selectionEntryGroup name="Driver" id="1f01-9e9f-f5d4-57ee" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="Bicyclist" id="1f01-9e9f-f5d4-57ee" hidden="false" sortIndex="1">
               <entryLinks>
                 <entryLink import="true" name="Soldier" hidden="false" id="09e3-c65f-b9a2-7149" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
                 <entryLink import="true" name="Police" hidden="false" id="7e42-f7d0-6d26-a239" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
                 <entryLink import="true" name="Conscript" hidden="false" id="4557-4371-a75c-d3c7" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
               </entryLinks>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fba-c9ea-6099-9388"/>
-              </constraints>
-            </selectionEntryGroup>
-            <selectionEntryGroup name="Rider" id="a746-de0e-7bd8-0744" hidden="false" sortIndex="3">
-              <entryLinks>
-                <entryLink import="true" name="Soldier" hidden="false" id="db60-0de5-55e6-5245" type="selectionEntry" targetId="c22f-1f20-3675-0286"/>
-                <entryLink import="true" name="Police" hidden="false" id="a6ff-5caf-3c3f-e2fa" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
-                <entryLink import="true" name="Conscript" hidden="false" id="a048-70e7-0055-92d2" type="selectionEntry" targetId="90ca-5e14-e27e-2c14"/>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="318a-8632-ae4e-4580"/>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="510a-beb0-4ced-ef0a"/>
+                <constraint type="min" value="1" field="selections" scope="self" shared="true" id="549f-08d7-7d7f-7b4e"/>
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Bicycle" hidden="false" id="829a-b033-454d-5509" type="selectionEntryGroup" targetId="fec4-1eb8-df2e-556c" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="self" shared="true" id="68bd-781e-6e72-6e59"/>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="878a-7b8c-a38d-459a"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8025-c002-6449-c7d8" childId="any"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58cb-c233-7e3d-de0a" childId="any"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Smuggler Team" hidden="true" id="e767-bf8e-151a-eb1e" collective="false">
       <categoryLinks>
@@ -2218,14 +2801,46 @@ Rüstung in this formation only have to spend the Energy cost once for both move
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="Merc Pool" hidden="false" id="7b14-0754-f1dc-1b62" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+        <entryLink import="true" name="Merc Pool" hidden="false" id="7b14-0754-f1dc-1b62" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7">
+          <modifiers>
+            <modifier type="set" value="0" field="baa5-44e5-4ae0-1e1d">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="7819-ae93-efa7-8fd2" shared="true" includeChildSelections="true" childName="Opel Blitz (Civilian)"/>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="5c81-68ad-b4fd-e74b" shared="true" includeChildSelections="true" childName="Volkswagen Käfer"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="4" field="f2ae-4b5b-e624-beda">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="7819-ae93-efa7-8fd2" shared="true" includeChildSelections="true" childName="Opel Blitz (Civilian)"/>
+                    <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="5c81-68ad-b4fd-e74b" shared="true" includeChildSelections="true" childName="Volkswagen Käfer"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="f2ae-4b5b-e624-beda"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="baa5-44e5-4ae0-1e1d"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" childName="Deserteur" includeChildSelections="true" includeChildForces="true"/>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" childName="Former Reich/ Kriegsherren"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c8f6-fea8-d3f6-0cba" shared="true" childName="Deserteur" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <rules>
@@ -2250,25 +2865,73 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Optional Vehicle" id="8738-2e16-c8db-42c3" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Driver" id="21bb-94c6-d0ae-e721" hidden="true" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Merc Pool" hidden="false" id="f550-dce9-0de8-832f" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="944e-96a5-5c44-2bda"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="911b-bdde-12ab-f024"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="7819-ae93-efa7-8fd2" shared="true" includeChildSelections="true" childName="Opel Blitz (Civilian)"/>
+                        <condition type="atLeast" value="1" field="selections" scope="root-entry" childId="5c81-68ad-b4fd-e74b" shared="true" includeChildSelections="true" childName="Volkswagen Käfer"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Surplus Car or Truck" id="e814-8631-2e83-dac9" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Volkswagen Käfer" hidden="false" id="5f76-8b48-06cf-9bb4" type="selectionEntry" targetId="5c81-68ad-b4fd-e74b" sortIndex="1"/>
+                <entryLink import="true" name="Opel Blitz (Civilian)" hidden="false" id="9c29-195d-f44f-2321" type="selectionEntry" targetId="7819-ae93-efa7-8fd2" sortIndex="2"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="3e42-913a-1b62-da8b" name="Lone Wolf" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0481-e941-6dc8-39fb" name="Generic Formation" hidden="false" targetId="225b-b208-7d55-5943" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink id="70a5-c6fe-a6c8-2bb1" name="Infantry Models" hidden="false" collective="false" import="true" targetId="7c2e-83c8-444d-3436" type="selectionEntryGroup">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="15db-7bda-f880-1fd5"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dc7-51d2-e457-b589"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="019f-9cbf-2da5-b0d0" name="Generic Formation" hidden="false" targetId="225b-b208-7d55-5943" primary="false"/>
-          </categoryLinks>
-        </entryLink>
-      </entryLinks>
       <profiles>
         <profile name="Lone Wolf" typeId="838f-a1ac-7561-32a8" typeName="Formation" hidden="false" id="af5f-e6ce-3a4f-547a"/>
       </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Lone Wolf" id="a39f-2895-c202-9db5" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dc7-51d2-e457-b589"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="15db-7bda-f880-1fd5"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="7dba-9722-bc67-8a54" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="1abb-aaca-9b28-b4f8" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="854e-e85d-d10a-bd57" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="8e5e-d006-f0c8-80c7" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Berittene Polizei" hidden="true" id="44ba-e3d2-3bc5-9910">
       <categoryLinks>
@@ -2362,7 +3025,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
           <selectionEntryGroups>
             <selectionEntryGroup name="Riders" id="c2b4-1ce9-7bae-8281" hidden="false" sortIndex="1">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Driver" id="80ab-24e5-2baf-50d0" hidden="false" sortIndex="1">
+                <selectionEntryGroup name="Bicyclist" id="80ab-24e5-2baf-50d0" hidden="false" sortIndex="1">
                   <entryLinks>
                     <entryLink import="true" name="Police" hidden="false" id="42c8-1f7c-0be1-87d2" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
                   </entryLinks>
@@ -2370,7 +3033,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75fc-add7-28f2-9ca7"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Rider" id="a97e-08a4-4566-2c80" hidden="false" sortIndex="3">
+                <selectionEntryGroup name="Bicycle Passenger" id="a97e-08a4-4566-2c80" hidden="false" sortIndex="3">
                   <entryLinks>
                     <entryLink import="true" name="Police" hidden="false" id="4fbc-c84c-67e9-6f70" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
                   </entryLinks>
@@ -2401,7 +3064,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
           <selectionEntryGroups>
             <selectionEntryGroup name="Riders" id="ee63-ac70-c880-0a48" hidden="false" sortIndex="1">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Driver" id="3785-1181-713a-b0dc" hidden="false" sortIndex="1">
+                <selectionEntryGroup name="Horseman" id="3785-1181-713a-b0dc" hidden="false" sortIndex="1">
                   <entryLinks>
                     <entryLink import="true" name="Police" hidden="false" id="2954-d1cd-1bd9-2a08" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
                   </entryLinks>
@@ -2409,7 +3072,7 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45c3-d695-d2e9-2a72"/>
                   </constraints>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Rider" id="91db-af36-3c9b-cc5d" hidden="false" sortIndex="3">
+                <selectionEntryGroup name="Horseman(Passenger)" id="91db-af36-3c9b-cc5d" hidden="false" sortIndex="3">
                   <entryLinks>
                     <entryLink import="true" name="Police" hidden="false" id="5ac3-41f9-b302-e908" type="selectionEntry" targetId="4482-3622-e77f-04fc"/>
                   </entryLinks>
@@ -2427,14 +3090,6 @@ If the formation is equipped with a Truck with the Flatbed rule, they may grant 
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="5094-0d37-0eee-fcc6" targetId="c74a-6498-63d2-89fb" primary="true"/>
       </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="1bb1-7b1c-58c9-747d" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="max" value="15" field="selections" scope="parent" shared="true" id="0473-9c51-0f07-f397"/>
-            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="883c-7320-a534-6d15"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
@@ -2473,17 +3128,61 @@ While the Volksheld is alive, all morale rolls made by this formation are done w
 If the Volksheld is downed or killed all attack rolls made by this formation are done with a +1 modifier, and all Morale rolls made by this formation are done with a -1 modifier.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Volke" id="a2dd-6010-d177-f5b2" hidden="false" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="9544-eb6e-4836-5731" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="5b19-e0a4-a42e-1546" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="e5a8-61be-e034-a5be" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="7379-847f-9fe0-21cd" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Volksheld" id="935e-a061-bbdc-e9dd" hidden="false" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Conscript" hidden="true" id="cff2-ca1c-db3c-d11b" targetId="90ca-5e14-e27e-2c14" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Police" hidden="true" id="67af-5464-e870-7301" targetId="4482-3622-e77f-04fc" type="selectionEntry" collective="false">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="a344-f3e9-85f8-8d32" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Soldier" hidden="true" id="d203-62ad-5077-832b" targetId="c22f-1f20-3675-0286" type="selectionEntry" collective="false"/>
+            <entryLink import="true" name="Merc Pool" hidden="false" id="3b5b-a50f-764a-050e" type="selectionEntryGroup" targetId="4fe5-9481-73ea-f0a7"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Reichsmilitz" hidden="true" id="0aaa-e6e3-cf2c-cb8c">
+    <selectionEntry type="upgrade" import="true" name="Reichsmiliz" hidden="true" id="0aaa-e6e3-cf2c-cb8c">
       <categoryLinks>
         <categoryLink name="Faction Formations" hidden="false" id="9d06-87ac-8ab4-aa5e" targetId="c74a-6498-63d2-89fb" primary="true"/>
       </categoryLinks>
       <modifiers>
-        <modifier type="add" value="{this} Requires at least one Officer." field="error">
-          <conditions>
-            <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
             <conditionGroup type="or">
@@ -2514,19 +3213,62 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
           </conditionGroups>
         </modifier>
       </modifiers>
-      <entryLinks>
-        <entryLink import="true" name="Infantry Models" hidden="false" id="b6ca-edf7-8f01-6b93" type="selectionEntryGroup" targetId="7c2e-83c8-444d-3436">
-          <constraints>
-            <constraint type="max" value="8" field="selections" scope="parent" shared="true" id="20dd-087e-c7f9-e2c0"/>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="b614-5619-8164-4573"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <rules>
         <rule name="Training Officer Acumen" id="8a49-a083-76c2-1ad3" hidden="false">
           <description>All Reich Conscript infantry count as having Soldiering Proficiency so long as the Officer is not dead or downed.</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Milizoffizier" id="11dd-479c-fc0b-7546" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Reich Soldier" hidden="false" id="771e-e63b-6602-b3e9">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Soldier" id="e5fe-08a6-7634-67ad" hidden="false" type="profile" targetId="2354-6082-eb8f-a340"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Uniform" hidden="false" id="6d99-efe0-3d6b-ee9d" type="selectionEntryGroup" targetId="cf88-434c-a1b5-c58c"/>
+                <entryLink import="true" name="Equipped Weapons" hidden="false" id="53fb-4f0a-ed36-0956" type="selectionEntryGroup" targetId="be23-c331-259d-7740"/>
+                <entryLink import="true" name="Proficiencies" hidden="false" id="c4f7-893e-fcc6-cfe0" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d23-8b2f-d4f4-a2e6"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="973c-01a0-348f-37ca"/>
+              </constraints>
+              <modifiers>
+                <modifier type="add" value="{this} Requires Leadership Proficiency." field="error">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="8eae-c1bf-0451-6533" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Milizionär" id="bd1a-0bf6-d738-76a7" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Reich Conscript" hidden="false" id="21bf-23ca-ea94-f209">
+              <costs>
+                <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Equipped Weapons" hidden="false" id="b76f-463b-6c7c-8b5d" type="selectionEntryGroup" targetId="be23-c331-259d-7740"/>
+                <entryLink import="true" name="Proficiencies" hidden="false" id="6c87-2937-e204-5c8a" type="selectionEntryGroup" targetId="9154-8d04-10a8-97d2"/>
+                <entryLink import="true" name="Uniform" hidden="false" id="1682-c374-a5b4-75aa" type="selectionEntryGroup" targetId="cf88-434c-a1b5-c58c"/>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Conscript" id="5abc-1a88-ae0c-5dd1" hidden="false" type="profile" targetId="02ba-8ca3-796d-0f88"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="7" field="selections" scope="parent" shared="true" id="b9ee-4437-7724-a839"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1022-8a26-f0c8-f008"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Funksteuerungsteam" hidden="true" id="4bcb-5c3b-a842-0c6e">
       <categoryLinks>
@@ -2692,10 +3434,11 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
               <conditions>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="4482-3622-e77f-04fc" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="90ca-5e14-e27e-2c14" shared="true" includeChildSelections="true" includeChildForces="true"/>
-                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="0aaa-e6e3-cf2c-cb8c" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reichsmiliz"/>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="d2d5-bcfa-096f-b605" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="31e1-cfc2-0836-5b24" shared="true" includeChildSelections="true" includeChildForces="true"/>
                 <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="26d4-a494-82a2-4bed" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
               <comment>Removes limit if its not being equipped to a unit</comment>
             </conditionGroup>
@@ -6329,7 +7072,7 @@ If either of these are -, then any value is applicable.</description>
       <description>Romanian and Reich are considered the same nationality for the purposes of the Multiple Nationality rule.
 +1 to all Morale Rolls.</description>
     </rule>
-    <rule name="Fallschirmjäger Training" id="e158-29b1-1ccc-ff36" hidden="false">
+    <rule name="Fallschirmjäger Training Drills" id="e158-29b1-1ccc-ff36" hidden="false">
       <description>May immediately deploy into Overwatch as if under the effects of the “Ready Weapons!” order immediately after Paradrop Deploying.</description>
     </rule>
     <rule name="Nachtjäger Training" id="f279-cc6f-a0e5-cff4" hidden="false">
@@ -6431,6 +7174,12 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
     <rule name="Ordnance(40×304mmR)" id="46e1-8024-4968-11bf" hidden="false">
       <description>Equipment with this rule:
 Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Paradrop Capable" id="b1a8-c026-4e30-baab" hidden="false">
+      <description>Every Infantry Model must have Equipment with the Airborne, Thruster, or Booster rules, or must be embarked on a Motorcycle, Vehicle, or Panzer with the Airborne, Thruster, or Booster rules.</description>
+    </rule>
+    <rule name="Stealth Infantry" id="37eb-cfe6-332a-90d0" hidden="false">
+      <description>Every Infantry Model must be equipped with a Melee Weapon, Sidearm, or Primary Arm that has the Silent rule.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -9251,7 +10000,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9927-4cc9-063c-dded" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="is Volksheld" hidden="false" id="b316-7029-f844-1e93" type="selectionEntry" targetId="6a03-128e-c2a2-e601"/>
       </entryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
@@ -9323,7 +10071,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="is Volksheld" hidden="false" id="b9c3-5c34-cae8-5f80" type="selectionEntry" targetId="6a03-128e-c2a2-e601"/>
       </entryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
@@ -9403,7 +10150,6 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d130-4f1f-cff4-f569" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="is Volksheld" hidden="false" id="31ee-e355-f55f-5aff" type="selectionEntry" targetId="6a03-128e-c2a2-e601"/>
       </entryLinks>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
@@ -14499,7 +15245,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Energy(1)" id="0b53-cdd6-7387-d32e" hidden="false" type="rule" targetId="98a2-2a4b-cbba-9b7b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Landsverk Motorrustning m/56" hidden="true" id="26d0-86d9-0d87-5772">
+    <selectionEntry type="upgrade" import="true" name="Landsverk Motorrustning m/56" hidden="true" id="26d0-86d9-0d87-5772">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
@@ -14635,7 +15381,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         <infoLink name="Shoulder(2)" id="5bfa-d6d5-56be-9384" hidden="false" type="rule" targetId="1e21-0557-c602-f477"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Leichterrüstung Ausf. A/58 “Eierschale”" hidden="true" id="5c93-567f-cbb1-45a7">
+    <selectionEntry type="upgrade" import="true" name="Leichterrüstung Ausf. A/58 “Eierschale”" hidden="true" id="5c93-567f-cbb1-45a7">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
       </costs>
@@ -14770,7 +15516,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Schwererrüstung Aust. C/55 “Ritter”" hidden="true" id="b397-854e-e216-4012">
+    <selectionEntry type="upgrade" import="true" name="Schwererrüstung Aust. C/55 “Ritter”" hidden="true" id="b397-854e-e216-4012">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
