@@ -4244,6 +4244,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="88d5-c07c-682b-5b88" id="1249-65e9-cd82-7625" type="selectionEntry" name="Panzerbüchse-54(Cz)" hidden="true" collective="false"/>
         <entryLink targetId="07f0-d6e6-be7c-1a54" id="c262-176b-2fc0-ddd1" type="selectionEntry" name="Lahti L-39" hidden="true" collective="false"/>
         <entryLink targetId="3848-e115-3a35-9e94" id="fad6-bfc9-0406-c583" type="selectionEntry" name="Blitzwerfengewehr-59" hidden="true" collective="false"/>
+        <entryLink import="true" name="Fucil Controcarro 35(P)/Panzerbüchse 35(p)" hidden="false" id="2967-e652-ffa4-df55" type="selectionEntry" targetId="acd3-2fbb-8904-b0d2"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
@@ -4290,8 +4291,9 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="ed03-4bff-824f-1eed" id="9f10-8610-c0f3-e0b7" type="selectionEntry" name="MAS-36" hidden="true" collective="false"/>
         <entryLink targetId="a4ff-d706-fe31-0d2c" id="b268-adf8-7b57-67cb" type="selectionEntry" name="MAS-38" hidden="true" collective="false"/>
         <entryLink targetId="c2b9-96be-4729-bad1" id="e8fe-af8d-b7e9-783f" type="selectionEntry" name="MAS-44/56" hidden="true" collective="false"/>
-        <entryLink targetId="6249-666c-5083-d21e" id="0299-08ac-7628-c361" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
         <entryLink targetId="c522-06df-c434-ff16" id="5a18-15aa-ba98-7c17" type="selectionEntry" name="M39 Rifle" hidden="true" collective="false"/>
+        <entryLink targetId="6249-666c-5083-d21e" id="fa75-617c-7df9-3844" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
+        <entryLink targetId="495f-8ca3-752d-3710" id="d42c-a0c3-1017-08ba" type="selectionEntry" name="Lanciafiamme Modello 41 d&apos;assalto" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Sidearms/Melee" id="8d16-f577-2371-6215" hidden="false">
@@ -4319,6 +4321,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="248c-1ea5-04a0-37b7" id="f10a-c2ba-4fde-acb9" type="selectionEntry" name="Welrod" hidden="true" collective="false"/>
         <entryLink targetId="a1a9-a850-c159-ece5" id="77f6-bdff-bffb-a75d" type="selectionEntry" name="MAC-49" hidden="true" collective="false"/>
         <entryLink targetId="42b1-9a6c-7f6d-6a14" id="86bf-4758-56a5-3389" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
+        <entryLink import="true" name="Einstossflammenwerfer 46" hidden="false" id="3efc-3964-85f1-d9de" type="selectionEntry" targetId="651f-f8c5-274b-95c2"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung Frames" id="fdee-72dd-7c30-f69a" hidden="false">
@@ -7181,6 +7184,20 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
     <rule name="Stealth Infantry" id="37eb-cfe6-332a-90d0" hidden="false">
       <description>Every Infantry Model must be equipped with a Melee Weapon, Sidearm, or Primary Arm that has the Silent rule.</description>
     </rule>
+    <rule name="Spalling(3)" id="588b-6d2b-58d1-2350" hidden="false">
+      <description>Equipment with this rule:
+Deal x amount of damage to one random crewman within a vehicle with an armor value automatically, regardless if they manage to successfully penetrate the target.
+
+
+When dealing a Spall result after rolling for a Devastating Hit, deal x amount of damage to all crew instead of 2 damage.</description>
+    </rule>
+    <rule name="Spalling(x)" id="eaba-09ec-5458-5273" hidden="false">
+      <description>Equipment with this rule:
+Deal x amount of damage to one random crewman within a vehicle with an armor value automatically, regardless if they manage to successfully penetrate the target.
+
+
+When dealing a Spall result after rolling for a Devastating Hit, deal x amount of damage to all crew instead of 2 damage.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Raketen Panzerbüchse-58" hidden="true" id="8677-f449-be72-6b51" collective="false">
@@ -7997,7 +8014,7 @@ Uses another consumable resource with the same name as (x) when attacking.</desc
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lanciafiamme Spelleggiato Modello 35" hidden="true" id="c7dc-29fa-85d1-1ee8" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Lanciafiamme Spalleggiato Modello 35" hidden="true" id="c7dc-29fa-85d1-1ee8" collective="false">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
       </costs>
@@ -21558,6 +21575,118 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <entryLink import="true" name="Magazine Upgrades" hidden="false" id="d7f3-a99c-2c2c-dea9" type="selectionEntryGroup" targetId="9f52-75c7-552e-1a82"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="c274-c413-bd1a-4a8a" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Einstossflammenwerfer 46" hidden="true" id="651f-f8c5-274b-95c2">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+      </costs>
+      <profiles>
+        <profile name="Einstossflammenwerfer 46" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="8cf7-91ea-9d94-c665">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">9&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Consumable, Flame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Flame" id="c5ca-2288-a160-2a70" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
+        <infoLink name="Consumable" id="6a7d-85fc-08e0-fdee" hidden="false" type="rule" targetId="0ffc-3d86-bff5-0210"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" childName="Former Reich/ Luftwaffe"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lanciafiamme Modello 41 d&apos;assalto" hidden="true" id="495f-8ca3-752d-3710">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="45"/>
+      </costs>
+      <profiles>
+        <profile name="Lanciafiamme Modello 41 d&apos;assalto" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6902-385c-15f1-65fc">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">10&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Flame, Radius(1&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Radius(1&quot;)" id="58db-3a27-3f07-718e" hidden="false" type="rule" targetId="e3dc-ae45-d11e-b334"/>
+        <infoLink name="Flame" id="bee4-ce3c-88b1-bf79" hidden="false" type="rule" targetId="e409-01a3-3f44-75a1"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" childName="Former Reich/ Tyroler Konigsreich"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fucil Controcarro 35(P)/Panzerbüchse 35(p)" hidden="true" id="acd3-2fbb-8904-b0d2">
+      <profiles>
+        <profile name="Fucil Controcarro 35(P)/Panzerbüchse 35(p)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1e11-eef0-af52-1f29">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">10</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Piercing(1), Spalling(3)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Spalling(3)" id="8493-5c47-2517-a27c" hidden="false" type="rule" targetId="588b-6d2b-58d1-2350"/>
+        <infoLink name="Piercing(1)" id="fde0-02c0-37a8-c0e4" hidden="false" type="rule" targetId="71aa-a433-caa2-dc68"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4345-8c67-51f0-6be7" shared="true" childName="Former Reich/ Tyroler Konigsreich"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
