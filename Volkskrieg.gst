@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="eeb3-567d-708a-f896" name="VolkskriegNR" revision="1" battleScribeVersion="2.03" authorUrl="https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Justin Gourlay" authorContact="Discord: chacolah" type="gameSystem">
+<gameSystem id="eeb3-567d-708a-f896" name="Volkskrieg" revision="1" battleScribeVersion="2.03" authorUrl="https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Justin Gourlay" authorContact="Discord: chacolah" type="gameSystem">
   <publications>
     <publication id="7280-690f-8cae-8d1e" name="Core Rules Doc" shortName="Volkskrieg" publisherUrl="https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/" publisher="Volkskrieg Living Rules Doc">
       <comment>Pub URL links to rulebook</comment>
