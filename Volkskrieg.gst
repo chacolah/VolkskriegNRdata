@@ -3591,9 +3591,9 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="632f-2c3d-0238-a8f2" id="0984-b2b1-e9f0-3cb3" type="selectionEntry" name="M46 Feldanzug" hidden="true" collective="false"/>
         <entryLink targetId="172e-4027-37a9-bdde" id="1a86-2412-7897-ab86" type="selectionEntry" name="&apos;48 Webbing" hidden="true" collective="false"/>
         <entryLink targetId="d710-4dbc-c9bd-1d8d" id="c257-5497-8fc8-6478" type="selectionEntry" name="&apos;54 Webbing" hidden="true" collective="false"/>
-        <entryLink targetId="80d3-ce6d-5579-5a3c" id="df62-8450-2d1c-a9fa" type="selectionEntry" name="Basic Uniform" hidden="true" collective="false"/>
+        <entryLink targetId="80d3-ce6d-5579-5a3c" id="df62-8450-2d1c-a9fa" type="selectionEntry" name="Basic Uniform" hidden="false" collective="false"/>
         <entryLink targetId="7584-cf0a-4d4a-140e" id="0fdf-cbd7-2a84-8e5b" type="selectionEntry" name="m/1949 Uniform" hidden="true" collective="false"/>
-        <entryLink targetId="0505-7f2a-6d64-ee79" id="9bb8-0e6d-5c0f-7742" type="selectionEntry" name="Civilian Clothes" hidden="true" collective="false"/>
+        <entryLink targetId="0505-7f2a-6d64-ee79" id="9bb8-0e6d-5c0f-7742" type="selectionEntry" name="Civilian Clothes" hidden="false" collective="false"/>
       </entryLinks>
       <modifiers>
         <modifier type="add" value="All Fallschirmjäger must have equipment with the Airborne Rule." field="error">
@@ -4243,8 +4243,9 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink import="true" name="vz.39/l.MG-39(t)" hidden="false" id="ddb0-3c17-177e-ed9f" type="selectionEntry" targetId="1650-da94-b117-5d67"/>
         <entryLink targetId="88d5-c07c-682b-5b88" id="1249-65e9-cd82-7625" type="selectionEntry" name="Panzerbüchse-54(Cz)" hidden="true" collective="false"/>
         <entryLink targetId="07f0-d6e6-be7c-1a54" id="c262-176b-2fc0-ddd1" type="selectionEntry" name="Lahti L-39" hidden="true" collective="false"/>
-        <entryLink targetId="3848-e115-3a35-9e94" id="fad6-bfc9-0406-c583" type="selectionEntry" name="Blitzwerfengewehr-59" hidden="true" collective="false"/>
+        <entryLink targetId="7aba-4c0c-f3cf-c82b" id="fad6-bfc9-0406-c583" type="selectionEntry" name="Konekivääri M48" hidden="true" collective="false"/>
         <entryLink import="true" name="Fucil Controcarro 35(P)/Panzerbüchse 35(p)" hidden="false" id="2967-e652-ffa4-df55" type="selectionEntry" targetId="acd3-2fbb-8904-b0d2"/>
+        <entryLink targetId="3848-e115-3a35-9e94" id="d1a8-b219-08cf-a79d" type="selectionEntry" name="Blitzwerfengewehr-59" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
@@ -4320,8 +4321,11 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="55f0-1ee7-51b1-f25c" id="20f8-67b3-deae-bf93" type="selectionEntry" name="Modele 1935S" hidden="true" collective="false"/>
         <entryLink targetId="248c-1ea5-04a0-37b7" id="f10a-c2ba-4fde-acb9" type="selectionEntry" name="Welrod" hidden="true" collective="false"/>
         <entryLink targetId="a1a9-a850-c159-ece5" id="77f6-bdff-bffb-a75d" type="selectionEntry" name="MAC-49" hidden="true" collective="false"/>
-        <entryLink targetId="42b1-9a6c-7f6d-6a14" id="86bf-4758-56a5-3389" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
+        <entryLink targetId="3bf3-2516-1264-4876" id="86bf-4758-56a5-3389" type="selectionEntry" name="Pistol m/51" hidden="true" collective="false"/>
         <entryLink import="true" name="Einstossflammenwerfer 46" hidden="false" id="3efc-3964-85f1-d9de" type="selectionEntry" targetId="651f-f8c5-274b-95c2"/>
+        <entryLink targetId="c25b-ff32-ca17-5a95" id="5f87-58c1-a905-2ef7" type="selectionEntry" name="11.25mm Aut. Pistol m/1915 “Konsberg Colten”" hidden="true" collective="false"/>
+        <entryLink targetId="75f7-7492-828c-d00e" id="bcbd-2eb8-ebe5-ff2f" type="selectionEntry" name="Pistol m/40" hidden="true" collective="false"/>
+        <entryLink targetId="42b1-9a6c-7f6d-6a14" id="55bb-3ac5-df35-1379" type="selectionEntry" name=".38 Revolver" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Rüstung Frames" id="fdee-72dd-7c30-f69a" hidden="false">
@@ -8163,15 +8167,9 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
-        </modifier>
-        <modifier type="set" value="Konekivääri M48" field="name">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
-          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -14086,17 +14084,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="Rynnäkkökivääri 57" field="name">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -16169,26 +16157,6 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
           </attributes>
-          <modifiers>
-            <modifier type="set" value="11.25mm Aut. Pistol m/1915 “Konsberg Colten”" field="name">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="P 657(n)" field="name">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <modifiers>
@@ -16197,18 +16165,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" childName="Reich Collaborators/ Nordischer Reichstaat"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="f6c7-9982-580a-a0a0" shared="true" childName="North American Armed Forces/ Patriot Militias"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" value="11.25mm Aut. Pistol m/1915 “Konsberg Colten”" field="name">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -17414,7 +17371,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="80d3-ce6d-5579-5a3c" name="Basic Uniform" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="80d3-ce6d-5579-5a3c" name="Basic Uniform" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
         <entryLink id="1b3d-23db-fb34-55ab" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
         <entryLink id="2fb6-5c39-3982-9354" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
@@ -17448,7 +17405,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry id="0505-7f2a-6d64-ee79" name="Civilian Clothes" hidden="true" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0505-7f2a-6d64-ee79" name="Civilian Clothes" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
         <entryLink id="e8ae-0851-54da-f82f" name="Backpack Equipment" hidden="false" collective="false" import="true" targetId="d989-b48f-e6ca-0175" type="selectionEntryGroup"/>
         <entryLink id="9b4a-ad9a-b943-bcd1" name="Infantry Equipment" hidden="false" collective="false" import="true" targetId="2710-dcfa-aad6-9886" type="selectionEntryGroup"/>
@@ -17594,10 +17551,11 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="59be-67d2-9024-bea0" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Etat Francais"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -19371,12 +19329,12 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
         <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="b17a-98bb-70c3-113c" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Browning Hi-Power" hidden="true" id="4440-28b2-3ba1-71f8">
+    <selectionEntry type="upgrade" import="true" name="Pistol, No. II, Inglis MkII*" hidden="true" id="4440-28b2-3ba1-71f8">
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="7"/>
       </costs>
       <profiles>
-        <profile name="Browning Hi-Power" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3762-4c69-e494-5001">
+        <profile name="Pistol, No. II, Inglis MkII*" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3762-4c69-e494-5001">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
@@ -19390,27 +19348,6 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="Pistol, No. II, Inglis MkII*" field="name">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" value="Pistol m/51" field="name">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <modifiers>
@@ -19419,45 +19356,14 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
             <conditionGroup type="or">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="aa01-8080-1428-7ac2" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="89e6-7eb9-364d-afb0" shared="true" childName="Former Commonwealth/ 8th Army Remnants"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="42ae-1340-1f20-962e" shared="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <modifiers>
-            <modifier type="set" value="Pistol, No. II, Inglis MkII*" field="name"/>
-            <modifier type="set" value="7" field="7439-07e0-82ef-c431"/>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup type="and">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <modifiers>
-            <modifier type="set" value="10" field="7439-07e0-82ef-c431"/>
-            <modifier type="set" value="Pistol m/51" field="name"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
       <infoLinks>
         <infoLink name="Holdout" id="e57f-65e5-1ce5-1f0f" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
@@ -19481,46 +19387,16 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
           </characteristics>
-          <modifiers>
-            <modifier type="set" value="Pistol m/40" field="name">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
         </profile>
       </profiles>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
           </conditions>
         </modifier>
       </modifiers>
-      <modifierGroups>
-        <modifierGroup type="and">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="8208-fd82-1fd6-47d6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Suomi Licenses"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-          <modifiers>
-            <modifier type="set" value="Pistol m/40" field="name"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
       <infoLinks>
         <infoLink name="Holdout" id="a935-f099-a0c8-4087" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
@@ -21687,6 +21563,219 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pistol m/51" hidden="true" id="3bf3-2516-1264-4876">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <profiles>
+        <profile name="Pistol m/51" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="e8c2-e424-8a66-3fe4">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Holdout" id="e4fa-ae2f-150f-65e3" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Konekivääri M48" hidden="true" id="7aba-4c0c-f3cf-c82b" collective="false">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="50"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb67-1159-513b-c408"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Reich Collaborators/ Suomi"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink targetId="3720-2612-bdba-02b0" id="ea3e-2c54-6bca-d0e2" type="profile" name="Konekivääri M48" hidden="false">
+          <modifiers>
+            <modifier type="set" value="Konekivääri M48" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Setup(1)" id="9811-c105-1b2a-3f46" hidden="false" type="rule" targetId="b5d9-785f-97a3-5aae"/>
+        <infoLink name="Crewed" id="bd47-ae5a-26bc-eb2a" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
+        <infoLink name="Bipod(1)" id="61f9-cade-8ce7-5d21" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="11.25mm Aut. Pistol m/1915 “Konsberg Colten”" hidden="true" id="c25b-ff32-ca17-5a95" collective="false">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e268-6754-09e0-53b3"/>
+      </constraints>
+      <profiles>
+        <profile name="11.25mm Aut. Pistol m/1915 “Konsberg Colten”" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ea5e-4a11-00ac-bab1">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">12</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+4</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
+          <modifiers>
+            <modifier type="set" value="P 657(n)" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true" childName="Reich Collaborators/ Nordischer Reichstaat"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="P 657(n) " field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Norischer Reichsstaat Licenses"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pistol m/40" hidden="true" id="75f7-7492-828c-d00e">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
+      </costs>
+      <profiles>
+        <profile name="Pistol m/40" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="d15e-7221-e763-dff9">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Holdout</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Pistol m/40" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6538-5d53-056d-8c3e" shared="true"/>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink name="Holdout" id="2cce-2d00-d352-214c" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rynnäkkökivääri 57" hidden="true" id="8fcf-907d-1836-8fb3" collective="false">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+      </costs>
+      <modifiers>
+        <modifier type="decrement" value="10" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="13a4-65c1-f62e-93fb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true" childName="Reich Collaborators/ Suomi"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc0-0de5-b331-2a6d"/>
+      </constraints>
+      <infoLinks>
+        <infoLink targetId="38cd-c532-4a4c-ea64" id="5e6f-ff71-dcdb-4c0c" type="profile" name="Rynnäkkökivääri 57" hidden="false">
+          <modifiers>
+            <modifier type="set" value="Rynnäkkökivääri 57" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Underslung" id="20a2-3a25-cb6b-5566" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+        <infoLink name="Sight" id="04c7-01dc-9a09-16a3" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+        <infoLink name="Muzzle" id="a2dc-70dd-575f-51b9" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="9d6b-f127-210b-a0ef" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="aade-cec4-4cc3-45dc" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="cb3e-acff-43e0-b357" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
