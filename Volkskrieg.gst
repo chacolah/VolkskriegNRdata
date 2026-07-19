@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="eeb3-567d-708a-f896" name="VolkskreigNR" revision="1" battleScribeVersion="2.03" authorUrl="https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Justin Gourlay" authorContact="Discord: chacolah" type="gameSystem">
+<gameSystem id="eeb3-567d-708a-f896" name="VolkskriegNR" revision="1" battleScribeVersion="2.03" authorUrl="https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="Justin Gourlay" authorContact="Discord: chacolah" type="gameSystem">
   <publications>
     <publication id="7280-690f-8cae-8d1e" name="Core Rules Doc" shortName="Volkskrieg" publisherUrl="https://docs.google.com/document/d/1F5aZ6MZ_50RMdje77wWD_OF0-YbH4O-6zfDIfQRH66E/" publisher="Volkskrieg Living Rules Doc">
       <comment>Pub URL links to rulebook</comment>
@@ -1870,7 +1870,7 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink targetId="e158-29b1-1ccc-ff36" id="f1c5-0efc-825c-6873" type="rule" name="Fallschirmjäger Training" hidden="false"/>
+        <infoLink targetId="e158-29b1-1ccc-ff36" id="f1c5-0efc-825c-6873" type="rule" name="Fallschirmjäger Training Drills" hidden="false"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Fallschirmjäger Officer" id="0766-8fa4-189b-1e95" hidden="false" sortIndex="1">
@@ -2329,7 +2329,7 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
         <infoLink targetId="37eb-cfe6-332a-90d0" id="28dc-81c1-ada5-af98" type="rule" name="Stealth Infantry" hidden="false"/>
         <infoLink targetId="b1a8-c026-4e30-baab" id="8311-68b6-3f41-6eb0" type="rule" name="Paradrop Capable" hidden="false"/>
         <infoLink targetId="f279-cc6f-a0e5-cff4" id="cabc-8218-2b64-b183" type="rule" name="Nachtjäger Training" hidden="false"/>
-        <infoLink name="Fallschirmjäger Training" id="b4f7-39c2-e53d-c25d" hidden="false" targetId="e158-29b1-1ccc-ff36" type="rule"/>
+        <infoLink name="Fallschirmjäger Training Drills" id="b4f7-39c2-e53d-c25d" hidden="false" targetId="e158-29b1-1ccc-ff36" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Nachtjäger Officer" id="ef2b-e04f-d3dd-c9c8" hidden="false" sortIndex="1">
@@ -4224,7 +4224,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="fe9c-a2c5-9887-d63e" id="4930-2afa-6221-594c" type="selectionEntry" name="Kulsprutgevär m/57" hidden="true"/>
         <entryLink targetId="dc70-1903-19dc-c85a" id="8a37-9fea-92cc-5197" type="selectionEntry" name="Lewis 1913 Automatic Machine Gun" hidden="true"/>
         <entryLink targetId="a3d1-7dbf-f040-e68d" id="5f1c-0163-134a-0480" type="selectionEntry" name="Kylspruta m/61" hidden="true"/>
-        <entryLink targetId="c7dc-29fa-85d1-1ee8" id="bb3e-51eb-0f50-149d" type="selectionEntry" name="Lanciafiamme Spelleggiato Modello 35" hidden="true" collective="false"/>
+        <entryLink targetId="c7dc-29fa-85d1-1ee8" id="bb3e-51eb-0f50-149d" type="selectionEntry" name="Lanciafiamme Spalleggiato Modello 35" hidden="true" collective="false"/>
         <entryLink targetId="d742-7393-5c67-cd46" id="1574-837f-949a-d2a7" type="selectionEntry" name="Kulspruta m/37" hidden="true"/>
         <entryLink targetId="ddde-35d1-528c-95f5" id="ff59-698e-d4d9-46c6" type="selectionEntry" name="Granatwerfer-53" hidden="true" collective="false"/>
         <entryLink targetId="8677-f449-be72-6b51" id="2189-d4de-77fd-0a2b" type="selectionEntry" name="Raketen Panzerbüchse-58" hidden="true" collective="false"/>
