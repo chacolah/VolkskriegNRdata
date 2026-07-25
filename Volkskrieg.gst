@@ -1942,6 +1942,9 @@ All Formations that contain an Officer may attempt an order. Each player chooses
 
 Orders are attempted by making a morale check. If the order succeeds, any effects that the order had will happen. If the order fails, nothing happens.
 
+Splitting Off and Sub-Formations:
+During your Orders Phase, you may Split Off up to half of a formation if it is an Infantry Formation. These split off units count as their own Formation for the purposes of activations, Pinning and Morale checks, and when being targeted by your opponent.
+
 
 2. Action Phase:
 
@@ -1953,6 +1956,8 @@ Orders are attempted by making a morale check. If the order succeeds, any effect
 Move Action:
 Any model may move a number of inches equal to their Mobility.
 
+Rotating with Vehicles:
+When moving a vehicle, you may turn up to 45 degrees for every inch you move. For each additional 45 Degrees you rotate without moving still uses up an inch of movement.
 
 Shooting Action
 Any model may use their shooting action to attack with any weapon, use a piece of equipment, or use any ability that can be “used instead of shooting”.
