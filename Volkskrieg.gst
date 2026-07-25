@@ -1974,15 +1974,19 @@ Formations automatically unpin themselves if they have not been pinned again dur
 A Formation that has been pinned for three turns in a row must make a Morale Roll.</description>
             </rule>
             <rule name="!Combat Setup" id="0d93-8628-1b28-95e4" hidden="false">
-              <description>1. Read the terrain generation rules for the Tile you are fighting on, and generate the terrain accordingly.
+              <description>1.Read the terrain generation rules for the Tile you are fighting on, and generate the terrain accordingly.
 2. Determine starting edges for the combat using the position and direction of the forces on the campaign map.
-3. Defending player(s) may choose to Make a Stand or do a Tactical Retreat.
-4. Players who Make a Stand may deploy their forces in the center of the table.
-5. Players who do a tactical retreat deploy on the table edge or corner opposite to the attacker.
-6. Attacking players who chose to Paradrop Deploy must deploy anywhere on the map that is not covered by terrain, and more than 12” away from an opponent’s units.
-7. All Players roll a d100 to determine Setup Order. Defenders gain a +10 bonus to this roll.
-8. Each player takes turns setting up their formations one at a time in turn order until all formations are placed.
-9. Any unit that may Redeploy may do so according to the rule that allows the redeployment.</description>
+2a. If playing in a Skirmish format, each player rolls a d100, with the winner determining who attacks and who defends. 
+2b. Defender then rolls a d4 to determine which board edge is “theirs”. 
+3.Defending player(s) may choose to Make a Stand or do a Tactical Retreat.
+3a.Players who Make a Stand may deploy their forces in the center of the table.
+3b.Players who do a tactical retreat deploy on the table edge or corner opposite to the attacker.
+3c.Attacking players who chose to Paradrop Deploy must deploy anywhere on the map that is not covered by terrain, and more than 12” away from an opponent’s units.
+4. All Players roll a d100 to determine Setup Order. Defenders gain a +10 bonus to this roll.
+4a. Each player takes turns setting up their formations one at a time in turn order until all formations are placed. Units may be placed up to 12 inches from the table edge or center of the board. If deploying on a corner, Units may be placed up to 18 inches from the corner.
+4b. Any unit that may Redeploy may do so according to the rule that allows the redeployment.
+
+</description>
             </rule>
           </rules>
         </infoGroup>
