@@ -1664,8 +1664,254 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
         </selectionEntryGroup>
         <selectionEntryGroup name="Campaign Modifiers" id="c3a2-1b2a-2a6e-d8a6" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Weltraumtruppen" hidden="false" id="5e28-5bd4-ea5d-1c9e"/>
-            <selectionEntry type="upgrade" import="true" name="Onkel Gustav" hidden="false" id="b64f-2f1f-5501-19e1"/>
+            <selectionEntry type="upgrade" import="true" name="Weltraumtruppen" hidden="false" id="5e28-5bd4-ea5d-1c9e">
+              <rules>
+                <rule name="Weltraumtruppen" id="e389-a8ce-0d62-f27a" hidden="false">
+                  <description>Place a single Launch Facility tile in the center of the map. This tile has the following profile:
+
+
+Weltraumtruppen Launch Facility
+
+
+Movement: This tile is considered a Road for movement.
+
+
+Combat: Battles fought on Launch Facilities should be a flat concrete foundation with a single launch tower.
+
+
+V-5 Facility: This tile is considered a Workshop that can ONLY produce V-2 and V-5 Rockets+upgrades. It cannot have any other toolings installed in it.
+
+
+Mission Control: This tile allows you to launch V-2 and V-5 rockets. 
+V-2 rockets may be launched at any tile within 10 hexes of the Launch Pad.
+V-5 rockets may only be launched to the Walküre space station. These V-5 rockets may be filled with any amount of your currently available Rm.
+
+
+When a player or team launches a total of 500 Rm to the station, the station will allow use of the station to drop a single formation anywhere on the map so long as the player launches the formation to the station the Campaign Turn proper with the last V-5 rocket. This force is considered to have Threat Range over the entire map for the purposes of “We Need Air Support”
+
+</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Onkel Gustav" hidden="false" id="b64f-2f1f-5501-19e1">
+              <profiles>
+                <profile name="Onkel Gustav" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1638-d9a2-cf97-9e56">
+                  <characteristics>
+                    <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                    <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">600&quot;</characteristic>
+                    <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">10</characteristic>
+                    <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+6</characteristic>
+                    <characteristic name="FP" typeId="82e2-9a79-6c43-5056">100</characteristic>
+                    <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+                    <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">4/40</characteristic>
+                    <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                    <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                    <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Traincar</characteristic>
+                    <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Artillery(30), Explosive, Min Range(120&quot;), Ordnance(Gustav Shell), Radius(18&quot;), Reload(20,1)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Reload(20,1)" id="f216-bc3b-042c-f9b7" hidden="false" type="rule" targetId="8997-a91b-cbec-69f1"/>
+                <infoLink name="Artillery(30)" id="296a-2f21-8b47-a177" hidden="false" type="rule" targetId="9874-72a7-9deb-bf1e"/>
+                <infoLink name="Explosive" id="2563-b06f-0e9c-4629" hidden="false" type="rule" targetId="2825-472b-62cb-7bbc"/>
+                <infoLink name="Min Range(120&quot;)" id="5114-5db8-c59d-4f35" hidden="false" type="rule" targetId="2e47-3c3e-0179-e721"/>
+                <infoLink name="Ordnance(Gustav Shell)" id="4730-d690-4d51-ed66" hidden="false" type="rule" targetId="4b7a-fb9a-6a35-b6ec"/>
+                <infoLink name="Radius(18&quot;)" id="75a7-f0ab-1be3-70c5" hidden="false" type="rule" targetId="8f50-e168-4bf7-d313"/>
+              </infoLinks>
+              <rules>
+                <rule name="Onkel Gustav" id="92f8-ebfb-0c88-7673" hidden="false">
+                  <description>A GM controlled Deserteur Kriegsherr force with a points total equal to the starting points value of player forces must be added to the forces on the field, in addition to any Kriegsherr forces already present on the campaign map. They begin play with their force located on a railway, and in control of a Train consisting of an Freight Engine with the Armored Engine Train Upgrade and a special Gustav Gun traincar,
+
+
+They additionally begin play with 5 Gustav Shells. Onkel Gustav is counted as being Set Up for the purposes of Threat Range and “Order Fire Support”. They can move the train freely along the railway tiles connected to their lines at GM discretion, and are considered to have a Threat Range of 3 at all times. 
+
+
+Additionally, all other Kriegsherr on the map will attempt to join the Kriegsherr in control of Onkel Gustav. If a player is playing a Kriegsherr force, they may use the Onkel Gustav as part of an “Order Fire Support!” order, once per campaign, so long as it stays under control of an NPC Kreigsherr force.
+
+
+Any other players may take control of Onkel Gustav by attacking and defeating the Kreigsherr force in control of it.
+
+</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lost Equipment" hidden="false" id="73a5-b4d5-602b-7917">
+              <rules>
+                <rule name="Lost Equipment(Reich Countryside)" id="75eb-e5db-915c-c109" hidden="true">
+                  <description>When generating the Campaign map, the GM must secretly place 1d6+2 Caches on the map, placed roughly equally across the map. 
+The contents of these caches are unknown, but information is gleamed by forces that come close.
+When a Force is within 2 Tiles of a Cache, they detect it and it is placed on the map for all to see.
+When a Force is within 1 Tile of a Cache, they may determine the type of cache it is. To do so the GM rolls on the following Table:
+
+
+D10 Roll/Cache Type
+1-3/Sidearms Cache
+4-6/Primary Weapons Cache
+7-9/Heavy Weapons Cache
+10/Special Equipment Cache
+
+
+When a Force is on the Tile that contains a Cache, they determine the contents of the Cache. The contents are determined by the Front that the campaign is taking place in and the type of Cache it is.
+Sidearm Cache:
+
+
+D10 Roll/Cache Contents
+1-3/1d6 Pistole-55 Luger(Reich Countryside)
+4-6/1d6 Maschinenpistole 54/Schnellfeuer
+7-9/1d6 Pistolekarabiner 54/Biesenstiel
+10/1 Sturmpistole-47 with 1d3 StuP HE rounds
+
+
+Primary Weapons Cache
+
+
+D10 Roll/Cache Contents
+1/1d6 Karabiner-98m
+2/1d6 Maschinenpistole-49
+3/1d4 Gewehr-55(Gustloff)
+4/1d4 Gewehr-55(Walther)
+5/1d4 Volkssturmgewehr-60
+6/1d4 Maschinenpistole-55
+7/1d4 Maschinenkarabiner-55
+8/1d4 Fallschirmjägergewehr-43(Krieghoff)
+9/1d4 Fallschirmjägergewehr-56
+10/1 Kampfpistole-50 and 1d6 Rifle Grenades (HE)
+
+
+Heavy Weapons Cache:
+
+
+D10 Roll/Cache Contents
+1/1d3 Maschinengewehr-13/ l.MG-30(ö)
+2/1d3 vz. 39/l.MG-39(t)
+3/1d3 Panzerbüchse 54(Gustloff)
+4/1d3 Panzerbüchse 54(Cz)
+5/1d3 Panzerfaust-60
+6/1d3 Granatbüchse 54(Gustloff)
+7/1 Raketenbüchse-58 and 1d6 88mmR Raketen(HEAT)
+8/1d2 Maschinengewehr-56
+9/1 Flammenwerfer-47
+10/ 1 Granatwerfer-53
+
+
+Special Equipment Cache:
+
+
+D10 Roll/Cache Contents
+1/1d3 Hummerschale 51/56
+2/1 Blitzwerfenpistole-59 with 3 Energy.
+3/1 Blitzwerfengewehr-59 with 4 Energy.
+4/1d4 Schutzschild-55
+5/1 Flakwerferngewehr-56 and 1d6 20x138B HE
+6/Rüstungabwehrbüchse-53(S) and 1d6 2-x138B HE
+7/1 Leichtesrüstung Ausf. A/58 “Eirschale” with Leichte-Panzerung and Blitzleitungmotor-56
+8/1d6 Random Ordnance
+9/2d6 Random Ordnance
+10/3d6 Random Ordnance
+
+
+
+
+If this campaign modifier is chosen for a Skirmish game, then instead place 3 Caches on the battlefield along the center of the map, and determine their contents when they are looted by an infantry model.
+
+</description>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </rule>
+                <rule name="Lost Equipment(1st Battle of Berlin)" id="d595-a1f2-5605-07be" hidden="true">
+                  <description>When generating the Campaign map, the GM must secretly place 1d6+2 Caches on the map, placed roughly equally across the map. 
+The contents of these caches are unknown, but information is gleamed by forces that come close.
+When a Force is within 2 Tiles of a Cache, they detect it and it is placed on the map for all to see.
+When a Force is within 1 Tile of a Cache, they may determine the type of cache it is. To do so the GM rolls on the following Table:
+
+
+D10 Roll/Cache Type
+1-3/Sidearms Cache
+4-6/Primary Weapons Cache
+7-9/Heavy Weapons Cache
+10/Special Equipment Cache
+
+
+When a Force is on the Tile that contains a Cache, they determine the contents of the Cache. The contents are determined by the Front that the campaign is taking place in and the type of Cache it is.
+Sidearm Cache:
+
+
+D10 Roll/Cache Contents
+1-3/1d6 Volkspistole-60(1st Battle of Berlin)
+4-6/1d6 Maschinenpistole 54/Schnellfeuer
+7-9/1d6 Pistolekarabiner 54/Biesenstiel
+10/1 Sturmpistole-47 with 1d3 StuP HE rounds
+
+
+Primary Weapons Cache
+
+
+D10 Roll/Cache Contents
+1/1d6 Karabiner-98m
+2/1d6 Maschinenpistole-49
+3/1d4 Gewehr-55(Gustloff)
+4/1d4 Gewehr-55(Walther)
+5/1d4 Volkssturmgewehr-60
+6/1d4 Maschinenpistole-55
+7/1d4 Maschinenkarabiner-55
+8/1d4 Fallschirmjägergewehr-43(Krieghoff)
+9/1d4 Fallschirmjägergewehr-56
+10/1 Kampfpistole-50 and 1d6 Rifle Grenades (HE)
+
+
+Heavy Weapons Cache:
+
+
+D10 Roll/Cache Contents
+1/1d3 Maschinengewehr-13/ l.MG-30(ö)
+2/1d3 vz. 39/l.MG-39(t)
+3/1d3 Panzerbüchse 54(Gustloff)
+4/1d3 Panzerbüchse 54(Cz)
+5/1d3 Panzerfaust-60
+6/1d3 Granatbüchse 54(Gustloff)
+7/1 Raketenbüchse-58 and 1d6 88mmR Raketen(HEAT)
+8/1d2 Maschinengewehr-56
+9/1 Flammenwerfer-47
+10/ 1 Granatwerfer-53
+
+
+Special Equipment Cache:
+
+
+D10 Roll/Cache Contents
+1/1d3 Hummerschale 51/56
+2/1 Blitzwerfenpistole-59 with 3 Energy.
+3/1 Blitzwerfengewehr-59 with 4 Energy.
+4/1d4 Schutzschild-55
+5/1 Flakwerferngewehr-56 and 1d6 20x138B HE
+6/Rüstungabwehrbüchse-53(S) and 1d6 2-x138B HE
+7/1 Leichtesrüstung Ausf. A/58 “Eirschale” with Leichte-Panzerung and Blitzleitungmotor-56
+8/1d6 Random Ordnance
+9/2d6 Random Ordnance
+10/3d6 Random Ordnance
+
+
+
+
+If this campaign modifier is chosen for a Skirmish game, then instead place 3 Caches on the battlefield along the center of the map, and determine their contents when they are looted by an infantry model.
+
+</description>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </rule>
+              </rules>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1751,10 +1997,10 @@ A Formation that has been pinned for three turns in a row must make a Morale Rol
                 </rule>
               </rules>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Checkpoint" hidden="false" id="766c-a151-fc9b-ea9c">
+            <selectionEntry type="upgrade" import="true" name="Weltraumtruppen Lauch Facility" hidden="false" id="766c-a151-fc9b-ea9c">
               <rules>
                 <rule name="!Tile Setup" id="d430-9761-b96e-b39a" hidden="false">
-                  <description>Battles fought on Checkpoints must represent a military checkpoint in a city road.</description>
+                  <description>Battles fought on Launch Facilities should be a flat concrete foundation with a single launch tower.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -1828,6 +2074,13 @@ Additionally, the defender may also choose to deploy inside of the outpost’s p
               <rules>
                 <rule name="!Tile Setup" id="4f3a-4931-630a-993d" hidden="false">
                   <description>If a Train Station tile is attacked, the battle is fought on a terrain generated as a Railway, ending in the center of the map, with a building representing the station placed alongside the tracks. Any Trains or Railcars on the tile must be represented if possible.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Checkpoint" hidden="false" id="0414-24d6-9d3a-1781">
+              <rules>
+                <rule name="!Tile Setup" id="c902-097e-09a0-dcea" hidden="false">
+                  <description>Battles fought on Checkpoints must represent a military checkpoint in a city road.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -4300,7 +4553,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     <selectionEntryGroup name="Sidearms/Melee" id="8d16-f577-2371-6215" hidden="false">
       <entryLinks>
         <entryLink targetId="ba7f-eea6-7a9e-9c2d" id="751f-859e-bca4-5dc5" type="selectionEntry" name="Volkspistole 60" hidden="true" collective="false"/>
-        <entryLink targetId="4440-28b2-3ba1-71f8" id="6329-db63-55dc-1487" type="selectionEntry" name="Browning Hi-Power" hidden="true" collective="false">
+        <entryLink targetId="4440-28b2-3ba1-71f8" id="6329-db63-55dc-1487" type="selectionEntry" name="Pistol, No. II, Inglis MkII*" hidden="true" collective="false">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="0"/>
           </costs>
@@ -4737,6 +4990,23 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
               </conditionGroups>
             </modifier>
           </modifiers>
+          <profiles>
+            <profile name="Soldiering" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ed77-cc80-9d18-9bea">
+              <characteristics>
+                <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+                <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+                <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+                <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+                <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+                <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+                <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+                <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+                <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+                <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Proficiency</characteristic>
+                <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Animal Handling" hidden="false" id="f152-3642-fff2-151f">
           <costs>
@@ -5290,7 +5560,8 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     </selectionEntryGroup>
     <selectionEntryGroup name="Sight Upgrades" id="83a8-edc9-e790-d90e" hidden="false">
       <entryLinks>
-        <entryLink targetId="4b07-67f6-77f0-1928" id="e521-915f-ce6d-5634" type="selectionEntry" name="Zielfernrohr-52" hidden="true"/>
+        <entryLink targetId="9b58-6437-e6a8-490f" id="e521-915f-ce6d-5634" type="selectionEntry" name="Zielfernrohr-4" hidden="true"/>
+        <entryLink targetId="4b07-67f6-77f0-1928" id="b305-1bb9-fe67-34c4" type="selectionEntry" name="Zielfernrohr-52" hidden="true"/>
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="self" shared="true" id="592f-ba7a-7e0d-4c54"/>
@@ -7202,6 +7473,26 @@ Deal x amount of damage to one random crewman within a vehicle with an armor val
 
 When dealing a Spall result after rolling for a Devastating Hit, deal x amount of damage to all crew instead of 2 damage.</description>
     </rule>
+    <rule name="Artillery(30)" id="9874-72a7-9deb-bf1e" hidden="false">
+      <description>Equipment with this rule:
+May be used for “Order Fire Support” Orders within a number of hexes equal to (x) on the campaign map.</description>
+    </rule>
+    <rule name="Ordnance(Gustav Shell)" id="4b7a-fb9a-6a35-b6ec" hidden="false">
+      <description>Equipment with this rule:
+Uses another consumable resource with the same name as (x) when attacking.</description>
+    </rule>
+    <rule name="Greenhorn(5)" id="5bc1-4f27-9ed4-052d" hidden="false">
+      <description>Infantry with this rule:
+Can neither Move nor Shoot when Pinned.
+Gets a -1 to Morale Rolls.
+This rule is automatically removed from this profile after (x) turns.</description>
+    </rule>
+    <rule name="Greenhorn(x)" id="4e81-a12d-3bf2-b393" hidden="false">
+      <description>Infantry with this rule:
+Can neither Move nor Shoot when Pinned.
+Gets a -1 to Morale Rolls.
+This rule is automatically removed from this profile after (x) turns.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Raketen Panzerbüchse-58" hidden="true" id="8677-f449-be72-6b51" collective="false">
@@ -7375,7 +7666,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Capacitor(2), Energy(2), Lightning</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(4), Capacitor(2), Energy(2), Lightning</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -7385,7 +7676,8 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
       <infoLinks>
         <infoLink name="Energy(2)" id="de92-9bf9-8f45-4a0e" hidden="false" type="rule" targetId="93d5-d5b9-6a07-5feb"/>
         <infoLink name="Lightning" id="ff1d-ed08-1238-9db6" hidden="false" type="rule" targetId="da10-59f2-a754-98a6"/>
-        <infoLink name="Capacitor(2)" id="ad59-b977-98cf-9dc7" hidden="false" type="rule" targetId="9590-2918-56c0-a4eb"/>
+        <infoLink name="Battery(4)" id="ad59-b977-98cf-9dc7" hidden="false" type="rule" targetId="10f0-d0bf-43dc-b2eb"/>
+        <infoLink name="Capacitor(2)" id="d7ee-02a8-c8ac-3736" hidden="false" type="rule" targetId="9590-2918-56c0-a4eb"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Boys AT Rifle MKII*" hidden="true" id="d75e-0785-0d44-b90e">
@@ -8981,7 +9273,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">4</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">2</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">2</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Armour</characteristic>
             <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Power Slot</characteristic>
@@ -9974,7 +10266,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
           </conditionGroups>
           <comment>Unrestricts based on faction</comment>
         </modifier>
-        <modifier type="decrement" value="15" field="7439-07e0-82ef-c431">
+        <modifier type="decrement" value="5" field="7439-07e0-82ef-c431">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -10017,9 +10309,10 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
       </costs>
       <infoLinks>
+        <infoLink targetId="5bc1-4f27-9ed4-052d" id="db0b-b293-db3f-5cde" type="rule" name="Greenhorn(5)" hidden="false"/>
         <infoLink targetId="02ba-8ca3-796d-0f88" id="f1b0-2bff-d53c-3cc3" type="profile" name="Conscript" hidden="false"/>
       </infoLinks>
     </selectionEntry>
@@ -10088,7 +10381,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
       </costs>
       <infoLinks>
         <infoLink targetId="6fb0-355d-19d5-974b" id="feae-b295-3bff-a9a5" type="profile" name="Police" hidden="false"/>
@@ -10167,7 +10460,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="40"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
       </costs>
       <infoLinks>
         <infoLink targetId="2354-6082-eb8f-a340" id="6896-3892-8950-f2cc" type="profile" name="Soldier" hidden="false"/>
@@ -16119,7 +16412,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sidearm</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Capacitor(1), Energy(2), Lightning</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(3), Capacitor(1), Energy(2), Lightning</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -16129,7 +16422,8 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
       <infoLinks>
         <infoLink name="Energy(2)" id="e8c3-1a6f-504b-5ca2" hidden="false" type="rule" targetId="93d5-d5b9-6a07-5feb"/>
         <infoLink name="Lightning" id="82e6-db57-28a1-51e6" hidden="false" type="rule" targetId="da10-59f2-a754-98a6"/>
-        <infoLink name="Capacitor(1)" id="9f89-2a6a-a8e3-8a4d" hidden="false" type="rule" targetId="44dd-4d9e-6c8c-4d86"/>
+        <infoLink name="Battery(3)" id="9f89-2a6a-a8e3-8a4d" hidden="false" type="rule" targetId="2155-eb71-f7c9-f242"/>
+        <infoLink name="Capacitor(1)" id="f9f9-1835-0897-5667" hidden="false" type="rule" targetId="44dd-4d9e-6c8c-4d86"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Colt M1912A1" hidden="true" id="fc7c-bb63-86be-b69a" collective="false">
@@ -18578,7 +18872,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Zielfernrohr-52" hidden="true" id="4b07-67f6-77f0-1928">
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="25"/>
       </costs>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -18599,7 +18893,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
         <profile name="Zielfernrohr-52" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="6bf7-e249-b3af-476e">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">+6</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">+6&quot;</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
@@ -18608,7 +18902,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
             <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
             <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
             <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sight</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Sniper</characteristic>
           </characteristics>
           <attributes>
             <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
@@ -18618,6 +18912,9 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7c2-6806-80da-fe00"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Sniper" id="5db7-60f0-ddea-94a4" hidden="false" type="rule" targetId="010c-d754-414f-6102"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Drohne-Array Ausf. A" hidden="true" id="6178-9806-73db-1cbb">
       <costs>
@@ -20742,7 +21039,7 @@ When dealing a Spall result after rolling for a Devastating Hit, deal x amount o
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">*</characteristic>
             <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
             <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
@@ -21622,7 +21919,7 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         </modifier>
       </modifiers>
       <infoLinks>
-        <infoLink targetId="3720-2612-bdba-02b0" id="ea3e-2c54-6bca-d0e2" type="profile" name="Konekivääri M48" hidden="false">
+        <infoLink targetId="3720-2612-bdba-02b0" id="ea3e-2c54-6bca-d0e2" type="profile" name="Maschinengewehr-56" hidden="false">
           <modifiers>
             <modifier type="set" value="Konekivääri M48" field="name"/>
           </modifiers>
@@ -21762,7 +22059,7 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc0-0de5-b331-2a6d"/>
       </constraints>
       <infoLinks>
-        <infoLink targetId="38cd-c532-4a4c-ea64" id="5e6f-ff71-dcdb-4c0c" type="profile" name="Rynnäkkökivääri 57" hidden="false">
+        <infoLink targetId="38cd-c532-4a4c-ea64" id="5e6f-ff71-dcdb-4c0c" type="profile" name="Maschinenkarabiner-55" hidden="false">
           <modifiers>
             <modifier type="set" value="Rynnäkkökivääri 57" field="name"/>
           </modifiers>
@@ -21776,6 +22073,49 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="aade-cec4-4cc3-45dc" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="cb3e-acff-43e0-b357" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
       </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Zielfernrohr-4" hidden="true" id="9b58-6437-e6a8-490f">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="15"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Former Reich/ Volksfront-Volkssturm"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="1ddf-beb7-26d2-ef25" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="2cf2-5ea1-257f-7a06" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Zielfernrohr-4" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="4bd6-cb85-6e2d-f0c6">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">+3&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+1</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Sight</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73"/>
+          </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="444c-737b-37d4-2bc7"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
