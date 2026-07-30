@@ -15030,27 +15030,8 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="80"/>
       </costs>
-      <profiles>
-        <profile name="Blitzleitungmotor Ausf. A" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5c49-8e41-d924-288b">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Power</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(8), Recharge(2)</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="5c49-8e41-d924-288b" id="9c08-4bda-9826-53a0" type="profile" name="Blitzleitungmotor Ausf. A" hidden="false"/>
         <infoLink name="Recharge(2)" id="374c-6fa9-043d-4b4a" hidden="false" type="rule" targetId="4cab-3565-ddca-7a10"/>
         <infoLink name="Battery(8)" id="9941-ec7c-8f40-9f3d" hidden="false" type="rule" targetId="3f0a-2168-db07-6cec"/>
       </infoLinks>
@@ -17252,7 +17233,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Kubelwagen Type 82 " hidden="true" id="1c41-22c8-5280-9e06">
+    <selectionEntry type="model" import="true" name="Kübelwagen Type 82 " hidden="true" id="1c41-22c8-5280-9e06">
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="185"/>
       </costs>
@@ -22126,6 +22107,45 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="444c-737b-37d4-2bc7"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Schwererrüstung Ausf. A/B 45/49" hidden="true" id="2463-298d-0d28-d8a3">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="120"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="false" id="db5f-1d87-3e7f-39a7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df54-1b37-5a91-3fda-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df54-1b37-5a91-3fda-max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Blitzleitungmotor Ausf. A" id="fc41-5ac5-a073-f987" hidden="false" type="profile" targetId="5c49-8e41-d924-288b"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Schwererrüstung Ausf. A/B 45/49" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="ea7a-9b69-efdc-89d8">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">1</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">+2</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">6</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Exoframe</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(2), Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Surplus" id="0aca-ac3e-7644-7281" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Battery(2)" id="fe1a-d1fd-0c29-c7d8" hidden="false" type="rule" targetId="c868-c81f-6916-e6f8"/>
+        <infoLink name="Battery(8)" id="058c-d44c-88b6-7570" hidden="false" type="rule" targetId="3f0a-2168-db07-6cec"/>
+        <infoLink name="Recharge(2)" id="db14-90db-3900-a3b9" hidden="false" type="rule" targetId="4cab-3565-ddca-7a10"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
     <profile name="Kübelwagen Type 121" typeId="d640-9e1c-0aab-a8fe" typeName="Chassis Stats" hidden="false" id="b684-7f48-4d00-2062">
@@ -22671,6 +22691,24 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Light Panzer Weapon</characteristic>
         <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Ordnance(40x304mmR), Reload(1,1)</characteristic>
       </characteristics>
+    </profile>
+    <profile name="Blitzleitungmotor Ausf. A" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="5c49-8e41-d924-288b">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Power</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Battery(8), Recharge(2)</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
     </profile>
   </sharedProfiles>
 </gameSystem>
