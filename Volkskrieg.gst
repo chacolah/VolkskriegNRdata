@@ -22145,6 +22145,18 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <infoLink name="Battery(8)" id="058c-d44c-88b6-7570" hidden="false" type="rule" targetId="3f0a-2168-db07-6cec"/>
         <infoLink name="Recharge(2)" id="db14-90db-3900-a3b9" hidden="false" type="rule" targetId="4cab-3565-ddca-7a10"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4ec2-d35d-251c-9f63" shared="true" childName="Former Reich/ Wehrmacht"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
