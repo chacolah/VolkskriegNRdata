@@ -291,7 +291,7 @@ Additionally, if this force is defending against an attack, all weapons with the
           </constraints>
           <rules>
             <rule name="Memories of the Old War" id="ebee-f893-fa24-4801" hidden="false">
-              <description>Infantry in this Force gain +1 to attack rolls with Karabiner-98m, Gewehr-55(W), Maschinengewehr-56, Maschinenpistole-49, Klappspaten 38, Schiessbecher-48, and Pistole-55/Luger.
+              <description>Infantry in this Force gain +1 to attack rolls with Karabiner-98m, Gewehr-55(W), Gewehr-55(G), Maschinengewehr-56, Maschinenpistole-49, Klappspaten 38, Schiessbecher-48, and Pistole-55/Luger.
 Additionally, Karabiner-98m lose the Surplus rule while they are equipped by Infantry from this force.</description>
             </rule>
             <rule name="Resettled Veterans" id="083b-cdff-9d77-a7a8" hidden="false">
@@ -3477,7 +3477,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
       </modifiers>
       <rules>
         <rule name="Training Officer Acumen" id="8a49-a083-76c2-1ad3" hidden="false">
-          <description>All Reich Conscript infantry count as having Soldiering Proficiency so long as the Officer is not dead or downed.</description>
+          <description>All Reich Conscript infantry count as having +1 ACC so long as the Officer is not dead or downed.</description>
         </rule>
       </rules>
       <selectionEntryGroups>
@@ -4959,9 +4959,24 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
                 <modifier type="set" value="0" field="7439-07e0-82ef-c431"/>
                 <modifier type="set" value="1" field="16fe-8681-1eed-a20d"/>
               </modifiers>
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="771e-e63b-6602-b3e9" shared="true" childName="Reich Soldier"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c22f-1f20-3675-0286" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="21bf-23ca-ea94-f209" shared="true" childName="Reich Conscript"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" childName="Wehrbauer" includeChildSelections="true" includeChildForces="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" childName="Reich"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="90ca-5e14-e27e-2c14" shared="true" childName="Conscript"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
             </modifierGroup>
           </modifierGroups>
           <modifiers>
@@ -13000,7 +13015,19 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Tankette Upgrades" hidden="false" id="db44-c2fc-9c20-4357" type="selectionEntryGroup" targetId="3718-7ced-d71a-4de6"/>
-        <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="6abf-7236-f914-f2d2" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21"/>
+        <entryLink import="true" name="Hardpoint: HWM" hidden="false" id="6abf-7236-f914-f2d2" type="selectionEntryGroup" targetId="7227-fc9d-5a22-6e21">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="4e88-8323-83af-6873" shared="true" includeChildSelections="true" childName="Light Panzer Weapon Mount"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Recharge(0)" id="f594-2014-31d2-ed20" hidden="false" type="rule" targetId="70c9-dfe0-b2da-0a72"/>
@@ -13610,27 +13637,8 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3d4-e4dd-4db4-4181"/>
       </constraints>
-      <profiles>
-        <profile name="Gewehr-55 (Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0ad2-c7d3-25fe-12a7">
-          <characteristics>
-            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
-            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
-            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
-            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
-            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
-            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
-            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
-            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
-            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
-            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight</characteristic>
-          </characteristics>
-          <attributes>
-            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
-          </attributes>
-        </profile>
-      </profiles>
       <infoLinks>
+        <infoLink targetId="0ad2-c7d3-25fe-12a7" id="66bd-a0b1-fee2-062e" type="profile" name="Gewehr-55 (Gustloff)" hidden="false"/>
         <infoLink name="Muzzle" id="fb1f-74b4-c9b5-9447" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
         <infoLink name="Sight" id="11ae-55da-e62a-6419" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
       </infoLinks>
@@ -13838,6 +13846,16 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true" includeChildForces="false" childName="Reich"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
@@ -13848,7 +13866,20 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </constraints>
       <infoLinks>
         <infoLink targetId="ec23-0a43-21d1-bb56" id="dd7d-9db1-c9f2-0cea" type="profile" name="Karabiner-98m" hidden="false"/>
-        <infoLink name="Surplus" id="3b06-cff6-b33e-3b7e" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Surplus" id="3b06-cff6-b33e-3b7e" hidden="false" type="rule" targetId="5705-4637-2b89-5c53">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true" includeChildForces="false" childName="Reich"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Sight" id="26ae-657f-4564-dfaa" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Underslung" id="136a-7676-0746-eaff" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
         <infoLink name="Muzzle" id="919a-04c1-efed-2f34" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
@@ -17840,6 +17871,16 @@ This rule is automatically removed from this profile after (x) turns.</descripti
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="945c-6038-04f2-788e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ecb8-8363-7111-1c17" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="7439-07e0-82ef-c431">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true" includeChildForces="false" childName="Reich"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -22390,6 +22431,16 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" value="Muzzle, Sight, Underslung" field="556d-f99b-9ae9-1e73">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5f5b-ffd4-c20c-23d6" shared="true" includeChildSelections="true" includeChildForces="false" childName="Reich"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
     </profile>
     <profile name="Maschinenpistole-49" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="9f62-4f74-031c-6e8d">
@@ -22721,6 +22772,31 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
       <attributes>
         <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
       </attributes>
+    </profile>
+    <profile name="Gewehr-55 (Gustloff)" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="0ad2-c7d3-25fe-12a7">
+      <characteristics>
+        <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+        <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+        <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+        <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+        <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+        <characteristic name="RoF" typeId="0908-2b89-6f22-5186">3</characteristic>
+        <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+        <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+        <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+        <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+        <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Muzzle, Sight</characteristic>
+      </characteristics>
+      <attributes>
+        <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+      </attributes>
+      <modifiers>
+        <modifier type="cumulative-add" value="1" field="84b5-b5ed-e973-b702">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="roster" childId="74ca-3703-5ab1-fe4e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wehrbauer"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </profile>
   </sharedProfiles>
 </gameSystem>
