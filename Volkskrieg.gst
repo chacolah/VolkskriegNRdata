@@ -15096,7 +15096,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <profile name="Suomi M31" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="264b-a855-cfd3-6c88">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">24&quot;</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
@@ -15140,7 +15140,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Suomi M45" hidden="true" id="e3d5-0647-82de-ee24" collective="false">
       <costs>
-        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="45"/>
       </costs>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2832-9636-3d5c-22e4"/>
@@ -15149,7 +15149,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <profile name="Suomi M45" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="3034-c188-a6af-bbdb">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
-            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30:</characteristic>
             <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
             <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
             <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
