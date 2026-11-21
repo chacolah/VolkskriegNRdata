@@ -1653,7 +1653,7 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
         </selectionEntryGroup>
         <selectionEntryGroup name="Scenario" id="a886-990e-92bb-745d" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Der Deutsches Volkskrieg" hidden="false" id="ee99-67d8-188f-e233"/>
+            <selectionEntry type="upgrade" import="true" name="Der Deutsche Volkskrieg" hidden="false" id="ee99-67d8-188f-e233"/>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Front" id="20b3-661a-03db-810e" hidden="false">
@@ -1664,7 +1664,7 @@ Additionally, they gain +1 ACC when using these weapons, and may ignore the firs
         </selectionEntryGroup>
         <selectionEntryGroup name="Campaign Modifiers" id="c3a2-1b2a-2a6e-d8a6" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Weltraumtruppen" hidden="false" id="5e28-5bd4-ea5d-1c9e">
+            <selectionEntry type="upgrade" import="true" name="Weltraumtruppen" hidden="true" id="5e28-5bd4-ea5d-1c9e">
               <rules>
                 <rule name="Weltraumtruppen" id="e389-a8ce-0d62-f27a" hidden="false">
                   <description>Place a single Launch Facility tile in the center of the map. This tile has the following profile:
@@ -1687,13 +1687,18 @@ V-2 rockets may be launched at any tile within 10 hexes of the Launch Pad.
 V-5 rockets may only be launched to the Walküre space station. These V-5 rockets may be filled with any amount of your currently available Rm.
 
 
-When a player or team launches a total of 500 Rm to the station, the station will allow use of the station to drop a single formation anywhere on the map so long as the player launches the formation to the station the Campaign Turn proper with the last V-5 rocket. This force is considered to have Threat Range over the entire map for the purposes of “We Need Air Support”
-
-</description>
+When a player or team launches a total of 500 Rm to the station, the station will allow use of the station to drop a single formation anywhere on the map so long as the player launches the formation to the station the Campaign Turn proper with the last V-5 rocket. This force is considered to have Threat Range over the entire map for the purposes of “We Need Air Support”</description>
                 </rule>
               </rules>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Onkel Gustav" hidden="false" id="b64f-2f1f-5501-19e1">
+            <selectionEntry type="upgrade" import="true" name="Onkel Gustav" hidden="true" id="b64f-2f1f-5501-19e1">
               <profiles>
                 <profile name="Onkel Gustav" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="1638-d9a2-cf97-9e56">
                   <characteristics>
@@ -1730,11 +1735,16 @@ They additionally begin play with 5 Gustav Shells. Onkel Gustav is counted as be
 Additionally, all other Kriegsherr on the map will attempt to join the Kriegsherr in control of Onkel Gustav. If a player is playing a Kriegsherr force, they may use the Onkel Gustav as part of an “Order Fire Support!” order, once per campaign, so long as it stays under control of an NPC Kreigsherr force.
 
 
-Any other players may take control of Onkel Gustav by attacking and defeating the Kreigsherr force in control of it.
-
-</description>
+Any other players may take control of Onkel Gustav by attacking and defeating the Kreigsherr force in control of it.</description>
                 </rule>
               </rules>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Lost Equipment" hidden="false" id="73a5-b4d5-602b-7917">
               <rules>
@@ -1813,9 +1823,7 @@ D10 Roll/Cache Contents
 
 
 
-If this campaign modifier is chosen for a Skirmish game, then instead place 3 Caches on the battlefield along the center of the map, and determine their contents when they are looted by an infantry model.
-
-</description>
+If this campaign modifier is chosen for a Skirmish game, then instead place 3 Caches on the battlefield along the center of the map, and determine their contents when they are looted by an infantry model.</description>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
@@ -1899,9 +1907,7 @@ D10 Roll/Cache Contents
 
 
 
-If this campaign modifier is chosen for a Skirmish game, then instead place 3 Caches on the battlefield along the center of the map, and determine their contents when they are looted by an infantry model.
-
-</description>
+If this campaign modifier is chosen for a Skirmish game, then instead place 3 Caches on the battlefield along the center of the map, and determine their contents when they are looted by an infantry model.</description>
                   <modifiers>
                     <modifier type="set" value="false" field="hidden">
                       <conditions>
@@ -1911,6 +1917,35 @@ If this campaign modifier is chosen for a Skirmish game, then instead place 3 Ca
                   </modifiers>
                 </rule>
               </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Desperate Logistics" hidden="true" id="4fa6-ee75-9c0a-2620">
+              <rules>
+                <rule name="Desperate Logistics" id="3887-27b0-9caa-c9bd" hidden="false">
+                  <description>When generating Factories and their Toolings during map creation, any number of the Toolings may be simplified, so long as they are Former Reich Armoury Weapons with the Sidearm, Melee, Primary Arm, or Heavy Weapon Type, and do not have the Ordnance, Flame, Blitz, Freeze, or Explosive rules. Any equipment made with that tooling has the Simplified Design Conversion Kit Upgrade applied to it.
+
+
+Additionally, any Former Reich Forces in this campaign may purchase this upgrade at Force Creation for applicable weapons.</description>
+                </rule>
+              </rules>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="cbb8-b723-b6b6-7c07" shared="true" includeChildSelections="true" includeChildForces="true" childName="1st Battle of Berlin"/>
+                            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e398-6068-75ea-7b95" shared="true" includeChildSelections="true" includeChildForces="true" childName="Reich Countryside"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ee99-67d8-188f-e233" shared="true" includeChildSelections="true" includeChildForces="true" childName="Der Deutsches Volkskrieg"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1989,9 +2024,7 @@ A Formation that has been pinned for three turns in a row must make a Morale Rol
 3c.Attacking players who chose to Paradrop Deploy must deploy anywhere on the map that is not covered by terrain, and more than 12” away from an opponent’s units.
 4. All Players roll a d100 to determine Setup Order. Defenders gain a +10 bonus to this roll.
 4a. Each player takes turns setting up their formations one at a time in turn order until all formations are placed. Units may be placed up to 12 inches from the table edge or center of the board. If deploying on a corner, Units may be placed up to 18 inches from the corner.
-4b. Any unit that may Redeploy may do so according to the rule that allows the redeployment.
-
-</description>
+4b. Any unit that may Redeploy may do so according to the rule that allows the redeployment.</description>
             </rule>
           </rules>
         </infoGroup>
@@ -4425,7 +4458,7 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
             <infoLink name="Surplus" id="3754-d3a4-5552-7b93" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
           </infoLinks>
         </entryLink>
-        <entryLink targetId="1c41-22c8-5280-9e06" id="c1db-3872-c998-4f7c" type="selectionEntry" name="Kubelwagen Type 82 " hidden="true">
+        <entryLink targetId="1c41-22c8-5280-9e06" id="c1db-3872-c998-4f7c" type="selectionEntry" name="Kübelwagen Type 82 " hidden="true">
           <costs>
             <cost name="Rm" typeId="7439-07e0-82ef-c431" value="185"/>
           </costs>
@@ -5603,7 +5636,8 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
     <selectionEntryGroup name="Conversion Kits" id="5223-84c3-383e-92f0" hidden="false">
       <entryLinks>
         <entryLink targetId="e48e-b9ef-0ac0-3d70" id="be3c-e957-2c56-38b7" type="selectionEntry" name="Sawn-Off/Obrez" hidden="true"/>
-        <entryLink targetId="8819-504d-22d9-c1a1" id="77ff-2f3d-c10c-ba66" type="selectionEntry" name="Huot Automatic Rifle Kit" hidden="true"/>
+        <entryLink targetId="178e-1377-5597-f474" id="77ff-2f3d-c10c-ba66" type="selectionEntry" name="Simplified Design" hidden="true"/>
+        <entryLink targetId="8819-504d-22d9-c1a1" id="1806-c8d5-b1e1-04ac" type="selectionEntry" name="Huot Automatic Rifle Kit" hidden="true"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Underslung Upgrades" id="d637-62af-5c3f-c5e3" hidden="false">
@@ -7634,6 +7668,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="100"/>
@@ -7651,6 +7690,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="0ffb-550a-53c4-bdae" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="8107-55de-3418-6591" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blitzwerfengewehr-59" hidden="true" id="3848-e115-3a35-9e94" collective="false">
@@ -7773,6 +7813,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Surplus" id="6897-1b41-0480-6793" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
@@ -7798,6 +7843,9 @@ This rule is automatically removed from this profile after (x) turns.</descripti
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="c5b1-9160-a460-5051" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Breda M30B / l.MG 098(i) Ausf. B" hidden="true" id="ffb5-2d25-59e4-a61f" collective="false">
       <costs>
@@ -7817,6 +7865,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -7842,6 +7895,9 @@ This rule is automatically removed from this profile after (x) turns.</descripti
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="7bbe-b021-8c04-9caa" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bren Light Machine Gun MKIV*" hidden="true" id="c444-46e3-a85f-a6e4">
       <costs>
@@ -8190,6 +8246,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Surplus" id="dc02-ac84-f50b-be97" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
@@ -8217,6 +8278,9 @@ This rule is automatically removed from this profile after (x) turns.</descripti
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="52ed-2878-ab56-e3a9" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kulspruta m/42" hidden="true" id="43c6-c057-2d61-d775">
       <costs>
@@ -8237,6 +8301,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink targetId="453a-0a90-fc6c-961b" id="9456-b7ad-54d4-547e" type="profile" name="Kulspruta m/42" hidden="false"/>
@@ -8244,6 +8313,9 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <infoLink name="Crewed" id="69a2-4623-9af1-0034" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
         <infoLink name="Bipod(1)" id="847d-9ecc-943a-6912" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="26ab-b7ad-dd71-9927" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kulsprutgevär m/57" hidden="true" id="fe9c-a2c5-9887-d63e">
       <costs>
@@ -8263,6 +8335,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -8288,6 +8365,9 @@ This rule is automatically removed from this profile after (x) turns.</descripti
           </attributes>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="d68e-e8ef-f5ab-10b1" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kylspruta m/61" hidden="true" id="a3d1-7dbf-f040-e68d">
       <costs>
@@ -8487,6 +8567,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink targetId="3720-2612-bdba-02b0" id="049c-8dd9-9d13-1820" type="profile" name="Maschinengewehr-56" hidden="false"/>
@@ -8512,6 +8597,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -8541,6 +8631,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="7510-d63f-303b-a128" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="88ac-46dd-ff17-4e46" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="12.8cm Kampfwagenkanone" hidden="true" id="1d5e-adb5-a55e-23e1">
@@ -13500,6 +13591,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <entryLink import="true" name="Conversion Kits" hidden="false" id="ee48-0c0b-279f-19d8" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="91bd-5680-21e1-3c5c" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="859c-4a12-57fd-1003" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="179b-7cbb-0d75-d34f" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -13512,6 +13604,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -13526,6 +13623,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <costs>
@@ -13560,8 +13662,9 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <infoLink name="Muzzle" id="d856-d40a-c6f0-4865" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="c69d-2910-f3e6-a2db" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="c69d-2910-f3e6-a2db" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="853d-cf0e-8312-ec09" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="36db-0227-625c-5ac7" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="General Electric M1959 Amplified Light Rifle" hidden="true" id="ea2a-0fdb-ab48-950f" collective="false">
@@ -13630,6 +13733,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
@@ -13645,6 +13753,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <entryLinks>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="01a0-3074-599c-784c" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="8220-25f5-a78e-5cf0" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="31f7-4f62-3db6-a0f0" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Gewehr-55 (Walther)" hidden="true" id="d183-51fb-ae7c-295c" collective="false">
@@ -13663,6 +13772,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <entryLinks>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="bba6-7f2c-94f8-c6a9" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="9a88-9a80-79af-f418" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="9898-2558-c431-4440" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -13674,6 +13784,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -13856,6 +13971,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
@@ -13925,6 +14045,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="25d6-6402-3d17-c2a3" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="e2f6-08f6-3ac2-f3cd" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="19a1-a3c1-34b5-5068" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -13937,6 +14058,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -14022,6 +14148,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="8295-47da-8dc3-5e3a" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="6fcc-c45d-dc99-92f6" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="2dcf-dd79-4ff7-7d52" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="58f3-9f32-76fd-f83c" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -14034,6 +14161,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -14071,6 +14203,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <entryLinks>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="cb62-80da-489e-d555" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="c833-960a-5d41-70e7" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="3cdb-4431-a375-f26f" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -14083,6 +14216,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -14355,7 +14493,15 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="2cfc-3ded-da36-6a71" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="MAB 38/46 / MP739(i) Aust. C" hidden="true" id="3969-91ea-da3c-b90b" collective="false">
       <costs>
@@ -14399,7 +14545,15 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="1e9c-ce7b-44a6-e66b" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maschinenkarabiner-55" hidden="true" id="5173-7b1f-e523-d07c" collective="false">
       <costs>
@@ -14422,6 +14576,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1016-5677-aaae-5634"/>
@@ -14436,6 +14595,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="b3a3-9889-ae92-a751" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="2775-aa11-0208-7332" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="0978-cbba-17e4-d602" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="ffba-34e0-afc0-a5fb" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maschinenpistole-49" hidden="true" id="c57d-c56f-5441-2714" collective="false">
@@ -14467,6 +14627,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="22"/>
@@ -14481,6 +14646,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="6699-3c16-774c-2ad9" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="4d80-d017-557a-8522" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maschinenpistole-55" hidden="true" id="e73c-b8c7-9dbc-01f1" collective="false">
@@ -14502,6 +14668,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
@@ -14517,6 +14688,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="83eb-5904-2362-1bb9" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="45a0-7fe0-f4e8-6f67" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="6c99-b4e0-80d3-e49e" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Orita 1941/50" hidden="true" id="9581-0cb3-d0a9-72c2">
@@ -14533,6 +14705,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -14563,6 +14740,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="5a9f-bc74-0e14-b933" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="a9cb-0be6-85f9-e2e6" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Orita 1947" hidden="true" id="3939-3cb3-5a49-2285">
@@ -14579,6 +14757,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -14611,6 +14794,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <entryLinks>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="745b-8deb-35cb-eecb" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="16d2-ea3f-1adb-a696" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="2f12-1767-6253-df1a" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rifle, Short Ross-Garand MkI*" hidden="true" id="98b9-a718-c2c3-8faf">
@@ -14933,6 +15117,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="ac2f-0e64-7a7c-8783" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="c0b3-d599-ae80-a77e" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -14945,6 +15130,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -14980,6 +15170,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="5a1a-563a-c9aa-dafd" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="910b-150d-df31-a72d" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
@@ -14992,6 +15183,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -15014,6 +15210,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -15055,6 +15256,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="c0ce-b479-e8f1-912b" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="70d0-cb47-b3b2-f1db" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="0a38-f94b-1e63-6ba2" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="d472-93fc-50b8-f57e" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blitzleitungmotor Ausf. A" hidden="false" id="667d-ccfb-63cd-a2b3">
@@ -16353,6 +16555,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="897a-db0b-4037-0669" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="5"/>
@@ -16383,6 +16590,9 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <infoLinks>
         <infoLink name="Holdout" id="7487-a0a7-bd47-48bb" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="8b97-8ee5-3fbd-0e80" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bayonet" hidden="false" id="95bf-877d-1c5d-a242" collective="false">
       <costs>
@@ -16570,6 +16780,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="897a-db0b-4037-0669" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b30a-c9a8-e2d8-63d0"/>
@@ -16609,6 +16824,9 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <infoLinks>
         <infoLink name="Fortification(Foxhole)" id="e4aa-eed9-765a-d6d1" hidden="false" type="rule" targetId="d328-d509-6940-c386"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="fa5b-270f-aacb-0541" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Maschinenpistole-54 Schnellfeuer" hidden="true" id="fe59-0e7c-eee3-f449" collective="false">
       <costs>
@@ -16660,10 +16878,16 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="6ed3-579d-2aa9-7a3f" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="c60d-5ebb-a396-7977" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="c3a4-17e1-9cf4-f5ec" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pistole-55 Luger" hidden="true" id="007c-6e44-454d-36eb" collective="false">
@@ -16686,6 +16910,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="7"/>
@@ -16700,6 +16929,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="555e-898b-d783-b3b5" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="0382-08f1-4be5-7e89" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pistolkarabiner-54 Biesensteiel" hidden="true" id="424c-8f66-8e1f-d0f2" collective="false">
@@ -16719,6 +16949,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <costs>
@@ -16760,6 +16995,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="35a4-eb5d-9fa5-cb74" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="826b-1b08-cfaa-69da" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sturmpistole 47" hidden="true" id="788b-b111-9631-b18a" collective="false">
@@ -16834,6 +17070,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ded-1cce-6c67-01d0"/>
@@ -16864,6 +17105,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="724f-425f-066d-64ef" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="1f01-3418-f2e9-5bf5" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Flammpanzer 38" hidden="true" id="b537-2eac-6912-ba65">
@@ -19538,6 +19780,13 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <entryLinks>
         <entryLink import="true" name="Conversion Kits" hidden="false" id="ecf1-7cca-0963-9c9e" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
+      <modifiers>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Focke-Achgelis fa 223 &quot;Drache" hidden="true" id="b71e-3cb0-daca-2e97">
       <constraints>
@@ -19724,10 +19973,18 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="a86c-ad87-e64c-60d5" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Holdout" id="a935-f099-a0c8-4087" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="a612-125f-22d9-e953" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="40mm Lvakan Carriage" hidden="true" id="bc75-694f-67ff-035e">
       <costs>
@@ -20244,7 +20501,15 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="3dd6-e186-6757-cc91" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Fallschimjägergewehr-43(Krieghoff)" hidden="true" id="a71f-537d-b15f-3c56" collective="false">
       <modifiers>
@@ -20266,6 +20531,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <costs>
@@ -20308,6 +20578,9 @@ This rule is automatically removed from this profile after (x) turns.</descripti
       <infoLinks>
         <infoLink name="Bipod(1)" id="b828-c195-8cb8-9119" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="e577-f3e6-1322-1158" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lahti Saloranta M26/43" hidden="true" id="c960-3527-52b3-13a9">
       <profiles>
@@ -20342,7 +20615,15 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             <condition type="atLeast" value="1" field="selections" scope="force" childId="8208-fd82-1fd6-47d6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Suomi Licenses"/>
           </conditions>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="7e22-dd59-38b9-bde7" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sawn-Off/Obrez" hidden="true" id="e48e-b9ef-0ac0-3d70">
       <costs>
@@ -20439,6 +20720,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Conversion Kits" hidden="false" id="240a-0914-6c1c-a96c" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
@@ -20477,7 +20763,15 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="21fc-662f-887c-fb97" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="MAS-44/56" hidden="true" id="c2b9-96be-4729-bad1">
       <profiles>
@@ -20512,12 +20806,18 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Sight" id="4602-7b59-13f0-d98f" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="441b-4403-f623-c511" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="d2df-912a-9210-cbfa" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="MAT-49" hidden="true" id="4c88-28bf-177f-9bcb">
@@ -20553,7 +20853,15 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="ccaa-742f-1cae-aa3f" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="MAC-49" hidden="true" id="a1a9-a850-c159-ece5">
       <infoLinks>
@@ -20591,7 +20899,15 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="ee5b-e849-0dcc-5159" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Modele 1935S" hidden="true" id="55f0-1ee7-51b1-f25c">
       <infoLinks>
@@ -20599,7 +20915,7 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <infoLink name="Holdout" id="0a31-d9a1-2f02-4b70" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
       <profiles>
-        <profile name="MAC-49" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="eb60-576a-987e-f4f4">
+        <profile name="Modele 1935S" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="eb60-576a-987e-f4f4">
           <characteristics>
             <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
             <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
@@ -20630,7 +20946,15 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="b8f1-5241-2f37-1705" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="British" hidden="true" id="ab30-426c-b183-a33a">
       <modifiers>
@@ -20780,6 +21104,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
@@ -20788,6 +21117,9 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <infoLink name="Bipod(1)" id="0fcf-837a-dde3-8306" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
         <infoLink name="Surplus" id="956b-36e3-ca01-fd16" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="05e2-897b-ee2c-e417" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="is Volksheld" hidden="true" id="6a03-128e-c2a2-e601">
       <modifiers>
@@ -20814,6 +21146,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
@@ -20829,10 +21166,10 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <infoLink targetId="ec23-0a43-21d1-bb56" id="b2a0-5171-4ef7-2a68" type="profile" name="Karabiner-98m" hidden="false"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Conversion Kits" hidden="false" id="af18-669e-a28d-3236" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="bc0f-e8ba-faf5-2492" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="701b-cc6b-de79-4113" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="e42f-231f-aa77-79a7" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="4a80-a3dc-aa8e-f185" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Welrod" hidden="true" id="248c-1ea5-04a0-37b7">
@@ -21564,6 +21901,11 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <costs>
         <cost name="Rm" typeId="7439-07e0-82ef-c431" value="35"/>
@@ -21572,6 +21914,9 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <infoLink name="Bipod(1)" id="96ee-8e72-668a-da7c" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
         <infoLink name="Surplus" id="445b-1ae7-05a8-f1eb" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="eb3d-3534-c92c-b9a4" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Belgian" hidden="true" id="465d-83b9-23eb-ba70">
       <modifiers>
@@ -21742,6 +22087,11 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="343e-c141-1216-5145"/>
@@ -21778,6 +22128,7 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <entryLink import="true" name="Ordnance(20x138B)" hidden="false" id="8dde-66fd-7c84-b5bf" type="selectionEntryGroup" targetId="5c0b-9864-cf46-6adc"/>
         <entryLink import="true" name="Magazine Upgrades" hidden="false" id="d7f3-a99c-2c2c-dea9" type="selectionEntryGroup" targetId="9f52-75c7-552e-1a82"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="c274-c413-bd1a-4a8a" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="cefe-18cc-d589-c22c" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Einstossflammenwerfer 46" hidden="true" id="651f-f8c5-274b-95c2">
@@ -21925,10 +22276,18 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Holdout" id="e4fa-ae2f-150f-65e3" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="61b7-1647-ca59-4a6c" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Konekivääri M48" hidden="true" id="7aba-4c0c-f3cf-c82b" collective="false">
       <costs>
@@ -21948,6 +22307,11 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink targetId="3720-2612-bdba-02b0" id="ea3e-2c54-6bca-d0e2" type="profile" name="Maschinengewehr-56" hidden="false">
@@ -21959,6 +22323,9 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <infoLink name="Crewed" id="bd47-ae5a-26bc-eb2a" hidden="false" type="rule" targetId="9b23-9cb3-4736-bcea"/>
         <infoLink name="Bipod(1)" id="61f9-cade-8ce7-5d21" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="b7c5-fc34-f806-b6ef" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="11.25mm Aut. Pistol m/1915 “Konsberg Colten”" hidden="true" id="c25b-ff32-ca17-5a95" collective="false">
       <costs>
@@ -22019,7 +22386,15 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="270b-c353-c1dd-434f" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Pistol m/40" hidden="true" id="75f7-7492-828c-d00e">
       <costs>
@@ -22060,10 +22435,18 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
           </conditions>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Holdout" id="2cce-2d00-d352-214c" hidden="false" type="rule" targetId="cb91-d908-615c-ee4d"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="c90c-0e63-47c4-73ba" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rynnäkkökivääri 57" hidden="true" id="8fcf-907d-1836-8fb3" collective="false">
       <costs>
@@ -22085,6 +22468,11 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fc0-0de5-b331-2a6d"/>
@@ -22103,6 +22491,7 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="9d6b-f127-210b-a0ef" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
         <entryLink import="true" name="Sight Upgrades" hidden="false" id="aade-cec4-4cc3-45dc" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
         <entryLink import="true" name="Underslung Upgrades" hidden="false" id="cb3e-acff-43e0-b357" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="c295-66f1-c713-1b58" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Zielfernrohr-4" hidden="true" id="9b58-6437-e6a8-490f">
@@ -22198,6 +22587,28 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Simplified Design" hidden="true" id="178e-1377-5597-f474">
+      <profiles>
+        <profile name="Simplified Design" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="180b-e1d5-8029-ab4e">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">-</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">-1</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">-</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">-</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Conversion Kit</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Surplus" id="f45c-256b-a802-3204" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
