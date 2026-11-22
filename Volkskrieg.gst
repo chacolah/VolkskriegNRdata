@@ -4534,13 +4534,14 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="c444-46e3-a85f-a6e4" id="1e34-41e6-912f-edb0" type="selectionEntry" name="Bren Light Machine Gun MKIV*" hidden="true"/>
         <entryLink targetId="f4d8-821a-1264-d5d1" id="daeb-6707-f53e-5c5c" type="selectionEntry" name="Carl Gustaf Granatgevär m/50" hidden="true"/>
         <entryLink import="true" name="Type 20 Kochi Rifle" hidden="false" id="303f-7408-0eb2-4e0b" type="selectionEntry" targetId="a6d1-86b9-2c47-ce4c"/>
-        <entryLink import="true" name="Degtjarev M27 &quot;Emma&quot;" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
+        <entryLink import="true" name="DP-27" hidden="false" id="70a4-8804-2988-e16d" type="selectionEntry" targetId="a5c3-a0bb-00e8-60a5"/>
         <entryLink import="true" name="vz.39/l.MG-39(t)" hidden="false" id="ddb0-3c17-177e-ed9f" type="selectionEntry" targetId="1650-da94-b117-5d67"/>
         <entryLink targetId="88d5-c07c-682b-5b88" id="1249-65e9-cd82-7625" type="selectionEntry" name="Panzerbüchse-54(Cz)" hidden="true" collective="false"/>
         <entryLink targetId="07f0-d6e6-be7c-1a54" id="c262-176b-2fc0-ddd1" type="selectionEntry" name="Lahti L-39" hidden="true" collective="false"/>
         <entryLink targetId="7aba-4c0c-f3cf-c82b" id="fad6-bfc9-0406-c583" type="selectionEntry" name="Konekivääri M48" hidden="true" collective="false"/>
         <entryLink import="true" name="Fucil Controcarro 35(P)/Panzerbüchse 35(p)" hidden="false" id="2967-e652-ffa4-df55" type="selectionEntry" targetId="acd3-2fbb-8904-b0d2"/>
         <entryLink targetId="3848-e115-3a35-9e94" id="d1a8-b219-08cf-a79d" type="selectionEntry" name="Blitzwerfengewehr-59" hidden="true" collective="false"/>
+        <entryLink import="true" name="Degtjarev M27 &quot;Emma&quot;" hidden="false" id="d625-5f88-b719-1db6" type="selectionEntry" targetId="7b1b-105b-93fe-e44a"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Primary Arms" id="4fb9-7410-611a-138f" hidden="false">
@@ -4588,8 +4589,11 @@ If the Volksheld is downed or killed all attack rolls made by this formation are
         <entryLink targetId="a4ff-d706-fe31-0d2c" id="b268-adf8-7b57-67cb" type="selectionEntry" name="MAS-38" hidden="true" collective="false"/>
         <entryLink targetId="c2b9-96be-4729-bad1" id="e8fe-af8d-b7e9-783f" type="selectionEntry" name="MAS-44/56" hidden="true" collective="false"/>
         <entryLink targetId="c522-06df-c434-ff16" id="5a18-15aa-ba98-7c17" type="selectionEntry" name="M39 Rifle" hidden="true" collective="false"/>
-        <entryLink targetId="6249-666c-5083-d21e" id="fa75-617c-7df9-3844" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
+        <entryLink targetId="416f-2f12-f072-66a8" id="fa75-617c-7df9-3844" type="selectionEntry" name="Mosin Nagant" hidden="true" collective="false"/>
         <entryLink targetId="495f-8ca3-752d-3710" id="d42c-a0c3-1017-08ba" type="selectionEntry" name="Lanciafiamme Modello 41 d&apos;assalto" hidden="true" collective="false"/>
+        <entryLink targetId="ec45-2a58-c12e-dda3" id="0e86-c1ac-a454-d6c8" type="selectionEntry" name="SVT-40" hidden="true" collective="false"/>
+        <entryLink targetId="6249-666c-5083-d21e" id="cf62-fe29-596e-9741" type="selectionEntry" name="870 Shotgun" hidden="true" collective="false"/>
+        <entryLink targetId="574a-bb58-d6e7-17d9" id="2d2e-b7ff-8c4e-2bf4" type="selectionEntry" name="PPSh-41" hidden="true" collective="false"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Sidearms/Melee" id="8d16-f577-2371-6215" hidden="false">
@@ -21163,7 +21167,11 @@ This rule is automatically removed from this profile after (x) turns.</descripti
         <infoLink name="Sight" id="74f1-a993-8bc3-5210" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
         <infoLink name="Underslung" id="b934-650e-a357-ca4e" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
         <infoLink name="Muzzle" id="f839-3f26-39f2-4bc4" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
-        <infoLink targetId="ec23-0a43-21d1-bb56" id="b2a0-5171-4ef7-2a68" type="profile" name="Karabiner-98m" hidden="false"/>
+        <infoLink targetId="ec23-0a43-21d1-bb56" id="b2a0-5171-4ef7-2a68" type="profile" name="Karabiner-98m" hidden="false">
+          <modifiers>
+            <modifier type="set" value="M39 Rifle" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="bc0f-e8ba-faf5-2492" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
@@ -22609,6 +22617,211 @@ Additionally, they have the Carrier(6) rule, and have mapwide RC(10) on any hex 
       <infoLinks>
         <infoLink name="Surplus" id="f45c-256b-a802-3204" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="DP-27" hidden="true" id="a5c3-a0bb-00e8-60a5" collective="false">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="185c-e670-2810-86fe"/>
+      </constraints>
+      <profiles>
+        <profile name="DP-27" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="b965-ea6d-0c40-13d9">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-2</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">3</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Heavy Weapon</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Bipod(1), Surplus</characteristic>
+          </characteristics>
+          <attributes>
+            <attribute name="Rules" typeId="ddde-92bb-030b-66d1"/>
+          </attributes>
+          <modifiers>
+            <modifier type="set" value="l.MG 120(r) " field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" includeChildSelections="true" childName="Norischer Reichsstaat Licenses"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Surplus" id="9e59-aa21-5cf1-0317" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Bipod(1)" id="fc31-1dbe-4dfc-7357" hidden="false" type="rule" targetId="dc24-f0ba-277a-6b58"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="eb45-72c9-a039-5d8b" shared="true" childName="Communist Forces/Russian Partisans"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ca5e-4e06-c943-9176" shared="true" childName="Communist Forces/Red Army Remnants"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="l.MG 120(r) " field="name">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="83c0-b262-9b6f-c4d3" shared="true" includeChildSelections="true" childName="Norischer Reichsstaat Licenses"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="divide" value="2" field="7439-07e0-82ef-c431">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="87af-14a3-5cc7-ad84" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mosin Nagant" hidden="true" id="416f-2f12-f072-66a8" collective="false">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="eb45-72c9-a039-5d8b" shared="true" childName="Communist Forces/Russian Partisans"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ca5e-4e06-c943-9176" shared="true" childName="Communist Forces/Red Army Remnants"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="10"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4d4-5aac-9389-7280"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Surplus" id="98d8-127e-ac64-18e3" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Sight" id="b8ea-9a48-36b3-490b" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+        <infoLink name="Underslung" id="c572-2485-34f7-1bab" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+        <infoLink name="Muzzle" id="526f-d935-a992-6ecb" hidden="false" type="rule" targetId="7498-0a5d-0c52-ef6c"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Muzzle Upgrades" hidden="false" id="d9ac-a932-e4da-91c5" type="selectionEntryGroup" targetId="d392-edda-29f7-df9e"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="7f15-568b-4452-2bf2" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="e1c3-b21b-5c20-4375" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Conversion Kits" hidden="false" id="44a8-5236-c91f-59aa" type="selectionEntryGroup" targetId="5223-84c3-383e-92f0"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Mosin Nagant" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="39f5-16d3-0105-f956">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">36&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">1</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Sight, Muzzle, Underslung, Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="PPSh-41" hidden="true" id="574a-bb58-d6e7-17d9">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="20"/>
+      </costs>
+      <profiles>
+        <profile name="PPSh-41" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="f3d9-8ed4-ba3b-dcb7">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">18&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+2</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">2</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">5</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Surplus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Surplus" id="81a6-12ab-979b-e264" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="eb45-72c9-a039-5d8b" shared="true" childName="Communist Forces/Russian Partisans"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ca5e-4e06-c943-9176" shared="true" childName="Communist Forces/Red Army Remnants"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="SVT-40" hidden="true" id="ec45-2a58-c12e-dda3">
+      <costs>
+        <cost name="Rm" typeId="7439-07e0-82ef-c431" value="30"/>
+      </costs>
+      <profiles>
+        <profile name="SVT-40" typeId="13eb-a53b-a583-5387" typeName="Equipment Stats" hidden="false" id="e6ff-2eba-3ed8-7da7">
+          <characteristics>
+            <characteristic name="MOB" typeId="8663-15fe-1559-12b8">-1</characteristic>
+            <characteristic name="RNG" typeId="808e-7a55-4969-f2bb">30&quot;</characteristic>
+            <characteristic name="ROT" typeId="eb20-68aa-3af1-db2f">-</characteristic>
+            <characteristic name="ACC" typeId="84b5-b5ed-e973-b702">+3</characteristic>
+            <characteristic name="FP" typeId="82e2-9a79-6c43-5056">4</characteristic>
+            <characteristic name="RoF" typeId="0908-2b89-6f22-5186">2</characteristic>
+            <characteristic name="CAP" typeId="34b3-dd42-f45e-e807">-</characteristic>
+            <characteristic name="ARM" typeId="7be1-9d43-d1fb-960a">-</characteristic>
+            <characteristic name="DUR" typeId="4f35-654d-7514-6eda">-</characteristic>
+            <characteristic name="TYPE" typeId="9a48-6489-0584-2aae">Primary</characteristic>
+            <characteristic name="Rules" typeId="556d-f99b-9ae9-1e73">Sight. Surplus, Underslung</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Underslung" id="7d5b-2aee-c552-1faa" hidden="false" type="rule" targetId="1101-21cb-ae99-eb0d"/>
+        <infoLink name="Surplus" id="692a-12f6-9ca1-a708" hidden="false" type="rule" targetId="5705-4637-2b89-5c53"/>
+        <infoLink name="Sight" id="171f-1ad5-c8cb-76df" hidden="false" type="rule" targetId="cb7e-78d1-f895-f39b"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="bd9f-1f73-7047-5a76" shared="true" childName="Campaign Manager"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="eb45-72c9-a039-5d8b" shared="true" childName="Communist Forces/Russian Partisans"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="ca5e-4e06-c943-9176" shared="true" childName="Communist Forces/Red Army Remnants"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Underslung Upgrades" hidden="false" id="67f4-4b6c-57dd-905e" type="selectionEntryGroup" targetId="d637-62af-5c3f-c5e3"/>
+        <entryLink import="true" name="Sight Upgrades" hidden="false" id="cf1d-87a6-f40e-c1e4" type="selectionEntryGroup" targetId="83a8-edc9-e790-d90e"/>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
